@@ -109,8 +109,10 @@ n-test-runs: 5
 # Prompt function aliases
 # aliases:
 # - "asktutor"
-# Take the first line only
-postprocessor: "sed 1q"
+# # Take the first line only
+# postprocessor: "sed 1q"
+# Turn it into a one-liner
+postprocessor: "clean-repl | s join '; '"
 # postprocessor: "sed 's/- //' | uniqnosort"
 # # Run it n times and combine the output
 # n-collate: 10

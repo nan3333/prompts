@@ -1,16 +1,8 @@
 title: "Code interpreter kickstarter"
 future-titles: "Code interpreter kickstarter"
 # It may be combined with a prompt more adept at continuing conversation
-# aims: |+
-# - More abstractive rewording
 doc: "Given a line of code, infer the result of running that code"
-# aims: |+
-# - More abstractive rewording
 prompt-version: 1
-# <:pp> defines a point where the following
-# text is concatenated before the postprocessor
-# is run.
-# <1>, <2> etc. are where variables are substituted
 prompt: |+
     Code examples:
 
@@ -27,16 +19,11 @@ prompt: |+
     <2>
     # Output:
 problems:
-- "Struggles with the latter columns."
 # # Additional transformation of prompt after the template
-# prompt-filter: "sed -z 's/\s\+$//'"
+# prompt-filter:
 # # Trailing whitespace is always removed
 # prompt-remove-trailing-whitespace: on
-# myrc will select the completion engine using my config.
-# This may be openi-complete or something else
 engine: "myrc"
-# if nothing is selected in myrc and openapi-complete is used
-# by default, then openai should select this engine.
 preferred-openai-engine: "davinci"
 # 0.0 = /r/hadastroke
 # 1.0 = /r/iamveryrandom
@@ -67,7 +54,7 @@ vars:
 - "language"
 - "code"
 examples:
-- "boysenberries"
+- "haskell"
 - "strawberries"
 # Completion is for generating a company-mode completion function
 # completion: on
