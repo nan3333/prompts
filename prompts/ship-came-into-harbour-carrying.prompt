@@ -1,4 +1,6 @@
 title: "Ship came into harbour carrying X"
+aliases:
+  "list of"
 doc: ""
 prompt: |+
     8 countries starting with A
