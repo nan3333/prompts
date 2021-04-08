@@ -1,4 +1,6 @@
 title: "Oracle that answers any question"
+aliases:
+- "ask-anything"
 prompt: |+
     Question: What are german shepherds?
     Answer: The German Shepherd is a breed of medium to large-sized working dog that originated in Germany. In the English language, the breed's officially recognized name is German Shepherd Dog. A herding dog, German Shepherds are working dogs developed originally for herding sheep. Since that time, however, because of their strength, intelligence, trainability, and obedience, German Shepherds around the world are often the preferred breed for many types of work, including disability assistance, search-and-rescue, police and military roles and acting. The German Shepherd is the second-most registered breed by the American Kennel Club and seventh-most registered breed by The Kennel Club in the United Kingdom. German Shepherds were bred specifically for their intelligence. In a list of breeds most likely to bark as watchdogs, Stanley Coren ranked the breed in second place. Coupled with their strength, this trait makes the breed desirable as police, guard and search and rescue dogs.
