@@ -1,0 +1,36 @@
+title: "text to emoji"
+prompt: |+
+    Back to Future: 👨👴🚗🕒
+    ###
+    Batman: 🤵🦇
+    ###
+    Transformers: 🚗🤖
+    ###
+    Wonder Woman: 👸🏻👸🏼👸🏽👸🏾👸🏿
+    ###
+    Spider-Man: 🕸🕷🕸🕸🕷🕸
+    ###
+    Winner the Pooh: 🐻🐼🐻
+    ###
+    The Godfather: 👨👩👧🕵👲💥
+    ###
+    Game of Thrones: 🏹🗡🗡🏹
+    ###
+    <1>:
+engine: "davinci"
+temperature: 0.7
+max-tokens: 60
+top-p: 1
+frequency-penalty: 0.0
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+  - "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+quality: 0.3
+vars:
+  - "text"
+examples:
+  - "monty python holy grail"

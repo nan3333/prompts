@@ -1,0 +1,69 @@
+title: "test if text is haskell"
+doc: "tests if text is haskell code"
+prompt: |+
+    If the code is haskell, respond with "Haskell". If the query is not haskell, respond with "?".
+
+    ###
+    Code:putStrLn "What is your name?"
+    Language:Haskell
+    ###
+    Code:[1,2,3,4] ++ [9,10,11,12]
+    Language:Haskell
+    ###
+    Code:In reality, it would require too much code to hide _Prelude_ clashes like this, so you
+    Language:?
+    ###
+    Code:data Shape = Circle Float Float Float | Rectangle Float Float Float Float deriving (Show)
+    Language:Haskell
+    ###
+    Code:In reality, it would require too much code to hide _Prelude_ clashes like this, so you
+    ###
+    Code:(ns example.pprinter (:use clojure.pprint))
+    Language:?
+    ###
+    Code:surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - y1)
+    Language:Haskell
+    ###
+    Code:"Steve Buscemi" !! 6
+    Language:Haskell
+    ###
+    Code:regex = re.compile(r'^(?P<indent>(?: {4})*)(?P<name>\S.*)')
+    Language:?
+    ###
+    Code:doubleSmallNumber x = if x > 100 then x else x*2
+    Language:Haskell
+    ###
+    Code:[ x | x <- [50..100], x `mod` 7 == 3]
+    Language:Haskell
+    ###
+    Code:* TODO Look into =ctrl=
+    Language:?
+    ###
+    <1>
+    Language:
+engine: "davinci"
+temperature: 0.5
+max-tokens: 40
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "text"
+examples:
+- |+
+    putStrLn $ "Hey, I Love " ++ city ++ "!"
+# emacs function: detect-language
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: yes

@@ -1,0 +1,40 @@
+title: "Extract contact details"
+doc: ""
+prompt: |+
+    Extract the mailing address from this email:
+
+    <1>
+    
+    Name and address:
+engine: "davinci-instruct-beta"
+temperature: 0
+max-tokens: 64
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "text"
+examples:
+- |-
+    Dear Kelly,
+    
+    It was great to talk to you at the seminar. I thought Jane's talk was quite good.
+    
+    Thank you for the book. Here's my address 2111 Ash Lane, Crestview CA 92002
+    
+    Best,
+    
+    Maya
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0

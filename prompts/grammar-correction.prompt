@@ -1,0 +1,23 @@
+title: "correct grammar"
+prompt-version: 2
+prompt: |+
+    Original: <1>
+    Standard American English:
+engine: "davinci"
+temperature: 0
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.0
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n"
+inject-start-text: yes
+inject-restart-text: yes
+chomp-start: on
+chomp-end: off
+show-probabilities: off
+vars:
+- "sentence"
+examples:
+- "She no went to the market."

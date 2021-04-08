@@ -1,0 +1,40 @@
+title: "web search"
+prompt-version: 1
+prompt: |+
+    web search
+
+    Perry Bible Fellowship
+    http://pbfcomics.com
+    ###
+    emacs reddit
+    https://www.reddit.com/r/emacs/
+    ###
+    Hacker News
+    http://news.ycombinator.com
+    ###
+    Stanford AI
+    http://ai.stanford.edu
+    ###
+    <1>
+engine: "davinci"
+temperature: 0.3
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "query"
+examples:
+- "lord of the rings website"
+external: ""
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0

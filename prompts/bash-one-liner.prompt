@@ -1,0 +1,51 @@
+title: "bash one liner generator from natural language"
+doc: "Get a bash one liner from natural language"
+
+# The $ in these prompts is important.
+# It's distinctive. : at the end of the comment is not enough
+prompt: |+
+    The following is a list of one-liners for the linux command-line:
+    
+    # get newest file in directory bash
+    $ ls -t * | head -1
+    ###
+    # Find with invert match - e.g. find every file that is not mp3
+    $ find . -name '*' -type f -not -path '*.mp3'
+    ###
+    # Recursively remove all "node_modules" folders
+    $ find . -name "node_modules" -exec rm -rf '{}' +
+    ###
+    # <1>
+    $
+engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.8
+max-tokens: 60
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n"
+# - "\n\n"
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "task description"
+examples:
+- "shift last argument"
+chomp-start: on
+chomp-end: off
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no

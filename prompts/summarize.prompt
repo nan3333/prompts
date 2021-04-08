@@ -1,0 +1,39 @@
+title: "abstractively summarize"
+prompt-version: 1
+prompt: |+
+  Document:
+  ###
+  <1>
+  ###
+  Summary:
+  ###
+engine: "davinci"
+temperature: 0.5
+max-tokens: 100
+top-p: 1
+frequency-penalty: 0.2
+presence-penalty: 0.2
+best-of: 1
+stop-sequences:
+  - "###"
+  # Unfortunately, this doesn't work yet
+  # Multiple --stop arguments to openai override the previous
+  # - "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+chomp-start: on
+chomp-end: on
+vars:
+- "passage"
+examples:
+- |-
+    This week CrowdScience investigates the information superhighway connecting mind with body. The Vagus nerve is part of
+    our parasympathetic nervous system, delivering information from all our major organs to the brain stem, and stimulating
+    it can help us switch off our fight or flight response and calm us down. But listener Mags wants to know what science
+    says about its impact on our general wellbeing?
+# External provides an alternate script that performs the same function
+external:
+- "summarize-passage"
+# Replace selected text
+filter: yes

@@ -1,0 +1,48 @@
+title: "Ship came into harbour carrying N X starting with the letter Y"
+prompt-version: 1
+doc: ""
+prompt: |+
+    8 countries starting with A
+    American Samoa,Armenia,Australia,Afghanistan,Albania,Andorra,Angola,Argentina
+    ###
+    3 car brands starting with H
+    Holden,Hyundai,Honda
+    ###
+    7 islands starting with N
+    New Britain,Naart,Nukumanu,Nærøya,Nikumaroro,Nagy-Pandúr-sziget,Neuwerk
+    ###
+    4 fruit starting with E
+    Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
+    ###
+    6 clothing brands starting with C
+    Croft,Caliwoods,Contare,Calvin Klein,Charles Viancin,Costume National
+    ###
+    <1> <2> starting with <3>
+engine: "davinci"
+temperature: 0.7
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.9
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.3
+best-of: 1
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "n"
+- "type"
+- "letter"
+examples:
+- "5"
+- "island countries"
+- "T"
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no

@@ -1,0 +1,36 @@
+title: "Translate morse code to English"
+prompt-version: 2
+prompt: |+
+  Morse code.
+
+  Morse: -.-. .- -. / .. / .... .- ...- . / ... --- -- . / -.-. .... --- -.-. --- .-.. .- - . ..--..
+  English: Can I have some chocolate?
+  ###
+  Morse: .. / .-.. --- ...- . / -.-- --- ..- .-.-.-
+  English: I love you.
+  ###
+  Morse: <1>
+  English:
+engine: "davinci"
+temperature: 0.3
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+# Be careful with stop sequence as \n. The prompt is chomped by default and generating \n will end it
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "morse"
+examples:
+- "... --- ..."
+chomp-start: on
+chomp-end: off
+prefer-external: on
+filter: no
+stitch-max: 0

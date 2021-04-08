@@ -1,0 +1,22 @@
+title: "micro horror story (2-3 sentences)"
+prompt: |+
+    Topic: Breakfast
+    Two-Sentence Horror Story: He always stops crying when I pour the milk on his cereal. I just have to remember not to let him see his face on the carton.
+    ###
+    Topic: <1>
+    Two-Sentence Horror Story:
+engine: "davinci"
+temperature: 0.5
+max-tokens: 60
+top-p: 1
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "topic"

@@ -1,0 +1,61 @@
+title: "Article summary from title"
+doc: "Given the title of an article, generate a summary"
+prompt: |+
+    Title: Build a WhatsApp Chatbot With Python, Flask and Twilio
+    Summary: A chatbot is a software application that is able to conduct a conversation with a human
+    user through written or spoken language. The level of "intelligence" among chatbots varies greatly.
+    While some chatbots have a fairly basic understanding of language, others employ
+    sophisticated artificial intelligence (AI) and machine learning (ML) algorithms to achieve an
+    almost human conversational level. In this tutorial I'm going to show you how easy it is to build a
+    chatbot for WhatsApp using the Twilio API for WhatsApp and the Flask framework for Python.
+    
+    Title: Run Your Flask Regularly Scheduled Jobs with Cron
+    Summary: A common need of web applications is to have a periodically running task in the
+    background. This could be a task that imports new data from third party sources, or maybe one
+    that removes revoked tokens from your database once they have expired. In this and many other
+    situations you are faced with the challenge of implementing a task that runs in the background at
+    regular intervals. This is a pattern that many people ask me about. I've seen implementations that
+    are based on the APScheduler package, on Celery, and even homegrown solutions built inside a
+    background thread. Sadly none of these options are very good. In this article I'm going to show
+    you what I believe is a very robust implementation that is based on the Flask CLI and the cron
+    service.
+    
+    Title: <1>
+    Summary:
+engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.8
+max-tokens: 200
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n"
+- "\n\n"
+# - "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# Cache the function by default when running the prompt function
+cache: off
+vars:
+- "article title"
+examples:
+- "Building an SMS Chatbot with OpenAI's GPT-3 engine, Twilio and Python"
+chomp-start: on
+chomp-end: off
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+# Prompt function aliases
+# aliases:
+# - "asktutor"

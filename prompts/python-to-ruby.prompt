@@ -1,0 +1,55 @@
+title: "Translate Python to Ruby"
+prompt: |+
+    Python:
+    list[::-1] 
+    Ruby:
+    list.reverse 
+    
+    Python:
+    list[1:4] 
+    Ruby:
+    list[1..4]
+    
+    Python:
+    print("Hello World")
+    Ruby:
+    puts "Hello World"
+    
+    Python: 
+    fruits = ["apple","banana","cherry"] 
+    for x in fruits:
+    print(x)
+    Ruby: 
+    fruit = ["apple", "banana", "cherry"]
+    each {|x| print x } 
+    
+    Python: 
+    <1>
+    Ruby:
+engine: "davinci"
+temperature: 0.3
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "python code"
+examples:
+- |-
+    fruits = ["apple","banana","cherry"] 
+    a = list(fruits) 
+    print(a) 
+    a.reverse() 
+    print(a)
+external: ""
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0

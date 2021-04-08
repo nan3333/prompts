@@ -1,0 +1,40 @@
+title: "thesaurus - word for"
+doc: "Find difficult to recall words using a description"
+prompt: |+
+    What is the word for joining the army starting with c?
+    conscription
+
+    A word for mind map that starts with z.
+    zettelkasten
+
+    A synonym for interesting starting with u.
+    Unusual.
+
+    A word for boat starting with s.
+    ship
+
+    <1>.
+engine: "davinci"
+temperature: 0.3
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "description"
+examples:
+- "What is the word for joining the army starting with c?"
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: yes

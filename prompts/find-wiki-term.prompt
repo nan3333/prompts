@@ -1,0 +1,58 @@
+title: "Find a wiki term given a query"
+doc: |-
+  Given a query, find the right wiki page for it.
+  I want this to be better than google or wikipedia's redirection.
+  If you input cartesian rationalism, Google would send you to Rationalism.
+  I want it to go to Cartesianism.
+prompt: |+
+    Given a query, return a working correct wikipedia page title.
+
+    query:shannon entropy vs liklihood
+    wiki:https://en.wikipedia.org/wiki/Entropy_(information_theory)
+    ###
+    query:L2 norm
+    wiki:https://en.wikipedia.org/wiki/Norm_(mathematics)
+    norm
+    ###
+    query:rational language
+    wiki:https://en.wikipedia.org/wiki/Regular_language
+    regular language
+    ###
+    query:photographic memory
+    wiki:https://en.wikipedia.org/wiki/Eidetic_memory
+    eidetic memory
+    ###
+    query:dark night sky paradox
+    wiki:https://en.wikipedia.org/wiki/Olbers'_paradox
+    Olbers' paradox
+    ###
+    query:cartesian rationalism
+    wiki:https://en.wikipedia.org/wiki/Cartesianism
+    cartesianism
+    ###
+    query:<1>
+    wiki:
+engine: "davinci"
+temperature: 0.0
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "query"
+examples:
+- "rational language"
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: yes

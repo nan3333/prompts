@@ -1,0 +1,50 @@
+title: "Translate Haskell to Clojure"
+prompt: |+
+    Haskell:
+    zip (map show [1,5,9]) ["a","b","c"] 
+    Clojure:
+    (println (map vector '(1 2 3) '(4 5 6))) 
+    
+    Haskell:
+    map toUpper "MiXeD cAsE" 
+    Clojure:
+    (clojure.string/upper-case "MiXeD cAsE")
+    
+    Haskell:
+    putStrLn "Hello World"
+    Clojure:
+    (println "Hello World")
+    
+    Haskell: 
+    import Data.Time.Clock
+    import Data.Time.Calendar
+    date :: IO (Integer, Int, Int) -- :: (year, month, day)
+    date = getCurrentTime >>= return . toGregorian . utctDay
+    Clojure: 
+    (defn date [] (.toString (java.util.Date.)))
+
+    Haskell: 
+    <1>
+    Clojure:
+engine: "davinci"
+temperature: 0.3
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "haskell code"
+examples:
+- "min 1 2"
+external: ""
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0

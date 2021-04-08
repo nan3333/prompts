@@ -1,0 +1,169 @@
+* Prompts
+This is a free and open-source (FOSS) curation of prompts for OpenAI's GPT-3.
+
+| License |
+|---------|
+| *GPL-3* |
+
+** Test results go here
+https://github.com/semiosis/prompt-tests/
+
+** The =.prompt= file format
+This is the format I have used to organise
+these prompts. It is =yaml= with a schema,
+which is not yet defined.
+
+This file is as good as any currently as an example of the schema.
+
+** [[./prompts/meeting-bullets-to-summary.prompt]]
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: "meeting bullet points to summary"
+  prompt: |+
+      Convert my short hand into a first-hand account of the meeting:
+
+      <1>
+
+      Summary:
+  engine: "davinci-instruct-beta"
+  temperature: 0.7
+  max-tokens: 60
+  top-p: 1
+  frequency-penalty: 0.0
+  presence-penalty: 0.0
+  best-of: 1
+  stop-sequences:
+  - "\n\n"
+  inject-start-text: yes
+  inject-restart-text: yes
+  show-probabilities: off
+  # A flag just for convenience-sake to find prompts which are designed to be chatbots
+  conversation-mode: no
+  # Keep stitching together until reaching this limit
+  # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+  stitch-max: 0
+  vars:
+  - "notes"
+  examples:
+  - |+
+      Tom: Profits up 50%
+      Jane: New servers are online
+      Kjel: Need more time to fix software
+      Jane: Happy to help
+      Parkman: Beta testing almost done
+#+END_SRC
+
+** Prompt file snippet
+This contains an explanation of the =.prompt= file format.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  title: "${1:title}"
+  # future-titles: ""
+  aims: |+
+  - More abstractive rewording
+  doc: "Given ... ${1:title}"
+  # aims: |+
+  # - More abstractive rewording
+  prompt-version: 1
+  # <:pp> defines a point where the following
+  # text is concatenated before the postprocessor
+  # is run.
+  # <1>, <2> etc. are where variables are substituted
+  prompt: |+
+      ${2:contents}
+
+      <1> are like <2> in that
+  # # Additional transformation of prompt after the template
+  prompt-filter: "sed -z 's/\\s\\+$//'"
+  # Trailing whitespace is always removed
+  # prompt-remove-trailing-whitespace: on
+  # myrc will select the completion engine using my config.
+  # This may be openi-complete or something else
+  engine: "myrc"
+  # if nothing is selected in myrc and openapi-complete is used
+  # by default, then openai should select this engine.
+  preferred-openai-engine: "davinci"
+  # 0.0 = /r/hadastroke
+  # 1.0 = /r/iamveryrandom
+  # Use 0.3-0.8
+  temperature: 0.8
+  max-tokens: 60
+  top-p: 1.0
+  # Not available yet: openai api completions.create --help
+  frequency-penalty: 0.5
+  # If I make presence-penalty 0 then it will get very terse
+  presence-penalty: 0.0
+  best-of: 1
+  # Only the first one will be used by the API,
+  # but the completer script will use the others.
+  # Currently the API can only accept one stop-sequence, but that may change.
+  stop-sequences:
+  - "###"
+  - "\n\n"
+  inject-start-text: yes
+  inject-restart-text: yes
+  show-probabilities: off
+  # Cache the function by default when running the prompt function
+  cache: on
+  vars:
+  - "former"
+  - "latter"
+  examples:
+  - "boysenberries"
+  - "strawberries"
+  # Completion is for generating a company-mode completion function
+  completion: on
+  # # default values for pen -- evaled
+  # # This is useful for completion commands.
+  pen-defaults:
+  - "(detect-language)"
+  - "(pen-preceding-text)"
+  # These are elisp String->String functions and run from pen.el
+  # It probably runs earlier than the preprocessors shell scripts
+  pen-preprocessors:
+  - "pen-pf-correct-grammar"
+  # # A preprocessor filters the var at that position
+  # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
+  # # This may be useful to distinguish a block of text, for example
+  preprocessors:
+  - "sed 's/^/- /"
+  -
+  chomp-start: on
+  chomp-end: off
+  prefer-external: on
+  # This is an optional external command which may be used to perform the same task as the API.
+  # This can be used to train the prompt.
+  external: "generate-text-from-input.sh"
+  # This script returns a 0-1 decimal value representing the quality of the generated output.
+  quality-script: "my-quality-checker-for-this-prompt.sh"
+  # This script can be used to validate the output.
+  # If the output is accurate, the validation script returns exit code 1.
+  # The quality-script is sent to this script as the first argument.
+  validation-script: "my-validator-for-this-prompt.sh"
+  # Enable running conversation
+  conversation-mode: no
+  # Replace selected text
+  filter: no
+  # Keep stitching together until reaching this limit
+  # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+  stitch-max: 0
+  needs-work: no
+  n-test-runs: 5
+  # Prompt function aliases
+  aliases:
+  - "asktutor"
+  postprocessor: "sed 's/- //' | uniqnosort"
+  # # Run it n times and combine the output
+  n-collate: 10
+#+END_SRC
+
+** Tooling
+If you are looking for a tool which can load
+and make use of these =.prompt= files
+directly, you may use =pen.el=, a package of
+emacs that was used to generate them.
+
+https://github.com/mullikine/pen.el
+
+** Testing
+*** TODO Use =cucumber= for test cases

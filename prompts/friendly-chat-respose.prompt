@@ -1,0 +1,26 @@
+title: "friendly chat response"
+doc: "This is is how to respond in in a friendly way to some small talk"
+prompt: |+
+    You: What have you been up to?
+    Friend: Watching old movies.
+    You: Did you watch anything interesting?
+    Friend: I watched "The Sound of Music" and "The Wizard of Oz".
+    You: <1>
+engine: "davinci"
+temperature: 0.4
+max-tokens: 60
+top-p: 1
+frequency-penalty: 0.5
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "Friend:"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# A flag just for convenience-sake to find prompts which are designed to be chatbots
+conversation-mode: yes
+vars:
+- "question"
+examples:
+- "Have you had a good week?"

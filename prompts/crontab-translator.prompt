@@ -1,0 +1,65 @@
+title: "crontab translator"
+prompt-version: 5
+prompt: |+
+  /etc/crontab: system-wide crontab
+
+  ###
+  47 6 * * 6
+  # At 06:47 on Saturday.
+  ###
+  20 6 * * 7
+  # At 06:20 on Sunday.
+  ###
+  17 * * * *
+  # At minute 17.
+  ###
+  25 6 * * *
+  # At 06:25.
+  ###
+  6 9 * 7 0
+  # At 09:06 on Sunday in July.
+  ###
+  47 6 * * 7
+  # At 06:47 on Sunday.
+  ###
+  52 6 1 * *
+  # At 06:52 on day-of-month 1.
+  ###
+  5 10 31 5 0
+  # At 10:05 on day-of-month 31 and on Sunday in May.
+  ###
+  <1>
+problems:
+- "Struggles with the latter columns."
+engine: "davinci"
+temperature: 0.5
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+chomp-start: on
+chomp-end: off
+show-probabilities: off
+vars:
+- "tab"
+examples:
+- "30 7 * * *"
+preprocessors:
+- "sed 's/\\s\\+/ /g'"
+# The external command must take arguments, not stdin
+# So that all variables may be passed into it.
+external: "unstdinify interpret-crontab"
+# This compares the output of the external script to the output of the LM
+similarity-test:
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+postprocessor: "awk 1"
+example-formatter: ""

@@ -1,0 +1,44 @@
+title: "a list of reasons why"
+prompt-version: 1
+doc: |-
+    This is a generic completer.
+prompt: |+
+    I had to write down all the reasons why <1>
+    This is my list:
+    -
+engine: "davinci"
+temperature: 0.8
+max-tokens: 200
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+cache: on
+stop-sequences:
+- "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "text"
+# Ensure the last sentence ends with a full stop
+preprocessors::
+- "sed -z -e 's/\\s\\+$//' -e 's/\\.$//' -e 's/$/./'"
+examples:
+- "Recycling is good for the world"
+# Completion is for generating a company-mode completion function
+completion: on
+# default values for pen -- evaled
+# This is useful for completion commands.
+pen-defaults:
+- "(pen-preceding-text)"
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+postprocessor: "sed -e 's/^- //' -e 's/^-//' | sed 's/^/- /' | uniqnosort | sed -z 's/^/\\n/'"

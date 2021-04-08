@@ -1,0 +1,86 @@
+title: "subtopic generation"
+prompt-version: 2
+doc: "Given a topic, generate a list of subtopics"
+# <:pp> defines a point where the following
+# text is concatenated before the postprocessor
+# is run.
+prompt: |+
+    List a number of subtopics or fields of study
+    given a topic:
+
+    ###
+    7 subtopics of natural language processing / NLP:
+    - language modelling
+    - named entity recognition  
+    - sequence classification
+    - summarization
+    - text generation
+    - topic modelling
+    - translation
+    ###
+    8 fields of microbiology:
+    - Bacteriology
+    - Mycology
+    - Protozoology
+    - Phycology/algology
+    - Parasitology
+    - Immunology
+    - Virology
+    - Nematology
+    ###
+    6 subtopics of music theory:
+    - composition
+    - performance
+    - orchestration
+    - ornamentation
+    - improvisation
+    - electronic sound production
+    ###
+    3 subtopics of language modelling in NLP:
+    - casual language modelling
+    - masked language modelling
+    - text generation
+    ###
+    20 subtopics or fields within <1>, in no particular order:
+    <:pp><2>-
+engine: "myrc"
+preferred-openai-engine: "davinci"
+temperature: 0.8
+max-tokens: 200
+top-p: 1
+frequency-penalty: 0.8
+presence-penalty: 0.0
+best-of: 1
+# Only the first one will be used by the API,
+# but the completer script will use the others.
+# Currently the API can only accept one stop-sequence, but that may change.
+stop-sequences:
+- "###"
+- "\n\n"
+chomp-start: on
+chomp-end: off
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# Cache the function by default when running the prompt function
+cache: on
+vars:
+- "topic"
+- "existing subtopics"
+examples:
+- "Advanced Type Systems in Haskell"
+- |+
+  - Dependent Types
+  - Impredicative Types
+preprocessors:
+  -
+  - "awk 1"
+# External provides an alternate script that performs the same function
+# external:
+# - "extract-keyphrases"
+# The prompt often generates more than 20, even though 20 were requested
+# items past 20 usually drift, so cut them off?
+# I don't really want to waste. How about cut off at 30?
+postprocessor: "head -n 30 | sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\\+$/p' | uniqnosort"
+# Run it n times and combine the output
+n-collate: 2

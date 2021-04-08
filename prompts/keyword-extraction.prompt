@@ -1,0 +1,34 @@
+title: "keyword extraction"
+prompt-version: 2
+prompt: |+
+    Text:
+    <1>
+    ###
+    Keywords:
+engine: "davinci"
+temperature: 0.3
+max-tokens: 60
+top-p: 1
+frequency-penalty: 0.8
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+  - "text"
+examples:
+  - |-
+    GPT-3 showed that language can be used to instruct a large neural network
+    to perform a variety of text generation tasks. Image GPT showed that the
+    same type of neural network can also be used to generate images with high
+    fidelity. We extend these findings to show that manipulating visual
+    concepts through language is now within reach.
+# A preprocessor filters the var at that position
+# This may be useful to distinguish a block of text, for example
+# preprocessors:
+# - "cat"
+# External provides an alternate script that performs the same function
+external: "extract-keyphrases"

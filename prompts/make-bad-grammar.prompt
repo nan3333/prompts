@@ -1,0 +1,31 @@
+title: "bad grammar"
+prompt: |+
+    These are some examples of bad grammar.
+
+    Output: Anna and Mike are going skiing.
+    Input: Anna and Mike is going skiing.
+    ###
+    Output: Anna and Pat are married; they have been together for 20 years.
+    Input: Anna and Pat are married; he has been together for 20 years.
+    ###
+    Output: I walked to the store and I bought milk.
+    Input: I walk to the store and I bought milk.
+    ###
+    Output: <1>
+    Input:
+engine: "davinci"
+temperature: 0.9
+max-tokens: 60
+top-p: 1.0
+frequency-penalty: 0.0
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "sentence"
+examples:
+- "She went to the market."

@@ -1,0 +1,76 @@
+title: "In other words"
+doc: "Reword"
+aims: |+
+    More abstractive rewording.
+prompt-version: 1
+prompt: |+
+    Original text:
+    ###
+    Music hypothesis is the investigation of the practices and conceivable outcomes
+    of music. The Oxford Companion to Music depicts three interrelated employments
+    of the expression "music hypothesis".
+    ###
+    The above text has been reworded as follows:
+    ###
+    Music theory is the examination of the practices and possible results of music.
+    The Oxford Companion to Music portrays three interrelated livelihoods of the
+    articulation "music speculation".
+    ###
+    Original text:
+    ###
+    <1>
+    ###
+    The above text has been reworded as follows:
+    ###
+engine: "myrc"
+preferred-openai-engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.8
+max-tokens: 60
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n"
+# - "\n\n"
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# Cache the function by default when running the prompt function
+cache: on
+vars:
+- "text"
+examples:
+- "I just wanted to say that I love you."
+# completion: on
+# # default values for pen -- evaled
+# # This is useful for completion commands.
+# pen-defaults:
+# - "(detect-language)"
+# - "(pen-preceding-text)"
+# # A preprocessor filters the var at that position
+# # This may be useful to distinguish a block of text, for example
+# preprocessors:
+# - "sed 's/^/- /"
+# - "cat"
+chomp-start: on
+chomp-end: off
+prefer-external: on
+external: ""
+external-web-service: "https://paraphrasing-tool.com/"
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+# Prompt function aliases
+aliases:
+- "paraphrase"
+# postprocessor: "sed 's/- //' | uniqnosort"

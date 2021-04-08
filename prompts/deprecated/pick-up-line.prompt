@@ -1,0 +1,64 @@
+title: "generate pick up line"
+doc: "Generate pick up lines from a topic"
+prompt: |+
+    The following are witty openers for Tinder:
+    ###
+    TOPIC: BOOKS
+    OPENERS:
+    I’m starting a book club, but my house is too small.
+    Which Harry Potter house do you belong to?
+    If you were asked to live your life as any book character, which one would you choose?
+    Tell me three things you have in common with your favorite book character.
+    Have you ever swam through an entire book?
+    What book had the biggest impact on your life?
+    ###
+    TOPIC: PSYCHOLOGY
+    OPENERS:
+    Have you ever had two days in a row where you didn’t text anyone?
+    Are you a certified psychologist?
+    Do you give pro-bono therapy?
+    What’s the difference between you and a psychologist?
+    Are you an expert on human behavior?
+    ###
+    TOPIC: COFFEE
+    You make my heart race like caffeine.
+    ###
+    TOPIC: <1>
+    OPENERS:
+engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+
+## 1.0 makes the daydream pickuplines ever. i love it
+# temperature: 1.0
+
+# 0.8 is normal
+temperature: 0.8
+max-tokens: 200
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+# This is generally expensive, but may be cheaper than sending the prompt every time
+stop-sequences:
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "topic"
+examples:
+- "music"
+chomp-start: on
+chomp-end: off
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+# # Although the max-tokens may be 200, attempt to generate to 300.
+# generate-to: 300

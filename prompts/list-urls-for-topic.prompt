@@ -1,0 +1,67 @@
+title: "Search the web for relevant links to do with topic"
+prompt-version: 1
+doc: "This is like google search"
+prompt: |+
+    Google search results:
+
+    ###
+    Query: Birds
+    - https://en.wikipedia.org/wiki/Bird
+    - https://www.nationalgeographic.com/animals/birds/
+    - https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/
+    - https://www.britannica.com/animal/bird-animal
+    - https://simple.wikipedia.org/wiki/Bird
+    - https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/
+    - https://www.birds.com/
+    ###
+    Query: buy video games
+    - https://www.ebay.com.au/b/Video-Games/139973/bn_504121?mkevt=1&mkcid=1&mkrid=705-53470-19255-0&campid=5336728181&customid=&toolid=10001
+    - https://www.ebgames.com.au/
+    - https://www.amazon.com/Game-Downloads/b?ie=UTF8&node=979455011
+    - https://www.ebay.com/t/Video-Games/139973/bn_320034?mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5336728181&customid=&toolid=10001
+    - https://gameflip.com/shop/games
+    - https://www.ebay.com.sg/b/Video-Games/139973/bn_320034
+    - https://www.ebay.ca/b/Video-Games-Consoles/1249/bn_1850232?mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5336728181&customid=&toolid=10001
+    - https://www.jjgames.com/
+    ###
+    Query: <1>
+    -
+engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.8
+max-tokens: 60
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n"
+# - "\n\n"
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# Cache the function by default when running the prompt function
+cache: on
+vars:
+- "query"
+examples:
+- "artificial intelligence"
+chomp-start: on
+chomp-end: off
+prefer-external: on
+external: "gl"
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+# Prompt function aliases
+aliases:
+- "google search"
+postprocessor: "sed '/^- /s/- //p' | sed '/^-/d' | uniqnosort"

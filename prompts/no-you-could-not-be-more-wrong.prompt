@@ -1,0 +1,47 @@
+title: "no, you could not be more wrong"
+prompt-version: 1
+doc: |-
+    This is a completer that refutes what you just said.
+prompt: |+
+    The following is an excerpt of an argument on reddit:
+    ###
+    Your claim that "<1>" is so incorrect. You could not be more wrong.
+    Firstly,
+engine: "davinci"
+temperature: 0.8
+max-tokens: 200
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+cache: on
+stop-sequences:
+- "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "text"
+# Ensure the last sentence ends with a full stop
+# preprocessors::
+# - "sed -z -e 's/\\s\\+$//' -e 's/\\.$//' -e 's/$/./'"
+examples:
+- "Recycling is good for the world"
+# Completion is for generating a company-mode completion function
+completion: off
+# default values for pen -- evaled
+# This is useful for completion commands.
+pen-defaults:
+- "(pen-preceding-text)"
+external: ""
+chomp-start: on
+chomp-end: off
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+postprocessor: "ttp"

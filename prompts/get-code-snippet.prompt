@@ -1,0 +1,52 @@
+title: "Get code snippet"
+future-titles:
+- "Get code snippet"
+# Any language
+- "Get snippet"
+doc: ""
+prompt: |+
+    contents
+    
+    <1> are like <2> in that
+engine: "myrc"
+preferred-openai-engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.8
+max-tokens: 60
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n"
+# - "\n\n"
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# Cache the function by default when running the prompt function
+cache: on
+vars:
+- "language"
+- "description"
+examples:
+- "emacs lisp"
+- "get visible text"
+chomp-start: on
+chomp-end: off
+prefer-external: on
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+# Prompt function aliases
+# aliases:
+# - "asktutor"
+# postprocessor: "sed 's/- //' | uniqnosort"

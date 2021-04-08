@@ -1,0 +1,74 @@
+title: "List songs given an artist or album"
+doc: "Given the title of a band or an album, list some popular songs."
+prompt: |+
+    Given the title of a band or an album, list some popular songs.
+
+    ###
+    6 songs by Red Hot Chili Peppers
+    Track list:
+    - Under the Bridge
+    - Dani California
+    - Californication
+    - By The Way
+    - Higher Ground
+    - Tell Me Baby
+    ###
+    4 songs. Nirvana, Bleach
+    Track list:
+    - Love Buzz
+    - Blew
+    - School
+    - Mr Moustache
+    ###
+    3 songs. Dark side of the moon
+    Track list:
+    - Money
+    - Time
+    - The Great Gig in the Sky
+    ###
+    20 songs. <1>
+    Track list:
+    -
+engine: "myrc"
+preferred-openai-engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.5
+max-tokens: 60
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n"
+# - "\n\n"
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# Cache the function by default when running the prompt function
+cache: on
+vars:
+- "Artist/Album"
+examples:
+- "Beatles"
+chomp-start: on
+chomp-end: off
+prefer-external: on
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+# Prompt function aliases
+# aliases:
+# - "asktutor"
+postprocessor: "sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\\+$/p' | uniqnosort"
+# This for combining prompts:
+# It might be, for example, summarize, or uniqnosort
+collation-postprocessor: "uniqnosort"

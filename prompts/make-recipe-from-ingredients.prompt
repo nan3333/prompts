@@ -1,0 +1,82 @@
+title: "Make recipe from ingredients"
+# future-titles: ""
+# aims: |+
+# - More abstractive rewording
+doc: "Given a list of ingredients, come up with the name of a recipe"
+# aims: |+
+# - More abstractive rewording
+prompt-version: 1
+prompt: |+
+    contents
+    
+    <1> are like <2> in that
+# # Additional transformation of prompt after the template
+# prompt-filter: "sed -z 's/\s\+$//'"
+# # Trailing whitespace is always removed
+# prompt-remove-trailing-whitespace: on
+# myrc will select the completion engine using my config.
+# This may be openi-complete or something else
+engine: "myrc"
+# if nothing is selected in myrc and openapi-complete is used
+# by default, then openai should select this engine.
+preferred-openai-engine: "davinci"
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.8
+max-tokens: 60
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n"
+# - "\n\n"
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+# Cache the function by default when running the prompt function
+cache: on
+vars:
+- "former"
+- "latter"
+examples:
+- "boysenberries"
+- "strawberries"
+# Completion is for generating a company-mode completion function
+# completion: on
+# # default values for pen -- evaled
+# # This is useful for completion commands.
+# pen-defaults:
+# - "(detect-language)"
+# - "(pen-preceding-text)"
+# These are elisp String->String functions and run from pen.el
+# It probably runs earlier than the preprocessors shell scripts
+pen-preprocessors:
+- "pen-pf-correct-grammar"
+# # A preprocessor filters the var at that position
+# the current implementation of preprocessors is kinda slow and will add ~100ml per variable
+# # This may be useful to distinguish a block of text, for example
+# preprocessors:
+# - "sed 's/^/- /"
+# - "cat"
+chomp-start: on
+chomp-end: off
+prefer-external: on
+external: ""
+# Enable running conversation
+conversation-mode: no
+# Replace selected text
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
+n-test-runs: 5
+# Prompt function aliases
+# aliases:
+# - "asktutor"
+# postprocessor: "sed 's/- //' | uniqnosort"

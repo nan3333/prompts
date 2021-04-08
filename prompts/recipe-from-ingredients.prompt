@@ -1,0 +1,39 @@
+title: "Generate recipe instructions from name and ingredients"
+doc: ""
+prompt: |+
+    Write a recipe based on these ingredients and instructions:
+    
+    <1>
+    
+    Directions:
+engine: "davinci-instruct-beta"
+temperature: 0
+max-tokens: 120
+top-p: 1.0
+frequency-penalty: 0.0
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n\n"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "ingredients-and-instructions"
+examples:
+- |-
+    Frito Pie
+    
+    Ingredients:
+    Fritos
+    Chili
+    Shredded cheddar cheese
+    Sweet white or red onions, diced small
+    Sour cream
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
