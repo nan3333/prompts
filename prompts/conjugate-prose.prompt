@@ -48,8 +48,8 @@ preferred-openai-engine: "davinci"
 # 0.0 = /r/hadastroke
 # 1.0 = /r/iamveryrandom
 # Use 0.3-0.8
-temperature: 0.8
-max-tokens: 60
+temperature: 0.3
+max-tokens: 200
 top-p: 1.0
 # Not available yet: openai api completions.create --help
 frequency-penalty: 0.5
@@ -71,11 +71,11 @@ show-probabilities: off
 # Cache the function by default when running the prompt function
 cache: on
 vars:
-- "former"
-- "latter"
+- "first segment"
+- "second segment"
 examples:
-- "boysenberries"
-- "strawberries"
+- "Given a sentence which may have"
+- "may have incorrect spelling or grammar, correct it."
 # Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
