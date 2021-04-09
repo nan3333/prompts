@@ -43,6 +43,8 @@ stop-sequences:
 - "~~~"
 inject-start-text: yes
 inject-restart-text: yes
+chomp-start: on
+chomp-end: off
 show-probabilities: off
 vars:
 - "poor english"
