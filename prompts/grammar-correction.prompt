@@ -5,7 +5,7 @@ prompt: |+
     Standard American English:
 engine: "davinci"
 temperature: 0
-max-tokens: 60
+max-tokens: 200
 top-p: 1.0
 frequency-penalty: 0.0
 presence-penalty: 0.0
