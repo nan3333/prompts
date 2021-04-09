@@ -1,8 +1,10 @@
-title: "Conjugate prose"
+title: "Conjugate prose syntactically"
+aliases:
+- "syntactic-meld"
 # future-titles: ""
 # aims: |+
 # - More abstractive rewording
-doc: "Given ... title"
+doc: "Given two text snippets, join them together intelligently and syntactically"
 # aims: |+
 # - More abstractive rewording
 prompt-version: 1
@@ -11,9 +13,26 @@ prompt-version: 1
 # is run.
 # <1>, <2> etc. are where variables are substituted
 prompt: |+
-    contents
-    
-    <1> are like <2> in that
+    ###
+    Please provide me with a short brief
+    a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+    ~~~
+    Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+    ###
+    If I’m stressed out
+    something, I tend to have a problem falling asleep.
+    ~~~
+    If I’m stressed out about something, I
+    tend to have a problem falling asleep.
+    ###
+    There is plenty of fun things to do in the summer
+    in the summer when your able to go outside.
+    ~~~
+    There is plenty of fun things to do in the summer when your able to go outside.
+    ###
+    <1>
+    <2>
+    ~~~
 problems:
 - "Struggles with the latter columns."
 # # Additional transformation of prompt after the template
@@ -105,9 +124,7 @@ filter: no
 stitch-max: 0
 needs-work: no
 n-test-runs: 5
-# Prompt function aliases
-# aliases:
-# - "asktutor"
+
 # postprocessor: "sed 's/- //' | uniqnosort"
 # # Run it n times and combine the output
 # n-collate: 10
