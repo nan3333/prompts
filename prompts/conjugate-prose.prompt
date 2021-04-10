@@ -33,6 +33,7 @@ prompt: |+
     <1>
     <2>
     ~~~
+engine: "myrc"
 # problems:
 # - "Struggles with the latter columns."
 # # Additional transformation of prompt after the template
@@ -41,7 +42,6 @@ prompt: |+
 # prompt-remove-trailing-whitespace: on
 # myrc will select the completion engine using my config.
 # This may be openi-complete or something else
-engine: "myrc"
 # if nothing is selected in myrc and openapi-complete is used
 # by default, then openai should select this engine.
 preferred-openai-engine: "davinci"
