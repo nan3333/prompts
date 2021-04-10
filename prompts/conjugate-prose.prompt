@@ -124,7 +124,8 @@ filter: no
 stitch-max: 0
 needs-work: no
 n-test-runs: 5
-
+test-output: |+
+    Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
 # postprocessor: "sed 's/- //' | uniqnosort"
 # # Run it n times and combine the output
 # n-collate: 10
