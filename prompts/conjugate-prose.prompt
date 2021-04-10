@@ -76,8 +76,7 @@ vars:
 examples:
 - "Given a sentence which may have"
 - "may have incorrect spelling or grammar, correct it."
-test-output: |+
-    Given a sentence which may have incorrect spelling or grammar, correct it.
+test-output: "Given a sentence which may have incorrect spelling or grammar, correct it."
 # Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
