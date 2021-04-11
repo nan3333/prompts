@@ -11,9 +11,12 @@ prompt-version: 1
 # is run.
 # <1>, <2> etc. are where variables are substituted
 prompt: |+
-    contents
+    Come up with a sentence that touches on all given topics.
+
+    ###
+    Topics:
     
-    <1> are like <2> in that
+    Topics: <1>
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
 # - "Struggles with the latter columns."

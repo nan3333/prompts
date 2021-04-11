@@ -5,7 +5,10 @@ This is a free and open-source (FOSS) curation of prompts for OpenAI's GPT-3.
 |---------|
 | *GPL-3* |
 
-** Test results go here
+** Prompts are automatically tested under any branch
+Create your own branch and commit to it.
+
+*** Test results go here
 https://github.com/semiosis/prompt-tests/
 
 ** The =.prompt= file format
