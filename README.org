@@ -14,11 +14,7 @@ https://github.com/semiosis/prompt-tests/
 ** The =.prompt= file format
 This is the format I have used to organise
 these prompts. It is =yaml= with a schema,
-which is not yet defined.
-
-This file is as good as any currently as an example of the schema.
-
-** [[./prompts/meeting-bullets-to-summary.prompt]]
+which is rapidly growing.
 
 This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
