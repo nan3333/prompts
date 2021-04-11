@@ -20,7 +20,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
 This is a very basic =.prompt= file that should work.
 
-#+BEGIN_SRC python -n :i mypython :async :results verbatim code
+#+BEGIN_SRC yaml -n :async :results verbatim code
   title: "My new prompt"
   # Make sure to increment the prompt-version every time you update
   # so they will be tested.
