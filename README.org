@@ -20,7 +20,7 @@ This file is as good as any currently as an example of the schema.
 
 ** [[./prompts/meeting-bullets-to-summary.prompt]]
 
-This =YASnippet= contains an explanation of the =.prompt= file format.
+This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
   title: "${1:title}"
