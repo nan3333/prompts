@@ -1,3 +1,4 @@
+in-development: yes
 title: "Generate a sentence containing multiple topics"
 # future-titles: ""
 # aims: |+
@@ -108,7 +109,7 @@ filter: no
 # Keep stitching together until reaching this limit
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
-needs-work: no
+needs-work: yes
 n-test-runs: 5
 # Prompt function aliases
 # aliases:
