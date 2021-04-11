@@ -20,44 +20,7 @@ This file is as good as any currently as an example of the schema.
 
 ** [[./prompts/meeting-bullets-to-summary.prompt]]
 
-#+BEGIN_SRC yaml -n :async :results verbatim code
-  title: "meeting bullet points to summary"
-  prompt: |+
-      Convert my short hand into a first-hand account of the meeting:
-
-      <1>
-
-      Summary:
-  engine: "davinci-instruct-beta"
-  temperature: 0.7
-  max-tokens: 60
-  top-p: 1
-  frequency-penalty: 0.0
-  presence-penalty: 0.0
-  best-of: 1
-  stop-sequences:
-  - "\n\n"
-  inject-start-text: yes
-  inject-restart-text: yes
-  show-probabilities: off
-  # A flag just for convenience-sake to find prompts which are designed to be chatbots
-  conversation-mode: no
-  # Keep stitching together until reaching this limit
-  # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
-  stitch-max: 0
-  vars:
-  - "notes"
-  examples:
-  - |+
-      Tom: Profits up 50%
-      Jane: New servers are online
-      Kjel: Need more time to fix software
-      Jane: Happy to help
-      Parkman: Beta testing almost done
-#+END_SRC
-
-** Prompt file snippet
-This contains an explanation of the =.prompt= file format.
+This =YASnippet= contains an explanation of the =.prompt= file format.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
   title: "${1:title}"
