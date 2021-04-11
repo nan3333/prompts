@@ -6,7 +6,7 @@ This is a free and open-source (FOSS) curation of prompts for OpenAI's GPT-3.
 | *GPL-3* |
 
 ** Prompts are automatically tested under any branch
-Create your own branch and commit to it.
+Create your own branch, push and commit to it.
 
 *** Test results go here
 https://github.com/semiosis/prompt-tests/
