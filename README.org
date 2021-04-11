@@ -16,8 +16,6 @@ This is the format I have used to organise
 these prompts. It is =yaml= with a schema,
 which is rapidly growing.
 
-This =YASnippet= snippet contains an explanation of the =.prompt= file format.
-
 This is a very basic =.prompt= file that should work.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
@@ -29,6 +27,8 @@ This is a very basic =.prompt= file that should work.
   temperature: 0.8
   max-tokens: 60
 #+END_SRC
+
+This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
   title: "${1:title}"
