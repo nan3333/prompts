@@ -17,12 +17,28 @@ prompt-version: 1
 # <1> is special because it may be the current selection
 # <2> May be inferred from <1> via a prompt.
 # This way, a function can be curried/beta-reduced to a function of 1 argument.
+# Use the markdown style
 prompt: |+
     Annotate the code with comments.
 
-    Language: awk
     Code:
+    ```awk
+    BEGIN {
+        window = 4
+        slide = 2
+    }
+    
+    {
+        if(NR == 1)
+            print "coord",$6,$7
+    }
+
+    (NR % slide) == 0 {
+        print NR,sum/count,sum2/count
+    }
+    ```
     Annotated code:
+    ```awk
     # When the program starts
     BEGIN {
         # Set window and slide
@@ -37,31 +53,19 @@ prompt: |+
             print "coord",$6,$7
     }
 
-    # For each record in the file
-    {
-        mod = NR % window
-        if (NR <= window)
-        {
-            # increment the counter
-            count++
-        } else {
-            # Decrement the sums
-            sum -= array[mod]
-            sum2 -= array2[mod]
-        }
-        # Incrememnt the sums
-        sum += $6
-        sum2 += $7
-        array[mod] = $6
-        array2[mod] = $7
-    }
-
     # For every slidth line
     (NR % slide) == 0 {
         # print the record number and averages
         print NR,sum/count,sum2/count
     }
-    <1> are like <2> in that
+    ```
+    ###
+    Code:
+    ```<2>
+    <1>
+    ```
+    Annotated code:
+    ```<2>
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
 # - "Struggles with the latter columns."
@@ -94,7 +98,8 @@ stop-sequences:
 # - "\n\n"
 # 2 hashes is more reliable as a stop sequence because
 # sometimes the generation morphs from ### to ##
-- "##"
+# - "##"
+- "```"
 # inject-start-text: yes
 # inject-restart-text: yes
 # show-probabilities: off
@@ -116,8 +121,8 @@ examples:
 # - "(pen-preceding-text)"
 # These are elisp String->String functions and run from pen.el
 # It probably runs earlier than the preprocessors shell scripts
-pen-preprocessors:
-- "pen-pf-correct-grammar"
+# pen-preprocessors:
+# - "pen-pf-correct-grammar"
 # # A preprocessor filters the var at that position
 # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
 # # This may be useful to distinguish a block of text, for example
@@ -131,13 +136,13 @@ prefer-external: on
 # This can be used to train the prompt.
 # The external command must take arguments, not stdin
 # So that all variables may be passed into it.
-external: "generate-text-from-input.sh"
+# external: "generate-text-from-input.sh"
 # This compares the output of the external script to the output of the LM
-similarity-test:
+# similarity-test:
 # This script returns a 0-1 decimal value representing the quality of the generated output.
 # The input is 2 arguments each containing output
 # The output is a decimal number from 0 to 1
-quality-script: "my-quality-checker-for-this-prompt.sh"
+# quality-script: "my-quality-checker-for-this-prompt.sh"
 # This script can be used to validate the output.
 # If the output is accurate, the validation script returns exit code 1.
 # The input is 2 arguments each containing output
