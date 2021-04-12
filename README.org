@@ -31,10 +31,19 @@ This is a very basic =.prompt= file that should work.
 This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
+  # -*- mode: snippet -*-
+  # name: prompt
+  # group: prompt-engineering
+  # key: pr
+  # expand-env: ((yas-indent-line 'fixed))
+  # --
+  in-development: yes
   title: "${1:title}"
+  todo:
+  design-patterns:
   # future-titles: ""
-  aims: |+
-  - More abstractive rewording
+  # aims: |+
+  # - More abstractive rewording
   doc: "Given ... ${1:title}"
   # aims: |+
   # - More abstractive rewording
@@ -43,13 +52,19 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # text is concatenated before the postprocessor
   # is run.
   # <1>, <2> etc. are where variables are substituted
+  # <1> is special because it may be the current selection
+  # <2> May be inferred from <1> via a prompt.
+  # This way, a function can be curried/beta-reduced to a function of 1 argument.
   prompt: |+
       ${2:contents}
-
+    
       <1> are like <2> in that
+  problems:
+  # Put problems directly after the prompt because the prompt is a multiline string.
+  # - "Struggles with the latter columns."
   # # Additional transformation of prompt after the template
-  prompt-filter: "sed -z 's/\\s\\+$//'"
-  # Trailing whitespace is always removed
+  # prompt-filter: "sed -z 's/\\s\\+$//'"
+  # # Trailing whitespace is always removed
   # prompt-remove-trailing-whitespace: on
   # myrc will select the completion engine using my config.
   # This may be openi-complete or something else
@@ -72,11 +87,14 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # but the completer script will use the others.
   # Currently the API can only accept one stop-sequence, but that may change.
   stop-sequences:
-  - "###"
-  - "\n\n"
-  inject-start-text: yes
-  inject-restart-text: yes
-  show-probabilities: off
+  # - "\\n"
+  # - "\\n\\n"
+  # 2 hashes is more reliable as a stop sequence because
+  # sometimes the generation morphs from ### to ##
+  - "##"
+  # inject-start-text: yes
+  # inject-restart-text: yes
+  # show-probabilities: off
   # Cache the function by default when running the prompt function
   cache: on
   vars:
@@ -85,13 +103,14 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   examples:
   - "boysenberries"
   - "strawberries"
+  # test-output: "both are types of berry"
   # Completion is for generating a company-mode completion function
-  completion: on
+  # completion: on
   # # default values for pen -- evaled
   # # This is useful for completion commands.
-  pen-defaults:
-  - "(detect-language)"
-  - "(pen-preceding-text)"
+  # pen-defaults:
+  # - "(detect-language)"
+  # - "(pen-preceding-text)"
   # These are elisp String->String functions and run from pen.el
   # It probably runs earlier than the preprocessors shell scripts
   pen-preprocessors:
@@ -99,23 +118,33 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # # A preprocessor filters the var at that position
   # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
   # # This may be useful to distinguish a block of text, for example
-  preprocessors:
-  - "sed 's/^/- /"
-  -
+  # preprocessors:
+  # - "sed 's/^/- /"
+  # - "cat"
   chomp-start: on
   chomp-end: off
   prefer-external: on
   # This is an optional external command which may be used to perform the same task as the API.
   # This can be used to train the prompt.
+  # The external command must take arguments, not stdin
+  # So that all variables may be passed into it.
   external: "generate-text-from-input.sh"
+  # This compares the output of the external script to the output of the LM
+  similarity-test:
   # This script returns a 0-1 decimal value representing the quality of the generated output.
+  # The input is 2 arguments each containing output
+  # The output is a decimal number from 0 to 1
   quality-script: "my-quality-checker-for-this-prompt.sh"
   # This script can be used to validate the output.
   # If the output is accurate, the validation script returns exit code 1.
-  # The quality-script is sent to this script as the first argument.
+  # The input is 2 arguments each containing output
   validation-script: "my-validator-for-this-prompt.sh"
   # Enable running conversation
   conversation-mode: no
+  # This is the name of an external database-driven pretext generator.
+  # It would typically summarize and fact extract from history.
+  # It then passes the pretext to the new prompt.
+  # conversation-pretext-generator: "human-conversation"
   # Replace selected text
   filter: no
   # Keep stitching together until reaching this limit
@@ -124,11 +153,19 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   needs-work: no
   n-test-runs: 5
   # Prompt function aliases
-  aliases:
-  - "asktutor"
-  postprocessor: "sed 's/- //' | uniqnosort"
+  # aliases:
+  # - "asktutor"
+  # postprocessor: "sed 's/- //' | uniqnosort"
   # # Run it n times and combine the output
-  n-collate: 10
+  # n-collate: 10
+  # This for combining prompts:
+  # It might be, for example, summarize, or uniqnosort
+  # collation-postprocessor: "uniqnosort"
+  # examplary continuation function
+  # prompts are not stitched together / composed but examplary functions are
+  # <g> is the existing generation
+  # <1> is a variable
+  continuation-function: "list-of <1> <g>"
 #+END_SRC
 
 ** Tooling
