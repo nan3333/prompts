@@ -60,6 +60,6 @@ filter: no
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
 # \s must be escaped here or it breaks yaml
-postprocessor: "sed 's/\\s*/ /g' | s join ' '"
+postprocessor: "sed 's/\\s\\+/ /g' | s join ' '"
 # Optional extra command to run after the postprocessor
 prettifier: "tpp"
