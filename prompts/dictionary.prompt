@@ -59,3 +59,4 @@ filter: no
 # Keep stitching together until reaching this limit
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
+postprocessor: "sed 's/\s*/ /g' | s join ' '"
