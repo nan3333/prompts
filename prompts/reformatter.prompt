@@ -1,4 +1,6 @@
 in-development: yes
+todo:
+  - "since this does not reliably generate starting whitespace, combine with emacs TAB"
 title: "Code Reformatter"
 # future-titles: ""
 # aims: |+
