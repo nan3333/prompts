@@ -45,3 +45,6 @@ filter: no
 stitch-max: 0
 needs-work: no
 postprocessor: "sed 's/,/\\n/g'"
+# examplary continuation function
+# prompts are not stitched together / composed but examplary functions are
+continuation-function:
