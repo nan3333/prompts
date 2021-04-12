@@ -106,8 +106,8 @@ stop-sequences:
 # Cache the function by default when running the prompt function
 cache: on
 vars:
-- "former"
-- "latter"
+- "code"
+- "language"
 examples:
 - "boysenberries"
 - "strawberries"
@@ -146,7 +146,7 @@ prefer-external: on
 # This script can be used to validate the output.
 # If the output is accurate, the validation script returns exit code 1.
 # The input is 2 arguments each containing output
-validation-script: "my-validator-for-this-prompt.sh"
+# validation-script: "my-validator-for-this-prompt.sh"
 # Enable running conversation
 conversation-mode: no
 # This is the name of an external database-driven pretext generator.
