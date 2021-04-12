@@ -24,7 +24,7 @@ prompt: |+
     Language: perl
     Code:
     # print the time line on top
-    my $step = ($maxtime - $firsttime) / 15; while ($time < $maxtime) { my $s3 = ($time - $firsttime) * $mult; my $tm = int($time * 100) / 100.0; $time = $time + $step; }; print "</svg>\n";
+    my $step=($maxtime - $firsttime) / 15;while ($time < $maxtime) { my $s3=($time - $firsttime) * $mult;my $tm=int($time * 100) / 100.0;$time=$time + $step;};print "</svg>\n";
     Tidied code:
     # print the time line on top
     my $step = ($maxtime - $firsttime) / 15;
