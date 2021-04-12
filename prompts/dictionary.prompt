@@ -60,3 +60,5 @@ filter: no
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
 postprocessor: "sed 's/\s*/ /g' | s join ' '"
+# Optional extra command to run after the postprocessor
+prettifier: "tpp"
