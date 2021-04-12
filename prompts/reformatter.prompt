@@ -14,18 +14,17 @@ prompt-version: 1
 prompt: |+
     Reformat/tidy the following code:
 
+    ###
     Language: perl
     Code:
     # print the time line on top
-    my $time = $firsttime; my $step = ($maxtime - $firsttime) / 15; while ($time < $maxtime) { my $s3 = ($time - $firsttime) * $mult; my $tm = int($time * 100) / 100.0; print "<text transform=\"translate($s3,89) rotate(90)\">$tm</text>\n"; $time = $time + $step; }; print "</svg>\n";
+    my $step = ($maxtime - $firsttime) / 15; while ($time < $maxtime) { my $s3 = ($time - $firsttime) * $mult; my $tm = int($time * 100) / 100.0; $time = $time + $step; }; print "</svg>\n";
     Tidied code:
     # print the time line on top
-    my $time = $firsttime;
     my $step = ($maxtime - $firsttime) / 15;
     while ($time < $maxtime) {
         my $s3 = ($time - $firsttime) * $mult;
         my $tm = int($time * 100) / 100.0;
-        print "<text transform=\"translate($s3,89) rotate(90)\">$tm</text>\n";
         $time = $time + $step;
     }
 
@@ -92,8 +91,8 @@ vars:
 - "language"
 - "code"
 examples:
-- "haskell"
-- "strawberries"
+- "bash"
+- "if is_tty; then z \"$dn/${mant}.pdf\"; else echo \"$dn/${mant}.pdf\"; fi"
 # test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
 # completion: on
@@ -104,8 +103,8 @@ examples:
 # - "(pen-preceding-text)"
 # These are elisp String->String functions and run from pen.el
 # It probably runs earlier than the preprocessors shell scripts
-pen-preprocessors:
-- "pen-pf-correct-grammar"
+# pen-preprocessors:
+# - "pen-pf-correct-grammar"
 # # A preprocessor filters the var at that position
 # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
 # # This may be useful to distinguish a block of text, for example
