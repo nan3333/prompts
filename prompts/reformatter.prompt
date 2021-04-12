@@ -3,6 +3,7 @@ todo:
   - "since this does not reliably generate starting whitespace, combine with emacs TAB"
   - "http://github.com/mullikine/code-org-tidbits-tasks/blob/master/fix-prompt-result-var-substitution.org"
 design-patterns:
+  # $MYGIT/semiosis/prompt-design-patterns/patterns/multi-language-block.org
   - "multi-language-block"
 title: "Code Reformatter"
 # future-titles: ""
