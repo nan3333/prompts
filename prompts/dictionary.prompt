@@ -10,17 +10,17 @@ prompt: |+
         A piece of equipment or furniture which is
         fixed in position in a building or
         vehicle.
-    
+  
     operatic
         extravagantly theatrical; histrionic.
-    
+  
     vestige
         A trace or remnant of something that is
         disappearing or no longer exists.
-    
+  
     ossified
         Turn into bone or bony tissue.
-    
+  
     onerous
         (of a task or responsibility) involving a
         great deal of effort, trouble, or
@@ -59,6 +59,7 @@ filter: no
 # Keep stitching together until reaching this limit
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
-postprocessor: "sed 's/\s*/ /g' | s join ' '"
+# \s must be escaped here or it breaks yaml
+postprocessor: "sed 's/\\s*/ /g' | s join ' '"
 # Optional extra command to run after the postprocessor
 prettifier: "tpp"
