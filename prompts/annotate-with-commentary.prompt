@@ -45,9 +45,11 @@ prompt: |+
             # increment the counter
             count++
         } else {
+            # Decrement the sums
             sum -= array[mod]
             sum2 -= array2[mod]
         }
+        # Incrememnt the sums
         sum += $6
         sum2 += $7
         array[mod] = $6
@@ -59,7 +61,6 @@ prompt: |+
         # print the record number and averages
         print NR,sum/count,sum2/count
     }
-
     <1> are like <2> in that
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
