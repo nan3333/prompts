@@ -49,4 +49,4 @@ postprocessor: "sed 's/,/\\n/g'"
 # prompts are not stitched together / composed but examplary functions are
 # <g> is the existing generation
 continuation-function:
-  "list-of <g>"
+  "list-of <1> <g>"
