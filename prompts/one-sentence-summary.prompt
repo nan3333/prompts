@@ -1,0 +1,27 @@
+title: "One-sentence summary"
+prompt: |+
+    <1>
+    
+    One-sentence summary:
+# This is for document-generation-mode
+heading-name: "This is a summary of the above text"
+can-complete: on
+engine: "davinci"
+temperature: 0.3
+max-tokens: 64
+top-p: 1
+frequency-penalty: 0.0
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n"
+inject-start-text: yes
+inject-restart-text: yes
+chomp-start: on
+chomp-end: on
+vars:
+  - "passage"
+# External provides an alternate script that performs the same function
+external:
+- "summarize-passage"
+show-probabilities: off
