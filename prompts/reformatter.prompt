@@ -1,7 +1,9 @@
 in-development: yes
 todo:
   - "since this does not reliably generate starting whitespace, combine with emacs TAB"
-  - "http://github.com/mullikine/code-org-tidbits-tasks/blob/master/fix-prompt-result-var-substitution.org
+  - "http://github.com/mullikine/code-org-tidbits-tasks/blob/master/fix-prompt-result-var-substitution.org"
+design-patterns:
+  - "multi-language-block"
 title: "Code Reformatter"
 # future-titles: ""
 # aims: |+
