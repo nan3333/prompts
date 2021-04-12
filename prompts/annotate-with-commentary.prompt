@@ -109,7 +109,7 @@ vars:
 - "code"
 - "language"
 examples:
-- "boysenberries"
+- "fibs = 0 : 1 : zipWith (+) fibs (tail fibs)"
 - "haskell"
 # test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
