@@ -9,7 +9,7 @@ design-patterns:
 doc: "Given code with comments lacking, add comments to it"
 # aims: |+
 # - More abstractive rewording
-prompt-version: 2
+prompt-version: 3
 # <:pp> defines a point where the following
 # text is concatenated before the postprocessor
 # is run.
