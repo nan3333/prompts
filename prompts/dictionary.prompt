@@ -1,4 +1,6 @@
 title: "define word for glossary"
+aliases:
+  - "define word"
 prompt-version: 1
 doc: "Get a short definition of a term for the glossary system."
 prompt: |+
