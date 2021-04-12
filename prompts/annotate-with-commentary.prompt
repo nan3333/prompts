@@ -110,7 +110,7 @@ vars:
 - "language"
 examples:
 - "boysenberries"
-- "strawberries"
+- "haskell"
 # test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
 # completion: on
