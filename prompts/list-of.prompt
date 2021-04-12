@@ -48,5 +48,6 @@ postprocessor: "sed 's/,/\\n/g'"
 # examplary continuation function
 # prompts are not stitched together / composed but examplary functions are
 # <g> is the existing generation
+# <1> is a variable
 continuation-function:
   "list-of <1> <g>"
