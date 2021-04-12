@@ -1,5 +1,7 @@
 in-development: no
 title: "Annotate code with commentary"
+issues:
+  - "It appears to not have a large effective window"
 design-patterns:
   # http://github.com/semiosis/prompt-design-patterns/blob/master/patterns/multi-language-block.org
   - "multi-language-block"
