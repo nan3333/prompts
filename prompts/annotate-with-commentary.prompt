@@ -1,4 +1,4 @@
-in-development: yes
+in-development: no
 title: "Annotate code with commentary"
 design-patterns:
   # http://github.com/semiosis/prompt-design-patterns/blob/master/patterns/multi-language-block.org
