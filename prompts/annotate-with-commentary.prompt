@@ -18,8 +18,48 @@ prompt-version: 1
 # <2> May be inferred from <1> via a prompt.
 # This way, a function can be curried/beta-reduced to a function of 1 argument.
 prompt: |+
-    contents
+    Annotate the code with comments.
+
+    Language: awk
+    Code:
+    Annotated code:
+    # When the program starts
+    BEGIN {
+        # Set window and slide
+        window = 4
+        slide = 2
+    }
     
+    # For each record in the file
+    {
+        # If first record, print the 6th and 7th columns
+        if(NR == 1)
+            print "coord",$6,$7
+    }
+
+    # For each record in the file
+    {
+        mod = NR % window
+        if (NR <= window)
+        {
+            # increment the counter
+            count++
+        } else {
+            sum -= array[mod]
+            sum2 -= array2[mod]
+        }
+        sum += $6
+        sum2 += $7
+        array[mod] = $6
+        array2[mod] = $7
+    }
+
+    # For every slidth line
+    (NR % slide) == 0 {
+        # print the record number and averages
+        print NR,sum/count,sum2/count
+    }
+
     <1> are like <2> in that
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
