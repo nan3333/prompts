@@ -70,7 +70,7 @@ stop-sequences:
 cache: on
 vars:
 - "description"
-- "first letter"
+- "sounds like"
 examples:
 - "to do in excess"
 - "flout"
