@@ -71,7 +71,7 @@ vars:
 - "first letter"
 examples:
 - "to do in excess"
-- "f"
+- "flout"
 # test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
 # completion: on
