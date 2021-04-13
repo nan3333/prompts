@@ -76,6 +76,7 @@ vars:
 examples:
 - "Given a sentence which may have"
 - "may have incorrect spelling or grammar, correct it."
+# This is the test output after the postprocessor has run
 test-output: "Given a sentence which may have incorrect spelling or grammar, correct it."
 # Completion is for generating a company-mode completion function
 # completion: on
