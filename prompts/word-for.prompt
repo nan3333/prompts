@@ -1,5 +1,5 @@
 in-development: yes
-title: "title"
+title: "what is the word for"
 todo:
 design-patterns:
 issues:
@@ -7,7 +7,7 @@ issues:
 # future-titles: ""
 # aims: |+
 # - More abstractive rewording
-doc: "Given ... title"
+doc: "Given a description of a word that you are looking for, list some possible candidates"
 # aims: |+
 # - More abstractive rewording
 prompt-version: 1
@@ -60,7 +60,7 @@ stop-sequences:
 # Cache the function by default when running the prompt function
 cache: on
 vars:
-- "word"
+- "description"
 examples:
 - "to do in excess"
 # test-output: "both are types of berry"
