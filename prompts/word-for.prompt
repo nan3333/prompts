@@ -68,8 +68,10 @@ stop-sequences:
 cache: on
 vars:
 - "description"
+- "first letter"
 examples:
 - "to do in excess"
+- "f"
 # test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
 # completion: on
