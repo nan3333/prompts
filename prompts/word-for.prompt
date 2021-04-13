@@ -21,7 +21,7 @@ prompt-version: 1
 prompt: |+
    Given a description of a word that you are looking for, list some possible candidates.
 
-   A list of words that mean <1>:
+   A list of words that mean "<1>":
    -
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
