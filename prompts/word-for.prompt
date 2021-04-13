@@ -21,7 +21,10 @@ prompt-version: 1
 prompt: |+
    Given a description of a word that you are looking for, list some possible candidates.
 
-   A list of words that mean "<1>" and sounds like "<2>":
+   A list of words that mean "<1>" and sound like "<2>":
+   -
+
+   A list of words that mean "<1>" and sound like "<2>":
    -
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
@@ -55,7 +58,7 @@ stop-sequences:
 # - "\n\n"
 # 2 hashes is more reliable as a stop sequence because
 # sometimes the generation morphs from ### to ##
-- "##"
+# - "##"
 # inject-start-text: yes
 # inject-restart-text: yes
 # show-probabilities: off
