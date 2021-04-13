@@ -72,7 +72,7 @@ vars:
 examples:
 - "to do in excess"
 - "flout"
-# test-output: "both are types of berry"
+test-output: "flaunt"
 # Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
