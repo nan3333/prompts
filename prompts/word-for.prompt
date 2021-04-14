@@ -98,7 +98,7 @@ prefer-external: on
 # This can be used to train the prompt.
 # The external command must take arguments, not stdin
 # So that all variables may be passed into it.
-external: "generate-text-from-input.sh"
+# external: "generate-text-from-input.sh"
 # This compares the output of the external script to the output of the LM
 similarity-test:
 # This script returns a 0-1 decimal value representing the quality of the generated output.

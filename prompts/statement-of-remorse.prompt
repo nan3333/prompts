@@ -82,7 +82,7 @@ chomp-end: off
 prefer-external: on
 # This is an optional external command which may be used to perform the same task as the API.
 # This can be used to train the prompt.
-external: "generate-text-from-input.sh"
+# external: "generate-text-from-input.sh"
 # This script returns a 0-1 decimal value representing the quality of the generated output.
 quality-script: "my-quality-checker-for-this-prompt.sh"
 # This script can be used to validate the output.
