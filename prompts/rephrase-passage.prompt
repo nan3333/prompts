@@ -35,6 +35,5 @@ develop software from different languages on top of the same IDE that you like."
 pen-preprocessors:
 - "pen-pf-correct-grammar"
 # External provides an alternate script that performs the same function
-external:
-- "summarize-passage"
+external: "summarize-passage"
 filter: yes

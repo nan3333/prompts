@@ -33,7 +33,6 @@ examples:
     it can help us switch off our fight or flight response and calm us down. But listener Mags wants to know what science
     says about its impact on our general wellbeing?
 # External provides an alternate script that performs the same function
-external:
-- "summarize-passage"
+external: "summarize-passage"
 # Replace selected text
 filter: yes

@@ -22,6 +22,5 @@ chomp-end: on
 vars:
   - "passage"
 # External provides an alternate script that performs the same function
-external:
-- "summarize-passage"
+external: "summarize-passage"
 show-probabilities: off

@@ -41,7 +41,6 @@ examples:
     guitar, with Strykert then switching to lead
     guitar.
 # External provides an alternate script that performs the same function
-external:
-- "summarize-passage"
+external: "summarize-passage"
 filter: yes
 postprocessor: "ttp"
