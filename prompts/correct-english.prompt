@@ -5,26 +5,22 @@ prompt: |+
     ###
     Poor English:
     Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
-    ~~~
     Corrected English:
     Please provide me with a short brief of the design you’re looking for and some examples or previous projects you’ve done would be helpful.
     ###
     Poor English:
     If I’m stressed out about something, I tend to have problem to fall asleep.
-    ~~~
     Corrected English:
     If I’m stressed out about something, I
     tend to have a problem falling asleep.
     ###
     Poor English:
     There is plenty of fun things to do in the summer when your able to go outside.
-    ~~~
     Corrected English:
     There are plenty of fun things to do in the summer when you are able to go outside.
     ###
     Poor English:
     She no went to the market.
-    ~~~
     Corrected English:
     She didn't go to the market.
     ###
@@ -40,7 +36,7 @@ presence-penalty: 0.0
 best-of: 1
 stop-sequences:
 # - "\n\n"
-- "~~~"
+- "###"
 inject-start-text: yes
 inject-restart-text: yes
 chomp-start: on
