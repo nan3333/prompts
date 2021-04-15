@@ -7,7 +7,7 @@ design-patterns:
 # future-titles: ""
 # aims: |+
 # - More abstractive rewording
-doc: "Given ... title"
+doc: "Given a paragraph, extract some key points"
 # aims: |+
 # - More abstractive rewording
 prompt-version: 1
