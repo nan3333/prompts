@@ -52,7 +52,7 @@ examples:
 - "The rane in spain falls mainly on the flane"
 external: ""
 conversation-mode: no
-filter: no
+filter: yes
 # Keep stitching together until reaching this limit
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
