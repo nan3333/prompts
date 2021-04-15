@@ -46,6 +46,8 @@ vars:
 - "poor english"
 examples:
 - "The rane in spain falls mainly on the flane"
+preprocessors:
+- "s join ' '"
 postprocessor: "tpp"
 external:
 conversation-mode: no
