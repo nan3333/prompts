@@ -19,9 +19,10 @@ prompt-version: 1
 # <2> May be inferred from <1> via a prompt.
 # This way, a function can be curried/beta-reduced to a function of 1 argument.
 prompt: |+
-    contents
+    <1>
     
-    <1> are like <2> in that
+    Key points:
+    -
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
 # - "Struggles with the latter columns."
