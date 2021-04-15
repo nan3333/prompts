@@ -3,8 +3,8 @@ prompt: |+
     <1>
     
     One-sentence summary:
-# This is for document-generation-mode
 heading-name: "This is a summary of the above text"
+# This is for document-generation-mode
 can-complete: on
 engine: "davinci"
 temperature: 0.3
