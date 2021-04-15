@@ -77,6 +77,6 @@ filter: no
 stitch-max: 0
 needs-work: yes
 # Prompt function aliases
-# aliases:
-# - "asktutor"
+aliases:
+- "word for"
 # postprocessor: "sed 's/- //' | uniqnosort"
