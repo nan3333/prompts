@@ -23,5 +23,7 @@ vars:
   - "passage"
 # External provides an alternate script that performs the same function
 external: "summarize-passage"
+pen-preprocessors:
+- "s join ' '"
 show-probabilities: off
 prettifier: "tpp"
