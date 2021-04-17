@@ -27,6 +27,7 @@ definition for the term =neosensory=.
 
 If =GPT-3= knew about the _neosensory
 corporation_ then this would impact the
-definition, but it does not appear to, so it has come up with an artificial definition.
+definition, but it does not appear to, so it
+has come up with an artificial definition.
 
 It would be interesting to create the prompt.
