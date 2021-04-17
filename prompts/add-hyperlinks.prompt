@@ -1,4 +1,5 @@
 in-development: yes
+needs-work: yes
 title: "Generate article with hyperlinks"
 ## heading-name is for document-generation-mode 
 # heading-name: "This is a summary of the above text"
@@ -122,7 +123,6 @@ filter: no
 # Keep stitching together until reaching this limit
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
-needs-work: no
 n-test-runs: 5
 # Prompt function aliases
 # aliases:
