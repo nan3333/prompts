@@ -30,4 +30,7 @@ corporation_ then this would impact the
 definition, but it does not appear to, so it
 has come up with an artificial definition.
 
-It would be interesting to create the prompt.
+It would be interesting to create a prompt
+which not only comes up with a definition for
+a word but works also to create fictional
+definitions even for words which exist.
