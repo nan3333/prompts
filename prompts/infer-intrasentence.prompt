@@ -1,4 +1,4 @@
-in-development: yes
+in-development: no
 title: "infer intra sentence"
 ## heading-name is for document-generation-mode 
 # heading-name: "This is a summary of the above text"
