@@ -26,6 +26,7 @@ prompt: |+
     Definition: A preference or special liking for something; a bias in favour of something. "my predilection for Asian food"
 
     <1>
+    Definition:
 engine: "davinci"
 temperature: 0.5
 max-tokens: 60
