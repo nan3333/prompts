@@ -7,29 +7,23 @@ prompt: |+
     Glossary of terms.
 
     fixture
-        A piece of equipment or furniture which is
-        fixed in position in a building or
-        vehicle.
+    Definition: A piece of equipment or furniture which is fixed in position in a building or vehicle.
   
     operatic
-        extravagantly theatrical; histrionic.
+    Definition: extravagantly theatrical; histrionic.
   
     vestige
-        A trace or remnant of something that is
-        disappearing or no longer exists.
+    A trace or remnant of something that is
+    Definition: disappearing or no longer exists.
   
     ossified
-        Turn into bone or bony tissue.
+    Definition: Turn into bone or bony tissue.
   
     onerous
-        (of a task or responsibility) involving a
-        great deal of effort, trouble, or
-        difficulty.
+    Definition: (of a task or responsibility) involving a great deal of effort, trouble, or difficulty.
 
     predilection
-        A preference or special liking for
-        something; a bias in favour of something.
-        "my predilection for Asian food"
+    Definition: A preference or special liking for something; a bias in favour of something. "my predilection for Asian food"
 
     <1>
 engine: "davinci"
