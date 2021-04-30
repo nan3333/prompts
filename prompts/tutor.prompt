@@ -6,7 +6,9 @@ prompt: |+
 
     Human: Hello, are you my <2> tutor?
     ###
-    AI: Hi there. Yes I am. How can I help you today?
+    AI: Hi there.
+    Yes I am.
+    How can I help you today?
     ###
     Human: What questions can I ask you about <1>?
     ###
