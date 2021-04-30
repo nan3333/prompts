@@ -12,6 +12,7 @@ prompt: |+
     Language: Ruby
     Task: Reverse lines from stdout
     Code: while s = gets; puts s.chop.reverse; end
+    ###
     Language: Haskell
     Task: Multiple Each Item in a List by 2
     Code:
