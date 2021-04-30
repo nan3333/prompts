@@ -23,7 +23,7 @@ preferred-openai-engine: "davinci"
 # 1.0 = /r/iamveryrandom
 # Use 0.3-0.8
 temperature: 0.8
-max-tokens: 200
+max-tokens: 300
 top-p: 1.0
 # Not available yet: openai api completions.create --help
 frequency-penalty: 0.5
