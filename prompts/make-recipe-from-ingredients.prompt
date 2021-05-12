@@ -73,10 +73,10 @@ show-probabilities: off
 # Cache the function by default when running the prompt function
 cache: on
 vars:
-- "former"
+- "name"
 - "latter"
 examples:
-- "boysenberries"
+- "Cheesy Potato Casserole"
 - "strawberries"
 # Completion is for generating a company-mode completion function
 # completion: on
