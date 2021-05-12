@@ -49,9 +49,14 @@ show-probabilities: off
 # Cache the function by default when running the prompt function
 cache: on
 vars:
-- "name"
+- "ingredients"
+- "instructions"
 examples:
-- Fruit salad
+- |+
+  strawberries
+  bananas
+  mint leaves
+- |+
 # Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
