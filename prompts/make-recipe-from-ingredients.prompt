@@ -41,7 +41,8 @@ prompt: |+
     
     Name: <1>
     
-     are like <2> in that
+    Ingredients:
+    <2>
 # # Additional transformation of prompt after the template
 # prompt-filter: "sed -z 's/\s\+$//'"
 # # Trailing whitespace is always removed
