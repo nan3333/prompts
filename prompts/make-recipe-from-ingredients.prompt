@@ -78,15 +78,11 @@ vars:
 - "name"
 - "ingredients"
 examples:
+- Fruit salad
 - |+
   strawberries
   bananas
   mint leaves
-- |+
-  1. Cut up the fruit and place in a bowl
-  2. Mix in the mint leaves
-  3. Put a bit of vinegar over top
-  4. Let sit for an hour
 # Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
