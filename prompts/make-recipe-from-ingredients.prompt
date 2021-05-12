@@ -76,7 +76,7 @@ show-probabilities: off
 cache: on
 vars:
 - "name"
-- "latter"
+- "ingredients"
 examples:
 - "Cheesy Potato Casserole"
 - "strawberries"
