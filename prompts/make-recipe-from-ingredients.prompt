@@ -5,6 +5,8 @@ title: "Make recipe from ingredients"
 doc: "Given a list of ingredients, come up with the name of a recipe"
 # aims: |+
 # - More abstractive rewording
+inspiration:
+- "https://github.com/drewbaumann/gpt3-recipe-builder"
 prompt-version: 1
 prompt: |+
     contents
