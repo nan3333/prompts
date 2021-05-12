@@ -2,7 +2,7 @@ title: "Name a recipe"
 # future-titles: ""
 # aims: |+
 # - More abstractive rewording
-doc: "Given a recipe name, come up with the ingredients and instructions"
+doc: "Given a list of ingredients and instructions, come up with a name"
 # aims: |+
 # - More abstractive rewording
 inspiration:
