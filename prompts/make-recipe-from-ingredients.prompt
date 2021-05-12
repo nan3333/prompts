@@ -78,8 +78,11 @@ vars:
 - "name"
 - "ingredients"
 examples:
-- "Cheesy Potato Casserole"
-- "strawberries"
+- Fruit salad
+- |+
+  strawberries
+  bananas
+  mint leaves
 # Completion is for generating a company-mode completion function
 # completion: on
 # # default values for pen -- evaled
