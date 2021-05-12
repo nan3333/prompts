@@ -6,6 +6,7 @@ doc: "Given a list of ingredients, come up with the name of a recipe"
 # aims: |+
 # - More abstractive rewording
 inspiration:
+- "https://www.twilio.com/blog/generating-cooking-recipes-openai-gpt3-ruby"
 - "https://github.com/drewbaumann/gpt3-recipe-builder"
 - "https://recipegpt.org/"
 prompt-version: 1
