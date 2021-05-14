@@ -4,7 +4,7 @@ doc: |-
     This is a bash terminal command completer for emacs.
     It may be more useful to have a comment->code translator.
 prompt: |+
-    Bash commands:
+    Shell commands to run in the terminal:
     ```
     $<1>
 engine: "davinci"
@@ -17,7 +17,7 @@ frequency-penalty: 0.5
 presence-penalty: 0.0
 best-of: 1
 stop-sequences:
-- "\n\n"
+- "\n"
 # - "\n\n\n"
 # - "###"
 inject-start-text: yes
