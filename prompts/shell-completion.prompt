@@ -6,7 +6,7 @@ doc: |-
 prompt: |+
     Shell commands to run in the terminal:
     ```
-    $<1>
+    $ <1>
 engine: "davinci"
 temperature: 0.3
 max-tokens: 200
@@ -24,18 +24,15 @@ inject-start-text: yes
 inject-restart-text: yes
 show-probabilities: off
 vars:
-- "file type"
-- "preceding text"
+- "command preceding text"
 examples:
-- "python"
-- "# Let's say a triple (a, b, c) is a zigzag if\n# either a < b > c or a > b < c.\n\n# Given an array of integers numbers, your task\n# is to check all the triples of its consecutive\n# elements for being a zigzag.\n\n# More formally, your task is to construct an\n# array of length numbers.length - 2, where the\n# ith element of the output array equals 1 if\n# the triple (numbers[i], numbers[i + 1], numbers[i + 2]) is a zigzag, and 0 otherwise.\ndef"
+- "install"
 # Completion is for generating a company-mode completion function
 completion: on
 # default values for pen -- evaled
 # This is useful for completion commands.
 pen-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "(pen-preceding-text-line)"
 external: ""
 conversation-mode: no
 filter: no
