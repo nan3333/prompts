@@ -1,0 +1,45 @@
+title: "Shell/bash terminal command completion"
+prompt-version: 1
+doc: |-
+    This is a bash terminal command completer for emacs.
+    It may be more useful to have a comment->code translator.
+prompt: |+
+    File type: <1>
+    File contents:
+    <2>
+engine: "davinci"
+temperature: 0.3
+max-tokens: 200
+top-p: 1.0
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+- "\n\n"
+# - "\n\n\n"
+# - "###"
+inject-start-text: yes
+inject-restart-text: yes
+show-probabilities: off
+vars:
+- "file type"
+- "preceding text"
+examples:
+- "python"
+- "# Let's say a triple (a, b, c) is a zigzag if\n# either a < b > c or a > b < c.\n\n# Given an array of integers numbers, your task\n# is to check all the triples of its consecutive\n# elements for being a zigzag.\n\n# More formally, your task is to construct an\n# array of length numbers.length - 2, where the\n# ith element of the output array equals 1 if\n# the triple (numbers[i], numbers[i + 1], numbers[i + 2]) is a zigzag, and 0 otherwise.\ndef"
+# Completion is for generating a company-mode completion function
+completion: on
+# default values for pen -- evaled
+# This is useful for completion commands.
+pen-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+external: ""
+conversation-mode: no
+filter: no
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+needs-work: no
