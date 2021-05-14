@@ -4,9 +4,9 @@ doc: |-
     This is a bash terminal command completer for emacs.
     It may be more useful to have a comment->code translator.
 prompt: |+
-    File type: <1>
-    File contents:
-    <2>
+    Bash commands:
+    ```
+    $<1>
 engine: "davinci"
 temperature: 0.3
 max-tokens: 200
