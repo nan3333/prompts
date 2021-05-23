@@ -18,7 +18,7 @@ prompt: |+
     ###
     <1>:
 engine: "davinci"
-temperature: 0.7
+temperature: 0.4
 max-tokens: 60
 top-p: 1
 frequency-penalty: 0.0
