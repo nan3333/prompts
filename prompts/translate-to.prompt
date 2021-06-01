@@ -1,6 +1,8 @@
 title: "Translate to"
 prompt-version: 1
 doc: "This prompt translates English text to any world langauge"
+issues:
+ - "Not sure why, but requires <:pp> at the end of the prompt"
 prompt: |+
     ###
     # English: Hello
