@@ -34,7 +34,7 @@ frequency-penalty: 0.5
 presence-penalty: 0.0
 best-of: 1
 stop-sequences:
-- "#"
+- "###"
 inject-start-text: yes
 inject-restart-text: yes
 chomp-start: on
