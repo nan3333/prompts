@@ -3,28 +3,28 @@ prompt-version: 1
 doc: "This prompt translates English text to any world langauge"
 prompt: |+
     ###
-    English: Hello
-    Russian: Zdravstvuyte
-    Chinese: Nǐn hǎo
-    Italian: Salve
-    Japanese: Konnichiwa
-    German: Guten Tag
-    Portuguese: Olá
-    French: Bonjour
-    Spanish: Hola
+    # English: Hello
+    # Russian: Zdravstvuyte
+    # Chinese: Nǐn hǎo
+    # Italian: Salve
+    # Japanese: Konnichiwa
+    # German: Guten Tag
+    # Portuguese: Olá
+    # French: Bonjour
+    # Spanish: Hola
     ###
-    English: Happy birthday!
-    Spanish: ¡Feliz cumpleaños!
-    French: Bon anniversaire !
-    German: Alles Gute zum Geburtstag!
-    Italian: Buon compleanno!
-    Portuguese: Feliz aniversário!
-    Swedish: Grattis på födelsedagen!
-    Russian: С Днём рождения!
-    Indonesian: Selamat ulang tahun!
+    # English: Happy birthday!
+    # Spanish: ¡Feliz cumpleaños!
+    # French: Bon anniversaire !
+    # German: Alles Gute zum Geburtstag!
+    # Italian: Buon compleanno!
+    # Portuguese: Feliz aniversário!
+    # Swedish: Grattis på födelsedagen!
+    # Russian: С Днём рождения!
+    # Indonesian: Selamat ulang tahun!
     ###
-    English: <2>
-    <1>:
+    # English | <2>
+    # <1> |
 engine: "davinci"
 temperature: 0.5
 max-tokens: 200
@@ -34,7 +34,7 @@ frequency-penalty: 0.5
 presence-penalty: 0.0
 best-of: 1
 stop-sequences:
-- "\n\n"
+- "#"
 inject-start-text: yes
 inject-restart-text: yes
 chomp-start: on
