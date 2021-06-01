@@ -2,31 +2,28 @@ title: "Translate to"
 prompt-version: 1
 doc: "This prompt translates English text to any world langauge"
 prompt: |+
-    The following passages are translated into English.
+    English: Hello
+    Russian: Zdravstvuyte
+    Chinese: Nǐn hǎo
+    Italian: Salve
+    Japanese: Konnichiwa
+    German: Guten Tag
+    Portuguese: Olá
+    French: Bonjour
+    Spanish: Hola
     ###
-    La clase Monad esta disenada para
-    describir tipos/estructuras de datos en
-    los que sea necesario manejar un contexto
-    de forma transparente al usuario.
-    Original language: Spanish.
-    English translation:
-    The Monad class is designed to describe
-    data types / structures in which it is
-    necessary to handle a context in a
-    transparent way to the user.
+    English: Happy birthday!
+    Spanish: ¡Feliz cumpleaños!
+    French: Bon anniversaire !
+    German: Alles Gute zum Geburtstag!
+    Italian: Buon compleanno!
+    Portuguese: Feliz aniversário!
+    Swedish: Grattis på födelsedagen!
+    Russian: С Днём рождения!
+    Indonesian: Selamat ulang tahun!
     ###
-    Puis-je avoir une baguette s'il vous plaît?
-    Original language: French
-    English translation:
-    Could I have a baguette please?
-    ###
-    Der Begriff deutsch als Bezeichnung für das Volk der Deutschen, die deutsche Sprache bzw. Deutschland verfügt in den verschiedenen Sprachen der Welt über untereinander ähnliche wie auch äußerst unterschiedliche Wörter.
-    Original language: German
-    English translation:
-    The term German as a term for the people of the Germans, the German language or Germany has similar and extremely different words in the various languages of the world.
-    ###
-    <1>
-    <:pp>Original language:
+    English: <2>
+    <1>:
 engine: "davinci"
 temperature: 0.5
 max-tokens: 200
@@ -36,16 +33,18 @@ frequency-penalty: 0.5
 presence-penalty: 0.0
 best-of: 1
 stop-sequences:
-- "###"
+- "\n\n"
 inject-start-text: yes
 inject-restart-text: yes
 chomp-start: on
 chomp-end: off
 show-probabilities: off
 vars:
-- "text"
+- "language"
+- "phrase"
 examples:
-- "Pero, que es el contexto?"
+- "French"
+- "Goodnight"
 external: ""
 conversation-mode: no
 filter: no
