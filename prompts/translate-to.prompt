@@ -23,8 +23,8 @@ prompt: |+
     # Russian: С Днём рождения!
     # Indonesian: Selamat ulang tahun!
     ###
-    # English | <2>
-    # <1> |
+    # English: <2>
+    # <1>:
 engine: "davinci"
 temperature: 0.5
 max-tokens: 200
