@@ -4,7 +4,7 @@ prompt: |+
     This is a conversation between a human and a brilliant AI.
     The topic is "<1>".
 
-    Human: Hello, are you my <2> tutor?
+    Human: Hello, are you my <1> tutor?
     ###
     AI: Hi there.
     Yes I am.
