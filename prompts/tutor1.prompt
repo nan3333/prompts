@@ -10,7 +10,7 @@ prompt: |+
     Yes I am.
     How can I help you?
     ###
-    Human: Thanks. I have a question. <3>
+    Human: Thanks. I have a question. <2>
     ###
     AI: I would be happy to answer your question.
 engine: "myrc"
