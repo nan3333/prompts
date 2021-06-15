@@ -137,6 +137,6 @@ n-test-runs: 5
 # <1> is a variable
 continuation-function: "list-of <1> <g>"
 # \s must be escaped here or it breaks yaml
-hpostprocessor: "sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\\+$/p' | uniqnosort"
+postprocessor: "sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\\+$/p' | uniqnosort"
 # Optional extra command to run after the postprocessor
 prettifier: "tpp"
