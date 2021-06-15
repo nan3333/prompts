@@ -2,6 +2,7 @@ in-development: yes
 title: "is spelling correct?"
 ## heading-name is for document-generation-mode 
 # heading-name: "This is a summary of the above text"
+ideas:
 todo:
 design-patterns:
 # future-titles: ""
