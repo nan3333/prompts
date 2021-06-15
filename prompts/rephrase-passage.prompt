@@ -2,12 +2,13 @@ title: "rephrase a passage"
 prompt: |+
   Rewrite each passage of text, expressing it in a different way.
 
-  Here is a passage of text:
+  Here are some different ways of saying "criticize unfairly":
+  - denigrate
+  - disparage
+  - belittle the value or importance of
   ###
-  <1>
-  ###
-  Here is the same passage expressed differently:
-  ###
+  Here are some different ways of saying "<1>":
+  -
 engine: "davinci"
 temperature: 0.8
 max-tokens: 100
