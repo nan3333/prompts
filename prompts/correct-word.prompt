@@ -1,6 +1,6 @@
-title: "rephrase a passage"
+title: "correct word"
 prompt: |+
-  Rewrite each of the following passages:
+  Replace with the correct word
 
   Here are some different ways of saying "criticize unfairly":
   - denigrate
@@ -29,7 +29,8 @@ chomp-end: on
 vars:
   - "passage"
 examples:
-  - "house rules"
+  - "If you are a developer you might have a favorite IDE that you always use. And it is really easy if you can
+develop software from different languages on top of the same IDE that you like."
 # These are elisp String->String functions and run from pen.el
 # It probably runs earlier than the preprocessors shell scripts
 pen-preprocessors:
