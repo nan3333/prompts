@@ -56,6 +56,8 @@ preprocessors:
 # So that all variables may be passed into it.
 external: "unstdinify interpret-crontab"
 # This compares the output of the external script to the output of the LM
+external-related:
+- "https://crontab.guru/"
 similarity-test:
 filter: no
 # Keep stitching together until reaching this limit
