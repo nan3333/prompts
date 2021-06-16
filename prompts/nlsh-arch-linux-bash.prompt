@@ -1,8 +1,7 @@
 title: "bash one liner generator on OS from natural language"
 doc: "Get a bash one liner on OS from natural language"
 prompt: |+
-    List of one-liners.
-    Language: Shell
+    List of bash one-liners
     Operating System: <1>
 
     Input: Print the current directory
