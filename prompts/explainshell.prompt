@@ -1,17 +1,13 @@
 in-development: no
 title: "explain a shell command"
 issues:
-  - "It appears to not have a large effective window"
 design-patterns:
-  # http://github.com/semiosis/prompt-design-patterns/blob/master/patterns/multi-language-block.org
-  - "multi-language-block"
 # future-titles: ""
+# aims:
+doc: "Explain what a shell command does"
 # aims: |+
 # - More abstractive rewording
-doc: "Given code with comments lacking, add comments to it"
-# aims: |+
-# - More abstractive rewording
-prompt-version: 3
+prompt-version: 1
 # <:pp> defines a point where the following
 # text is concatenated before the postprocessor
 # is run.
@@ -21,53 +17,19 @@ prompt-version: 3
 # This way, a function can be curried/beta-reduced to a function of 1 argument.
 # Use the markdown style
 prompt: |+
-    Annotate the code with comments.
-
-    Code:
-    ```awk
-    BEGIN {
-        window = 4
-        slide = 2
-    }
+    The following is a list of one-liners for the linux command-line and some explanations:
     
-    {
-        if(NR == 1)
-            print "coord",$6,$7
-    }
-
-    (NR % slide) == 0 {
-        print NR,sum/count,sum2/count
-    }
-    ```
-    Annotated code:
-    ```awk
-    # When the program starts
-    BEGIN {
-        # Set window and slide
-        window = 4
-        slide = 2
-    }
-    
-    # For each record in the file
-    {
-        # If first record, print the 6th and 7th columns
-        if(NR == 1)
-            print "coord",$6,$7
-    }
-
-    # For every slidth line
-    (NR % slide) == 0 {
-        # print the record number and averages
-        print NR,sum/count,sum2/count
-    }
-    ```
+    $ ls -t * | head -1
+    The above command gets the newest file in directory bash.
     ###
-    Code:
-    ```<2>
-    <1>
-    ```
-    Annotated code:
-    ```<2>
+    $ find . -name '*' -type f -not -path '*.mp3'
+    The above command finds with invert match - e.g. find every file that is not mp3
+    ###
+    $ find . -name "node_modules" -exec rm -rf '{}' +
+    The above command recursively removes all "node_modules" folders
+    ###
+    $ <1>
+    The above command
 problems:
 # Put problems directly after the prompt because the prompt is a multiline string.
 # - "Struggles with the latter columns."
@@ -84,7 +46,7 @@ preferred-openai-engine: "davinci"
 # 0.0 = /r/ihadastroke
 # 1.0 = /r/iamveryrandom
 # Use 0.3-0.8
-temperature: 0.8
+temperature: 0.3
 max-tokens: 200
 top-p: 1.0
 # Not available yet: openai api completions.create --help
@@ -100,8 +62,7 @@ stop-sequences:
 # - "\n\n"
 # 2 hashes is more reliable as a stop sequence because
 # sometimes the generation morphs from ### to ##
-# - "##"
-- "```"
+- "##"
 # inject-start-text: yes
 # inject-restart-text: yes
 # show-probabilities: off
@@ -109,10 +70,8 @@ stop-sequences:
 cache: on
 vars:
 - "code"
-- "language"
 examples:
 - "fibs = 0 : 1 : zipWith (+) fibs (tail fibs)"
-- "haskell"
 # test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
 # completion: on
@@ -164,6 +123,8 @@ external-related:
 - "https://explainshell.com/"
 needs-work: no
 n-test-runs: 5
+related-prompts:
+- "annotate-with-commentary.prompt"
 # Prompt function aliases
 # aliases:
 # - "asktutor"
