@@ -1,0 +1,22 @@
+prompt: |+
+    Language: Bash
+    Operating system: Arch Linux
+
+    Input: Print the current directory
+    Output: pwd
+    ###
+    Input: List files
+    Output: ls -l
+    ###
+    Input: Change directory to /tmp
+    Output: cd /tmp
+    ###
+    Input: Count files
+    Output: ls -l | wc -l
+    ###
+    Input: Replace foo with bar in all python files
+    Output: sed -i .bak -- 's/foo/bar/g' *.py
+    ###
+    Input: Push to master
+    Output: git push origin master
+    ###
