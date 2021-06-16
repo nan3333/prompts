@@ -1,7 +1,8 @@
 title: "bash one liner generator on OS from natural language"
 doc: "Get a bash one liner on OS from natural language"
 prompt: |+
-    List of bash one-liners in <1>.
+    Bash one-liners.
+    Operating System: <1>
 
     Input: Print the current directory
     Output: pwd
@@ -9,9 +10,9 @@ prompt: |+
     Input: List files
     Output: ls -l
     ###
-#    Input: Change directory to /tmp
-#    Output: cd /tmp
-#    ###
+    Input: Change directory to /tmp
+    Output: cd /tmp
+    ###
 #    Input: Count files
 #    Output: ls -l | wc -l
 #    ###
