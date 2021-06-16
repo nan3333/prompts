@@ -71,7 +71,7 @@ cache: on
 vars:
 - "code"
 examples:
-- "fibs = 0 : 1 : zipWith (+) fibs (tail fibs)"
+- "raco pkg show --all"
 # test-output: "both are types of berry"
 # Completion is for generating a company-mode completion function
 # completion: on
@@ -79,7 +79,6 @@ examples:
 # # This is useful for completion commands.
 pen-defaults:
 - "(pen-surrounding-text)"
-- "(detect-language)"
 # These are elisp String->String functions and run from pen.el
 # It probably runs earlier than the preprocessors shell scripts
 # pen-preprocessors:
