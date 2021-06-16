@@ -124,7 +124,7 @@ external-related:
 needs-work: no
 n-test-runs: 5
 related-prompts:
-- "annotate-with-commentary.prompt"
+- "annotate-with-commentary"
 # Prompt function aliases
 # aliases:
 # - "asktutor"
