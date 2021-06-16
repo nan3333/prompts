@@ -40,7 +40,7 @@ prompt: |+
     -- 10 examples:
     <:pp>-
 engine: "davinci"
-# 0.0 = /r/hadastroke
+# 0.0 = /r/ihadastroke
 # 1.0 = /r/iamveryrandom
 # Use 0.3-0.8
 temperature: 0.8
