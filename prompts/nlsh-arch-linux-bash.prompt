@@ -1,8 +1,8 @@
 title: "bash one liner generator on OS from natural language"
 doc: "Get a bash one liner on OS from natural language"
 prompt: |+
-    Bash one-liners.
-    Operating System: <1>
+    # Bash one-liners.
+    # Operating System: <1>
 
     Input: Print the current directory
     Output: pwd
