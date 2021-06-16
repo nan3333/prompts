@@ -114,7 +114,7 @@ conversation-mode: no
 # It then passes the pretext to the new prompt.
 # conversation-pretext-generator: "human-conversation"
 # Replace selected text
-filter: yes
+filter: no
 # Keep stitching together until reaching this limit
 # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
 stitch-max: 0
