@@ -1,5 +1,6 @@
 title: "bash one liner generator on OS from natural language"
 doc: "Get a bash one liner on OS from natural language"
+rlprompt: "nlsh <1>"
 prompt: |+
     # List of one-liner shell commands for <1>.
     # Language: Shell
