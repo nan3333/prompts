@@ -77,8 +77,8 @@ examples:
 # completion: on
 # # default values for pen -- evaled
 # # This is useful for completion commands.
-pen-defaults:
-- "(pen-surrounding-text)"
+# pen-defaults:
+# - "(pen-surrounding-text)"
 # These are elisp String->String functions and run from pen.el
 # It probably runs earlier than the preprocessors shell scripts
 # pen-preprocessors:
