@@ -162,6 +162,8 @@ filter: yes
 stitch-max: 0
 needs-work: no
 n-test-runs: 5
+related-prompts:
+- "explainshell.prompt"
 # Prompt function aliases
 # aliases:
 # - "asktutor"
