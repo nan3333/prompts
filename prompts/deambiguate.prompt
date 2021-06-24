@@ -1,0 +1,43 @@
+title: "Use less ambiguous language"
+prompt-version: 2
+doc: "Given a sentence which may be ambiguous, make it use less ambiguous words."
+prompt: |+
+    ###
+    Ambiguous sentence:
+    Ranch meals are always big and hearty.
+    Unambiguous English:
+    Ranch meals are invariably big and hearty.
+    ###
+    Ambiguous sentence:
+    <1>
+    Unambiguous English:
+engine: "davinci"
+temperature: 0.3
+max-tokens: 300
+top-p: 1.0
+frequency-penalty: 0.5
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+best-of: 1
+stop-sequences:
+# - "\n\n"
+- "###"
+inject-start-text: yes
+inject-restart-text: yes
+chomp-start: on
+chomp-end: off
+show-probabilities: off
+vars:
+- "poor english"
+examples:
+- "The rane in spain falls mainly on the flane"
+preprocessors:
+- "s join ' '"
+postprocessor: "tpp"
+external:
+conversation-mode: no
+filter: yes
+# Keep stitching together until reaching this limit
+# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+stitch-max: 0
+n-test-runs: 2
