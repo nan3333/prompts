@@ -28,9 +28,9 @@ chomp-start: on
 chomp-end: off
 show-probabilities: off
 vars:
-- "poor english"
+- "ambiguous sentence"
 examples:
-- "The rane in spain falls mainly on the flane"
+- "Ranch meals are always big and hearty"
 preprocessors:
 - "s join ' '"
 postprocessor: "tpp"
