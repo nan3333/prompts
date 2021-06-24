@@ -1,5 +1,5 @@
 title: "Use less ambiguous language"
-prompt-version: 2
+prompt-version: 1
 doc: "Given a sentence which may be ambiguous, make it use less ambiguous words."
 prompt: |+
     ###
