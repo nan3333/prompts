@@ -1,62 +1,52 @@
-title: "Generic tutor for any topic and subtopic"
+---
+title: Generic tutor for any topic and subtopic
 prompt-version: 1
-prompt: |+
-    This is a conversation between a human and a brilliant AI.
-    The topic is "<1>".
+prompt: |
+  This is a conversation between a human and a brilliant AI.
+  The topic is "<1>".
 
-    Human: Hello, are you my <2> tutor?
-    ###
-    AI: Hi there.
-    Yes I am.
-    How can I help you today?
-    ###
-    Human: What questions can I ask you about <1>?
-    ###
-    AI: You may ask me anything relating to <2>.
-    ###
-    Human: OK then. <3>
-    ###
-    AI: I would be happy to answer your question.
-engine: "myrc"
-preferred-openai-engine: "davinci"
-# 0.0 = /r/ihadastroke
-# 1.0 = /r/iamveryrandom
-# Use 0.3-0.8
+  Human: Hello, are you my <2> tutor?
+  ###
+  AI: Hi there.
+  Yes I am.
+  How can I help you today?
+  ###
+  Human: What questions can I ask you about <1>?
+  ###
+  AI: You may ask me anything relating to <2>.
+  ###
+  Human: OK then. <3>
+  ###
+  AI: I would be happy to answer your question.
+engine: myrc
+preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 300
-top-p: 1.0
-# Not available yet: openai api completions.create --help
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 3
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "topic"
-- "in the context of"
-- "question"
+- topic
+- in the context of
+- question
 examples:
-- "node js"
-- "programming"
-- "What was the version of node in 2018?"
-chomp-start: on
-chomp-end: off
-external: ""
-conversation-mode: yes
-# This is the name of an external database-driven pretext generator.
-# It would typically summarize and fact extract from history.
-# It then passes the pretext to the new prompt.
-conversation-pretext-generator: "human-conversation"
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- node js
+- programming
+- What was the version of node in 2018?
+chomp-start: true
+chomp-end: false
+external: ''
+conversation-mode: true
+conversation-pretext-generator: human-conversation
+filter: false
 stitch-max: 0
-needs-work: no
-# Prompt function aliases
+needs-work: false
 aliases:
-- "asktutor"
-postprocessor: "ttp"
+- asktutor
+postprocessor: ttp

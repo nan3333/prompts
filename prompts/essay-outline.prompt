@@ -1,29 +1,30 @@
-title: "generate an essay outline"
-doc: ""
-prompt: |+
-    Create an outline for an essay about <1>:
-    
-    I: Introduction
-engine: "davinci"
+---
+title: generate an essay outline
+doc: ''
+prompt: |
+  Create an outline for an essay about <1>:
+
+  I: Introduction
+engine: davinci
 temperature: 0.7
 max-tokens: 60
-top-p: 1.0
-frequency-penalty: 0.0
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+top-p: 1
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
-- "\n\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+- |2+
+
+
+
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "topic"
+- topic
 examples:
-- "Walt Disney and his contributions to animation"
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- Walt Disney and his contributions to animation
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0

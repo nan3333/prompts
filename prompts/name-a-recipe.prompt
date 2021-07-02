@@ -1,97 +1,54 @@
-title: "Name a recipe"
-# future-titles: ""
-# aims: |+
-# - More abstractive rewording
-doc: "Given a list of ingredients and instructions, come up with a name"
-# aims: |+
-# - More abstractive rewording
+---
+title: Name a recipe
+doc: Given a list of ingredients and instructions, come up with a name
 inspiration:
-- "https://www.twilio.com/blog/generating-cooking-recipes-openai-gpt3-ruby"
-- "https://github.com/drewbaumann/gpt3-recipe-builder"
-- "https://recipegpt.org/"
+- https://www.twilio.com/blog/generating-cooking-recipes-openai-gpt3-ruby
+- https://github.com/drewbaumann/gpt3-recipe-builder
+- https://recipegpt.org/
 prompt-version: 2
-prompt: |+
-    Ingredients:
-    <1>
-    
-    Recipe:
-    <2>
-    
-    Recipe name:
-# # Additional transformation of prompt after the template
-# prompt-filter: "sed -z 's/\s\+$//'"
-# # Trailing whitespace is always removed
-# prompt-remove-trailing-whitespace: on
-# myrc will select the completion engine using my config.
-# This may be openi-complete or something else
-engine: "myrc"
-# if nothing is selected in myrc and openapi-complete is used
-# by default, then openai should select this engine.
-preferred-openai-engine: "davinci"
-# 0.0 = /r/ihadastroke
-# 1.0 = /r/iamveryrandom
-# Use 0.3-0.8
+prompt: |
+  Ingredients:
+  <1>
+
+  Recipe:
+  <2>
+
+  Recipe name:
+engine: myrc
+preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60
-top-p: 1.0
-# Not available yet: openai api completions.create --help
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
-# - "\n"
 - "\n\n"
-# - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-# Cache the function by default when running the prompt function
-cache: on
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
+cache: true
 vars:
-- "ingredients"
-- "instructions"
+- ingredients
+- instructions
 examples:
-- |+
+- |
   strawberries
   bananas
   mint leaves
-- |+
+- |
   1. Cut up the fruit and place in a bowl
   2. Mix in the mint leaves
   3. Put a bit of vinegar over top
   4. Let sit for an hour
-# Completion is for generating a company-mode completion function
-# completion: on
-# # default values for pen -- evaled
-# # This is useful for completion commands.
-# pen-defaults:
-# - "(detect-language)"
-# - "(pen-preceding-text)"
-# These are elisp String->String functions and run from pen.el
-# It probably runs earlier than the preprocessors shell scripts
 pen-preprocessors:
-- "cat"
-# # A preprocessor filters the var at that position
-# the current implementation of preprocessors is kinda slow and will add ~100ml per variable
-# # This may be useful to distinguish a block of text, for example
-# preprocessors:
-# - "sed 's/^/- /"
-# - "cat"
-chomp-start: on
-chomp-end: off
-prefer-external: on
-external: ""
-# Enable running conversation
-conversation-mode: no
-# Replace selected text
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- cat
+chomp-start: true
+chomp-end: false
+prefer-external: true
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: no
+needs-work: false
 n-test-runs: 5
-# Prompt function aliases
-# aliases:
-# - "asktutor"
-# postprocessor: "sed 's/- //' | uniqnosort"

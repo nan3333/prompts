@@ -1,6 +1,7 @@
-title: "crontab translator"
+---
+title: crontab translator
 prompt-version: 5
-prompt: |+
+prompt: |
   /etc/crontab: system-wide crontab
 
   ###
@@ -30,38 +31,32 @@ prompt: |+
   ###
   <1>
 problems:
-- "Struggles with the latter columns."
-engine: "davinci"
+- Struggles with the latter columns.
+engine: davinci
 temperature: 0.5
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: off
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: false
+show-probabilities: false
 vars:
-- "tab"
+- tab
 examples:
-- "30 7 * * *"
+- 30 7 * * *
 preprocessors:
-- "sed 's/\\s\\+/ /g'"
-# The external command must take arguments, not stdin
-# So that all variables may be passed into it.
-external: "unstdinify interpret-crontab"
-# This compares the output of the external script to the output of the LM
+- sed 's/\s\+/ /g'
+external: unstdinify interpret-crontab
 external-related:
-- "https://crontab.guru/"
-similarity-test:
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- https://crontab.guru/
+similarity-test: 
+filter: false
 stitch-max: 0
-postprocessor: "awk 1"
-example-formatter: ""
+postprocessor: awk 1
+example-formatter: ''

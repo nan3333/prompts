@@ -1,6 +1,7 @@
-title: "Translate morse code to English"
+---
+title: Translate morse code to English
 prompt-version: 2
-prompt: |+
+prompt: |
   Morse code.
 
   Morse: -.-. .- -. / .. / .... .- ...- . / ... --- -- . / -.-. .... --- -.-. --- .-.. .- - . ..--..
@@ -11,26 +12,24 @@ prompt: |+
   ###
   Morse: <1>
   English:
-engine: "davinci"
+engine: davinci
 temperature: 0.3
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
-# Be careful with stop sequence as \n. The prompt is chomped by default and generating \n will end it
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "morse"
+- morse
 examples:
 - "... --- ..."
-chomp-start: on
-chomp-end: off
-prefer-external: on
-filter: no
+chomp-start: true
+chomp-end: false
+prefer-external: true
+filter: false
 stitch-max: 0

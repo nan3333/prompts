@@ -1,29 +1,28 @@
-title: "tldr summarization"
-prompt: |+
-    <1>
-    
-    tl;dr:
-# This is for document-generation-mode
-heading-name: "This is a summary of the above text"
-can-complete: on
-engine: "davinci"
+---
+title: tldr summarization
+prompt: |
+  <1>
+
+  tl;dr:
+heading-name: This is a summary of the above text
+can-complete: true
+engine: davinci
 temperature: 0.3
 max-tokens: 60
 top-p: 1
-frequency-penalty: 0.0
-presence-penalty: 0.0
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: on
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: true
 vars:
-  - "passage"
-# External provides an alternate script that performs the same function
-external: "summarize-passage"
+- passage
+external: summarize-passage
 pen-preprocessors:
-- "s join ' '"
-show-probabilities: off
-prettifier: "tpp"
+- s join ' '
+show-probabilities: false
+prettifier: tpp

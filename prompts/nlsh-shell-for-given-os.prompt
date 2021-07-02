@@ -1,58 +1,47 @@
-title: "bash one liner generator on OS from natural language"
-doc: "Get a bash one liner on OS from natural language"
-rlprompt: "nlsh <1>"
-prompt: |+
-    # List of one-liner shell commands for <1>.
-    # Language: Shell
-    # Operating System: <1>
+---
+title: bash one liner generator on OS from natural language
+doc: Get a bash one liner on OS from natural language
+rlprompt: nlsh <1>
+prompt: |
+  # List of one-liner shell commands for <1>.
+  # Language: Shell
+  # Operating System: <1>
 
-    Input: Print the current directory
-    Output: pwd
-    ###
-    Input: List files
-    Output: ls -l
-    ###
-    Input: Change directory to /tmp
-    Output: cd /tmp
-    ###
-# The last variable should is used as the conversation-mode variable
-# For conversation-mode
-repeater: |+
-    Input: {}
-    Output:
-engine: "davinci"
-# 0.0 = /r/ihadastroke
-# 1.0 = /r/iamveryrandom
-# Use 0.3-0.8
+  Input: Print the current directory
+  Output: pwd
+  ###
+  Input: List files
+  Output: ls -l
+  ###
+  Input: Change directory to /tmp
+  Output: cd /tmp
+  ###
+repeater: |
+  Input: {}
+  Output:
+engine: davinci
 temperature: 0.8
 max-tokens: 60
-top-p: 1.0
-# Not available yet: openai api completions.create --help
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
-# - "\n"
-# - "\n\n"
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-# The last variable is used as the conversation-mode variable
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "Operating System"
-- "command"
+- Operating System
+- command
 examples:
-- "Arch Linux"
-- "Install package"
-postprocessor: "sed 's/^Output: //'"
-chomp-start: on
-chomp-end: off
-external: ""
-conversation-mode: yes
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- Arch Linux
+- Install package
+postprocessor: 'sed ''s/^Output: //'''
+chomp-start: true
+chomp-end: false
+external: ''
+conversation-mode: true
+filter: false
 stitch-max: 0
-needs-work: no
+needs-work: false

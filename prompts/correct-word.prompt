@@ -1,5 +1,6 @@
-title: "correct word"
-prompt: |+
+---
+title: correct word
+prompt: |
   Replace with the correct word
 
   Here are some different ways of saying "criticize unfairly":
@@ -9,7 +10,7 @@ prompt: |+
   ###
   Here are some different ways of saying "<1>":
   -
-engine: "davinci"
+engine: davinci
 temperature: 0.8
 max-tokens: 100
 top-p: 1
@@ -17,24 +18,19 @@ frequency-penalty: 0.2
 presence-penalty: 0.2
 best-of: 1
 stop-sequences:
-  - "###"
-  # Unfortunately, this doesn't work yet
-  # Multiple --stop arguments to openai override the previous
-  # - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-chomp-start: on
-chomp-end: on
+- "###"
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
+chomp-start: true
+chomp-end: true
 vars:
-  - "passage"
+- passage
 examples:
-  - "If you are a developer you might have a favorite IDE that you always use. And it is really easy if you can
-develop software from different languages on top of the same IDE that you like."
-# These are elisp String->String functions and run from pen.el
-# It probably runs earlier than the preprocessors shell scripts
+- If you are a developer you might have a favorite IDE that you always use. And it
+  is really easy if you can develop software from different languages on top of the
+  same IDE that you like.
 pen-preprocessors:
-- "pen-pf-correct-grammar"
-# External provides an alternate script that performs the same function
-external: "summarize-passage"
-filter: yes
+- pen-pf-correct-grammar
+external: summarize-passage
+filter: true

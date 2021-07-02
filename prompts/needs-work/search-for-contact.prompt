@@ -1,40 +1,27 @@
-title: "Search for contact information"
-prompt: |+
-    Contact.
-
-    Dunedin City Council Customer Services Centre
-    Call: 03 477 4000
-    Visit: Ground floor, Civic Centre. 50 The Octagon, Dunedin
-    Post: PO Box 5045, Dunedin 9054
-    Email: dcc@dcc.govt.nz
-    ###
-    New Zealand Automobile Association
-    Phone: 0800 500 444 
-    Level 16, 99 Albert Street, Auckland 1010
-    PO Box 5, Shortland Street, Auckland 1140
-    Email: aatech@aa.co.nz
-    ###
-    <1>
-engine: "davinci"
+---
+title: Search for contact information
+prompt: "Contact.\n\nDunedin City Council Customer Services Centre\nCall: 03 477 4000\nVisit:
+  Ground floor, Civic Centre. 50 The Octagon, Dunedin\nPost: PO Box 5045, Dunedin
+  9054\nEmail: dcc@dcc.govt.nz\n###\nNew Zealand Automobile Association\nPhone: 0800
+  500 444 \nLevel 16, 99 Albert Street, Auckland 1010\nPO Box 5, Shortland Street,
+  Auckland 1140\nEmail: aatech@aa.co.nz\n###\n<1>\n"
+engine: davinci
 temperature: 0.1
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "person"
+- person
 examples:
-- "Elon Musk"
-external: ""
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- Elon Musk
+external: ''
+filter: false
 stitch-max: 0
-needs-work: on
+needs-work: true

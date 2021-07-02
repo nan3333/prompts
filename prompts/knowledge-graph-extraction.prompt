@@ -1,34 +1,33 @@
-title: "Knowledge Graph Extraction"
-prompt: |+
-    Ironscales, a Ramat Gan, Israel-based self-learning email security solutions, closed an $8m Series B extension funding round.
-    -- Ironscales <--located--> Ramat, israel
-    -- Ironscales <--do--> self-learning email security solution
-    -- Ironscales <--raise--> $8M
-    
-    With a renewed focus on creative skills, online learning company Skillshare raises $66M
-    -- Skillshare <--raise--> $66M
-    -- Skillshare <--do--> creative skills
-    
-    <1>
-engine: "davinci"
+---
+title: Knowledge Graph Extraction
+prompt: |
+  Ironscales, a Ramat Gan, Israel-based self-learning email security solutions, closed an $8m Series B extension funding round.
+  -- Ironscales <--located--> Ramat, israel
+  -- Ironscales <--do--> self-learning email security solution
+  -- Ironscales <--raise--> $8M
+
+  With a renewed focus on creative skills, online learning company Skillshare raises $66M
+  -- Skillshare <--raise--> $66M
+  -- Skillshare <--do--> creative skills
+
+  <1>
+engine: davinci
 temperature: 0.3
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "text"
+- text
 examples:
-- "CakeResume, which wants to become Asia’s largest tech talent pool, raises $900,000 seed round"
-external: ""
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- CakeResume, which wants to become Asia’s largest tech talent pool, raises $900,000
+  seed round
+external: ''
+filter: false
 stitch-max: 0

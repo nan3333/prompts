@@ -1,39 +1,31 @@
-title: "X is like Y in that Z"
+---
+title: X is like Y in that Z
 prompt-version: 1
-prompt: |+
-    Neural networks are like genetic algorithms in that both are systems that learn from experience.
-    
-    Social media is like a market in that both are systems that coordinate the actions of many individuals.
-    
-    A2E is like lipofuscin in that both are byproducts of the normal operation of a system.
-    
-    Haskell is like LISP in that both are functional languages.
-    
-    Quaternions are like matrices in that both are used to represent rotations in 
-    three dimensions.
-    
-    Quaternions are like octonions in that both are examples of non-commutative 
-    algebra.
-    
-    <1> are like <2> in that
-engine: "davinci"
+prompt: "Neural networks are like genetic algorithms in that both are systems that
+  learn from experience.\n\nSocial media is like a market in that both are systems
+  that coordinate the actions of many individuals.\n\nA2E is like lipofuscin in that
+  both are byproducts of the normal operation of a system.\n\nHaskell is like LISP
+  in that both are functional languages.\n\nQuaternions are like matrices in that
+  both are used to represent rotations in \nthree dimensions.\n\nQuaternions are like
+  octonions in that both are examples of non-commutative \nalgebra.\n\n<1> are like
+  <2> in that\n"
+engine: davinci
 temperature: 0.7
 max-tokens: 100
 top-p: 1
 frequency-penalty: 0.2
-# If I make presence-penalty 0 then it will get very terse
 presence-penalty: 0.6
 best-of: 1
-chomp-start: on
-chomp-end: off
+chomp-start: true
+chomp-end: false
 stop-sequences:
-  - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+- "\n\n"
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-  - "former"
-  - "latter"
+- former
+- latter
 examples:
-  - "Age of Empires"
-  - "Warcraft"
+- Age of Empires
+- Warcraft

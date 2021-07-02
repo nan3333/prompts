@@ -1,55 +1,53 @@
-title: "Translate to English"
+---
+title: Translate to English
 prompt-version: 1
-doc: "This prompt translates text in any world langauge to English"
-prompt: |+
-    The following passages are translated into English.
-    ###
-    La clase Monad esta disenada para
-    describir tipos/estructuras de datos en
-    los que sea necesario manejar un contexto
-    de forma transparente al usuario.
-    Original language: Spanish.
-    English translation:
-    The Monad class is designed to describe
-    data types / structures in which it is
-    necessary to handle a context in a
-    transparent way to the user.
-    ###
-    Puis-je avoir une baguette s'il vous plaît?
-    Original language: French
-    English translation:
-    Could I have a baguette please?
-    ###
-    Der Begriff deutsch als Bezeichnung für das Volk der Deutschen, die deutsche Sprache bzw. Deutschland verfügt in den verschiedenen Sprachen der Welt über untereinander ähnliche wie auch äußerst unterschiedliche Wörter.
-    Original language: German
-    English translation:
-    The term German as a term for the people of the Germans, the German language or Germany has similar and extremely different words in the various languages of the world.
-    ###
-    <1>
-    <:pp>Original language:
-engine: "davinci"
+doc: This prompt translates text in any world langauge to English
+prompt: |
+  The following passages are translated into English.
+  ###
+  La clase Monad esta disenada para
+  describir tipos/estructuras de datos en
+  los que sea necesario manejar un contexto
+  de forma transparente al usuario.
+  Original language: Spanish.
+  English translation:
+  The Monad class is designed to describe
+  data types / structures in which it is
+  necessary to handle a context in a
+  transparent way to the user.
+  ###
+  Puis-je avoir une baguette s'il vous plaît?
+  Original language: French
+  English translation:
+  Could I have a baguette please?
+  ###
+  Der Begriff deutsch als Bezeichnung für das Volk der Deutschen, die deutsche Sprache bzw. Deutschland verfügt in den verschiedenen Sprachen der Welt über untereinander ähnliche wie auch äußerst unterschiedliche Wörter.
+  Original language: German
+  English translation:
+  The term German as a term for the people of the Germans, the German language or Germany has similar and extremely different words in the various languages of the world.
+  ###
+  <1>
+  <:pp>Original language:
+engine: davinci
 temperature: 0.5
 max-tokens: 200
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: off
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: false
+show-probabilities: false
 vars:
-- "text"
+- text
 examples:
-- "Pero, que es el contexto?"
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- Pero, que es el contexto?
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: no
+needs-work: false

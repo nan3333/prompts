@@ -1,42 +1,34 @@
-title: "Shell/bash terminal command completion"
+---
+title: Shell/bash terminal command completion
 prompt-version: 1
 doc: |-
-    This is a bash terminal command completer for emacs.
-    It may be more useful to have a comment->code translator.
-prompt: |+
-    Shell commands to run in the terminal:
-    ```
-    $ <1>
-engine: "davinci"
+  This is a bash terminal command completer for emacs.
+  It may be more useful to have a comment->code translator.
+prompt: |
+  Shell commands to run in the terminal:
+  ```
+  $ <1>
+engine: davinci
 temperature: 0.3
 max-tokens: 200
-top-p: 1.0
-# Not available yet: openai api completions.create --help
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n"
-# - "\n\n\n"
-# - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "command preceding text"
+- command preceding text
 examples:
-- "install"
-# Completion is for generating a company-mode completion function
-completion: on
-# default values for pen -- evaled
-# This is useful for completion commands.
+- install
+completion: true
 pen-defaults:
 - "(pen-preceding-text-line)"
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: no
+needs-work: false

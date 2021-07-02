@@ -1,100 +1,52 @@
-title: "Navigate NYC subway"
-doc: ""
-# cat $MYGIT/ryanmark1867/tube_assistant/data/nyc_prompts_hops_separated_and_segmented.csv | csv2json | jq -r ".[] | \"\(.question)\n\(.answer)\n###\""
-prompt: |+
-    Welcome to Underground Assistant.
-
-    intput: how to get from Franklin St to South Ferry
-    output: Line 1 from Franklin St to South Ferry
-    ###
-    intput: how to get from Bleeker St to Chambers St
-    output: Line 6 from Bleeker St to Chambers St
-    ###
-    input: how to get from Bowery to Chambers St
-    output: Line J from Bowery to Chambers St
-    ###
-    input: how to get from Bowery to Chambers St
-    output: Line Z from Bowery to Chambers St
-    ###
-    input: how to get from Prince St to Rector St
-    output: Line R from Prince St to Rector St 
-    ###
-    input: how to get from Penn Station to 14 St
-    output: Line F from Penn Station to 14 St
-    ###
-    input: how to get from Penn Station to 18 St
-    output: Line 1 from Penn Station to 18 St
-    ###
-    input: how to get from Grand Central to Bowling Green
-    output: Line 4 from Grand Central to Bowling Green 
-    ###
-    input: how to get from 168 St to Canal St
-    output: Line A from 168 St to Canal St
-    ###
-    input: how to get from Penn Station to 168 St
-    output: Line A from Penn Station to 168 St
-    ###
-    input: how to get from 8 Av to 1 Av
-    output: Line L from 8 Av to 1 Av
-    ###
-    input: how to get from Fulton St to City Hall
-    output: Line 4 to Canal St, Line R from Canal St to City Hall
-    ###
-    input: how to get from 28 St to Prince St
-    output: Line R from 28 St to Prince St
-    ###
-    input: how to get from Grand Central to Times Sq
-    output: Line S from Grand Central to Times Sq
-    ###
-    input: how to get from Times Sq to Grand Central
-    output: Line S from Times Sq to Grand Central
-    ###
-    input: how to get from Grand Street to Times Sq
-    output: Line D from Grand Street to Times Sq
-    ###
-    input: how to get from Penn Station to Fulton St
-    output: Line F from Penn Station to Fulton St
-    ###
-    input: how to get from 49 St to 5 Av
-    output: Line N from 49 St to 5 Av
-    ###
-    input: how to get from Times Sq to Roosevelt Island
-    output: Line E from Times Sq to Roosevelt Island
-    ###
-    input: how to get from Rector St to Franklin St
-    output: Line 1 from Rector St to Franklin St
-    ###
-    input: how to get from Canal St to Fulton St
-    output: Line C from Canal St to Fulton St
-    ###
-    input: how to get from Penn Station to Grand Central
-    output: Line 1 from Penn Station to Times Sq, Line S from Times Sq to Grand Central
-    ###
-    input: how to get from Grand Central to Penn Station
-    output: Line S from Grand Central to Times Sq, Line 1 from Times Sq to Penn Station
-    ###
-    input: <1>
-    output:
-engine: "davinci"
+---
+title: Navigate NYC subway
+doc: ''
+prompt: "Welcome to Underground Assistant.\n\nintput: how to get from Franklin St
+  to South Ferry\noutput: Line 1 from Franklin St to South Ferry\n###\nintput: how
+  to get from Bleeker St to Chambers St\noutput: Line 6 from Bleeker St to Chambers
+  St\n###\ninput: how to get from Bowery to Chambers St\noutput: Line J from Bowery
+  to Chambers St\n###\ninput: how to get from Bowery to Chambers St\noutput: Line
+  Z from Bowery to Chambers St\n###\ninput: how to get from Prince St to Rector St\noutput:
+  Line R from Prince St to Rector St \n###\ninput: how to get from Penn Station to
+  14 St\noutput: Line F from Penn Station to 14 St\n###\ninput: how to get from Penn
+  Station to 18 St\noutput: Line 1 from Penn Station to 18 St\n###\ninput: how to
+  get from Grand Central to Bowling Green\noutput: Line 4 from Grand Central to Bowling
+  Green \n###\ninput: how to get from 168 St to Canal St\noutput: Line A from 168
+  St to Canal St\n###\ninput: how to get from Penn Station to 168 St\noutput: Line
+  A from Penn Station to 168 St\n###\ninput: how to get from 8 Av to 1 Av\noutput:
+  Line L from 8 Av to 1 Av\n###\ninput: how to get from Fulton St to City Hall\noutput:
+  Line 4 to Canal St, Line R from Canal St to City Hall\n###\ninput: how to get from
+  28 St to Prince St\noutput: Line R from 28 St to Prince St\n###\ninput: how to get
+  from Grand Central to Times Sq\noutput: Line S from Grand Central to Times Sq\n###\ninput:
+  how to get from Times Sq to Grand Central\noutput: Line S from Times Sq to Grand
+  Central\n###\ninput: how to get from Grand Street to Times Sq\noutput: Line D from
+  Grand Street to Times Sq\n###\ninput: how to get from Penn Station to Fulton St\noutput:
+  Line F from Penn Station to Fulton St\n###\ninput: how to get from 49 St to 5 Av\noutput:
+  Line N from 49 St to 5 Av\n###\ninput: how to get from Times Sq to Roosevelt Island\noutput:
+  Line E from Times Sq to Roosevelt Island\n###\ninput: how to get from Rector St
+  to Franklin St\noutput: Line 1 from Rector St to Franklin St\n###\ninput: how to
+  get from Canal St to Fulton St\noutput: Line C from Canal St to Fulton St\n###\ninput:
+  how to get from Penn Station to Grand Central\noutput: Line 1 from Penn Station
+  to Times Sq, Line S from Times Sq to Grand Central\n###\ninput: how to get from
+  Grand Central to Penn Station\noutput: Line S from Grand Central to Times Sq, Line
+  1 from Times Sq to Penn Station\n###\ninput: <1>\noutput:\n"
+engine: davinci
 temperature: 0.5
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "question"
+- question
 examples:
-- "how to get from Grand Central to Penn Station"
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- how to get from Grand Central to Penn Station
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0

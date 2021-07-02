@@ -1,40 +1,30 @@
-title: "Generic completion -- 200 tokens max"
+---
+title: Generic completion -- 200 tokens max
 prompt-version: 1
-doc: |-
-    This is a generic completer.
-prompt: |+
-    <1>
-engine: "davinci"
+doc: This is a generic completer.
+prompt: "<1>\n"
+engine: davinci
 temperature: 0.8
 max-tokens: 200
-top-p: 1.0
-# Not available yet: openai api completions.create --help
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
-cache: on
-# The input may have newlines in it, so I do a double newline
-# Alternatively, I could format the input
+cache: true
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "text"
+- text
 examples:
-- "Recycling is good for the world, no, you could not be more wrong"
-# Completion is for generating a company-mode completion function
-completion: on
-# default values for pen -- evaled
-# This is useful for completion commands.
+- Recycling is good for the world, no, you could not be more wrong
+completion: true
 pen-defaults:
 - "(pen-preceding-text)"
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: no
+needs-work: false

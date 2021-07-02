@@ -1,32 +1,33 @@
-title: "classification of item"
+---
+title: classification of item
 prompt-version: 3
-description: "Classify items into categories via example"
-prompt: |+
-    The following is a list of companies and the categories they fall into
+description: Classify items into categories via example
+prompt: |
+  The following is a list of companies and the categories they fall into
 
-    Jupiter: planet, gas giant
-    Facebook: Social media, Technology
-    LinkedIn: Social media, Technology, Enterprise, Careers
-    Uber: Transportation, Technology, Marketplace
-    cat: domesticated animal, mammal
-    Unilever: Conglomerate, Consumer Goods
-    Mcdonalds: Food, Fast Food, Logistics, Restaurants
-    <1>:
-engine: "davinci"
+  Jupiter: planet, gas giant
+  Facebook: Social media, Technology
+  LinkedIn: Social media, Technology, Enterprise, Careers
+  Uber: Transportation, Technology, Marketplace
+  cat: domesticated animal, mammal
+  Unilever: Conglomerate, Consumer Goods
+  Mcdonalds: Food, Fast Food, Logistics, Restaurants
+  <1>:
+engine: davinci
 temperature: 0.3
 max-tokens: 6
-top-p: 1.0
-frequency-penalty: 0.0
-presence-penalty: 0.0
+top-p: 1
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: off
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: false
+show-probabilities: false
 vars:
-- "item to classify"
+- item to classify
 examples:
-- "whale"
+- whale

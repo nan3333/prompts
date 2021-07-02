@@ -1,52 +1,44 @@
-title: "Ship came into harbour carrying several X"
-doc: "List a bunch of a type of thing"
-prompt: |+
-    Here are some lists of things:
+---
+title: Ship came into harbour carrying several X
+doc: List a bunch of a type of thing
+prompt: |
+  Here are some lists of things:
 
-    A list of 8 countries in no particular order:
-    Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador
-    ###
-    A list of 9 car manufacturers in no particular order:
-    Fiat,Corvette,Holden,Daewoo,Hyundai,BMW,Ford,Mazda,Toyota
-    ###
-    A list of 6 islands starting with N:
-    New Britain,Naart,Nukumanu,Nærøya,Nikumaroro,Nagy-Pandúr-sziget,Neuwerk
-    ###
-    A list of 4 fruit starting with E:
-    Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
-    ###
-    A list of <1> <2>:
-engine: "davinci"
+  A list of 8 countries in no particular order:
+  Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador
+  ###
+  A list of 9 car manufacturers in no particular order:
+  Fiat,Corvette,Holden,Daewoo,Hyundai,BMW,Ford,Mazda,Toyota
+  ###
+  A list of 6 islands starting with N:
+  New Britain,Naart,Nukumanu,Nærøya,Nikumaroro,Nagy-Pandúr-sziget,Neuwerk
+  ###
+  A list of 4 fruit starting with E:
+  Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
+  ###
+  A list of <1> <2>:
+engine: davinci
 temperature: 0.7
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.9
-# If I make presence-penalty 0 then it will get very terse
 presence-penalty: 0.3
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "n"
-- "type"
-# - "letter"
+- n
+- type
 examples:
-- "5"
-- "island countries"
-# - "T"
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- '5'
+- island countries
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: no
-postprocessor: "sed 's/,/\\n/g'"
-# examplary continuation function
-# prompts are not stitched together / composed but examplary functions are
-# <g> is the existing generation
-# <1> is a variable
-continuation-function: "list-of <1> <g>"
+needs-work: false
+postprocessor: sed 's/,/\n/g'
+continuation-function: list-of <1> <g>

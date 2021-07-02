@@ -1,57 +1,55 @@
-title: "Translate to"
+---
+title: Translate to
 prompt-version: 1
-doc: "This prompt translates English text to any world langauge"
+doc: This prompt translates English text to any world langauge
 issues:
- - "Not sure why, but requires <:pp> at the end of the prompt"
-prompt: |+
-    ###
-    # English: Hello
-    # Russian: Zdravstvuyte
-    # Chinese: Nǐn hǎo
-    # Italian: Salve
-    # Japanese: Konnichiwa
-    # German: Guten Tag
-    # Portuguese: Olá
-    # French: Bonjour
-    # Spanish: Hola
-    ###
-    # English: Happy birthday!
-    # Spanish: ¡Feliz cumpleaños!
-    # French: Bon anniversaire !
-    # German: Alles Gute zum Geburtstag!
-    # Italian: Buon compleanno!
-    # Portuguese: Feliz aniversário!
-    # Swedish: Grattis på födelsedagen!
-    # Russian: С Днём рождения!
-    # Indonesian: Selamat ulang tahun!
-    ###
-    # English: <2>
-    # <1>:<:pp>
-engine: "davinci"
+- Not sure why, but requires <:pp> at the end of the prompt
+prompt: |
+  ###
+  # English: Hello
+  # Russian: Zdravstvuyte
+  # Chinese: Nǐn hǎo
+  # Italian: Salve
+  # Japanese: Konnichiwa
+  # German: Guten Tag
+  # Portuguese: Olá
+  # French: Bonjour
+  # Spanish: Hola
+  ###
+  # English: Happy birthday!
+  # Spanish: ¡Feliz cumpleaños!
+  # French: Bon anniversaire !
+  # German: Alles Gute zum Geburtstag!
+  # Italian: Buon compleanno!
+  # Portuguese: Feliz aniversário!
+  # Swedish: Grattis på födelsedagen!
+  # Russian: С Днём рождения!
+  # Indonesian: Selamat ulang tahun!
+  ###
+  # English: <2>
+  # <1>:<:pp>
+engine: davinci
 temperature: 0.5
 max-tokens: 200
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "#"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: off
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: false
+show-probabilities: false
 vars:
-- "language"
-- "phrase"
+- language
+- phrase
 examples:
-- "French"
-- "Goodnight"
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- French
+- Goodnight
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: no
+needs-work: false

@@ -1,40 +1,38 @@
-title: "web search"
+---
+title: web search
 prompt-version: 1
-prompt: |+
-    web search
+prompt: |
+  web search
 
-    Perry Bible Fellowship
-    http://pbfcomics.com
-    ###
-    emacs reddit
-    https://www.reddit.com/r/emacs/
-    ###
-    Hacker News
-    http://news.ycombinator.com
-    ###
-    Stanford AI
-    http://ai.stanford.edu
-    ###
-    <1>
-engine: "davinci"
+  Perry Bible Fellowship
+  http://pbfcomics.com
+  ###
+  emacs reddit
+  https://www.reddit.com/r/emacs/
+  ###
+  Hacker News
+  http://news.ycombinator.com
+  ###
+  Stanford AI
+  http://ai.stanford.edu
+  ###
+  <1>
+engine: davinci
 temperature: 0.3
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "query"
+- query
 examples:
-- "lord of the rings website"
-external: ""
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- lord of the rings website
+external: ''
+filter: false
 stitch-max: 0

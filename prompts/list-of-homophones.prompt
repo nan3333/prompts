@@ -1,34 +1,24 @@
-title: "List rhyming words starting with letter - homophones"
-prompt: |+
-    A homophone is defined as a word that is pronounced the same as another word but 
-    differs in meaning.
-    
-    Here is a list of homophones:
-    1. Accept/Except
-    2. Affect/Effect
-    3. Allude/Elude
-    4. Alter/Altar
-    5. A lot/Allot
-    
-    Here's a list of homophones starting with the letter "<1>":
-engine: "davinci"
+---
+title: List rhyming words starting with letter - homophones
+prompt: "A homophone is defined as a word that is pronounced the same as another word
+  but \ndiffers in meaning.\n\nHere is a list of homophones:\n1. Accept/Except\n2.
+  Affect/Effect\n3. Allude/Elude\n4. Alter/Altar\n5. A lot/Allot\n\nHere's a list
+  of homophones starting with the letter \"<1>\":\n"
+engine: davinci
 temperature: 0.3
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "letter"
+- letter
 examples:
-- "M"
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- M
+filter: false
 stitch-max: 0

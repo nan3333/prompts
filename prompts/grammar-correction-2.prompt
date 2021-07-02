@@ -1,27 +1,28 @@
-title: "correct grammar 2"
+---
+title: correct grammar 2
 prompt-version: 1
-prompt: |+
-    Input: Anna and Mike is going skiing.
-    Output: Anna and Mike are going skiing.
-    Input: Anna and Pat are married; he has been together for 20 years.
-    Output: Anna and Pat are married; they have been together for 20 years.
-    Input: I walk to the store and I bought milk.
-    Output: I walked to the store and I bought milk.
-    Input: <1>
-    Output:
-engine: "davinci"
+prompt: |
+  Input: Anna and Mike is going skiing.
+  Output: Anna and Mike are going skiing.
+  Input: Anna and Pat are married; he has been together for 20 years.
+  Output: Anna and Pat are married; they have been together for 20 years.
+  Input: I walk to the store and I bought milk.
+  Output: I walked to the store and I bought milk.
+  Input: <1>
+  Output:
+engine: davinci
 temperature: 0
 max-tokens: 60
-top-p: 1.0
-frequency-penalty: 0.0
-presence-penalty: 0.0
+top-p: 1
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "sentence"
+- sentence
 examples:
-- "She no went to the market."
+- She no went to the market.

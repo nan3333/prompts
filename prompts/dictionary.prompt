@@ -1,60 +1,55 @@
-title: "define word for glossary"
+---
+title: define word for glossary
 aliases:
-  - "define word"
+- define word
 prompt-version: 1
-doc: "Get a short definition of a term for the glossary system."
-prompt: |+
-    Glossary of terms.
+doc: Get a short definition of a term for the glossary system.
+prompt: |
+  Glossary of terms.
 
-    fixture
-    Definition: A piece of equipment or furniture which is fixed in position in a building or vehicle.
-  
-    operatic
-    Definition: extravagantly theatrical; histrionic.
-  
-    vestige
-    A trace or remnant of something that is
-    Definition: disappearing or no longer exists.
-  
-    ossified
-    Definition: Turn into bone or bony tissue.
-  
-    onerous
-    Definition: (of a task or responsibility) involving a great deal of effort, trouble, or difficulty.
+  fixture
+  Definition: A piece of equipment or furniture which is fixed in position in a building or vehicle.
 
-    predilection
-    Definition: A preference or special liking for something; a bias in favour of something. "my predilection for Asian food"
+  operatic
+  Definition: extravagantly theatrical; histrionic.
 
-    <1>
-    Definition:
-engine: "davinci"
+  vestige
+  A trace or remnant of something that is
+  Definition: disappearing or no longer exists.
+
+  ossified
+  Definition: Turn into bone or bony tissue.
+
+  onerous
+  Definition: (of a task or responsibility) involving a great deal of effort, trouble, or difficulty.
+
+  predilection
+  Definition: A preference or special liking for something; a bias in favour of something. "my predilection for Asian food"
+
+  <1>
+  Definition:
+engine: davinci
 temperature: 0.5
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: off
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: false
+show-probabilities: false
 vars:
-- "word"
+- word
 examples:
-- "boysenberry"
-# Completion is for generating a company-mode completion function
-completion: on
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- boysenberry
+completion: true
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-# \s must be escaped here or it breaks yaml
-postprocessor: "sed 's/\\s\\+/ /g' | s join ' '"
-# Optional extra command to run after the postprocessor
-prettifier: "tpp"
+postprocessor: sed 's/\s\+/ /g' | s join ' '
+prettifier: tpp

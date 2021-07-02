@@ -1,9 +1,8 @@
-title: "Reverse dictionary -- word for -- what do you call"
-doc: "What's the word for... What do you call a..."
-# aims: |+
-# - More abstractive rewording
+---
+title: Reverse dictionary -- word for -- what do you call
+doc: What's the word for... What do you call a...
 prompt-version: 3
-prompt: |+
+prompt: |
   Here is a glossary of terms.
 
   ###
@@ -21,62 +20,35 @@ prompt: |+
   ###
   Definition: <1>
   Term:
-engine: "myrc"
-preferred-openai-engine: "davinci"
-# 0.0 = /r/ihadastroke
-# 1.0 = /r/iamveryrandom
-# Use 0.3-0.8
+engine: myrc
+preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60
-top-p: 1.0
-# Not available yet: openai api completions.create --help
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
-# - "\n"
-# - "\n\n"
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-# Cache the function by default when running the prompt function
-cache: on
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
+cache: true
 vars:
-- "description"
+- description
 examples:
-- "the artform with an irrational juxtaposition of images"
-# the current implementation of preprocessors is kinda slow and will add ~100ml per variable
+- the artform with an irrational juxtaposition of images
 preprocessors:
-# lowecase first letter
-- "sed -e \"s/\\b\\(.\\)/\\l\\1/g\""
-# completion: on
-# # default values for pen -- evaled
-# # This is useful for completion commands.
-# pen-defaults:
-# - "(detect-language)"
-# - "(pen-preceding-text)"
-# These are elisp String->String functions and run from pen.el
-# It probably runs earlier than the preprocessors shell scripts
+- sed -e "s/\b\(.\)/\l\1/g"
 pen-preprocessors:
-- "pen-pf-correct-grammar"
-# # A preprocessor filters the var at that position
-# # This may be useful to distinguish a block of text, for example
-# preprocessors:
-# - "sed 's/^/- /"
-# - "cat"
-chomp-start: on
-chomp-end: off
-prefer-external: on
-external: ""
-conversation-mode: no
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- pen-pf-correct-grammar
+chomp-start: true
+chomp-end: false
+prefer-external: true
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: yes
-# Prompt function aliases
+needs-work: true
 aliases:
-- "word for"
-# postprocessor: "sed 's/- //' | uniqnosort"
+- word for

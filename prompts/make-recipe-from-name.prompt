@@ -1,113 +1,69 @@
-title: "Make recipe ingredients and instructions from name"
-# future-titles: ""
-# aims: |+
-# - More abstractive rewording
-doc: "Given a recipe name, come up with the ingredients and instructions"
-# aims: |+
-# - More abstractive rewording
+---
+title: Make recipe ingredients and instructions from name
+doc: Given a recipe name, come up with the ingredients and instructions
 inspiration:
-- "https://www.twilio.com/blog/generating-cooking-recipes-openai-gpt3-ruby"
-- "https://github.com/drewbaumann/gpt3-recipe-builder"
-- "https://recipegpt.org/"
+- https://www.twilio.com/blog/generating-cooking-recipes-openai-gpt3-ruby
+- https://github.com/drewbaumann/gpt3-recipe-builder
+- https://recipegpt.org/
 prompt-version: 2
-prompt: |+
-    Name: Sugar Cookies
-    
-    Ingredients:
-    flour, salt, baking soda, butter, sugar, egg, milk, vanilla extract
-    
-    Recipe:
-    1. Whisk flour, salt, and baking soda together in a bowl. In a separate bowl, cream the butter, white sugar, and brown sugar together until mixture is light and fluffy, 3 to 4 minutes. Add the egg, milk, and vanilla extract. Whisk liquids together in small areas around the bowl, then all together to avoid separation.
-    
-    2. Pour dry ingredients into the wet ingredients; stir until flour is thoroughly mixed in. Stir in the chocolate chips.
-    
-    3. Transfer dough to a resealable plastic bag. Refrigerate until dough is firm, at least 2 hours.
-    
-    4. Preheat oven to 375 degrees F (190 degrees C). Line baking sheet with parchment paper.
-    
-    5. Scoop out rounded tablespoons of dough and place on prepared baking sheet, leaving 4 inches of space between cookies (about 8 per sheet). Bake in preheated oven until cookies are golden brown, about 12 minutes. Slide parchment and cookies onto a cooling rack for a few minutes. Remove parchment and finish cooling the cookies on the rack.
-    
-    Name: Shrimp Scampi
-    
-    Ingredients:
-    butter, shrimp, olive oil, pepper, salt, shallots, linguine, red pepper flakes, garlic, shallots
-    
-    Recipe:
-    1. Bring a large pot of salted water to a boil; cook linguine in boiling water until nearly tender, 6 to 8 minutes. Drain.
-    
-    2. Melt 2 tablespoons butter with 2 tablespoons olive oil in a large skillet over medium heat. Cook and stir shallots, garlic, and red pepper flakes in the hot butter and oil until shallots are translucent, 3 to 4 minutes. Season shrimp with kosher salt and black pepper; add to the skillet and cook until pink, stirring occasionally, 2 to 3 minutes. Remove shrimp from skillet and keep warm.
-    
-    3. Pour white wine and lemon juice into skillet and bring to a boil while scraping the browned bits of food off of the bottom of the skillet with a wooden spoon. Melt 2 tablespoons butter in skillet, stir 2 tablespoons olive oil into butter mixture, and bring to a simmer. Toss linguine, shrimp, and parsley in the butter mixture until coated; season with salt and black pepper. Drizzle with 1 teaspoon olive oil to serve.
-    
-    Name: <1>
-    
-    Ingredients:
-# # Additional transformation of prompt after the template
-# prompt-filter: "sed -z 's/\s\+$//'"
-# # Trailing whitespace is always removed
-# prompt-remove-trailing-whitespace: on
-# myrc will select the completion engine using my config.
-# This may be openi-complete or something else
-engine: "myrc"
-# if nothing is selected in myrc and openapi-complete is used
-# by default, then openai should select this engine.
-preferred-openai-engine: "davinci"
-# 0.0 = /r/ihadastroke
-# 1.0 = /r/iamveryrandom
-# Use 0.3-0.8
+prompt: |
+  Name: Sugar Cookies
+
+  Ingredients:
+  flour, salt, baking soda, butter, sugar, egg, milk, vanilla extract
+
+  Recipe:
+  1. Whisk flour, salt, and baking soda together in a bowl. In a separate bowl, cream the butter, white sugar, and brown sugar together until mixture is light and fluffy, 3 to 4 minutes. Add the egg, milk, and vanilla extract. Whisk liquids together in small areas around the bowl, then all together to avoid separation.
+
+  2. Pour dry ingredients into the wet ingredients; stir until flour is thoroughly mixed in. Stir in the chocolate chips.
+
+  3. Transfer dough to a resealable plastic bag. Refrigerate until dough is firm, at least 2 hours.
+
+  4. Preheat oven to 375 degrees F (190 degrees C). Line baking sheet with parchment paper.
+
+  5. Scoop out rounded tablespoons of dough and place on prepared baking sheet, leaving 4 inches of space between cookies (about 8 per sheet). Bake in preheated oven until cookies are golden brown, about 12 minutes. Slide parchment and cookies onto a cooling rack for a few minutes. Remove parchment and finish cooling the cookies on the rack.
+
+  Name: Shrimp Scampi
+
+  Ingredients:
+  butter, shrimp, olive oil, pepper, salt, shallots, linguine, red pepper flakes, garlic, shallots
+
+  Recipe:
+  1. Bring a large pot of salted water to a boil; cook linguine in boiling water until nearly tender, 6 to 8 minutes. Drain.
+
+  2. Melt 2 tablespoons butter with 2 tablespoons olive oil in a large skillet over medium heat. Cook and stir shallots, garlic, and red pepper flakes in the hot butter and oil until shallots are translucent, 3 to 4 minutes. Season shrimp with kosher salt and black pepper; add to the skillet and cook until pink, stirring occasionally, 2 to 3 minutes. Remove shrimp from skillet and keep warm.
+
+  3. Pour white wine and lemon juice into skillet and bring to a boil while scraping the browned bits of food off of the bottom of the skillet with a wooden spoon. Melt 2 tablespoons butter in skillet, stir 2 tablespoons olive oil into butter mixture, and bring to a simmer. Toss linguine, shrimp, and parsley in the butter mixture until coated; season with salt and black pepper. Drizzle with 1 teaspoon olive oil to serve.
+
+  Name: <1>
+
+  Ingredients:
+engine: myrc
+preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60
-top-p: 1.0
-# Not available yet: openai api completions.create --help
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
-# - "\n"
-# - "\n\n"
-# - "###"
-- "Name:"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-# Cache the function by default when running the prompt function
-cache: on
+- 'Name:'
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
+cache: true
 vars:
-- "name"
+- name
 examples:
 - Fruit salad
-# Completion is for generating a company-mode completion function
-# completion: on
-# # default values for pen -- evaled
-# # This is useful for completion commands.
-# pen-defaults:
-# - "(detect-language)"
-# - "(pen-preceding-text)"
-# These are elisp String->String functions and run from pen.el
-# It probably runs earlier than the preprocessors shell scripts
 pen-preprocessors:
-- "cat"
-# # A preprocessor filters the var at that position
-# the current implementation of preprocessors is kinda slow and will add ~100ml per variable
-# # This may be useful to distinguish a block of text, for example
-# preprocessors:
-# - "sed 's/^/- /"
-# - "cat"
-chomp-start: on
-chomp-end: off
-prefer-external: on
-external: ""
-# Enable running conversation
-conversation-mode: no
-# Replace selected text
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- cat
+chomp-start: true
+chomp-end: false
+prefer-external: true
+external: ''
+conversation-mode: false
+filter: false
 stitch-max: 0
-needs-work: no
+needs-work: false
 n-test-runs: 5
-# Prompt function aliases
-# aliases:
-# - "asktutor"
-# postprocessor: "sed 's/- //' | uniqnosort"

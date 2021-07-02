@@ -1,19 +1,20 @@
-title: "snarky movie summary"
-prompt: |+
+---
+title: snarky movie summary
+prompt: |
   Movie: Lord of the Rings
   Snarky summary: Group spends 9 hours returning jewlery
-  
+
   Movie: The Revenant
   Snarky summary: Leonardo DiCaprio wanders a frozen wasteland looking for an Oscar
-  
+
   Movie: The Departed
   Snarky summary: Spied upon! Spied upon! We're always spied upon. "Yes, but who the hell is doing the spying?"
-  
+
   Movie: Avatar
   Snarky summary: Obnoxious blue aliens fuck up nature
-  
+
   Movie: <1>
-engine: "davinci"
+engine: davinci
 temperature: 0.7
 max-tokens: 30
 top-p: 1
@@ -21,11 +22,11 @@ frequency-penalty: 0.2
 presence-penalty: 0.8
 best-of: 1
 stop-sequences:
-  - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+- "\n\n"
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-  - "movie title"
+- movie title
 examples:
-  - "The Davinci Code"
+- The Davinci Code

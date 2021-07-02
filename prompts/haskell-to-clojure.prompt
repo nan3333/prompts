@@ -1,50 +1,28 @@
-title: "Translate Haskell to Clojure"
-prompt: |+
-    Haskell:
-    zip (map show [1,5,9]) ["a","b","c"] 
-    Clojure:
-    (println (map vector '(1 2 3) '(4 5 6))) 
-    
-    Haskell:
-    map toUpper "MiXeD cAsE" 
-    Clojure:
-    (clojure.string/upper-case "MiXeD cAsE")
-    
-    Haskell:
-    putStrLn "Hello World"
-    Clojure:
-    (println "Hello World")
-    
-    Haskell: 
-    import Data.Time.Clock
-    import Data.Time.Calendar
-    date :: IO (Integer, Int, Int) -- :: (year, month, day)
-    date = getCurrentTime >>= return . toGregorian . utctDay
-    Clojure: 
-    (defn date [] (.toString (java.util.Date.)))
-
-    Haskell: 
-    <1>
-    Clojure:
-engine: "davinci"
+---
+title: Translate Haskell to Clojure
+prompt: "Haskell:\nzip (map show [1,5,9]) [\"a\",\"b\",\"c\"] \nClojure:\n(println
+  (map vector '(1 2 3) '(4 5 6))) \n\nHaskell:\nmap toUpper \"MiXeD cAsE\" \nClojure:\n(clojure.string/upper-case
+  \"MiXeD cAsE\")\n\nHaskell:\nputStrLn \"Hello World\"\nClojure:\n(println \"Hello
+  World\")\n\nHaskell: \nimport Data.Time.Clock\nimport Data.Time.Calendar\ndate ::
+  IO (Integer, Int, Int) -- :: (year, month, day)\ndate = getCurrentTime >>= return
+  . toGregorian . utctDay\nClojure: \n(defn date [] (.toString (java.util.Date.)))\n\nHaskell:
+  \n<1>\nClojure:\n"
+engine: davinci
 temperature: 0.3
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "haskell code"
+- haskell code
 examples:
-- "min 1 2"
-external: ""
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- min 1 2
+external: ''
+filter: false
 stitch-max: 0

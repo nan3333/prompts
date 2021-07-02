@@ -1,12 +1,13 @@
-title: "eli5 explain like I'm five"
-prompt: |+
+---
+title: eli5 explain like I'm five
+prompt: |
   My second grader asked me what this passage means:
   ###
   <1>
   ###
   I rephrased it for him, in plain language a second grader can understand:
   ###
-engine: "davinci"
+engine: davinci
 temperature: 0.6
 max-tokens: 100
 top-p: 1
@@ -14,33 +15,29 @@ frequency-penalty: 0.2
 presence-penalty: 0.2
 best-of: 1
 stop-sequences:
-  - "###"
-  # Unfortunately, this doesn't work yet
-  # Multiple --stop arguments to openai override the previous
-  # - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-chomp-start: on
-chomp-end: on
+- "###"
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
+chomp-start: true
+chomp-end: true
 vars:
-- "passage"
+- passage
 examples:
 - |-
-    Men at Work are an Australian rock band formed
-    in Melbourne in 1978 and best known for
-    breakthrough hits such as "Who Can It Be Now?"
-    or "Down Under". Its founding member and
-    frontman is Colin Hay, who performs on lead
-    vocals and guitar. After playing as an
-    acoustic duo with Ron Strykert during 1978–79,
-    Hay formed the group with Strykert playing
-    bass guitar and Jerry Speiser on drums. They
-    were soon joined by Greg Ham on flute,
-    saxophone, and keyboards and John Rees on bass
-    guitar, with Strykert then switching to lead
-    guitar.
-# External provides an alternate script that performs the same function
-external: "summarize-passage"
-filter: yes
-postprocessor: "ttp"
+  Men at Work are an Australian rock band formed
+  in Melbourne in 1978 and best known for
+  breakthrough hits such as "Who Can It Be Now?"
+  or "Down Under". Its founding member and
+  frontman is Colin Hay, who performs on lead
+  vocals and guitar. After playing as an
+  acoustic duo with Ron Strykert during 1978–79,
+  Hay formed the group with Strykert playing
+  bass guitar and Jerry Speiser on drums. They
+  were soon joined by Greg Ham on flute,
+  saxophone, and keyboards and John Rees on bass
+  guitar, with Strykert then switching to lead
+  guitar.
+external: summarize-passage
+filter: true
+postprocessor: ttp

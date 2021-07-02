@@ -1,5 +1,6 @@
-title: "morse code from text"
-prompt: |+
+---
+title: morse code from text
+prompt: |
   Morse code.
 
   A
@@ -155,26 +156,24 @@ prompt: |+
   #
   <1>
   #
-engine: "davinci"
+engine: davinci
 temperature: 0.3
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
-# Be careful with stop sequence as \n. The prompt is chomped by default and generating \n will end it
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "text to morse"
+- text to morse
 examples:
-- "SOS"
-external: ""
-filter: no
+- SOS
+external: ''
+filter: false
 stitch-max: 0
-needs-work: yes
-disabled: yes
+needs-work: true
+disabled: true

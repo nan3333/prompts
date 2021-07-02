@@ -1,38 +1,36 @@
-title: "English to Japanese"
+---
+title: English to Japanese
 prompt-version: 2
-prompt: |+
-    Translate to Japanese.
+prompt: |
+  Translate to Japanese.
 
-    English: Give me a home among the gumtrees.
-    Japanese: ガムツリーの中に家をください。
-    ###
-    English: Could I have a baguette please?
-    Japanese: バゲットを頂けますか？
-    ###
-    English: See you later!
-    Japanese: じゃあまたね！
-    ###
-    English: <1>
-    Japanese:
-engine: "davinci"
+  English: Give me a home among the gumtrees.
+  Japanese: ガムツリーの中に家をください。
+  ###
+  English: Could I have a baguette please?
+  Japanese: バゲットを頂けますか？
+  ###
+  English: See you later!
+  Japanese: じゃあまたね！
+  ###
+  English: <1>
+  Japanese:
+engine: davinci
 temperature: 0.5
 max-tokens: 100
-top-p: 1.0
-frequency-penalty: 0.0
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+top-p: 1
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
 inject-start-text: "\n"
 inject-restart-text: "\n"
-show-probabilities: off
+show-probabilities: false
 vars:
-- "english prose"
+- english prose
 examples:
-- "I love you."
-external: ""
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- I love you.
+external: ''
+filter: false
 stitch-max: 0

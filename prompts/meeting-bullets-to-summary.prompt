@@ -1,34 +1,32 @@
-title: "meeting bullet points to summary"
-doc: "Summarize a meeting from a list of bullet points"
-prompt: |+
-    Convert my short hand into a first-hand account of the meeting:
-    
-    <1>
-    
-    Summary:
-engine: "davinci-instruct-beta"
+---
+title: meeting bullet points to summary
+doc: Summarize a meeting from a list of bullet points
+prompt: |
+  Convert my short hand into a first-hand account of the meeting:
+
+  <1>
+
+  Summary:
+engine: davinci-instruct-beta
 temperature: 0.7
 max-tokens: 60
 top-p: 1
-frequency-penalty: 0.0
-presence-penalty: 0.0
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-# A flag just for convenience-sake to find prompts which are designed to be chatbots
-conversation-mode: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
+conversation-mode: false
 stitch-max: 5
 vars:
-- "notes"
+- notes
 examples:
-- |+
-    Tom: Profits up 50%
-    Jane: New servers are online
-    Kjel: Need more time to fix software
-    Jane: Happy to help
-    Parkman: Beta testing almost done
+- |-
+  Tom: Profits up 50%
+  Jane: New servers are online
+  Kjel: Need more time to fix software
+  Jane: Happy to help
+  Parkman: Beta testing almost done

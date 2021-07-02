@@ -1,58 +1,55 @@
-title: "Correct English spelling and grammar"
+---
+title: Correct English spelling and grammar
 prompt-version: 2
-doc: "Given a sentence which may have incorrect spelling or grammar, correct it."
-prompt: |+
-    ###
-    Poor English:
-    Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
-    Corrected English:
-    Please provide me with a short brief of the design you’re looking for and some examples or previous projects you’ve done would be helpful.
-    ###
-    Poor English:
-    If I’m stressed out about something, I tend to have problem to fall asleep.
-    Corrected English:
-    If I’m stressed out about something, I
-    tend to have a problem falling asleep.
-    ###
-    Poor English:
-    There is plenty of fun things to do in the summer when your able to go outside.
-    Corrected English:
-    There are plenty of fun things to do in the summer when you are able to go outside.
-    ###
-    Poor English:
-    She no went to the market.
-    Corrected English:
-    She didn't go to the market.
-    ###
-    Poor English: <1>
-    Corrected English:
-engine: "davinci"
+doc: Given a sentence which may have incorrect spelling or grammar, correct it.
+prompt: |
+  ###
+  Poor English:
+  Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+  Corrected English:
+  Please provide me with a short brief of the design you’re looking for and some examples or previous projects you’ve done would be helpful.
+  ###
+  Poor English:
+  If I’m stressed out about something, I tend to have problem to fall asleep.
+  Corrected English:
+  If I’m stressed out about something, I
+  tend to have a problem falling asleep.
+  ###
+  Poor English:
+  There is plenty of fun things to do in the summer when your able to go outside.
+  Corrected English:
+  There are plenty of fun things to do in the summer when you are able to go outside.
+  ###
+  Poor English:
+  She no went to the market.
+  Corrected English:
+  She didn't go to the market.
+  ###
+  Poor English: <1>
+  Corrected English:
+engine: davinci
 temperature: 0.3
 max-tokens: 300
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
-# - "\n\n"
 - "###"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: off
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: false
+show-probabilities: false
 vars:
-- "poor english"
+- poor english
 examples:
-- "The rane in spain falls mainly on the flane"
+- The rane in spain falls mainly on the flane
 preprocessors:
-- "s join ' '"
-postprocessor: "tpp"
-external:
-conversation-mode: no
-filter: yes
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- s join ' '
+postprocessor: tpp
+external: 
+conversation-mode: false
+filter: true
 stitch-max: 0
 n-test-runs: 2

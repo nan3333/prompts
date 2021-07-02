@@ -1,48 +1,31 @@
-title: "SQL from natural language"
-# TODO parameterise this prompt to generalise across databases with different descriptions
-prompt: |+
-    We have an users table with columns name,age, and salary. We also have a subject marks table with columns userid, subject, marks.
-
-    Q: How many users are there? 
-    A: select count(*) from users 
-    
-    Q: Give me details about satish? 
-    A: select * from users where name="satish" 
-    
-    Q: What is the age of satish? 
-    A: select age from users where name="satish" 
-    
-    Q: What is the salary of satish? 
-    A: select salary from users where name="satish" 
-    
-    Q: Who has the highest salary 
-    A: select * from users where salary>max(salary) 
-    
-    Q: who are the top users by salary and how much do they earn 
-    A: select * from users order by salary desc limit 10 
-    
-    Q: <1>
-engine: "davinci"
+---
+title: SQL from natural language
+prompt: "We have an users table with columns name,age, and salary. We also have a
+  subject marks table with columns userid, subject, marks.\n\nQ: How many users are
+  there? \nA: select count(*) from users \n\nQ: Give me details about satish? \nA:
+  select * from users where name=\"satish\" \n\nQ: What is the age of satish? \nA:
+  select age from users where name=\"satish\" \n\nQ: What is the salary of satish?
+  \nA: select salary from users where name=\"satish\" \n\nQ: Who has the highest salary
+  \nA: select * from users where salary>max(salary) \n\nQ: who are the top users by
+  salary and how much do they earn \nA: select * from users order by salary desc limit
+  10 \n\nQ: <1>\n"
+engine: davinci
 temperature: 0.3
 max-tokens: 60
-top-p: 1.0
+top-p: 1
 frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "prose query"
+- prose query
 examples:
-- "Who has the lowest salary"
-external: ""
-filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
+- Who has the lowest salary
+external: ''
+filter: false
 stitch-max: 0
-# This prompt needs additional work to be useful
-needs-work: yes
+needs-work: true

@@ -1,27 +1,25 @@
-title: "mood to colour"
-doc: ""
-# It appears that hashtags (#) are one issue to be aware of in YAML multiline strings
-prompt: |+
-    The CSS code for a color like <1>:
-    
-    background-color:
-engine: "davinci"
+---
+title: mood to colour
+doc: ''
+prompt: |
+  The CSS code for a color like <1>:
+
+  background-color:
+engine: davinci
 temperature: 0
 max-tokens: 64
 top-p: 1
-frequency-penalty: 0.0
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
-# Currently, only the first stop sequence is supported
 stop-sequences:
 - ";"
 - "\n"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+show-probabilities: false
 vars:
-- "mood"
+- mood
 examples:
-- "a blue sky at dusk"
+- a blue sky at dusk
 n-test-runs: 2

@@ -1,23 +1,24 @@
-title: "correct grammar"
+---
+title: correct grammar
 prompt-version: 2
-prompt: |+
-    Original: <1>
-    Standard American English:
-engine: "davinci"
+prompt: |
+  Original: <1>
+  Standard American English:
+engine: davinci
 temperature: 0
 max-tokens: 2000
-top-p: 1.0
-frequency-penalty: 0.0
-presence-penalty: 0.0
+top-p: 1
+frequency-penalty: 0
+presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n"
-inject-start-text: yes
-inject-restart-text: yes
-chomp-start: on
-chomp-end: off
-show-probabilities: off
+inject-start-text: true
+inject-restart-text: true
+chomp-start: true
+chomp-end: false
+show-probabilities: false
 vars:
-- "sentence"
+- sentence
 examples:
-- "She no went to the market."
+- She no went to the market.
