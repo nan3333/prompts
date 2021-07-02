@@ -41,7 +41,6 @@ issues:
 # myrc will select the completion engine using my config.
 # This may be openi-complete or something else
 engine: "myrc"
-gpt-generator: "openai-complete"
 # if nothing is selected in myrc and openapi-complete is used
 # by default, then openai should select this engine.
 preferred-openai-engine: "davinci"
@@ -184,9 +183,9 @@ issues:
 # myrc will select the completion engine using my config.
 # This may be openi-complete or something else
 engine: "myrc"
-# if nothing is selected in myrc and openapi-complete is used
+# if nothing is selected in myrc and lm-complete is used
 # by default, then openai should select this engine.
-gpt-generator: "openai-complete"
+gpt-generator: "lm-complete"
 preferred-openai-engine: "davinci"
 # 0.0 = /r/ihadastroke
 # 1.0 = /r/iamveryrandom
