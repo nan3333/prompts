@@ -68,6 +68,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # prompt-filter: "sed -z 's/\\s\\+$//'"
   # # Trailing whitespace is always removed
   # prompt-remove-trailing-whitespace: on
+  gpt-generator: "lm-complete"
   # myrc will select the completion engine using my config.
   # This may be openi-complete or something else
   engine: "myrc"
