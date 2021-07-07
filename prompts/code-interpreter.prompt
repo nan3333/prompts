@@ -33,7 +33,7 @@ stop-sequences:
 inject-start-text: true
 inject-restart-text: true
 show-probabilities: false
-cache: true
+cache: false
 vars:
 - language
 - code
