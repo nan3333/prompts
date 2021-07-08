@@ -172,11 +172,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Otherwise, it will not work as expected.
   completion: on
 
-  # # default values for pen -- evaled
-  # # This is useful for completion commands.
-
+  # ------------------------------------
   # Non-functional (in development) keys
   # ------------------------------------
+
   # These are expressions run from within Pen to give the value for the variable
   pen-defaults:
   - "(detect-language)"
