@@ -183,9 +183,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # # A preprocessor filters the var at that position
   # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
   # # This may be useful to distinguish a block of text, for example
-  # preprocessors:
-  # - "sed 's/^/- /"
-  # - "cat"
+  preprocessors:
+  - "sed 's/^/- /"
+  - "cat"
 
   # Prefer the external command if it's available.
   prefer-external: on
