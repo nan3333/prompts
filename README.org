@@ -141,9 +141,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   stop-sequences:
   - "\\n"
   - "\\n\\n"
-
-  # 2 hashes is more reliable as a stop sequence because
-  # sometimes the generation morphs from ### to ##
   - "##"
 
   # Cache the function by default when running the prompt function
