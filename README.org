@@ -168,7 +168,8 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "cat"
 
   # Completion indicates that this prompt can be used as a company-mode completion function.
-  # Only the first variable will be used.
+  # Either ensure only one variable, or provide pen-defaults (functions that obtain the value automatically).
+  # Otherwise, it will not work as expected.
   completion: on
 
   # # default values for pen -- evaled
