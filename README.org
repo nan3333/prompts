@@ -39,21 +39,28 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # key: pr
   # expand-env: ((yas-indent-line 'fixed))
   # --
-  # Keys with Doc in the comment will not affect the prompt.
-  # A prompt which is in development will not be loaded by pen.el
-  in-development: yes
-  title: "${1:title}"
-  # Doc. A TODO list.
+  # Doc keys
+  # --------
+  # A TODO list.
   todo:
-  # Doc. A list of design patterns used.
+  # A list of design patterns used.
   design-patterns:
-  # Doc. Possible other names for this prompt.
+  # Possible other names for this prompt.
   future-titles: ""
-  # Doc. Aims for developing this prompt.
+  # Aims for developing this prompt.
   aims: |+
   - More abstractive rewording
   # Function documentation.
   doc: "Given ... ${1:title}"
+  # A list of problems with the prompt.
+  problems:
+  - "Struggles with the latter columns."
+
+  # Functional keys
+  # ---------------
+  # A prompt which is in development will not be loaded by pen.el
+  in-development: yes
+  title: "${1:title}"
   # Increment this number every time you make a functional change.
   # The test suite will only rerun if this version is incremented.
   prompt-version: 1
@@ -68,14 +75,8 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
       ${2:contents}
     
       <1> are like <2> in that
-  # Documentation.
-  problems:
-  # Put problems directly after the prompt because the prompt is a multiline string.
-  # - "Struggles with the latter columns."
-  # # Additional transformation of prompt after the template
-  # prompt-filter: "sed -z 's/\\s\\+$//'"
-  # # Trailing whitespace is always removed
-  # prompt-remove-trailing-whitespace: on
+  # Additional transformation of prompt after the template
+  prompt-filter: "sed -z 's/\\s\\+$//'"
   gpt-generator: "lm-complete"
   # myrc will select the completion engine using my config.
   # This may be openi-complete or something else
@@ -186,3 +187,6 @@ directly, you may use =pen.el=, a package of
 emacs that was used to generate them.
 
 https://github.com/semiosis/pen.el
+
+** Notes
+- Trailing whitespace is always removed from the prompt before it is sent to the LM.
