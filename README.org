@@ -180,9 +180,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # This compares the output of the external script to the output of the LM
   similarity-test:
 
-  # # A preprocessor filters the var at that position
-  # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
-  # # This may be useful to distinguish a block of text, for example
+  # A preprocessor may be run on the variable inputs before entering the prompt
   preprocessors:
   - "sed 's/^/- /"
   - "cat"
