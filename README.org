@@ -135,9 +135,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Remove whitespace from the end of the response string
   chomp-end: off
 
-  # Only the first one will be used by the API,
-  # but the completer script will use the others.
-  # Currently the API can only accept one stop-sequence, but that may change.
+  # Currently the OpenAI API can only accept one stop-sequence.
+  # So only the first one will be used by the API,
+  # but the completer script can make use the others.
   stop-sequences:
   - "\\n"
   - "\\n\\n"
