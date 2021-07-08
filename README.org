@@ -39,16 +39,23 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # key: pr
   # expand-env: ((yas-indent-line 'fixed))
   # --
+  # Keys with Doc in the comment will not affect the prompt.
+  # A prompt which is in development will not be loaded by pen.el
   in-development: yes
   title: "${1:title}"
+  # Doc. A TODO list.
   todo:
+  # Doc. A list of design patterns used.
   design-patterns:
-  # future-titles: ""
-  # aims: |+
-  # - More abstractive rewording
+  # Doc. Possible other names for this prompt.
+  future-titles: ""
+  # Doc. Aims for developing this prompt.
+  aims: |+
+  - More abstractive rewording
+  # Function documentation.
   doc: "Given ... ${1:title}"
-  # aims: |+
-  # - More abstractive rewording
+  # Increment this number every time you make a functional change.
+  # The test suite will only rerun if this version is incremented.
   prompt-version: 1
   # <:pp> defines a point where the following
   # text is concatenated before the postprocessor
@@ -61,6 +68,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
       ${2:contents}
     
       <1> are like <2> in that
+  # Documentation.
   problems:
   # Put problems directly after the prompt because the prompt is a multiline string.
   # - "Struggles with the latter columns."
