@@ -1,0 +1,3 @@
+* Project roadmap
+** Create a schema for prompt-description-mode in =schemastore=
+http://www.schemastore.org/json/
