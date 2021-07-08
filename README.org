@@ -129,8 +129,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   best-of: 1
 
+  # Remove whitespace from the beginning of the response string
   chomp-start: on
 
+  # Remove whitespace from the end of the response string
   chomp-end: off
 
   # Only the first one will be used by the API,
