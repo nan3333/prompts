@@ -24,9 +24,6 @@ presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: "\n"
-inject-restart-text: "\n"
-show-probabilities: false
 vars:
 - english prose
 examples:

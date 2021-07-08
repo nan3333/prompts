@@ -145,9 +145,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # 2 hashes is more reliable as a stop sequence because
   # sometimes the generation morphs from ### to ##
   - "##"
-  # inject-start-text: yes
-  # inject-restart-text: yes
-  # show-probabilities: off
+
   # Cache the function by default when running the prompt function
   cache: on
 

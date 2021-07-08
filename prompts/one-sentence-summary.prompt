@@ -15,11 +15,8 @@ presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n"
-inject-start-text: true
-inject-restart-text: true
 chomp-start: true
 chomp-end: true
 vars:
 - passage
 external: summarize-passage
-show-probabilities: false

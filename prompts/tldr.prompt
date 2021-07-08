@@ -15,8 +15,6 @@ presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: true
-inject-restart-text: true
 chomp-start: true
 chomp-end: true
 vars:
@@ -24,5 +22,4 @@ vars:
 external: summarize-passage
 pen-preprocessors:
 - s join ' '
-show-probabilities: false
 prettifier: tpp

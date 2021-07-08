@@ -24,9 +24,6 @@ stop-sequences:
 - "\n\n"
 chomp-start: true
 chomp-end: false
-inject-start-text: true
-inject-restart-text: true
-show-probabilities: false
 cache: true
 vars:
 - topic

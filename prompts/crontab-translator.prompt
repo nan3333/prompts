@@ -41,11 +41,8 @@ presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: true
-inject-restart-text: true
 chomp-start: true
 chomp-end: false
-show-probabilities: false
 vars:
 - tab
 examples:

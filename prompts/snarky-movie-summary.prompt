@@ -23,9 +23,6 @@ presence-penalty: 0.8
 best-of: 1
 stop-sequences:
 - "\n\n"
-inject-start-text: true
-inject-restart-text: true
-show-probabilities: false
 vars:
 - movie title
 examples:

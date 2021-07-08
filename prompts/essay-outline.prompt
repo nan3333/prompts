@@ -17,9 +17,6 @@ stop-sequences:
 
 
 
-inject-start-text: true
-inject-restart-text: true
-show-probabilities: false
 vars:
 - topic
 examples:

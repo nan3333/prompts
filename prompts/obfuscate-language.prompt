@@ -24,11 +24,8 @@ presence-penalty: 0.4
 best-of: 1
 stop-sequences:
 - "\n"
-inject-start-text: true
-inject-restart-text: true
 chomp-start: true
 chomp-end: false
-show-probabilities: false
 vars:
 - passage
 examples:

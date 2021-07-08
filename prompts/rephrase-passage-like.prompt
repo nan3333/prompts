@@ -16,9 +16,6 @@ presence-penalty: 0.2
 best-of: 1
 stop-sequences:
 - "###"
-inject-start-text: true
-inject-restart-text: true
-show-probabilities: false
 chomp-start: true
 chomp-end: true
 vars:
