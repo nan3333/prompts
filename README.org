@@ -129,6 +129,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   best-of: 1
 
+  chomp-start: on
+
+  chomp-end: off
+
   # Only the first one will be used by the API,
   # but the completer script will use the others.
   # Currently the API can only accept one stop-sequence, but that may change.
@@ -180,8 +184,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # preprocessors:
   # - "sed 's/^/- /"
   # - "cat"
-  chomp-start: on
-  chomp-end: off
 
   # Prefer the external command if it's available.
   prefer-external: on
