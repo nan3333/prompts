@@ -162,6 +162,11 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "boysenberries"
   - "strawberries"
 
+  # A preprocessor may be run on the variable inputs before entering the prompt
+  preprocessors:
+  - "sed 's/^/- /"
+  - "cat"
+
   # Completion is for generating a company-mode completion function
   # completion: on
   # # default values for pen -- evaled
@@ -178,12 +183,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   test-output: "both are types of berry"
 
   # This compares the output of the external script to the output of the LM
-  similarity-test:
-
-  # A preprocessor may be run on the variable inputs before entering the prompt
-  preprocessors:
-  - "sed 's/^/- /"
-  - "cat"
+  similarity-test: "compare <1> <2>"
 
   # Prefer the external command if it's available.
   prefer-external: on
