@@ -179,5 +179,3 @@ emacs that was used to generate them.
 
 https://github.com/semiosis/pen.el
 
-** Testing
-*** TODO Use =cucumber= for test cases
