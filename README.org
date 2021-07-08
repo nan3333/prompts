@@ -167,8 +167,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "sed 's/^/- /"
   - "cat"
 
-  # Completion is for generating a company-mode completion function
-  # completion: on
+  # Completion indicates that this prompt can be used as a company-mode completion function.
+  # Only the first variable will be used.
+  completion: on
+
   # # default values for pen -- evaled
   # # This is useful for completion commands.
 
