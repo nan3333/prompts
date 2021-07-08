@@ -70,6 +70,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # A prompt which is in development will not be loaded by pen.el
   in-development: yes
 
+  # An indicator that this prompt needs further work.
+  needs-work: no
+
   # A title for the prompt. This will become the function name.
   title: "${1:title}"
 
@@ -97,6 +100,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   pen-preprocessors:
   - "pen-pf-correct-grammar"
 
+  # 
   gpt-generator: "lm-complete"
 
   # myrc will select the completion engine using my config.
@@ -152,7 +156,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "boysenberries"
   - "strawberries"
 
-  test-output: "both are types of berry"
   # Completion is for generating a company-mode completion function
   # completion: on
   # # default values for pen -- evaled
@@ -165,6 +168,12 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "(detect-language)"
   - "(pen-preceding-text)"
 
+  # Output to test against. Possibly using similarity.
+  test-output: "both are types of berry"
+
+  # This compares the output of the external script to the output of the LM
+  similarity-test:
+
   # # A preprocessor filters the var at that position
   # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
   # # This may be useful to distinguish a block of text, for example
@@ -173,14 +182,15 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # - "cat"
   chomp-start: on
   chomp-end: off
+
+  # Prefer the external script if it's available.
   prefer-external: on
+
   # This is an optional external command which may be used to perform the same task as the API.
   # This can be used to train the prompt.
   # The external command must take arguments, not stdin
   # So that all variables may be passed into it.
   external: "generate-text-from-input.sh"
-  # This compares the output of the external script to the output of the LM
-  similarity-test:
   # This script returns a 0-1 decimal value representing the quality of the generated output.
   # The input is 2 arguments each containing output
   # The output is a decimal number from 0 to 1
@@ -200,7 +210,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Keep stitching together until reaching this limit
   # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
   stitch-max: 0
-  needs-work: no
+
   n-test-runs: 5
   # Prompt function aliases
   # aliases:
