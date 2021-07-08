@@ -183,7 +183,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   chomp-start: on
   chomp-end: off
 
-  # Prefer the external script if it's available.
+  # Prefer the external command if it's available.
   prefer-external: on
 
   # This is an optional external command which may be used to perform the same task as the API.
