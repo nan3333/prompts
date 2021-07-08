@@ -162,17 +162,17 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "sed 's/^/- /"
   - "cat"
 
+  # ------------------------------------
+  # Non-functional (in development) keys
+  # ------------------------------------
+
   # Completion indicates that this prompt can be used as a company-mode completion function.
   # Either ensure only one variable, or provide pen-defaults (functions that obtain the value automatically).
   # Otherwise, it will not work as expected.
   completion: on
 
-  # Enable running conversation. This would be used for chatbots and REPLs.
+  # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
   conversation-mode: no
-
-  # ------------------------------------
-  # Non-functional (in development) keys
-  # ------------------------------------
 
   # These are expressions run from within Pen to give the value for the variable
   pen-defaults:
