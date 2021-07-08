@@ -120,9 +120,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # completion: on
   # # default values for pen -- evaled
   # # This is useful for completion commands.
-  # pen-defaults:
-  # - "(detect-language)"
-  # - "(pen-preceding-text)"
+  pen-defaults:
+  - "(detect-language)"
+  - "(pen-preceding-text)"
   # These are elisp String->String functions and run from pen.el
   # It probably runs earlier than the preprocessors shell scripts
   pen-preprocessors:
