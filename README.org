@@ -39,31 +39,44 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # key: pr
   # expand-env: ((yas-indent-line 'fixed))
   # --
+  # --------
   # Doc keys
   # --------
+
   # A TODO list.
   todo:
+
   # A list of design patterns used.
   design-patterns:
+
   # Possible other names for this prompt.
   future-titles: ""
+
   # Aims for developing this prompt.
   aims: |+
   - More abstractive rewording
+
   # Function documentation.
   doc: "Given ... ${1:title}"
+
   # A list of problems with the prompt.
   problems:
   - "Struggles with the latter columns."
 
+  # ---------------
   # Functional keys
   # ---------------
+
   # A prompt which is in development will not be loaded by pen.el
   in-development: yes
+
+  # A title for the prompt. This will become the function name.
   title: "${1:title}"
+
   # Increment this number every time you make a functional change.
   # The test suite will only rerun if this version is incremented.
   prompt-version: 1
+
   # <:pp> defines a point where the following
   # text is concatenated before the postprocessor
   # is run.
@@ -75,32 +88,50 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
       ${2:contents}
     
       <1> are like <2> in that
+
   # Additional transformation of prompt after the template
   prompt-filter: "sed -z 's/\\s\\+$//'"
+
+  # These are elisp String->String functions and run from pen.el
+  # It probably runs earlier than the preprocessors shell scripts
+  pen-preprocessors:
+  - "pen-pf-correct-grammar"
+
   gpt-generator: "lm-complete"
+
   # myrc will select the completion engine using my config.
   # This may be openi-complete or something else
   engine: "myrc"
+
   # if nothing is selected in myrc and openapi-complete is used
   # by default, then openai should select this engine.
   preferred-openai-engine: "davinci"
+
   # 0.0 = /r/hadastroke
   # 1.0 = /r/iamveryrandom
   # Use 0.3-0.8
   temperature: 0.8
+
+  # This is the max tokens requested from the LM
   max-tokens: 60
+
   top-p: 1.0
+
   # Not available yet: openai api completions.create --help
   frequency-penalty: 0.5
+
   # If I make presence-penalty 0 then it will get very terse
   presence-penalty: 0.0
+
   best-of: 1
+
   # Only the first one will be used by the API,
   # but the completer script will use the others.
   # Currently the API can only accept one stop-sequence, but that may change.
   stop-sequences:
-  # - "\\n"
-  # - "\\n\\n"
+  - "\\n"
+  - "\\n\\n"
+
   # 2 hashes is more reliable as a stop sequence because
   # sometimes the generation morphs from ### to ##
   - "##"
@@ -109,24 +140,31 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # show-probabilities: off
   # Cache the function by default when running the prompt function
   cache: on
+
+  # Names for the variables of the prompt function.
+  # The first variable may be captured by selection, rather than manually entered.
   vars:
   - "former"
   - "latter"
+
+  # Examples of typical values for the variables
   examples:
   - "boysenberries"
   - "strawberries"
-  # test-output: "both are types of berry"
+
+  test-output: "both are types of berry"
   # Completion is for generating a company-mode completion function
   # completion: on
   # # default values for pen -- evaled
   # # This is useful for completion commands.
+
+  # Non-functional (in development) keys
+  # ------------------------------------
+  # These are expressions run from within Pen to give the value for the variable
   pen-defaults:
   - "(detect-language)"
   - "(pen-preceding-text)"
-  # These are elisp String->String functions and run from pen.el
-  # It probably runs earlier than the preprocessors shell scripts
-  pen-preprocessors:
-  - "pen-pf-correct-grammar"
+
   # # A preprocessor filters the var at that position
   # the current implementation of preprocessors is kinda slow and will add ~100ml per variable
   # # This may be useful to distinguish a block of text, for example
