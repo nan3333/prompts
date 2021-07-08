@@ -162,6 +162,12 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "sed 's/^/- /"
   - "cat"
 
+  # Prompt function aliases
+  aliases:
+  - "asktutor"
+
+  postprocessor: "sed 's/- //' | uniqnosort"
+
   # ------------------------------------
   # Non-functional (in development) keys
   # ------------------------------------
@@ -210,17 +216,16 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # conversation-pretext-generator: "human-conversation"
   # Replace selected text
   filter: no
+
   # Keep stitching together until reaching this limit
   # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
   stitch-max: 0
 
   n-test-runs: 5
-  # Prompt function aliases
-  # aliases:
-  # - "asktutor"
-  # postprocessor: "sed 's/- //' | uniqnosort"
+
   # # Run it n times and combine the output
   # n-collate: 10
+
   # This for combining prompts:
   # It might be, for example, summarize, or uniqnosort
   # collation-postprocessor: "uniqnosort"
