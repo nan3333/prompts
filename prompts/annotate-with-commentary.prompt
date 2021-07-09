@@ -55,7 +55,6 @@ prompt: |
   Annotated code:
   ```<2>
 problems: 
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 200

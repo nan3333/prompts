@@ -14,7 +14,6 @@ prompt: |
   pain he has caused and feels sick to his
   soul when he thinks about this.
   ###
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 200

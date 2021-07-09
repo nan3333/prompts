@@ -14,7 +14,6 @@ prompt: |
   <2>
 
   Recipe name:
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60

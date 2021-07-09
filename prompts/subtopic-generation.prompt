@@ -11,7 +11,6 @@ prompt: "List a number of subtopics or fields of study\ngiven a topic:\n\n###\n7
   improvisation\n- electronic sound production\n###\n3 subtopics of language modelling
   in NLP:\n- casual language modelling\n- masked language modelling\n- text generation\n###\n20
   subtopics or fields within <1>, in no particular order:\n<:pp><2>-\n"
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 200

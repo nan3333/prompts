@@ -25,7 +25,6 @@ prompt: |
   <1>
   <2>
   ~~~
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.3
 max-tokens: 200

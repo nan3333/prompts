@@ -39,7 +39,6 @@ prompt: |
 
   Ingredients:
   <2>
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60

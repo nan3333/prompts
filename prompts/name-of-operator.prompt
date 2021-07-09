@@ -26,7 +26,6 @@ prompt: |
   <1> are like <2> in that
 problems: 
 issues: 
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60

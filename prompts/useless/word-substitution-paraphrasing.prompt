@@ -24,7 +24,6 @@ prompt: |
   ###
   The above text has been reworded as follows:
   ###
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60

@@ -14,7 +14,6 @@ prompt: |
   too. I want to do everything in my power to
   make things right.
   ###
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 200

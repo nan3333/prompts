@@ -8,7 +8,6 @@ prompt: |
   contents
 
   <1> are like <2> in that
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60

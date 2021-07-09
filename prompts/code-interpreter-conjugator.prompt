@@ -7,7 +7,6 @@ prompt-version: 1
 prompt: |
   <1>
   Output:
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60

@@ -19,7 +19,6 @@ prompt: |
   $ <1>
   The above command
 problems: 
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.3
 max-tokens: 200

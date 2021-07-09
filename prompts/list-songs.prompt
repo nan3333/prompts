@@ -30,7 +30,6 @@ prompt: |
   20 songs. <1>
   Track list:
   -
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.5
 max-tokens: 60

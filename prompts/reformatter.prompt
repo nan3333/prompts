@@ -47,7 +47,6 @@ prompt: |
   <1>
   Tidied code:
 problems: 
-engine: myrc
 preferred-openai-engine: davinci
 temperature: 0.8
 max-tokens: 60
