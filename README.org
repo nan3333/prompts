@@ -165,8 +165,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # The command passed to lm-complete
   lm-command: "openai-complete.sh"
 
-  # if nothing is selected in myrc and openapi-complete is used
-  # by default, then openai should select this engine.
+  # The engine to be specified to the lm-command.
   engine: "davinci"
 
   # 0.0 = /r/hadastroke
