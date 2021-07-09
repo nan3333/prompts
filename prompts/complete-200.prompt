@@ -7,8 +7,6 @@ engine: davinci
 temperature: 0.8
 max-tokens: 200
 top-p: 1
-frequency-penalty: 0.5
-presence-penalty: 0
 cache: true
 stop-sequences:
 - "\n\n"

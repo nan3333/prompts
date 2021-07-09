@@ -11,8 +11,6 @@ engine: davinci-instruct-beta
 temperature: 0.7
 max-tokens: 60
 top-p: 1
-frequency-penalty: 0
-presence-penalty: 0
 stop-sequences:
 - "\n\n"
 vars:

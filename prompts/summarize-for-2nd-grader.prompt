@@ -11,8 +11,6 @@ engine: davinci
 temperature: 0.6
 max-tokens: 100
 top-p: 1
-frequency-penalty: 0.2
-presence-penalty: 0.2
 stop-sequences:
 - "###"
 chomp-start: true

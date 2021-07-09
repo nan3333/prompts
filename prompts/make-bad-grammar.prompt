@@ -18,8 +18,6 @@ engine: davinci
 temperature: 0.9
 max-tokens: 60
 top-p: 1
-frequency-penalty: 0
-presence-penalty: 0
 stop-sequences:
 - "###"
 vars:

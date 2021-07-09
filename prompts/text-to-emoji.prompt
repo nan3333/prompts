@@ -9,8 +9,6 @@ engine: davinci
 temperature: 0.4
 max-tokens: 60
 top-p: 1
-frequency-penalty: 0
-presence-penalty: 0
 stop-sequences:
 - "###"
 quality: 0.3
