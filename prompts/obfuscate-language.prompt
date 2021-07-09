@@ -21,7 +21,6 @@ max-tokens: 100
 top-p: 1
 frequency-penalty: 0.2
 presence-penalty: 0.4
-best-of: 1
 stop-sequences:
 - "\n"
 chomp-start: true

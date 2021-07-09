@@ -20,7 +20,6 @@ max-tokens: 30
 top-p: 1
 frequency-penalty: 0.2
 presence-penalty: 0.8
-best-of: 1
 stop-sequences:
 - "\n\n"
 vars:

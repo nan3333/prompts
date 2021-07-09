@@ -16,7 +16,6 @@ max-tokens: 60
 top-p: 1
 frequency-penalty: 0
 presence-penalty: 0
-best-of: 1
 stop-sequences:
 - "\n"
 vars:
