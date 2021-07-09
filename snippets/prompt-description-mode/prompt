@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: prompt
-# group: prompt-engineering
+# group: pen
 # key: pr
 # expand-env: ((yas-indent-line 'fixed))
 # --
@@ -15,7 +15,9 @@ todo:
 design-patterns:
 
 # Possible other names for this prompt.
-future-titles: ""
+future-titles:
+- Get code snippet
+- Get snippet
 
 # Aims for developing this prompt.
 aims: |+

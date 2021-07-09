@@ -46,7 +46,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 #+BEGIN_SRC yaml -n :async :results verbatim code
   # -*- mode: snippet -*-
   # name: prompt
-  # group: prompt-engineering
+  # group: pen
   # key: pr
   # expand-env: ((yas-indent-line 'fixed))
   # --
@@ -61,7 +61,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   design-patterns:
 
   # Possible other names for this prompt.
-  future-titles: ""
+  future-titles:
+  - Get code snippet
+  - Get snippet
 
   # Aims for developing this prompt.
   aims: |+
