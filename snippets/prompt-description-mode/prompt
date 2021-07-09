@@ -32,8 +32,8 @@ problems:
 past-versions:
 - deprecated/pick-up-line.prompt
 
-# A list of web services that provide a service similar to this prompt
-external-web-services:
+# A list of external services that provide a service function to this prompt
+external-related:
 - "https://paraphrasing-tool.com/"
 
 # ---------------
