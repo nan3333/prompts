@@ -8,11 +8,6 @@
 # Non-functional (in-development) keys
 # ------------------------------------
 
-# Completion indicates that this prompt can be used as a company-mode completion function.
-# Either ensure only one variable, or provide pen-defaults (functions that obtain the value automatically).
-# Otherwise, it will not work as expected.
-completion: on
-
 # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
 conversation-mode: no
 

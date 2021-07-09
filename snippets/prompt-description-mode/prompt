@@ -168,3 +168,7 @@ pen-collation-postprocessor: "uniqnosort"
 
 # Replace selected text. Yes if this is intended to be a text-replacement function.
 filter: no
+
+# Completion indicates that this prompt can be used as a company-mode completion function.
+# When using this it is advisable to keep the default var-defaults unless you know what you're doing.
+completion: on
