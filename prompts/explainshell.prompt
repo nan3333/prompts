@@ -18,7 +18,7 @@ prompt: |
   ###
   $ <1>
   The above command
-problems: 
+issues: 
 engine: davinci
 temperature: 0.3
 max-tokens: 200

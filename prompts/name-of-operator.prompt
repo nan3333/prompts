@@ -24,7 +24,7 @@ prompt: |
   In: !!
   Out: index
   <1> are like <2> in that
-problems: 
+issues: 
 issues: 
 engine: davinci
 temperature: 0.8

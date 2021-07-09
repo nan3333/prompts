@@ -10,7 +10,7 @@ prompt: |
   Topics:
 
   Topics: <1>
-problems: 
+issues: 
 engine: davinci
 temperature: 0.8
 max-tokens: 60

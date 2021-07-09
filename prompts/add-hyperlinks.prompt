@@ -11,7 +11,7 @@ prompt: |
   <1>
   I edited the interview to make it more conversational, and I added hyperlinks.
   1)
-problems: 
+issues: 
 issues: 
 engine: davinci
 temperature: 0.8

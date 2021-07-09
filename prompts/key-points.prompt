@@ -13,7 +13,7 @@ prompt: |
 repeater: |
   Input: {}
   Output:
-problems: 
+issues: 
 issues: 
 engine: davinci
 temperature: 0.8

@@ -11,7 +11,7 @@ prompt: |
   A: How are you feeling today? And what have you been up to?
   Q: <1> - <2>
   A:
-problems: 
+issues: 
 issues: 
 engine: davinci
 temperature: 0.8

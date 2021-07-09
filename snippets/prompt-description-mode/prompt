@@ -160,7 +160,7 @@ aims: |+
 doc: "Given ... ${1:title}"
 
 # A list of problems with the prompt.
-problems:
+issue:
 - "Struggles with the latter columns."
 
 # A list of paths to previous prompts

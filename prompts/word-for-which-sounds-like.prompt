@@ -16,7 +16,7 @@ prompt: |
   ###
   A list of words that mean "<1>" and sound like "<2>":
   -
-problems: 
+issues: 
 engine: davinci
 temperature: 0.8
 max-tokens: 60

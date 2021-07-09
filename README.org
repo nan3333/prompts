@@ -246,7 +246,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   doc: "Given ... ${1:title}"
 
   # A list of problems with the prompt.
-  problems:
+  issues:
   - "Struggles with the latter columns."
 
   # A list of paths to previous prompts

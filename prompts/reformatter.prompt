@@ -46,7 +46,7 @@ prompt: |
   Code:
   <1>
   Tidied code:
-problems: 
+issues: 
 engine: davinci
 temperature: 0.8
 max-tokens: 60

@@ -30,7 +30,7 @@ prompt: |
   # At 10:05 on day-of-month 31 and on Sunday in May.
   ###
   <1>
-problems:
+issues:
 - Struggles with the latter columns.
 engine: davinci
 temperature: 0.5

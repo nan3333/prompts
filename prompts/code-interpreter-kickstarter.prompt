@@ -17,7 +17,7 @@ prompt: |
   # Language: <1>
   <2>
   # Output:
-problems: 
+issues: 
 engine: davinci
 temperature: 0.8
 max-tokens: 60
