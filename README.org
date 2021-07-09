@@ -33,7 +33,6 @@ This is a minimal =.prompt= file that should work.
 
 + The only required fields are:
   - =title=
-  - =prompt-version=
   - =prompt=
   - =temperature=
   - =max-tokens=
