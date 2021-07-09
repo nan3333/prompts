@@ -126,6 +126,11 @@ vars:
 - "former"
 - "latter"
 
+# These are expressions run from within Pen to give the value for the variable
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+
 # Examples of typical values for the variables
 examples:
 - "boysenberries"

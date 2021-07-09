@@ -16,11 +16,6 @@ completion: on
 # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
 conversation-mode: no
 
-# These are expressions run from within Pen to give the value for the variable
-pen-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
-
 # Output to test against. Possibly using similarity.
 test-output: "both are types of berry"
 
