@@ -19,6 +19,7 @@ these prompts.
 
 It is =yaml= with a schema.
 
+** An example =.prompt= file
 This is a minimal =.prompt= file that should work.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
@@ -57,7 +58,9 @@ This generated function I will refer to as a _prompt function_.
     - Otherwise, the default value of all =var-defaults= items is =(read-string-hist)=, which reads the value from the user
     - =var-defaults= can be overridden by specifying in the =.prompt= file.
 
-*** =YASnippet= template
+*** Templates
+
+** =YASnippet= template
 
 [[./snippets/prompt-description-mode/prompt]]
 
