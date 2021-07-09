@@ -81,9 +81,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # A prompt which is in development will not be loaded by pen.el
   in-development: yes
 
-  # An indicator that this prompt needs further work.
-  needs-work: no
-
   # A title for the prompt. This will become the function name.
   title: "${1:title}"
 
