@@ -100,12 +100,8 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   pen-preprocessors:
   - "pen-pf-correct-grammar"
 
-  # 
-  gpt-generator: "lm-complete"
-
-  # myrc will select the completion engine using my config.
-  # This may be openi-complete or something else
-  engine: "myrc"
+  # The command passed to lm-complete
+  lm-command: "openai-complete.sh"
 
   # if nothing is selected in myrc and openapi-complete is used
   # by default, then openai should select this engine.
