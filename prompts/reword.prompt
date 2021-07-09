@@ -40,7 +40,7 @@ examples:
 - I just wanted to say that I love you.
 chomp-start: true
 prefer-external: true
-external-web-services:
+external-related:
 - "https://paraphrasing-tool.com/"
 aliases:
 - paraphrase
