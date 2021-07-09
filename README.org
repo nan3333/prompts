@@ -219,7 +219,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # This is the name of an external database-driven pretext generator.
   # It would typically summarize and fact extract from history.
   # It then passes the pretext to the new prompt.
-  # conversation-pretext-generator: "human-conversation"
+  conversation-pretext-generator: "human-conversation"
 
   # Keep stitching together until reaching this limit
   # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
