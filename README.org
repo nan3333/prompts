@@ -96,9 +96,13 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   # A TODO list.
   todo:
+  - Finish this prompt.
 
   # A list of design patterns used.
+  # This may be a url or the name of a pattern.
   design-patterns:
+  - multiplex
+  - "https://generative.ink/posts/methods-of-prompt-programming/"
 
   # Possible other names for this prompt.
   future-titles:
