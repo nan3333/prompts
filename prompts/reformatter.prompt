@@ -65,6 +65,5 @@ examples:
 - bash
 chomp-start: true
 prefer-external: true
-similarity-test: 
 filter: true
 n-test-runs: 5
