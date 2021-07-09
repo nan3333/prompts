@@ -29,6 +29,5 @@ chomp-start: true
 chomp-end: false
 conversation-mode: false
 filter: false
-stitch-max: 0
 needs-work: false
 postprocessor: ttp

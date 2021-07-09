@@ -40,7 +40,6 @@ chomp-end: false
 prefer-external: true
 conversation-mode: false
 filter: false
-stitch-max: 0
 external-related:
 - https://explainshell.com/
 needs-work: false

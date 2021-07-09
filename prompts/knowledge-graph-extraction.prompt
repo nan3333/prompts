@@ -27,4 +27,3 @@ examples:
   seed round
 external: ''
 filter: false
-stitch-max: 0

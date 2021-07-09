@@ -47,6 +47,5 @@ completion: true
 external: ''
 conversation-mode: false
 filter: false
-stitch-max: 0
 postprocessor: sed 's/\s\+/ /g' | s join ' '
 prettifier: tpp

@@ -57,6 +57,5 @@ chomp-end: false
 external: ''
 conversation-mode: false
 filter: false
-stitch-max: 0
 needs-work: false
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | uniqnosort

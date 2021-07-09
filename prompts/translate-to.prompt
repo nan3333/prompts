@@ -48,5 +48,4 @@ examples:
 external: ''
 conversation-mode: false
 filter: false
-stitch-max: 0
 needs-work: false

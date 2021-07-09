@@ -45,7 +45,6 @@ similarity-test:
 quality-script: 
 conversation-mode: false
 filter: false
-stitch-max: 0
 needs-work: false
 n-test-runs: 5
 continuation-function: list-of <1> <g>

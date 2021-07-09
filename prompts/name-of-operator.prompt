@@ -53,6 +53,5 @@ quality-script:
 validation-script: 
 conversation-mode: false
 filter: false
-stitch-max: 0
 needs-work: false
 n-test-runs: 5

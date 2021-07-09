@@ -24,5 +24,4 @@ examples:
 - Who has the lowest salary
 external: ''
 filter: false
-stitch-max: 0
 needs-work: true

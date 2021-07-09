@@ -36,7 +36,6 @@ external: ''
 conversation-mode: true
 conversation-pretext-generator: human-conversation
 filter: false
-stitch-max: 0
 needs-work: false
 aliases:
 - asktutor1

@@ -49,5 +49,4 @@ external: ''
 conversation-mode: false
 n-test-runs: 2
 filter: false
-stitch-max: 0
 needs-work: true

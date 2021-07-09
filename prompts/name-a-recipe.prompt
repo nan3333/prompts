@@ -46,6 +46,5 @@ prefer-external: true
 external: ''
 conversation-mode: false
 filter: false
-stitch-max: 0
 needs-work: false
 n-test-runs: 5

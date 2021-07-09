@@ -30,6 +30,8 @@ This is a very basic =.prompt= file that should work.
   max-tokens: 60
 #+END_SRC
 
+*** =YASnippet= template
+
 This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
@@ -89,7 +91,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # This way, a function can be curried/beta-reduced to a function of 1 argument.
   prompt: |+
       ${2:contents}
-    
+
       <1> are like <2> in that
 
   # Additional transformation of prompt after the template
@@ -188,7 +190,11 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   # Replace selected text. Yes if this is intended to be a text-replacement function.
   filter: no
+#+END_SRC
 
+*** =YASnippet= keys currently in development
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
   # ------------------------------------
   # Non-functional (in-development) keys
   # ------------------------------------
@@ -235,16 +241,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # It would typically summarize and fact extract from history.
   # It then passes the pretext to the new prompt.
   conversation-pretext-generator: "human-conversation"
-
-  # Keep stitching together until reaching this limit
-  # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
-  stitch-max: 0
-
-  # examplary continuation function
-  # prompts are not stitched together / composed but examplary functions are
-  # <g> is the existing generation
-  # <1> is a variable
-  continuation-function: "list-of <1> <g>"
 #+END_SRC
 
 ** Tooling

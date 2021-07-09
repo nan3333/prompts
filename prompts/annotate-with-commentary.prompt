@@ -81,7 +81,6 @@ chomp-end: false
 prefer-external: true
 conversation-mode: false
 filter: true
-stitch-max: 0
 needs-work: false
 n-test-runs: 5
 related-prompts:

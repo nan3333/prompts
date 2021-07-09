@@ -22,4 +22,3 @@ examples:
 - min 1 2
 external: ''
 filter: false
-stitch-max: 0

@@ -106,9 +106,6 @@ conversation-mode: no
 # conversation-pretext-generator: "human-conversation"
 # Replace selected text
 filter: no
-# Keep stitching together until reaching this limit
-# This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
-stitch-max: 0
 needs-work: no
 n-test-runs: 5
 # Prompt function aliases

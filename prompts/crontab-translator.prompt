@@ -54,6 +54,5 @@ external-related:
 - https://crontab.guru/
 similarity-test: 
 filter: false
-stitch-max: 0
 postprocessor: awk 1
 example-formatter: ''

@@ -33,5 +33,4 @@ postprocessor: tpp
 external: 
 conversation-mode: false
 filter: true
-stitch-max: 0
 n-test-runs: 2

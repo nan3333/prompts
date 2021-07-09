@@ -20,4 +20,3 @@ examples:
   \nprint(a)"
 external: ''
 filter: false
-stitch-max: 0

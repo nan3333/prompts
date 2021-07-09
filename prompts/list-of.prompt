@@ -35,7 +35,6 @@ examples:
 external: ''
 conversation-mode: false
 filter: false
-stitch-max: 0
 needs-work: false
 postprocessor: sed 's/,/\n/g'
 continuation-function: list-of <1> <g>

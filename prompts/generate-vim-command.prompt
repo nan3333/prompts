@@ -30,5 +30,4 @@ vars:
 examples:
 - Make all occurrences of Steve lowercase
 filter: false
-stitch-max: 0
 url: https://prompts-ai-self-clean.surge.sh/

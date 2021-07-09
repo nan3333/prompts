@@ -18,4 +18,3 @@ vars:
 examples:
 - M
 filter: false
-stitch-max: 0

@@ -17,7 +17,6 @@ best-of: 1
 stop-sequences:
 - "\n\n"
 conversation-mode: false
-stitch-max: 5
 vars:
 - notes
 examples:

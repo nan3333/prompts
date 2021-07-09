@@ -50,4 +50,3 @@ examples:
 external: ''
 conversation-mode: false
 filter: false
-stitch-max: 0

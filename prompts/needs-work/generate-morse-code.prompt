@@ -171,6 +171,5 @@ examples:
 - SOS
 external: ''
 filter: false
-stitch-max: 0
 needs-work: true
 disabled: true

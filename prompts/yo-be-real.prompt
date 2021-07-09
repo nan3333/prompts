@@ -47,7 +47,6 @@ chomp-end: false
 external: ''
 conversation-mode: false
 filter: false
-stitch-max: 0
 aliases:
 - yo-be-real
 - ask-any-question

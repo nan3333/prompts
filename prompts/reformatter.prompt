@@ -70,6 +70,5 @@ prefer-external: true
 similarity-test: 
 conversation-mode: false
 filter: true
-stitch-max: 0
 needs-work: false
 n-test-runs: 5

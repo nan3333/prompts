@@ -28,5 +28,4 @@ examples:
 - Elon Musk
 external: ''
 filter: false
-stitch-max: 0
 needs-work: true
