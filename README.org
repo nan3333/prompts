@@ -164,8 +164,18 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   postprocessor: "sed 's/- //' | uniqnosort"
 
+  # The number of times the prompt is run when tested
+  n-test-runs: 5
+
+  # Run it n times and combine the output. Default: 1
+  # This does not result in a list. It's a concatenation.
+  n-collate: 10
+
+  # Replace selected text. Yes if this is intended to be a text-replacement function.
+  filter: no
+
   # ------------------------------------
-  # Non-functional (in development) keys
+  # Non-functional (in-development) keys
   # ------------------------------------
 
   # Completion indicates that this prompt can be used as a company-mode completion function.
@@ -210,17 +220,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # It would typically summarize and fact extract from history.
   # It then passes the pretext to the new prompt.
   # conversation-pretext-generator: "human-conversation"
-  # Replace selected text
-  filter: no
 
   # Keep stitching together until reaching this limit
   # This allows a full response for answers which may need n*max-tokens to reach the stop-sequence.
   stitch-max: 0
-
-  n-test-runs: 5
-
-  # # Run it n times and combine the output
-  # n-collate: 10
 
   # This for combining prompts:
   # It might be, for example, summarize, or uniqnosort
