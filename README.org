@@ -258,6 +258,11 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   # Replace selected text. Yes if this is intended to be a text-replacement function.
   filter: no
+
+  # Completion indicates that this prompt can be used as a company-mode completion function.
+  # Either ensure only one variable, or provide pen-defaults (functions that obtain the value automatically).
+  # Otherwise, it will not work as expected.
+  completion: on
 #+END_SRC
 
 *** =YASnippet= keys currently in development
@@ -266,11 +271,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # ------------------------------------
   # Non-functional (in-development) keys
   # ------------------------------------
-
-  # Completion indicates that this prompt can be used as a company-mode completion function.
-  # Either ensure only one variable, or provide pen-defaults (functions that obtain the value automatically).
-  # Otherwise, it will not work as expected.
-  completion: on
 
   # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
   conversation-mode: no
