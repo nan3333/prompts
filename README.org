@@ -17,7 +17,12 @@ https://github.com/semiosis/prompt-tests/
 This is the format I have used to organise
 these prompts.
 
-It is =yaml= with a schema.
+It is =yaml= with a schema which is being
+actively developed.
+
+Don't worry much about leaving keys out which
+you do not understand yet, as most of them
+have defaults.
 
 ** An example =.prompt= file
 This is a minimal =.prompt= file that should work.
