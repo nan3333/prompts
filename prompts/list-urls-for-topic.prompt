@@ -47,7 +47,6 @@ prefer-external: true
 external: gl
 conversation-mode: false
 filter: false
-needs-work: false
 aliases:
 - google search
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | uniqnosort

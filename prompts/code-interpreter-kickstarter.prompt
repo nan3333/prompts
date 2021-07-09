@@ -44,5 +44,4 @@ quality-script: my-quality-checker-for-this-prompt.sh
 validation-script: my-validator-for-this-prompt.sh
 conversation-mode: false
 filter: false
-needs-work: false
 n-test-runs: 5

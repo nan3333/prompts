@@ -1,5 +1,4 @@
 ---
-in-development: false
 title: Annotate code with commentary
 issues:
 - It appears to not have a large effective window
@@ -81,7 +80,6 @@ chomp-end: false
 prefer-external: true
 conversation-mode: false
 filter: true
-needs-work: false
 n-test-runs: 5
 related-prompts:
 - explainshell.prompt

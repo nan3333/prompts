@@ -46,6 +46,5 @@ external: ''
 external-web-service: https://paraphrasing-tool.com/
 conversation-mode: false
 filter: false
-needs-work: false
 aliases:
 - paraphrase

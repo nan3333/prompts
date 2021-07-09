@@ -1,5 +1,4 @@
 ---
-in-development: false
 title: explain a shell command
 issues: 
 design-patterns: 
@@ -42,7 +41,6 @@ conversation-mode: false
 filter: false
 external-related:
 - https://explainshell.com/
-needs-work: false
 n-test-runs: 5
 related-prompts:
 - annotate-with-commentary.prompt

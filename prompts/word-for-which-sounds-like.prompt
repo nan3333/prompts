@@ -1,5 +1,4 @@
 ---
-in-development: false
 title: what is the word for which sounds like
 todo: 
 design-patterns: 
@@ -45,7 +44,6 @@ similarity-test:
 quality-script: 
 conversation-mode: false
 filter: false
-needs-work: false
 n-test-runs: 5
 continuation-function: list-of <1> <g>
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |

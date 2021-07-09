@@ -35,5 +35,4 @@ validation-script: my-validator-for-this-prompt.sh
 conversation-mode: true
 conversation-pretext-generator: code-interpreter
 filter: false
-needs-work: false
 n-test-runs: 5

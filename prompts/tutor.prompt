@@ -42,7 +42,6 @@ external: ''
 conversation-mode: true
 conversation-pretext-generator: human-conversation
 filter: false
-needs-work: false
 aliases:
 - asktutor
 postprocessor: ttp

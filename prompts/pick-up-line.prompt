@@ -96,7 +96,6 @@ prefer-external: true
 external: ''
 conversation-mode: false
 filter: false
-needs-work: false
 n-test-runs: 10
 n-collate: 10
 postprocessor: sed 's/^ *//' | awk 1 | sed '/^[^a-zA-Z]/d'

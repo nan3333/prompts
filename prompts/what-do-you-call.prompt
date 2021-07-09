@@ -45,6 +45,6 @@ prefer-external: true
 external: ''
 conversation-mode: false
 filter: false
-needs-work: true
+in-development: true
 aliases:
 - word for

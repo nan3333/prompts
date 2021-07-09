@@ -36,7 +36,6 @@ external: ''
 conversation-mode: true
 conversation-pretext-generator: human-conversation
 filter: false
-needs-work: false
 aliases:
 - asktutor1
 postprocessor: ttp
