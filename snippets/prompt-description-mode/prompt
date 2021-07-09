@@ -4,44 +4,6 @@
 # key: pr
 # expand-env: ((yas-indent-line 'fixed))
 # --
-# --------
-# Doc keys
-# --------
-
-# A TODO list.
-todo:
-- Finish this prompt.
-
-# A list of design patterns used.
-# This may be a url or the name of a pattern.
-design-patterns:
-- multiplex
-- "https://generative.ink/posts/methods-of-prompt-programming/"
-
-# Possible other names for this prompt.
-future-titles:
-- Get code snippet
-- Get snippet
-
-# Aims for developing this prompt.
-aims: |+
-- More abstractive rewording
-
-# Function documentation.
-doc: "Given ... ${1:title}"
-
-# A list of problems with the prompt.
-problems:
-- "Struggles with the latter columns."
-
-# A list of paths to previous prompts
-past-versions:
-- deprecated/pick-up-line.prompt
-
-# A list of external services that provide a service function to this prompt
-external-related:
-- "https://paraphrasing-tool.com/"
-
 # ---------------
 # Functional keys
 # ---------------
@@ -170,3 +132,41 @@ filter: no
 # Completion indicates that this prompt can be used as a company-mode completion function.
 # When using this it is advisable to keep the default var-defaults unless you know what you're doing.
 completion: on
+
+# --------
+# Doc keys
+# --------
+
+# A TODO list.
+todo:
+- Finish this prompt.
+
+# A list of design patterns used.
+# This may be a url or the name of a pattern.
+design-patterns:
+- multiplex
+- "https://generative.ink/posts/methods-of-prompt-programming/"
+
+# Possible other names for this prompt.
+future-titles:
+- Get code snippet
+- Get snippet
+
+# Aims for developing this prompt.
+aims: |+
+- More abstractive rewording
+
+# Function documentation.
+doc: "Given ... ${1:title}"
+
+# A list of problems with the prompt.
+problems:
+- "Struggles with the latter columns."
+
+# A list of paths to previous prompts
+past-versions:
+- deprecated/pick-up-line.prompt
+
+# A list of external services that provide a service function to this prompt
+external-related:
+- "https://paraphrasing-tool.com/"
