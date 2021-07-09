@@ -32,6 +32,8 @@ This is a very basic =.prompt= file that should work.
 
 *** =YASnippet= template
 
+[[./snippets/prompt-description-mode/prompt]]
+
 This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code

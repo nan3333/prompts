@@ -1,119 +1,155 @@
 # -*- mode: snippet -*-
 # name: prompt
-# group: prompt-engineering
+# group: pen
 # key: pr
 # expand-env: ((yas-indent-line 'fixed))
 # --
-title: "${1:title}"
-# future-titles: ""
-# aims: |+
-# - More abstractive rewording
+# --------
+# Doc keys
+# --------
+
+# A TODO list.
+todo:
+
+# A list of design patterns used.
+design-patterns:
+
+# Possible other names for this prompt.
+future-titles: ""
+
+# Aims for developing this prompt.
+aims: |+
+- More abstractive rewording
+
+# Function documentation.
 doc: "Given ... ${1:title}"
-# aims: |+
-# - More abstractive rewording
+
+# A list of problems with the prompt.
+problems:
+- "Struggles with the latter columns."
+
+# ---------------
+# Functional keys
+# ---------------
+
+# A prompt which is in development will not be loaded by pen.el
+in-development: yes
+
+# An indicator that this prompt needs further work.
+needs-work: no
+
+# A title for the prompt. This will become the function name.
+title: "${1:title}"
+
+# Increment this number every time you make a functional change.
+# The test suite will only rerun if this version is incremented.
 prompt-version: 1
+
 # <:pp> defines a point where the following
 # text is concatenated before the postprocessor
 # is run.
 # <1>, <2> etc. are where variables are substituted
+# <1> is special because it may be the current selection
+# <2> May be inferred from <1> via a prompt.
+# This way, a function can be curried/beta-reduced to a function of 1 argument.
 prompt: |+
     ${2:contents}
-    
+
     <1> are like <2> in that
-problems:
-- "Struggles with the latter columns."
-# # Additional transformation of prompt after the template
-# prompt-filter: "sed -z 's/\\s\\+$//'"
-# # Trailing whitespace is always removed
-# prompt-remove-trailing-whitespace: on
-# myrc will select the completion engine using my config.
-# This may be openi-complete or something else
-engine: "myrc"
-# if nothing is selected in myrc and openapi-complete is used
-# by default, then openai should select this engine.
-preferred-openai-engine: "davinci"
-# 0.0 = /r/hadastroke
-# 1.0 = /r/iamveryrandom
-# Use 0.3-0.8
-temperature: 0.8
-max-tokens: 60
-top-p: 1.0
-# Not available yet: openai api completions.create --help
-frequency-penalty: 0.5
-# If I make presence-penalty 0 then it will get very terse
-presence-penalty: 0.0
-best-of: 1
-# Only the first one will be used by the API,
-# but the completer script will use the others.
-# Currently the API can only accept one stop-sequence, but that may change.
-stop-sequences:
-# - "\\n"
-# - "\\n\\n"
-# 2 hashes is more reliable as a stop sequence because
-# sometimes the generation morphs from ### to ##
-- "##"
-inject-start-text: yes
-inject-restart-text: yes
-show-probabilities: off
-# Cache the function by default when running the prompt function
-cache: on
-vars:
-- "former"
-- "latter"
-examples:
-- "boysenberries"
-- "strawberries"
-# Completion is for generating a company-mode completion function
-# completion: on
-# # default values for pen -- evaled
-# # This is useful for completion commands.
-# pen-defaults:
-# - "(detect-language)"
-# - "(pen-preceding-text)"
+
+# Additional transformation of prompt after the template
+prompt-filter: "sed -z 's/\\s\\+$//'"
+
 # These are elisp String->String functions and run from pen.el
 # It probably runs earlier than the preprocessors shell scripts
 pen-preprocessors:
 - "pen-pf-correct-grammar"
-# # A preprocessor filters the var at that position
-# the current implementation of preprocessors is kinda slow and will add ~100ml per variable
-# # This may be useful to distinguish a block of text, for example
-# preprocessors:
-# - "sed 's/^/- /"
-# - "cat"
+
+# The command passed to lm-complete
+lm-command: "openai-complete.sh"
+
+# if nothing is selected in myrc and openapi-complete is used
+# by default, then openai should select this engine.
+preferred-openai-engine: "davinci"
+
+# 0.0 = /r/hadastroke
+# 1.0 = /r/iamveryrandom
+# Use 0.3-0.8
+temperature: 0.8
+
+# This is the max tokens requested from the LM
+max-tokens: 60
+
+# This number may go to the API if available.
+# See top p sampling in the pen.el glossary.
+# https://github.com/semiosis/pen.el/blob/master/glossary.txt
+top-p: 1.0
+
+# Not available yet: openai api completions.create --help
+frequency-penalty: 0.5
+
+# If I make presence-penalty 0 then it will get very terse
+presence-penalty: 0.0
+
+# This number may go to the API and may
+# improve the quality at the expense of making more
+# requests.
+best-of: 1
+
+# Remove whitespace from the beginning of the response string
 chomp-start: on
+
+# Remove whitespace from the end of the response string
 chomp-end: off
-prefer-external: on
-# This is an optional external command which may be used to perform the same task as the API.
-# This can be used to train the prompt.
-# The external command must take arguments, not stdin
-# So that all variables may be passed into it.
-external: "generate-text-from-input.sh"
-# This compares the output of the external script to the output of the LM
-similarity-test:
-# This script returns a 0-1 decimal value representing the quality of the generated output.
-# The input is 2 arguments each containing output
-# The output is a decimal number from 0 to 1
-quality-script: "my-quality-checker-for-this-prompt.sh"
-# This script can be used to validate the output.
-# If the output is accurate, the validation script returns exit code 1.
-# The input is 2 arguments each containing output
-validation-script: "my-validator-for-this-prompt.sh"
-# Enable running conversation
-conversation-mode: no
-# This is the name of an external database-driven pretext generator.
-# It would typically summarize and fact extract from history.
-# It then passes the pretext to the new prompt.
-# conversation-pretext-generator: "human-conversation"
-# Replace selected text
-filter: no
-needs-work: no
-n-test-runs: 5
+
+# Currently the OpenAI API can only accept one stop-sequence.
+# So only the first one will be used by the API,
+# but the completer script can make use the others.
+stop-sequences:
+- "\\n"
+- "\\n\\n"
+- "##"
+
+# Cache the function by default when running the prompt function
+cache: on
+
+# Names for the variables of the prompt function.
+# The first variable may be captured by selection, rather than manually entered.
+vars:
+- "former"
+- "latter"
+
+# Examples of typical values for the variables
+examples:
+- "boysenberries"
+- "strawberries"
+
+# A preprocessor may be run on the variable inputs before entering the prompt
+preprocessors:
+- "sed 's/^/- /"
+- "cat"
+
 # Prompt function aliases
-# aliases:
-# - "asktutor"
-# postprocessor: "sed 's/- //' | uniqnosort"
-# # Run it n times and combine the output
-# n-collate: 10
-# This for combining prompts:
-# It might be, for example, summarize, or uniqnosort
-# collation-postprocessor: "uniqnosort"
+aliases:
+- "asktutor"
+
+# This is run on the completion results.
+# It may be used to format the results
+# before usage/insertion by emacs.
+postprocessor: "sed 's/- //' | uniqnosort"
+
+# The number of times the prompt is run when tested
+n-test-runs: 5
+
+# Run it n times and combine the output. Default: 1
+# This does not result in a list. It's usually a
+# concatenation, but may use a different collation
+# function for combining results.
+n-collate: 10
+
+# This for combining prompts with n-collate:
+# It might be, for example, summarize, or uniqnosort.
+pen-collation-postprocessor: "uniqnosort"
+
+# Replace selected text. Yes if this is intended to be a text-replacement function.
+filter: no
