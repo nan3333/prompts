@@ -34,8 +34,14 @@ This is a minimal =.prompt= file that should work.
 + The only required fields are:
   - =title=
   - =prompt=
-  - =temperature=
-  - =max-tokens=
+
++ Suggested fields to consider specifying:
+  - =temperature: 0.9=
+  - =max-tokens: 60=
+
+See the glossary.
+
+http://github.com/semiosis/pen.el/blob/master/glossary.txt
 
 *** =YASnippet= template
 
