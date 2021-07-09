@@ -13,7 +13,7 @@ Push your own branch. Request access to the =semiosis= organisation.
 *** Test results go here
 https://github.com/semiosis/prompt-tests/
 
-** The =.prompt= file format
+** The =.prompt= (=prompt description=) file format
 This is the format I have used to organise
 these prompts.
 
