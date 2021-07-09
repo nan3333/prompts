@@ -2,7 +2,6 @@
 title: what is the word for which sounds like
 todo: 
 design-patterns: 
-issues: 
 doc: Given a description of a word that you are looking for, list some possible candidates
 prompt-version: 1
 prompt: |
@@ -16,7 +15,6 @@ prompt: |
   ###
   A list of words that mean "<1>" and sound like "<2>":
   -
-issues: 
 engine: davinci
 temperature: 0.8
 max-tokens: 60
@@ -35,7 +33,6 @@ pen-preprocessors:
 - pen-pf-correct-grammar
 chomp-start: true
 prefer-external: true
-quality-script: 
 n-test-runs: 5
 continuation-function: list-of <1> <g>
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |

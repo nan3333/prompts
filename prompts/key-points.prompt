@@ -13,8 +13,6 @@ prompt: |
 repeater: |
   Input: {}
   Output:
-issues: 
-issues: 
 engine: davinci
 temperature: 0.8
 max-tokens: 60
@@ -32,6 +30,4 @@ pen-preprocessors:
 - pen-pf-correct-grammar
 chomp-start: true
 prefer-external: true
-quality-script: 
-validation-script: 
 n-test-runs: 5

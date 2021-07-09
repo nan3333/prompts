@@ -27,6 +27,4 @@ pen-preprocessors:
 - pen-pf-correct-grammar
 chomp-start: true
 prefer-external: true
-quality-script: 
-validation-script: 
 n-test-runs: 5
