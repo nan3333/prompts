@@ -115,6 +115,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # This is the max tokens requested from the LM
   max-tokens: 60
 
+  # This number may go to the API if available.
+  # See top p sampling in the pen.el glossary.
+  # https://github.com/semiosis/pen.el/blob/master/glossary.txt
   top-p: 1.0
 
   # Not available yet: openai api completions.create --help
@@ -123,6 +126,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # If I make presence-penalty 0 then it will get very terse
   presence-penalty: 0.0
 
+  # This number may go to the API and may
+  # improve the quality at the expense of making more
+  # requests.
   best-of: 1
 
   # Remove whitespace from the beginning of the response string
