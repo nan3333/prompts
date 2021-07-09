@@ -38,7 +38,7 @@ prompt: |
   Name: <1>
 
   Ingredients:
-preferred-openai-engine: davinci
+engine: davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

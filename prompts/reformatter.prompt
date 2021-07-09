@@ -47,7 +47,7 @@ prompt: |
   <1>
   Tidied code:
 problems: 
-preferred-openai-engine: davinci
+engine: davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

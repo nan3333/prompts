@@ -12,7 +12,7 @@ prompt: |
   <1> are like <2> in that
 problems: 
 issues: 
-preferred-openai-engine: davinci
+engine: davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

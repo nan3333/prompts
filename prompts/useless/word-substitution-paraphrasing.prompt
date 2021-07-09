@@ -24,7 +24,7 @@ prompt: |
   ###
   The above text has been reworded as follows:
   ###
-preferred-openai-engine: davinci
+engine: davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

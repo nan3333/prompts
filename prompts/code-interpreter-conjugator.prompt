@@ -6,7 +6,7 @@ prompt-version: 1
 prompt: |
   <1>
   Output:
-preferred-openai-engine: davinci
+engine: davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

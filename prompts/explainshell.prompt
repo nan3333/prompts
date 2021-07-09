@@ -19,7 +19,7 @@ prompt: |
   $ <1>
   The above command
 problems: 
-preferred-openai-engine: davinci
+engine: davinci
 temperature: 0.3
 max-tokens: 200
 top-p: 1

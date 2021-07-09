@@ -14,7 +14,7 @@ prompt: |
   Human: Thanks. I have a question. <2>
   ###
   AI: I would be happy to answer your question.
-preferred-openai-engine: davinci
+engine: davinci
 temperature: 0.8
 max-tokens: 300
 top-p: 1

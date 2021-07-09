@@ -77,7 +77,7 @@ lm-command: "openai-complete.sh"
 
 # if nothing is selected in myrc and openapi-complete is used
 # by default, then openai should select this engine.
-preferred-openai-engine: "davinci"
+engine: "davinci"
 
 # 0.0 = /r/hadastroke
 # 1.0 = /r/iamveryrandom
