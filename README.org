@@ -181,12 +181,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # https://github.com/semiosis/pen.el/blob/master/glossary.txt
   top-p: 1.0
 
-  # Not available yet: openai api completions.create --help
-  frequency-penalty: 0.5
-
-  # If I make presence-penalty 0 then it will get very terse
-  presence-penalty: 0.0
-
   # This number may go to the API and may
   # improve the quality at the expense of making more
   # requests.
@@ -264,6 +258,32 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   completion: on
 #+END_SRC
 
+** Default values
+If you leave out these keys, the defaults will be used.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  lm-command: "openai-complete.sh"
+  # Other options if using openai-complete.sh:
+  # - curie
+  engine: "davinci"
+  best-of: 1
+  cache: false
+  # For 2 variables while selecting text, this is default
+  # Otherwise, var-defaults is nil
+  var-defaults:
+  - "(pen-selected-text)"
+  - "(read-string-hist ,(concat v ": ") ,example)"
+  completion: off
+  n-collate: 1
+  n-test-runs: 5
+  # These are nil if not specified
+  vars:
+  examples:
+  var-defaults:
+  aliases:
+  prettifier:
+#+END_SRC
+
 *** =YASnippet= keys currently in development
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
@@ -303,6 +323,13 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # It would typically summarize and fact extract from history.
   # It then passes the pretext to the new prompt.
   conversation-pretext-generator: "human-conversation"
+
+  # Not available yet: openai api completions.create --help
+  frequency-penalty: 0.5
+
+  # Not available yet: openai api completions.create --help
+  # If I make presence-penalty 0 then it will get very terse
+  presence-penalty: 0.0
 #+END_SRC
 
 ** Tooling
