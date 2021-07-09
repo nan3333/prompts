@@ -31,6 +31,13 @@ This is a minimal =.prompt= file that should work.
   max-tokens: 60
 #+END_SRC
 
++ The only required fields are:
+  - =title=
+  - =prompt-version=
+  - =prompt=
+  - =temperature=
+  - =max-tokens=
+
 *** =YASnippet= template
 
 [[./snippets/prompt-description-mode/prompt]]
