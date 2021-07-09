@@ -31,6 +31,7 @@ This is a minimal =.prompt= file that should work.
   max-tokens: 60
 #+END_SRC
 
+** Building prompt functions
 + The only required fields are:
   - =title=
   - =prompt=
@@ -43,13 +44,17 @@ See the glossary.
 
 http://github.com/semiosis/pen.el/blob/master/glossary.txt
 
-+ You may also supply variables:
-  - =vars=
-    - =vars= is a list of variable names
-    - =var-defaults= is a list of emacs lisp expressions which are evaluated to give the value of a variable for a prompt function
-    - If text is selected then the first value of =var-defaults= is by default set to =(pen-selected-text)=
-    - Otherwise, the default value of all =var-defaults= items is =(read-string-hist)=, which reads the value from the user
-    - =var-defaults= can be overridden by specifying in the =.prompt= file.
+Each =.prompt= file generates a function in emacs lisp.
+
+This generated function I will refer to as a _prompt function_.
+
++ You may give parameters to your prompt functions:
+  - =vars= is a list of parameter names for the prompt function to be generated.
+  - =examples= is a list of example values for those variables.
+  - =var-defaults= is a list of emacs lisp expressions which are evaluated to give the value of a variable for a prompt function
+  - If text is selected then the first value of =var-defaults= is by default set to =(pen-selected-text)=
+  - Otherwise, the default value of all =var-defaults= items is =(read-string-hist)=, which reads the value from the user
+  - =var-defaults= can be overridden by specifying in the =.prompt= file.
 
 *** =YASnippet= template
 
