@@ -20,5 +20,3 @@ examples:
 completion: true
 pen-defaults:
 - "(pen-preceding-text)"
-conversation-mode: false
-filter: false

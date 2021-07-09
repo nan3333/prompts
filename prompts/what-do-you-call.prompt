@@ -40,10 +40,7 @@ preprocessors:
 pen-preprocessors:
 - pen-pf-correct-grammar
 chomp-start: true
-chomp-end: false
 prefer-external: true
-conversation-mode: false
-filter: false
 in-development: true
 aliases:
 - word for

@@ -65,9 +65,7 @@ examples:
 - if is_tty; then z "$dn/${mant}.pdf"; else echo "$dn/${mant}.pdf"; fi
 - bash
 chomp-start: true
-chomp-end: false
 prefer-external: true
 similarity-test: 
-conversation-mode: false
 filter: true
 n-test-runs: 5

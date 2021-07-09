@@ -32,12 +32,8 @@ presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-cache: false
 vars:
 - article title
 examples:
 - Building an SMS Chatbot with OpenAI's GPT-3 engine, Twilio and Python
 chomp-start: true
-chomp-end: false
-conversation-mode: false
-filter: false

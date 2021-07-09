@@ -42,7 +42,6 @@ best-of: 1
 stop-sequences:
 - "###"
 chomp-start: true
-chomp-end: false
 vars:
 - tab
 examples:
@@ -53,6 +52,5 @@ external: unstdinify interpret-crontab
 external-related:
 - https://crontab.guru/
 similarity-test: 
-filter: false
 postprocessor: awk 1
 example-formatter: ''

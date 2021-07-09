@@ -20,4 +20,3 @@ vars:
 - haskell code
 examples:
 - min 1 2
-filter: false

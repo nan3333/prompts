@@ -57,6 +57,4 @@ examples:
 - 'putStrLn $ "Hey, I Love " ++ city ++ "!"
 
   '
-conversation-mode: false
-filter: false
 in-development: true

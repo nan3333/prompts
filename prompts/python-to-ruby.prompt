@@ -18,4 +18,3 @@ vars:
 examples:
 - "fruits = [\"apple\",\"banana\",\"cherry\"] \na = list(fruits) \nprint(a) \na.reverse()
   \nprint(a)"
-filter: false

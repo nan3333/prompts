@@ -22,7 +22,6 @@ best-of: 1
 stop-sequences:
 - "###"
 chomp-start: true
-chomp-end: false
 vars:
 - ambiguous sentence
 examples:
@@ -31,6 +30,5 @@ preprocessors:
 - s join ' '
 postprocessor: tpp
 external: 
-conversation-mode: false
 filter: true
 n-test-runs: 2

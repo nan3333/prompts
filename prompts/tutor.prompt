@@ -37,10 +37,8 @@ examples:
 - programming
 - What was the version of node in 2018?
 chomp-start: true
-chomp-end: false
 conversation-mode: true
 conversation-pretext-generator: human-conversation
-filter: false
 aliases:
 - asktutor
 postprocessor: ttp

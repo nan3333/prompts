@@ -42,11 +42,8 @@ vars:
 examples:
 - artificial intelligence
 chomp-start: true
-chomp-end: false
 prefer-external: true
 external: gl
-conversation-mode: false
-filter: false
 aliases:
 - google search
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | uniqnosort

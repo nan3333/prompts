@@ -26,7 +26,4 @@ examples:
 - emacs lisp
 - get visible text
 chomp-start: true
-chomp-end: false
 prefer-external: true
-conversation-mode: false
-filter: false

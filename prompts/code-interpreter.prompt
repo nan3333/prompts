@@ -30,7 +30,6 @@ best-of: 1
 stop-sequences:
 - "##"
 - "\n\n"
-cache: false
 vars:
 - language
 - code
@@ -38,13 +37,10 @@ examples:
 - haskell
 - '"Hello" ++ " " ++ "World"'
 chomp-start: true
-chomp-end: false
 prefer-external: true
 external: iol
 similarity-test: string-equal
 quality-script: levenshtein -s
 validation-script: 
-conversation-mode: false
-filter: false
 n-test-runs: 5
 postprocessor: clean-repl | s join '; '

@@ -32,7 +32,5 @@ vars:
 examples:
 - '5'
 - island countries
-conversation-mode: false
-filter: false
 postprocessor: sed 's/,/\n/g'
 continuation-function: list-of <1> <g>

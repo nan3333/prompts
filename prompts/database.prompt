@@ -42,10 +42,7 @@ best-of: 1
 stop-sequences:
 - "\n\n"
 chomp-start: true
-chomp-end: false
 vars:
 - query or input
 examples:
 - How old is Shane?
-conversation-mode: false
-filter: false

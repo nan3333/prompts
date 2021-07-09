@@ -36,6 +36,4 @@ examples:
 - Install package
 postprocessor: 'sed ''s/^Output: //'''
 chomp-start: true
-chomp-end: false
 conversation-mode: true
-filter: false

@@ -35,10 +35,7 @@ vars:
 examples:
 - raco pkg show --all
 chomp-start: true
-chomp-end: false
 prefer-external: true
-conversation-mode: false
-filter: false
 external-related:
 - https://explainshell.com/
 n-test-runs: 5

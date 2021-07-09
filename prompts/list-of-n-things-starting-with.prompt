@@ -36,5 +36,3 @@ examples:
 - '5'
 - island countries
 - T
-conversation-mode: false
-filter: false

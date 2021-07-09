@@ -28,6 +28,4 @@ vars:
 - description
 examples:
 - What is the word for joining the army starting with c?
-conversation-mode: false
-filter: false
 in-development: true

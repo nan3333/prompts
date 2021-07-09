@@ -26,6 +26,4 @@ vars:
 examples:
 - "... --- ..."
 chomp-start: true
-chomp-end: false
 prefer-external: true
-filter: false

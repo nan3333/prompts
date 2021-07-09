@@ -30,10 +30,7 @@ examples:
 pen-preprocessors:
 - pen-pf-correct-grammar
 chomp-start: true
-chomp-end: false
 prefer-external: true
 quality-script: my-quality-checker-for-this-prompt.sh
 validation-script: my-validator-for-this-prompt.sh
-conversation-mode: false
-filter: false
 n-test-runs: 5

@@ -32,6 +32,3 @@ examples:
 - bash
 - suspend laptop
 chomp-start: true
-chomp-end: false
-conversation-mode: false
-filter: false

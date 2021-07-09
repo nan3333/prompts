@@ -29,6 +29,3 @@ vars:
 examples:
 - shift last argument
 chomp-start: true
-chomp-end: false
-conversation-mode: false
-filter: false

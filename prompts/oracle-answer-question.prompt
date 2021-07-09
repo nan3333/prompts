@@ -56,6 +56,5 @@ presence-penalty: 0
 best-of: 1
 stop-sequences:
 - "\n\n"
-conversation-mode: false
 vars:
 - question about anything

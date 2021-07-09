@@ -46,10 +46,7 @@ vars:
 examples:
 - Beatles
 chomp-start: true
-chomp-end: false
 prefer-external: true
-conversation-mode: false
-filter: false
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
   uniqnosort
 pen-collation-postprocessor: uniqnosort

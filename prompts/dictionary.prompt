@@ -38,13 +38,10 @@ best-of: 1
 stop-sequences:
 - "\n\n"
 chomp-start: true
-chomp-end: false
 vars:
 - word
 examples:
 - boysenberry
 completion: true
-conversation-mode: false
-filter: false
 postprocessor: sed 's/\s\+/ /g' | s join ' '
 prettifier: tpp

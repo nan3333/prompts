@@ -63,8 +63,5 @@ pen-preprocessors:
 - cat
 - s join ", "
 chomp-start: true
-chomp-end: false
 prefer-external: true
-conversation-mode: false
-filter: false
 n-test-runs: 5

@@ -43,9 +43,6 @@ vars:
 examples:
 - What is a boysenberry?
 chomp-start: true
-chomp-end: false
-conversation-mode: false
-filter: false
 aliases:
 - yo-be-real
 - ask-any-question

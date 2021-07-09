@@ -40,11 +40,8 @@ vars:
 examples:
 - I just wanted to say that I love you.
 chomp-start: true
-chomp-end: false
 prefer-external: true
 external-web-services:
 - "https://paraphrasing-tool.com/"
-conversation-mode: false
-filter: false
 aliases:
 - paraphrase

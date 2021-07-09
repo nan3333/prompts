@@ -91,10 +91,7 @@ examples:
 pen-preprocessors:
 - tr '[:lower:]' '[:upper:]'
 chomp-start: true
-chomp-end: false
 prefer-external: true
-conversation-mode: false
-filter: false
 n-test-runs: 10
 n-collate: 10
 postprocessor: sed 's/^ *//' | awk 1 | sed '/^[^a-zA-Z]/d'

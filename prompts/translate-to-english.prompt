@@ -38,10 +38,7 @@ best-of: 1
 stop-sequences:
 - "###"
 chomp-start: true
-chomp-end: false
 vars:
 - text
 examples:
 - Pero, que es el contexto?
-conversation-mode: false
-filter: false

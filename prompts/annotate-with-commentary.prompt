@@ -76,9 +76,7 @@ pen-defaults:
 - "(pen-surrounding-text)"
 - "(detect-language)"
 chomp-start: true
-chomp-end: false
 prefer-external: true
-conversation-mode: false
 filter: true
 n-test-runs: 5
 related-prompts:

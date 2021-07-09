@@ -31,10 +31,8 @@ examples:
 - nlp
 - What does BPE mean?
 chomp-start: true
-chomp-end: false
 conversation-mode: true
 conversation-pretext-generator: human-conversation
-filter: false
 aliases:
 - asktutor1
 postprocessor: ttp

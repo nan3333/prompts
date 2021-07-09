@@ -23,7 +23,6 @@ best-of: 1
 stop-sequences:
 - "\n"
 chomp-start: true
-chomp-end: false
 vars:
 - item to classify
 examples:

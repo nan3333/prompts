@@ -17,7 +17,6 @@ frequency-penalty: 0.2
 presence-penalty: 0.6
 best-of: 1
 chomp-start: true
-chomp-end: false
 stop-sequences:
 - "\n\n"
 vars:

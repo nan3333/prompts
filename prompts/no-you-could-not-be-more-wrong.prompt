@@ -21,11 +21,7 @@ vars:
 - text
 examples:
 - Recycling is good for the world
-completion: false
 pen-defaults:
 - "(pen-preceding-text)"
 chomp-start: true
-chomp-end: false
-conversation-mode: false
-filter: false
 postprocessor: ttp

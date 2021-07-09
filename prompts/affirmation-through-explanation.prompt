@@ -25,7 +25,5 @@ examples:
 completion: true
 pen-defaults:
 - "(pen-preceding-text)"
-conversation-mode: false
-filter: false
 postprocessor: sed -e 's/^- //' -e 's/^-//' | sed 's/^/- /' | uniqnosort | sed -z
   's/^/\n/'

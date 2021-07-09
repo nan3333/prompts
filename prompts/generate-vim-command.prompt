@@ -29,5 +29,4 @@ vars:
 - description
 examples:
 - Make all occurrences of Steve lowercase
-filter: false
 url: https://prompts-ai-self-clean.surge.sh/

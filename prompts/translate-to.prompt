@@ -38,12 +38,9 @@ best-of: 1
 stop-sequences:
 - "#"
 chomp-start: true
-chomp-end: false
 vars:
 - language
 - phrase
 examples:
 - French
 - Goodnight
-conversation-mode: false
-filter: false
