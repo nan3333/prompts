@@ -43,6 +43,5 @@ vars:
 - question
 examples:
 - how to get from Grand Central to Penn Station
-external: ''
 conversation-mode: false
 filter: false

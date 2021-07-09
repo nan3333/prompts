@@ -32,7 +32,6 @@ examples:
 - What does BPE mean?
 chomp-start: true
 chomp-end: false
-external: ''
 conversation-mode: true
 conversation-pretext-generator: human-conversation
 filter: false

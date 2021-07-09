@@ -39,6 +39,5 @@ examples:
 - Building an SMS Chatbot with OpenAI's GPT-3 engine, Twilio and Python
 chomp-start: true
 chomp-end: false
-external: ''
 conversation-mode: false
 filter: false

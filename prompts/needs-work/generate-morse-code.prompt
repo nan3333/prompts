@@ -169,6 +169,5 @@ vars:
 - text to morse
 examples:
 - SOS
-external: ''
 filter: false
 in-development: true

@@ -38,7 +38,6 @@ examples:
 - What was the version of node in 2018?
 chomp-start: true
 chomp-end: false
-external: ''
 conversation-mode: true
 conversation-pretext-generator: human-conversation
 filter: false

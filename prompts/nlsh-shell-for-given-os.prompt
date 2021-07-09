@@ -37,6 +37,5 @@ examples:
 postprocessor: 'sed ''s/^Output: //'''
 chomp-start: true
 chomp-end: false
-external: ''
 conversation-mode: true
 filter: false

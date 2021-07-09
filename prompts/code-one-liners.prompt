@@ -34,6 +34,5 @@ examples:
 - suspend laptop
 chomp-start: true
 chomp-end: false
-external: ''
 conversation-mode: false
 filter: false

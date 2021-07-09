@@ -65,7 +65,6 @@ pen-preprocessors:
 chomp-start: true
 chomp-end: false
 prefer-external: true
-external: ''
 conversation-mode: false
 filter: false
 n-test-runs: 5

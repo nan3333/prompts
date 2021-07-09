@@ -44,7 +44,6 @@ vars:
 examples:
 - boysenberry
 completion: true
-external: ''
 conversation-mode: false
 filter: false
 postprocessor: sed 's/\s\+/ /g' | s join ' '

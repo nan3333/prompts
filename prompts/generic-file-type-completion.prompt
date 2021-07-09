@@ -37,6 +37,5 @@ completion: true
 pen-defaults:
 - "(detect-language)"
 - "(pen-preceding-text)"
-external: ''
 conversation-mode: false
 filter: false

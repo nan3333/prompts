@@ -22,6 +22,5 @@ vars:
 - prose query
 examples:
 - Who has the lowest salary
-external: ''
 filter: false
 in-development: true

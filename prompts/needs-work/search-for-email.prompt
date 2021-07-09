@@ -27,6 +27,5 @@ vars:
 - person
 examples:
 - Elon Musk
-external: ''
 filter: false
 in-development: true

@@ -47,6 +47,5 @@ vars:
 - query or input
 examples:
 - How old is Shane?
-external: ''
 conversation-mode: false
 filter: false

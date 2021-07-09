@@ -30,5 +30,4 @@ vars:
 - query
 examples:
 - lord of the rings website
-external: ''
 filter: false

@@ -23,5 +23,4 @@ vars:
 - description
 examples:
 - boysenberries
-external: ''
 filter: false

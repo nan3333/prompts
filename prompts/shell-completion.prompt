@@ -24,6 +24,5 @@ examples:
 completion: true
 pen-defaults:
 - "(pen-preceding-text-line)"
-external: ''
 conversation-mode: false
 filter: false

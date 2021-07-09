@@ -53,6 +53,5 @@ stop-sequences:
 - "\n\n"
 vars: 
 examples: 
-external: ''
 conversation-mode: false
 filter: false

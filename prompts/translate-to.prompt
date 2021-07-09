@@ -45,6 +45,5 @@ vars:
 examples:
 - French
 - Goodnight
-external: ''
 conversation-mode: false
 filter: false

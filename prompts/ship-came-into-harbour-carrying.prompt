@@ -37,6 +37,5 @@ examples:
 - '5'
 - island countries
 - T
-external: ''
 conversation-mode: false
 filter: false

@@ -54,7 +54,6 @@ examples:
 - suspend laptop
 chomp-start: true
 chomp-end: false
-external: ''
 conversation-mode: false
 filter: false
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | uniqnosort

@@ -43,6 +43,5 @@ vars:
 - text
 examples:
 - Pero, que es el contexto?
-external: ''
 conversation-mode: false
 filter: false

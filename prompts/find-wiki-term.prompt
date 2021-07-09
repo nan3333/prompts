@@ -46,7 +46,6 @@ vars:
 - query
 examples:
 - rational language
-external: ''
 conversation-mode: false
 filter: false
 in-development: true

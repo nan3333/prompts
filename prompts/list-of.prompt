@@ -32,7 +32,6 @@ vars:
 examples:
 - '5'
 - island countries
-external: ''
 conversation-mode: false
 filter: false
 postprocessor: sed 's/,/\n/g'

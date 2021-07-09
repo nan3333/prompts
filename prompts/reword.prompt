@@ -42,8 +42,8 @@ examples:
 chomp-start: true
 chomp-end: false
 prefer-external: true
-external: ''
-external-web-service: https://paraphrasing-tool.com/
+external-web-services:
+- "https://paraphrasing-tool.com/"
 conversation-mode: false
 filter: false
 aliases:

@@ -74,6 +74,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   problems:
   - "Struggles with the latter columns."
 
+  # A list of web services that provide a service similar to this prompt
+  external-web-services:
+  - "https://paraphrasing-tool.com/"
+
   # ---------------
   # Functional keys
   # ---------------

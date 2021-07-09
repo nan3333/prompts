@@ -24,7 +24,6 @@ examples:
 completion: false
 pen-defaults:
 - "(pen-preceding-text)"
-external: ''
 chomp-start: true
 chomp-end: false
 conversation-mode: false
