@@ -48,9 +48,11 @@ This is a minimal =.prompt= file that should work.
   - =temperature: 0.9=
     - This turns the dial on how deterministic the generations are.
   - =max-tokens: 60=
-    - This will cut off
+    - This will prevent the language model from generating beyond this number of tokens.
   - =stop-sequences=
-    - This is a list of stop sequences.
+    - This is a list of stop sequences. The first one one specified here is passed to the language model
+      as a parameter. As soon as the language model generates this string, it will stop generating text.
+    - The remaining stop sequences provided here will cut the text off at this end.
 
 See the glossary.
 
