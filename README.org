@@ -168,7 +168,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # The engine to be specified to the lm-command.
   engine: "davinci"
 
-  # 0.0 = /r/hadastroke
+  # 0.0 = /r/ihadastroke
   # 1.0 = /r/iamveryrandom
   # Use 0.3-0.8
   temperature: 0.8
