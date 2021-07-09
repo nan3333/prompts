@@ -146,6 +146,10 @@ postprocessor: "sed 's/- //' | uniqnosort"
 # The number of times the prompt is run when tested
 n-test-runs: 5
 
+# This is a script which may optionally be run on the prompt
+# to prettify its output
+prettifier: ttp
+
 # Run it n times and combine the output. Default: 1
 # This does not result in a list. It's usually a
 # concatenation, but may use a different collation
