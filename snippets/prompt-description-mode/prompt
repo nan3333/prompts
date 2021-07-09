@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: prompt
-# group: pen
+# group: prompt-engineering
 # key: pr
 # expand-env: ((yas-indent-line 'fixed))
 # --
@@ -27,6 +27,14 @@ doc: "Given ... ${1:title}"
 # A list of problems with the prompt.
 problems:
 - "Struggles with the latter columns."
+
+# A list of paths to previous prompts
+past-versions:
+- deprecated/pick-up-line.prompt
+
+# A list of web services that provide a service similar to this prompt
+external-web-services:
+- "https://paraphrasing-tool.com/"
 
 # ---------------
 # Functional keys
