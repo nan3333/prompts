@@ -19,7 +19,7 @@ these prompts.
 
 It is =yaml= with a schema.
 
-This is a very basic =.prompt= file that should work.
+This is a minimal =.prompt= file that should work.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
   title: "My new prompt"
