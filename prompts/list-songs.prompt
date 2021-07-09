@@ -55,4 +55,4 @@ stitch-max: 0
 needs-work: false
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
   uniqnosort
-collation-postprocessor: uniqnosort
+pen-collation-postprocessor: uniqnosort
