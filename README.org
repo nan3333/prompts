@@ -46,8 +46,10 @@ http://github.com/semiosis/pen.el/blob/master/glossary.txt
 + You may also supply variables:
   - =vars=
     - =vars= is a list of variable names
-    - The first variable may be captured by selecting some text in =pen.el=
-    - The remaining arguments may be captured either with a specified elisp function, or by default
+    - =var-defaults= is a list of emacs lisp expressions which are evaluated to give the value of a variable for a prompt function
+    - If text is selected then the first value of =var-defaults= is by default set to =(pen-selected-text)=
+    - Otherwise, the default value of all =var-defaults= items is =(read-string-hist)=, which reads the value from the user
+    - =var-defaults= can be overridden by specifying in the =.prompt= file.
 
 *** =YASnippet= template
 
