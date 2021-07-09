@@ -168,6 +168,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   aliases:
   - "asktutor"
 
+  # This is run on the completion results.
+  # It may be used to format the results
+  # before usage/insertion by emacs.
   postprocessor: "sed 's/- //' | uniqnosort"
 
   # The number of times the prompt is run when tested
