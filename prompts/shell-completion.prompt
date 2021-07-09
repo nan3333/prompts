@@ -22,5 +22,5 @@ vars:
 examples:
 - install
 completion: true
-pen-defaults:
+var-defaults:
 - "(pen-preceding-text-line)"

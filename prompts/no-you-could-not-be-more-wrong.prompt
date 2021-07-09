@@ -21,7 +21,7 @@ vars:
 - text
 examples:
 - Recycling is good for the world
-pen-defaults:
+var-defaults:
 - "(pen-preceding-text)"
 chomp-start: true
 postprocessor: ttp

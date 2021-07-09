@@ -18,5 +18,5 @@ vars:
 examples:
 - Recycling is good for the world, no, you could not be more wrong
 completion: true
-pen-defaults:
+var-defaults:
 - "(pen-preceding-text)"

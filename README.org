@@ -43,6 +43,12 @@ See the glossary.
 
 http://github.com/semiosis/pen.el/blob/master/glossary.txt
 
++ You may also supply variables:
+  - =vars=
+    - =vars= is a list of variable names
+    - The first variable may be captured by selecting some text in =pen.el=
+    - The remaining arguments may be captured either with a specified elisp function, or by default
+
 *** =YASnippet= template
 
 [[./snippets/prompt-description-mode/prompt]]
@@ -182,6 +188,11 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "former"
   - "latter"
 
+  # These are expressions run from within Pen to give the value for the variable
+  var-defaults:
+  - "(detect-language)"
+  - "(pen-preceding-text)"
+
   # Examples of typical values for the variables
   examples:
   - "boysenberries"
@@ -236,11 +247,6 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
   conversation-mode: no
-
-  # These are expressions run from within Pen to give the value for the variable
-  pen-defaults:
-  - "(detect-language)"
-  - "(pen-preceding-text)"
 
   # Output to test against. Possibly using similarity.
   test-output: "both are types of berry"

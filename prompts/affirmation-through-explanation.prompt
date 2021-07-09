@@ -23,7 +23,7 @@ vars:
 examples:
 - Recycling is good for the world
 completion: true
-pen-defaults:
+var-defaults:
 - "(pen-preceding-text)"
 postprocessor: sed -e 's/^- //' -e 's/^-//' | sed 's/^/- /' | uniqnosort | sed -z
   's/^/\n/'

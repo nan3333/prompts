@@ -34,6 +34,6 @@ examples:
   # the triple (numbers[i], numbers[i + 1], numbers[i + 2]) is a zigzag, and 0 otherwise.
   def
 completion: true
-pen-defaults:
+var-defaults:
 - "(detect-language)"
 - "(pen-preceding-text)"

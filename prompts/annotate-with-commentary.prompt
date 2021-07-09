@@ -71,7 +71,7 @@ vars:
 examples:
 - 'fibs = 0 : 1 : zipWith (+) fibs (tail fibs)'
 - haskell
-pen-defaults:
+var-defaults:
 - "(pen-surrounding-text)"
 - "(detect-language)"
 chomp-start: true
