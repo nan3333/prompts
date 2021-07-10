@@ -1,6 +1,7 @@
 ---
 title: Code interpreter kickstarter
-future-titles: Code interpreter kickstarter
+future-titles:
+- Code interpreter kickstarter
 doc: Given a line of code, infer the result of running that code
 prompt-version: 3
 prompt: |

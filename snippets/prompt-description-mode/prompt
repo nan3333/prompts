@@ -153,7 +153,7 @@ future-titles:
 - Get snippet
 
 # Aims for developing this prompt.
-aims: |+
+aims:
 - More abstractive rewording
 
 # Function documentation.

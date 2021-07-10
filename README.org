@@ -239,7 +239,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - Get snippet
 
   # Aims for developing this prompt.
-  aims: |+
+  aims:
   - More abstractive rewording
 
   # Function documentation.
