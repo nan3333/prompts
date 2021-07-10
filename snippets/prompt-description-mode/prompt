@@ -122,6 +122,9 @@ prettifier: ttp
 # function for combining results.
 n-collate: 10
 
+# The number of completions to ask from the LM/API
+n-completions: 1
+
 # This for combining prompts with n-collate:
 # It might be, for example, summarize, or uniqnosort.
 pen-collation-postprocessor: "uniqnosort"
