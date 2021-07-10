@@ -8,14 +8,34 @@ future-titles:
 - Get snippet
 next-version: get-code-snippet.prompt
 doc: Get a bash one liner from natural langauge
-prompt: "Language: Ruby\nTask: Reverse lines from stdout\nCode: while s = gets; puts
-  s.chop.reverse; end\n###\nLanguage: Haskell\nTask: Multiple Each Item in a List
-  by 2\nCode:\nmap (*2) [1..10]\n###\nLanguage: bash\nTask: Recursively remove all
-  \"node_modules\" folders\nCode:\nfind . -name \"node_modules\" -exec rm -rf '{}'
-  +\n###\nLanguage: Haskell\nTask: Apply a function to both bits of a tuple:\nCode:\nboth
-  :: (a -> b) -> (a, a) -> (b, b)\nboth = join (***)\n###\nLanguage: Python\nTask:
-  Palindrome Python One-Liner\nCode: phrase.find(phrase[::-1])\n###\nLanguage: <1>
-  \   \nTask: <2>\nCode:\n"
+prompt: |+
+    Language: Ruby
+    Task: Reverse lines from stdout
+    Code: while s = gets; puts s.chop.reverse; end
+    ###
+    Language: Haskell
+    Task: Multiple Each Item in a List by 2
+    Code:
+    map (*2) [1..10]
+    ###
+    Language: bash
+    Task: Recursively remove all "node_modules" folders
+    Code:
+    find . -name "node_modules" -exec rm -rf '{}' +
+    ###
+    Language: Haskell
+    Task: Apply a function to both bits of a tuple:
+    Code:
+    both :: (a -> b) -> (a, a) -> (b, b)
+    both = join (***)
+    ###
+    Language: Python
+    Task: Palindrome Python One-Liner
+    Code: phrase.find(phrase[::-1])
+    ###
+    Language: <1>    
+    Task: <2>
+    Code:
 engine: davinci
 temperature: 0.8
 max-tokens: 60
