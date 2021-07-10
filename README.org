@@ -305,6 +305,9 @@ prettifier:
     Input: {}
     Output:
 
+  # This is the readline prompt that is given to rlwrap for conversation mode
+  rlprompt: nlsh <1>
+
   # Output to test against. Possibly using similarity.
   test-output: "both are types of berry"
 
