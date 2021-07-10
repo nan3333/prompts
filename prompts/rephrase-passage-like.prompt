@@ -13,8 +13,6 @@ max-tokens: 100
 top-p: 1
 stop-sequences:
 - "###"
-chomp-start: true
-chomp-end: true
 vars:
 - passage
 - style

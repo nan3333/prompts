@@ -48,4 +48,3 @@ vars:
 examples:
 - bash
 - suspend laptop
-chomp-start: true

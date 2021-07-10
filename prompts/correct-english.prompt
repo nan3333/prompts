@@ -33,7 +33,6 @@ max-tokens: 300
 top-p: 1
 stop-sequences:
 - "###"
-chomp-start: true
 vars:
 - poor english
 examples:

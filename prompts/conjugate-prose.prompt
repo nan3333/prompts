@@ -42,7 +42,6 @@ test-output: Given a sentence which may have incorrect spelling or grammar, corr
   it.
 pen-preprocessors:
 - pen-pf-correct-grammar
-chomp-start: true
 prefer-external: true
 quality-script: my-quality-checker-for-this-prompt.sh
 validation-script: my-validator-for-this-prompt.sh

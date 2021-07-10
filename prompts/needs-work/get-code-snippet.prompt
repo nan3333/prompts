@@ -22,5 +22,4 @@ vars:
 examples:
 - emacs lisp
 - get visible text
-chomp-start: true
 prefer-external: true

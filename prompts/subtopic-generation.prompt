@@ -18,7 +18,6 @@ top-p: 1
 stop-sequences:
 - "###"
 - "\n\n"
-chomp-start: true
 cache: true
 vars:
 - topic

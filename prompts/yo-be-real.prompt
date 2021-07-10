@@ -39,7 +39,6 @@ vars:
 - question
 examples:
 - What is a boysenberry?
-chomp-start: true
 aliases:
 - yo-be-real
 - ask-any-question

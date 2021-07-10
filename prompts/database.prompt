@@ -38,7 +38,6 @@ max-tokens: 60
 top-p: 1
 stop-sequences:
 - "\n\n"
-chomp-start: true
 vars:
 - query or input
 examples:

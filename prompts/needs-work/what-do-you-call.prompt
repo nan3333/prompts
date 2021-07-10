@@ -35,7 +35,6 @@ preprocessors:
 - sed -e "s/\b\(.\)/\l\1/g"
 pen-preprocessors:
 - pen-pf-correct-grammar
-chomp-start: true
 prefer-external: true
 in-development: true
 aliases:

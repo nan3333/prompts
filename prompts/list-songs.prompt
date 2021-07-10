@@ -41,7 +41,6 @@ vars:
 - Artist/Album
 examples:
 - Beatles
-chomp-start: true
 prefer-external: true
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
 pen-collation-postprocessor: uniqnosort

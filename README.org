@@ -282,6 +282,8 @@ If you leave out these keys, the defaults will be used.
   completion: off
   n-collate: 1
   n-test-runs: 5
+  chomp-start: on
+  chomp-end: on
   # These are nil if not specified
   vars:
   examples:

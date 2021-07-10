@@ -30,7 +30,6 @@ vars:
 - code
 examples:
 - raco pkg show --all
-chomp-start: true
 prefer-external: true
 external-related:
 - https://explainshell.com/

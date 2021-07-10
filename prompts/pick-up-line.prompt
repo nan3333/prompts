@@ -87,7 +87,6 @@ examples:
 - tectonic plates
 pen-preprocessors:
 - tr '[:lower:]' '[:upper:]'
-chomp-start: true
 prefer-external: true
 n-test-runs: 10
 n-collate: 10

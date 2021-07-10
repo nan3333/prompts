@@ -33,7 +33,6 @@ examples:
 - node js
 - programming
 - What was the version of node in 2018?
-chomp-start: true
 conversation-mode: true
 conversation-pretext-generator: human-conversation
 aliases:

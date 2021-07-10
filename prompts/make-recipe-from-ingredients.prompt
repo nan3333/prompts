@@ -58,6 +58,5 @@ examples:
 pen-preprocessors:
 - cat
 - s join ", "
-chomp-start: true
 prefer-external: true
 n-test-runs: 5

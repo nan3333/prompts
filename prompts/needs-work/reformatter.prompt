@@ -60,7 +60,6 @@ vars:
 examples:
 - if is_tty; then z "$dn/${mant}.pdf"; else echo "$dn/${mant}.pdf"; fi
 - bash
-chomp-start: true
 prefer-external: true
 filter: true
 n-test-runs: 5

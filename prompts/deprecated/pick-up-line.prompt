@@ -36,4 +36,3 @@ vars:
 - topic
 examples:
 - music
-chomp-start: true

@@ -22,5 +22,4 @@ vars:
 - morse
 examples:
 - "... --- ..."
-chomp-start: true
 prefer-external: true

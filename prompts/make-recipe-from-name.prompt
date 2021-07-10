@@ -51,6 +51,5 @@ examples:
 - Fruit salad
 pen-preprocessors:
 - cat
-chomp-start: true
 prefer-external: true
 n-test-runs: 5

@@ -40,6 +40,5 @@ vars:
 - incorrect spelling
 examples:
 - meksikan
-chomp-start: true
 n-test-runs: 2
 in-development: true

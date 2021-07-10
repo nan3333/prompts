@@ -32,5 +32,4 @@ vars:
 examples:
 - boysenberries
 - strawberries
-chomp-start: true
 prefer-external: true

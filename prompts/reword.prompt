@@ -34,7 +34,6 @@ vars:
 - text
 examples:
 - I just wanted to say that I love you.
-chomp-start: true
 prefer-external: true
 external-related:
 - "https://paraphrasing-tool.com/"

@@ -27,7 +27,6 @@ vars:
 examples:
 - nlp
 - What does BPE mean?
-chomp-start: true
 conversation-mode: true
 conversation-pretext-generator: human-conversation
 aliases:

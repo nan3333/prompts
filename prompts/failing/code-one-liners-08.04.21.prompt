@@ -49,5 +49,4 @@ vars:
 examples:
 - bash
 - suspend laptop
-chomp-start: true
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | uniqnosort

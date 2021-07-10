@@ -32,5 +32,4 @@ examples:
 - Arch Linux
 - Install package
 postprocessor: 'sed ''s/^Output: //'''
-chomp-start: true
 conversation-mode: true

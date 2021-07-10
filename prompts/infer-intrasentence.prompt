@@ -28,6 +28,5 @@ examples:
 - work
 pen-preprocessors:
 - pen-pf-correct-grammar
-chomp-start: true
 prefer-external: true
 n-test-runs: 5

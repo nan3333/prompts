@@ -33,7 +33,6 @@ examples:
 test-output: flaunt
 pen-preprocessors:
 - pen-pf-correct-grammar
-chomp-start: true
 prefer-external: true
 n-test-runs: 5
 continuation-function: list-of <1> <g>

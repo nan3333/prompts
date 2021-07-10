@@ -25,4 +25,3 @@ vars:
 - task description
 examples:
 - shift last argument
-chomp-start: true

@@ -33,7 +33,6 @@ vars:
 examples:
 - haskell
 - '"Hello" ++ " " ++ "World"'
-chomp-start: true
 prefer-external: true
 external: iol
 similarity-test: string-equal

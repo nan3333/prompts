@@ -71,7 +71,6 @@ examples:
 var-defaults:
 - "(pen-surrounding-text)"
 - "(detect-language)"
-chomp-start: true
 prefer-external: true
 filter: true
 n-test-runs: 5

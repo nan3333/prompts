@@ -10,7 +10,6 @@ max-tokens: 2000
 top-p: 1
 stop-sequences:
 - "\n"
-chomp-start: true
 vars:
 - sentence
 examples:

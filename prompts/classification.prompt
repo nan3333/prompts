@@ -19,7 +19,6 @@ max-tokens: 6
 top-p: 1
 stop-sequences:
 - "\n"
-chomp-start: true
 vars:
 - item to classify
 examples:

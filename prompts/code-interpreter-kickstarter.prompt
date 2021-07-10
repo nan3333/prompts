@@ -31,7 +31,6 @@ vars:
 examples:
 - haskell
 - strawberries
-chomp-start: true
 prefer-external: true
 quality-script: my-quality-checker-for-this-prompt.sh
 validation-script: my-validator-for-this-prompt.sh
