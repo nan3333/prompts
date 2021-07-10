@@ -159,6 +159,9 @@ aims:
 # Function documentation.
 doc: "Given ... ${1:title}"
 
+# For documentation that falls outside of todo, aims, doc, etc.
+notes: "rlprompt is used here outside of pen.el"
+
 # A list of problems with the prompt.
 issue:
 - "Struggles with the latter columns."
