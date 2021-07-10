@@ -10,7 +10,7 @@ GPT-j, and future LMs.
 ** The =prompt-repositories.txt= file is to help find other prompts repositories
 [[./prompt-repositories.txt]]
 
-Pen will use this as a discovery mechanism.
+Pen will use this as a discovery mechanism to expand its database of prompts.
 
 ** Prompts are regularly reviewed and tested under any branch
 Push your own branch. Request access to the =semiosis= organisation.
