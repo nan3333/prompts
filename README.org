@@ -8,21 +8,26 @@ GPT-j, and future LMs.
 | *GPL-3* |
 
 ** Automatic prompts discovery
-[[./prompt-repositories.txt]]
+Pen has a discovery mechanism to expand its database of prompts.
 
-The =prompt-repositories.txt= file is to help find other prompts repositories
+Placing urls to other prompts repositories [[./prompt-repositories.txt]] will
+create a discovery network of prompts.
 
-Pen will use this as a discovery mechanism to expand its database of prompts.
+** Automatic tests
+For the https://github.com/semiosis/prompts repository, prompts are regularly
+reviewed and tested under any branch.
 
-** Prompts are regularly reviewed and tested under any branch
-Push your own branch. Request access to the =semiosis= organisation.
+Push your own branch to the prompts repository. You'll need membership to the
+=semiosis= organisation to do this.
 
 *** Test results go here
 https://github.com/semiosis/prompt-tests/
 
-** The =.prompt= (=prompt description=) file format
-This is the format I have used to organise
-these prompts.
+** Prompt description file format
+=prompt description= is the full name for =.prompt= files.
+
+A =prompt description= file contains the prompt as well as any other parameters
+associated with that prompt, such as the engine that should be used to generate it.
 
 It is =yaml= with a schema which is being
 actively developed.
