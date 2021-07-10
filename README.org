@@ -128,7 +128,7 @@ the output.
 
 This is useful if you're generating a list.
 The final part of your prompt might be
-=<:pp>-=.
+=<:pp>-=.s
 
 ** =YASnippet= template
 
