@@ -123,7 +123,12 @@ can be used if you want to include part of the
 prompt itself as part of the output.
 
 Whatever comes after =<:pp>= will be returned
-from the prompt function.
+from the prompt function as the first part of
+the output.
+
+This is useful if you're generating a list.
+The final part of your prompt might be
+=<:pp>-=.
 
 ** =YASnippet= template
 
