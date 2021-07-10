@@ -1,7 +1,8 @@
 ---
 title: bash one liner generator on OS from natural language
 doc: Get a bash one liner on OS from natural language
-notes: "rlprompt is used here outside of pen.el"
+notes:
+- "rlprompt is used here outside of pen.el"
 rlprompt: nlsh <1>
 prompt: |
   # List of one-liner shell commands for <1>.
