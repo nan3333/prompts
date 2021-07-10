@@ -118,6 +118,13 @@ ttp://github.com/semiosis/pen.el/blob/master/p
 en-core.el][pen-core.el]] such as =(pen-
 preceding-text)= which could be useful.
 
+=<:pp>= is a special template variable which
+can be used if you want to include part of the
+prompt itself as part of the output.
+
+Whatever comes after =<:pp>= will be returned
+from the prompt function.
+
 ** =YASnippet= template
 
 [[./snippets/prompt-description-mode/prompt]]
