@@ -10,7 +10,7 @@ GPT-j, and future LMs.
 ** Automatic prompts discovery
 Pen has a discovery mechanism to expand its database of prompts.
 
-Placing urls to other prompts repositories [[./prompt-repositories.txt]] will
+Placing urls to other prompts repositories in [[./prompt-repositories.txt]] will
 create a discovery network of prompts.
 
 ** Automatic tests
