@@ -7,7 +7,7 @@ GPT-j, and future LMs.
 |---------|
 | *GPL-3* |
 
-** The =repositories.txt= file is to help crawl GitHub for other prompts repositories
+** The =repositories.txt= file is to help find other prompts repositories
 [[./repositories.txt]]
 
 Pen will use this as a discovery mechanism.
