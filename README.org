@@ -87,7 +87,31 @@ This generated function I will refer to as a _prompt function_.
     - =var-defaults= can be overridden by specifying in the =.prompt= file.
 
 *** Using parameters in the prompt
-If you 
+A prompt's variables (parameters) are usually
+copied into the prompt template in their
+respective positions.
+
+The following prompt will substitute =<1>=
+with the value of the first variable and =<2>=
+with the value of the second.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  prompt: |+
+      The following is an analogy.
+
+      <1> are like <2> in that
+#+END_SRC
+
+If you were to be in emacs and select some
+text, then run this prompt function, the
+selection would be used as the value of the
+first variable.
+
+Otherwise, the elisp expression as specified
+by the positional subvalue of =var-defaults=
+will be run to give the value. By default,
+this will be a function that reads a string
+from the user.
 
 ** =YASnippet= template
 
