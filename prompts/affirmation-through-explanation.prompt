@@ -15,7 +15,7 @@ stop-sequences:
 - "\n\n"
 vars:
 - text
-'preprocessors:':
+preprocessors:
 - sed -z -e 's/\s\+$//' -e 's/\.$//' -e 's/$/./'
 examples:
 - Recycling is good for the world
