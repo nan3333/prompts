@@ -111,7 +111,12 @@ Otherwise, the elisp expression as specified
 by the positional subvalue of =var-defaults=
 will be run to give the value. By default,
 this will be a function that reads a string
-from the user.
+from the user, but you may override that with any function or expression.
+
+There are some helper functions defined in [[h
+ttp://github.com/semiosis/pen.el/blob/master/p
+en-core.el][pen-core.el]] such as =(pen-
+preceding-text)= which could be useful.
 
 ** =YASnippet= template
 
