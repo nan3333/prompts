@@ -72,8 +72,8 @@ chomp-end: off
 # So only the first one will be used by the API,
 # but the completer script can make use the others.
 stop-sequences:
-- "\\n"
-- "\\n\\n"
+- "\n"
+- "\n\n"
 - "##"
 
 # Cache the function by default when running the prompt function

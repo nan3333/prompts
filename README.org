@@ -158,8 +158,8 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # So only the first one will be used by the API,
   # but the completer script can make use the others.
   stop-sequences:
-  - "\\n"
-  - "\\n\\n"
+  - "\n"
+  - "\n\n"
   - "##"
 
   # Cache the function by default when running the prompt function
@@ -267,6 +267,8 @@ If you leave out these keys, the defaults will be used.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
   lm-command: "openai-complete.sh"
+  stop-sequences:
+  - "\n"
   # Other options if using openai-complete.sh:
   # - curie
   engine: "davinci"
