@@ -320,30 +320,32 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 ** Default values
 If you leave out these keys, the defaults will be used.
 
-lm-command: "openai-complete.sh"
-stop-sequences:
-- "\n"
-# Other options if using openai-complete.sh:
-# - curie
-engine: "davinci"
-best-of: 1
-cache: false
-# For 2 variables while selecting text, this is default
-# Otherwise, var-defaults is nil
-var-defaults:
-- "(pen-selected-text)"
-- "(read-string-hist ,(concat v ": ") ,example)"
-completion: off
-n-collate: 1
-n-test-runs: 5
-chomp-start: on
-chomp-end: on
-# These are nil if not specified
-vars:
-examples:
-var-defaults:
-aliases:
-prettifier:
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  lm-command: "openai-complete.sh"
+  stop-sequences:
+  - "\n"
+  # Other options if using openai-complete.sh:
+  # - curie
+  engine: "davinci"
+  best-of: 1
+  cache: false
+  # For 2 variables while selecting text, this is default
+  # Otherwise, var-defaults is nil
+  var-defaults:
+  - "(pen-selected-text)"
+  - "(read-string-hist ,(concat v ": ") ,example)"
+  completion: off
+  n-collate: 1
+  n-test-runs: 5
+  chomp-start: on
+  chomp-end: on
+  # These are nil if not specified
+  vars:
+  examples:
+  var-defaults:
+  aliases:
+  prettifier:
+#+END_SRC
 
 *** =YASnippet= keys currently in development
 
