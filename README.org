@@ -113,10 +113,8 @@ will be run to give the value. By default,
 this will be a function that reads a string
 from the user, but you may override that with any function or expression.
 
-There are some helper functions defined in [[h
-ttp://github.com/semiosis/pen.el/blob/master/p
-en-core.el][pen-core.el]] such as =(pen-
-preceding-text)= which could be useful.
+There are some helper functions defined in [[http://github.com/semiosis/pen.el/blob/master/pen-core.el][pen-core.el]]
+such as =(pen-preceding-text)= which could be useful.
 
 =<:pp>= is a special template variable which
 can be used if you want to include part of the
