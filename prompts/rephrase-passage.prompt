@@ -23,5 +23,4 @@ examples:
 pen-preprocessors:
 - pen-pf-correct-grammar
 postprocessor: sed 's/- //' | uniqnosort
-external: summarize-passage
 filter: true
