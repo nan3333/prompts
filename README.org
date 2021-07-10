@@ -308,7 +308,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   past-versions:
   - deprecated/pick-up-line.prompt
 
-  # A list of external services that provide a service function to this prompt
+  # A URL to related websites, documents or tools
+  # For example,
+  # - A website that provided the inspiration for or idea behind the prompt
+  # - A web service that provides a similar function
   external-related:
   - "https://paraphrasing-tool.com/"
 
