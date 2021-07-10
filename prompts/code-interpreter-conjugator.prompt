@@ -1,6 +1,5 @@
 ---
 title: Code interpreter conjugator
-aims: 
 doc: Given some lines of code, coerce them into prompt format then continue
 prompt-version: 1
 prompt: |
