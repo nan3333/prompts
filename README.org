@@ -7,8 +7,10 @@ GPT-j, and future LMs.
 |---------|
 | *GPL-3* |
 
-** The =prompt-repositories.txt= file is to help find other prompts repositories
+** Automatic prompts discovery
 [[./prompt-repositories.txt]]
+
+The =prompt-repositories.txt= file is to help find other prompts repositories
 
 Pen will use this as a discovery mechanism to expand its database of prompts.
 
