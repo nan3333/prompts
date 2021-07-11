@@ -159,7 +159,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # will be included in the completion string.
   # <1>, <2> etc. are placeholders for variable substitution.
   # <1> is special because it may be the current selection.
-  # <2>, on the other hand, is read in from the keyboard.
+  # <2>, on the other hand, is read in from the user.
   # This way, a function can be curried/beta-reduced to a function of 1 argument.
   prompt: |+
       The following is an analogy.
