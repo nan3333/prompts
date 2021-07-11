@@ -2,7 +2,7 @@
 title: Get language
 prompt-version: 1
 doc: This prompt detects the language
-prompt: |
+prompt: |+
     Given some text, return the language.
 
     Input: Hello
