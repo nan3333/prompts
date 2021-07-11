@@ -199,11 +199,11 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # requests.
   best-of: 1
 
-  # Remove whitespace from the beginning of the response string
-  chomp-start: on
+  # Do not remove whitespace from the beginning of the response string
+  no-trim-start: off
 
-  # Remove whitespace from the end of the response string
-  chomp-end: off
+  # Do not remove whitespace from the end of the response string
+  no-trim-end: off
 
   # Currently the OpenAI API can only accept one stop-sequence.
   # So only the first one will be used by the API,
@@ -343,8 +343,8 @@ If you leave out these keys, the defaults will be used.
   completion: off
   n-collate: 1
   n-test-runs: 5
-  chomp-start: on
-  chomp-end: on
+  no-trim-start: off
+  no-trim-end: off
   # These are nil if not specified
   vars:
   examples:

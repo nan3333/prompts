@@ -62,11 +62,11 @@ top-p: 1.0
 # requests.
 best-of: 1
 
-# Remove whitespace from the beginning of the response string
-chomp-start: on
+# Do not remove whitespace from the beginning of the response string
+no-trim-start: off
 
-# Remove whitespace from the end of the response string
-chomp-end: off
+# Do not remove whitespace from the end of the response string
+no-trim-end: off
 
 # Currently the OpenAI API can only accept one stop-sequence.
 # So only the first one will be used by the API,
