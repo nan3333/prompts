@@ -155,12 +155,11 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # The test suite will only rerun if this version is incremented.
   prompt-version: 1
 
-  # <:pp> defines a point where the following
-  # text is concatenated before the postprocessor
-  # is run.
-  # <1>, <2> etc. are where variables are substituted
-  # <1> is special because it may be the current selection
-  # <2> May be inferred from <1> via a prompt.
+  # <:pp> defines a point whereafter text that follows
+  # will be included in the completion string.
+  # <1>, <2> etc. are placeholders for variable substitution.
+  # <1> is special because it may be the current selection.
+  # <2>, on the other hand, is read in from the keyboard.
   # This way, a function can be curried/beta-reduced to a function of 1 argument.
   prompt: |+
       The following is an analogy.
