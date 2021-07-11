@@ -18,7 +18,7 @@ vars:
 examples:
 - boysenberries
 - strawberries
-pen-preprocessors:
+preprocessors:
 - pen-pf-correct-grammar
 prefer-external: true
 quality-script: my-quality-checker-for-this-prompt.sh

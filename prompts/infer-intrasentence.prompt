@@ -26,7 +26,7 @@ vars:
 examples:
 - Hello
 - work
-pen-preprocessors:
+preprocessors:
 - pen-pf-correct-grammar
 prefer-external: true
 n-test-runs: 5

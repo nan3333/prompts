@@ -85,7 +85,7 @@ vars:
 - topic
 examples:
 - tectonic plates
-pen-preprocessors:
+preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
 n-test-runs: 10

@@ -15,6 +15,6 @@ stop-sequences:
 vars:
 - passage
 external: summarize-passage
-pen-preprocessors:
+preprocessors:
 - s join ' '
 prettifier: tpp

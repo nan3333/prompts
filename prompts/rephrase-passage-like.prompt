@@ -19,7 +19,7 @@ vars:
 examples:
 - house rules
 - in a nice way
-pen-preprocessors:
+preprocessors:
 - pen-pf-correct-grammar
 postprocessor: sed 's/- //' | uniqnosort
 external: summarize-passage

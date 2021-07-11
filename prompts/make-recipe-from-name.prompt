@@ -49,7 +49,7 @@ vars:
 - name
 examples:
 - Fruit salad
-pen-preprocessors:
+preprocessors:
 - cat
 prefer-external: true
 n-test-runs: 5

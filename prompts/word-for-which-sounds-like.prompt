@@ -29,7 +29,7 @@ examples:
 - to do in excess
 - flout
 test-output: flaunt
-pen-preprocessors:
+preprocessors:
 - pen-pf-correct-grammar
 prefer-external: true
 n-test-runs: 5

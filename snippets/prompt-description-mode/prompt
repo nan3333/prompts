@@ -35,7 +35,7 @@ prompt-filter: "sed -z 's/\\s\\+$//'"
 
 # These are elisp String->String functions and run from pen.el
 # It probably runs earlier than the preprocessors shell scripts
-pen-preprocessors:
+preprocessors:
 - "pen-pf-correct-grammar"
 
 # The command passed to lm-complete

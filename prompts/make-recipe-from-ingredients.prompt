@@ -55,7 +55,7 @@ examples:
   strawberries
   bananas
   mint leaves
-pen-preprocessors:
+preprocessors:
 - cat
 - s join ", "
 prefer-external: true

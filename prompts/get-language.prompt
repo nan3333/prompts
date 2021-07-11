@@ -3,7 +3,7 @@ title: Get language
 prompt-version: 1
 doc: This prompt detects the language
 notes:
-  - "It appears that combining ### with Input: Output: has no improvement"
+- "It appears that combining ### with Input: Output: has no improvement"
 prompt: |+
     Given some text, return the language.
 
@@ -27,5 +27,7 @@ vars:
 - text-or-code
 examples:
 - Happy birthday
+preprocessors:
+- "sed -z 's/\\n/\\\\n/g'"
 aliases:
 - detect-language

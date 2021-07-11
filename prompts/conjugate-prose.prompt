@@ -40,7 +40,7 @@ examples:
 - may have incorrect spelling or grammar, correct it.
 test-output: Given a sentence which may have incorrect spelling or grammar, correct
   it.
-pen-preprocessors:
+preprocessors:
 - pen-pf-correct-grammar
 prefer-external: true
 quality-script: my-quality-checker-for-this-prompt.sh

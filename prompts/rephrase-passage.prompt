@@ -20,7 +20,7 @@ vars:
 - passage
 examples:
 - house rules
-pen-preprocessors:
+preprocessors:
 - pen-pf-correct-grammar
 postprocessor: sed 's/- //' | uniqnosort
 filter: true
