@@ -38,7 +38,7 @@ vars:
 examples:
 - The rane in spain falls mainly on the flane
 preprocessors:
-- s join ' '
+- pen-s join ' '
 postprocessor: tpp
 external: 
 filter: true

@@ -23,7 +23,7 @@ vars:
 examples:
 - Ranch meals are always big and hearty
 preprocessors:
-- s join ' '
+- pen-s join ' '
 postprocessor: tpp
 external: 
 filter: true
