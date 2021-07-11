@@ -341,7 +341,11 @@ If you leave out these keys, the defaults will be used.
   - "(pen-selected-text)"
   - "(read-string-hist ,(concat v ": ") ,example)"
   completion: off
+  # n-collate is functionally equivalent to n-completions
+  # but is the number of requests made.
   n-collate: 1
+  # Generate 5 completions at a time serverside by default
+  n-completions: 5
   n-test-runs: 5
   no-trim-start: off
   no-trim-end: off
