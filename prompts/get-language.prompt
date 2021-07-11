@@ -5,20 +5,20 @@ doc: This prompt detects the language
 prompt: |
     Given some text, return the language.
 
-    Hello
-    Above language: English
+    Input: Hello
+    Output: English
     ###
-    Bon anniversaire !
-    Above language: French
+    Input: Bon anniversaire !
+    Output: French
     ###
-    printf -- "%s\n" "$lang"
-    Above language: bash
+    Input: printf -- "%s\n" "$lang"
+    Output: bash
     ###
-    Zdravstvuyte
-    Above language: Russian
+    Input: Zdravstvuyte
+    Output: Russian
     ###
-    <1>
-    Language:
+    Input: <1>
+    Output:
 engine: davinci
 temperature: 0.3
 max-tokens: 200
