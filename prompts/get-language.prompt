@@ -22,7 +22,7 @@ temperature: 0.3
 max-tokens: 200
 top-p: 1
 stop-sequences:
-- "###"
+- "\n"
 vars:
 - text-or-code
 examples:
