@@ -6,14 +6,14 @@ prompt: |
     Hello
     Language: English
     ###
-    Zdravstvuyte
-    Language: Russian
-    ###
     Bon anniversaire !
     Language: French
     ###
     printf -- "%s\n" "$lang"
     Language: bash
+    ###
+    Zdravstvuyte
+    Language: Russian
     ###
     <1>
     Language:
