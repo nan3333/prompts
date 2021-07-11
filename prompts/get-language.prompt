@@ -1,0 +1,33 @@
+---
+title: Get language
+prompt-version: 1
+doc: This prompt detects the language
+prompt: |
+    Hello
+    Language: English
+    ###
+    Zdravstvuyte
+    Language: Russian
+    ###
+    Bon anniversaire !
+    Language: French
+    ###
+    printf -- "%s\n" "$lang"
+    Language: bash
+    ###
+    <1>
+    Language:
+engine: davinci
+temperature: 0.3
+max-tokens: 200
+top-p: 1
+stop-sequences:
+- "###"
+vars:
+- text-or-code
+examples:
+- Happy birthday
+- Goodnight
+- "cat > \"$fp\""
+aliases:
+- detect-language
