@@ -1,5 +1,5 @@
 ---
-title: Yo Be Real
+title: Ask any question or Yo Be Real
 prompt-version: 1
 doc: The user asks a question. If a question is "normal" the AI answers it. If the
   question is "nonsense" the AI says "yo be real"
@@ -39,6 +39,3 @@ vars:
 - question
 examples:
 - What is a boysenberry?
-aliases:
-- yo-be-real
-- ask-any-question
