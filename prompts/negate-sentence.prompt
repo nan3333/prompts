@@ -1,0 +1,42 @@
+
+# ---------------
+# Functional keys
+# ---------------
+
+in-development: yes
+title: "Negate Sentence"
+prompt-version: 1
+
+prompt: |+
+    Negate the following sentence.
+    
+    Input: I want to go home.
+    Output: I don't want to go home.
+    Input: One plus one equals two.
+    Output: One plus one does not equal two.
+    Input: <1>
+    Output:
+
+# The command passed to lm-complete. This will use GPT-3.
+lm-command: "openai-complete.sh"
+engine: "davinci"
+
+temperature: 0.4
+max-tokens: 60
+top-p: 1.0
+best-of: 1
+stop-sequences:
+- "Input"
+vars:
+- "statement"
+examples:
+- "The Mars is very far away."
+n-collate: 1
+n-completions: 1
+
+# --------
+# Doc keys
+# --------
+
+# Function documentation.
+doc: "This prompt negates a prose statement."
