@@ -27,7 +27,5 @@ vars:
 - text-or-code
 examples:
 - Happy birthday
-- Goodnight
-- "cat > \"$fp\""
 aliases:
 - detect-language
