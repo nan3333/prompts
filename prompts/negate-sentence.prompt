@@ -5,7 +5,7 @@
 
 in-development: yes
 title: "Negate Sentence"
-prompt-version: 1
+prompt-version: 2
 
 prompt: |+
     Negate the following sentence.
@@ -30,7 +30,7 @@ stop-sequences:
 vars:
 - "statement"
 examples:
-- "The Mars is very far away."
+- "Mars is very far away."
 n-collate: 1
 n-completions: 1
 
