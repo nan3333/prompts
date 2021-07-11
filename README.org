@@ -342,7 +342,7 @@ If you leave out these keys, the defaults will be used.
   - "(read-string-hist ,(concat v ": ") ,example)"
   completion: off
   # n-collate is functionally equivalent to n-completions
-  # but is the number of requests made.
+  # but is the number of requests made. 1 by default.
   n-collate: 1
   # Generate 5 completions at a time serverside by default
   n-completions: 5
