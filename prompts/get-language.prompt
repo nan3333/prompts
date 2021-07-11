@@ -3,17 +3,19 @@ title: Get language
 prompt-version: 1
 doc: This prompt detects the language
 prompt: |
+    Given some text, return the language.
+
     Hello
-    Language: English
+    Above language: English
     ###
     Bon anniversaire !
-    Language: French
+    Above language: French
     ###
     printf -- "%s\n" "$lang"
-    Language: bash
+    Above language: bash
     ###
     Zdravstvuyte
-    Language: Russian
+    Above language: Russian
     ###
     <1>
     Language:
