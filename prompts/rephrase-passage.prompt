@@ -21,6 +21,6 @@ vars:
 examples:
 - house rules
 preprocessors:
-- pen-pf-correct-grammar
+- pf-correct-grammar
 postprocessor: sed 's/- //' | uniqnosort
 filter: true

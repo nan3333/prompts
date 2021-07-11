@@ -20,7 +20,7 @@ examples:
 - house rules
 - in a nice way
 preprocessors:
-- pen-pf-correct-grammar
+- pf-correct-grammar
 postprocessor: sed 's/- //' | uniqnosort
 external: summarize-passage
 filter: true

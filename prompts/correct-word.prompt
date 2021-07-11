@@ -23,6 +23,6 @@ examples:
   is really easy if you can develop software from different languages on top of the
   same IDE that you like.
 preprocessors:
-- pen-pf-correct-grammar
+- pf-correct-grammar
 external: summarize-passage
 filter: true

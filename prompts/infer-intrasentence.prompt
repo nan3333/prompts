@@ -27,6 +27,6 @@ examples:
 - Hello
 - work
 preprocessors:
-- pen-pf-correct-grammar
+- pf-correct-grammar
 prefer-external: true
 n-test-runs: 5

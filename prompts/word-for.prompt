@@ -32,7 +32,7 @@ examples:
 - flout
 test-output: flaunt
 preprocessors:
-- pen-pf-correct-grammar
+- pf-correct-grammar
 prefer-external: true
 n-test-runs: 5
 continuation-function: list-of <1> <g>
