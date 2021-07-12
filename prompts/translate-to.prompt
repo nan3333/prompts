@@ -40,3 +40,6 @@ vars:
 examples:
 - French
 - Goodnight
+var-defaults:
+- "(read-string)"
+- "(pen-selected-text)"

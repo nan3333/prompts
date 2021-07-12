@@ -410,6 +410,12 @@ If you leave out these keys, the defaults will be used.
   # Not available yet: openai api completions.create --help
   # If I make presence-penalty 0 then it will get very terse
   presence-penalty: 0.0
+
+  # sp +/"repetition_penalty" "$MYGIT/arrmansa/Basic-UI-for-GPT-J-6B-with-low-vram/GPT-J-6B-Low-Vram-UI.py"
+  repetition-penalty: 
+
+  # sp +/"top_k" "$MYGIT/arrmansa/Basic-UI-for-GPT-J-6B-with-low-vram/GPT-J-6B-Low-Vram-UI.py"
+  top-k:
 #+END_SRC
 
 ** Tooling
