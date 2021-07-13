@@ -1,32 +1,21 @@
 ---
-title: Translate Haskell to Clojure
+title: Transpile from programming language X to Y
+notes:
+- Not really tested
 prompt: |+
     Haskell:
     zip (map show [1,5,9]) ["a","b","c"] 
     Clojure:
     (println (map vector '(1 2 3) '(4 5 6))) 
     
-    Haskell:
-    map toUpper "MiXeD cAsE" 
     Clojure:
     (clojure.string/upper-case "MiXeD cAsE")
-    
     Haskell:
-    putStrLn "Hello World"
-    Clojure:
-    (println "Hello World")
-    
-    Haskell: 
-    import Data.Time.Clock
-    import Data.Time.Calendar
-    date :: IO (Integer, Int, Int) -- :: (year, month, day)
-    date = getCurrentTime >>= return . toGregorian . utctDay
-    Clojure: 
-    (defn date [] (.toString (java.util.Date.)))
-    
-    Haskell: 
+    map toUpper "MiXeD cAsE" 
+        
+    <2>: 
     <1>
-    Clojure:
+    <3>:
 engine: davinci
 temperature: 0.3
 max-tokens: 60
@@ -34,6 +23,10 @@ top-p: 1
 stop-sequences:
 - "\n\n"
 vars:
-- haskell code
+- code
+- from language
+- to language
 examples:
 - min 1 2
+- Haskell
+- Clojure
