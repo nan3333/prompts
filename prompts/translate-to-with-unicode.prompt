@@ -1,5 +1,6 @@
 ---
-title: Translate to
+title: Translate to (unicode working)
+in-development: yes
 prompt-version: 2
 doc: This prompt translates English text to any world langauge
 issues:
@@ -8,17 +9,22 @@ prompt: |
   ###
   # English: Hello
   # Russian: Zdravstvuyte
+  # Chinese: Nǐn hǎo
   # Italian: Salve
   # Japanese: Konnichiwa
   # German: Guten Tag
+  # Portuguese: Olá
   # French: Bonjour
   # Spanish: Hola
   ###
   # English: Happy birthday!
+  # Spanish: ¡Feliz cumpleaños!
   # French: Bon anniversaire !
   # German: Alles Gute zum Geburtstag!
   # Italian: Buon compleanno!
   # Portuguese: Feliz aniversário!
+  # Swedish: Grattis på födelsedagen!
+  # Russian: С Днём рождения!
   # Indonesian: Selamat ulang tahun!
   ###
   # English: <2>
