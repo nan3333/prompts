@@ -3,11 +3,9 @@ This is a free and open-source (FOSS) curation
 of prompts for OpenAI's GPT-3, EleutherAI's
 GPT-j, and future LMs.
 
-| License |
-|---------|
-| *GPL-3* |
-
-+ =pen.el= Discord server :: https://discord.gg/HH6PY27d
+| License | Discord server invite       |
+|---------+-----------------------------|
+| =GPL-3= | https://discord.gg/HH6PY27d |
 
 ** Automatic prompts discovery
 Pen has a discovery mechanism to expand its database of prompts.
