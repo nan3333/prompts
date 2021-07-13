@@ -39,6 +39,6 @@ examples:
 - French
 - Goodnight
 var-defaults:
-- "(read-string \"From language: \")"
-- "(read-string \"To language: \")"
+- "(read-string-hist \"Pen From language: \")"
+- "(read-string-hist \"Pen To language: \")"
 - "(pen-selected-text)"
