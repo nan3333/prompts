@@ -7,6 +7,8 @@ GPT-j, and future LMs.
 |---------|
 | *GPL-3* |
 
++ =pen.el= Discord server :: https://discord.gg/HH6PY27d
+
 ** Automatic prompts discovery
 Pen has a discovery mechanism to expand its database of prompts.
 
