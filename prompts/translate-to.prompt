@@ -37,7 +37,7 @@ stop-sequences:
 vars:
 - language
 - phrase
-prompt-filter: c ascify
+prompt-filter: pen-c ascify
 examples:
 - French
 - Goodnight
