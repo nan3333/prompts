@@ -32,6 +32,10 @@ vars:
 - from-language
 - to-language
 - phrase
+preprocessors:
+- cat
+- cat
+- "sed -z 's/\\n/\\\\n/g'"
 # ascification of the prompt is not ideal
 prompt-filter: pen-c ascify
 examples:
