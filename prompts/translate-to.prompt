@@ -37,6 +37,7 @@ stop-sequences:
 vars:
 - language
 - phrase
+# ossification is not ideal
 prompt-filter: pen-c ascify
 examples:
 - French
