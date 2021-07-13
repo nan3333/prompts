@@ -37,7 +37,7 @@ stop-sequences:
 vars:
 - language
 - phrase
-# ascification is not ideal
+# ascification of the prompt is not ideal
 prompt-filter: pen-c ascify
 examples:
 - French
