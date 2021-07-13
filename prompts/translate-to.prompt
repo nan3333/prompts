@@ -27,7 +27,7 @@ prompt: |
   # Indonesian: Selamat ulang tahun!
   ###
   # English: <2>
-  # <1>:<:pp>
+  # <1>:
 engine: davinci
 temperature: 0.5
 max-tokens: 200
@@ -37,9 +37,10 @@ stop-sequences:
 vars:
 - language
 - phrase
+prompt-filter: c ascify
 examples:
 - French
 - Goodnight
 var-defaults:
-- "(read-string)"
+- "(read-string \"language: \")"
 - "(pen-selected-text)"
