@@ -72,7 +72,7 @@ var-defaults:
 - "(pen-surrounding-text)"
 - "(detect-language)"
 prefer-external: true
-filter: true
+filter: on
 n-test-runs: 5
 related-prompts:
 - explainshell.prompt
