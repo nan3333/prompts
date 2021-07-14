@@ -8,6 +8,7 @@ engine: davinci
 temperature: 0
 max-tokens: 2000
 top-p: 1
+filter: true
 stop-sequences:
 - "\n"
 vars:
