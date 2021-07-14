@@ -4,7 +4,6 @@ prompt: |+
   <1>
 
   tl;dr:
-heading-name: This is a summary of the above text
 completer: true
 engine: davinci
 temperature: 0.3
