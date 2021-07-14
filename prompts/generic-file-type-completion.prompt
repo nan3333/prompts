@@ -10,8 +10,9 @@ engine: davinci
 temperature: 0.3
 max-tokens: 200
 top-p: 1
+# Complete one line only by default
 stop-sequences:
-- "\n\n"
+- "\n"
 vars:
 - file type
 - preceding text
