@@ -1,7 +1,9 @@
 ---
 title: tldr summarization
+prompt-version: 1
 doc: "tldr"
 prompt: |+
+Do something
   <1>
 
   tl;dr:
@@ -16,7 +18,6 @@ vars:
 - passage
 examples:
 - The long white cloud
-external: summarize-passage
 preprocessors:
 - pen-s join ' '
 prettifier: pen-pretty-paragraph
