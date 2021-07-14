@@ -78,4 +78,3 @@ related-prompts:
 - explainshell.prompt
 preprocessors:
 - "tv"
-- ~
