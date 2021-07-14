@@ -1,7 +1,7 @@
 * Prompts
 This is a free and open-source (FOSS) curation
 of prompts for OpenAI's GPT-3, EleutherAI's
-GPT-j, and future LMs.
+GPT-j, and other LMs.
 
 | License | Discord server invite       |
 |---------+-----------------------------|
