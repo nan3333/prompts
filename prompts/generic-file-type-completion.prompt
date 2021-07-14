@@ -15,6 +15,9 @@ stop-sequences:
 vars:
 - file type
 - preceding text
+# Do not remove whitespace from the beginning of the response string
+# This should be default for completions prompts
+no-trim-start: off
 examples:
 - python
 - |-
