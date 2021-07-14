@@ -37,6 +37,3 @@ completion: true
 var-defaults:
 - "(detect-language)"
 - "(pen-preceding-text)"
-preprocessors:
-- "tv"
-- "tv"
