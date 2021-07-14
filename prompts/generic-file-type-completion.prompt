@@ -17,7 +17,7 @@ vars:
 - preceding text
 # Do not remove whitespace from the beginning of the response string
 # This should be default for completions prompts
-no-trim-start: off
+no-trim-start: on
 examples:
 - python
 - |-
