@@ -3,7 +3,6 @@ title: tldr summarization
 prompt-version: 1
 doc: "tldr"
 prompt: |+
-Do something
   <1>
 
   tl;dr:
