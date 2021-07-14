@@ -6,7 +6,7 @@ design-patterns:
 - multi-language-block
 doc: Given code with comments lacking, add comments to it
 prompt-version: 3
-prompt: |
+prompt: |+
   Annotate the code with comments.
 
   Code:
