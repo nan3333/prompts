@@ -32,4 +32,4 @@ examples:
   guitar.
 external: summarize-passage
 filter: true
-postprocessor: ttp
+postprocessor: pen-pretty-paragraph

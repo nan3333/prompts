@@ -17,4 +17,4 @@ vars:
 external: summarize-passage
 preprocessors:
 - s join ' '
-prettifier: tpp
+prettifier: pen-pretty-paragraph

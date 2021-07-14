@@ -24,7 +24,7 @@ examples:
 - Ranch meals are always big and hearty
 preprocessors:
 - pen-s join ' '
-postprocessor: tpp
+postprocessor: pen-pretty-paragraph
 external: 
 filter: true
 n-test-runs: 2

@@ -40,4 +40,4 @@ examples:
 - boysenberry
 completion: true
 postprocessor: sed 's/\s\+/ /g' | pen-s join ' '
-prettifier: tpp
+prettifier: pen-pretty-paragraph

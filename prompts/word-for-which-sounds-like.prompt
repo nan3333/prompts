@@ -36,4 +36,4 @@ n-test-runs: 5
 continuation-function: list-of <1> <g>
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
   uniqnosort
-prettifier: tpp
+prettifier: pen-pretty-paragraph

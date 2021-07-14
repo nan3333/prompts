@@ -31,4 +31,4 @@ conversation-mode: true
 conversation-pretext-generator: human-conversation
 aliases:
 - asktutor1
-postprocessor: ttp
+postprocessor: pen-pretty-paragraph

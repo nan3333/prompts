@@ -20,4 +20,4 @@ examples:
 - Recycling is good for the world
 var-defaults:
 - "(pen-preceding-text)"
-postprocessor: ttp
+postprocessor: pen-pretty-paragraph
