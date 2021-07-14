@@ -48,5 +48,3 @@ max-tokens: 1000
 top-p: 1
 stop-sequences:
 - "\n\n"
-vars: 
-examples: 

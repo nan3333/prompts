@@ -1,5 +1,6 @@
 ---
 title: tldr summarization
+doc: "tldr"
 prompt: |+
   <1>
 
