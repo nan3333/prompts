@@ -5,7 +5,7 @@ prompt: |
 
   One-sentence summary:
 heading-name: This is a summary of the above text
-completer: true
+completion: true
 engine: davinci
 temperature: 0.3
 max-tokens: 64

@@ -7,7 +7,7 @@ Do something
   <1>
 
   tl;dr:
-completer: true
+completion: true
 engine: davinci
 temperature: 0.3
 max-tokens: 60
