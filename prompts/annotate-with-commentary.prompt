@@ -76,5 +76,3 @@ filter: on
 n-test-runs: 5
 related-prompts:
 - explainshell.prompt
-preprocessors:
-- "tv"
