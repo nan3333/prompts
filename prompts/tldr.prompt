@@ -5,7 +5,7 @@ prompt: |
 
   tl;dr:
 heading-name: This is a summary of the above text
-can-complete: true
+completer: true
 engine: davinci
 temperature: 0.3
 max-tokens: 60
