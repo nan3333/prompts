@@ -2,7 +2,7 @@
 title: Ship came into harbour carrying X
 aliases:
 - list of
-prompt-version: 2
+version: 2
 doc: ''
 prompt: |
   8 countries starting with A
