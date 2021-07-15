@@ -15,6 +15,7 @@ stop-sequences:
 - "\n\n"
 vars:
 - passage
+filter: true
 examples:
 - The long white cloud
 preprocessors:
