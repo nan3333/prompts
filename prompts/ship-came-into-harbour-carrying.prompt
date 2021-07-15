@@ -35,3 +35,4 @@ examples:
 - '5'
 - island countries
 - T
+postprocessor: sed 's/,/\n/g'
