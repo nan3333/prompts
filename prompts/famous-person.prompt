@@ -1,0 +1,27 @@
+---
+title: Famous person
+prompt-version: 1
+prompt: |+
+    The following is a transcript of a conversation between Mark, a
+    computer science student, and ${famous person's name}. ${paste first
+    paragraph of famous person's wikipedia page}.
+
+    Mark: Hi there, <1>. Honored to meet you.
+    <1>: 
+engine: davinci
+temperature: 0.8
+max-tokens: 300
+top-p: 1
+best-of: 3
+stop-sequences:
+# This wouldn't appear, so it would keep going, which is what we want
+- "###"
+vars:
+- person-name
+examples:
+- "Johnny Depp"
+conversation-mode: true
+conversation-pretext-generator: human-conversation
+postprocessor: pen-pretty-paragraph
+external-related:
+- "https://github.com/maraoz/gpt-scrolls"
