@@ -1,2 +1,0 @@
-Potential idea for a pen prompt: automatically break down a daunting
-task into more approachable sub tasks
