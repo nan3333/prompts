@@ -19,7 +19,7 @@ vars:
 # Do not remove whitespace from the beginning of the response string
 # This is default for completions prompts
 no-trim-start: on
-n-collate: 1
+n-collate: 3
 n-completions: 10
 examples:
 - python
