@@ -29,6 +29,7 @@ n-collate: 1
 n-completions: 10
 filter: no
 completion: off
+insertion: on
 doc: "Write a blog post"
 external-related:
 - "https://gptprompts.org/p/blog-post-generation"
