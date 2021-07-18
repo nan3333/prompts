@@ -4,7 +4,6 @@ prompt-version: 1
 prompt: |+
     <1>
 
-prompt-filter: "sed -z 's/\s\+$//'"
 lm-command: "openai-complete.sh"
 engine: "davinci-instruct-beta"
 temperature: 0.8
