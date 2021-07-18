@@ -12,8 +12,10 @@ top-p: 1.0
 best-of: 1
 no-trim-start: off
 no-trim-end: off
+# For davinci-instruct-beta, it appears to begin with \n\n, so can't use that
+# as stop sequence.
 stop-sequences:
-- "\n\n"
+- "###"
 cache: on
 vars:
 - "topic"
