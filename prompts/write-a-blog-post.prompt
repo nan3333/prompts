@@ -4,7 +4,6 @@ prompt-version: 1
 prompt: |+
     Write a <2> words blog post about the <1>.
 
-prompt-filter: "sed -z 's/\\s\\+$//'"
 lm-command: "openai-complete.sh"
 engine: "davinci-instruct-beta"
 temperature: 0.8
@@ -17,9 +16,11 @@ stop-sequences:
 - "\n\n"
 cache: on
 vars:
-- "generation task"
+- "topic"
+- "n-words"
 examples:
-- "Write a 500 words blog post about the iPhone 12."
+- "iPhone 12"
+- "500"
 n-test-runs: 5
 prettifier: ttp
 n-collate: 1
