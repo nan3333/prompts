@@ -27,6 +27,7 @@ n-collate: 1
 n-completions: 3
 filter: no
 completion: off
+insertion: on
 doc: "Generate some text as described by the user as a task"
 external-related:
 - "https://gptprompts.org/p/blog-post-generation"
