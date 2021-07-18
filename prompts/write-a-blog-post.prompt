@@ -1,48 +1,26 @@
-# -*- mode: snippet -*-
-# name: prompt
-# group: pen
-# key: pr
-# expand-env: ((yas-indent-line 'fixed))
-# --
 # ---------------
 # Functional keys
 # ---------------
 
-# A prompt which is in development will not be loaded by pen.el
-in-development: yes
+in-development: no
 
 # A title for the prompt. This will become the function name.
-title: "${1:title}"
+title: "Write a blog post"
 
 # Increment this number every time you make a functional change.
 # The test suite will only rerun if this version is incremented.
 prompt-version: 1
 
-# <:pp> defines a point where the following
-# text is concatenated before the postprocessor
-# is run.
-# <1>, <2> etc. are where variables are substituted
-# <1> is special because it may be the current selection
-# <2> May be inferred from <1> via a prompt.
-# This way, a function can be curried/beta-reduced to a function of 1 argument.
 prompt: |+
-    ${2:contents}
+    <1>
 
-    <1> are like <2> in that
-
-# Additional transformation of prompt after the template
-prompt-filter: "sed -z 's/\\s\\+$//'"
-
-# These are elisp String->String functions and run from pen.el
-# It probably runs earlier than the preprocessors shell scripts
-preprocessors:
-- "pf-correct-grammar"
+prompt-filter: "sed -z 's/\s\+$//'"
 
 # The command passed to lm-complete
 lm-command: "openai-complete.sh"
 
 # The engine to be specified to the lm-command.
-engine: "davinci"
+engine: "davinci-instruct-beta"
 
 # 0.0 = /r/ihadastroke
 # 1.0 = /r/iamveryrandom
@@ -72,9 +50,7 @@ no-trim-end: off
 # So only the first one will be used by the API,
 # but the completer script can make use the others.
 stop-sequences:
-- "\n"
 - "\n\n"
-- "##"
 
 # Cache the function by default when running the prompt function
 cache: on
@@ -82,32 +58,11 @@ cache: on
 # Names for the variables of the prompt function.
 # The first variable may be captured by selection, rather than manually entered.
 vars:
-- "former"
-- "latter"
-
-# These are expressions run from within Pen to give the value for the variable
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "generation task"
 
 # Examples of typical values for the variables
 examples:
-- "boysenberries"
-- "strawberries"
-
-# A preprocessor may be run on the variable inputs before entering the prompt
-preprocessors:
-- "sed 's/^/- /"
-- "cat"
-
-# Prompt function aliases
-aliases:
-- "asktutor"
-
-# This is run on the completion results.
-# It may be used to format the results
-# before usage/insertion by emacs.
-postprocessor: "sed 's/- //' | uniqnosort"
+- "Write a 500 words blog post about the iPhone 12."
 
 # The number of times the prompt is run when tested
 n-test-runs: 5
@@ -140,27 +95,8 @@ completion: on
 # Doc keys
 # --------
 
-# A TODO list.
-todo:
-- Finish this prompt.
-
-# A list of design patterns used.
-# This may be a url or the name of a pattern.
-design-patterns:
-- multiplex
-- "https://generative.ink/posts/methods-of-prompt-programming/"
-
-# Possible other names for this prompt.
-future-titles:
-- Get code snippet
-- Get snippet
-
-# Aims for developing this prompt.
-aims:
-- More abstractive rewording
-
 # Function documentation.
-doc: "Given ... ${1:title}"
+doc: "Write a blog post"
 
 # For documentation that falls outside of todo, aims, doc, etc.
 notes:

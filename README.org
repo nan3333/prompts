@@ -256,10 +256,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # This does not result in a list. It's usually a
   # concatenation, but may use a different collation
   # function for combining results.
-  n-collate: 10
+  n-collate: 1
 
   # The number of completions to ask from the LM/API
-  n-completions: 1
+  n-completions: 10
 
   # This for combining prompts with n-collate:
   # It might be, for example, summarize, or uniqnosort.
