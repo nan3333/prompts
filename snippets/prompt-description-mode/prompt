@@ -11,7 +11,7 @@ prompt: |+
     ${2:contents}
 
     <1> are like <2> in that
-prompt-filter: "sed -z 's/\\s\\+$//'"
+prompt-filter: "sed -z 's/\\\\s\\\\+$//'"
 preprocessors:
 - "pf-correct-grammar"
 lm-command: "openai-complete.sh"
