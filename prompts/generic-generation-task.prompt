@@ -1,118 +1,31 @@
-# ---------------
-# Functional keys
-# ---------------
-
 in-development: no
-
-# A title for the prompt. This will become the function name.
-title: "Write a blog post"
-
-# Increment this number every time you make a functional change.
-# The test suite will only rerun if this version is incremented.
+title: "generation task"
 prompt-version: 1
-
 prompt: |+
     <1>
 
 prompt-filter: "sed -z 's/\s\+$//'"
-
-# The command passed to lm-complete
 lm-command: "openai-complete.sh"
-
-# The engine to be specified to the lm-command.
 engine: "davinci-instruct-beta"
-
-# 0.0 = /r/ihadastroke
-# 1.0 = /r/iamveryrandom
-# Use 0.3-0.8
 temperature: 0.8
-
-# This is the max tokens requested from the LM
 max-tokens: 60
-
-# This number may go to the API if available.
-# See top p sampling in the pen.el glossary.
-# https://github.com/semiosis/pen.el/blob/master/glossary.txt
 top-p: 1.0
-
-# This number may go to the API and may
-# improve the quality at the expense of making more
-# requests.
 best-of: 1
-
-# Do not remove whitespace from the beginning of the response string
 no-trim-start: off
-
-# Do not remove whitespace from the end of the response string
 no-trim-end: off
-
-# Currently the OpenAI API can only accept one stop-sequence.
-# So only the first one will be used by the API,
-# but the completer script can make use the others.
 stop-sequences:
 - "\n\n"
-
-# Cache the function by default when running the prompt function
 cache: on
-
-# Names for the variables of the prompt function.
-# The first variable may be captured by selection, rather than manually entered.
 vars:
 - "generation task"
-
-# Examples of typical values for the variables
 examples:
 - "Write a 500 words blog post about the iPhone 12."
-
-# The number of times the prompt is run when tested
 n-test-runs: 5
-
-# This is a script which may optionally be run on the prompt
-# to prettify its output
 prettifier: ttp
-
-# Run it n times and combine the output. Default: 1
-# This does not result in a list. It's usually a
-# concatenation, but may use a different collation
-# function for combining results.
 n-collate: 1
-
-# The number of completions to ask from the LM/API
-n-completions: 10
-
-# This for combining prompts with n-collate:
-# It might be, for example, summarize, or uniqnosort.
-pen-collation-postprocessor: "uniqnosort"
-
-# Replace selected text. Yes if this is intended to be a text-replacement function.
+n-completions: 3
 filter: no
-
-# Completion indicates that this prompt can be used as a company-mode completion function.
-# When using this it is advisable to keep the default var-defaults unless you know what you're doing.
-completion: on
-
-# --------
-# Doc keys
-# --------
-
-# Function documentation.
-doc: "Write a blog post"
-
-# For documentation that falls outside of todo, aims, doc, etc.
-notes:
-- "rlprompt is used here outside of pen.el"
-
-# A list of problems with the prompt.
-issue:
-- "Struggles with the latter columns."
-
-# A list of paths to previous prompts
-past-versions:
-- deprecated/pick-up-line.prompt
-
-# A URL to related websites, documents or tools
-# For example,
-# - A website that provided the inspiration for or idea behind the prompt
-# - A web service that provides a similar function
+completion: off
+doc: "Generate some text as described by the user as a task"
 external-related:
-- "https://paraphrasing-tool.com/"
+- "https://gptprompts.org/p/blog-post-generation"
