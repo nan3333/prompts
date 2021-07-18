@@ -272,6 +272,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # When using this it is advisable to keep the default var-defaults unless you know what you're doing.
   completion: on
 
+  # Completion indicates that this prompt should be inserted by default, rather than a buffer opening
+  completion: on
+
   # --------
   # Doc keys
   # --------
