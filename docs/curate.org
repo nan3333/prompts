@@ -8,3 +8,6 @@
 - http://gptprompts.wikidot.com/
 - https://beta.openai.com/examples/default-keywords
 - https://prompts.ai/
+  - Only a few in this playground
+- https://gptprompts.org/
+  - A rich collection here
