@@ -11,3 +11,4 @@
   - Only a few in this playground
 - https://gptprompts.org/
   - A rich collection here
+  - collaboration potential
