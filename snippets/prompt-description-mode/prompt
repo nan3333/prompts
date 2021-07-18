@@ -48,6 +48,7 @@ n-completions: 10
 pen-collation-postprocessor: "uniqnosort"
 filter: no
 completion: on
+insertion: on
 
 todo:
 - Finish this prompt.
