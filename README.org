@@ -337,7 +337,7 @@ If the value matches =^(pf|pen)-.*= then it is interpreted as an elisp function/
 
 If the value matches =^\(.*\)$= then it is interpreted as an elisp expression.
 
-If the value matches 
+Otherwise, it is interpreted as a bash expression.
 
 This affects how the following keys are interpreted:
 - =prettifier=
