@@ -12,6 +12,7 @@ prompt: |+
 
     <1> are like <2> in that
 prompt-filter: "sed -z 's/\\\\s\\\\+$//'"
+n-generate: 5
 preprocessors:
 - "pf-correct-grammar"
 lm-command: "openai-complete.sh"
