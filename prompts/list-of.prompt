@@ -25,7 +25,8 @@ max-tokens: 60
 top-p: 1
 stop-sequences:
 - "###"
-- "\n\n"
+# - "\n\n"
+- "A list of"
 vars:
 - n
 - type
