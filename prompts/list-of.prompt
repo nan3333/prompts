@@ -1,5 +1,7 @@
 ---
-title: Ship came into harbour carrying several X
+title: List of things
+aliases:
+- list of
 doc: List a bunch of a type of thing
 prompt: |
   Here are some lists of things:
