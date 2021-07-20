@@ -28,6 +28,6 @@ vars:
 examples:
 - Happy birthday
 preprocessors:
-- "sed -z 's/\\n/\\\\n/g'"
+- "sed -z 's/\\n/\\\\n/g' | cut -c 1-20"
 aliases:
 - detect-language
