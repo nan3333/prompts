@@ -32,4 +32,4 @@ preprocessors:
 - awk 1
 postprocessor: head -n 30 | sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9
   _-]\+$/p' | uniqnosort
-n-collate: 2
+n-collate: 1
