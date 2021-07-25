@@ -18,7 +18,7 @@ no-trim-end: off
 stop-sequences:
 - "###"
 cache: on
-variables:
+vars:
 - "Who I was"
 - "My wants"
 examples:
