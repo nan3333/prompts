@@ -4,7 +4,6 @@ prompt: |+
     This is the story about how I achieved my goals.
     <1>
     I have always wanted <2>.
-prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
 preprocessors:
 - "pf-correct-grammar"
@@ -19,6 +18,7 @@ no-trim-end: off
 stop-sequences:
 - "###"
 cache: on
+variables:
 - "who-i-was"
 - "my-wants"
 examples:
