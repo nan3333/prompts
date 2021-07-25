@@ -5,8 +5,8 @@ prompt: |+
     <1>
     I have always wanted <2>.
 n-generate: 5
-preprocessors:
-- "pf-correct-grammar"
+# preprocessors:
+# - "pf-correct-grammar"
 lm-command: "openai-complete.sh"
 engine: "davinci"
 temperature: 0.8
