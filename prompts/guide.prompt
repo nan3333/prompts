@@ -1,9 +1,9 @@
 title: "Guide my future"
 prompt-version: 1
 prompt: |+
-    This is the story about how I achieved my goals.
     <1>
     I have always wanted <2>.
+    This is the story about how I achieved my goals.
 n-generate: 5
 # preprocessors:
 # - "pf-correct-grammar"
