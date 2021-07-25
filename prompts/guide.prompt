@@ -19,8 +19,8 @@ stop-sequences:
 - "###"
 cache: on
 variables:
-- "who-i-was"
-- "my-wants"
+- "Who I was"
+- "My wants"
 examples:
 - "When I was 23 I was switched my university major to Chemistry."
 - "to get married, see the world and cycle across Asia"
