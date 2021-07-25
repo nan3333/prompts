@@ -12,13 +12,13 @@ preprocessors:
 lm-command: "openai-complete.sh"
 engine: "davinci"
 temperature: 0.8
-max-tokens: 60
+max-tokens: 200
 top-p: 1.0
 best-of: 1
 no-trim-start: off
 no-trim-end: off
 stop-sequences:
-- "##"
+- "###"
 cache: on
 - "who-i-was"
 - "my-wants"
@@ -27,31 +27,10 @@ examples:
 - "to get married, see the world and cycle across Asia"
 aliases:
 - "asktutor"
-postprocessor: "sed 's/- //' | uniqnosort"
 n-test-runs: 5
 prettifier: ttp
 n-collate: 1
 n-completions: 10
-pen-collation-postprocessor: "uniqnosort"
 filter: no
 completion: on
 insertion: on
-todo:
-- Finish this prompt.
-design-patterns:
-- multiplex
-- "https://generative.ink/posts/methods-of-prompt-programming/"
-future-titles:
-- Get code snippet
-- Get snippet
-aims:
-- More abstractive rewording
-doc: "Given ... title"
-notes:
-- "rlprompt is used here outside of pen.el"
-issue:
-- "Struggles with the latter columns."
-past-versions:
-- deprecated/pick-up-line.prompt
-external-related:
-- "https://paraphrasing-tool.com/"
