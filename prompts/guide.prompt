@@ -29,5 +29,5 @@ prettifier: ttp
 n-collate: 1
 n-completions: 10
 filter: no
-completion: on
+completion: off
 insertion: on
