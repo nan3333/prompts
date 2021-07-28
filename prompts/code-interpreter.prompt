@@ -37,5 +37,6 @@ prefer-external: true
 external: iol
 similarity-test: string-equal
 quality-script: levenshtein -s
+conversation-mode: true
 n-test-runs: 5
 # postprocessor: clean-repl | pen-s join '; '
