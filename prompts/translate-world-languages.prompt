@@ -39,7 +39,6 @@ examples:
 - English
 - French
 - Goodnight
-# read-string-hist keeps a history of inputs
 var-defaults:
 - "(or (sor (nth 0 (pf-get-language (pen-selected-text) :no-select-result t))) (read-string-hist \"Pen From language: \"))"
 - "(read-string-hist \"Pen To language: \")"
