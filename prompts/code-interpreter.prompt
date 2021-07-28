@@ -2,7 +2,7 @@ title: Code interpreter kickstarter
 future-titles:
 - Code interpreter kickstarter
 doc: Given a line of code, infer the result of running that code
-prompt-version: 3
+prompt-version: 4
 prompt: |
   Code examples:
 
@@ -25,7 +25,8 @@ max-tokens: 60
 top-p: 1
 stop-sequences:
 - "##"
-- "\n\n"
+- "\n"
+# - "\n\n"
 vars:
 - language
 - code
@@ -37,4 +38,4 @@ external: iol
 similarity-test: string-equal
 quality-script: levenshtein -s
 n-test-runs: 5
-postprocessor: clean-repl | pen-s join '; '
+# postprocessor: clean-repl | pen-s join '; '
