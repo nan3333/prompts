@@ -1,6 +1,6 @@
 ---
 title: Translate from world language X to Y
-prompt-version: 2
+prompt-version: 3
 doc: This prompt translates English text to any world langauge
 prompt: |
   ###
@@ -34,8 +34,7 @@ preprocessors:
 - cat
 - cat
 - "sed -z 's/\\n/\\\\n/g'"
-# ascification of the prompt is not ideal
-prompt-filter: pen-c ascify
+postprocessor: "sed -z 's/\\\\n/\\n/g'"
 examples:
 - English
 - French
