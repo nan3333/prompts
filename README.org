@@ -282,6 +282,13 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Insertion indicates that this prompt should be inserted by default, rather than a buffer opening
   insertion: on
 
+  # The repeater is is appended to a previous template for conversation mode
+  # When a prompt is not run with conversation mode but has a repeater, it is still appended
+  # The {} is replaced with the LAST argument to the prompt function
+  repeater: |
+    Input: {}
+    Output:
+
   # --------
   # Doc keys
   # --------
@@ -389,11 +396,6 @@ If you leave out these keys, the defaults will be used.
 
   # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
   conversation-mode: no
-
-  # The repeater is is appended to a previous template for conversation mode
-  repeater: |
-    Input: {}
-    Output:
 
   # This is the readline prompt that is given to rlwrap for conversation mode
   rlprompt: nlsh <1>
