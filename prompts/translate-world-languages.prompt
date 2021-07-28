@@ -33,8 +33,8 @@ vars:
 preprocessors:
 - cat
 - cat
-- "sed -z 's/\\n/\\\\n/g'"
-postprocessor: "sed -z 's/\\\\n/\\n/g'"
+- pen-s onelineify
+postprocessor: pen-s unonelineify
 examples:
 - English
 - French
