@@ -11,8 +11,7 @@ prompt: |
   # Output: 5
   ###
   # Language: Bash
-  Str="Learn Linux from LinuxHint"
-  subStr=${Str:6:5}
+  Str="Learn Linux from LinuxHint"; subStr=${Str:6:5}
   # Output: Linux
   ###
   # Language: <1>
