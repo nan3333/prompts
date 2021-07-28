@@ -2,8 +2,6 @@
 title: Translate from world language X to Y
 prompt-version: 2
 doc: This prompt translates English text to any world langauge
-issues:
-- I think the unicode characters may be multibyte causing issues with completion
 prompt: |
   ###
   # English: Hello
