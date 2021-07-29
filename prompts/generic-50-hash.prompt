@@ -2,7 +2,7 @@
 title: Generic completion -- 50 tokens max - hash
 prompt-version: 1
 doc: This is a generic completer.
-prompt: "<1>\n"
+prompt: "<1>"
 engine: davinci
 temperature: 0.8
 max-tokens: 50
