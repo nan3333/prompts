@@ -1,6 +1,6 @@
 ---
 title: Generic completion -- 50 tokens max - hash
-prompt-version: 1
+prompt-version: 2
 doc: This is a generic completer.
 prompt: "<1>"
 engine: davinci
