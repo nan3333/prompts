@@ -41,6 +41,6 @@ examples:
 - French
 var-defaults:
 - "(pen-selected-text)"
-- "(or (sor (nth 0 (pf-get-language (pen-selected-text) :no-select-result t))) (read-string-hist \"Pen From language: \"))"
+- "(pen-detect-language-ask)"
 - "(read-string-hist \"Pen To language: \")"
 filter: on
