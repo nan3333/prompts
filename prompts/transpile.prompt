@@ -1,5 +1,6 @@
 ---
 title: Transpile from programming language X to Y
+prompt-version: 2
 notes:
 - Not really tested
 prompt: |+
@@ -26,6 +27,11 @@ vars:
 - code
 - from language
 - to language
+preprocessors:
+- pen-s onelineify
+- cat
+- cat
+postprocessor: pen-s unonelineify
 examples:
 - min 1 2
 - Haskell
