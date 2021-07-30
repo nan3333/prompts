@@ -42,5 +42,5 @@ examples:
 var-defaults:
 - "(pen-selected-text)"
 - "(pen-detect-language-ask)"
-- "(read-string-hist \"Pen To language: \")"
+- "(read-string-hist \"Pen to world language: \")"
 filter: on
