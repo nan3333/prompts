@@ -1,8 +1,6 @@
 ---
 title: Transpile from programming language X to Y
-prompt-version: 2
-notes:
-- Not really tested
+prompt-version: 3
 prompt: |+
     ###
     # Haskell: zip (map show [1,5,9]) ["a","b","c"] 
@@ -15,7 +13,7 @@ prompt: |+
     # <3>:
 engine: davinci
 temperature: 0.3
-max-tokens: 60
+max-tokens: 400
 top-p: 1
 stop-sequences:
 - "\n\n"
