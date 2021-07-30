@@ -22,7 +22,7 @@ prompt: |
   # <3>:
 engine: davinci
 temperature: 0.5
-max-tokens: 200
+max-tokens: 400
 top-p: 1
 stop-sequences:
 - "#"
