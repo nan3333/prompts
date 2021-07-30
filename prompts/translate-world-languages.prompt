@@ -1,6 +1,6 @@
 ---
 title: Translate from world language X to Y
-prompt-version: 3
+prompt-version: 4
 doc: This prompt translates English text to any world langauge
 prompt: |
   ###
@@ -18,8 +18,8 @@ prompt: |
   # Italian: Buon compleanno!
   # Indonesian: Selamat ulang tahun!
   ###
-  # <1>: <3>
-  # <2>:
+  # <2>: <1>
+  # <3>:
 engine: davinci
 temperature: 0.5
 max-tokens: 200
