@@ -39,5 +39,5 @@ vars:
 examples:
 - boysenberry
 completion: true
-postprocessor: sed 's/\s\+/ /g' | pen-s join ' '
+postprocessor: sed 's/\s\+/ /g' | pen-s join ' ' | sed 's/^ *//'
 prettifier: pen-pretty-paragraph
