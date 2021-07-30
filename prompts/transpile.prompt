@@ -30,3 +30,8 @@ examples:
 - min 1 2
 - Haskell
 - Clojure
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+- "(read-string-hist \"Pen To language: \")"
+filter: on
