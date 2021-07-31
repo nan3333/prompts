@@ -18,7 +18,7 @@ prompt: |
   A list of 4 fruit starting with E:
   Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
   ###
-  A list of <1> <2>:
+  A list of <1> <2> in no particular order:
 engine: davinci
 temperature: 0.7
 max-tokens: 60
