@@ -1,22 +1,23 @@
----
 title: Code interpreter kickstarter
+future-titles:
+- Code interpreter kickstarter
 doc: Given a line of code, infer the result of running that code
-prompt-version: 1
+prompt-version: 4
 prompt: |
   Code examples:
 
-  # Language: Python
-  print(random.randint(0,9))
-  # Output: 5
+  Language: Python
+  Input: print(random.randint(0,9))
+  Output: 5
   ###
-  # Language: Bash
-  Str="Learn Linux from LinuxHint"
-  subStr=${Str:6:5}
-  # Output: Linux
+  Language: Bash
+  Input: Str="Learn Linux from LinuxHint"; subStr=${Str:6:5}
+  Output: Linux
   ###
-  # Language: <1>
-  <2>
-  # Output:
+repeater: |
+  Language: <1>
+  Input: {}
+  Output:
 issues: 
 engine: davinci
 temperature: 0.8
@@ -24,14 +25,18 @@ max-tokens: 60
 top-p: 1
 stop-sequences:
 - "##"
-cache: true
+- "\n"
+# - "\n\n"
 vars:
 - language
 - code
 examples:
 - haskell
-- strawberries
+- '"Hello" ++ " " ++ "World"'
 prefer-external: true
-quality-script: my-quality-checker-for-this-prompt.sh
-validation-script: my-validator-for-this-prompt.sh
+external: iol
+similarity-test: string-equal
+quality-script: levenshtein -s
+conversation-mode: true
 n-test-runs: 5
+# postprocessor: clean-repl | pen-s join '; '
