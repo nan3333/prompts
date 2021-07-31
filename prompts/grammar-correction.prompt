@@ -2,6 +2,11 @@
 title: correct grammar
 prompt-version: 3
 prompt: |
+  Correct grammar
+  ###
+  Original: Anna and Mike is going skiing.
+  Standard American English: Anna and Mike are going skiing.
+  ###
   Original: <1>
   Standard American English:
 engine: davinci
@@ -10,7 +15,7 @@ max-tokens: 2000
 top-p: 1
 filter: true
 stop-sequences:
-- "\n"
+- "###"
 vars:
 - sentence
 examples:
