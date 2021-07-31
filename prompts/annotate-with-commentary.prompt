@@ -57,7 +57,7 @@ prompt: |+
 issues: 
 engine: davinci
 temperature: 0.8
-max-tokens: 200
+max-tokens: 2000
 top-p: 1
 stop-sequences:
 - "```"
