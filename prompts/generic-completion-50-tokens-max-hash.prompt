@@ -7,7 +7,7 @@ engine: davinci
 temperature: 0.8
 max-tokens: 50
 top-p: 1
-# Cache absolutely works, but it caches everything
+# Cache absolutely works, but it caches everything, regardless of parameters
 cache: false
 stop-sequences:
 - "###"
