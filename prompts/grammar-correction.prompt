@@ -1,6 +1,8 @@
 ---
 title: correct grammar
 prompt-version: 4
+issues:
+- Does not like long inputs
 prompt: |
   Correct grammar
   ###
