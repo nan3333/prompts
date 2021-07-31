@@ -7,7 +7,7 @@ engine: davinci
 temperature: 0.8
 max-tokens: 50
 top-p: 1
-cache: true
+cache: false
 stop-sequences:
 - "###"
 vars:
