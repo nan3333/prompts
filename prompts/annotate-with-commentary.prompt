@@ -71,10 +71,10 @@ examples:
 var-defaults:
 - "(pen-surrounding-text)"
 - "(detect-language)"
-preprocessors:
-- pen-s onelineify
-- cat
-postprocessor: pen-s unonelineify
+# preprocessors:
+# - pen-s onelineify
+# - cat
+# postprocessor: pen-s unonelineify
 prefer-external: true
 filter: on
 n-test-runs: 5
