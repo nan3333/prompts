@@ -56,7 +56,7 @@ prompt: |+
   ```<2>
 engine: davinci
 temperature: 0.8
-max-tokens: 2000
+max-tokens: 1000
 top-p: 1
 stop-sequences:
 - "```"
