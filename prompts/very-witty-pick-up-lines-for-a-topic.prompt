@@ -3,7 +3,7 @@ title: Very witty pick up lines for a topic
 doc: Given a topic, generate pick up lines, one at a time
 past-versions:
 - deprecated/pick-up-line.prompt
-prompt-version: 4
+prompt-version: 5
 prompt: |
   The following are witty openers for Tinder:
   ###
@@ -88,6 +88,8 @@ examples:
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
+var-defaults:
+- "(pen-thing-at-point)"
 external-related:
 - "https://mullikine.github.io/posts/generating-pickup-lines-with-gpt-3/"
 n-test-runs: 10
