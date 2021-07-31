@@ -69,7 +69,7 @@ examples:
 - haskell
 var-defaults:
 - "(pen-selected-text)"
-- "(detect-language)"
+- "(pen-detect-language-ask)"
 # preprocessors:
 # - pen-s onelineify
 # - cat
