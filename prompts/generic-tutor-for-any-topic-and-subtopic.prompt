@@ -1,6 +1,6 @@
 ---
 title: Generic tutor for any topic and subtopic
-prompt-version: 1
+prompt-version: 2
 prompt: |
   This is a conversation between a human and a brilliant AI.
   The topic is "<1>".
@@ -20,7 +20,7 @@ prompt: |
   AI: I would be happy to answer your question.
 engine: davinci
 temperature: 0.8
-max-tokens: 300
+max-tokens: 400
 top-p: 1
 best-of: 3
 stop-sequences:
