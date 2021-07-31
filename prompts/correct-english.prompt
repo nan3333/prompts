@@ -1,6 +1,6 @@
 ---
 title: Correct English spelling and grammar
-prompt-version: 2
+prompt-version: 3
 doc: Given a sentence which may have incorrect spelling or grammar, correct it.
 prompt: |
   ###
@@ -20,7 +20,7 @@ prompt: |
   Corrected English:
 engine: davinci
 temperature: 0.3
-max-tokens: 300
+max-tokens: 1000
 top-p: 1
 stop-sequences:
 - "###"
