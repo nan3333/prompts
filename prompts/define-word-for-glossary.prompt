@@ -2,7 +2,7 @@
 title: define word for glossary
 aliases:
 - define word
-prompt-version: 1
+prompt-version: 2
 doc: Get a short definition of a term for the glossary system.
 prompt: |
   Glossary of terms.
