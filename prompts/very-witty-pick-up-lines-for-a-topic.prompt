@@ -89,7 +89,7 @@ preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
 var-defaults:
-- "(pen-thing-at-point)"
+- "(pen-thing-at-point-ask)"
 external-related:
 - "https://mullikine.github.io/posts/generating-pickup-lines-with-gpt-3/"
 n-test-runs: 10
