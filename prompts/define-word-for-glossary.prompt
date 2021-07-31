@@ -41,3 +41,5 @@ examples:
 completion: true
 postprocessor: sed 's/\s\+/ /g' | pen-s join ' ' | sed 's/^ *//'
 prettifier: pen-pretty-paragraph
+var-defaults:
+- "(pen-thing-at-point-ask)"
