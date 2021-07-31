@@ -54,7 +54,6 @@ prompt: |+
   ```
   Annotated code:
   ```<2>
-issues: 
 engine: davinci
 temperature: 0.8
 max-tokens: 2000
