@@ -3,7 +3,7 @@ title: Very witty pick up lines for a topic
 doc: Given a topic, generate pick up lines, one at a time
 past-versions:
 - deprecated/pick-up-line.prompt
-prompt-version: 5
+prompt-version: 6
 prompt: |
   The following are witty openers for Tinder:
   ###
@@ -94,7 +94,7 @@ external-related:
 - "https://mullikine.github.io/posts/generating-pickup-lines-with-gpt-3/"
 n-test-runs: 10
 # This will generate 20 up lines
-n-collate: 2
+n-collate: 3
 n-completions: 10
 postprocessor: sed 's/^ *//' | awk 1 | sed '/^[^a-zA-Z]/d'
 collation-separator: ''
