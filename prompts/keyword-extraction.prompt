@@ -8,8 +8,12 @@ prompt: |
   Keywords:
 engine: davinci
 temperature: 0.3
-max-tokens: 60
+max-tokens: 100
 top-p: 1
+issues:
+- |+
+  This doesn't work that well. Even the completion ends immediately
+  because the generated text usually begins with the stop sequence.
 stop-sequences:
 - "\n"
 vars:
