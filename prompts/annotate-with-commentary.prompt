@@ -5,7 +5,7 @@ issues:
 design-patterns:
 - multi-language-block
 doc: Given code with comments lacking, add comments to it
-prompt-version: 3
+prompt-version: 4
 prompt: |+
   Annotate the code with comments.
 
