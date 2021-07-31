@@ -1,16 +1,19 @@
 ---
 title: Correct English spelling and grammar
-prompt-version: 3
+prompt-version: 4
 doc: Given a sentence which may have incorrect spelling or grammar, correct it.
-prompt: |
+prompt: |+
   ###
-  Poor English: Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
-  Corrected English: Please provide me with a short brief of the design you’re looking for and some examples or previous projects you’ve done would be helpful.
+  Poor English: Please provide me with a short brief\nof the design you’re looking for and that’d be nice if you could share some examples or project you did before.
+  Corrected English: Please provide me with a short brief
+  of the design you’re looking for and some examples or previous projects you’ve done would be helpful.
   ###
-  Poor English: If I’m stressed out about something, I tend to have problem to fall asleep.
-  Corrected English: If I’m stressed out about something, I tend to have a problem falling asleep.
+  Poor English: If I’m stressed out about something,\nI tend to have problem to fall asleep.
+  Corrected English: If I’m stressed out about something,
+  I tend to have a problem falling asleep.
   ###
-  Poor English: There is plenty of fun things to do in the summer when your able to go outside.
+  Poor English: There is plenty of fun things to do in the summer\n
+  when your able to go outside.
   Corrected English: There are plenty of fun things to do in the summer when you are able to go outside.
   ###
   Poor English: She no went to the market.
