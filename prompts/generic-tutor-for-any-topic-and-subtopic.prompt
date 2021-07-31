@@ -35,7 +35,7 @@ examples:
 - What was the version of node in 2018?
 var-defaults:
 - "(pen-detect-language-ask)"
-- "(read-string-hist \"Pen to world language: \")"
+- "(read-string-hist \"Pen subtopic: \")"
 - "(pen-selected-text)"
 conversation-mode: true
 conversation-pretext-generator: human-conversation
