@@ -69,7 +69,7 @@ examples:
 - 'fibs = 0 : 1 : zipWith (+) fibs (tail fibs)'
 - haskell
 var-defaults:
-- "(pen-surrounding-text)"
+- "(pen-selected-text)"
 - "(detect-language)"
 # preprocessors:
 # - pen-s onelineify
