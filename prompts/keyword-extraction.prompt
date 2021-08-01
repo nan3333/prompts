@@ -16,6 +16,7 @@ vars:
 - text
 var-defaults:
 - "(pen-words 40 (pen-selection-or-surrounding-context))"
+postprocessor: "sed -z \"s/, /\\\\n/g\" | uniqnosort | pen-s join ' '"
 examples:
 - |-
   GPT-3 showed that language can be used to instruct a large neural network
