@@ -1,10 +1,12 @@
 ---
 title: keyword extraction
 prompt-version: 6
-prompt: |
-  Text: what is a contract in solidity?  what is an abstract contract in solidity?  what is an event in solidity?
-  Keywords: Ethereum, Blockchain
+prompt: |+
+  Text and keywords:
+  Text: Ethereum is a blockchain
+  Keywords: blockchain, smart contracts, Turing-complete, distributed ledger
   ###
+  Text and keywords:
   Text: <1>
   Keywords:
 engine: davinci
