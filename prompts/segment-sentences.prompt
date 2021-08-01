@@ -21,49 +21,21 @@ best-of: 1
 no-trim-start: off
 no-trim-end: off
 stop-sequences:
-- "\n"
-- "\n\n"
 - "###"
 cache: on
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "paragraph"
 examples:
-- "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /"
-- "cat"
-aliases:
-- "asktutor"
-postprocessor: "sed 's/- //' | uniqnosort"
+- |+
+    This anonymous gold coinage appears to have been initiated shortly before
+    Rajaraja Chola invaded Lanka in 990 AD, and struck through the period when
+    the Cholas dominated the island (1017-1070), and continued by closely
+    similar coins struck for Vijayabahu (1055-1110) after he re-established
+    Sinhala independence in 1070. Like other Lankan coins from around the 11th
+    Century, no date is indicated. It is not certain whether the Kahavanu was
+    introduced at Ruhuna, the region in the south of the island to which the
+    Sinhala court had been obliged to move as a result of Rajaraja's conquests. 
 n-test-runs: 5
-prettifier: ttp
 n-collate: 1
 n-completions: 10
-pen-collation-postprocessor: "uniqnosort"
-filter: no
-completion: on
-insertion: on
-
-todo:
-- Finish this prompt.
-design-patterns:
-- multiplex
-- "https://generative.ink/posts/methods-of-prompt-programming/"
-future-titles:
-- Get code snippet
-- Get snippet
-aims:
-- More abstractive rewording
-doc: "Given ... title"
-notes:
-- "rlprompt is used here outside of pen.el"
-issue:
-- "Struggles with the latter columns."
-past-versions:
-- deprecated/pick-up-line.prompt
-external-related:
-- "https://paraphrasing-tool.com/"
+filter: on
+doc: "Given a block of text, break it up into sentences"
