@@ -1,4 +1,5 @@
 title: "break up into sentences"
+in-development: true
 prompt-version: 1
 prompt: |+
     Break the text into sentences:
