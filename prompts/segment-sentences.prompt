@@ -27,6 +27,9 @@ examples:
 n-test-runs: 5
 n-collate: 1
 n-completions: 2
+issues:
+- The prompt doesn't really work. Prefer external.
+prefer-external: true
 external: ttp
 filter: on
 doc: "Given a block of text, break it up into sentences"
