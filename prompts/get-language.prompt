@@ -1,31 +1,23 @@
 ---
 title: Get language
-prompt-version: 3
+prompt-version: 4
 doc: This prompt detects the language
 notes:
 - "It appears that combining ### with Input: Output: has no improvement"
 prompt: |+
     Given some text, return the language.
 
-    Input: Hello
-    Output: English
-    ###
-    Input: Bon anniversaire !
-    Output: French
-    ###
-    Input: printf -- "%s\n" "$lang"
-    Output: bash
-    ###
-    Input: Zdravstvuyte
-    Output: Russian
-    ###
-    Input: <1>
-    Output:
+    Hello (English)
+    Bon anniversaire ! (French)
+    printf -- "%s\n" "$lang" (Bash)
+    Zdravstvuyte (Russian)
+    <1> (
 engine: davinci
 temperature: 0.3
 max-tokens: 200
 top-p: 1
 stop-sequences:
+- ")"
 - "\n"
 vars:
 - text-or-code
