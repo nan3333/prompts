@@ -1,6 +1,6 @@
 ---
 title: keyword extraction
-prompt-version: 6
+prompt-version: 7
 prompt: |+
   Text and keywords:
   Text: Ethereum is a blockchain
