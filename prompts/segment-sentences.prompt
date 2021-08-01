@@ -27,5 +27,6 @@ examples:
 n-test-runs: 5
 n-collate: 1
 n-completions: 2
+external: tpp
 filter: on
 doc: "Given a block of text, break it up into sentences"
