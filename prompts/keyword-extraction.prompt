@@ -21,7 +21,7 @@ vars:
 - text
 var-defaults:
 - "(pen-words 40 (pen-selection-or-surrounding-context))"
-postprocessor: "head -n 5 | pen-s list2args"
+postprocessor: "pen-s commalist2list | pen-s list2args"
 examples:
 - |-
   GPT-3 showed that language can be used to instruct a large neural network
