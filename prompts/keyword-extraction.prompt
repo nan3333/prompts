@@ -15,7 +15,7 @@ stop-sequences:
 vars:
 - text
 var-defaults:
-- "(pen-selection-or-surrounding-context)"
+- "(pen-words 40 (pen-selection-or-surrounding-context))"
 examples:
 - |-
   GPT-3 showed that language can be used to instruct a large neural network
