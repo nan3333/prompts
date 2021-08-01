@@ -1,6 +1,6 @@
 ---
 title: keyword extraction
-prompt-version: 5
+prompt-version: 6
 prompt: |
   Text: <1>
   Keywords:
