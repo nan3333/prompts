@@ -7,17 +7,25 @@ notes:
 prompt: |+
     Given some text, return the language.
 
-    Hello (English)
-    Bon anniversaire ! (French)
-    printf -- "%s\n" "$lang" (Bash)
-    Zdravstvuyte (Russian)
-    <1> (
+    Hello
+    Language: English
+    ###
+    Bon anniversaire !
+    Language: French
+    ###
+    printf -- "%s\n" "$lang"
+    Language: Bash
+    ###
+    Zdravstvuyte
+    Language: Russian
+    ###
+    <1>
+    Language:
 engine: davinci
 temperature: 0.3
 max-tokens: 200
 top-p: 1
 stop-sequences:
-- ")"
 - "\n"
 vars:
 - text-or-code
