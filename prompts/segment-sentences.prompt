@@ -18,8 +18,6 @@ no-trim-start: off
 no-trim-end: off
 stop-sequences:
 - "###"
-cache: on
-- "paragraph"
 examples:
 - |
     This anonymous gold coinage appears to have been initiated shortly before
