@@ -3,14 +3,13 @@ title: keyword extraction
 prompt-version: 4
 prompt: |
   Text: <1>
-  ###
   Keywords:
 engine: davinci
 temperature: 0.3
 max-tokens: 100
 top-p: 1
 stop-sequences:
-- "%%%"
+- "\n"
 vars:
 - text
 var-defaults:
