@@ -9,7 +9,7 @@ prompt: |
   ###
 engine: davinci
 temperature: 0.6
-max-tokens: 100
+max-tokens: 1000
 top-p: 1
 stop-sequences:
 - "###"
