@@ -1,10 +1,10 @@
 title: "break up into sentences"
 prompt-version: 1
 prompt: |+
+    Break the block of text up into sentences.
     Block of text:
-    ###
     <1>
-    ###
+
     Separate sentences:
 prompt-filter: "sed -z 's/\\s\\+$//'"
 lm-command: "openai-complete.sh"
@@ -20,10 +20,10 @@ stop-sequences:
 examples:
 - |
     This anonymous gold coinage appears to have been initiated shortly before
-    Rajaraja Chola invaded Lanka in 990 AD, and struck through the period when
-    the Cholas dominated the island (1017-1070), and continued by closely
-    similar coins struck for Vijayabahu (1055-1110) after he re-established
-    Sinhala independence in 1070.
+    Rajaraja Chola invaded Lanka in 990 AD. Like other Lankan coins from around the 11th
+    Century, no date is indicated. It is not certain whether the Kahavanu was
+    introduced at Ruhuna, the region in the south of the island to which the
+    Sinhala court had been obliged to move as a result of Rajaraja's conquests. 
 n-test-runs: 5
 n-collate: 1
 n-completions: 2
