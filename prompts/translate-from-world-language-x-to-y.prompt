@@ -1,7 +1,7 @@
 ---
 title: Translate from world language X to Y
 prompt-version: 4
-doc: This prompt translates English text to any world langauge
+doc: This prompt translates English text to any world language
 prompt: |
   ###
   # English: Hello
