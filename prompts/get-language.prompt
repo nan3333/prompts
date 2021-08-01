@@ -32,4 +32,4 @@ vars:
 examples:
 - Happy birthday
 preprocessors:
-- "pen-s join ' ' | cut -d ' ' -f 1-10"
+- "pen-s join ' ' | cut -d ' ' -f 1-5"
