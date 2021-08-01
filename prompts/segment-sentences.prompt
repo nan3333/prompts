@@ -11,7 +11,7 @@ n-generate: 5
 lm-command: "openai-complete.sh"
 engine: "davinci"
 temperature: 0.8
-max-tokens: 60
+max-tokens: 1000
 top-p: 1.0
 best-of: 1
 no-trim-start: off
