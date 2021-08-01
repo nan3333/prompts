@@ -5,6 +5,8 @@ prompt: |
   Text: <1>
   Keywords:
 engine: davinci
+n-collate: 1
+n-completions: 10
 temperature: 0.3
 max-tokens: 100
 top-p: 1
