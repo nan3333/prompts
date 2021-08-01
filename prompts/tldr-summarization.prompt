@@ -9,7 +9,7 @@ prompt: |+
 completion: true
 engine: davinci
 temperature: 0.3
-max-tokens: 60
+max-tokens: 200
 top-p: 1
 stop-sequences:
 - "\n\n"
