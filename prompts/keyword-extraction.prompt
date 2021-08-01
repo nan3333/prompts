@@ -15,7 +15,7 @@ issues:
   This doesn't work that well. Even the completion ends immediately
   because the generated text usually begins with the stop sequence.
 stop-sequences:
-- "\n"
+- "%%%"
 vars:
 - text
 var-defaults:
