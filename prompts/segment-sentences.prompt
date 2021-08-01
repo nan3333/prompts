@@ -9,8 +9,6 @@ prompt: |+
     <:pp>
 prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
-preprocessors:
-- "pf-correct-grammar"
 lm-command: "openai-complete.sh"
 engine: "davinci"
 temperature: 0.8
@@ -24,7 +22,7 @@ stop-sequences:
 cache: on
 - "paragraph"
 examples:
-- |+
+- |
     This anonymous gold coinage appears to have been initiated shortly before
     Rajaraja Chola invaded Lanka in 990 AD, and struck through the period when
     the Cholas dominated the island (1017-1070), and continued by closely
