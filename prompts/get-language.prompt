@@ -28,4 +28,4 @@ vars:
 examples:
 - Happy birthday
 preprocessors:
-- "sed -z 's/\\n/\\\\n/g' | cut -c 1-20"
+- "pen-s join ' ' | cut -d ' ' -f 1-10"
