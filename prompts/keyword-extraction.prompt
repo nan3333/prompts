@@ -30,5 +30,5 @@ examples:
   fidelity. We extend these findings to show that manipulating visual
   concepts through language is now within reach.
 external: extract-keyphrases
-# This should just be displayed
+# This should just be displayed if run interactively
 is-info: on
