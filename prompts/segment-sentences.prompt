@@ -3,9 +3,9 @@ title: "break up into sentences"
 prompt-version: 1
 prompt: |+
     Separate the following paragraph into sentences.
-
+    ###
     <1>
-
+    ###
     <:pp>
 prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
@@ -22,7 +22,7 @@ no-trim-end: off
 stop-sequences:
 - "\n"
 - "\n\n"
-- "##"
+- "###"
 cache: on
 - "former"
 - "latter"
