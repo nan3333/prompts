@@ -1,6 +1,6 @@
 ---
 title: Translate from world language X to Y
-prompt-version: 4
+prompt-version: 5
 doc: This prompt translates English text to any world language
 prompt: |
   ###
