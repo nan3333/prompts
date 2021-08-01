@@ -13,6 +13,7 @@ max-tokens: 1000
 top-p: 1
 stop-sequences:
 - "###"
+- "\n"
 vars:
 - passage
 examples:
@@ -30,6 +31,8 @@ examples:
   saxophone, and keyboards and John Rees on bass
   guitar, with Strykert then switching to lead
   guitar.
+preprocessors:
+- pen-s onelineify
 external: summarize-passage
 filter: true
 postprocessor: pen-pretty-paragraph
