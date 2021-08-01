@@ -23,10 +23,10 @@ examples:
     Rajaraja Chola invaded Lanka in 990 AD. Like other Lankan coins from around the 11th
     Century, no date is indicated. It is not certain whether the Kahavanu was
     introduced at Ruhuna, the region in the south of the island to which the
-    Sinhala court had been obliged to move as a result of Rajaraja's conquests. 
+    Sinhala court had been obliged to move as a result of Rajaraja's conquests.
 n-test-runs: 5
 n-collate: 1
 n-completions: 2
-external: tpp
+external: ttp
 filter: on
 doc: "Given a block of text, break it up into sentences"
