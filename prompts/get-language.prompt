@@ -7,19 +7,19 @@ notes:
 prompt: |+
     Given some text, return the language.
 
-    Hello
+    Text: Hello
     Language: English
     ###
-    Bon anniversaire !
+    Text: Bon anniversaire !
     Language: French
     ###
-    printf -- "%s\n" "$lang"
+    Text: printf -- "%s\n" "$lang"
     Language: Bash
     ###
-    Zdravstvuyte
+    Text: Zdravstvuyte
     Language: Russian
     ###
-    <1>
+    Text: <1>
     Language:
 engine: davinci
 temperature: 0.3
