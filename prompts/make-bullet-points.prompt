@@ -4,6 +4,13 @@ doc: Take some prose and generate some bullet points
 prompt: |
   Make bullet points from the following passage:
 
+  This anonymous gold coinage appears to have been initiated shortly before
+  Rajaraja Chola invaded Lanka in 990 AD, and struck through the period when
+  the Cholas dominated the island (1017-1070), and continued by closely
+  similar coins struck for Vijayabahu (1055-1110) after he re-established
+  Sinhala independence in 1070. Like other Lankan coins from around the 11th
+  Century, no date is indicated.
+
   <1>
 
   Bullet points:
