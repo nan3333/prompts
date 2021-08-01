@@ -1,11 +1,11 @@
 title: "break up into sentences"
 prompt-version: 1
 prompt: |+
-    Separate the following paragraph into sentences:
+    Block of text:
     ###
     <1>
     ###
-    Sentences:
+    Separate sentences:
 prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
 lm-command: "openai-complete.sh"
