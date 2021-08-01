@@ -2,7 +2,7 @@
 title: define word for glossary
 aliases:
 - define word
-prompt-version: 2
+prompt-version: 3
 doc: Get a short definition of a term for the glossary system.
 prompt: |
   Glossary of terms.
@@ -42,4 +42,4 @@ completion: true
 postprocessor: sed 's/\s\+/ /g' | pen-s join ' ' | sed 's/^ *//'
 prettifier: pen-pretty-paragraph
 var-defaults:
-- "(pen-thing-at-point-ask)"
+- "(pen-thing-at-point-ask \"word\" t)"
