@@ -1,11 +1,9 @@
 title: "break up into sentences"
 prompt-version: 1
 prompt: |+
-    Break the block of text up into sentences.
-    Block of text:
-    <1>
-
-    Separate sentences:
+    Break the text into sentences:
+    Text: <1>
+    List of sentences:
 prompt-filter: "sed -z 's/\\s\\+$//'"
 lm-command: "openai-complete.sh"
 engine: "davinci"
@@ -24,6 +22,8 @@ examples:
     Century, no date is indicated. It is not certain whether the Kahavanu was
     introduced at Ruhuna, the region in the south of the island to which the
     Sinhala court had been obliged to move as a result of Rajaraja's conquests.
+preprocessors:
+- pen-s onelineify
 n-test-runs: 5
 n-collate: 1
 n-completions: 2
