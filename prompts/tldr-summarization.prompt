@@ -9,7 +9,8 @@ prompt: |+
 completion: true
 engine: davinci
 temperature: 0.3
-max-tokens: 200
+# This allowance is really for the input
+max-tokens: 400
 top-p: 1
 stop-sequences:
 - "\n\n"
