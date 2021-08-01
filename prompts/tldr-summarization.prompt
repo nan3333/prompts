@@ -1,6 +1,6 @@
 ---
 title: tldr summarization
-prompt-version: 1
+prompt-version: 2
 doc: "tldr"
 prompt: |+
   <1>
