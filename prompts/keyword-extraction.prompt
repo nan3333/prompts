@@ -2,9 +2,7 @@
 title: keyword extraction
 prompt-version: 4
 prompt: |
-  Text:
-  ###
-  <1>
+  Text: <1>
   ###
   Keywords:
 engine: davinci
