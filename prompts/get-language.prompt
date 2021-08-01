@@ -9,12 +9,16 @@ prompt: |+
 
     Input: Hello
     Output: English
+    ###
     Input: Bon anniversaire !
     Output: French
+    ###
     Input: printf -- "%s\n" "$lang"
     Output: bash
+    ###
     Input: Zdravstvuyte
     Output: Russian
+    ###
     Input: <1>
     Output:
 engine: davinci
