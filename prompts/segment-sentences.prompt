@@ -7,7 +7,6 @@ prompt: |+
     ###
     Separate sentences:
 prompt-filter: "sed -z 's/\\s\\+$//'"
-n-generate: 5
 lm-command: "openai-complete.sh"
 engine: "davinci"
 temperature: 0.8
@@ -30,6 +29,6 @@ examples:
     Sinhala court had been obliged to move as a result of Rajaraja's conquests. 
 n-test-runs: 5
 n-collate: 1
-n-completions: 10
+n-completions: 2
 filter: on
 doc: "Given a block of text, break it up into sentences"
