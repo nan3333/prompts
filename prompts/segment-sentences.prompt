@@ -6,7 +6,6 @@ prompt: |+
     <1>
     ###
     Sentences:
-    <:pp>
 prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
 lm-command: "openai-complete.sh"
