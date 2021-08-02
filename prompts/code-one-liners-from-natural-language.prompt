@@ -23,6 +23,8 @@ max-tokens: 60
 top-p: 1
 stop-sequences:
 - "###"
+prompt-filter: tee /tmp/prompt
+postprocessor: sed 's/- //' | uniqnosort | tee /tmp/hi
 vars:
 - language
 - task

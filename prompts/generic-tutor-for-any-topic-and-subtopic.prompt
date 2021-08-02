@@ -1,6 +1,6 @@
 ---
 title: Generic tutor for any topic and subtopic
-prompt-version: 2
+prompt-version: 3
 prompt: |
   This is a conversation between a human and a brilliant AI.
   The topic is "<1>".
@@ -34,7 +34,8 @@ examples:
 - programming
 - What was the version of node in 2018?
 var-defaults:
-- "(pen-detect-language-ask)"
+# - "(pen-detect-language-ask)"
+- "(pen-batch (pen-topic t))"
 - "(read-string-hist \"Pen subtopic: \")"
 - "(pen-selected-text)"
 conversation-mode: true
