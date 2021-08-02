@@ -1,0 +1,29 @@
+title: Explain error
+include: Generic tutor for any topic and subtopic
+prompt-version: 1
+prompt: |
+  <metaprompt>
+
+  <pretext>. What does the following error mean? <question>
+  ###
+  AI: I would be happy to answer your question.
+engine: davinci
+temperature: 0.8
+max-tokens: 500
+top-p: 1
+best-of: 3
+stop-sequences:
+- "###"
+- "Human:"
+vars:
+- topic
+- in the context of
+- question
+examples:
+- node js
+- error messages
+- undefined
+var-defaults:
+- "(pen-topic-ask)"
+- "\"error messages\""
+- "(pen-selected-text)"
