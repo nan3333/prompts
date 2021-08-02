@@ -20,7 +20,7 @@ subprompts:
 prompt: |
   <metaprompt>
 
-  . <pretext>
+  <pretext>. <question>
   ###
   AI: I would be happy to answer your question.
 engine: davinci
