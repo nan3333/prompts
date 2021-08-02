@@ -7,6 +7,8 @@ GPT-j, and other LMs.
 |---------+-----------------------------|
 | =GPL-3= | https://discord.gg/HH6PY27d |
 
++ Tutorials :: https://semiosis.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
+
 ** Automatic prompts discovery
 Pen has a discovery mechanism to expand its database of prompts.
 
