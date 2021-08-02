@@ -1,12 +1,11 @@
 ---
 title: Generic tutor for any topic and subtopic
-prompt-version: 4
+prompt-version: 5
 # I have broken up this prompt so another prompt may import and use
 subprompts:
 - metaprompt: |
     This is a conversation between a human and a brilliant AI.
     The topic is "<in the context of>" in the context of "<topic>".
-
 - pretext: |
     Human: Hello, are you my <topic> tutor?
     ###
@@ -21,6 +20,7 @@ subprompts:
     Human: OK then
 prompt: |
   <metaprompt>
+
   . <pretext>
   ###
   AI: I would be happy to answer your question.
