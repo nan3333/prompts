@@ -1,0 +1,4 @@
+title: davinci 50 tokens
+include: Generic completion 50 tokens
+prompt-version: 1
+engine: davinci
