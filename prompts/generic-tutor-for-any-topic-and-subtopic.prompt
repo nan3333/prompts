@@ -5,17 +5,17 @@ prompt-version: 4
 subprompts:
   - pretext: |
       This is a conversation between a human and a brilliant AI.
-      The topic is "<1>".
+      The topic is "<in the context of>" in the context of "<topic>".
     
-      Human: Hello, are you my <2> tutor?
+      Human: Hello, are you my <topic> tutor?
       ###
       AI: Hi there.
       Yes I am.
       How can I help you today?
       ###
-      Human: What questions can I ask you about <1>?
+      Human: What questions can I ask you about <topic>?
       ###
-      AI: You may ask me anything relating to <2>.
+      AI: You may ask me anything relating to "<in the context of>" in the context of "<topic>".
       ###
       Human: OK then
 prompt: |
@@ -24,7 +24,7 @@ prompt: |
   AI: I would be happy to answer your question.
 engine: davinci
 temperature: 0.8
-max-tokens: 400
+max-tokens: 500
 top-p: 1
 best-of: 3
 stop-sequences:
