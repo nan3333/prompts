@@ -30,6 +30,7 @@ top-p: 1
 best-of: 3
 stop-sequences:
 - "###"
+- "Human:"
 vars:
 - topic
 - in the context of
