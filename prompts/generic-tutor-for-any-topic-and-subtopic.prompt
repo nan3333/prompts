@@ -1,6 +1,7 @@
 ---
 title: Generic tutor for any topic and subtopic
-prompt-version: 3
+prompt-version: 4
+# I have broken up this prompt so another prompt may import and use
 subprompts:
   # There is a space at the end ("OK then. ")
   - pretext: |
@@ -19,7 +20,7 @@ subprompts:
       ###
       Human: OK then. 
 prompt: |
-  <3>
+  <pretext>
   ###
   AI: I would be happy to answer your question.
 engine: davinci
