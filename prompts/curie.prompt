@@ -1,4 +1,4 @@
-title: davinci
+title: curie
 include: Generic completion 50 tokens
 prompt-version: 1
-engine: davinci
+engine: curie
