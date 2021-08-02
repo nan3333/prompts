@@ -1,6 +1,6 @@
 ---
 title: Generic tutor for any topic and subtopic
-prompt-version: 5
+prompt-version: 6
 # I have broken up this prompt so another prompt may import and use
 subprompts:
 - metaprompt: |
@@ -42,7 +42,8 @@ examples:
 - What was the version of node in 2018?
 var-defaults:
 # - "(pen-detect-language-ask)"
-- "(pen-batch (pen-topic t))"
+# - "(pen-batch (pen-topic t))"
+- "(pen-topic-ask)"
 - "(read-string-hist \"Pen subtopic: \")"
 - "(pen-selected-text)"
 conversation-mode: true
