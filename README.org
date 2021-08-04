@@ -95,7 +95,9 @@ More about =var-defaults=:
 
 + =title=, =varname= and =example= are available to the expressions in =var-defaults=:
   - =title= is the name of the prompt.
+  - =titleslug= is the slugified prompt title
   - =varname= is the name of the variable corresponding to the position, in this case the 2nd variable.
+  - =varslug= is the slugified varname
   - =example= is the example corresponding to the position.
 
 #+BEGIN_SRC yaml -n :async :results verbatim code
