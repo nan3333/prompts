@@ -39,7 +39,7 @@ you do not understand yet, as most of them
 have defaults.
 
 ** Demos
-- [[https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/][Prompt chainging: Linking prompts together usefully in emacs // Bodacious Blog]]
+- [[https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/][Prompt chaining: Linking prompts together usefully in emacs // Bodacious Blog]]
 
 ** An example =.prompt= file
 This is a minimal =.prompt= file that should work.
