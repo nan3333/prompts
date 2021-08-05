@@ -2,20 +2,10 @@
 title: define word for glossary
 aliases:
 - define word
-prompt-version: 3
+prompt-version: 4
 doc: Get a short definition of a term for the glossary system.
 prompt: |
   Glossary of terms.
-
-  fixture
-  Definition: A piece of equipment or furniture which is fixed in position in a building or vehicle.
-
-  operatic
-  Definition: extravagantly theatrical; histrionic.
-
-  vestige
-  A trace or remnant of something that is
-  Definition: disappearing or no longer exists.
 
   ossified
   Definition: Turn into bone or bony tissue.
