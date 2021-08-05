@@ -10,17 +10,11 @@ prompt: |
   ossified
   Definition: Turn into bone or bony tissue.
 
-  onerous
-  Definition: (of a task or responsibility) involving a great deal of effort, trouble, or difficulty.
-
-  predilection
-  Definition: A preference or special liking for something; a bias in favour of something. "my predilection for Asian food"
-
   <1>
   Definition:
 engine: davinci
 temperature: 0.5
-max-tokens: 60
+max-tokens: 200
 top-p: 1
 stop-sequences:
 - "\n\n"
