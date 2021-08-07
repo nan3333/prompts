@@ -24,7 +24,7 @@ examples:
 - "iPhone 12"
 - "500"
 n-test-runs: 5
-prettifier: ttp
+prettifier: pen-pretty-paragraph
 n-collate: 1
 n-completions: 10
 filter: no

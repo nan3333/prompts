@@ -22,7 +22,7 @@ vars:
 examples:
 - "Write a 500 words blog post about the iPhone 12."
 n-test-runs: 5
-prettifier: ttp
+prettifier: pen-pretty-paragraph
 n-collate: 1
 n-completions: 3
 filter: no

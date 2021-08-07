@@ -17,7 +17,7 @@ max-tokens: 400
 top-p: 1
 stop-sequences:
 - "###"
-stop-regexes:
+stop-pattern:
 - "^[a-zA-Z]+:"
 vars:
 - code

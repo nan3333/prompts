@@ -274,7 +274,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   # This is a script which may optionally be run on the prompt
   # to prettify its output
-  prettifier: ttp
+  prettifier: pen-pretty-paragraph
 
   # Run it n times and combine the output. Default: 1
   # This does not result in a list. It's usually a

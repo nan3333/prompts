@@ -43,7 +43,7 @@ aliases:
 - "asktutor"
 postprocessor: "sed 's/- //' | uniqnosort"
 n-test-runs: 5
-prettifier: ttp
+prettifier: pen-pretty-paragraph
 n-collate: 1
 n-completions: 10
 pen-collation-postprocessor: "uniqnosort"
