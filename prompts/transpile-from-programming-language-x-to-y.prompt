@@ -1,22 +1,24 @@
 ---
 title: Transpile from programming language X to Y
-prompt-version: 4
+prompt-version: 5
 prompt: |+
     ###
-    # Haskell: zip (map show [1,5,9]) ["a","b","c"] 
-    # Clojure: (println (map vector '(1 2 3) '(4 5 6))) 
+    Haskell: zip (map show [1,5,9]) ["a","b","c"] 
+    Clojure: (println (map vector '(1 2 3) '(4 5 6))) 
     ###
-    # Clojure: (clojure.string/upper-case "MiXeD cAsE")
-    # Haskell: map toUpper "MiXeD cAsE"
+    Clojure: (clojure.string/upper-case "MiXeD cAsE")
+    Haskell: map toUpper "MiXeD cAsE"
     ###
-    # <2>: <1>
-    # <3>:
+    <2>: <1>
+    <3>:
 engine: davinci
 temperature: 0.3
 max-tokens: 400
 top-p: 1
 stop-sequences:
-- "#"
+- "###"
+stop-regexes:
+- "^[a-zA-Z]+:"
 vars:
 - code
 - from language
