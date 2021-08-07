@@ -381,6 +381,8 @@ If you leave out these keys, the defaults will be used.
   lm-command: "openai-complete.sh"
   stop-sequences:
   - "\n"
+  stop-patterns:
+  - "^Input:"
   # Other options if using openai-complete.sh:
   # - curie
   engine: "davinci"
