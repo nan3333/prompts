@@ -2,6 +2,9 @@ title: HF summarize
 prompt-version: 1
 lm-command: "hf-complete.sh"
 engine: facebook/bart-large-cnn
+temperature: 0.6
+max-tokens: 500
+top-p: 1
 vars:
 - passage
 examples:
