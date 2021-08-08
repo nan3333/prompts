@@ -9,8 +9,7 @@ max-tokens: 500
 top-p: 1
 prompt: "<1>"
 stop-sequences:
-- "###"
-- "\n\n"
+- "###long complete###"
 vars:
 - passage
 examples:
