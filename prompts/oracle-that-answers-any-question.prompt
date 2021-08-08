@@ -47,7 +47,7 @@ prompt: "Question: What are german shepherds?\nAnswer: The German Shepherd is a 
   your risk for heart disease. Other cause include: A family history of heart disease,
   Low HDL cholesterol, Being male or a post-menopausal woman, smoking cigarettes,
   Uncontrolled diabetes, high blood pressure and overweight.\n\nQuestion:<1>\nAnswer:\n"
-engine: davinci
+model: davinci
 temperature: 0.3
 max-tokens: 100
 top-p: 1

@@ -2,4 +2,4 @@ title: babbage
 include: Generic completion 50 tokens
 prompt-version: 1
 lm-command: "openai-complete.sh"
-engine: babbage
+model: babbage

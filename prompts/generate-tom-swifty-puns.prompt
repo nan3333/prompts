@@ -42,7 +42,7 @@ prompt: |
   “I’ll release my records when Romney releases his,” said Tom in the media.
   “You can have a cow, but you can’t have a horse,” said Tom in the modern world.
   “Did you hear the story about the farmer and the horse?” asked Tom in passing.
-engine: davinci
+model: davinci
 temperature: 0.8
 max-tokens: 1000
 top-p: 1

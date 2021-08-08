@@ -5,7 +5,7 @@ prompt: |+
     Write a <2> words blog post about the <1>.
 
 lm-command: "openai-complete.sh"
-engine: "davinci-instruct-beta"
+model: "davinci-instruct-beta"
 temperature: 0.8
 max-tokens: <2>
 top-p: 1.0

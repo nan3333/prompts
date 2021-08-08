@@ -7,7 +7,7 @@ prompt: |
   <pretext>. What does the following error mean? <question>
   ###
   AI: I would be happy to answer your question.
-engine: davinci
+model: davinci
 temperature: 0.8
 max-tokens: 500
 top-p: 1

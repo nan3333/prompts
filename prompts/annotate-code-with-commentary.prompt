@@ -54,7 +54,7 @@ prompt: |+
   ```
   Annotated code:
   ```<2>
-engine: davinci
+model: davinci
 temperature: 0.8
 max-tokens: 1000
 top-p: 1

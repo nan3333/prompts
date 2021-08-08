@@ -25,7 +25,7 @@ prompt: |
   <1>
   <2>
   ~~~
-engine: davinci
+model: davinci
 temperature: 0.3
 max-tokens: 200
 top-p: 1

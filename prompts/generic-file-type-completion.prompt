@@ -6,7 +6,7 @@ prompt: |
   File type: <1>
   File contents:
   <2>
-engine: davinci
+model: davinci
 temperature: 0.3
 max-tokens: 200
 top-p: 1

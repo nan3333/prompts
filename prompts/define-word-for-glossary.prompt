@@ -12,7 +12,7 @@ prompt: |
 
   <1>
   Definition:
-engine: davinci
+model: davinci
 temperature: 0.5
 max-tokens: 200
 top-p: 1

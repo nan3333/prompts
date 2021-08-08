@@ -19,7 +19,7 @@ prompt: |
   $ <1>
   The above command
 issues: 
-engine: davinci
+model: davinci
 temperature: 0.3
 max-tokens: 200
 top-p: 1

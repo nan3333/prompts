@@ -14,7 +14,7 @@ prompt: |+
 
 # The command passed to lm-complete. This will use GPT-3.
 lm-command: "openai-complete.sh"
-engine: "davinci"
+model: "davinci"
 
 temperature: 0.4
 max-tokens: 60

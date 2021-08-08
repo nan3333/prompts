@@ -13,7 +13,7 @@ prompt: |
   Marv: I'm not sure. I'll ask my friend Google.
   You: <1>
   Marv:
-engine: davinci
+model: davinci
 temperature: 0.3
 max-tokens: 60
 top-p: 0.3

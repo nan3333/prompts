@@ -2,4 +2,4 @@ title: ms-java-gpt2
 include: Generic completion 50 tokens
 prompt-version: 1
 lm-command: "hf-complete.sh"
-engine: microsoft/CodeGPT-small-java-adaptedGPT2
+model: microsoft/CodeGPT-small-java-adaptedGPT2

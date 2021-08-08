@@ -7,7 +7,7 @@ prompt: |
   <1>
 
   Name and address:
-engine: davinci-instruct-beta
+model: davinci-instruct-beta
 temperature: 0
 max-tokens: 64
 top-p: 1

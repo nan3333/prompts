@@ -21,7 +21,7 @@ prompt: |
   Croft,Caliwoods,Contare,Calvin Klein,Charles Viancin,Costume National
   ###
   <1> <2> starting with <3>
-engine: davinci
+model: davinci
 temperature: 0.7
 max-tokens: 60
 top-p: 1

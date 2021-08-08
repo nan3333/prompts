@@ -21,7 +21,7 @@ prompt: |+
   ###
   Poor English: <1>
   Corrected English:
-engine: davinci
+model: davinci
 temperature: 0.3
 max-tokens: 1000
 top-p: 1

@@ -11,7 +11,7 @@ prompt: |
   ###
   Original: <1>
   Standard American English:
-engine: davinci
+model: davinci
 temperature: 0
 max-tokens: 2000
 top-p: 1

@@ -8,7 +8,7 @@ n-generate: 2
 # preprocessors:
 # - "pf-correct-grammar"
 lm-command: "openai-complete.sh"
-engine: "davinci"
+model: "davinci"
 temperature: 0.8
 max-tokens: 200
 top-p: 1.0

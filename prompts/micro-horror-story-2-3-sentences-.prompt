@@ -6,7 +6,7 @@ prompt: |
   ###
   Topic: <1>
   Two-Sentence Horror Story:
-engine: davinci
+model: davinci
 temperature: 0.5
 max-tokens: 60
 top-p: 1

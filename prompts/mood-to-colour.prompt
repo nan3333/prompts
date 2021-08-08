@@ -5,7 +5,7 @@ prompt: |
   The CSS code for a color like <1>:
 
   background-color:
-engine: davinci
+model: davinci
 temperature: 0
 max-tokens: 64
 top-p: 1

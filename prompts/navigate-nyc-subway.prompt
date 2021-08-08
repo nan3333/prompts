@@ -30,7 +30,7 @@ prompt: "Welcome to Underground Assistant.\n\nintput: how to get from Franklin S
   to Times Sq, Line S from Times Sq to Grand Central\n###\ninput: how to get from
   Grand Central to Penn Station\noutput: Line S from Grand Central to Times Sq, Line
   1 from Times Sq to Penn Station\n###\ninput: <1>\noutput:\n"
-engine: davinci
+model: davinci
 temperature: 0.5
 max-tokens: 60
 top-p: 1

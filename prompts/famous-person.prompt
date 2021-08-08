@@ -10,7 +10,7 @@ prompt: |+
 
     Mark: Hi there, <1>. Honored to meet you.
     <1>: 
-engine: davinci
+model: davinci
 temperature: 0.8
 max-tokens: 300
 top-p: 1

@@ -10,4 +10,4 @@ issues:
   api-inference@huggingface.co so we can
   configure large models for your endpoints.
 # https://api-inference.huggingface.co/docs/python/html/quicktour.html#using-large-models-10-go
-engine: NovelAI/genji-python-6B
+model: NovelAI/genji-python-6B

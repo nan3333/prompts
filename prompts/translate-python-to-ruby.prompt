@@ -27,7 +27,7 @@ prompt: |+
     Python: 
     <1>
     Ruby:
-engine: davinci
+model: davinci
 temperature: 0.3
 max-tokens: 60
 top-p: 1

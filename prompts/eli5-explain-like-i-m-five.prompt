@@ -7,7 +7,7 @@ prompt: |
   ###
   I rephrased it for him, in plain language a second grader can understand:
   ###
-engine: davinci
+model: davinci
 temperature: 0.6
 # I should watch out with large values of max-tokens.
 # The second stop-sequence isn't currently getting recognised by the API, so it costs money

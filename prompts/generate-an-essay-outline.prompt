@@ -5,7 +5,7 @@ prompt: |
   Create an outline for an essay about <1>:
 
   I: Introduction
-engine: davinci
+model: davinci
 temperature: 0.7
 max-tokens: 60
 top-p: 1

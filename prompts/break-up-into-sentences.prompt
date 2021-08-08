@@ -7,7 +7,7 @@ prompt: |+
     List of sentences:
 prompt-filter: "sed -z 's/\\s\\+$//'"
 lm-command: "openai-complete.sh"
-engine: "davinci"
+model: "davinci"
 temperature: 0.8
 max-tokens: 1000
 top-p: 1.0

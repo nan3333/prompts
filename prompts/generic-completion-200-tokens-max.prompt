@@ -3,7 +3,7 @@ title: Generic completion -- 200 tokens max
 prompt-version: 1
 doc: This is a generic completer.
 prompt: "<1>\n"
-engine: davinci
+model: davinci
 temperature: 0.8
 max-tokens: 200
 top-p: 1

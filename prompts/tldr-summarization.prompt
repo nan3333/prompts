@@ -7,7 +7,7 @@ prompt: |+
 
   tl;dr:
 completion: true
-engine: davinci
+model: davinci
 temperature: 0.3
 # This allowance is really for the input
 max-tokens: 400

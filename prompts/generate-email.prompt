@@ -7,7 +7,7 @@ prompt: |+
     2) <2>
 
     From:
-engine: davinci
+model: davinci
 temperature: 0.8
 max-tokens: 100
 top-p: 1

@@ -198,7 +198,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   lm-command: "openai-complete.sh"
 
   # The engine to be specified to the lm-command.
-  engine: "davinci"
+  model: "davinci"
 
   # Sometimes the engine requires a mode to be specified
   # because the API requires it.
@@ -389,7 +389,7 @@ If you leave out these keys, the defaults will be used.
   - "^Input:"
   # Other options if using openai-complete.sh:
   # - curie
-  engine: "davinci"
+  model: "davinci"
   mode:
   best-of: 1
   cache: false

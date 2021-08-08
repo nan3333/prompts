@@ -10,7 +10,7 @@ prompt: |
   Output: I walked to the store and I bought milk.
   Input: <1>
   Output:
-engine: davinci
+model: davinci
 temperature: 0
 max-tokens: 60
 top-p: 1

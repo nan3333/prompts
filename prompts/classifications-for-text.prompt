@@ -7,7 +7,7 @@ prompt: |+
   ###
   <1>
   labels:
-engine: davinci
+model: davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

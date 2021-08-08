@@ -30,7 +30,7 @@ prompt: |
   20 songs. <1>
   Track list:
   -
-engine: davinci
+model: davinci
 temperature: 0.5
 max-tokens: 60
 top-p: 1
