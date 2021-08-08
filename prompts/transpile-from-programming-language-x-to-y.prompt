@@ -27,6 +27,7 @@ preprocessors:
 - pen-s onelineify
 - cat
 - cat
+# Use s-preserve-trailing-whitespace within pen.el
 postprocessor: pen-s unonelineify | chomp
 examples:
 - min 1 2
