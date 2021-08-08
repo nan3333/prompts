@@ -1,13 +1,14 @@
 in-development: no
 title: "Write a blog post"
 doc: "Given a topic and the number of words, generate a blog post."
-prompt-version: 1
+prompt-version: 2
 prompt: |+
     Write a <2> words blog post about the <1>.
 
 lm-command: "openai-complete.sh"
 model: "davinci-instruct-beta"
 temperature: 0.8
+# Tokens isn't the number of words, so this mechanism needs improvement
 max-tokens: <2>
 top-p: 1.0
 best-of: 1
