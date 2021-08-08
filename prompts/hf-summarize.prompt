@@ -2,7 +2,6 @@ title: HF summarize
 prompt-version: 1
 lm-command: "hf-complete.sh"
 engine: facebook/bart-large-cnn
-# Sometimes the engine requires a mode to be specified
 mode: summarize
 temperature: 0.6
 max-tokens: 500

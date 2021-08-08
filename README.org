@@ -200,6 +200,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # The engine to be specified to the lm-command.
   engine: "davinci"
 
+  # Sometimes the engine requires a mode to be specified
+  # because the API requires it.
+  mode: summarize
+
   # 0.0 = /r/ihadastroke
   # 1.0 = /r/iamveryrandom
   # Use 0.3-0.8
