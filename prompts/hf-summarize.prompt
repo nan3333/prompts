@@ -4,7 +4,13 @@ lm-command: "hf-complete.sh"
 engine: facebook/bart-large-cnn
 temperature: 0.6
 max-tokens: 500
+# mode / hypertask
+mode: summarize
 top-p: 1
+prompt: "<1>"
+stop-sequences:
+- "###"
+- "\n\n"
 vars:
 - passage
 examples:
