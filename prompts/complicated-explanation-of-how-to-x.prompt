@@ -25,3 +25,4 @@ vars:
 - passage
 examples:
 - crack an egg
+postprocessor: pen-pretty-paragraph
