@@ -390,6 +390,7 @@ If you leave out these keys, the defaults will be used.
   # Other options if using openai-complete.sh:
   # - curie
   engine: "davinci"
+  mode:
   best-of: 1
   cache: false
   # For 2 variables while selecting text, this is default
