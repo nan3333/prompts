@@ -1,0 +1,5 @@
+title: novelai-genji-python-6b
+include: Generic completion 50 tokens
+prompt-version: 1
+lm-command: "hf-complete.sh"
+engine: microsoft/CodeGPT-small-java-adaptedGPT2
