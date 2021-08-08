@@ -2,7 +2,7 @@ title: ms-codegpt-small-py
 include: Generic completion 50 tokens
 prompt-version: 1
 lm-command: "hf-complete.sh"
-engine: microsoft/CodeGPT-small-py
+engine: "microsoft/CodeGPT-small-py"
 # https://huggingface.co/transformers/_modules/transformers/generation_utils.html
 # num_return_sequences has to be 1, but is 4 when doing greedy search.
 n-completions: 1
