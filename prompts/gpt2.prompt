@@ -1,0 +1,5 @@
+title: gpt2
+include: Generic completion 50 tokens
+prompt-version: 1
+lm-command: "hf-complete.sh"
+engine: gpt2
