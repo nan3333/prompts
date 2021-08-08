@@ -27,7 +27,7 @@ preprocessors:
 - pen-s onelineify
 - cat
 - cat
-postprocessor: pen-s unonelineify
+postprocessor: pen-s unonelineify | chomp
 examples:
 - min 1 2
 - Haskell
