@@ -1,8 +1,8 @@
 ---
 title: Generic completion -- 200 tokens max
-prompt-version: 1
+prompt-version: 2
 doc: This is a generic completer.
-prompt: "<1>\n"
+prompt: "<1>"
 model: davinci
 temperature: 0.8
 max-tokens: 200

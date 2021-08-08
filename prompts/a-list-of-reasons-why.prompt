@@ -19,7 +19,7 @@ preprocessors:
 - sed -z -e 's/\s\+$//' -e 's/\.$//' -e 's/$/./'
 examples:
 - Recycling is good for the world
-completion: true
+completion: off
 var-defaults:
 - "(pen-preceding-text)"
 postprocessor: sed -e 's/^- //' -e 's/^-//' | sed 's/^/- /' | uniqnosort | sed -z
