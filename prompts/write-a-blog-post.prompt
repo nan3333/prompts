@@ -1,5 +1,6 @@
 in-development: no
 title: "Write a blog post"
+doc: "Given a topic and the number of words, generate a blog post."
 prompt-version: 1
 prompt: |+
     Write a <2> words blog post about the <1>.
@@ -30,6 +31,5 @@ n-completions: 10
 filter: no
 completion: off
 insertion: on
-doc: "Write a blog post"
 external-related:
 - "https://gptprompts.org/p/blog-post-generation"
