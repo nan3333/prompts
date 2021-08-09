@@ -13,4 +13,5 @@ vars:
 var-defaults:
 - "(pen-preceding-text)"
 end-yas: on
+# The start will not be trimmed
 completion: on
