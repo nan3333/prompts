@@ -6,7 +6,7 @@ model: GPT-J-6B
 # `(comment-line 1)`
 prompt: |+
   <text><:pp>
-  # regex to match <thing to match>
+  regex to match <thing to match>`(comment-line 1)`
 vars:
 - text
 - thing to match

@@ -6,6 +6,7 @@ prompt: |
   File type: <1>
   File contents:
   <2>
+lm-command: "openai-complete.sh"
 model: davinci
 temperature: 0.3
 max-tokens: 200
