@@ -5,7 +5,7 @@ model: davinci
 # lm-command: "aix-complete.sh"
 # model: GPT-J-6B
 temperature: 0.3
-max-tokens: 200
+max-tokens: 1000
 stop-sequences:
 - "###"
 top-p: 1
