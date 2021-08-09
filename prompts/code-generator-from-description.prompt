@@ -13,10 +13,8 @@ top-p: 1
 # It would really help with suggesting the comments have finished.
 prompt: |+
   Language: `(pen-detect-language)``(comment-line 3)`
-  Description: <code description>
-  Code:
-
-  begin`(comment-line 1)`
+  Description: The following code is an example of <code description>:
+  -------------------------------
 vars:
 - code description
 postprocessor: sed 1,3d
