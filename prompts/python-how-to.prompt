@@ -1,5 +1,6 @@
 ---
 title: Python how to
+prompt-version: 2
 prompt: |
   How to do something in python.
   ###
