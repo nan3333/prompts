@@ -40,5 +40,5 @@ examples:
   # the triple (numbers[i], numbers[i + 1], numbers[i + 2]) is a zigzag, and 0 otherwise.
   def
 var-defaults:
-- "(detect-language)"
+- "(pen-detect-language)"
 - "(pen-preceding-text)"
