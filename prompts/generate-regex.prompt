@@ -5,11 +5,12 @@ lm-command: "aix-complete.sh"
 model: GPT-J-6B
 prompt: |+
   <1>
-  <regex to find the dollars:>
+  regex to find the dollars`(comment-line 1)`
 vars:
 - text
 var-defaults:
 - "(pen-preceding-text)"
+end-yas: on
 
 # - put the prompt in a buffer
 # - run some emacs keyboard macros on it to tidy it up
