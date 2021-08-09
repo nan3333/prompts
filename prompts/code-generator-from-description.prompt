@@ -1,4 +1,5 @@
 title: code generator from description
+doc: Language agnostic
 prompt-version: 1
 lm-command: "openai-complete.sh"
 model: davinci
