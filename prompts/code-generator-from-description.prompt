@@ -21,3 +21,4 @@ postprocessor: sed 1,3d
 end-yas: on
 # The start will not be trimmed
 insertion: on
+continuation-prompt: Generic completion 50 tokens
