@@ -19,4 +19,4 @@ stop-sequences:
 vars:
 - description
 examples:
-- boysenberries
+- split a string
