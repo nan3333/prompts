@@ -1,11 +1,13 @@
 title: gpt-j generate regex
 include: Generic completion 50 tokens
 prompt-version: 2
+# lm-command: "openai-complete.sh"
+# model: davinci
 lm-command: "aix-complete.sh"
 model: GPT-J-6B
 prompt: |+
   <text><:pp>
-  regex to match <thing to match>`(comment-line 1)`
+  regex to match <thing to match> above`(comment-line 1)`.
 vars:
 - text
 - thing to match
