@@ -1,9 +1,9 @@
 title: code generator from description
 prompt-version: 1
-# lm-command: "openai-complete.sh"
-# model: davinci
-lm-command: "aix-complete.sh"
-model: GPT-J-6B
+lm-command: "openai-complete.sh"
+model: davinci
+# lm-command: "aix-complete.sh"
+# model: GPT-J-6B
 temperature: 0.3
 max-tokens: 200
 stop-sequences:
@@ -12,8 +12,8 @@ top-p: 1
 # this flag instructs pen-aix to add a newline before the response
 # The AIx API appears to remove all beginning whitespace, which may be a bug
 prompt: |+
-  <code description>`(comment-line 2)`
-  Code starts here:
+  Code description: <code description>`(comment-line 2)`
+  Implementation:
   <:pp>
 vars:
 - code description
