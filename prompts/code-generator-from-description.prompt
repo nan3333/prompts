@@ -19,7 +19,7 @@ prompt: |+
   <:pp>
 vars:
 - code description
-postprocessor: sed 1,2d
+postprocessor: sed 1,2d | sed /^--/d
 end-yas: on
 # The start will not be trimmed
 insertion: on
