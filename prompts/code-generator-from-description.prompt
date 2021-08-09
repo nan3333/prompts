@@ -15,6 +15,7 @@ prompt: |+
   Language: `(pen-detect-language)``(comment-line 3)`
   Description: The following code is an example of <code description>:
   Raw code:
+  >
 vars:
 - code description
 postprocessor: sed 1,3d
