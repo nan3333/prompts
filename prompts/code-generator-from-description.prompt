@@ -16,7 +16,7 @@ prompt: |+
   Description: <code description>
   Code:
 
-  <:pp>
+  begin`(comment-line 1)`
 vars:
 - code description
 postprocessor: sed 1,3d
