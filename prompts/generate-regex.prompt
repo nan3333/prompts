@@ -5,7 +5,7 @@ lm-command: "aix-complete.sh"
 model: GPT-J-6B
 prompt: |+
   <text>
-  <thing to match>`(comment-line 1)`
+  regex to match <thing to match>`(comment-line 1)`
 vars:
 - text
 - thing to match
