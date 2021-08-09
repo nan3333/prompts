@@ -5,6 +5,8 @@ prompt-version: 3
 # model: davinci
 lm-command: "aix-complete.sh"
 model: GPT-J-6B
+# this flag instructs pen-aix to add a newline before the response
+# The AIx API appears to remove all beginning whitespace
 flags:
 - aix-begin-newline
 prompt: |+
