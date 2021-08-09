@@ -21,4 +21,5 @@ postprocessor: sed 1,3d
 end-yas: on
 # The start will not be trimmed
 insertion: on
+# I guess that this would usually be done manually
 continuation-prompt: Generic completion 50 tokens
