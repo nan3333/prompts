@@ -13,7 +13,7 @@ top-p: 1
 # It would really help with suggesting the comments have finished.
 prompt: |+
   Language: `(pen-detect-language)``(comment-line 3)`
-  Description: The following code is an example of <code description>:
+  Description: The following code is an implementation of <code description>:
   Code:
   >
 vars:
