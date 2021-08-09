@@ -392,6 +392,10 @@ If you leave out these keys, the defaults will be used.
   model: "davinci"
   mode:
   best-of: 1
+  # YAS is not enabled by default
+  yas:
+  start-yas:
+  end-yas:
   cache: false
   # For 2 variables while selecting text, this is default
   # Otherwise, var-defaults is nil
