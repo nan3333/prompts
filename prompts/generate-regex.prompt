@@ -6,9 +6,9 @@ model: GPT-J-6B
 prompt: |+
   <1>
   regex to find the dollars`(comment-line 1)`
-  <:pp>
 vars:
 - text
+- thing to match
 var-defaults:
 - "(pen-preceding-text)"
 end-yas: on
