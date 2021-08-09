@@ -3,7 +3,6 @@ include: Generic completion 50 tokens
 prompt-version: 2
 lm-command: "aix-complete.sh"
 model: GPT-J-6B
-# `(comment-line 1)`
 prompt: |+
   <text><:pp>
   regex to match <thing to match>`(comment-line 1)`
@@ -12,6 +11,6 @@ vars:
 - thing to match
 var-defaults:
 - "(pen-preceding-text)"
-# end-yas: on
+end-yas: on
 # The start will not be trimmed
 completion: on
