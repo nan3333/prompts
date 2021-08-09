@@ -12,8 +12,8 @@ top-p: 1
 # this flag instructs pen-aix to add a newline before the response
 # The AIx API appears to remove all beginning whitespace, which may be a bug
 prompt: |+
-  Language: `(pen-detect-language)`
-  Description: <code description>`(comment-line 2)`
+  Language: `(progn (pen-detect-language)(comment-line 3))`
+  Description: <code description>
   Code:
 
   <:pp>
