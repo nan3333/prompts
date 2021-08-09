@@ -18,7 +18,7 @@ prompt: |+
   >
 vars:
 - code description
-postprocessor: sed 1,3d
+postprocessor: sed 1,3d | sed "/^[^>]/q" | sed -e "\$d" -e "s/^> *//"
 end-yas: on
 # The start will not be trimmed
 insertion: on
