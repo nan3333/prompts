@@ -7,7 +7,11 @@ GPT-j, and other LMs.
 |---------+-----------------------------|
 | =GPL-3= | https://discord.gg/6wP4MwCM |
 
-+ Tutorials :: https://semiosis.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
+** Learning material
+- https://generative.ink/posts/methods-of-prompt-programming/
+- https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
+- https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
+- https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
 
 ** Automatic prompts discovery
 Pen has a discovery mechanism to expand its database of prompts.
