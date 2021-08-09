@@ -14,7 +14,7 @@ top-p: 1
 prompt: |+
   Language: `(pen-detect-language)``(comment-line 3)`
   Description: The following code is an example of <code description>:
-  Raw code:
+  Code:
   >
 vars:
 - code description
