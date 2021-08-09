@@ -9,8 +9,9 @@ max-tokens: 1000
 stop-sequences:
 - "###"
 top-p: 1
-# this flag instructs pen-aix to add a newline before the response
-# The AIx API appears to remove all beginning whitespace, which may be a bug
+# This flag instructs pen-aix to add a newline before the response.
+# The AIx API appears to remove all beginning whitespace, which may be a bug.
+# Unfortunately, it's not yet possible to have a prompt which ends in whitespace.
 prompt: |+
   Language: `(pen-detect-language)``(comment-line 3)`
   Description: <code description>
