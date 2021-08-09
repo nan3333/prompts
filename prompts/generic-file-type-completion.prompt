@@ -21,6 +21,8 @@ vars:
 no-trim-start: on
 n-collate: 1
 n-completions: 20
+completion: true
+cache: false
 examples:
 - python
 - |-
@@ -36,7 +38,6 @@ examples:
   # ith element of the output array equals 1 if
   # the triple (numbers[i], numbers[i + 1], numbers[i + 2]) is a zigzag, and 0 otherwise.
   def
-completion: on
 var-defaults:
 - "(detect-language)"
 - "(pen-preceding-text)"
