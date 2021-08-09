@@ -14,6 +14,7 @@ top-p: 1
 prompt: |+
   Code description: <code description>`(comment-line 2)`
   Implementation:
+
   <:pp>
 vars:
 - code description
