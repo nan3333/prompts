@@ -1,6 +1,6 @@
 ---
 title: Generic file type completion
-prompt-version: 1
+prompt-version: 2
 doc: This is a generic file-type completer for emacs.
 prompt: |
   File type: <1>
