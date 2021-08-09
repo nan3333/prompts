@@ -3,7 +3,7 @@ include: Generic completion 50 tokens
 prompt-version: 1
 lm-command: "aix-complete.sh"
 model: GPT-J-6B
-prompt: |
+prompt: |+
   <1>
   <regex to find the dollars:>
 vars:
