@@ -6,13 +6,15 @@ lm-command: "aix-complete.sh"
 model: GPT-J-6B
 temperature: 0.3
 max-tokens: 200
+stop-sequences:
+- "###"
 top-p: 1
 # this flag instructs pen-aix to add a newline before the response
 # The AIx API appears to remove all beginning whitespace, which may be a bug
 prompt: |+
-  <description>`(comment-line 1)`.
+  <code description>`(comment-line 1)`.
 vars:
-- description
+- code description
 postprocessor: sed 1d
 end-yas: on
 # The start will not be trimmed
