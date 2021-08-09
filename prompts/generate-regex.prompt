@@ -1,6 +1,6 @@
 title: gpt-j generate regex
 include: Generic completion 50 tokens
-prompt-version: 2
+prompt-version: 3
 # lm-command: "openai-complete.sh"
 # model: davinci
 lm-command: "aix-complete.sh"
