@@ -1,22 +1,17 @@
-title: gpt-j generate regex
+title: code generator from description
 include: Generic completion 50 tokens
-prompt-version: 3
+prompt-version: 1
 # lm-command: "openai-complete.sh"
 # model: davinci
 lm-command: "aix-complete.sh"
 model: GPT-J-6B
 # this flag instructs pen-aix to add a newline before the response
 # The AIx API appears to remove all beginning whitespace, which may be a bug
-flags:
-- aix-begin-newline
 prompt: |+
-  <text><:pp>
-  regex to match <thing to match> above`(comment-line 1)`.
+  <description>`(comment-line 1)`.
 vars:
-- text
-- thing to match
-var-defaults:
-- "(pen-preceding-text)"
+- description
+postprocessor: sed 1d
 end-yas: on
 # The start will not be trimmed
-completion: on
+insertion: on
