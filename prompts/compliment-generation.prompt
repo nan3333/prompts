@@ -1,4 +1,4 @@
----
+
 title: Compliment generation based on a quality
 doc: Generate a nice compliment based on a quality
 prompt-version: 6
@@ -41,6 +41,7 @@ prompt: |
   TOPIC: endurance
   - Everyone gets knocked down sometimes; only people like you get back up again and keep going.
   ###
+  TOPIC: <1>
   -
 engine: davinci
 temperature: 0.8
