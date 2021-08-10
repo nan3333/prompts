@@ -1,0 +1,37 @@
+title: "Explain code"
+doc: "Select some code and ask for an explanation"
+is-info: on
+prompt-version: 1
+prompt: |+
+    <code>
+    Explanation of the above code:`(comment-line 1)`
+prompt-filter: "sed -z 's/\\s\\+$//'"
+n-generate: 5
+lm-command: "openai-complete.sh"
+model: "davinci"
+temperature: 0.3
+max-tokens: 100
+top-p: 1.0
+best-of: 1
+no-trim-start: off
+no-trim-end: off
+stop-sequences:
+- "##"
+yas: on
+vars:
+- code
+examples:
+- |
+    var myDraw = Draw(200, 200, true);
+    var x1 = randomInteger(200);
+    var y1 = randomInteger(200);
+    var x2 = randomInteger(200);
+    var y2 = randomInteger(200);
+    myDraw.line(x1, y1, x2, y2);
+postprocessor:
+n-test-runs: 5
+n-collate: 1
+n-completions: 10
+filter: no
+completion: off
+insertion: off
