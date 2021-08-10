@@ -9,7 +9,8 @@ prompt: |
   ###
   TOPIC: <1>
   -
-engine: davinci
+lm-command: "aix-complete.sh"
+model: GPT-J-6B
 temperature: 0.8
 max-tokens: 60
 top-p: 1
