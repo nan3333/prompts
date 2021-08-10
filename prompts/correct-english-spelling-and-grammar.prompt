@@ -35,7 +35,7 @@ examples:
 - The rain in Spain falls mainly on the plain.
 preprocessors:
 - pen-s onelineify
-postprocessor: pen-s unonelineify | pen-pretty-paragraph | sed "s/^Corrected English:\\s*//"
+postprocessor: pen-s unonelineify | pen-pretty-paragraph | sed -e "s/^\\s*//" -e "s/^Corrected English:\\s*//"
 external: 
 filter: true
 n-test-runs: 2
