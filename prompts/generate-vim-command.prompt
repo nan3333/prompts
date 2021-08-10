@@ -1,5 +1,5 @@
----
 title: Generate vim command
+prompt-version: 2
 prompt: |
   Vim
 
@@ -24,6 +24,7 @@ stop-sequences:
 - "###"
 vars:
 - description
+postprocessor: sed -n "/^:/p"
 examples:
 - Make all occurrences of Steve lowercase
 url: https://prompts-ai-self-clean.surge.sh/
