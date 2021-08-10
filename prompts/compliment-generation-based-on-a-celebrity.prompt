@@ -1,5 +1,6 @@
 title: Compliment generation based on a celebrity
 doc: Generate a nice compliment based on a celebrity
+in-development: yes
 prompt-version: 6
 prompt: |
   The following are nice compliments:
@@ -7,8 +8,8 @@ prompt: |
   TOPIC: Johnny Depp
   - He has fame, but he doesn't want it. He has advantage but he doesn't take it. And he definitely has all our hearts!!!!!
   ###
-  TOPIC: argumentative
-  - Your perspective is refreshing.
+  TOPIC: Emma Watson
+  - Watson is an impressive woman.
   ###
   TOPIC: memory
   - Your ability to recall random factoids at just the right times is impressive.
@@ -58,8 +59,6 @@ examples:
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
-external-related:
-- "https://www.verywellmind.com/positivity-boosting-compliments-1717559"
 n-test-runs: 10
 # This will generate 20 up lines
 n-collate: 2
