@@ -17,7 +17,7 @@ no-trim-start: off
 no-trim-end: off
 stop-sequences:
 - "##"
-yas: on
+end-yas: on
 vars:
 - code
 examples:
