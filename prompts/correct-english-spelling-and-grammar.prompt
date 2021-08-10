@@ -27,6 +27,8 @@ max-tokens: 1000
 top-p: 1
 stop-sequences:
 - "###"
+stop-patterns:
+- "^Poor English:"
 vars:
 - poor english
 examples:
