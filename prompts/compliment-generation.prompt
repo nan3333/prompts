@@ -1,8 +1,6 @@
 ---
 title: Compliment generation
 doc: Generate a nice compliment
-past-versions:
-- deprecated/pick-up-line.prompt
 prompt-version: 5
 prompt: |
   The following are nice compliments:
