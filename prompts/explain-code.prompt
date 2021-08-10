@@ -3,14 +3,14 @@ doc: "Select some code and ask for an explanation"
 is-info: on
 prompt-version: 1
 prompt: |+
-    <code>
+    `(pen-guess-major-mode-set)`<code>
     Summary of the above code:`(comment-line 1)`
 prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.3
-max-tokens: 100
+max-tokens: 2000
 top-p: 1.0
 best-of: 1
 no-trim-start: off
