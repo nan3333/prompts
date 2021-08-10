@@ -3,7 +3,7 @@ title: Compliment generation
 doc: Generate a nice compliment
 past-versions:
 - deprecated/pick-up-line.prompt
-prompt-version: 4
+prompt-version: 5
 prompt: |
   The following are nice compliments:
   ###
@@ -35,7 +35,7 @@ prompt: |
   ###
   - Everyone gets knocked down sometimes; only people like you get back up again and keep going.
   ###
-  - 
+  -
 engine: davinci
 temperature: 0.8
 max-tokens: 60
@@ -58,5 +58,5 @@ n-test-runs: 10
 # This will generate 20 up lines
 n-collate: 2
 n-completions: 10
-postprocessor: sed 's/^ *//' | awk 1 | sed '/^[^a-zA-Z]/d'
+postprocessor: sed 's/^\s*//' | awk 1 | sed '/^[^a-zA-Z]/d'
 collation-separator: ''
