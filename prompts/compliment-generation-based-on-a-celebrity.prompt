@@ -4,8 +4,8 @@ prompt-version: 6
 prompt: |
   The following are nice compliments:
   ###
-  TOPIC: intelligence
-  - You're a smart cookie.
+  TOPIC: Johnny Depp
+  - He has fame, but he doesn't want it. He has advantage but he doesn't take it. And he definitely has all our hearts!!!!!
   ###
   TOPIC: argumentative
   - Your perspective is refreshing.
