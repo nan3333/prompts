@@ -24,7 +24,7 @@ stop-sequences:
 - "###"
 vars:
 - description
-n-collate: 10
+n-collate: 5
 postprocessor: sed -n "/^:/p" | sed "s/ :%/\n/g"
 examples:
 - Make all occurrences of Steve lowercase
