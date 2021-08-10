@@ -1,7 +1,6 @@
 title: Compliment generation based on a celebrity
 doc: Generate a nice compliment based on a celebrity
-in-development: yes
-prompt-version: 6
+prompt-version: 1
 prompt: |
   The following are nice compliments:
   ###
