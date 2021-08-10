@@ -1,6 +1,6 @@
 ---
 title: Correct English spelling and grammar
-prompt-version: 4
+prompt-version: 5
 doc: Given a sentence which may have incorrect spelling or grammar, correct it.
 prompt: |+
   ###
@@ -35,7 +35,7 @@ examples:
 - The rain in Spain falls mainly on the plain.
 preprocessors:
 - pen-s onelineify
-postprocessor: pen-s unonelineify | pen-pretty-paragraph | sed "s/^Corrected English:\\s*//
+postprocessor: pen-s unonelineify | pen-pretty-paragraph | sed "s/^Corrected English:\\s*//"
 external: 
 filter: true
 n-test-runs: 2
