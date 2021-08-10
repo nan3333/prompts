@@ -22,9 +22,8 @@ vars:
 - person
 examples:
 - Amber Heard
-preprocessors:
-- tr '[:lower:]' '[:upper:]'
-prefer-external: true
+# preprocessors:
+# - tr '[:lower:]' '[:upper:]'
 n-test-runs: 10
 # This will generate 20 up lines
 n-collate: 2
