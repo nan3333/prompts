@@ -4,7 +4,7 @@ is-info: on
 prompt-version: 1
 prompt: |+
     <code>
-    Explanation of the above code:`(comment-line 1)`
+    Summary of the above code:`(comment-line 1)`
 prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
 lm-command: "openai-complete.sh"
