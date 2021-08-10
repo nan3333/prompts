@@ -1,36 +1,44 @@
 ---
-title: Compliment generation
-doc: Generate a nice compliment
-prompt-version: 5
+title: Compliment generation based on a quality
+doc: Generate a nice compliment based on a quality
+prompt-version: 6
 prompt: |
   The following are nice compliments:
   ###
+  TOPIC: intelligence
   - You're a smart cookie.
   ###
+  TOPIC: argumentative
   - Your perspective is refreshing.
   ###
+  TOPIC: memory
   - Your ability to recall random factoids at just the right times is impressive.
   ###
+  TOPIC: integrity
   - When you say, "I meant to do that," I totally believe you.
   ###
+  TOPIC: interesting
   - You have the best ideas.
   ###
+  TOPIC: self-improvement
   - You're always learning new things and trying to better yourself. That's awesome.
   ###
+  TOPIC: presentation
   - If someone based an Internet meme on you, it would have impeccable grammar.
   ###
+  TOPIC: toughness and endurance
   - You could survive a zombie apocalypse.
   ###
+  TOPIC: perseverance
   - When you make a mistake, you fix it.
   ###
+  TOPIC: inventiveness
   - You're great at figuring stuff out.
   ###
+  TOPIC: creativity
   - Your creative potential seems limitless.
   ###
-  - I bet you do crossword puzzles in ink.
-  ###
-  - You have a good head on your shoulders.
-  ###
+  TOPIC: endurance
   - Everyone gets knocked down sometimes; only people like you get back up again and keep going.
   ###
   -
@@ -46,7 +54,7 @@ cache: true
 vars:
 - topic
 examples:
-- Joe Biden
+- fitness and beauty
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
