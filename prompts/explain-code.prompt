@@ -5,7 +5,6 @@ prompt-version: 1
 prompt: |+
     `(pen-guess-major-mode-set)`<code>
     Summary of the above code:`(comment-line 1)`
-prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
 lm-command: "openai-complete.sh"
 model: "davinci"
