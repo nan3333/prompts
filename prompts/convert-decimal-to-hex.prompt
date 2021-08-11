@@ -24,11 +24,11 @@ stop-sequences:
 - "\n"
 cache: on
 vars:
-- "hex code"
+- "decimal code"
 var-defaults:
 - "(pen-selected-text)"
 examples:
-- "background: #212020;"
+- "text-shadow: 0 0 0.2em  rgba(255, 255, 255, 0.4);"
 n-test-runs: 5
 n-collate: 1
 n-completions: 10
