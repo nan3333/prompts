@@ -1,4 +1,3 @@
----
 title: correct grammar
 prompt-version: 4
 issues:
@@ -16,6 +15,8 @@ temperature: 0
 max-tokens: 2000
 top-p: 1
 filter: true
+# suggestion predicates
+suggest-p:
 stop-sequences:
 - "###"
 vars:
