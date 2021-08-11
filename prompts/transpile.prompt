@@ -1,17 +1,17 @@
 title: "transpile"
 prompt-version: 1
+engine: openai-codex
 prompt: |+
-    contents
+    ## The program in
 
     <1> are like <2> in that
-prompt-filter: "sed -z 's/\\s\\+$//'"
 n-generate: 5
 preprocessors:
 - "pf-correct-grammar"
 lm-command: "openai-complete.sh"
 model: "davinci"
-temperature: 0.8
-max-tokens: 60
+temperature: 0
+max-tokens: 1000
 top-p: 1.0
 best-of: 1
 no-trim-start: off
