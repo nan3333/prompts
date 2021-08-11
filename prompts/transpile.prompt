@@ -5,12 +5,13 @@ engine: openai-codex
 prompt: |+
     ## The program in <from language>
 
-    cat program_in_<language> <<EOD
+    cat program_in_<from language> <<EOD
     <code>
     EOD
 
     ## The exact same program in <to-language>
 
+    cat program_in<to language> <<EOD
 n-generate: 5
 temperature: 0
 max-tokens: 1000
@@ -24,6 +25,8 @@ vars:
 var-defaults:
 - "(pen-selected-text)"
 - "(pen-detect-language-ask)"
+postprocessors:
+- sed '$d'
 examples:
 - "print(\"Hello world with empathy\")"
 - "Python"
