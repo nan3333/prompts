@@ -14,12 +14,8 @@ temperature: 0
 max-tokens: 1000
 top-p: 1.0
 best-of: 1
-no-trim-start: off
-no-trim-end: off
 stop-sequences:
-- "\n"
-- "\n\n"
-- "##"
+- "###<long complete>###"
 cache: on
 - "former"
 - "latter"
