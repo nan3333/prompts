@@ -14,8 +14,6 @@ temperature: 0
 max-tokens: 1000
 top-p: 1.0
 best-of: 1
-stop-sequences:
-- "###<long complete>###"
 cache: on
 - "former"
 - "latter"

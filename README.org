@@ -388,7 +388,7 @@ If you leave out these keys, the defaults will be used.
 #+BEGIN_SRC yaml -n :async :results verbatim code
   lm-command: "openai-complete.sh"
   stop-sequences:
-  - "\n"
+  - "###<long>###"
   stop-patterns:
   - "^Input:"
   # Other options if using openai-complete.sh:
