@@ -1,0 +1,31 @@
+title: "convert hex to decimal in code"
+prompt-version: 1
+prompt: |+
+    Convert hex to decimal.
+
+    Hex code: <1>
+    Dec code:
+n-generate: 5
+lm-command: "openai-complete.sh"
+model: "davinci"
+temperature: 0
+max-tokens: 60
+top-p: 1.0
+best-of: 1
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "hex code"
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- "background: #212020;"
+n-test-runs: 5
+n-collate: 1
+n-completions: 10
+filter: yes
+doc: "Given some code that uses hex, convert to decimal"
+preprocessors:
+- pen-s onelineify
+postprocessor: pen-s unonelineify
