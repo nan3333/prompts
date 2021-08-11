@@ -4,8 +4,11 @@ engine: openai-codex
 prompt: |+
     ## The program in <current language>
 
-    cat program_in_<language>
+    cat program_in_<language> <<EOD
     <code>
+    EOD
+
+    ## The exact same program in <
 
     <1> are like <2> in that
 n-generate: 5
@@ -19,8 +22,8 @@ top-p: 1.0
 best-of: 1
 cache: on
 vars:
-- "former"
-- "latter"
+- "from language"
+- "to language"
 var-defaults:
 - "(detect-language)"
 - "(pen-preceding-text)"
