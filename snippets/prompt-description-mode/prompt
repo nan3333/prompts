@@ -28,6 +28,7 @@ stop-sequences:
 - "\n\n"
 - "##"
 cache: on
+vars:
 - "former"
 - "latter"
 var-defaults:
