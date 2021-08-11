@@ -17,6 +17,10 @@ top-p: 1
 filter: true
 # suggestion predicates
 suggest-p:
+- "(selected-p)"
+# semantically test for these
+nl-suggest-p:
+- "grammar is incorrect"
 stop-sequences:
 - "###"
 vars:
