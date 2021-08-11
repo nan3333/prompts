@@ -1,9 +1,11 @@
 title: "transpile"
-in-development: on
 prompt-version: 1
 engine: openai-codex
 prompt: |+
     ## The program in <current language>
+
+    cat program_in_<language>
+    <code>
 
     <1> are like <2> in that
 n-generate: 5
