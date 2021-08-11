@@ -33,7 +33,7 @@ n-test-runs: 5
 n-collate: 1
 n-completions: 10
 filter: yes
-doc: "Given some code that uses hex, convert to decimal"
+doc: "Given some code that uses decimal, convert to hex"
 preprocessors:
 - pen-s onelineify
 postprocessor: pen-s unonelineify
