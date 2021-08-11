@@ -36,3 +36,5 @@ doc: "Given some code that uses hex, convert to decimal"
 preprocessors:
 - pen-s onelineify
 postprocessor: pen-s unonelineify
+external-related:
+- https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=dc
