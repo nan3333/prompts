@@ -1,10 +1,17 @@
 title: "convert hex to decimal in code"
 prompt-version: 1
 prompt: |+
-    Convert hex to decimal.
+    Convert hex to decimal in the following code.
 
-    Hex code: <1>
+    Hex code:
+    > background: #dcdcdc;
     Dec code:
+    > background: rgb(220,220,220);
+    ###
+    Hex code:
+    > <1>
+    Dec code:
+    >
 n-generate: 5
 lm-command: "openai-complete.sh"
 model: "davinci"
