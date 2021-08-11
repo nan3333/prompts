@@ -12,8 +12,6 @@ prompt: |+
     ## The exact same program in <to-language>
 
 n-generate: 5
-lm-command: "openai-complete.sh"
-model: "davinci"
 temperature: 0
 max-tokens: 1000
 top-p: 1.0
