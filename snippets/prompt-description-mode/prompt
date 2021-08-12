@@ -15,7 +15,6 @@ model: "davinci"
 temperature: 0.8
 max-tokens: 60
 top-p: 1.0
-best-of: 1
 cache: on
 vars:
 - "former"
