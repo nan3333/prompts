@@ -34,4 +34,4 @@ n-completions: 10
 filter: yes
 preprocessors:
 - pen-s onelineify
-postprocessor: pen-pretty-paragraph
+postprocessor: pen-s unonelineify
