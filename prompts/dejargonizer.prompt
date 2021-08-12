@@ -24,6 +24,7 @@ best-of: 1
 cache: on
 stop-sequences:
 - "\n"
+post-processor: "sed -z 's/^\\s*//'"
 vars:
 - "jargon"
 examples:
@@ -33,3 +34,5 @@ n-completions: 10
 filter: yes
 completion: on
 insertion: on
+issues:
+- Still has leading whitespace
