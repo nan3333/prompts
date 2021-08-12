@@ -31,8 +31,9 @@ vars:
 examples:
 - I put the ice cream outside for an hour.
 filter: no
-completion: on
-insertion: on
+completion: off
+insertion: off
+is-info: on
 preprocessors:
 - pen-s onelineify
 postprocessor: pen-s unonelineify
