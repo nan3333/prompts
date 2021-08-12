@@ -35,6 +35,6 @@ examples:
   guitar.
 preprocessors:
 - pen-s onelineify
+postprocessor: pen-s unonelineify | pen-pretty-paragraph
 external: summarize-passage
 filter: true
-postprocessor: pen-pretty-paragraph
