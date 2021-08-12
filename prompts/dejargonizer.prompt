@@ -22,6 +22,8 @@ max-tokens: 200
 top-p: 1.0
 best-of: 1
 cache: on
+stop-sequences:
+- "\n"
 vars:
 - "jargon"
 examples:
