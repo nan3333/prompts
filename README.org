@@ -9,6 +9,7 @@ GPT-j, and other LMs.
 
 ** Learning material
 - https://generative.ink/posts/methods-of-prompt-programming/
++ https://mullikine.github.io/posts/prompt-design-with-yasnippet/
 - https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
 - https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
 - https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
