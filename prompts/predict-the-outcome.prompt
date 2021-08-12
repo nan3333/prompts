@@ -30,7 +30,7 @@ vars:
 - "action"
 examples:
 - I put the ice cream outside for an hour.
-filter: no
+filter: off
 completion: off
 insertion: off
 is-info: on
