@@ -1,6 +1,6 @@
 title: "Dejaragonizer"
 doc: "Clarifies jargon. Select some text and run the dejargonizer"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
     The following sentences contain business jargon. Rewrite them using simple words.
     
@@ -32,7 +32,6 @@ examples:
 n-collate: 1
 n-completions: 10
 filter: yes
-completion: on
-insertion: on
-issues:
-- Still has leading whitespace
+preprocessors:
+- pen-s onelineify
+postprocessor: pen-pretty-paragraph
