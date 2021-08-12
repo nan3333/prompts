@@ -1,0 +1,39 @@
+title: "Predict the outcome of an action"
+doc: "Given some prose expression some action of an individual, return the common-sense outcome"
+prompt-version: 1
+prompt: |+
+    Predict common sense results of the following actions.
+    --
+    Action: I didn't water the plant for 3 weeks.
+    Result: The plant died.
+    --
+    Action: I went to school.
+    Result: I got a diploma.
+    --
+    Action: I left the AC on all day.
+    Result: I got a high utility bill.
+    --
+    Action: I helped my neighbors when their car broke down.
+    Result: My neighbors were grateful.
+    --
+    Action: <action>
+    Result:
+lm-command: "openai-complete.sh"
+model: "davinci"
+temperature: 0.8
+max-tokens: 200
+top-p: 1.0
+cache: on
+stop-sequences:
+- "--"
+vars:
+- "action"
+examples:
+- "I put the ice cream outside for an hour.
+- "strawberries"
+filter: no
+completion: on
+insertion: on
+preprocessors:
+- pen-s onelineify
+postprocessor: pen-s unonelineify | pen-pretty-paragraph
