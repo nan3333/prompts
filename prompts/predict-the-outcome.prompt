@@ -35,4 +35,4 @@ completion: on
 insertion: on
 preprocessors:
 - pen-s onelineify
-postprocessor: pen-s unonelineify | pen-pretty-paragraph
+postprocessor: "pen-s unonelineify | pen-pretty-paragraph"

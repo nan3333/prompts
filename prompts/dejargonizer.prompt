@@ -24,7 +24,6 @@ best-of: 1
 cache: on
 stop-sequences:
 - "\n"
-post-processor: "sed -z 's/^\\s*//'"
 vars:
 - "jargon"
 examples:
