@@ -16,8 +16,6 @@ temperature: 0.8
 max-tokens: 60
 top-p: 1.0
 best-of: 1
-no-trim-start: off
-no-trim-end: off
 cache: on
 vars:
 - "former"
@@ -31,11 +29,11 @@ examples:
 preprocessors:
 - "sed 's/^/- /"
 - "cat"
-n-collate: 1
-n-completions: 10
 filter: no
 completion: on
 insertion: on
-design-patterns:
 external-related:
 - "https://paraphrasing-tool.com/"
+preprocessors:
+- pen-s onelineify
+postprocessor: pen-s unonelineify | pen-pretty-paragraph
