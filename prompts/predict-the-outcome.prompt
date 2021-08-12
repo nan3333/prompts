@@ -1,6 +1,6 @@
 title: "Predict the outcome of an action"
 doc: "Given some prose expression some action of an individual, return the common-sense outcome"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
     Predict common sense results of the following actions.
     ###
@@ -37,3 +37,5 @@ is-info: on
 preprocessors:
 - pen-s onelineify
 postprocessor: pen-s unonelineify
+issues:
+- "If I swap all stop sequences with -- instead of ##, it completely breaks. Find out why"
