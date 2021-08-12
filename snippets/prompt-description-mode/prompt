@@ -9,7 +9,7 @@ title: "${1:title}"
 doc: "Given ... ${1:title}"
 prompt-version: 1
 prompt: |+
-    ${2:`yas-selected-text`$0}
+${2:`(pen-snc "pen-indent 4" yas-selected-text)`$0}
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
