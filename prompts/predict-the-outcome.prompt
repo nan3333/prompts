@@ -30,7 +30,6 @@ vars:
 - "action"
 examples:
 - "I put the ice cream outside for an hour.
-- "strawberries"
 filter: no
 completion: on
 insertion: on
