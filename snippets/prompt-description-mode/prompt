@@ -6,15 +6,10 @@
 # --
 in-development: yes
 title: "${1:title}"
+doc: "Given ... ${1:title}"
 prompt-version: 1
 prompt: |+
-    ${2:contents}
-
-    <1> are like <2> in that
-prompt-filter: "sed -z 's/\\\\s\\\\+$//'"
-n-generate: 5
-preprocessors:
-- "pf-correct-grammar"
+    ${2:`yas-selected-text`$0}
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
@@ -23,10 +18,6 @@ top-p: 1.0
 best-of: 1
 no-trim-start: off
 no-trim-end: off
-stop-sequences:
-- "\n"
-- "\n\n"
-- "##"
 cache: on
 vars:
 - "former"
@@ -40,34 +31,11 @@ examples:
 preprocessors:
 - "sed 's/^/- /"
 - "cat"
-aliases:
-- "asktutor"
-postprocessor: "sed 's/- //' | uniqnosort"
-n-test-runs: 5
-prettifier: pen-pretty-paragraph
 n-collate: 1
 n-completions: 10
-pen-collation-postprocessor: "uniqnosort"
 filter: no
 completion: on
 insertion: on
-
-todo:
-- Finish this prompt.
 design-patterns:
-- multiplex
-- "https://generative.ink/posts/methods-of-prompt-programming/"
-future-titles:
-- Get code snippet
-- Get snippet
-aims:
-- More abstractive rewording
-doc: "Given ... ${1:title}"
-notes:
-- "rlprompt is used here outside of pen.el"
-issue:
-- "Struggles with the latter columns."
-past-versions:
-- deprecated/pick-up-line.prompt
 external-related:
 - "https://paraphrasing-tool.com/"
