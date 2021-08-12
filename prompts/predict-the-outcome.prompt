@@ -29,7 +29,7 @@ stop-sequences:
 vars:
 - "action"
 examples:
-- "I put the ice cream outside for an hour.
+- "I put the ice cream outside for an hour."
 filter: no
 completion: on
 insertion: on
