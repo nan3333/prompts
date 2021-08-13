@@ -2,9 +2,7 @@ title: "Richard Feynman explains"
 doc: "Richard Feynman explains anything"
 prompt-version: 1
 prompt: |+
-  Richard Feynman loves analogies.
-  Somebody told me "<question>".
-  I asked him to explain how and why. He explained everything:
+  Richard Feynman, the esteemed physicist, explained to the audience the reason for, how and why "<question>".
   "
 lm-command: "openai-complete.sh"
 model: "davinci"
