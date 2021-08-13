@@ -10,7 +10,7 @@ prompt: |+
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
-max-tokens: 300
+max-tokens: 100
 top-p: 1.0
 cache: on
 preprocessors:
