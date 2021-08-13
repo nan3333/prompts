@@ -5,7 +5,7 @@ prompt: |+
   This is an except from Richard Feynman's lecture.
   Questions:
   - "In a few words, could you please explain how and why <question>".
-  Richard Feynman's short response:
+  Richard Feynman's two sentence response:
   - "
 lm-command: "openai-complete.sh"
 model: "davinci"
@@ -16,7 +16,7 @@ cache: on
 preprocessors:
 - chomp
 stop-sequences:
-- "\""
+- "\"\"\""
 vars:
 - "question"
 examples:
