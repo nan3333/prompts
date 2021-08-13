@@ -12,6 +12,8 @@ temperature: 0.8
 max-tokens: 200
 top-p: 1.0
 cache: on
+preprocessors:
+- chomp
 stop-sequences:
 - "\\""
 vars:
