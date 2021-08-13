@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
   Richard Feynman loves analogies.
   I asked him to explain why "<question>".
-  In a few short sentences he explained:
+  In once sentence he explained why and how:
   "
 lm-command: "openai-complete.sh"
 model: "davinci"
