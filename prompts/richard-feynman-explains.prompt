@@ -21,4 +21,4 @@ vars:
 examples:
 - "Why is the sky blue?"
 filter: yes
-postprocessor: pen-s join ' ' | sed -z -e "s/\\.*$//" -e "s/$/./" | pen-s cap
+postprocessor: pen-s join ' ' | sed -z -e "s/\\.*$//" -e "s/$/./" | pen-s capfirst
