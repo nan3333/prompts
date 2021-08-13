@@ -5,7 +5,7 @@ prompt: |+
   This is an except from Richard Feynman's lecture.
   Questions:
   - "In only a few words, could you please explain how and why <question>".
-  Richard Feynman explained how it works:
+  Richard Feynman's response:
   - "
 lm-command: "openai-complete.sh"
 model: "davinci"
