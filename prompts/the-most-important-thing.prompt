@@ -15,7 +15,7 @@ cache: on
 preprocessors:
 - chomp
 stop-sequences:
-- "\\""
+- "\""
 vars:
 - "passage"
 examples:
