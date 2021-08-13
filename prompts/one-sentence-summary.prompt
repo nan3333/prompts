@@ -10,6 +10,7 @@ model: davinci
 temperature: 0.3
 max-tokens: 400
 top-p: 1
+repeat-until: test -n <output>
 stop-sequences:
 - "\n"
 vars:
