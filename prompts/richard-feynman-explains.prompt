@@ -1,11 +1,11 @@
 title: "Richard Feynman explains"
 doc: "Richard Feynman explains anything"
-prompt-version: 2
+prompt-version: 3
 prompt: |+
   This is an except from Richard Feynman's lecture.
   Questions:
   - "In a few words, could you please explain how and why <question>".
-  Richard Feynman's one sentence response:
+  Richard Feynman's short explanation:
   - "
 lm-command: "openai-complete.sh"
 model: "davinci"
