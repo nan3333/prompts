@@ -4,13 +4,16 @@ prompt-version: 1
 prompt: |+
   I was asked to think about the following sentence:
   "<passage>"
-  I think the most important thing to note is:
+  I think the most important thing is, in one sentence:
+  "
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
 max-tokens: 200
 top-p: 1.0
 cache: on
+stop-sequences:
+- "\\""
 vars:
 - "passage"
 examples:
