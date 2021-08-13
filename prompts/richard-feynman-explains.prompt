@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
   Richard Feynman loves analogies.
   I asked him to explain why "<question>".
-  In once sentence he explained why and how:
+  In one sentence he explained why and how:
   "
 lm-command: "openai-complete.sh"
 model: "davinci"
@@ -21,4 +21,4 @@ vars:
 examples:
 - "Why is the sky blue?"
 filter: yes
-postprocessor: pen-s join ' ' | sed -z -e "s/\\.*$//"
+postprocessor: pen-s join ' ' | sed -z -e "s/\\.*$//" -e "s/$/./" | pen-s cap
