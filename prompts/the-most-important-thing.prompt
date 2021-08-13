@@ -1,0 +1,19 @@
+title: "most important thing"
+doc: "What is the most important thing about this text?"
+prompt-version: 1
+prompt: |+
+  After contemplating the following passage:
+  <passage>
+  I think the most important thing is:
+lm-command: "openai-complete.sh"
+model: "davinci"
+temperature: 0.8
+max-tokens: 200
+top-p: 1.0
+cache: on
+vars:
+- "passage"
+examples:
+- "It is better to give than to receive."
+filter: yes
+postprocessor: sed -z -e "s/\\.*$//" -e "s/$/./"
