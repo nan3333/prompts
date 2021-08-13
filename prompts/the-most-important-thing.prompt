@@ -1,10 +1,10 @@
 title: "most important thing"
 doc: "What is the most important thing about this text?"
-prompt-version: 1
+prompt-version: 3
 prompt: |+
   I was asked to think about the following sentence:
-  "<passage>"
-  I think the most important thing is, in one sentence:
+  "<passage>".
+  That is important, but I think the more important thing is, in one sentence:
   "
 lm-command: "openai-complete.sh"
 model: "davinci"
@@ -21,4 +21,4 @@ vars:
 examples:
 - "It is better to give than to receive."
 filter: yes
-postprocessor: sed -z -e "s/\\.*$//" -e "s/$/./"
+postprocessor: sed -z -e "s/\\.*$//"
