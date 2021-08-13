@@ -3,9 +3,8 @@ doc: "Richard Feynman explains anything"
 prompt-version: 1
 prompt: |+
   Richard Feynman loves analogies.
-  I asked him to explain why:
-  "<question>". "But why, I asked?"
-  He explained by using an analogy:
+  I asked him to explain why "<question>".
+  This is what he said:
   "
 lm-command: "openai-complete.sh"
 model: "davinci"
