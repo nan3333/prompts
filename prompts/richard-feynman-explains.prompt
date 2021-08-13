@@ -3,7 +3,7 @@ doc: "Richard Feynman explains anything"
 prompt-version: 3
 prompt: |+
   This is an except from Richard Feynman's lecture.
-  Questions:
+  Question:
   - "In a few words, could you please explain how and why <question>".
   Richard Feynman's response:
   - "
