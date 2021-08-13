@@ -4,7 +4,7 @@ prompt-version: 3
 prompt: |+
   This is an except from Richard Feynman's lecture.
   Question:
-  - "In a few words, could you please explain how and why <question>".
+  - "Mr Feynman, could you please explain how and why <question>".
   Richard Feynman's explanation:
   - "
 lm-command: "openai-complete.sh"
