@@ -8,7 +8,7 @@ heading-name: This is a summary of the above text
 completion: true
 model: davinci
 temperature: 0.3
-max-tokens: 64
+max-tokens: 400
 top-p: 1
 stop-sequences:
 - "\n"
