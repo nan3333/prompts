@@ -16,7 +16,7 @@ cache: on
 preprocessors:
 - chomp
 stop-sequences:
-- "\"\"\""
+- "\""
 vars:
 - "question"
 examples:
