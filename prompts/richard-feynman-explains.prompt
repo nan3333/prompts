@@ -4,9 +4,9 @@ prompt-version: 2
 prompt: |+
   This is an except from Richard Feynman's lecture.
   Questions:
-  "In a few words, could you please explain how and why <question>".
-  Richard Feynman:
-  "
+  - "In a few words, could you please explain how and why <question>".
+  Richard Feynman's short response:
+  - "
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
