@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
   After contemplating the following passage:
   <passage>
-  I think the most important thing is:
+  I think the most important thing in one sentence is:
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
