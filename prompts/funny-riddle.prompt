@@ -7,19 +7,19 @@ prompt: |+
   TOPIC: IRISH
   - What do you call a bulletproof Irishman? Rick O'Shea!
   ###
-  TOPIC: 
+  TOPIC: JOKE
   - What do you call someone with no body and no nose? Nobody knows!
   ###
-  TOPIC: COW
+  TOPIC: COW MOVIES
   - What is a cow's favourite movie? Moo-lan
   ###
   TOPIC: FARMING
   - Why are there no unemployed farmers? They can get a job in any field.
   ###
-  TOPIC: SPACE
+  TOPIC: SPACE PUN
   - Why do all kids want to be astronauts? Because there is no pressure.
   ###
-  TOPIC: BATMAN
+  TOPIC: BATMAN CHURCH
   - What do you call it when Batman skips church? Christian Bale.
   ###
   TOPIC: <1>
