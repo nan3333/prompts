@@ -26,7 +26,7 @@ prompt: |+
   - What do you call it when Batman skips church? Christian Bale.
   ###
   TOPIC: <1> PUN
-  -
+  - What do you call
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
