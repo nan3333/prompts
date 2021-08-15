@@ -24,6 +24,7 @@ prompt: |+
   ###
   TOPIC: <1>
   - <:pp><2>
+prompt-filter: "sed -z 's/\\s\\+$//'"
 lm-command: "openai-complete.sh"
 model: "davinci"
 temperature: 0.8
