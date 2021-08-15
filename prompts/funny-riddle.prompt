@@ -7,8 +7,20 @@ prompt: |+
   TOPIC: IRISH PUN
   - What do you call a bulletproof Irishman? Rick O'Shea!
   ###
+  TOPIC: PUN
+  - What do you call someone with no body and no nose? Nobody knows!
+  ###
   TOPIC: COW MOVIES PUN
   - What is a cow's favourite movie? Moo-lan
+  ###
+  TOPIC: FARMING PUN
+  - Why are there no unemployed farmers? They can get a job in any field.
+  ###
+  TOPIC: SPACE PUN
+  - Why do all kids want to be astronauts? Because there is no pressure.
+  ###
+  TOPIC: BATMAN CHURCH PUN
+  - What do you call it when Batman skips church? Christian Bale.
   ###
   TOPIC: <1> PUN
   -<:pp> <2>
