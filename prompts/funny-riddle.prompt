@@ -22,7 +22,7 @@ prompt: |+
   TOPIC: BATMAN CHURCH
   - What do you call it when Batman skips church? Christian Bale.
   ###
-  TOPIC: <1>
+  TOPIC: <1> PUN
   -<:pp> <2>
 prompt-filter: "sed -z 's/\\s\\+$//'"
 lm-command: "openai-complete.sh"
