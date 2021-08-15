@@ -1,0 +1,62 @@
+in-development: yes
+title: "Funny riddle"
+doc: "Given a topic, come up with a list of related funny riddles"
+prompt-version: 1
+prompt: |+
+  Here is a list of funny riddles and jokes:
+  ###
+  TOPIC: IRISH PUN
+  - What do you call a bulletproof Irishman? Rick O'Shea!
+  ###
+  TOPIC: PUN
+  - What do you call somebody with no body and no nose? Nobody knows!
+  ###
+  TOPIC: 
+  - Mr. Blue lives in the blue house, mr. Pink lives in the pink house, and mr. Brown lives in the brown house. Who lives in the white house? The president!!
+  ###
+  TOPIC: FARMING PUN
+  - What is a cow's favourite movie? Moo-lan
+  ###
+  TOPIC: FARMING PUN
+  - Why are there no unemployed farmers? They can get a job in any field.
+  ###
+  TOPIC: SPACE PUN
+  - Why do all kids want to be astronauts? Because there is no pressure.
+  ###
+  TOPIC: BATMAN PUN
+  - What do you call it when Batman skips church? Christian Bale.
+  ###
+  TOPIC: <1> PUN
+lm-command: "openai-complete.sh"
+model: "davinci"
+temperature: 0.8
+max-tokens: 60
+top-p: 1.0
+cache: on
+vars:
+model: davinci
+temperature: 0.8
+max-tokens: 60
+top-p: 1
+best-of: 2
+stop-sequences:
+- "##"
+- "\n"
+cache: true
+vars:
+- topic
+examples:
+- tectonic plates
+preprocessors:
+- tr '[:lower:]' '[:upper:]'
+prefer-external: true
+var-defaults:
+- "(pen-thing-at-point-ask)"
+external-related:
+- "https://riddles.net/funny-riddles"
+n-test-runs: 10
+# This will generate 30 pick up lines
+n-collate: 2
+n-completions: 15
+postprocessor: sed 's/^ *//' | awk 1 | sed '/^[^a-zA-Z]/d'
+collation-separator: ''
