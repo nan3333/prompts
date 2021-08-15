@@ -2,7 +2,7 @@ title: "Funny riddle"
 doc: "Given a topic, come up with a list of related funny riddles"
 prompt-version: 1
 issues:
-- They're not funny
+- Not funny
 prompt: |+
   Here is a list of witty jokes:
   ###
