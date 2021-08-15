@@ -47,8 +47,12 @@ vars:
 - topic
 - beinning
 examples:
-- tectonic plates
-- What do you call
+-
+  - tectonic plates
+  - What do you call
+-
+  - pun
+  - What do you call an alcoholic cat?
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
