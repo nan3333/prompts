@@ -4,25 +4,22 @@ prompt-version: 1
 prompt: |+
   Here is a list of funny riddles and jokes:
   ###
-  TOPIC: IRISH PUN
+  TOPIC: IRISH
   - What do you call a bulletproof Irishman? Rick O'Shea!
   ###
-  TOPIC: PUN
-  - What do you call somebody with no body and no nose? Nobody knows!
-  ###
   TOPIC: 
-  - Mr. Blue lives in the blue house, mr. Pink lives in the pink house, and mr. Brown lives in the brown house. Who lives in the white house? The president!!
+  - What do you call someone with no body and no nose? Nobody knows!
   ###
-  TOPIC: FARMING PUN
+  TOPIC: COW
   - What is a cow's favourite movie? Moo-lan
   ###
-  TOPIC: FARMING PUN
+  TOPIC: FARMING
   - Why are there no unemployed farmers? They can get a job in any field.
   ###
-  TOPIC: SPACE PUN
+  TOPIC: SPACE
   - Why do all kids want to be astronauts? Because there is no pressure.
   ###
-  TOPIC: BATMAN PUN
+  TOPIC: BATMAN
   - What do you call it when Batman skips church? Christian Bale.
   ###
   TOPIC: <1> PUN
