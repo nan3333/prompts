@@ -2,7 +2,7 @@ title: "Funny riddle"
 doc: "Given a topic, come up with a list of related funny riddles"
 prompt-version: 1
 prompt: |+
-  Here is a list of funny jokes:
+  Here is a list of witty jokes:
   ###
   TOPIC: IRISH
   - What do you call a bulletproof Irishman? Rick O'Shea!
