@@ -1,4 +1,3 @@
----
 title: Translate Haskell to Clojure
 prompt: |+
     Haskell:
