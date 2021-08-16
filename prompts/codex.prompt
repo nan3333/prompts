@@ -1,0 +1,4 @@
+title: OpenAI Codex
+include: Generic completion 50 tokens
+prompt-version: 1
+engine: OpenAI Codex
