@@ -1,6 +1,8 @@
 ---
 title: text to emoji
 prompt: |+
+    Convert text into emojis.
+
     Back to Future: 👨👴🚗🕒
     ###
     Batman: 🤵🦇
