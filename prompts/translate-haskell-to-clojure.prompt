@@ -1,29 +1,32 @@
-title: Translate Haskell to Clojure
+# The task may be used as a metaprompt and as part of the name of a prompt function.
+# An engine is required to understand what the task does.
+# This is encoded into the text properties in the Ink.el format
+task: #("Translate Haskell to Clojure" 0 27 (engine "OpenAI Davinci" language "English" topic "programming"))
 prompt: |+
     Haskell:
-    zip (map show [1,5,9]) ["a","b","c"] 
+    zip (map show [1,5,9]) ["a","b","c"]
     Clojure:
-    (println (map vector '(1 2 3) '(4 5 6))) 
-    
+    (println (map vector '(1 2 3) '(4 5 6)))
+
     Haskell:
-    map toUpper "MiXeD cAsE" 
+    map toUpper "MiXeD cAsE"
     Clojure:
     (clojure.string/upper-case "MiXeD cAsE")
-    
+
     Haskell:
     putStrLn "Hello World"
     Clojure:
     (println "Hello World")
-    
-    Haskell: 
+
+    Haskell:
     import Data.Time.Clock
     import Data.Time.Calendar
     date :: IO (Integer, Int, Int) -- :: (year, month, day)
     date = getCurrentTime >>= return . toGregorian . utctDay
-    Clojure: 
+    Clojure:
     (defn date [] (.toString (java.util.Date.)))
-    
-    Haskell: 
+
+    Haskell:
     <1>
     Clojure:
 engine: OpenAI Davinci

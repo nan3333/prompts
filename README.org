@@ -181,6 +181,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # A title for the prompt. This will become the function name.
   title: "${1:title}"
 
+  # The task the prompt aims to accomplish. This may become the title
+  task: "${1:task}"
+
   # Increment this number every time you make a functional change.
   # The test suite will only rerun if this version is incremented.
   prompt-version: 1
