@@ -27,6 +27,7 @@ top-p: 1
 stop-sequences:
 - "###"
 quality: 0.3
+insertion: on
 vars:
 - text
 examples:
