@@ -268,6 +268,15 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "boysenberries"
   - "strawberries"
 
+  # Sets of examples may also be specified as below
+  examples:
+  -
+    - tectonic plates
+    - What do you call
+  -
+    - pun
+    - What do you call an alcoholic cat?
+
   # A preprocessor may be run on the variable inputs before entering the prompt
   preprocessors:
   - "sed 's/^/- /"
