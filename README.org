@@ -202,7 +202,12 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # The command passed to lm-complete
   lm-command: "openai-complete.sh"
 
-  # The engine to be specified to the lm-command.
+  # The model to be specified to the lm-command.
+  model: "davinci"
+
+  # Specifying an engine means that you don't have to specify the parameters contained by that engine
+  # Typically, the engine specifies the model and the lm-command
+  # http://github.com/semiosis/engines
   engine: "OpenAI Davinci"
 
   # Sometimes the engine requires a mode to be specified
