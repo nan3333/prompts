@@ -28,6 +28,7 @@ stop-sequences:
 - "###"
 quality: 0.3
 insertion: on
+filter: on
 vars:
 - text
 examples:
