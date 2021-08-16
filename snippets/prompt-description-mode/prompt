@@ -11,7 +11,7 @@ prompt-version: 1
 prompt: |+
 ${2:`(pen-snc "pen-indent 4" yas-selected-text)`$0}
 lm-command: "openai-complete.sh"
-model: "davinci"
+engine: "OpenAI Davinci"
 temperature: 0.8
 max-tokens: 60
 top-p: 1.0
