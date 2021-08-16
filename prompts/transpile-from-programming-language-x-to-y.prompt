@@ -3,8 +3,8 @@ title: Transpile from programming language X to Y
 prompt-version: 6
 prompt: |+
     ###
-    Haskell: zip (map show [1,5,9]) ["a","b","c"] 
-    Clojure: (println (map vector '(1 2 3) '(4 5 6))) 
+    Haskell: zip (map show [1,5,9]) ["a","b","c"]
+    Clojure: (println (map vector '(1 2 3) '(4 5 6)))
     ###
     Clojure: (clojure.string/upper-case "MiXeD cAsE")
     Haskell: map toUpper "MiXeD cAsE"
