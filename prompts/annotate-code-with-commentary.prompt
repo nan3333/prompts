@@ -1,6 +1,4 @@
----
-title: Annotate code with commentary
-in-development: yes
+task: Annotate code with commentary
 issues:
 - It appears to not have a large effective window
 design-patterns:

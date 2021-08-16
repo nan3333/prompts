@@ -5,8 +5,8 @@
 # expand-env: ((yas-indent-line 'fixed))
 # --
 in-development: yes
-title: "${1:title}"
-doc: "Given ... ${1:title}"
+task: "${1:title}"
+doc: "Given ... ${1:task}"
 prompt-version: 1
 prompt: |+
 ${2:`(pen-snc "pen-indent 4" yas-selected-text)`$0}
