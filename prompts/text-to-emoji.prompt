@@ -1,5 +1,5 @@
----
 title: text to emoji
+prompt-version: 2
 prompt: |+
     Convert text into emojis.
 
@@ -19,7 +19,7 @@ prompt: |+
     ###
     Game of Thrones 🏹🗡🗡🏹
     ###
-    <1>:
+    <text>
 engine: OpenAI Davinci
 temperature: 0.4
 max-tokens: 60
