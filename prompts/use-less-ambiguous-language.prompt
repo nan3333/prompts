@@ -12,7 +12,7 @@ prompt: |
   Ambiguous sentence:
   <1>
   Unambiguous English:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.3
 max-tokens: 300
 top-p: 1

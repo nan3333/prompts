@@ -4,6 +4,7 @@ prompt-version: 1
 prompt: |+
     <1>
 
+engine: OpenAI Davinci
 #lm-command: "openai-complete.sh"
 #model: "davinci-instruct-beta"
 temperature: 0.8

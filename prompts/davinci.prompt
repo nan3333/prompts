@@ -1,5 +1,4 @@
-title: davinci
+title: OpenAI Davinci
 include: Generic completion 50 tokens
 prompt-version: 1
-lm-command: "openai-complete.sh"
-model: davinci
+engine: OpenAI Davinci

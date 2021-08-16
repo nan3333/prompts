@@ -14,7 +14,7 @@ prompt: |
   ###
   Output: <1>
   Input:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.9
 max-tokens: 60
 top-p: 1

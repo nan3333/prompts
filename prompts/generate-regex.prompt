@@ -2,7 +2,7 @@ title: gpt-j generate regex
 include: Generic completion 50 tokens
 prompt-version: 3
 # lm-command: "openai-complete.sh"
-# model: davinci
+# engine: OpenAI Davinci
 lm-command: "aix-complete.sh"
 model: GPT-J-6B
 # this flag instructs pen-aix to add a newline before the response

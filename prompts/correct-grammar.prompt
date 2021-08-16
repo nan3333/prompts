@@ -10,7 +10,7 @@ prompt: |
   ###
   Original: <1>
   Standard American English:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0
 max-tokens: 2000
 top-p: 1

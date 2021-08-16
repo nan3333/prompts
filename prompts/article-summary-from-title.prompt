@@ -23,7 +23,7 @@ prompt: |
 
   Title: <1>
   Summary:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 200
 top-p: 1

@@ -14,7 +14,7 @@ prompt: |
   Snarky summary: Obnoxious blue aliens fuck up nature
 
   Movie: <1>
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.7
 max-tokens: 30
 top-p: 1

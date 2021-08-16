@@ -7,8 +7,7 @@ prompt: |+
   - "Mr Feynman, could you please explain how and why <question>".
   Richard Feynman:
   - "
-lm-command: "openai-complete.sh"
-model: "davinci"
+engine: "OpenAI Davinci"
 temperature: 0.8
 max-tokens: 200
 top-p: 1.0

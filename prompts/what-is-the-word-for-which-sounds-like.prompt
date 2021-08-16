@@ -15,7 +15,7 @@ prompt: |
   ###
   A list of words that mean "<1>" and sound like "<2>":
   -
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

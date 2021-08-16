@@ -27,7 +27,7 @@ prompt: |+
     Haskell: 
     <1>
     Clojure:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.3
 max-tokens: 60
 top-p: 1

@@ -8,7 +8,7 @@ prompt: |+
     sees the world as is. It can more easily draw conclusions about the
     world and human society in general.
     ###
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 100
 top-p: 1

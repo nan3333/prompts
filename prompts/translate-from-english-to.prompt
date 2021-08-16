@@ -22,7 +22,7 @@ prompt: |
   ###
   # English: <2>
   # <1>:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.5
 max-tokens: 200
 top-p: 1

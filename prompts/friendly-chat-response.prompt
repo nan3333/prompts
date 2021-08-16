@@ -7,7 +7,7 @@ prompt: |
   You: Did you watch anything interesting?
   Friend: I watched "The Sound of Music" and "The Wizard of Oz".
   You: <1>
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.4
 max-tokens: 60
 top-p: 1

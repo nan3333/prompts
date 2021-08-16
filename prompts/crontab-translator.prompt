@@ -32,7 +32,7 @@ prompt: |
   <1>
 issues:
 - Struggles with the latter columns.
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.5
 max-tokens: 60
 top-p: 1

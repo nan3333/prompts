@@ -13,7 +13,7 @@ prompt: |
   A:
 issues: 
 issues: 
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

@@ -27,14 +27,13 @@ prompt: |+
   TOPIC: <1> PUN
   -<:pp> <2>
 prompt-filter: "sed -z 's/\\s\\+$//'"
-lm-command: "openai-complete.sh"
-model: "davinci"
+engine: "OpenAI Davinci"
 temperature: 0.8
 max-tokens: 60
 top-p: 1.0
 cache: on
 vars:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

@@ -18,8 +18,7 @@ prompt: |+
     ###
     Action: <action>
     Result:
-lm-command: "openai-complete.sh"
-model: "davinci"
+engine: "OpenAI Davinci"
 temperature: 0.8
 max-tokens: 200
 top-p: 1.0

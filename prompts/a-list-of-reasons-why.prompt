@@ -6,7 +6,7 @@ prompt: |
   I had to write down all the reasons why <1>
   This is my list:
   -
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 200
 top-p: 1

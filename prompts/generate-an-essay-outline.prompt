@@ -5,7 +5,7 @@ prompt: |
   Create an outline for an essay about <1>:
 
   I: Introduction
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.7
 max-tokens: 60
 top-p: 1

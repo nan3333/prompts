@@ -7,7 +7,7 @@ prompt: |+
     2) <2>
 
     From:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 100
 top-p: 1

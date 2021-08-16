@@ -28,7 +28,7 @@ prompt: |
   ###
   <1>
   <:pp>Original language:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.5
 max-tokens: 200
 top-p: 1

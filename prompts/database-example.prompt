@@ -32,7 +32,7 @@ prompt: |
 
   Q: <1>
   A:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.3
 max-tokens: 60
 top-p: 1

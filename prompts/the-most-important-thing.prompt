@@ -6,8 +6,7 @@ prompt: |+
   "<passage>".
   That is important, but I think the more important thing is, in one sentence:
   "
-lm-command: "openai-complete.sh"
-model: "davinci"
+engine: "OpenAI Davinci"
 temperature: 0.4
 max-tokens: 200
 top-p: 1.0

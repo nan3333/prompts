@@ -13,8 +13,7 @@ prompt: |+
     Hex code:
     >
 n-generate: 5
-lm-command: "openai-complete.sh"
-model: "davinci"
+engine: "OpenAI Davinci"
 temperature: 0
 max-tokens: 60
 top-p: 1.0

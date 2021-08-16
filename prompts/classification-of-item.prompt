@@ -13,7 +13,7 @@ prompt: |
   Unilever: Conglomerate, Consumer Goods
   Mcdonalds: Food, Fast Food, Logistics, Restaurants
   <1>:
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.3
 max-tokens: 6
 top-p: 1

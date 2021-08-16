@@ -17,7 +17,7 @@ prompt: |
   The following is a list of ways to <2> in one line of code with <1>:
   ###
   <:pp>-
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 60
 top-p: 1

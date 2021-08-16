@@ -9,7 +9,7 @@ prompt: |+
   Text and keywords:
   Text: <1>
   Keywords:
-model: davinci
+engine: OpenAI Davinci
 n-collate: 1
 n-completions: 3
 temperature: 0.3

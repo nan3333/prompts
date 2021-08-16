@@ -1,9 +1,7 @@
 title: code generator from description
 doc: Language agnostic
 prompt-version: 1
-lm-command: "openai-complete.sh"
-model: davinci
-# lm-command: "aix-complete.sh"
+engine: OpenAI Davinci
 # model: GPT-J-6B
 temperature: 0.3
 max-tokens: 200

@@ -14,7 +14,7 @@ prompt: |
   too. I want to do everything in my power to
   make things right.
   ###
-model: davinci
+engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 200
 top-p: 1

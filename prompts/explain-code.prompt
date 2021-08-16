@@ -6,8 +6,7 @@ prompt: |+
     `(pen-guess-major-mode-set)`<code>
     Summary of the above code:`(comment-line 1)`
 n-generate: 5
-lm-command: "openai-complete.sh"
-model: "davinci"
+engine: "OpenAI Davinci"
 temperature: 0.3
 max-tokens: 2000
 top-p: 1.0
