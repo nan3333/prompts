@@ -1,7 +1,7 @@
 title: "transpile"
 doc: "Given some code and a target language, transpile into that language"
 prompt-version: 1
-engine: openai-codex
+engine: OpenAI Codex
 prompt: |+
     ## The program in <from language>
 
