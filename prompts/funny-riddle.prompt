@@ -32,16 +32,10 @@ temperature: 0.8
 max-tokens: 60
 top-p: 1.0
 cache: on
-vars:
-engine: OpenAI Davinci
-temperature: 0.8
-max-tokens: 60
-top-p: 1
 best-of: 2
 stop-sequences:
 - "##"
 - "\n"
-cache: true
 vars:
 - topic
 - beinning
