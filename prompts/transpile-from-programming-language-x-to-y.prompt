@@ -1,4 +1,4 @@
-task: '*("Transpile from programming language X to Y" 0 41 (engine "OpenAI Davinci" language "English" topic "Programming"))'
+task: '#("Transpile from programming language X to Y" 0 41 (engine "OpenAI Davinci" language "English" topic "Programming"))'
 prompt-version: 6
 prompt: |+
     ###

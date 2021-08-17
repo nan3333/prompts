@@ -1,4 +1,4 @@
-task: '*("Generate a riddle from a topic and the beginning text" 0 52 (engine "OpenAI Davinci" language "English" topic "Comedy"))'
+task: '#("Generate a riddle from a topic and the beginning text" 0 52 (engine "OpenAI Davinci" language "English" topic "Comedy"))'
 doc: "Given a topic, come up with a list of related funny riddles"
 prompt-version: 1
 issues:
