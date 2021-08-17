@@ -9,7 +9,7 @@ prompt: |+
     <code>
     EOD
 
-    ## The exact same program in <to-language>
+    ## The exact same program in <to language>
 
     cat program_in<to language> <<EOD
 n-generate: 5
