@@ -1,0 +1,31 @@
+title: Generate perl command
+prompt-version: 1
+prompt: |
+  perl
+
+  Sort by line length
+  perl -e 'print sort { length($b) <=> length($a) } <>'
+  ###
+  Increment all numbers by one
+  perl -pe 's/(\d+)/ 1 + $1 /ge'
+  ###
+  Reverses paragraphs
+  perl -00 -e 'print reverse <>'
+  ###
+  Look for duplicated words in a line
+  perl -0777 -ne 'print "$.: doubled $_\n" while /\b(\w+)\b\s+\b\1\b/gi'
+  ###
+  <1>
+  perl
+engine: OpenAI Davinci
+temperature: 0.3
+max-tokens: 60
+top-p: 1
+stop-sequences:
+- "###"
+vars:
+- description
+n-collate: 2
+split-patterns:
+examples:
+- Make all occurrences of Steve lowercase
