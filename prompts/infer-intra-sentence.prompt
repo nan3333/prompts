@@ -11,7 +11,7 @@ prompt: |
   Output: How are you feeling today? And what have you been up to?
   ###
   Input: <1> - <2>
-  Output: <1>
+  Output: <:pp><1>
 issues: 
 issues: 
 engine: OpenAI Davinci
@@ -27,7 +27,7 @@ vars:
 examples:
 - Hello
 - work
-preprocessors:
-- pf-correct-grammar
+# preprocessors:
+# - pf-correct-grammar
 prefer-external: true
 n-test-runs: 5
