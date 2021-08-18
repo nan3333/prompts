@@ -264,8 +264,13 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   - "^Input:"
 
   # split-patterns are used to split results into multiple results.
-  # This happens immediately after obtaining the generation and before preprocessing.
+  # This happens immediately after obtaining the generation and before postprocessing.
   split-patterns:
+  - "\n"
+
+  # end-split-patterns are used to split results into multiple results, just like split-patterns.
+  # But these patterns are effective after postprocessing.
+  end-split-patterns:
   - "\n"
 
   # Cache the function by default when running the prompt function
