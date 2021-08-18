@@ -3,6 +3,8 @@ aliases:
 - define word
 prompt-version: 4
 doc: Get a short definition of a term for the glossary system.
+language: English
+topic: Dictionary
 prompt: |
   Glossary of terms.
 

@@ -203,6 +203,12 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Additional transformation of prompt after the template
   prompt-filter: "sed -z 's/\\s\\+$//'"
 
+  # Language and topic refer to the language and topic 
+  # within the model that this prompt was designed for.
+  # With this information, a prompt can be translated.
+  language: English
+  topic: Dictionary
+
   # These are elisp String->String functions and run from pen.el
   # It probably runs earlier than the preprocessors shell scripts
   preprocessors:
