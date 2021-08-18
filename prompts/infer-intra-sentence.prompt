@@ -1,9 +1,8 @@
----
 title: infer intra sentence
 todo: 
 design-patterns: 
 doc: Given ... title
-prompt-version: 1
+prompt-version: 2
 prompt: |
   Input: Hello - day.
   Output: Hello, my name is gpt3. Have a nice day.
