@@ -28,4 +28,5 @@ n-collate: 5
 postprocessor: sed -n "/^:/p" | sed "s/ :%/\n/g"
 examples:
 - Make all occurrences of Steve lowercase
-url: https://prompts-ai-self-clean.surge.sh/
+external-related:
+- "https://prompts-ai-self-clean.surge.sh/"
