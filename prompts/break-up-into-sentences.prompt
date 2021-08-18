@@ -30,6 +30,6 @@ n-completions: 2
 issues:
 - The prompt doesn't really work. Prefer external.
 prefer-external: true
-external: ttp
+external: pen-pretty-paragraph
 filter: on
 doc: "Given a block of text, break it up into sentences"
