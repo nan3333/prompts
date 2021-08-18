@@ -1,5 +1,5 @@
 title: Generate vim command
-prompt-version: 3
+prompt-version: 4
 prompt: |
   Vim
 
