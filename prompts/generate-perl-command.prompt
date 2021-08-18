@@ -28,5 +28,6 @@ vars:
 n-collate: 2
 split-patterns:
 - "\n"
+validator: grep -qP "^perl -.*'.*'$"
 examples:
 - Make all occurrences of Steve lowercase
