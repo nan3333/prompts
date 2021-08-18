@@ -37,3 +37,4 @@ n-completions: 10
 new-document: yes
 external-related:
 - "https://www.youtube.com/watch?v=Iq3rDFZOorw"
+- "https://semiosis.github.io/posts/the-codex-quine/"
