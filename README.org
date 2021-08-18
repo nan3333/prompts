@@ -212,7 +212,8 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # The translator takes stdin and templates into the command two arguments, from-language and to-language.
   # The output is the prompt designed for a different language. For example,
   # Turn an "anything->English dictionary" into an "anything->YourLanguage dictionary".
-  # 4 default parameters: stdin(prompt), <from-language>, <to-language>, and <from-topic>
+  # 4 default parameters: stdin(prompt), <from-language>, <to-language>, and <from-topic>.
+  # If the prompt has a language and/or topic, they are substituted in, otherwise they are detected.
   translator: "wrlp pf-translate-from-world-language-x-to-y/3 <from-language> <to-language> <from-topic>"
 
   # These are elisp String->String functions and run from pen.el
