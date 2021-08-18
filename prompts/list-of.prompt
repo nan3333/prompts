@@ -26,6 +26,8 @@ stop-sequences:
 - "###"
 - "A list of"
 - "\n\n"
+split-patterns:
+- "\n"
 vars:
 - n
 - type
