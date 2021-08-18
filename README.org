@@ -216,6 +216,10 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # If the prompt has a language and/or topic, they are substituted in, otherwise they are detected.
   translator: "wrlp pf-translate-from-world-language-x-to-y/3 <from-language> <to-language> <from-topic>"
 
+  # Alternatively, the translator can be specified in emacs lisp.
+  # The arguments are provided through lexical scope.
+  translator: "(wrlp prompt (pf-translate-from-world-language-x-to-y/3 from-language to-language))"
+
   # These are elisp String->String functions and run from pen.el
   # It probably runs earlier than the preprocessors shell scripts
   preprocessors:
