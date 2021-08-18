@@ -27,5 +27,6 @@ vars:
 - description
 n-collate: 2
 split-patterns:
+- "\n"
 examples:
 - Make all occurrences of Steve lowercase

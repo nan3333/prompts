@@ -28,6 +28,7 @@ vars:
 n-collate: 2
 postprocessor: sed "s/^://"
 split-patterns:
+- "\n"
 examples:
 - Make all occurrences of Steve lowercase
 external-related:
