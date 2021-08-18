@@ -1,7 +1,7 @@
 title: infer intra sentence
 todo: 
 design-patterns: 
-doc: Given ... title
+doc: Given the start and end of a sentence, predict the middle
 prompt-version: 2
 prompt: |
   Input: Hello - day.
