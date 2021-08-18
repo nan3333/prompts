@@ -214,6 +214,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Turn an "anything->English dictionary" into an "anything->YourLanguage dictionary".
   # 4 default parameters: stdin(prompt), <from-language>, <to-language>, and <from-topic>.
   # If the prompt has a language and/or topic, they are substituted in, otherwise they are detected.
+  # The substituted variables are automatically quoted.
   translator: "wrlp pf-translate-from-world-language-x-to-y/3 <from-language> <to-language> <from-topic>"
 
   # Alternatively, the translator can be specified in emacs lisp.
