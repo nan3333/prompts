@@ -273,6 +273,13 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   end-split-patterns:
   - "\n"
 
+  # This shell command can be used to validate the output.
+  # Invalid results will be filtered out.
+  # The validator takes only stdin which is the output of the prompt if it is a shell command.
+  # If it is a pen function (prefixed with pen- or pf-) then
+  # that function takes the prompt output as it's only argument.
+  validator: grep -qP "^perl -.*'.*'$"
+
   # Cache the function by default when running the prompt function
   cache: on
 
@@ -493,13 +500,6 @@ If you leave out these keys, the defaults will be used.
   # The input is 2 arguments each containing output
   # The output is a decimal number from 0 to 1
   quality-script: "my-quality-checker-for-this-prompt.sh"
-
-  # This shell command can be used to validate the output.
-  # Invalid results will be filtered out.
-  # The validator takes only stdin which is the output of the prompt if it is a shell command.
-  # If it is a pen function (prefixed with pen- or pf-) then
-  # that function takes the prompt output as it's only argument.
-  validator: grep -qP "^perl -.*'.*'$"
 
   # This is the name of an external database-driven pretext generator.
   # It would typically summarize and fact extract from history.
