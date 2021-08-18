@@ -16,7 +16,7 @@ prompt: |
   perl -0777 -ne 'print "$.: doubled $_\n" while /\b(\w+)\b\s+\b\1\b/gi'
   ###
   <1>
-  perl
+  <:pp>perl
 engine: OpenAI Davinci
 temperature: 0.3
 max-tokens: 60
