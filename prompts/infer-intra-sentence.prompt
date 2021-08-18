@@ -12,8 +12,6 @@ prompt: |
   ###
   Input: <1> - <2>
   Output: <:pp><1>
-issues: 
-issues: 
 engine: OpenAI Davinci
 temperature: 0.8
 max-tokens: 60
