@@ -1,5 +1,5 @@
 title: Generate vim command
-prompt-version: 2
+prompt-version: 3
 prompt: |
   Vim
 
@@ -26,7 +26,6 @@ stop-sequences:
 vars:
 - description
 n-collate: 2
-# postprocessor: sed -n "/^:/p" | sed "s/ :%/\n/g"
 examples:
 - Make all occurrences of Steve lowercase
 external-related:
