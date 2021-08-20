@@ -5,7 +5,7 @@ GPT-j, and other LMs.
 
 | License | Discord server invite       |
 |---------+-----------------------------|
-| =GPL-3= | https://discord.gg/6wP4MwCM |
+| =GPL-3= | https://discord.gg/JwKGbAdNHR |
 
 ** Learning material
 - https://generative.ink/posts/methods-of-prompt-programming/
