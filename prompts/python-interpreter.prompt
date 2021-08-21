@@ -10,6 +10,7 @@ prompt: |+
     Out[1]:
 # repeater isn't ideal because the prompts may change
 # instead, use expect patterns.
+# Perhaps I should even use expect + tmux?
 # repeater: |
 #     In: {}
 #     Out
