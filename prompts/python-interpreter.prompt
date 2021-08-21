@@ -22,8 +22,8 @@ vars:
 examples:
 - "5 + 5"
 filter: no
-completion: on
-insertion: on
+completion: off
+insertion: off
 conversation: on
 external-related:
 - "https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/"
