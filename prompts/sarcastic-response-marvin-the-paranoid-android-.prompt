@@ -19,6 +19,6 @@ max-tokens: 60
 top-p: 0.3
 stop-sequences:
 - "\n"
-conversation-mode: true
+conversation: true
 vars:
 - question

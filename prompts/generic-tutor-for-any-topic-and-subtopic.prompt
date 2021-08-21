@@ -45,7 +45,7 @@ var-defaults:
 - "(pen-topic-ask)"
 - "(read-string-hist \"Pen subtopic: \")"
 - "(pen-selected-text)"
-conversation-mode: true
+conversation: true
 conversation-pretext-generator: human-conversation
 aliases:
 - asktutor

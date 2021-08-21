@@ -22,7 +22,7 @@ vars:
 - person-name
 examples:
 - "Johnny Depp"
-conversation-mode: true
+conversation: true
 conversation-pretext-generator: human-conversation
 postprocessor: pen-pretty-paragraph
 external-related:

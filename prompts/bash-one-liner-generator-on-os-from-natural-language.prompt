@@ -37,4 +37,4 @@ examples:
 - Arch Linux
 - Install package
 postprocessor: 'sed ''s/^Output: //'''
-conversation-mode: true
+conversation: true

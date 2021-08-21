@@ -20,7 +20,7 @@ vars:
 examples:
 - "The writer, Andy, is going to miss work."
 - "The receiver, Betty, is Andy's boss and can email if anything needs to be done."
-conversation-mode: true
+conversation: true
 conversation-pretext-generator: human-conversation
 postprocessor: pen-pretty-paragraph
 external-related:

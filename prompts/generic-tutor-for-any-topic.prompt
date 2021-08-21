@@ -27,7 +27,7 @@ vars:
 examples:
 - nlp
 - What does BPE mean?
-conversation-mode: true
+conversation: true
 conversation-pretext-generator: human-conversation
 aliases:
 - asktutor1
