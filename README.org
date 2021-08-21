@@ -494,7 +494,7 @@ If you leave out these keys, the defaults will be used.
   # ------------------------------------
 
   # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
-  conversation-mode: no
+  conversation: no
 
   # This is the readline prompt that is given to rlwrap for conversation mode
   rlprompt: nlsh <1>

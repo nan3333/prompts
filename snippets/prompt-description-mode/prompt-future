@@ -9,7 +9,7 @@
 # ------------------------------------
 
 # Enable running conversation. This is suitable for prompts that are chatbots or REPLs.
-conversation-mode: no
+conversation: no
 
 # Output to test against. Possibly using similarity.
 test-output: "both are types of berry"
