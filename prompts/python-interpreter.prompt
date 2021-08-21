@@ -27,6 +27,3 @@ completion: on
 insertion: on
 external-related:
 - "https://paraphrasing-tool.com/"
-preprocessors:
-- pen-s onelineify
-postprocessor: pen-s unonelineify | pen-pretty-paragraph
