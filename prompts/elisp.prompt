@@ -1,0 +1,7 @@
+include: Generic Interpreter
+task: Imagine a <language> interpreter
+language: emacs lisp
+prompt: |+
+    -UUU:----F1  *scratch*      All L4     (Lisp Interaction ElDoc) ------
+    Eval:
+user-prompt: "^Eval: "

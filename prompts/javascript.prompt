@@ -1,0 +1,9 @@
+include: Generic Interpreter
+task: Imagine a <language> interpreter
+language: javascript
+prompt: |+
+    Now using node v15.12.0 (npm v7.7.4)
+    Welcome to Node.js v15.12.0.
+    Type ".help" for more information.
+    > 
+user-prompt: "^> "

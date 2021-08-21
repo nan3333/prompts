@@ -1,0 +1,11 @@
+include: Generic Interpreter
+task: Imagine a <language> interpreter
+language: haskell
+prompt: |+
+    GHCi, version 8.10.4: https://www.haskell.org/ghc/  :? for help
+    Loaded GHCi configuration from /home/shane/.ghci
+    Prelude>
+stop-sequences:
+- "Prelude>"
+- "> "
+user-prompt: "^[A-Z][A-Za-z ]*> "

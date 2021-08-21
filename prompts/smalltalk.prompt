@@ -1,0 +1,8 @@
+include: Generic Interpreter
+task: Imagine a <language> interpreter
+language: smalltalk
+prompt: |+
+    GNU Smalltalk ready
+    
+    st> 
+user-prompt: "^st> "

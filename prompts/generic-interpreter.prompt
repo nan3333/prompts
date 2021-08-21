@@ -1,0 +1,31 @@
+task: "Generic Interpreter"
+prompt-version: 1
+prompt: |+
+    Programming language interpreter.
+    
+    Input: <expression>
+    Output:
+# repeater isn't ideal because the prompts may change
+# instead, use expect patterns.
+# Perhaps I should even use expect + tmux?
+# repeater: |
+#     In: {}
+#     Out
+lm-command: "openai-complete.sh"
+engine: "OpenAI Davinci"
+temperature: 0.4
+max-tokens: 60
+top-p: 1.0
+cache: on
+stop-sequences:
+- "Output: "
+vars:
+- "expression"
+examples:
+- "5 + 5"
+filter: no
+completion: off
+insertion: off
+conversation: on
+external-related:
+- "https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/"

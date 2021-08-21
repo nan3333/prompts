@@ -1,0 +1,8 @@
+include: Generic Interpreter
+task: Imagine a <language> interpreter
+language: fish shell
+prompt: |+
+    Welcome to fish, the friendly interactive shell
+    Type `help` for instructions on how to use fish
+    shane@mele ~/notes (master)>
+user-prompt: ".* (master)> "

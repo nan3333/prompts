@@ -1,0 +1,11 @@
+include: Generic Interpreter
+task: Imagine the emacs calculator mode
+title: emacs calculator
+language: RPN calc
+issues:
+- requires great imagination due to non-localised inference
+draw-mode: refresh
+prompt: |+
+    -------------- Emacs Calculator Mode -------------- - Emacs Calculator Trail -
+        . 
+user-prompt: "^ *\\. "

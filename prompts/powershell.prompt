@@ -1,0 +1,12 @@
+include: Generic Interpreter
+task: Imagine a <language> interpreter
+language: powershell
+prompt: |+
+    PowerShell 7.1.3
+    Copyright (c) Microsoft Corporation.
+    
+    https://aka.ms/powershell
+    Type 'help' to get help.
+    
+    PS /home/shane/notes> 
+user-prompt: "^PS [^>]*> "
