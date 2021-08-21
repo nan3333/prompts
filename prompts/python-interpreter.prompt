@@ -27,3 +27,4 @@ completion: on
 insertion: on
 external-related:
 - "https://paraphrasing-tool.com/"
+conversation-mode: true
