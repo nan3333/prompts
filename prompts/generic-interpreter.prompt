@@ -1,7 +1,7 @@
 task: "Generic Interpreter"
 prompt-version: 1
 prompt: |+
-    Programming language interpreter.
+    <language> interpreter.
     
     Input: <expression>
     Output:
@@ -21,8 +21,10 @@ stop-sequences:
 - "Output: "
 vars:
 - "expression"
+- "language"
 examples:
 - "5 + 5"
+- Python
 filter: no
 completion: off
 insertion: off
