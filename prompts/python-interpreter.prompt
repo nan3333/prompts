@@ -8,6 +8,11 @@ prompt: |+
     
     In [1]: <expression>
     Out[1]:
+# repeater isn't ideal because the prompts may change
+# instead, use expect patterns.
+# repeater: |
+#     In: {}
+#     Out
 lm-command: "openai-complete.sh"
 engine: "OpenAI Davinci"
 temperature: 0.4
