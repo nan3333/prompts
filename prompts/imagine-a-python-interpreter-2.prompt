@@ -12,14 +12,15 @@ prompt: |+
     <history><expression>
     Out
 user-prompt: "^In \\[[0-9]*\\]: "
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
 stop-sequences:
-- "]: "
-# Allow most of the prompt to be generated.
-stop-patterns:
-- "\\]: "
-# And reconstruct it.
-postprocessor: |-
-    sed -z "s=\$=]: ="
+- "In ["
+# Create a user prompt with the number incremented.
+# This is like postprocessor but happens even later.
+# It is used in special circumstances when the prompt history is also required.
+postpostprocessor: pen-s python-gen-next-user-prompt
 vars:
 - history
 - expression
