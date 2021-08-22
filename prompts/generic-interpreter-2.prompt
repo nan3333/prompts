@@ -1,8 +1,10 @@
 task: "Generic Interpreter"
 prompt-version: 1
-prompt: |+
+subprompts:
+- kickstarter: |+
     <language> interpreter.
     
+prompt: |+
     Input: <expression>
     Output:
 # repeater isn't ideal because the prompts may change

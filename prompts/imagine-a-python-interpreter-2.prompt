@@ -13,9 +13,12 @@ prompt: |+
     Out
 user-prompt: "^In \\[[0-9]*\\]: "
 stop-sequences:
-- "In ["
+- "]: "
+# Allow most of the prompt to be generated.
 stop-patterns:
-- "^In \\[[0-9]*\\]: "
+- "\\]: "
+# And reconstruct it.
+post-processor: sed -z 's=$=]: ='
 vars:
 - history
 - expression
