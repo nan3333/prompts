@@ -17,11 +17,11 @@ user-prompt: "^2.7.0 :[0-9]* > "
 # prompt because we need to match on it with stop-sequences.
 # So the user prompt must be reconstructed manually.
 stop-sequences:
-- "2.7.0 :"
+- " > "
 # Create a user prompt with the number incremented.
 # This is like postprocessor but happens even later.
 # It is used in special circumstances when the prompt history is also required.
-postpostprocessor: pen-str ruby-gen-next-user-prompt
+postpostprocessor: ( cat; echo -n " > "; )
 vars:
 - history
 - expression
