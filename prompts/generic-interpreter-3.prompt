@@ -16,7 +16,8 @@ top-p: 1.0
 cache: on
 stop-sequences:
 - "Input: "
-postpostprocessor: pen-s remove-trailing-whitespace | sed -z "s/\$/\\nInput:/"
+- "\n\n"
+postpostprocessor: pen-s remove-trailing-whitespace # | sed -z "s/\$/\\nInput:/"
 vars:
 - history
 - expression
