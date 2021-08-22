@@ -12,4 +12,4 @@ vars:
 examples:
 - "(+ 5 5)"
 n-completions: 10
-validator: head -n 1 | grep -qP "^[^>]"
+validator: sed -n -z '/^\n[^>]/p' | grep -qP .
