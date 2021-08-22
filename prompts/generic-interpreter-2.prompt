@@ -3,9 +3,10 @@ prompt-version: 1
 subprompts:
 - kickstarter: |+
     <language> interpreter.
-    
+
+    Input: 
 prompt: |+
-    Input: <expression>
+    <history><expression>
     Output:
 # repeater isn't ideal because the prompts may change
 # instead, use expect patterns.
@@ -22,9 +23,13 @@ cache: on
 stop-sequences:
 - "Output: "
 vars:
-- "expression"
-- "language"
+- history
+- expression
+- language
+var-defaults:
+- kickstarter
 examples:
+- "Input: "
 - "5 + 5"
 - Python
 filter: no

@@ -27,5 +27,5 @@ vars:
 var-defaults:
 - kickstarter
 examples:
-- "In [1]:"
+- "In [1]: "
 - "5 + 5"
