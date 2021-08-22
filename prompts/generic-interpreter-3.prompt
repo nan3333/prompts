@@ -16,6 +16,7 @@ top-p: 1.0
 cache: on
 stop-sequences:
 - "Input: "
+- "\n\n"
 postpostprocessor: pen-s generic-interpreter-tidy-result
 vars:
 - history
