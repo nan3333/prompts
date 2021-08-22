@@ -9,7 +9,7 @@ subprompts:
     
     In [1]: 
 prompt: |+
-    <history> <expression>
+    <history><expression>
     Out
 user-prompt: "^In \\[[0-9]*\\]: "
 vars:
