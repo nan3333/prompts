@@ -20,5 +20,5 @@ filter: true
 examples:
 - The long white cloud
 preprocessors:
-- pen-s join ' '
+- pen-str join ' '
 prettifier: pen-pretty-paragraph

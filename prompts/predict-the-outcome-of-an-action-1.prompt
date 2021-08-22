@@ -34,7 +34,7 @@ completion: off
 insertion: off
 is-info: on
 preprocessors:
-- pen-s onelineify
-postprocessor: pen-s unonelineify
+- pen-str onelineify
+postprocessor: pen-str unonelineify
 issues:
 - "If I swap all stop sequences with -- instead of ##, it completely breaks. Find out why"

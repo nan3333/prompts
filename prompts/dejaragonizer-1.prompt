@@ -31,5 +31,5 @@ n-collate: 1
 n-completions: 10
 filter: yes
 preprocessors:
-- pen-s onelineify
-postprocessor: pen-s unonelineify
+- pen-str onelineify
+postprocessor: pen-str unonelineify

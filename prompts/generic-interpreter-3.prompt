@@ -17,7 +17,7 @@ cache: on
 stop-sequences:
 - "Input: "
 - "\n\n"
-postpostprocessor: pen-s generic-interpreter-tidy-result
+postpostprocessor: pen-str generic-interpreter-tidy-result
 vars:
 - history
 - expression

@@ -23,7 +23,7 @@ vars:
 examples:
 - boysenberry
 completion: true
-postprocessor: sed 's/\s\+/ /g' | pen-s join ' ' | sed 's/^ *//'
+postprocessor: sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
 prettifier: pen-pretty-paragraph
 var-defaults:
 - "(pen-thing-at-point-ask \"word\" t)"

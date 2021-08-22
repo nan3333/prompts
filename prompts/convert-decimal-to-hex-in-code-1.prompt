@@ -33,7 +33,7 @@ n-completions: 10
 filter: yes
 doc: "Given some code that uses decimal, convert to hex"
 preprocessors:
-- pen-s onelineify
-postprocessor: pen-s unonelineify
+- pen-str onelineify
+postprocessor: pen-str unonelineify
 external-related:
 - https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=dc

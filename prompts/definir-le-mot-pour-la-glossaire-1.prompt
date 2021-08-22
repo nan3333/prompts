@@ -5,7 +5,7 @@ examples:
 - framboise
 language: English
 max-tokens: 200
-postprocessor: sed 's/\s\+/ /g' | pen-s join ' ' | sed 's/^ *//'
+postprocessor: sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
 prettifier: pen-pretty-paragraph
 prompt: 'Glossaire.
 

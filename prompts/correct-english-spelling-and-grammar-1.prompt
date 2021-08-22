@@ -34,8 +34,8 @@ vars:
 examples:
 - The rain in Spain falls mainly on the plain.
 preprocessors:
-- pen-s onelineify
-postprocessor: pen-s unonelineify | pen-pretty-paragraph | sed -e "s/^\\s*//" -e "s/^Corrected English:\\s*//"
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph | sed -e "s/^\\s*//" -e "s/^Corrected English:\\s*//"
 external: 
 filter: true
 n-test-runs: 2

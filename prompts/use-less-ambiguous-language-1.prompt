@@ -23,7 +23,7 @@ vars:
 examples:
 - Ranch meals are always big and hearty
 preprocessors:
-- pen-s join ' '
+- pen-str join ' '
 postprocessor: pen-pretty-paragraph
 external: 
 filter: true

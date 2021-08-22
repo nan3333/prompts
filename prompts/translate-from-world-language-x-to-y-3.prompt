@@ -31,10 +31,10 @@ vars:
 - from-language
 - to-language
 preprocessors:
-- pen-s onelineify
+- pen-str onelineify
 - cat
 - cat
-postprocessor: pen-s unonelineify
+postprocessor: pen-str unonelineify
 examples:
 - Goodnight
 - English

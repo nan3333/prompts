@@ -22,5 +22,5 @@ vars:
 examples:
 - She no went to the market.
 preprocessors:
-- pen-s onelineify
-postprocessor: pen-s unonelineify
+- pen-str onelineify
+postprocessor: pen-str unonelineify

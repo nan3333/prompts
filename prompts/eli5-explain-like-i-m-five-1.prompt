@@ -34,7 +34,7 @@ examples:
   guitar, with Strykert then switching to lead
   guitar.
 preprocessors:
-- pen-s onelineify
-postprocessor: pen-s unonelineify | pen-pretty-paragraph
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
 external: summarize-passage
 filter: true

@@ -23,12 +23,12 @@ vars:
 - from language
 - to language
 preprocessors:
-- pen-s onelineify
+- pen-str onelineify
 - cat
 - cat
 # Use s-preserve-trailing-whitespace within pen.el
 # Chomp is needed because of stop-patterns
-postprocessor: pen-s unonelineify | chomp
+postprocessor: pen-str unonelineify | chomp
 examples:
 - min 1 2
 - Haskell

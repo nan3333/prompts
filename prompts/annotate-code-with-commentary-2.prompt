@@ -70,9 +70,9 @@ var-defaults:
 - "(pen-selected-text)"
 - "(pen-detect-language-ask)"
 # preprocessors:
-# - pen-s onelineify
+# - pen-str onelineify
 # - cat
-# postprocessor: pen-s unonelineify
+# postprocessor: pen-str unonelineify
 prefer-external: true
 filter: on
 n-test-runs: 5

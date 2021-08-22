@@ -20,7 +20,7 @@ stop-sequences:
 # Create a user prompt with the number incremented.
 # This is like postprocessor but happens even later.
 # It is used in special circumstances when the prompt history is also required.
-postpostprocessor: pen-s python-gen-next-user-prompt
+postpostprocessor: pen-str python-gen-next-user-prompt
 vars:
 - history
 - expression
