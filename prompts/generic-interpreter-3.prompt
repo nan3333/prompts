@@ -2,7 +2,7 @@ task: "Generic Interpreter"
 prompt-version: 1
 subprompts:
 - kickstarter: |+
-    <language> interpreter.
+    <language> example:
 
     Input: 
 prompt: |+
