@@ -17,7 +17,8 @@ cache: on
 stop-sequences:
 - "Input: "
 - "\n\n"
-postpostprocessor: pen-s remove-trailing-whitespace | {awk 1; echo -n "Input: "}
+postpostprocessor: |+
+  pen-s remove-trailing-whitespace | { awk 1; echo -n "Input: "; }
 vars:
 - history
 - expression
