@@ -1,0 +1,18 @@
+include: Generic Interpreter/2
+task: Imagine a <language> interpreter
+language: prolog
+prompt: |+
+    Welcome to SWI-Prolog (threaded, 64 bits, version 8.2.4)
+    SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+    Please run ?- license. for legal details.
+    
+    For online help and background, visit https://www.swi-prolog.org
+    For built-in help, use ?- help(Topic). or ?- apropos(Word).
+    
+    ?- <expression>
+user-prompt: "^In \\[[0-9]*\\]: "
+vars:
+- "expression"
+examples:
+- "write('Hello World').
+validator: sed -n -z '/^\n[^?]/p' | grep -qP .
