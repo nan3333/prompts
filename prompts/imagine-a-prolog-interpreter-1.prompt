@@ -15,5 +15,6 @@ vars:
 - "expression"
 examples:
 - "write('Hello World')."
-validator: sed -n -z '/^\n[^?].*\n?-/p' | grep -qP .
-post-processor: sed -z 's/\(\n\n.*\)//'
+n-completions: 10
+validator: sed -z 's/\n\n.*//' | sed -n -z '/^\n[^?].*\n?-/p' | grep -qP .
+postprocessor: sed -z 's/\n\n.*//'
