@@ -28,6 +28,7 @@ examples:
 filter: no
 completion: off
 insertion: off
+interpreter: on
 conversation: on
 external-related:
 - "https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/"
