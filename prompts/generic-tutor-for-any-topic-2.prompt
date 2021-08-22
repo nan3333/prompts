@@ -1,4 +1,3 @@
----
 title: Generic tutor for any topic
 prompt-version: 1
 prompt: |
@@ -29,6 +28,4 @@ examples:
 - What does BPE mean?
 conversation: true
 conversation-pretext-generator: human-conversation
-aliases:
-- asktutor1
 postprocessor: pen-pretty-paragraph

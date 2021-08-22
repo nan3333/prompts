@@ -1,6 +1,4 @@
 title: define word for glossary
-aliases:
-- define word
 prompt-version: 5
 doc: Get a short definition of a term for the glossary system.
 language: English

@@ -1,6 +1,6 @@
----
-title: In other words
-doc: Reword
+title: paraphrase
+task: Reword a phrase
+doc: In other words (reword)
 aims:
 - More abstractive rewording.
 prompt-version: 1
@@ -37,5 +37,3 @@ examples:
 prefer-external: true
 external-related:
 - "https://paraphrasing-tool.com/"
-aliases:
-- paraphrase
