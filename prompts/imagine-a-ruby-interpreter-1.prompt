@@ -1,0 +1,15 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+language: perl
+prompt: |+
+    $ ruby -v
+    ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]
+    $ irb
+    2.7.0 :001 > RUBY_VERSION
+     => "2.7.0"
+    2.7.0 :002 > <expression>
+user-prompt: "^  DB<[0-9]*> "
+vars:
+- "expression"
+examples:
+- "5 + 5"
