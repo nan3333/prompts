@@ -1,12 +1,15 @@
 include: Generic Interpreter/2
 task: Imagine a <language> interpreter
 language: python
-prompt: |+
+kickstarter: |+
     Python 3.8.5 (default, Jan 27 2021, 15:41:15)
     Type 'copyright', 'credits' or 'license' for more information
     IPython 7.21.0 -- An enhanced Interactive Python. Type '?' for help.
     
     In [1]: <expression>
+    Out
+prompt: |+
+    <kickstarter> <expression>
     Out
 user-prompt: "^In \\[[0-9]*\\]: "
 vars:
