@@ -18,7 +18,8 @@ stop-sequences:
 stop-patterns:
 - "\\]: "
 # And reconstruct it.
-post-processor: sed -z 's=$=]: ='
+postprocessor: |-
+    sed -z "s=\$=]: ="
 vars:
 - history
 - expression
