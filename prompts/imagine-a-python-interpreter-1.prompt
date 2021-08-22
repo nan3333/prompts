@@ -14,6 +14,10 @@ prompt: |+
     Out
 user-prompt: "^In \\[[0-9]*\\]: "
 vars:
-- "expression"
+- history
+- expression
+var-defaults:
+- kickstarter
 examples:
+- "In [1]:"
 - "5 + 5"
