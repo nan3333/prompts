@@ -3,5 +3,9 @@ task: Imagine a <language> interpreter
 language: nushell
 prompt: |+
     Welcome to Nushell 0.28.0 (type 'help' for more info)
-    /home/shane/notes(master)> 
+    /home/shane/notes(master)> <expression>
 user-prompt: "^.*(master)> "
+vars:
+- "expression"
+examples:
+- "echo 5"

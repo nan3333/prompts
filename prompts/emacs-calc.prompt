@@ -4,8 +4,13 @@ title: emacs calculator
 language: RPN calc
 issues:
 - requires great imagination due to non-localised inference
+- alternatively, requires a model which is trained on ttyrec recordings
 draw-mode: refresh
 prompt: |+
     -------------- Emacs Calculator Mode -------------- - Emacs Calculator Trail -
         . 
 user-prompt: "^ *\\. "
+vars:
+- "expression"
+examples:
+- "5"

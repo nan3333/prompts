@@ -5,3 +5,7 @@ prompt: |+
     -UUU:----F1  *scratch*      All L4     (Lisp Interaction ElDoc) ------
     Eval:
 user-prompt: "^Eval: "
+vars:
+- "expression"
+examples:
+- "( + 5 5)"

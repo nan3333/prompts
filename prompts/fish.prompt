@@ -4,5 +4,9 @@ language: fish shell
 prompt: |+
     Welcome to fish, the friendly interactive shell
     Type `help` for instructions on how to use fish
-    shane@mele ~/notes (master)>
+    shane@mele ~/notes (master)> <expression>
 user-prompt: ".* (master)> "
+vars:
+- "expression"
+examples:
+- "echo hi"

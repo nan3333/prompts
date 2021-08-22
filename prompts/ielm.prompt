@@ -5,5 +5,9 @@ language: emacs lisp
 include: emacs lisp
 prompt: |+
     *** Welcome to IELM ***  Type (describe-mode) for help.
-    ELISP> 
+    ELISP> <expression>
 user-prompt: "^ELISP> "
+vars:
+- "expression"
+examples:
+- "( + 5 5)"

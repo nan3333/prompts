@@ -12,5 +12,9 @@ prompt: |+
      _/ |\__'_|_|_|\__'_|  |  Ubuntu ⛬  julia/1.4.1+dfsg-1
     |__/                   |
 
-    julia> 
+    julia> <expression>
 user-prompt: "julia> "
+vars:
+- "expression"
+examples:
+- "5 + 5"
