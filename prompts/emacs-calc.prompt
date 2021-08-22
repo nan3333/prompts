@@ -5,6 +5,7 @@ language: RPN calc
 issues:
 - requires great imagination due to non-localised inference
 - alternatively, requires a model which is trained on ttyrec recordings
+- also, may require ansi evaluation for the terminal
 draw-mode: refresh
 prompt: |+
     -------------- Emacs Calculator Mode -------------- - Emacs Calculator Trail -
