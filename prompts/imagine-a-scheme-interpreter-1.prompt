@@ -6,10 +6,11 @@ prompt: |+
     Copyright 1984-2019 Cisco Systems, Inc.
     
     > <expression>
+
 user-prompt: "^> "
 vars:
 - "expression"
 examples:
 - "(+ 5 5)"
-n-collate: 3
+n-completions: 10
 validator: head -n 1 | grep -qP "^[^>]"
