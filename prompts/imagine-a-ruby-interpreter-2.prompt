@@ -3,9 +3,6 @@ task: Imagine a <language> interpreter
 language: ruby
 subprompts:
 - kickstarter: |+
-    $ ruby -v
-    ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]
-    $ irb
     2.7.0 :001 > RUBY_VERSION
      => "2.7.0"
     2.7.0 :002 > 
@@ -17,7 +14,8 @@ user-prompt: "^2.7.0 :[0-9]* > "
 # prompt because we need to match on it with stop-sequences.
 # So the user prompt must be reconstructed manually.
 stop-sequences:
-- "2.7.0 :"
+# - "2.7.0 :"
+- "(pen-next-user-prompt)"
 # Create a user prompt with the number incremented.
 # This is like postprocessor but happens even later.
 # It is used in special circumstances when the prompt history is also required.
