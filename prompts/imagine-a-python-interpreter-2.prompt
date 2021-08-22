@@ -1,4 +1,4 @@
-include: Generic Interpreter/2
+include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: python
 subprompts:
@@ -10,7 +10,7 @@ subprompts:
     In [1]: 
 prompt: |+
     <history><expression>
-    Out
+    <:pp>Out
 user-prompt: "^In \\[[0-9]*\\]: "
 # Unfortunately, we can't generate the next In
 # prompt because we need to match on it with stop-sequences.

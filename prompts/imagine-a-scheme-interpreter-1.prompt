@@ -1,4 +1,4 @@
-include: Generic Interpreter/2
+include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: scheme
 prompt: |+
