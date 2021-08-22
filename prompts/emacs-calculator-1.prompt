@@ -1,5 +1,5 @@
 in-development: true
-include: Generic Interpreter
+include: Generic Interpreter/2
 task: Imagine the emacs calculator mode
 title: emacs calculator
 language: RPN calc

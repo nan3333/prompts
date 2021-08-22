@@ -1,4 +1,4 @@
-include: Generic Interpreter
+include: Generic Interpreter/2
 task: Imagine a <language> interpreter
 language: emacs lisp
 prompt: |+

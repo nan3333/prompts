@@ -1,8 +1,7 @@
-include: Generic Interpreter
+include: Generic Interpreter/2
 task: Imagine a <language> interpreter
 title: emacs ielm
 language: emacs lisp
-include: emacs lisp
 prompt: |+
     *** Welcome to IELM ***  Type (describe-mode) for help.
     ELISP> <expression>
