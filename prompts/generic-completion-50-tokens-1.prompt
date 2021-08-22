@@ -8,6 +8,7 @@ max-tokens: 50
 top-p: 1
 # Cache absolutely works, but it caches, regardless of parameters
 cache: false
+no-trim-start: on
 stop-sequences:
 - "###"
 vars:
