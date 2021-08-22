@@ -1,4 +1,3 @@
----
 title: Search the web for relevant links to do with topic
 prompt-version: 1
 doc: This is like google search
@@ -40,6 +39,4 @@ examples:
 - artificial intelligence
 prefer-external: true
 external: gl
-aliases:
-- google search
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | uniqnosort

@@ -1,5 +1,3 @@
-aliases:
-- define word
 completion: true
 doc: Obtenez une définition courte d'un terme pour le système de glossaire.
 engine: OpenAI Davinci

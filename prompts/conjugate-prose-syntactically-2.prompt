@@ -1,7 +1,4 @@
----
 title: Conjugate prose syntactically
-aliases:
-- syntactic-meld
 doc: Given two text snippets, join them together intelligently and syntactically
 prompt-version: 1
 prompt: |
