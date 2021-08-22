@@ -11,3 +11,4 @@ vars:
 - "expression"
 examples:
 - "(+ 5 5)"
+validator: grep -qP "^> "
