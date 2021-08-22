@@ -12,6 +12,9 @@ prompt: |+
     <history><expression>
     Out
 user-prompt: "^In \\[[0-9]*\\]: "
+stop-sequences:
+- "In ["
+stop-patterns: "^In \\[[0-9]*\\]: "
 vars:
 - history
 - expression
