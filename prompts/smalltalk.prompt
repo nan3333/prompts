@@ -4,5 +4,9 @@ language: smalltalk
 prompt: |+
     GNU Smalltalk ready
     
-    st> 
+    st> <expression>
 user-prompt: "^st> "
+vars:
+- "expression"
+examples:
+- "5 + 5"

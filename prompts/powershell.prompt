@@ -8,5 +8,9 @@ prompt: |+
     https://aka.ms/powershell
     Type 'help' to get help.
     
-    PS /home/shane/notes> 
+    PS /home/shane/notes> <expression>
 user-prompt: "^PS [^>]*> "
+vars:
+- "expression"
+examples:
+- "5 + 5"
