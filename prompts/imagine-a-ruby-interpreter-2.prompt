@@ -13,7 +13,7 @@ prompt: |+
     <history><expression>
 # Because the prompt generates from at the end of the user expression
 # The generation will contain a starting newline.
-# Want to trim that.
+# Want to trim that with =ii=, but not in the prompt function because a better harness could be made.
 user-prompt: "^2.7.0 :[0-9]* > "
 # Unfortunately, we can't generate the next In
 # prompt because we need to match on it with stop-sequences.
