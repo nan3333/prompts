@@ -15,5 +15,5 @@ examples:
 n-completions: 10
 # This is required because there is no output user prompt to detect
 # Therefore we have to make multiple completions and pick from the ones that
-# begin with a newline and the following line does not have a >
+# begin with a newline and the following line does not have a leading '>'.
 validator: sed -n -z '/^\n[^>]/p' | grep -qP .
