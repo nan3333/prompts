@@ -17,7 +17,7 @@ subprompts:
     By Daniel Diaz
     Copyright (C) 1999-2020 Daniel Diaz
     | ?- consult(db).
-    compiling /home/shane/db.pro for byte code...
+    compiling /home/user/db.pro for byte code...
     /home/user/db.pro compiled, 6 lines read - 700 bytes written, 3 ms
     
     yes
