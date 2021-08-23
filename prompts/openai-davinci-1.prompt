@@ -2,3 +2,4 @@ title: OpenAI Davinci
 include: Generic completion 50 tokens/1
 prompt-version: 1
 engine: OpenAI Davinci
+max-tokens: 100
