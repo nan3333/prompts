@@ -1,5 +1,4 @@
 title: curie
 include: Generic completion 50 tokens/1
 prompt-version: 1
-lm-command: "openai-complete.sh"
-model: curie
+engine: OpenAI Curie
