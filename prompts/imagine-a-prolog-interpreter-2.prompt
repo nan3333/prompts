@@ -14,13 +14,9 @@ subprompts:
 prompt: |+
     <history><expression>
 user-prompt: "^\\?- "
-stop-sequences:
-- "?-"
-- "\n\n"
 vars:
 - history
 - expression
-max-tokens: 50
 examples:
 - "?- "
 - "write('Hello World')."
