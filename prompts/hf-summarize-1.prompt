@@ -1,7 +1,6 @@
 title: HF summarize
 prompt-version: 1
-lm-command: "hf-complete.sh"
-model: facebook/bart-large-cnn
+engine: FB Bart Large CNN
 mode: summarize
 temperature: 0.6
 max-tokens: 500
