@@ -21,6 +21,7 @@ vars:
 - history
 - expression
 max-tokens: 50
+postpostprocessor: sed -z 's/$/?- /'
 examples:
 - "?- "
 - "write('Hello World')."
