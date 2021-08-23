@@ -16,15 +16,16 @@ prompt: |+
 user-prompt: "^\\?- "
 stop-sequences:
 - "?-"
-- "\n\n"
 vars:
 - history
 - expression
+var-defaults:
+- kickstarter
 max-tokens: 200
-postpostprocessor: sed -z 's/$/?- /'
+# postpostprocessor: sed -z 's/$/?- /'
 examples:
 - "?- "
 - "write('Hello World')."
 n-completions: 10
-validator: sed -z 's/\n\n.*//' | sed -n -z '/^\n[^?].*\n?-/p' | grep -qP .
-postprocessor: sed -z 's/\n\n.*//'
+# validator: sed -z 's/\n\n.*//' | sed -n -z '/^\n[^?].*\n?-/p' | grep -qP .
+# postprocessor: sed -z 's/\n\n.*//'
