@@ -33,6 +33,7 @@ vars:
 - expression
 var-defaults:
 - kickstarter
+validator: sed -n 1p | grep -qP "^$"
 # validator: ! awk 1 | tac | sed -n 1p | grep -qP "^2\\.7\\.0 :"
 n-completions: 10
 examples:
