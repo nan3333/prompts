@@ -473,6 +473,8 @@ If you leave out these keys, the defaults will be used.
   # n-collate is functionally equivalent to n-completions
   # but is the number of requests made. 1 by default.
   n-collate: 1
+  # The number of attempts that should be made to find valid output
+  n-attempts: 10
   # Generate 5 completions at a time serverside by default
   n-completions: 5
   n-test-runs: 5

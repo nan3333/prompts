@@ -35,6 +35,7 @@ var-defaults:
 - kickstarter
 # We only want outputs that start with an empty line
 validator: sed -n 1p | grep -qP "^$"
+n-attempts: 10
 # validator: ! awk 1 | tac | sed -n 1p | grep -qP "^2\\.7\\.0 :"
 n-completions: 10
 examples:
