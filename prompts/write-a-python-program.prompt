@@ -7,8 +7,9 @@ prompt: |+
     Q: Write a <language> program that <task>.
     A:
 engine: AI21 J1-Jumbo
-stop-sequence: "Q:"
-temperature: 0
+stop-sequences:
+- "Q:"
+temperature: 0.0
 max-tokens: 40
 top-p: 1.0
 cache: on
