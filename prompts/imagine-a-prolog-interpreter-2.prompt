@@ -13,9 +13,11 @@ subprompts:
     ?- 
 prompt: |+
     <history><expression>
+# Double newline is a better default stop sequence
+# Because 200 tokens will take a long time to generate.
 stop-sequences:
-- "?- "
 - "\n\n"
+- "?- "
 vars:
 - history
 - expression
