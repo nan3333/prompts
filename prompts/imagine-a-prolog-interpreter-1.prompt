@@ -20,7 +20,7 @@ stop-sequences:
 vars:
 - history
 - expression
-max-tokens: 50
+max-tokens: 200
 postpostprocessor: sed -z 's/$/?- /'
 examples:
 - "?- "
