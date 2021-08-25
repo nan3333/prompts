@@ -9,6 +9,9 @@ prompt: |+
     Text: Hello
     Language: English
     ###
+    Text: import python\n\nfrom Function f\nwhere f.getName().matches("get%")\nselect f, "This is a function called get..."
+    Language: CodeQL
+    ###
     Text: Bon anniversaire !
     Language: French
     ###
@@ -20,9 +23,10 @@ prompt: |+
     ###
     Text: <1>
     Language:
-engine: OpenAI Davinci
+engine: OpenAI Codex
 temperature: 0.3
 max-tokens: 200
+n-completions: 20
 top-p: 1
 stop-sequences:
 - "\n"
@@ -31,4 +35,5 @@ vars:
 examples:
 - Happy birthday
 preprocessors:
-- "pen-str join ' ' | cut -d ' ' -f 1-5"
+- sed 's/^\s*//' | pen-str onelineify
+# postprocessor: pen-str unonelineify
