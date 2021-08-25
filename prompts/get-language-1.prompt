@@ -27,7 +27,7 @@ engine: OpenAI Codex
 temperature: 0.3
 max-tokens: 200
 n-completions: 20
-n-collate: 2
+n-collate: 1
 top-p: 1
 stop-sequences:
 - "\n"
@@ -36,5 +36,5 @@ vars:
 examples:
 - Happy birthday
 preprocessors:
-- sed 's/^\s*//' | pen-str onelineify
+- cut -c1-100 | sed 's/^\s*//' | pen-str onelineify
 # postprocessor: pen-str unonelineify
