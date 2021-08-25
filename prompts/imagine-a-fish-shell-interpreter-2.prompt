@@ -1,12 +1,23 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: fish shell
-prompt: |+
+todo:
+- support user-prompt as a dynamic variable
+subprompts:
+- user-prompt-example: "shane@mele ~/notes (master)> "
+- kickstarter: |+
     Welcome to fish, the friendly interactive shell
     Type `help` for instructions on how to use fish
     shane@mele ~/notes (master)> <expression>
+prompt: |+
+    <history><expression>
+    <:pp><user-prompt-example>
 user-prompt: ".* (master)> "
 vars:
-- "expression"
+- history
+- expression
+var-defaults:
+- kickstarter
 examples:
+- "shane@mele ~/notes (master)> "
 - "echo hi"
