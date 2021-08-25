@@ -9,7 +9,7 @@ prompt: |+
     Text: Hello
     Language: English
     ###
-    Text: import python\n\nfrom Function f\nwhere f.getName().matches("get%")\nselect f, "This is a function called get..."
+    Text: from Function f\nwhere f.getName().matches("get%")\nselect f, "This is a function called get..."
     Language: CodeQL
     ###
     Text: Bon anniversaire !
