@@ -1,16 +1,19 @@
 task: "transpile"
 doc: "Given some code and a target language, transpile into that language"
-prompt-version: 1
+prompt-version: 2
 engine: OpenAI Codex
 prompt: |+
-    ## The program in <from language>
+    The program in <from language>
 
+    ```<from language>
     cat program_in_<from language> <<EOD
     <code>
     EOD
+    ```
 
-    ## The exact same program in <to language>
+    The exact same program in <to language>
 
+    ```<to language>
     cat program_in<to language> <<EOD
 n-generate: 5
 temperature: 0
@@ -18,6 +21,8 @@ max-tokens: 1000
 top-p: 1.0
 best-of: 1
 cache: on
+stop-sequences:
+- "```"
 vars:
 - code
 - "from language"
