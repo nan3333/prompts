@@ -23,6 +23,8 @@ best-of: 1
 cache: on
 stop-sequences:
 - "```"
+stop-patterns:
+- "^EOD$"
 vars:
 - code
 - "from language"
