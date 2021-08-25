@@ -1,5 +1,5 @@
 title: Get language
-prompt-version: 5
+prompt-version: 6
 doc: This prompt detects the language
 notes:
 - "It appears that combining ### with Input: Output: has no improvement"
