@@ -1,6 +1,6 @@
 task: "transpile"
 doc: "Given some code and a target language, transpile into that language"
-prompt-version: 2
+prompt-version: 3
 engine: OpenAI Codex
 prompt: |+
     # The program in <from language>
@@ -25,6 +25,7 @@ vars:
 - "from language"
 - "to language"
 preprocessors:
+- cat
 - slugify
 - slugify
 var-defaults:
