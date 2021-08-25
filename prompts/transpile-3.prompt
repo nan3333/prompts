@@ -13,7 +13,9 @@ prompt: |+
 
     cat program_in<to language> <<EOD
 n-generate: 5
-temperature: 0
+temperature: 0.0
+# On each collated generation, rotate the temperature upwards by 0.1
+collation-temperature-stepper: "(mod* (+ <temperature> 0.1) 1)"
 max-tokens: 1000
 top-p: 1.0
 best-of: 1
@@ -38,8 +40,8 @@ examples:
 - "Python"
 - "Ruby"
 n-test-runs: 5
-n-collate: 1
-n-completions: 10
+n-collate: 3
+n-completions: 2
 new-document: yes
 external-related:
 - "https://www.youtube.com/watch?v=Iq3rDFZOorw"

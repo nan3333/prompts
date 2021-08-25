@@ -6,7 +6,7 @@ design-patterns:
 doc: Given code with comments lacking, add comments to it
 prompt-version: 5
 prompt: |+
-  Annotate the code with comments.
+  Annotate the following code with comments.
 
   Code:
   ```awk
@@ -55,7 +55,7 @@ prompt: |+
   ```<2>
 engine: OpenAI Davinci
 temperature: 0.8
-max-tokens: 1000
+max-tokens: 2000
 top-p: 1
 stop-sequences:
 - "```"
