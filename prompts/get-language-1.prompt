@@ -27,6 +27,7 @@ engine: OpenAI Codex
 temperature: 0.3
 max-tokens: 200
 n-completions: 20
+n-collate: 2
 top-p: 1
 stop-sequences:
 - "\n"
