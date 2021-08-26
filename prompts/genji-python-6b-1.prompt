@@ -1,7 +1,7 @@
 title: Genji Python 6B
 include: Generic completion 50 tokens/1
 prompt-version: 1
-engine: NovelAI Genji Python 6B
+engine: HF NovelAI Genji Python 6B
 issues:
 - |
   This is a large model and needs to be connected.
