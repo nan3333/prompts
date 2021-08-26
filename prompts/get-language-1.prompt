@@ -23,7 +23,11 @@ prompt: |+
     ###
     Text: <1>
     Language:
-engine: OpenAI Codex
+engine: OpenAI
+# Based on these requirements, it should select codex
+requirements:
+- code
+- nl
 temperature: 0.3
 max-tokens: 200
 n-completions: 20

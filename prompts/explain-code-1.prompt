@@ -6,9 +6,8 @@ prompt: |+
     `(pen-guess-major-mode-set)`<code>
     Summary of the above code:`(comment-line 1)`
 n-generate: 5
-engine: "OpenAI Davinci"
+engine: "OpenAI Codex"
 temperature: 0.3
-max-tokens: 2000
 top-p: 1.0
 best-of: 1
 no-trim-start: off

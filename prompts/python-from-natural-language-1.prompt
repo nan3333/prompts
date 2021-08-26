@@ -1,4 +1,3 @@
----
 title: Python from natural language
 prompt: |
   Generate a python one-liner from a description.
@@ -19,4 +18,4 @@ stop-sequences:
 vars:
 - description
 examples:
-- boysenberries
+- match the date in syslog

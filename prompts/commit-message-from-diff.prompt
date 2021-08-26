@@ -1,0 +1,4 @@
+title: "Commit message from diff"
+doc: "Generate a commit message from a diff"
+is-info: on
+prompt-version: 1

@@ -1,7 +1,7 @@
-title: novelai-genji-python-6b
+title: Genji Python 6B
 include: Generic completion 50 tokens/1
 prompt-version: 1
-lm-command: "hf-complete.sh"
+engine: NovelAI Genji Python 6B
 issues:
 - |
   This is a large model and needs to be connected.
@@ -9,5 +9,3 @@ issues:
   to protect quality of service. Contact us at
   api-inference@huggingface.co so we can
   configure large models for your endpoints.
-# https://api-inference.huggingface.co/docs/python/html/quicktour.html#using-large-models-10-go
-model: NovelAI/genji-python-6B
