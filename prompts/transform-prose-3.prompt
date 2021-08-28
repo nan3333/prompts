@@ -21,8 +21,6 @@ temperature: 0.0
 collation-temperature-stepper: "(mod* (+ <temperature> 0.1) 1)"
 top-p: 1.0
 best-of: 1
-# To short-circuit overly long generations
-max-tokens: "(* 2 prompt-length)"
 cache: on
 stop-sequences:
 - "EOD"
