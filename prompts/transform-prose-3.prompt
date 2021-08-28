@@ -33,6 +33,7 @@ preprocessors:
 - slugify
 var-defaults:
 - "(pen-selected-text)"
+# Consider stripping code by correcting with GPT-3
 postprocessors:
 - sed '$d'
 examples:
