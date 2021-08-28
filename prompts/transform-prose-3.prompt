@@ -4,13 +4,12 @@ prompt-version: 4
 engine: OpenAI Davinci
 subprompts:
 - original-document: |+
-    The original document:
     <document>
 prompt: |+
     <original-document>
     THE END.
 
-    The exact same document but <transformation>:
+    Reword the above text <transformation>:
 xlr-n-generate: 5
 temperature: 0.7
 # On each collated generation, rotate the temperature upwards by 0.1
