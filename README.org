@@ -261,7 +261,7 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
 
   # Number of examples to generate by default from
   # The input to the output of the prompt has an arity of 2 (i.e. conversion)
-  n-generate: 5
+  xlr-n-generate: 5
 
   # Do not remove whitespace from the beginning of the response string
   no-trim-start: off
