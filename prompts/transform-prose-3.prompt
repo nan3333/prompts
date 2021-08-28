@@ -1,20 +1,16 @@
-task: "Transform code"
-doc: "Transform some code given the language and a transformation description"
+task: "Transform prose"
+doc: "Transform some prose given a transformation description"
 prompt-version: 4
-engine: OpenAI Codex
+engine: OpenAI Davinci
 subprompts:
-- original-program: |+
-    # The original <language> program
-
-    cat original_program <<EOD
-    <code>
-    EOD
+- original-document: |+
+    The original document:
+    <document>
 prompt: |+
-    <original-program>
+    <original-document>
+    THE END.
 
-    # The exact same program but <transformation>
-
-    cat edited_program <<EOD
+    The exact same document but <transformation>:
 xlr-n-generate: 5
 temperature: 0.0
 # On each collated generation, rotate the temperature upwards by 0.1
@@ -23,23 +19,20 @@ top-p: 1.0
 best-of: 1
 cache: on
 stop-sequences:
-- "EOD"
+- "THE END."
 vars:
-- code
-- "language"
+- document
 - transformation
 preprocessors:
 - cat
 - slugify
 var-defaults:
 - "(pen-selected-text)"
-- "(pen-detect-language-ask)"
 postprocessors:
 - sed '$d'
 examples:
-- "print(\"Hello world with empathy\")"
-- "Python"
-- "using numpy"
+- "I want to ride my bicycle"
+- "with empathy"
 n-test-runs: 5
 n-collate: 3
 n-completions: 2
