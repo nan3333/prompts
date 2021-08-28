@@ -2,19 +2,13 @@ task: "Transform prose"
 doc: "Transform some prose given a transformation description"
 prompt-version: 4
 engine: OpenAI Davinci
-subprompts:
-- original-document: |+
-    # The original document
-
-    cat original_document <<EOD
-    <document>
-    EOD
 prompt: |+
-    <original-document>
-
-    # The exact same document but <transformation>
-
-    cat edited_document <<EOD
+    Document:
+    ###
+    <document>
+    ###
+    I rewrote the above document <transformation>:
+    ###
 xlr-n-generate: 5
 temperature: 0.7
 # On each collated generation, rotate the temperature upwards by 0.1
@@ -24,7 +18,7 @@ top-p: 1.0
 best-of: 1
 cache: on
 stop-sequences:
-- "EOD"
+- "###"
 vars:
 - document
 - transformation
