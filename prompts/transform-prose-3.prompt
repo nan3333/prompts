@@ -15,6 +15,7 @@ xlr-n-generate: 5
 temperature: 0.7
 # On each collated generation, rotate the temperature upwards by 0.1
 collation-temperature-stepper: "(mod* (+ <temperature> 0.1) 1)"
+max-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 best-of: 1
 cache: on
