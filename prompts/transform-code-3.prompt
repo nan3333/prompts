@@ -41,8 +41,6 @@ examples:
 - "Python"
 - "with comments above each line"
 n-test-runs: 5
-# 3rd collation @ 0.2 temp sometimes makes great results (comments)
-# other times, long programs
-n-collate: 2
+n-collate: 3
 n-completions: 2
 new-document: yes
