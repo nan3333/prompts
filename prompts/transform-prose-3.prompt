@@ -24,7 +24,7 @@ vars:
 - transformation
 preprocessors:
 - cat
-- slugify
+- cat
 var-defaults:
 - "(pen-selected-text)"
 # Consider stripping code by correcting with GPT-3
