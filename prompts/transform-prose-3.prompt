@@ -12,7 +12,7 @@ prompt: |+
 
     The exact same document but <transformation>:
 xlr-n-generate: 5
-temperature: 0.0
+temperature: 0.6
 # On each collated generation, rotate the temperature upwards by 0.1
 collation-temperature-stepper: "(mod* (+ <temperature> 0.1) 1)"
 top-p: 1.0
