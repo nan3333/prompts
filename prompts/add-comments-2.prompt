@@ -1,4 +1,4 @@
-task: "Add comments"
+task: "Add comments to code"
 doc: "Given some code and the language, add comments"
 prompt-version: 3
 engine: OpenAI Codex
