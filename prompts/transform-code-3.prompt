@@ -39,7 +39,7 @@ postprocessors:
 examples:
 - "print(\"Hello world with empathy\")"
 - "Python"
-- "with comments above each line"
+- "using numpy"
 n-test-runs: 5
 n-collate: 3
 n-completions: 2
