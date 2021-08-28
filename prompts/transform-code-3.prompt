@@ -1,22 +1,24 @@
-task: "transpile"
-doc: "Given some code and a target language, transpile into that language"
+task: "Transform code"
+doc: "Transform some code given the language and a transformation description"
 prompt-version: 3
 engine: OpenAI Codex
-prompt: |+
-    # The program in <from language>
+subprompts:
+- original-program: |+
+    # The original <language> program
 
-    cat program_in_<from language> <<EOD
+    cat original_program <<EOD
     <code>
     EOD
+prompt: |+
+    <original-program>
 
-    # The exact same program in <to language>
+    # The exact same program but <transformation>
 
-    cat program_in<to language> <<EOD
+    cat edited_program <<EOD
 xlr-n-generate: 5
 temperature: 0.0
 # On each collated generation, rotate the temperature upwards by 0.1
 collation-temperature-stepper: "(mod* (+ <temperature> 0.1) 1)"
-max-tokens: 1000
 top-p: 1.0
 best-of: 1
 cache: on
@@ -24,11 +26,10 @@ stop-sequences:
 - "EOD"
 vars:
 - code
-- "from language"
-- "to language"
+- "language"
+- transformation
 preprocessors:
 - cat
-- slugify
 - slugify
 var-defaults:
 - "(pen-selected-text)"
@@ -38,11 +39,10 @@ postprocessors:
 examples:
 - "print(\"Hello world with empathy\")"
 - "Python"
-- "Ruby"
+- "with comments above each line"
 n-test-runs: 5
-n-collate: 3
+# 3rd collation @ 0.2 temp sometimes makes great results (comments)
+# other times, long programs
+n-collate: 2
 n-completions: 2
 new-document: yes
-external-related:
-- "https://www.youtube.com/watch?v=Iq3rDFZOorw"
-- "https://semiosis.github.io/posts/the-codex-quine/"

@@ -4,7 +4,7 @@ prompt: |+
     <1>
     I have always wanted <2>.
     This is the story about how I achieved my goals.
-n-generate: 2
+xlr-n-generate: 2
 # preprocessors:
 # - "pf-correct-grammar"
 engine: "OpenAI Davinci"

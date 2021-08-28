@@ -5,7 +5,7 @@ prompt-version: 1
 prompt: |+
     `(pen-guess-major-mode-set)`<code>
     Summary of the above code:`(comment-line 1)`
-n-generate: 5
+xlr-n-generate: 5
 engine: "OpenAI Codex"
 temperature: 0.3
 top-p: 1.0
