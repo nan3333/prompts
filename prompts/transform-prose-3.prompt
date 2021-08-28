@@ -3,7 +3,7 @@ doc: "Transform some prose given a transformation description"
 prompt-version: 4
 engine: OpenAI Davinci
 prompt: |+
-    Document:
+    Rewrite the following document <transformation>:
     ###
     <document>
     ###
