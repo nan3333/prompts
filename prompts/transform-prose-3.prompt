@@ -5,10 +5,10 @@ engine: OpenAI Davinci
 prompt: |+
     Rewrite the following passage <transformation>:
     ###
-    Original passage:
     <document>
     ###
     Updated passage <transformation>:
+    ###
 xlr-n-generate: 5
 temperature: 0.7
 # On each collated generation, rotate the temperature upwards by 0.1
