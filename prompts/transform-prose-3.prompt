@@ -29,7 +29,7 @@ var-defaults:
 - "(pen-selected-text)"
 # Consider stripping code by correcting with GPT-3
 postprocessors:
-- sed '$d'
+- sed '$d' | pen-pretty-paragraph
 examples:
 - "I want to ride my bicycle"
 - "with empathy"
