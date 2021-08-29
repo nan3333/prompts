@@ -39,5 +39,5 @@ examples:
 - "with empathy"
 n-test-runs: 5
 n-collate: 2
-n-completions: 2
+n-completions: 5
 new-document: yes
