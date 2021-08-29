@@ -3,12 +3,12 @@ doc: "Transform some prose given a transformation description"
 prompt-version: 4
 engine: OpenAI Davinci
 prompt: |+
-    Rewrite the following document <transformation>:
+    Rewrite the following passage <transformation>:
     ###
+    Original passage:
     <document>
     ###
-    I rewrote the above document <transformation>:
-    ###
+    Updated passage <transformation>:
 xlr-n-generate: 5
 temperature: 0.7
 # On each collated generation, rotate the temperature upwards by 0.1
