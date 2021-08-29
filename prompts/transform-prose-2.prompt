@@ -7,14 +7,16 @@ issues:
   This is ok and I'm not sure if there is a
   better way, but the LM could be better.
 prompt: |+
-    This is a language exam.
+    This is taken from a language exam in which the student did exactly as the question asked.
 
-    In the following quotes is a passage:
-    "<document>."
+    Original passage: "<document>."
+
+    Question:
+    Without copying anything, re-interpret the above passage and <transformation>.
     
-    See if you can take the above passage and <transformation> whilst retaining the original meaning.
-    Write your answer here:
-    "
+    Convey the message but without using any of the original words.
+
+    Answer: "
 xlr-n-generate: 5
 temperature: 0.7
 # On each collated generation, rotate the temperature upwards by 0.1
@@ -30,8 +32,8 @@ vars:
 - transformation
 preprocessors:
 # - pen-str join ' '
-- pen-str join ' ' | pen-str remove-starting-and-trailing-whitespace | sed "s/\\.\$//" | pen-qne
-- pen-str join ' ' | pen-str remove-starting-and-trailing-whitespace | sed "s/\\.\$//"
+- pen-str tidy-prose-input | sed "s/\\.\$//" | pen-qne
+- pen-str tidy-prose-input | sed "s/\\.\$//"
 var-defaults:
 - "(pen-selected-text)"
 # Consider stripping code by correcting with GPT-3
