@@ -7,16 +7,14 @@ issues:
   This is ok and I'm not sure if there is a
   better way, but the LM could be better.
 prompt: |+
-    This is taken from a language exam in which the student did exactly as the question asked.
+    The following exam has correct answers.
 
-    Original passage: "<document>."
+    In the following quotes is a passage:
+    "<document>".
 
-    Question:
-    Without copying anything, re-interpret the above passage and <transformation>.
-    
-    Convey the message but without using any of the original words.
-
-    Answer: "
+    Take the above passage and "<transformation>" whilst retaining the original meaning.
+    Write the answer here:
+    "
 xlr-n-generate: 5
 temperature: 0.7
 # On each collated generation, rotate the temperature upwards by 0.1
