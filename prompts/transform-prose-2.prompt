@@ -10,10 +10,10 @@ prompt: |+
     This is a language exam.
 
     In the following quotes is a passage:
-    "<document>"
+    "<document>."
     
-    Take the above passage and <transformation> whilst retaining the original meaning.
-    Write the answer here:
+    See if you can take the above passage and <transformation> whilst retaining the original meaning.
+    Write your answer here:
     "
 xlr-n-generate: 5
 temperature: 0.7
@@ -30,8 +30,8 @@ vars:
 - transformation
 preprocessors:
 # - pen-str join ' '
-- pen-str join ' ' | sed "s/\\.\$//" | pen-qne
-- cat
+- pen-str join ' ' | pen-str remove-starting-and-trailing-whitespace | sed "s/\\.\$//" | pen-qne
+- pen-str join ' ' | pen-str remove-starting-and-trailing-whitespace | sed "s/\\.\$//"
 var-defaults:
 - "(pen-selected-text)"
 # Consider stripping code by correcting with GPT-3
