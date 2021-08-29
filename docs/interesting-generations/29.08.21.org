@@ -7,6 +7,11 @@
   "
 #+END_SRC
 
+This output is so humorous and poetic that I
+would like to capture its essence so I can
+generate more like it. Maybe the only way is
+fine-tuning.
+
 #+BEGIN_SRC text -n :async :results verbatim code
   The cursor casts longing looks towards you,
   longing for you to stroke its sensitive touch
