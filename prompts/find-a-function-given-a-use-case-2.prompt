@@ -1,8 +1,10 @@
 task: "Find a function given a use-case"
 doc: "Given a language and a use-case, find a function for that use-case"
 prompt-version: 1
+# Because we are using codex, we can take advantage of leaving
+# a space at the end of the prompt
 prompt: |+
-  This is a list of the names of standard functions for <use case> in <language>:
+  A list of the names of standard functions in <language> to "<use case>":
   - 
 engine: "OpenAI Codex"
 temperature: 0.1
@@ -12,7 +14,7 @@ cache: on
 n-collate: 1
 n-completions: 3
 stop-sequences:
-- "A list"
+- "A list of"
 - "\n\n"
 vars:
 - "language"
@@ -23,7 +25,7 @@ examples:
 - "haskell"
 - "convert from int to double"
 # delete the last
-postprocessor: sed -e 's/^- //' -e '$d' | uniqnosort | grep -oP "^[a-zA-Z_-]+$"
+postprocessor: sed -e 's/^- //' -e '$d' | uniqnosort | sed -e 's/^`//' -e 's/`$//' | grep -oP "^[0-9a-z.A-Z_-]+"
 # The 'end' split patterns are used because
 # we want it to run 'after' teh postprocessor
 end-split-patterns:
