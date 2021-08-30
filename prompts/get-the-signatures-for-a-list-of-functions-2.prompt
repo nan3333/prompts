@@ -2,12 +2,11 @@ task: "Get the signatures for a list of functions"
 doc: "Given a list of functions, get their signatures"
 prompt-version: 1
 prompt: |+
-  This is a list of the names of functions and their signatures in <language>:
+  This is a list of the names of functions and their full signatures in <language>:
   | Function: | <function list>
   | Signature: |
 engine: "OpenAI Codex"
 temperature: 0.1
-max-tokens: 100
 top-p: 1.0
 cache: on
 n-collate: 1
@@ -21,7 +20,7 @@ var-defaults:
 - "(pen-detect-language-ask)"
 preprocessors:
 - cat
-- s join " | "
+- pen-str join " | "
 examples:
 - "haskell"
 - "fromIntegral\nfromRational\nfromReal\nfromRealFrac"
