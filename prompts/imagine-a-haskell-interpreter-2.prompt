@@ -12,7 +12,6 @@ prompt: |+
 inject-gen-start: "\n"
 stop-sequences:
 - "λ>"
-- "> "
 postpostprocessor: pen-str remove-trailing-whitespace | { awk 1; echo -n "λ> "; }
 user-prompt: "^λ> "
 # user-prompt: "^[A-Z][A-Za-z ]*> "
