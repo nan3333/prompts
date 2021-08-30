@@ -5,14 +5,15 @@ subprompts:
 - kickstarter: |+
     GHCi, version 8.10.4: https://www.haskell.org/ghc/  :? for help
     Loaded GHCi configuration from /home/shane/.ghci
-    Prelude> 
+    Prelude> :set prompt "λ> "
+    λ> 
 prompt: |+
     <history><expression>
 inject-gen-start: "\n"
 stop-sequences:
-- "Prelude>"
+- "λ>"
 - "> "
-postpostprocessor: pen-str remove-trailing-whitespace | { awk 1; echo -n "Prelude> "; }
+postpostprocessor: pen-str remove-trailing-whitespace | { awk 1; echo -n "λ> "; }
 user-prompt: "^[A-Z][A-Za-z ]*> "
 vars:
 - history
