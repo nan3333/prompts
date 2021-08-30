@@ -27,7 +27,7 @@ examples:
 # delete the last
 postprocessor: sed -e 's/^- //' -e '$d' | uniqnosort | sed -e 's/^`//' -e 's/`$//' | grep -oP "^[0-9a-z.A-Z_-]+"
 # The 'end' split patterns are used because
-# we want it to run 'after' teh postprocessor
+# we want it to run 'after' the postprocessor
 end-split-patterns:
 - "\n"
 filter: no

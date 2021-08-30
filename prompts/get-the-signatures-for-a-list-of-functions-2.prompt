@@ -27,7 +27,9 @@ examples:
 # delete the last
 postprocessor: sed "s/ | /\\n/g" | sed "s/^\s*//"
 # The 'end' split patterns are used because
-# we want it to run 'after' teh postprocessor
+# we want it to run 'after' the postprocessor
+end-split-patterns:
+- "\n"
 filter: no
 completion: on
 insertion: on
