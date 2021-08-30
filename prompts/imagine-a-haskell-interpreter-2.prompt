@@ -1,15 +1,22 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: haskell
-prompt: |+
+subprompts:
+- kickstarter: |+
     GHCi, version 8.10.4: https://www.haskell.org/ghc/  :? for help
     Loaded GHCi configuration from /home/shane/.ghci
-    Prelude> <expression>
+    Prelude> 
+prompt: |+
+    <history><expression>
+inject-gen-start: "\n"
 stop-sequences:
 - "Prelude>"
 - "> "
 user-prompt: "^[A-Z][A-Za-z ]*> "
 vars:
-- "expression"
+- history
+- expression
+var-defaults:
+- kickstarter
 examples:
 - "5 + 5"
