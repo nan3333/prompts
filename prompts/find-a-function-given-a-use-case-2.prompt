@@ -1,0 +1,33 @@
+task: "Find a function given a use-case"
+doc: "Given a language and a use-case, find a function for that use-case"
+prompt-version: 1
+prompt: |+
+  This is a list of the names of standard functions for <use case> in <language>:
+  - 
+engine: "OpenAI Codex"
+temperature: 0.1
+max-tokens: 50
+top-p: 1.0
+cache: on
+n-collate: 1
+n-completions: 3
+stop-sequences:
+- "A list"
+- "\n\n"
+vars:
+- "language"
+- "use case"
+var-defaults:
+- "(pen-detect-language-ask)"
+examples:
+- "haskell"
+- "convert from int to double"
+# delete the last
+postprocessor: sed -e 's/^- //' -e '$d' | uniqnosort | grep -oP "^[a-zA-Z_-]+$"
+# The 'end' split patterns are used because
+# we want it to run 'after' teh postprocessor
+end-split-patterns:
+- "\n"
+filter: no
+completion: on
+insertion: on

@@ -1,0 +1,34 @@
+task: "Get the signatures for a list of functions"
+doc: "Given a list of functions, get their signatures"
+prompt-version: 1
+prompt: |+
+  This is a list of the names of functions and their signatures in <language>:
+  | Function: | <function list>
+  | Signature: |
+engine: "OpenAI Codex"
+temperature: 0.1
+max-tokens: 100
+top-p: 1.0
+cache: on
+n-collate: 1
+n-completions: 3
+stop-sequences:
+- "\n"
+vars:
+- "language"
+- "function list"
+var-defaults:
+- "(pen-detect-language-ask)"
+preprocessors:
+- cat
+- s join " | "
+examples:
+- "haskell"
+- "convert from int to double"
+# delete the last
+postprocessor: sed "s/ | /\\n/g"
+# The 'end' split patterns are used because
+# we want it to run 'after' teh postprocessor
+filter: no
+completion: on
+insertion: on
