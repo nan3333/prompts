@@ -13,7 +13,7 @@ subprompts:
      _/ |\__'_|_|_|\__'_|  |  Ubuntu ⛬  julia/1.4.1+dfsg-1
     |__/                   |
 
-    julia> <expression>
+    julia> 
 prompt: |+
     <history><expression>
 stop-sequences:
