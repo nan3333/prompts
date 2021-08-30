@@ -24,9 +24,9 @@ preprocessors:
 - s join " | "
 examples:
 - "haskell"
-- "convert from int to double"
+- "fromIntegral\nfromRational\nfromReal\nfromRealFrac"
 # delete the last
-postprocessor: sed "s/ | /\\n/g"
+postprocessor: sed "s/ | /\\n/g" | sed "s/^\s*//"
 # The 'end' split patterns are used because
 # we want it to run 'after' teh postprocessor
 filter: no
