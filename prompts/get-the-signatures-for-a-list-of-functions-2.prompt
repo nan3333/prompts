@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
   This is a table of standard functions and their full signatures (including argument types) in <language>:
   | Functions: | <function list>
-  | Full signature (function name with arguments): |
+  | Signatures (function names with arguments): |
 engine: "OpenAI Codex"
 temperature: 0.1
 top-p: 1.0

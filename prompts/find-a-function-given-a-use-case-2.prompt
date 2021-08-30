@@ -4,7 +4,7 @@ prompt-version: 1
 # Because we are using codex, we can take advantage of leaving
 # a space at the end of the prompt
 prompt: |+
-  A list of the names of standard functions in <language> to "<use case>":
+  Here is a list of the names of standard functions in <language> regarding "<use case>":
   - 
 engine: "OpenAI Codex"
 temperature: 0.1
