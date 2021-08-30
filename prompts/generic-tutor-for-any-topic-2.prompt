@@ -1,4 +1,6 @@
 title: Generic tutor for any topic
+issues:
+- It's not as accurate as asktutor/3
 prompt-version: 1
 prompt: |
   This is a conversation between a human and a brilliant AI.
