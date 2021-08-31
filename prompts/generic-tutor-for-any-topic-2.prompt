@@ -30,4 +30,4 @@ examples:
 - What does BPE mean?
 conversation: true
 conversation-pretext-generator: human-conversation
-postprocessor: pen-pretty-paragraph
+postprocessor: sed "s/^AI: //" | pen-pretty-paragraph
