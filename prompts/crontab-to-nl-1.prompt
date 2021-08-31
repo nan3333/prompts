@@ -1,4 +1,4 @@
-title: crontab translator
+title: crontab to nl
 prompt-version: 5
 engine: OpenAI Codex
 prompt: |
