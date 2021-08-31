@@ -8,7 +8,7 @@ prompt: |+
 xlr-n-generate: 5
 engine: "OpenAI Codex"
 temperature: 0.3
-max-tokens: 1000
+max-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 best-of: 1
 no-trim-start: off
