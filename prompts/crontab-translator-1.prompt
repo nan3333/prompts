@@ -1,4 +1,3 @@
----
 title: crontab translator
 prompt-version: 5
 engine: OpenAI Codex
@@ -7,8 +6,6 @@ prompt: |
   52 6	1 * * # At 06:52 on day-of-month 1.
   5 10	31 5 0 # At 10:05 on day-of-month 31 and on Sunday in May.
   <1> # 
-issues:
-- Struggles with the latter columns.
 temperature: 0.5
 max-tokens: 60
 top-p: 1
