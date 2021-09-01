@@ -12,17 +12,14 @@ temperature: 0.2
 max-tokens: 60
 top-p: 1.0
 cache: on
+stop-sequences:
+- "\n"
 vars:
 - "line of code"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
 examples:
-- "boysenberries"
-- "strawberries"
+- "        close cmd, \"to\""
 preprocessors:
 - "cat"
-- "cat"
-filter: no
-completion: on
-insertion: on
+filter: yes
+completion: off
+insertion: off
