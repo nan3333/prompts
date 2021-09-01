@@ -1,0 +1,34 @@
+task: "Imagine a linter"
+doc: "Given a line of code, check it for errors, or say 'correct'"
+prompt-version: 1
+prompt: |+
+
+lm-command: "openai-complete.sh"
+engine: "OpenAI Davinci"
+temperature: 0.8
+max-tokens: 60
+top-p: 1.0
+cache: on
+vars:
+- "former"
+- "latter"
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+examples:
+- "boysenberries"
+- "strawberries"
+preprocessors:
+- "sed 's/^/- /"
+- "cat"
+filter: no
+completion: on
+insertion: on
+external-related:
+- "https://paraphrasing-tool.com/"
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
+
+if NR >= window_size && (effective_nr % step == 0) {
+^ syntax error

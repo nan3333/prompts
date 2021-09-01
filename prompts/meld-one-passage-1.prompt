@@ -26,7 +26,6 @@ prompt: |+
   """
   Correctly flowing passage:
   """
-lm-command: "openai-complete.sh"
 engine: "OpenAI Codex"
 temperature: 0.3
 max-tokens: "(* 2 prompt-length)"
