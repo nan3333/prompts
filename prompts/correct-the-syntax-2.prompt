@@ -6,10 +6,14 @@ prompt: |+
   The following awk has incorrect syntax:
   """
   if NR >= window_size && (effective_nr % step == 0) {
+    $0 = "" + "my string";
+  }
   """
   The same program but with corrected syntax:
   """
   if (NR >= window_size && (effective_nr % step == 0)) {
+    $0 = "" "my string";
+  }
   """
   The following <language> has incorrect syntax:
   """
@@ -20,7 +24,7 @@ prompt: |+
 engine: "OpenAI Codex"
 stop-sequences:
 - "\"\"\""
-temperature: 0.5
+temperature: 0.3
 max-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 cache: on
@@ -53,7 +57,7 @@ examples:
       print; system("");
   }
 preprocessors:
-- "sed 's/^/- /"
+- "cat"
 - "cat"
 filter: no
 completion: on

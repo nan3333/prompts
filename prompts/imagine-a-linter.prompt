@@ -19,7 +19,7 @@ examples:
 - "boysenberries"
 - "strawberries"
 preprocessors:
-- "sed 's/^/- /"
+- "cat"
 - "cat"
 filter: no
 completion: on
