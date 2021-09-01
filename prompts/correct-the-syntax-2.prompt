@@ -59,6 +59,6 @@ examples:
 preprocessors:
 - "cat"
 - "cat"
-filter: no
-completion: on
-insertion: on
+filter: on
+completion: off
+insertion: off

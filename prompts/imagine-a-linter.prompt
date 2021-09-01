@@ -1,17 +1,19 @@
-task: "Imagine a linter"
-doc: "Given a line of code, check it for errors, or say 'correct'"
+task: "Imagine an awk linter"
+doc: "Given a line of awk code, check it for errors"
 prompt-version: 1
 prompt: |+
-
-lm-command: "openai-complete.sh"
-engine: "OpenAI Davinci"
-temperature: 0.8
+    awk -f program.awk
+    awk: /path/to/file:1: if NR >= window_size && (effective_nr % step == 0) {
+    awk: /path/to/file:1: ^ syntax error
+    awk: /path/to/file:10: <line of code>
+    awk: /path/to/file:10: 
+engine: "OpenAI Codex"
+temperature: 0.2
 max-tokens: 60
 top-p: 1.0
 cache: on
 vars:
-- "former"
-- "latter"
+- "line of code"
 var-defaults:
 - "(detect-language)"
 - "(pen-preceding-text)"
@@ -24,11 +26,3 @@ preprocessors:
 filter: no
 completion: on
 insertion: on
-external-related:
-- "https://paraphrasing-tool.com/"
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
-
-if NR >= window_size && (effective_nr % step == 0) {
-^ syntax error
