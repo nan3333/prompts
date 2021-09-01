@@ -8,6 +8,20 @@ prompt: |+
   """
   Broken passage:
   """
+  According to the BBC, they are unique in
+  that their content, they are unique in that
+  their content isn't directly tethered to the
+  problems of a real individual or identity.
+  """
+  Correctly flowing passage:
+  """
+  According to the BBC, they are unique in
+  that their content isn't directly tethered
+  to the problems of a real individual or
+  identity.
+  """
+  Broken passage:
+  """
   <first passage>
   <second passage>
   """
