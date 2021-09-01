@@ -11,7 +11,7 @@ prompt: |+
 
     # The exact same program in <to language>
 
-    cat program_in<to language> <<EOD
+    cat program_in_<to language> <<EOD
 xlr-n-generate: 5
 temperature: 0.0
 # On each collated generation, rotate the temperature upwards by 0.1
