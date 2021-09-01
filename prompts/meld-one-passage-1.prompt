@@ -45,6 +45,6 @@ examples:
     designed by online artists.[3] VTubers are considered to have great appeal
 preprocessors:
 - "cat"
-filter: no
-completion: on
-insertion: on
+filter: on
+completion: off
+insertion: off
