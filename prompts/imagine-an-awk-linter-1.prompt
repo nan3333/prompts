@@ -25,6 +25,7 @@ examples:
 - "        close cmd, \"to\""
 preprocessors:
 - "cat"
+postprocessor: grep -v -P "^6"
 filter: yes
 completion: off
 insertion: off
