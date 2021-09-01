@@ -5,11 +5,15 @@ prompt: |+
     awk -f program.awk
     awk: /path/to/file:1: if NR >= window_size && (effective_nr % step == 0) {
     awk: /path/to/file:1: ^ syntax error
-    awk: /path/to/file:10: <line of code>
-    awk: /path/to/file:10: 
+    awk: /path/to/file:2:   for (i=1; i<window_size; i++) {
+    awk: /path/to/file:3:     s = s memory[i] RS
+    awk: /path/to/file:4:   }
+    awk: /path/to/file:5: <line of code>
+    awk: /path/to/file:
 engine: "OpenAI Codex"
 temperature: 0.2
 max-tokens: 60
+n-completions: 10
 top-p: 1.0
 cache: on
 stop-sequences:
