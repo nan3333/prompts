@@ -1,17 +1,19 @@
 task: "Imagine an awk linter"
 doc: "Given a line of awk code, check it for errors"
+issues:
+- This doesn't work very well at all.
 prompt-version: 1
 prompt: |+
-    awk -f program.awk
-    awk: /path/to/file:1: if NR >= window_size && (effective_nr % step == 0) {
-    awk: /path/to/file:1: ^ syntax error
-    awk: /path/to/file:2:   for (i=1; i<window_size; i++) {
-    awk: /path/to/file:3:     s = s memory[i] RS
-    awk: /path/to/file:4:   }
-    awk: /path/to/file:5: <line of code>
-    awk: /path/to/file:
+    awk -f syntax-test.awk
+    awk: syntax-test.awk:1:   x = f(
+    awk: syntax-test.awk:1:         ^ unexpected newline or end of string
+    awk: syntax-test.awk:2:   for (i=1; i<window_size; i++) {
+    awk: syntax-test.awk:3:     s = s memory[i] RS
+    awk: syntax-test.awk:4:   }
+    awk: syntax-test.awk:5:   <line of code>
+    awk: syntax-test.awk:
 engine: "OpenAI Codex"
-temperature: 0.2
+temperature: 0.0
 max-tokens: 60
 n-completions: 10
 no-uniq-results: on
@@ -22,7 +24,7 @@ stop-sequences:
 vars:
 - "line of code"
 examples:
-- "        close cmd, \"to\""
+- "close cmd, \"to\""
 preprocessors:
 - "cat"
 postprocessor: "grep -v -P \"^6\" | sed \"s/^5: //\""
