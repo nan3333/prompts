@@ -1,0 +1,51 @@
+task: "meld one passage"
+doc: "Given a fragmented passage, meld it internally"
+info: |-
+  Don't ask me how this works better than Davinci, it just does.
+  But """ is required instead of \#\#\#.
+prompt-version: 1
+prompt: |+
+  """
+  Broken passage:
+  """
+  According to the BBC, they are unique in
+  that their content, they are unique in that
+  their content isn't directly tethered to the
+  problems of a real individual or identity.
+  """
+  Correctly flowing passage:
+  """
+  According to the BBC, they are unique in
+  that their content isn't directly tethered
+  to the problems of a real individual or
+  identity.
+  """
+  Broken passage:
+  """
+  <broken passage>
+  """
+  Correctly flowing passage:
+  """
+lm-command: "openai-complete.sh"
+engine: "OpenAI Codex"
+temperature: 0.3
+max-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+cache: on
+stop-sequences:
+- "\"\"\""
+vars:
+- "broken passage"
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- |-
+    Virtual YouTubers, or VTubers, are online entertainers, who are typically
+    Japanese-speaking YouTubers or live streamers. Japanese-speaking YouTubers or live streamers.
+    They use avatars created with programs such as Live2D, portraying characters
+    designed by online artists.[3] VTubers are considered to have great appeal
+preprocessors:
+- "cat"
+filter: no
+completion: on
+insertion: on

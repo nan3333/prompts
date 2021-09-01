@@ -1,0 +1,45 @@
+task: "meld two passages"
+doc: "Given two consecutive passages, meld them"
+prompt-version: 1
+prompt: |+
+  ###
+  Broken passage:
+  ###
+  <first passage>
+  <second passage>
+  ###
+  Correctly flowing passage:
+  ###
+  <first passage>
+lm-command: "openai-complete.sh"
+engine: "OpenAI Davinci"
+temperature: 0.3
+max-tokens: 1000
+top-p: 1.0
+cache: on
+stop-sequences:
+- "###"
+vars:
+- "first passage"
+- "second passage"
+var-defaults:
+- "(pen-selected-text)"
+examples:
+- |-
+    Virtual YouTubers, or VTubers, are online entertainers, who are typically
+    Japanese-speaking YouTubers or live streamers. They use avatars created with
+    programs such as Live2D, portraying characters designed by online artists.[3]
+    VTubers are considered to have great appeal
+- |-
+    VTubers are considered to have great appeal in that they are not bound by
+    physical limitations and many of them engage in activities that are
+    unconstrained by real-world sex and gender.[4] VTubers are associated with
+    Japanese popular culture and aesthetics, such as anime and manga,[4] and moe
+    anthropomorphism with human or non-human traits.[4] Some VTubers are
+    anthropomorphic, non-human characters such as animals.[5]
+preprocessors:
+- "cat"
+- "cat"
+filter: no
+completion: on
+insertion: on
