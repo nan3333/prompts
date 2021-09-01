@@ -269,6 +269,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Do not remove whitespace from the end of the response string
   no-trim-end: off
 
+  # This means that the results will not be uniqued. This is useful for getting statistics.
+  no-uniq-results: on
+
   # Currently the OpenAI API can only accept one stop-sequence.
   # So only the first one will be used by the API,
   # but the completer script can make use the others.
