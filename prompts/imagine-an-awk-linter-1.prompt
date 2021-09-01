@@ -14,6 +14,7 @@ engine: "OpenAI Codex"
 temperature: 0.2
 max-tokens: 60
 n-completions: 10
+no-uniq-results: on
 top-p: 1.0
 cache: on
 stop-sequences:
