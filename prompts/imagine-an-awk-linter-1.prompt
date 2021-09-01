@@ -25,7 +25,7 @@ examples:
 - "        close cmd, \"to\""
 preprocessors:
 - "cat"
-postprocessor: grep -v -P "^6" | sed "s/^5: //"
+postprocessor: "grep -v -P \"^6\" | sed \"s/^5: //\""
 filter: yes
 completion: off
 insertion: off
