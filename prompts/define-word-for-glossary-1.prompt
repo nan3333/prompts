@@ -23,6 +23,8 @@ vars:
 examples:
 - boysenberry
 completion: true
+preprocessors:
+- pen-str onelineify
 postprocessor: sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
 prettifier: pen-pretty-paragraph
 var-defaults:
