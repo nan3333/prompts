@@ -1,7 +1,7 @@
 task: "meld one passage"
 doc: "Given a fragmented passage, meld it internally"
 info: |-
-  Don't ask me how this works better than Davinci, it just does.
+  Don't ask me how Codex works better than Davinci, it just does.
   But """ is required instead of \#\#\#.
 prompt-version: 1
 prompt: |+

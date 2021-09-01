@@ -1,24 +1,27 @@
 task: "meld two passages"
 doc: "Given two consecutive passages, meld them"
+info: |-
+  Don't ask me how Codex works better than Davinci, it just does.
+  But """ is required instead of \#\#\#.
 prompt-version: 1
 prompt: |+
-  ###
+  """
   Broken passage:
-  ###
+  """
   <first passage>
   <second passage>
-  ###
+  """
   Correctly flowing passage:
-  ###
+  """
   <first passage>
 lm-command: "openai-complete.sh"
-engine: "OpenAI Davinci"
+engine: "OpenAI Codex"
 temperature: 0.3
-max-tokens: 1000
+max-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 cache: on
 stop-sequences:
-- "###"
+- "\"\"\""
 vars:
 - "first passage"
 - "second passage"
