@@ -3,33 +3,48 @@ doc: "Generate a commit message from a diff"
 is-info: on
 prompt-version: 1
 prompt: |+
-    commit fff8fa77570ee0d9bf561aa83d36e641516307c0
-    Author: Tom Dörr <tom.doerr@tum.de>
-    Date:   Tue Aug 31 21:56:55 2021 +0200
+    cat git-diff.txt <<EOD
+    git diff HEAD\^!
+    <diff>
+    EOD
 
-    Reduce max output tokens
+    git log HEAD\^! --oneline
+    5ebcee4 (HEAD -> master) 
 engine: "OpenAI Codex"
 temperature: 0.8
 max-tokens: 60
+n-completions: 10
 top-p: 1.0
 cache: on
 vars:
-- "former"
-- "latter"
+- "diff"
+preprocessors:
+- "sed 's/^/> /'"
 var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "(pen-selected-text)"
+stop-sequences:
+- "\n"
+# validator: "wc -l | grep -qP '^1$'"
 examples:
-- "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /"
-- "cat"
-filter: no
-completion: on
-insertion: on
-external-related:
-- "https://paraphrasing-tool.com/"
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
+- |+
+    diff --git a/prompts/randomize-private-info.prompt b/prompts/randomize-private-info.prompt
+    index d4a21d1..4a4cc74 100644
+    --- a/prompts/randomize-private-info.prompt
+    +++ b/prompts/randomize-private-info.prompt
+    @@ -21,10 +21,10 @@ prompt: |+
+         Date:   Sun Apr 4 13:26:51 2021 +0200
+         EOD
+     
+    -    # The exact same data file but with different private details
+    -    cat data-fake.txt <<EOD
+    +    # The exact same data file but with different and fake private details
+    +    cat fake-data.txt <<EOD
+     engine: "OpenAI Codex"
+    -temperature: 0.8
+    +temperature: 0.9
+     max-tokens: "(* 2 prompt-length)"
+     stop-sequences:
+     - "EOD"
+filter: on
+completion: off
+insertion: off
