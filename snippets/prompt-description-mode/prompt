@@ -4,15 +4,13 @@
 # key: pr
 # expand-env: ((yas-indent-line 'fixed))
 # --
-in-development: yes
 task: "${1:title}"
 doc: "Given ... ${1:task}"
 prompt-version: 1
 prompt: |+
 ${2:`(pen-snc "pen-indent 4" yas-selected-text)`$0}
-lm-command: "openai-complete.sh"
-engine: "OpenAI Davinci"
-temperature: 0.8
+engine: "OpenAI Codex"
+temperature: 0.3
 max-tokens: 60
 top-p: 1.0
 cache: on
@@ -26,13 +24,11 @@ examples:
 - "boysenberries"
 - "strawberries"
 preprocessors:
-- "sed 's/^/- /"
+- "sed 's/^/- /'"
 - "cat"
-filter: no
-completion: on
-insertion: on
-external-related:
-- "https://paraphrasing-tool.com/"
+filter: on
+completion: off
+insertion: off
 preprocessors:
 - pen-str onelineify
 postprocessor: pen-str unonelineify | pen-pretty-paragraph
