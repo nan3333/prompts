@@ -9,6 +9,7 @@ prompt: |+
     EOD
 
     # The exact same data file but with different private details
+    # Randomly generated name: Nicole Hodge
     cat data-fake.txt <<EOD
     Author: Nicole Hodge <loxaj24209@mom2kid.com>
     Date:   Sun Apr 4 13:26:51 2021 +0200
@@ -23,7 +24,7 @@ prompt: |+
     # The exact same data file but with different private details
     cat data-fake.txt <<EOD
 engine: "OpenAI Codex"
-temperature: 0.5
+temperature: 0.8
 max-tokens: "(* 2 prompt-length)"
 stop-sequences:
 - "EOD"
