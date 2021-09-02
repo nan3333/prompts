@@ -4,27 +4,24 @@ prompt-version: 1
 prompt: |+
     # A file with sensitive information
     cat data.txt <<EOD
-    Author: Mateusz Burzyński <mateuszburzynski@gmail.com>
-    Date:   Sun Apr 4 13:26:51 2021 +0200
+    Here is my name and email: Liza Honyeza-Fresser, liza-honyeza-fresser@gmail.com.
     EOD
 
     # The exact same data file but with different private details
     # Randomly generated name: Nicole Hodge
     cat data-fake.txt <<EOD
-    Author: Nicole Hodge <loxaj24209@mom2kid.com>
-    Date:   Sun Apr 4 13:26:51 2021 +0200
+    Here is my name and email: Nicole Hodge, loxaj24209@mom2kid.com.
     EOD
 
     # A file with sensitive information
     cat data.txt <<EOD
-    Author: Mateusz Burzyński <mateuszburzynski@gmail.com>
-    Date:   Sun Apr 4 13:26:51 2021 +0200
+    <data>
     EOD
 
     # The exact same data file but with different and fake private details
     cat fake-data.txt <<EOD
 engine: "OpenAI Codex"
-temperature: 0.9
+temperature: 0.5
 max-tokens: "(* 2 prompt-length)"
 stop-sequences:
 - "EOD"
@@ -33,7 +30,7 @@ cache: on
 vars:
 - "data"
 examples:
-- "Mateusz Burzyński <mateuszburzynski@gmail.com>"
+- "Liza Honyeza-Fresser, liza-honyeza-fresser@gmail.com"
 external-related:
 - "https://www.name-generator.org.uk/"
 - "https://temp-mail.org/en/"
