@@ -21,10 +21,10 @@ prompt: |+
     Date:   Sun Apr 4 13:26:51 2021 +0200
     EOD
 
-    # The exact same data file but with different private details
-    cat data-fake.txt <<EOD
+    # The exact same data file but with different and fake private details
+    cat fake-data.txt <<EOD
 engine: "OpenAI Codex"
-temperature: 0.8
+temperature: 0.9
 max-tokens: "(* 2 prompt-length)"
 stop-sequences:
 - "EOD"
