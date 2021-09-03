@@ -15,7 +15,7 @@ stop-sequences:
 vars:
 - "code"
 - "expression"
-validator: "grep -v '(:return'"
+validator: "grep -qv '(:return'"
 examples:
 - |-
     (defun double-number (x)
