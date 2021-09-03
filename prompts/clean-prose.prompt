@@ -1,6 +1,8 @@
 task: "clean prose"
 doc: "Given some prose, clean it to remove things like references, and annotations"
 prompt-version: 1
+issues:
+- "Appears to keep the numerical annotations"
 prompt: |+
   Original passage:
   ###
