@@ -24,6 +24,7 @@ var-defaults:
 - "(pen-selected-text)"
 stop-sequences:
 - "\n"
+validator: "grep -qvP '(Initial commit)'"
 # validator: "wc -l | grep -qP '^1$'"
 examples:
 - |+
