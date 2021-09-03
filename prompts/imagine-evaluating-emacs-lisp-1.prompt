@@ -11,7 +11,7 @@ max-generated-tokens: 60
 top-p: 1.0
 cache: on
 stop-sequences:
-- "\n\n"
+- "\n"
 vars:
 - "code"
 - "expression"
