@@ -1,0 +1,17 @@
+task: "imagine evaluating emacs lisp"
+doc: "Given some elisp return the imagined result"
+prompt-version: 1
+prompt: |+
+
+engine: "OpenAI Codex"
+temperature: 0.3
+max-tokens: 60
+top-p: 1.0
+cache: on
+vars:
+- "code"
+examples:
+- "(+ 5 5)"
+filter: on
+completion: off
+insertion: off
