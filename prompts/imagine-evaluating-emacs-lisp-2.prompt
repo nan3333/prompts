@@ -3,7 +3,7 @@ doc: "Given some elisp return the imagined result"
 prompt-version: 1
 prompt: |+
   <code>
-  (message (pp-to-string <expression>))
+  (message (eval <expression>))
   --> 
 engine: "OpenAI Codex"
 temperature: 0.2
@@ -15,6 +15,7 @@ stop-sequences:
 vars:
 - "code"
 - "expression"
+validator: "grep -v '(:return'"
 examples:
 - |-
     (defun double-number (x)
