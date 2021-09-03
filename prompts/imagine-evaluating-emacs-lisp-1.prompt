@@ -2,16 +2,24 @@ task: "imagine evaluating emacs lisp"
 doc: "Given some elisp return the imagined result"
 prompt-version: 1
 prompt: |+
-
+  <code>
+  (message (pp-to-string <expression>))
+  --> 
 engine: "OpenAI Codex"
-temperature: 0.3
-max-tokens: 60
+temperature: 0.2
+max-generated-tokens: 60
 top-p: 1.0
 cache: on
+stop-sequences:
+- "\n\n"
 vars:
 - "code"
+- "expression"
 examples:
-- "(+ 5 5)"
+- |-
+    (defun double-number (x)
+      (x * x))
+- "(double-number 5)"
 filter: on
 completion: off
 insertion: off
