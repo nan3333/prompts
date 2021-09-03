@@ -12,7 +12,7 @@ prompt: |
   # <1>
 inject-gen-start: "\n"
 temperature: 0.5
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 1
 stop-sequences:
 - "\n"

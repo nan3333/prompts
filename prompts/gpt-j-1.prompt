@@ -2,4 +2,4 @@ title: gpt-j
 include: Generic completion 50 tokens/1
 prompt-version: 1
 engine: AIx GPT-J-6B
-max-tokens: 100
+max-generated-tokens: 100

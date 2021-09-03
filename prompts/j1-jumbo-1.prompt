@@ -2,4 +2,4 @@ title: j1-jumbo
 include: Generic completion 50 tokens/1
 prompt-version: 1
 engine: AI21 J1-Jumbo
-max-tokens: 100
+max-generated-tokens: 100

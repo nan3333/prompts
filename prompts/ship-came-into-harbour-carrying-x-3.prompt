@@ -20,7 +20,7 @@ prompt: |
   <1> <2> starting with <3>
 engine: OpenAI Davinci
 temperature: 0.7
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 1
 stop-sequences:
 - "###"

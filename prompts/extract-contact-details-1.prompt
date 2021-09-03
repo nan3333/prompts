@@ -8,7 +8,7 @@ prompt: |
   Name and address:
 model: davinci-instruct-beta
 temperature: 0
-max-tokens: 64
+max-generated-tokens: 64
 top-p: 1
 stop-sequences:
 - "\n\n"

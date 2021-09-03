@@ -8,7 +8,7 @@ prompt: |+
 prompt-filter: "sed -z 's/\\s\\+$//'"
 engine: "OpenAI Davinci"
 temperature: 0.8
-max-tokens: 1000
+max-generated-tokens: 1000
 top-p: 1.0
 best-of: 1
 no-trim-start: off

@@ -29,7 +29,7 @@ prompt: |+
 prompt-filter: "sed -z 's/\\s\\+$//'"
 engine: "OpenAI Davinci"
 temperature: 0.8
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 1.0
 cache: on
 best-of: 2

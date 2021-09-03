@@ -9,7 +9,7 @@ lm-command: "openai-complete.sh"
 model: "davinci-instruct-beta"
 temperature: 0.8
 # Tokens isn't the number of words, so this mechanism needs improvement
-max-tokens: <2>
+max-generated-tokens: <2>
 top-p: 1.0
 best-of: 1
 no-trim-start: off

@@ -44,7 +44,7 @@ prompt: |
   -
 engine: OpenAI Davinci
 temperature: 0.8
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 1
 best-of: 2
 stop-sequences:

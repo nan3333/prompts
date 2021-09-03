@@ -8,7 +8,7 @@ engine: OpenAI Davinci
 #lm-command: "openai-complete.sh"
 #model: "davinci-instruct-beta"
 temperature: 0.8
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 1.0
 best-of: 1
 no-trim-start: off

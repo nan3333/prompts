@@ -29,7 +29,7 @@ prompt: |+
     Ruby:
 engine: OpenAI Davinci
 temperature: 0.3
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 1
 stop-sequences:
 - "\n\n"

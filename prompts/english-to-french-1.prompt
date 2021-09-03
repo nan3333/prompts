@@ -17,7 +17,7 @@ prompt: |+
   French:
 engine: OpenAI Davinci
 temperature: 0.5
-max-tokens: 100
+max-generated-tokens: 100
 top-p: 1
 filter: true
 stop-sequences:

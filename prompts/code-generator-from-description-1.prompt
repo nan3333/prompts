@@ -4,7 +4,7 @@ prompt-version: 1
 engine: OpenAI Davinci
 # model: GPT-J-6B
 temperature: 0.3
-max-tokens: 200
+max-generated-tokens: 200
 stop-sequences:
 - "###"
 top-p: 1

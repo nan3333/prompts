@@ -11,7 +11,7 @@ prompt: "Neural networks are like genetic algorithms in that both are systems th
   <2> in that\n"
 engine: OpenAI Davinci
 temperature: 0.7
-max-tokens: 100
+max-generated-tokens: 100
 top-p: 1
 stop-sequences:
 - "\n\n"

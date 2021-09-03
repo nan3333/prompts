@@ -44,7 +44,7 @@ prompt: |
   “Did you hear the story about the farmer and the horse?” asked Tom in passing.
 engine: OpenAI Davinci
 temperature: 0.8
-max-tokens: 1000
+max-generated-tokens: 1000
 top-p: 1
 stop-sequences:
 - "\n\n"

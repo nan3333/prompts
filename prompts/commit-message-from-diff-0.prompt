@@ -12,7 +12,7 @@ prompt: |+
     5ebcee4 (HEAD -> master) 
 engine: "OpenAI Codex"
 temperature: 0.8
-max-tokens: 60
+max-generated-tokens: 60
 n-completions: 10
 top-p: 1.0
 cache: on

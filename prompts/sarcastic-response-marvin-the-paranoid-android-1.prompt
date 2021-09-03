@@ -15,7 +15,7 @@ prompt: |
   Marv:
 engine: OpenAI Davinci
 temperature: 0.3
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 0.3
 stop-sequences:
 - "\n"

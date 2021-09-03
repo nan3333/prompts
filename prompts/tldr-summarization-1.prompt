@@ -10,7 +10,7 @@ completion: true
 engine: OpenAI Davinci
 temperature: 0.3
 # This allowance is really for the input
-max-tokens: 400
+max-generated-tokens: 400
 top-p: 1
 stop-sequences:
 - "\n\n"

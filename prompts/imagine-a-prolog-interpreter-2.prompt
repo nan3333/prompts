@@ -23,7 +23,7 @@ vars:
 - expression
 var-defaults:
 - kickstarter
-max-tokens: 200
+max-generated-tokens: 200
 # sed wont even run if its input is empty so
 # the postpostprocessor: cant ensure a prompt.
 # But we cant force it.

@@ -3,7 +3,7 @@ prompt-version: 1
 engine: FB Bart Large CNN
 mode: summarize
 temperature: 0.6
-max-tokens: 500
+max-generated-tokens: 500
 top-p: 1
 prompt: "<1>"
 stop-sequences:

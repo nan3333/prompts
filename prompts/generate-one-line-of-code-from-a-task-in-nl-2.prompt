@@ -10,7 +10,7 @@ engine: AI21 J1-Jumbo
 stop-sequences:
 - "Q:"
 temperature: 0.0
-max-tokens: 40
+max-generated-tokens: 40
 top-p: 1.0
 cache: on
 vars:

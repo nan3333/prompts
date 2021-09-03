@@ -17,7 +17,7 @@ prompt: |+
 lm-command: "openai-complete.sh"
 engine: "OpenAI Davinci"
 temperature: 0.4
-max-tokens: 60
+max-generated-tokens: 60
 top-p: 1.0
 cache: on
 stop-sequences:
