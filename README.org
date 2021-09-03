@@ -61,7 +61,7 @@ This is a minimal =.prompt= file that should work.
   prompt-version: 1
   prompt: "Complete this sentence"
   temperature: 0.8
-  max-tokens: 60
+  max-generated-tokens: 60
 #+END_SRC
 
 ** Building prompt functions
@@ -74,7 +74,7 @@ This is a minimal =.prompt= file that should work.
 + Suggested fields to consider specifying:
   - =temperature: 0.9=
     - This turns the dial on how deterministic the generations are.
-  - =max-tokens: 60=
+  - =max-generated-tokens: 60=
     - This will prevent the language model from generating beyond this number of tokens.
   - =stop-sequences=
     - This is a list of stop sequences. The first one one specified here is passed to the language model
@@ -246,8 +246,11 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # Use 0.3-0.8
   temperature: 0.8
 
-  # This is the max tokens requested from the LM
+  # This is the max total tokens sent+requested from the LM inluding prompt+generated text
   max-tokens: 60
+
+  # This is the max tokens requested to be generated from the LM
+  max-generated-tokens: 60
 
   # This number may go to the API if available.
   # See top p sampling in the pen.el glossary.
