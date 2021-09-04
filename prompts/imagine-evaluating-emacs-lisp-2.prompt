@@ -2,7 +2,7 @@ task: "imagine evaluating emacs lisp"
 doc: "Given some elisp return the imagined result"
 prompt-version: 1
 prompt: |+
-  <code>
+  <code-or-comment>
   (message (eval <expression>))
   --> 
 engine: "OpenAI Codex"
@@ -13,7 +13,7 @@ cache: on
 stop-sequences:
 - "\n"
 vars:
-- "code"
+- "code or comment"
 - "expression"
 validator: "grep -qv '(:return'"
 examples:
