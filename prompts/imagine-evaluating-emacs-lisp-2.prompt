@@ -7,7 +7,7 @@ prompt: |+
   --> 
 engine: "OpenAI Codex"
 temperature: 0.2
-max-generated-tokens: 60
+max-generated-tokens: 200
 top-p: 1.0
 cache: on
 stop-sequences:
