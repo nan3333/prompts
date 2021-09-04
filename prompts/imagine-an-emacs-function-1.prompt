@@ -1,12 +1,11 @@
 title: imagine an emacs function
-task: "imagine an emacs lisp function given name and arguments"
-doc: "Given a function name, arguments, return the imagined body of the function"
+task: "imagine an emacs lisp function given the name only"
+doc: "Given a function name, return the imagined body of the function"
 prompt-version: 1
 prompt: |+
   ;;my-emacs-library.el
 
-  (defun <name> (<arguments>)
-    "
+  (defun <name> (
 engine: "OpenAI Codex"
 temperature: 0.2
 max-generated-tokens: 1000
@@ -16,11 +15,9 @@ stop-sequences:
 - "\n\n"
 vars:
 - "name"
-- "arguments"
 validator: "chomp | sed -z 's/.*\\(.\\)$/\\1/' | grep -q ')'"
 examples:
 - "times"
-- "x y"
 preprocessors:
 - "slugify"
 postprocessor: chomp
