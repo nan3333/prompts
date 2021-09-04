@@ -2,7 +2,7 @@ task: "clean prose"
 doc: "Given some prose, clean it to remove things like references, and annotations"
 prompt-version: 2
 issues:
-- "Appears to keep the numerical annotations"
+- "Appears to keep the numerical annotations. Not with 1-shot"
 prompt: |+
   Copy the following passage.
   Original raw text:
