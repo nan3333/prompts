@@ -1,14 +1,26 @@
 task: "clean prose"
 doc: "Given some prose, clean it to remove things like references, and annotations"
-prompt-version: 1
+prompt-version: 2
 issues:
 - "Appears to keep the numerical annotations"
 prompt: |+
-  Original passage:
+  Copy the following passage.
+  Original raw text:
+  ###
+  11 The Lord said, “Go out and stand on the mountain(T) in the presence of
+  the Lord, for the Lord is about to pass by.”(U)
+  ###
+  The exact same passage, cleaned up:
+  ###
+  The Lord said, “Go out and stand on the mountain in the presence of
+  the Lord, for the Lord is about to pass by.”
+  ###
+  Copy the following passage.
+  Original raw text:
   ###
   <passage>
   ###
-  The exact same passage:
+  The exact same passage, cleaned up:
   ###
 engine: "OpenAI Davinci"
 temperature: 0.1
