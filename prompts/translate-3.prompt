@@ -1,43 +1,47 @@
-task: "translate"
-doc: "Given some prose and a target language, translate into that language"
-prompt-version: 4
-engine: OpenAI Codex
-prompt: |+
-    # The passage in <from language>
-    """
-    <code>
-    """
-    # The same passage in <to language>
-    """
-xlr-n-generate: 5
+title: translate
+prompt-version: 5
+doc: This prompt translates English text to any world language
+todo:
+- This is copied, but reengineer this
+prompt: |
+  ###
+  # English: Hello
+  # Russian: Zdravstvuyte
+  # Italian: Salve
+  # Japanese: Konnichiwa
+  # German: Guten Tag
+  # French: Bonjour
+  # Spanish: Hola
+  ###
+  # English: Happy birthday!
+  # French: Bon anniversaire !
+  # German: Alles Gute zum Geburtstag!
+  # Italian: Buon compleanno!
+  # Indonesian: Selamat ulang tahun!
+  ###
+  # <2>: <1>
+  # <3>:
+engine: OpenAI Davinci
 temperature: 0.5
-collation-temperature-stepper: "(mod (+ <temperature> 0.1) 1)"
-max-tokens: "(* 3 prompt-length)"
-top-p: 1.0
-best-of: 1
-cache: on
+max-generated-tokens: 400
+top-p: 1
 stop-sequences:
-- "\"\"\""
+- "#"
 vars:
-- code
-- "from language"
-- "to language"
+- phrase
+- from-language
+- to-language
 preprocessors:
-- pen-str join ' ' # | pen-pretty-paragraph
-- slugify
-- slugify
+- pen-str onelineify
+- cat
+- cat
+postprocessor: pen-str unonelineify
+examples:
+- Goodnight
+- English
+- French
 var-defaults:
 - "(pen-selected-text)"
 - "(pen-detect-language-ask)"
-postprocessor: "sed '$d' | pen-pretty-paragraph"
-examples:
-- "print(\"Hello world with empathy\")"
-- "English"
-- "simple English a child can understand"
-n-test-runs: 5
-n-collate: 3
-n-completions: 2
-new-document: yes
-external-related:
-- "https://www.youtube.com/watch?v=Iq3rDFZOorw"
-- "https://semiosis.github.io/posts/the-codex-quine/"
+- "(read-string-hist \"Pen to world language: \")"
+filter: on
