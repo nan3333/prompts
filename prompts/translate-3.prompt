@@ -32,7 +32,7 @@ vars:
 - from-language
 - to-language
 preprocessors:
-- pen-str onelineify
+- chomp | pen-str onelineify
 - cat
 - cat
 postprocessor: pen-str unonelineify
