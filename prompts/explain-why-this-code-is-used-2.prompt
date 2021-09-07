@@ -8,10 +8,8 @@ subprompts:
 prompt: |+
     <metadata>
     """
-    <code>
-    """
-    Why the code exists:
-    <:pp>This code is required in order to
+    `(pen-guess-major-mode-set "<language>")`<code>
+    Thie above code is required in order to `(comment-line 1)`
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"

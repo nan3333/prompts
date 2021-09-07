@@ -9,10 +9,9 @@ subprompts:
 prompt: |+
     <metadata>
     """
-    <code>
-    """
-    Summary of the above code:
-    """
+    `(pen-guess-major-mode-set "<language>")`<code>
+
+    Explanation of the above code: `(comment-line 1)`
 xlr-n-generate: 5
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -37,6 +36,9 @@ examples:
     var x2 = randomInteger(200);
     var y2 = randomInteger(200);
     myDraw.line(x1, y1, x2, y2);
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
 n-test-runs: 5
 n-collate: 1
 n-completions: 5
