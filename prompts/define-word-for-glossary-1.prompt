@@ -27,6 +27,7 @@ completion: true
 preprocessors:
 - pen-str onelineify
 postprocessor: sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
+fz-pretty: on
 prettifier: pen-pretty-paragraph
 var-defaults:
 - "(pen-thing-at-point-ask \"word\" t)"

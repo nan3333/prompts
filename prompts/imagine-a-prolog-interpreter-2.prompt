@@ -23,11 +23,15 @@ vars:
 - expression
 var-defaults:
 - kickstarter
+# If this generates text from the user input then it will be added
+# to the user input
+ii-input-echo-pp: |-
+    sed -n -z '/^consult([^)]*)\.$/{s/^consult([^)]*)\.$/true.\n/p;}'
 max-generated-tokens: 200
 # sed wont even run if its input is empty so
 # the postpostprocessor: cant ensure a prompt.
 # But we cant force it.
-postpostprocessor: pen-str newline-if-empty | sed -z 's/\(?-\)\?$/\n?- /'
+postpostprocessor: pen-str newline-if-empty | sed -z 's/\(?-\)\?$/\n\n?- /'
 examples:
 - "?- "
 - "write('Hello World')."

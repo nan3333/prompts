@@ -1,0 +1,38 @@
+task: "Explain why this code is used"
+doc: "Given some selected code, explain why it is used. What is it used for?"
+prompt-version: 1
+subprompts:
+- metadata: |+
+    File type: <language>
+    File contents:
+prompt: |+
+    <metadata>
+    """
+    <code>
+    """
+    Why the code exists:
+    <:pp>This code is required in order to
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "\"\"\""
+cache: on
+vars:
+- code
+- language
+# TODO In future, automatically escape the stop sequences from parameters
+preprocessors:
+- sed 's="""=\\"\\"\\"='
+var-defaults:
+- "(pen-selected-text)"
+- "(pen-detect-language-ask)"
+examples:
+- "import           System.Console.GetOpt"
+- "Haskell"
+filter: off
+completion: off
+insertion: off
+is-info: on
+postprocessor: pen-pretty-paragraph

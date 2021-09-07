@@ -35,6 +35,8 @@ vars:
 - expression
 var-defaults:
 - kickstarter
+ii-input-echo-pp: |-
+    sed -z 's/^consult([^)]*)\.$/\ntrue./}'
 max-generated-tokens: 200
 # sed wont even run if its input is empty so
 # the postpostprocessor: cant ensure a prompt.

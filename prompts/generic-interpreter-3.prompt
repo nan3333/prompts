@@ -9,8 +9,8 @@ prompt: |+
     <history><expression>
     <:pp>Output:
 lm-command: "openai-complete.sh"
-engine: "OpenAI Davinci"
-temperature: 0.4
+engine: "OpenAI Codex"
+temperature: 0.2
 max-generated-tokens: 60
 top-p: 1.0
 cache: on
