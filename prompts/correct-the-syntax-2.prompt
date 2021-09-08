@@ -1,5 +1,7 @@
 task: "Correct the syntax"
 doc: "Given some selected code, correct the syntax"
+todo:
+- remove and restore leading whitespace
 prompt-version: 2
 prompt: |+
   """
