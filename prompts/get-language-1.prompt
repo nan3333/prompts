@@ -29,7 +29,7 @@ requirements:
 - code
 - nl
 temperature: 0.3
-max-generated-tokens: 200
+max-generated-tokens: 50
 n-completions: 20
 n-collate: 1
 top-p: 1

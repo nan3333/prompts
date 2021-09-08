@@ -34,4 +34,4 @@ filter: off
 completion: off
 insertion: off
 info: on
-postprocessor: pen-pretty-paragraph
+# postprocessor: pen-pretty-paragraph
