@@ -9,10 +9,10 @@ prompt: |
     """
     Documentation for <q:syntax>:
     """
-    <q:syntax>
+    <:pp><q:syntax>
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: 200
+max-generated-tokens: 100
 top-p: 1.0
 stop-sequences:
 - "\"\"\""
@@ -20,6 +20,9 @@ cache: on
 vars:
 - screen
 - syntax
+var-defaults:
+- "(buffer-string-visible)"
+- "(pen-thing-at-point-ask)"
 examples:
 - |-
     shane@mele:~/notes$ read -d '^C-r user_input
