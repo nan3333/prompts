@@ -1,6 +1,6 @@
 task: "Correct the syntax"
 doc: "Given some selected code, correct the syntax"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
   """
   The following bash has incorrect syntax:
