@@ -3,9 +3,12 @@ doc: "Given some text return relevant URLs"
 prompt-version: 1
 prompt: |+
   """
+  Document:
+  """
   <text>
   """
   Relevant URLs:
+  """
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
