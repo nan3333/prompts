@@ -6,7 +6,7 @@ include: Transform code/3
 prompt: |+
     <original-program>
 
-    # The exact same program with explanations for each line
+    # The exact same program but with comments and explanations for each line
 
     cat edited_program <<EOD
 xlr-n-generate: 2
