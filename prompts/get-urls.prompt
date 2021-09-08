@@ -3,13 +3,11 @@ doc: "Given some text return relevant URLs"
 prompt-version: 1
 prompt: |+
   """
-  Relevant information:
-  """
   <text>
   """
-  See also (list of URLs):
+  Links to read about the above:
   """
-  http
+  <:pp>http
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 3 prompt-length)"
@@ -19,7 +17,7 @@ stop-sequences:
 cache: on
 vars:
 - text
-postprocessor: xurls
+postprocessor: sed '$d' | xurls
 var-defaults:
 - "(sor (pen-selected-text) (pen-preceding-text))"
 examples:
