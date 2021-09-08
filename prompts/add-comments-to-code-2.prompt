@@ -1,6 +1,6 @@
 task: "Add comments to code"
 doc: "Given some code and the language, add comments"
-prompt-version: 3
+prompt-version: 4
 engine: OpenAI Codex
 include: Transform code/3
 prompt: |+
