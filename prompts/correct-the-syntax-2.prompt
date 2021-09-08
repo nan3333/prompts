@@ -3,6 +3,22 @@ doc: "Given some selected code, correct the syntax"
 prompt-version: 1
 prompt: |+
   """
+  The following bash has incorrect syntax:
+  """
+  i=1
+  for var in "$@"
+  do
+      i++
+  done
+  """
+  The same program but with corrected syntax:
+  """
+  i=1
+  for var in "$@"
+  do
+      ((i++))
+  done
+  """
   The following awk has incorrect syntax:
   """
   if NR >= window_size && (effective_nr % step == 0) {
