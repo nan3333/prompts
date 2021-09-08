@@ -1,4 +1,4 @@
-title: nlsh
+title: nlsh davinci
 task: Generate a bash one liner for OS from NL
 prompt-version: 2
 doc: Get a bash one liner on OS from natural language
@@ -6,28 +6,28 @@ notes:
 - "rlprompt is used here outside of pen.el"
 rlprompt: nlsh <1>
 prompt: |
-  List of one-liner shell commands for <1>.
-  Language: Shell
-  Operating System: <1>
+  # List of one-liner shell commands for <1>.
+  # Language: Shell
+  # Operating System: <1>
 
   Input: Print the current directory
   Output: pwd
-  """
+  ###
   Input: List files
   Output: ls -l
-  """
+  ###
   Input: Change directory to /tmp
   Output: cd /tmp
-  """
+  ###
 repeater: |
   Input: {}
   Output:
-engine: OpenAI Codex
-temperature: 0.2
+engine: OpenAI Davinci
+temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "\n"
+- "###"
 vars:
 - Operating System
 - command
