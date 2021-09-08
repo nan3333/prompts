@@ -33,5 +33,5 @@ examples:
 filter: off
 completion: off
 insertion: off
-is-info: on
+info: on
 postprocessor: pen-pretty-paragraph

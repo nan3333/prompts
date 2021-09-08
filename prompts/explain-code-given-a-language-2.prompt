@@ -1,6 +1,6 @@
 title: "Explain code given a language"
 doc: "Select some code and ask for an explanation"
-is-info: on
+info: on
 prompt-version: 2
 subprompts:
 - metadata: |+

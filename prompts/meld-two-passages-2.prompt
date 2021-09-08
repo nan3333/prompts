@@ -1,6 +1,6 @@
 task: "meld two passages"
 doc: "Given two consecutive passages, meld them"
-info: |-
+notes: |-
   Don't ask me how Codex works better than Davinci, it just does.
   But """ is required instead of \#\#\#.
 prompt-version: 1

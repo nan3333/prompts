@@ -1,6 +1,6 @@
 title: "Explain code"
 doc: "Select some code and ask for an explanation"
-is-info: on
+info: on
 prompt-version: 2
 prompt: |+
     `(pen-guess-major-mode-set)`<code>

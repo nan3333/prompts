@@ -32,7 +32,7 @@ examples:
 filter: off
 completion: off
 insertion: off
-is-info: on
+info: on
 preprocessors:
 - pen-str onelineify
 postprocessor: pen-str unonelineify

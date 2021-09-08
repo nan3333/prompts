@@ -1,6 +1,6 @@
 title: "Generate code from context and NL"
 doc: "Given some code and a context, generate"
-is-info: on
+info: on
 prompt-version: 2
 subprompts:
 - metadata: |+

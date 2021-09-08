@@ -13,6 +13,7 @@ subprompts:
     ?- 
 prompt: |+
     <history><expression>
+comint-user-prompt-regex: "^?- "
 # Double newline is a better default stop sequence
 # Because 200 tokens will take a long time to generate.
 stop-sequences:
