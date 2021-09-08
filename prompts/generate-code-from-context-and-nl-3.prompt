@@ -26,7 +26,8 @@ vars:
 - language
 - nl
 var-defaults:
-- "(pen-preceding-text)"
+# - "(buffer-string-visible)"
+- "(sor (pen-selected-text) (pen-preceding-text))"
 - "(pen-detect-language-ask)"
 examples:
 - |
