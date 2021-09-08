@@ -43,7 +43,7 @@ engine: "OpenAI Codex"
 stop-sequences:
 - "\"\"\""
 temperature: 0.3
-max-tokens: "(* 2 prompt-length)"
+max-generated-tokens: "prompt-length"
 top-p: 1.0
 cache: on
 vars:

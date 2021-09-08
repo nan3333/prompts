@@ -22,7 +22,7 @@ prompt: |+
     cat fake-data.txt <<EOD
 engine: "OpenAI Codex"
 temperature: 0.5
-max-tokens: "(* 2 prompt-length)"
+max-generated-tokens: "prompt-length"
 stop-sequences:
 - "EOD"
 top-p: 1.0
