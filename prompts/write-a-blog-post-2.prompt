@@ -1,15 +1,13 @@
-in-development: no
 title: "Write a blog post"
 doc: "Given a topic and the number of words, generate a blog post."
-prompt-version: 2
+prompt-version: 3
 prompt: |+
-    Write a <2> words blog post about the <1>.
+    Write a <n words> words blog post about the <topic>.
 
 lm-command: "openai-complete.sh"
 model: "davinci-instruct-beta"
 temperature: 0.8
-# Tokens isn't the number of words, so this mechanism needs improvement
-max-generated-tokens: <2>
+max-generated-tokens: <m:(pen-n-words->n-tokens/m <n words>)>
 top-p: 1.0
 best-of: 1
 no-trim-start: off
@@ -21,7 +19,7 @@ stop-sequences:
 cache: on
 vars:
 - "topic"
-- "n-words"
+- n words
 examples:
 - "iPhone 12"
 - "500"
@@ -31,6 +29,10 @@ n-collate: 1
 n-completions: 10
 filter: no
 completion: off
-insertion: on
+insertion: off
+info: on
 external-related:
 - "https://gptprompts.org/p/blog-post-generation"
+elisp: |-
+    (defmacro pen-n-words->n-tokens/m (n-words)
+      `(pen-n-words->n-tokens ,n-words (pen-num token-char-length)))
