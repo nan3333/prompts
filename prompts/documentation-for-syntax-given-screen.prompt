@@ -22,7 +22,7 @@ vars:
 - syntax
 var-defaults:
 - "(buffer-string-visible)"
-- "(pen-thing-at-point-ask)"
+- "(pen-thing-at-point)"
 examples:
 - |-
     shane@mele:~/notes$ read -d '^C-r user_input
