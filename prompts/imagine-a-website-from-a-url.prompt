@@ -5,6 +5,8 @@ prompt: |+
   Lynx, an ascii web browser.
   """
   lynx --dump -nolist "http://google.com" | head -n 30 <<EOD
+  http://google.com
+
   Search Images Maps Play YouTube News Gmail Drive More »
   Web History | Settings | Sign in
   To all doctors, nurses, and medical workers, thank you
@@ -19,6 +21,8 @@ prompt: |+
   EOD
 
   lynx --dump -nolist "https://www.apple.com/" | head -n 30 <<EOD
+  https://www.apple.com/
+
                                        Apple
 
      We look forward to welcoming you to our stores. Whether you shop in a
@@ -51,11 +55,14 @@ prompt: |+
 
   # "<q:url>" rendered in ASCII:
   lynx --dump -nolist "<q:url>" | head -n 30 <<EOD
+  <url>
+
+
 engine: "OpenAI Codex"
 n-collate: 1
 n-completions: 1
 temperature: 0.5
-max-generated-tokens: "prompt-length"
+max-generated-tokens: "(/ prompt-length 2)"
 top-p: 1.0
 stop-sequences:
 - EOD
