@@ -1,0 +1,37 @@
+task: "Imagine a website from a URL"
+doc: "Given a URL, imagine the HTML for that page"
+prompt-version: 1
+prompt: |+
+  # Browse "https://google.com"
+
+  lynx --dump "https://google.com" <<EOD
+  Search Images Maps Play YouTube News Gmail Drive More »
+  Web History | Settings | Sign in
+  To all doctors, nurses, and medical workers, thank you
+  
+  ________________________________________________________    Advanced search
+  [ Google Search ]   [ I'm Feeling Lucky ]
+  
+  Google offered in: Māori
+  Advertising Programs     Business Solutions     About Google     Google.co.nz
+  
+  (c) 2021 - Privacy - Terms
+  EOD
+
+  # Browse "q:url"
+
+  lynx --dump "<q:url> <<EOD
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- EOD
+cache: on
+vars:
+- "url"
+examples:
+- "https://news.ycombinator.com/"
+info: on
+completion: off
+insertion: off
