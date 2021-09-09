@@ -10,7 +10,7 @@ prompt: |
   ossified
   Definition: Turn into bone or bony tissue.
 
-  <1>
+  <word>
   Definition:
 engine: OpenAI Davinci
 temperature: 0.5
