@@ -2,9 +2,9 @@ task: "Imagine a website from a URL"
 doc: "Given a URL, imagine the HTML for that page"
 prompt-version: 2
 prompt: |+
-  # Browse "https://google.com"
+  Lynx, an ascii web browser.
 
-  lynx --dump "https://google.com" <<EOD
+  lynx --dump -nolist "http://google.com" | head -n 30 <<EOD
   Search Images Maps Play YouTube News Gmail Drive More »
   Web History | Settings | Sign in
   To all doctors, nurses, and medical workers, thank you
@@ -18,11 +18,35 @@ prompt: |+
   (c) 2021 - Privacy - Terms
   EOD
 
-  # Browse "q:url"
+  lynx --dump -nolist "https://news.ycombinator.com/" | head -n 30 <<EOD
+     #RSS
+  
+     [y18.gif] Hacker News new | past | comments | ask | show | jobs |
+     submit login
+     1.
+  
+     MIT-designed project achieves major advance toward fusion energy
+     (news.mit.edu)
+     521 points by klintcho 9 hours ago | hide | 211 comments
+     2.
+  
+     No One Ever Saw the Snow Cruiser Again (orangebeanindiana.com)
+     31 points by mortenjorck 2 hours ago | hide | 5 comments
+     3.
+  
+     How to Replace Docker with Podman on a Mac (redhat.com)
+     246 points by molecule 8 hours ago | hide | 60 comments
+     4.
+  
+     Event Horizon Telescope Traces Magnetic Fields Around a Black Hole
+     (aasnova.org)
+     11 points by ofou 1 hour ago | hide | discuss
+     5.
+    EOD
 
-  lynx --dump "<q:url>" <<EOD
+  lynx --dump -nolist "<q:url>" | head -n 30 <<EOD
 engine: "OpenAI Codex"
-temperature: 0.3
+temperature: 0.2
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
@@ -31,7 +55,7 @@ cache: on
 vars:
 - "url"
 examples:
-- "https://news.ycombinator.com/"
+- "http://www.gprolog.org/"
 info: on
 completion: off
 insertion: off
