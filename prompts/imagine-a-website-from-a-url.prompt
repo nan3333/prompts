@@ -58,7 +58,7 @@ prompt: |+
   <url>
 
 
-engine: "OpenAI Cushman"
+engine: "OpenAI Codex"
 n-collate: 1
 n-completions: 2
 temperature: 0.5
