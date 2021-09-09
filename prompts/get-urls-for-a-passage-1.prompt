@@ -26,7 +26,8 @@ end-split-patterns:
 - "\n"
 vars:
 - text
-validator: url-exists
+# This contraint is not needed for the imaginary internet
+# validator: url-exists
 postprocessor: sed '$d' | xurls
 var-defaults:
 - "(sor (pen-selected-text t) (pen-preceding-text))"

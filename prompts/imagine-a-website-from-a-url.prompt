@@ -46,8 +46,10 @@ prompt: |+
 
   lynx --dump -nolist "<q:url>" | head -n 30 <<EOD
 engine: "OpenAI Codex"
-temperature: 0.2
-max-generated-tokens: "(* 2 prompt-length)"
+n-collate: 1
+n-completions: 1
+temperature: 0.5
+max-generated-tokens: "prompt-length"
 top-p: 1.0
 stop-sequences:
 - EOD
