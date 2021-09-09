@@ -5,7 +5,7 @@ issues:
   - DONE URLs are sometimes invalid or outdated. Add a validator.
   - The corrector could literally just be a google search for that url
   - It's a little slow because of the validator (checks results for 404).
-  - Also, add a URL corrector
+  - Also, add a URL corrector (syntax checker for urls, with a specific LM)
 prompt: |+
   """
   <text>
