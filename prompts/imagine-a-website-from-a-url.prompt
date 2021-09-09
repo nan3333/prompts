@@ -1,6 +1,6 @@
 task: "Imagine a website from a URL"
 doc: "Given a URL, imagine the HTML for that page"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
   # Browse "https://google.com"
 
@@ -20,7 +20,7 @@ prompt: |+
 
   # Browse "q:url"
 
-  lynx --dump "<q:url> <<EOD
+  lynx --dump "<q:url>" <<EOD
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
