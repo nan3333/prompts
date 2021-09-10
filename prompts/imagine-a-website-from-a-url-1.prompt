@@ -55,7 +55,7 @@ prompt: |+
 
   # "<q:url>" rendered in ASCII:
   lynx --dump -nolist "<q:url>" | head -n 30 <<EOD
-  <url>
+  <:pp><url>
 
 
 engine: "OpenAI Codex"
