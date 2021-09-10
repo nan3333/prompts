@@ -8,7 +8,7 @@ prompt: |
   - disparage
   - belittle the value or importance of
   <delim>
-  Here are some different ways of saying "<1>":
+  Here are some different ways of saying "<passage>":
   -
 engine: OpenAI Davinci
 temperature: 0.8
