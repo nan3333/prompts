@@ -7,12 +7,12 @@ prompt-version: 1
 prompt: |
   Given a description of a word that you are looking for, list some possible candidates.
 
-  ###
+  <delim>
   A list of words that mean "luxurious" and sound like "brush":
   - plush
   - push
   - lush
-  ###
+  <delim>
   A list of words that mean "<1>" and sound like "<2>":
   -
 engine: OpenAI Davinci

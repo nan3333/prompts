@@ -5,70 +5,70 @@ past-versions:
 prompt-version: 7
 prompt: |
   The following are witty openers for Tinder:
-  ###
+  <delim>
   TOPIC: CATS AND DRUGS
   - Can I call you my catnip?
-  ###
+  <delim>
   TOPIC: CATS
   - If I said you had a purrfect body, would you hold it against me?
-  ###
+  <delim>
   TOPIC: CATS AND HAPPINESS
   - Do you want to be my cat? You'll get fed, I'll pet you, you'll stay warm, and we'll both be happy.
-  ###
+  <delim>
   TOPIC: CATS AND FOOD
   - You look like you'd taste good with a little milk.
-  ###
+  <delim>
   TOPIC: PIZZA
   - You look like a slice of heaven.
-  ###
+  <delim>
   TOPIC: PIZZA INNUENDO
   - If you were a pizza, you would be half cheese and half toppings.
-  ###
+  <delim>
   TOPIC: NACHOS INNUENDO
   - Do you want to be my dipping sauce?
-  ###
+  <delim>
   TOPIC: FOOD ANALOGY
   - You look like the salt to my pepper.
-  ###
+  <delim>
   TOPIC: SLEEP INNUENDO
   - Are you a good pillow talker or a bad pillow talker?
-  ###
+  <delim>
   TOPIC: SLEEP ANALOGY
   - You're like the sun in the morning.
-  ###
+  <delim>
   TOPIC: VIDEO GAMES
   - Are people ever mean to you in games for being too cute?
-  ###
+  <delim>
   TOPIC: VIDEO GAMES
   - You look like the type of girl I want to be a Pokemon trainer to.
-  ###
+  <delim>
   TOPIC: TRAVEL
   - I want some of your culture.
-  ###
+  <delim>
   TOPIC: TRAVEL
   - I want to explore every part of you.
-  ###
+  <delim>
   TOPIC: STARCRAFT
   - I'm glad I scouted you.
-  ###
+  <delim>
   TOPIC: TRAVEL
   - I think your exotic.
-  ###
+  <delim>
   TOPIC: TRAVEL
   - I'm at the airport, looking at the plane schedule. Now all I need is you.
-  ###
+  <delim>
   TOPIC: TACOS AND INNUENDO
   - You look like the type that would be good with a little hot sauce.
-  ###
+  <delim>
   TOPIC: ASTRONAUTS
   - I think we should make space travel plans.
-  ###
+  <delim>
   TOPIC: ASTRONAUTS AND INNUENDO
   - I'd like to be your space shuttle.
-  ###
+  <delim>
   TOPIC: COFFEE
   - Do you like coffee? Cuz I like you a latte.
-  ###
+  <delim>
   TOPIC: <1>
   -
 engine: OpenAI Davinci

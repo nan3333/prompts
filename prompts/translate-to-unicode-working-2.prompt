@@ -6,7 +6,7 @@ doc: This prompt translates English text to any world langauge
 issues:
 - I think the unicode characters may be multibyte causing issues with completion
 prompt: |
-  ###
+  <delim>
   # English: Hello
   # Russian: Zdravstvuyte
   # Chinese: Nǐn hǎo
@@ -16,7 +16,7 @@ prompt: |
   # Portuguese: Olá
   # French: Bonjour
   # Spanish: Hola
-  ###
+  <delim>
   # English: Happy birthday!
   # Spanish: ¡Feliz cumpleaños!
   # French: Bon anniversaire !
@@ -26,7 +26,7 @@ prompt: |
   # Swedish: Grattis på födelsedagen!
   # Russian: С Днём рождения!
   # Indonesian: Selamat ulang tahun!
-  ###
+  <delim>
   # English: <2>
   # <1>:
 engine: OpenAI Davinci

@@ -6,10 +6,10 @@ prompt-version: 2
 prompt: |
   Input: Hello - day.
   Output: Hello, my name is gpt3. Have a nice day.
-  ###
+  <delim>
   Input: How - up to?
   Output: How are you feeling today? And what have you been up to?
-  ###
+  <delim>
   Input: <1> - <2>
   Output: <:pp><1>
 engine: OpenAI Davinci
@@ -17,7 +17,7 @@ temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 cache: true
 vars:
 - sentence start

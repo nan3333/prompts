@@ -1,21 +1,21 @@
 task: '#("Transpile from programming language X to Y" 0 41 (engine "OpenAI Davinci" language "English" topic "Programming"))'
-prompt-version: 6
+prompt-version: 7
 prompt: |+
-    ###
+    <delim>
     Haskell: zip (map show [1,5,9]) ["a","b","c"]
     Clojure: (println (map vector '(1 2 3) '(4 5 6)))
-    ###
+    <delim>
     Clojure: (clojure.string/upper-case "MiXeD cAsE")
     Haskell: map toUpper "MiXeD cAsE"
-    ###
-    <2>: <1>
-    <3>:
+    <delim>
+    <from language>: <code>
+    <to language>:
 engine: OpenAI Davinci
 temperature: 0.3
 max-generated-tokens: 400
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 stop-patterns:
 - "^[a-zA-Z]+:"
 vars:

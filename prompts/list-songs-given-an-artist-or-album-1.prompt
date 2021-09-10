@@ -4,7 +4,7 @@ doc: Given the title of a band or an album, list some popular songs.
 prompt: |
   Given the title of a band or an album, list some popular songs.
 
-  ###
+  <delim>
   6 songs by Red Hot Chili Peppers
   Track list:
   - Under the Bridge
@@ -13,20 +13,20 @@ prompt: |
   - By The Way
   - Higher Ground
   - Tell Me Baby
-  ###
+  <delim>
   4 songs. Nirvana, Bleach
   Track list:
   - Love Buzz
   - Blew
   - School
   - Mr Moustache
-  ###
+  <delim>
   3 songs. Dark side of the moon
   Track list:
   - Money
   - Time
   - The Great Gig in the Sky
-  ###
+  <delim>
   20 songs. <1>
   Track list:
   -
@@ -35,7 +35,7 @@ temperature: 0.5
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 cache: true
 vars:
 - Artist/Album

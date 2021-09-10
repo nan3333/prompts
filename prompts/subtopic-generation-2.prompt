@@ -5,7 +5,7 @@ prompt: |-
     List a number of subtopics or fields of study
     given a topic:
     
-    ###
+    <delim>
     7 subtopics of natural language processing / NLP:
     - language modelling
     - named entity recognition  
@@ -14,7 +14,7 @@ prompt: |-
     - text generation
     - topic modelling
     - translation
-    ###
+    <delim>
     8 fields of microbiology:
     - Bacteriology
     - Mycology
@@ -24,7 +24,7 @@ prompt: |-
     - Immunology
     - Virology
     - Nematology
-    ###
+    <delim>
     6 subtopics of music theory:
     - composition
     - performance
@@ -32,12 +32,12 @@ prompt: |-
     - ornamentation
     - improvisation
     - electronic sound production
-    ###
+    <delim>
     3 subtopics of language modelling in NLP:
     - casual language modelling
     - masked language modelling
     - text generation
-    ###
+    <delim>
     20 subtopics or fields within <1>, in no particular order:
     <:pp><2>-
 engine: OpenAI Davinci
@@ -45,7 +45,7 @@ temperature: 0.8
 max-generated-tokens: 200
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 - "\n\n"
 cache: true
 vars:

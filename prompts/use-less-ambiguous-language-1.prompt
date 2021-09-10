@@ -3,12 +3,12 @@ title: Use less ambiguous language
 prompt-version: 1
 doc: Given a sentence which may be ambiguous, make it use less ambiguous words.
 prompt: |
-  ###
+  <delim>
   Ambiguous sentence:
   Ranch meals are always big and hearty.
   Unambiguous English:
   Ranch meals are invariably big and hearty.
-  ###
+  <delim>
   Ambiguous sentence:
   <1>
   Unambiguous English:
@@ -17,7 +17,7 @@ temperature: 0.3
 max-generated-tokens: 300
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - ambiguous sentence
 examples:

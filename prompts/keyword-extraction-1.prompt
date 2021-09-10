@@ -5,7 +5,7 @@ prompt: |+
   Text and keywords:
   Text: Ethereum is a blockchain
   Keywords: blockchain, smart contracts, Turing-complete, distributed ledger
-  ###
+  <delim>
   Text and keywords:
   Text: <1>
   Keywords:

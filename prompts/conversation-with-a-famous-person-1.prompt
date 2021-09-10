@@ -17,7 +17,7 @@ top-p: 1
 best-of: 3
 stop-sequences:
 # This wouldn't appear, so it would keep going, which is what we want
-- "###"
+- "<delim>"
 vars:
 - person-name
 examples:

@@ -12,13 +12,13 @@ prompt: |
 
   Input: Print the current directory
   Output: pwd
-  ###
+  <delim>
   Input: List files
   Output: ls -l
-  ###
+  <delim>
   Input: Change directory to /tmp
   Output: cd /tmp
-  ###
+  <delim>
 repeater: |
   Input: {}
   Output:
@@ -27,7 +27,7 @@ temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - Operating System
 - command

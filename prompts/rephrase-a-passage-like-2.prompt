@@ -4,7 +4,7 @@ prompt: |
   Here are some different ways of saying "criticize unfairly" in one word:
   - denigrate
   - disparage
-  ###
+  <delim>
   Here are some different ways of saying "<1>", <2>:
   -
 engine: OpenAI Davinci
@@ -12,7 +12,7 @@ temperature: 0.8
 max-generated-tokens: 100
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - passage
 - style

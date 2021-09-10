@@ -3,19 +3,19 @@ doc: "Given some prose expression some action of an individual, return the commo
 prompt-version: 2
 prompt: |+
     Predict common sense results of the following actions.
-    ###
+    <delim>
     Action: I didn't water the plant for 3 weeks.
     Result: The plant died.
-    ###
+    <delim>
     Action: I went to school.
     Result: I got a diploma.
-    ###
+    <delim>
     Action: I left the AC on all day.
     Result: I got a high utility bill.
-    ###
+    <delim>
     Action: I helped my neighbors when their car broke down.
     Result: My neighbors were grateful.
-    ###
+    <delim>
     Action: <action>
     Result:
 engine: "OpenAI Davinci"
@@ -24,7 +24,7 @@ max-generated-tokens: 200
 top-p: 1.0
 cache: on
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - "action"
 examples:

@@ -2,23 +2,23 @@ title: Conjugate prose syntactically
 doc: Given two text snippets, join them together intelligently and syntactically
 prompt-version: 1
 prompt: |
-  ###
+  <delim>
   Please provide me with a short brief
   a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
   ~~~
   Please provide me with a short brief of the design you’re looking for and that’d be nice if you could share some examples or project you did before.
-  ###
+  <delim>
   If I’m stressed out
   something, I tend to have a problem falling asleep.
   ~~~
   If I’m stressed out about something, I
   tend to have a problem falling asleep.
-  ###
+  <delim>
   There is plenty of fun things to do in the summer
   in the summer when your able to go outside.
   ~~~
   There is plenty of fun things to do in the summer when your able to go outside.
-  ###
+  <delim>
   <1>
   <2>
   ~~~

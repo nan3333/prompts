@@ -7,23 +7,23 @@ prompt: |
 
   A list of 8 countries in no particular order:
   Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador
-  ###
+  <delim>
   A list of 9 car manufacturers in no particular order:
   Fiat,Corvette,Holden,Daewoo,Hyundai,BMW,Ford,Mazda,Toyota
-  ###
+  <delim>
   A list of 6 islands starting with N:
   New Britain,Naart,Nukumanu,Nærøya,Nikumaroro,Nagy-Pandúr-sziget,Neuwerk
-  ###
+  <delim>
   A list of 4 fruit starting with E:
   Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
-  ###
+  <delim>
   A list of <1> <2> in no particular order:
 engine: OpenAI Davinci
 temperature: 0.7
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 - "A list of"
 - "\n\n"
 end-split-patterns:

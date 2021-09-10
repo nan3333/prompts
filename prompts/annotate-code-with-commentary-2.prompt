@@ -46,7 +46,7 @@ prompt: |+
       print NR,sum/count,sum2/count
   }
   ```
-  ###
+  <delim>
   Code:
   ```<2>
   <1>

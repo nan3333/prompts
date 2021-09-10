@@ -6,14 +6,14 @@ prompt: |+
     prejudices of human experience. Fully neutral and objective, the AI
     sees the world as is. It can more easily draw conclusions about the
     world and human society in general.
-    ###
+    <delim>
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 100
 top-p: 1
 best-of: 3
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - topic
 examples:

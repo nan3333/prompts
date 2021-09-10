@@ -7,7 +7,7 @@ prompt: |+
     > background: rgb(220,220,220);
     Hex code:
     > background: #dcdcdc;
-    ###
+    <delim>
     Dec code:
     > <1>
     Hex code:

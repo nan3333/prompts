@@ -16,7 +16,7 @@ no-trim-end: off
 # For davinci-instruct-beta, it appears to begin with \n\n, so can't use that
 # as stop sequence.
 stop-sequences:
-- "###"
+- "<delim>"
 cache: on
 vars:
 - "generation task"

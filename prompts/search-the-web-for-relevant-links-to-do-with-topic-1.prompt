@@ -4,7 +4,7 @@ doc: This is like google search
 prompt: |
   Google search results:
 
-  ###
+  <delim>
   Query: Birds
   - https://en.wikipedia.org/wiki/Bird
   - https://www.nationalgeographic.com/animals/birds/
@@ -13,7 +13,7 @@ prompt: |
   - https://simple.wikipedia.org/wiki/Bird
   - https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/
   - https://www.birds.com/
-  ###
+  <delim>
   Query: buy video games
   - https://www.ebay.com.au/b/Video-Games/139973/bn_504121?mkevt=1&mkcid=1&mkrid=705-53470-19255-0&campid=5336728181&customid=&toolid=10001
   - https://www.ebgames.com.au/
@@ -23,7 +23,7 @@ prompt: |
   - https://www.ebay.com.sg/b/Video-Games/139973/bn_320034
   - https://www.ebay.ca/b/Video-Games-Consoles/1249/bn_1850232?mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5336728181&customid=&toolid=10001
   - https://www.jjgames.com/
-  ###
+  <delim>
   Query: <1>
   -
 engine: OpenAI Davinci
@@ -31,7 +31,7 @@ temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 cache: true
 vars:
 - query

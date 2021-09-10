@@ -3,10 +3,10 @@ doc: Generate a nice compliment based on a celebrity
 prompt-version: 1
 prompt: |
   The following are nice compliments:
-  ###
+  <delim>
   TOPIC: Johnny Depp
   - He has fame, but he doesn't want it. He has advantage but he doesn't take it. And he definitely has all our hearts!!!!!
-  ###
+  <delim>
   TOPIC: <1>
   -
 engine: OpenAI Davinci

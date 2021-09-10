@@ -4,10 +4,10 @@ issues:
 - Does not like long inputs
 prompt: |
   Correct grammar
-  ###
+  <delim>
   Original: Anna and Mike is going skiing.
   Standard American English: Anna and Mike are going skiing.
-  ###
+  <delim>
   Original: <1>
   Standard American English:
 engine: OpenAI Davinci
@@ -22,7 +22,7 @@ suggest-p:
 nl-suggest-p:
 - "grammar is incorrect"
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - sentence
 examples:

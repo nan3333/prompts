@@ -6,7 +6,7 @@ engine: OpenAI Davinci
 temperature: 0.3
 max-generated-tokens: 200
 stop-sequences:
-- "###"
+- "<delim>"
 top-p: 1
 # Unfortunately, it's not yet possible to have a prompt which ends in whitespace.
 # It would really help with suggesting the comments have finished.

@@ -9,13 +9,13 @@ prompt: |
 
   $ ls -t * | head -1
   The above command gets the newest file in directory bash.
-  ###
+  <delim>
   $ find . -name '*' -type f -not -path '*.mp3'
   The above command finds with invert match - e.g. find every file that is not mp3
-  ###
+  <delim>
   $ find . -name "node_modules" -exec rm -rf '{}' +
   The above command recursively removes all "node_modules" folders
-  ###
+  <delim>
   $ <1>
   The above command
 issues: 

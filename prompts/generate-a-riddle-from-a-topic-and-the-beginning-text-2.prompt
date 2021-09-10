@@ -5,25 +5,25 @@ issues:
 - Not funny
 prompt: |+
   Here is a list of witty jokes:
-  ###
+  <delim>
   TOPIC: IRISH PUN
   - What do you call a bulletproof Irishman? Rick O'Shea!
-  ###
+  <delim>
   TOPIC: PUN
   - What do you call someone with no body and no nose? Nobody knows!
-  ###
+  <delim>
   TOPIC: COW MOVIES PUN
   - What is a cow's favourite movie? Moo-lan
-  ###
+  <delim>
   TOPIC: FARMING PUN
   - Why are there no unemployed farmers? They can get a job in any field.
-  ###
+  <delim>
   TOPIC: SPACE PUN
   - Why do all kids want to be astronauts? Because there is no pressure.
-  ###
+  <delim>
   TOPIC: BATMAN CHURCH PUN
   - What do you call it when Batman skips church? Christian Bale.
-  ###
+  <delim>
   TOPIC: <1> PUN
   -<:pp> <2>
 prompt-filter: "sed -z 's/\\s\\+$//'"

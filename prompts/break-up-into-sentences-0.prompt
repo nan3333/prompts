@@ -14,7 +14,7 @@ best-of: 1
 no-trim-start: off
 no-trim-end: off
 stop-sequences:
-- "###"
+- "<delim>"
 examples:
 - |
     This anonymous gold coinage appears to have been initiated shortly before

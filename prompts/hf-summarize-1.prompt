@@ -7,7 +7,7 @@ max-generated-tokens: 500
 top-p: 1
 prompt: "<1>"
 stop-sequences:
-- "###long complete###"
+- "<delim>long complete<delim>"
 vars:
 - passage
 examples:

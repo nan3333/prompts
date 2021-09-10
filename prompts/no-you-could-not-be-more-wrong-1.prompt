@@ -4,7 +4,7 @@ prompt-version: 1
 doc: This is a completer that refutes what you just said.
 prompt: |
   The following is an excerpt of an argument on reddit:
-  ###
+  <delim>
   Your claim that "<1>" is so incorrect. You could not be more wrong.
   Firstly,
 engine: OpenAI Davinci

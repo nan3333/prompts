@@ -4,7 +4,7 @@ doc: Given some text, provide some labels
 prompt-version: 1
 prompt: |+
   Text and labels:
-  ###
+  <delim>
   <1>
   labels:
 engine: OpenAI Davinci

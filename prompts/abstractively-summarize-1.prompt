@@ -3,17 +3,17 @@ title: abstractively summarize
 prompt-version: 1
 prompt: |
   Document:
-  ###
+  <delim>
   <1>
-  ###
+  <delim>
   Summary:
-  ###
+  <delim>
 engine: OpenAI Davinci
 temperature: 0.5
 max-generated-tokens: 100
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - passage
 examples:

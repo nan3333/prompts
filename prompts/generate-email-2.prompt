@@ -13,7 +13,7 @@ max-generated-tokens: 100
 top-p: 1
 best-of: 3
 stop-sequences:
-- "###"
+- "<delim>"
 vars:
 - point1
 - point2

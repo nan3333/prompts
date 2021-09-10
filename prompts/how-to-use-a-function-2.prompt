@@ -4,17 +4,17 @@ doc: Given a function name and a language, explain how to use the function
 prompt: |
   Given a function name and a language, explain how to use the function.
 
-  ###
+  <delim>
   Language: Python
   Function: print
   Usage:
   Print("hello world")
-  ###
+  <delim>
   Language: Python
   Function: print
   Usage:
   Print("hello world")
-  ###
+  <delim>
   Language: <1>
   Function:
   Function
@@ -24,7 +24,7 @@ temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "###"
+- "<delim>"
 cache: true
 vars:
 - language
