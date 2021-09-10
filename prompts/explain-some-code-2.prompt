@@ -4,7 +4,7 @@ design-patterns:
 doc: Explain some code
 prompt-version: 2
 prompt: |
-    Code excerpt and explanation.
+    <language> excerpt and explanation.
     <delim>
     Excerpt:
     <delim>
@@ -22,8 +22,10 @@ stop-sequences:
 cache: true
 vars:
 - code
+- language
 var-defaults:
 - "(pen-selected-text)"
+- "(pen-detect-language-ask)"
 examples:
 - |+
     data RGB = RGB
