@@ -27,7 +27,7 @@ vars:
 - question
 examples:
 - nlp
-- What does BPE mean?
+- What is BPE?
 conversation: true
 conversation-pretext-generator: human-conversation
 postprocessor: "sed \"s/^AI: //\" | pen-pretty-paragraph"
