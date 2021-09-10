@@ -1,9 +1,8 @@
----
 title: explain a shell command
 issues: 
 design-patterns: 
 doc: Explain what a shell command does
-prompt-version: 1
+prompt-version: 2
 prompt: |
   The following is a list of one-liners for the linux command-line and some explanations:
 
@@ -16,7 +15,7 @@ prompt: |
   $ find . -name "node_modules" -exec rm -rf '{}' +
   The above command recursively removes all "node_modules" folders
   <delim>
-  $ <1>
+  $ <code>
   The above command
 issues: 
 engine: OpenAI Davinci
@@ -36,3 +35,6 @@ external-related:
 n-test-runs: 5
 related-prompts:
 - annotate-with-commentary.prompt
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify
