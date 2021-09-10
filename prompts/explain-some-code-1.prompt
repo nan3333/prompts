@@ -8,15 +8,10 @@ prompt: |
     <delim>
     Excerpt:
     <delim>
-    data RGB = RGB
-      { rgbRed   :: Word8
-      , rgbGreen :: Word8
-      , rgbBlue  :: Word8
-      } deriving (Eq, Show)
-    <delim>
+    <code>
     Explanation:
     <delim>
-    The above code 
+    <:pp>The above code 
 issues: 
 engine: OpenAI Codex
 temperature: 0.3
@@ -28,7 +23,13 @@ cache: true
 vars:
 - code
 examples:
-- raco pkg show --all
+- |+
+    data RGB = RGB
+      { rgbRed   :: Word8
+      , rgbGreen :: Word8
+      , rgbBlue  :: Word8
+      } deriving (Eq, Show)
+    <delim>
 prefer-external: true
 external-related:
 - https://explainshell.com/
