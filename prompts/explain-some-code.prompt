@@ -1,0 +1,40 @@
+title: explain some code
+issues: 
+design-patterns: 
+doc: Explain some code
+prompt-version: 2
+prompt: |
+    Code excerpt and explanation
+    <delim>
+    Excerpt:
+    <delim>
+    data RGB = RGB
+      { rgbRed   :: Word8
+      , rgbGreen :: Word8
+      , rgbBlue  :: Word8
+      } deriving (Eq, Show)
+    <delim>
+    Explanation:
+    <delim>
+    The above code 
+issues: 
+engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1
+stop-sequences:
+- "<delim>"
+cache: true
+vars:
+- code
+examples:
+- raco pkg show --all
+prefer-external: true
+external-related:
+- https://explainshell.com/
+n-test-runs: 5
+related-prompts:
+- annotate-with-commentary.prompt
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify

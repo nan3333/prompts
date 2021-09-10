@@ -2,31 +2,31 @@ task: "meld two passages"
 doc: "Given two consecutive passages, meld them"
 notes: |-
   Don't ask me how Codex works better than Davinci, it just does.
-  But """ is required instead of \#\#\#.
+  But <delim> is required instead of \#\#\#.
 prompt-version: 1
 prompt: |+
-  """
+  <delim>
   Broken passage:
-  """
+  <delim>
   According to the BBC, they are unique in
   that their content, they are unique in that
   their content isn't directly tethered to the
   problems of a real individual or identity.
-  """
+  <delim>
   Correctly flowing passage:
-  """
+  <delim>
   According to the BBC, they are unique in
   that their content isn't directly tethered
   to the problems of a real individual or
   identity.
-  """
+  <delim>
   Broken passage:
-  """
+  <delim>
   <first passage>
   <second passage>
-  """
+  <delim>
   Correctly flowing passage:
-  """
+  <delim>
   <first passage>
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -34,7 +34,7 @@ max-generated-tokens: "prompt-length"
 top-p: 1.0
 cache: on
 stop-sequences:
-- "\"\"\""
+- "<delim>"
 vars:
 - "first passage"
 - "second passage"
@@ -53,9 +53,6 @@ examples:
     Japanese popular culture and aesthetics, such as anime and manga,[4] and moe
     anthropomorphism with human or non-human traits.[4] Some VTubers are
     anthropomorphic, non-human characters such as animals.[5]
-preprocessors:
-- "cat"
-- "cat"
 filter: on
 completion: off
 insertion: off

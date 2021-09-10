@@ -7,7 +7,7 @@ subprompts:
     File contents:
 prompt: |+
     <metadata>
-    """
+    <delim>
     `(pen-guess-major-mode-set "<language>")`<code>
     The above code is required in order to `(comment-line 1)`
 engine: "OpenAI Codex"
@@ -16,14 +16,12 @@ max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 yas: on
 stop-sequences:
-- "\"\"\""
+- "<delim>"
 cache: on
 vars:
 - code
 - language
 # TODO In future, automatically escape the stop sequences from parameters
-preprocessors:
-- sed 's="""=\\"\\"\\"='
 var-defaults:
 - "(pen-selected-text)"
 - "(pen-detect-language-ask)"

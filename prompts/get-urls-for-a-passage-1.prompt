@@ -7,11 +7,11 @@ issues:
   - It's a little slow because of the validator (checks results for 404).
   - Also, add a URL corrector (syntax checker for urls, with a specific LM)
 prompt: |+
-  """
+  <delim>
   <text>
-  """
+  <delim>
   Links to read about the above:
-  """
+  <delim>
   <:pp>http
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -20,7 +20,7 @@ top-p: 1.0
 n-collate: 1
 n-completions: 5
 stop-sequences:
-- "\"\"\""
+- "<delim>"
 cache: on
 end-split-patterns:
 - "\n"

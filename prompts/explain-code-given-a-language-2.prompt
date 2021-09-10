@@ -8,7 +8,7 @@ subprompts:
     File contents:
 prompt: |+
     <metadata>
-    """
+    <delim>
     `(pen-guess-major-mode-set "<language>")`<code>
 
     Explanation of the above code: `(comment-line 1)`
@@ -21,9 +21,9 @@ best-of: 1
 no-trim-start: off
 no-trim-end: off
 preprocessors:
-- sed 's="""=\\"\\"\\"='
+- sed 's=<delim>=\\"\\"\\"='
 stop-sequences:
-- "\"\"\""
+- "<delim>"
 yas: on
 vars:
 - code

@@ -7,20 +7,22 @@ issues:
 - "Appears to keep the numerical annotations"
 prompt: |+
   # Original passage:
-  """
+  <delim>
   <passage>
-  """
+  <delim>
   # The same passage, but with only the prose and no extra characters:
-  """
+  <delim>
 engine: "OpenAI Codex"
 temperature: 0.5
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
-- "\"\"\""
+- "<delim>"
 cache: on
 vars:
 - "passage"
+preprocessors:
+- sed 's=<delim>=\\"\\"\\"='
 examples:
 - |-
     19 Now Ahab told Jezebel(A) everything Elijah had done and how he had killed(B) all the

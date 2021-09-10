@@ -2,20 +2,20 @@ task: "Get documentation for syntax given screen"
 doc: "Given a view of the screen, get the documentation for the syntax form"
 prompt-version: 1
 prompt: |
-    """
+    <delim>
     Terminal contents:
-    """
+    <delim>
     <screen>
-    """
+    <delim>
     Documentation for <q:syntax>:
-    """
+    <delim>
     <:pp><q:syntax>
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 100
 top-p: 1.0
 stop-sequences:
-- "\"\"\""
+- "<delim>"
 cache: on
 vars:
 - screen

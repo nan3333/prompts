@@ -3,7 +3,7 @@ doc: "Given a URL, imagine the HTML for that page"
 prompt-version: 2
 prompt: |+
   Lynx, an ascii web browser.
-  """
+  <delim>
   lynx --dump -nolist "http://google.com" | head -n 30 <<EOD
   http://google.com
 

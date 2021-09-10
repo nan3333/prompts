@@ -5,11 +5,11 @@ notes:
 - "It appears that combining <delim> with Input: Output: has no improvement"
 prompt: |+
     Given some text, return the language.
-    """
+    <delim>
     Text:
     Bon anniversaire !
     Language: French
-    """
+    <delim>
     Text:
     <1>
     Language:
@@ -24,7 +24,7 @@ n-completions: 20
 n-collate: 1
 top-p: 1
 stop-sequences:
-- "\"\"\""
+- "<delim>"
 vars:
 - text-or-code
 examples:
