@@ -1,26 +1,33 @@
 task: "Explain why this code is needed"
 doc: "Given some selected code, explain why it is needed. What is it used for?"
-prompt-version: 2
-subprompts:
-- metadata: |+
-    File type:
-    <delim>
-    <language>
-    <delim>
-    File contents:
-    <delim>
+prompt-version: 3
+# subprompts:
+# - metadata: |+
+#     File type: <language>
+#     File contents:
+#     <delim>
 # prompt: |+
 #     <metadata>
 #     `(pen-guess-major-mode-set "<language>")`<code>
 #     <:pp>The above code is needed so `(comment-line 1)`
 prompt: |+
-    <metadata>
-    <code>
+    Explain the purpose of this <language> snippet.
     <delim>
-    <:pp>The above code is needed so 
+    cat "<language>_program" | sed -n '40,$p'
+    <delim>
+    `(pen-guess-major-mode-set "<language>")`<code>
+    <delim>
+    <:pp>The purpose of this code is 
+# prompt: |+
+#     <metadata>
+#     <code>
+#     <delim>
+#     Comments:
+#     <delim>
+#     <:pp>This code is needed so
 engine: "OpenAI Codex"
-temperature: 0.3
-max-generated-tokens: "(* 2 prompt-length)"
+temperature: 0.2
+max-generated-tokens: "150"
 top-p: 1.0
 yas: on
 stop-sequences:
