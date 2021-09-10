@@ -6,16 +6,19 @@ issues:
   - The corrector could literally just be a google search for that url
   - It's a little slow because of the validator (checks results for 404).
   - Also, add a URL corrector (syntax checker for urls, with a specific LM)
+todo:
+  - Generate the URL titles too, so I can select from those
 prompt: |+
   <delim>
   <text>
   <delim>
   Links to read about the above:
   <delim>
-  <:pp>http
+  - <:pp>http
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "(* 3 prompt-length)"
+# This is just a list of URLs
+max-generated-tokens: "200"
 top-p: 1.0
 n-collate: 1
 n-completions: 5
