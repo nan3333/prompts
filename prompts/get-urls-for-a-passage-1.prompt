@@ -1,6 +1,6 @@
 task: "Get URLs for a passage"
 doc: "Given some text return relevant URLs"
-prompt-version: 3
+prompt-version: 4
 issues:
   - DONE URLs are sometimes invalid or outdated. Add a validator.
   - The corrector could literally just be a google search for that url
@@ -33,7 +33,7 @@ vars:
 # validator: url-exists
 postprocessor: sed '$d' | xurls
 var-defaults:
-- "(sor (pen-selected-text t) (pen-preceding-text))"
+- "(sor (pen-selected-text t) (pen-surrounding-context))"
 examples:
 - |-
     import Data.Foldable (for_)
