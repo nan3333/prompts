@@ -1,6 +1,6 @@
 task: "Get URLs for a passage"
 doc: "Given some text return relevant URLs"
-prompt-version: 2
+prompt-version: 3
 issues:
   - DONE URLs are sometimes invalid or outdated. Add a validator.
   - The corrector could literally just be a google search for that url
