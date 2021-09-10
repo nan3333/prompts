@@ -1,4 +1,3 @@
----
 title: classification of item
 prompt-version: 3
 description: Classify items into categories via example
@@ -12,7 +11,7 @@ prompt: |
   cat: domesticated animal, mammal
   Unilever: Conglomerate, Consumer Goods
   Mcdonalds: Food, Fast Food, Logistics, Restaurants
-  <1>:
+  <item to classify>:
 engine: OpenAI Davinci
 temperature: 0.3
 max-generated-tokens: 6
