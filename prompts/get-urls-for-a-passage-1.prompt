@@ -33,7 +33,7 @@ vars:
 # validator: url-exists
 postprocessor: sed '$d' | xurls
 var-defaults:
-- "(sor (pen-selected-text t) (pen-surrounding-context))"
+- "(sor (pen-selected-text t) (pen-ask (pen-surrounding-context)))"
 examples:
 - |-
     import Data.Foldable (for_)
