@@ -9,10 +9,15 @@ subprompts:
     <delim>
     File contents:
     <delim>
+# prompt: |+
+#     <metadata>
+#     `(pen-guess-major-mode-set "<language>")`<code>
+#     <:pp>The above code is needed so `(comment-line 1)`
 prompt: |+
     <metadata>
-    `(pen-guess-major-mode-set "<language>")`<code>
-    <:pp>The above code is needed so `(comment-line 1)`
+    <code>
+    <delim>
+    <:pp>The above code is needed so 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
