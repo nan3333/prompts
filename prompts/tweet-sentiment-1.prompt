@@ -1,10 +1,22 @@
----
 title: tweet sentiment
 doc: Outputs Positive or Negative sentiment for a given sentence
-prompt: "This is a tweet sentiment classifier\n\nTweet: \"I loved the new Batman movie!\"
-  \     \nSentiment: Positive\n<delim>\nTweet: \"I hate it when my phone battery dies.\"\nSentiment:
-  Negative\n<delim>\nTweet: \"My day has been \U0001F44D\"\nSentiment: Positive\n<delim>\nTweet:
-  \"This is the link to the article\"\nSentiment: Neutral\n<delim>\nTweet: <1>\nSentiment:\n"
+prompt: |-
+    This is a tweet sentiment classifier
+    
+    Tweet: "I loved the new Batman movie!"      
+    Sentiment: Positive
+    <delim>
+    Tweet: "I hate it when my phone battery dies."
+    Sentiment: Negative
+    <delim>
+    Tweet: "My day has been 👍"
+    Sentiment: Positive
+    <delim>
+    Tweet: "This is the link to the article"
+    Sentiment: Neutral
+    <delim>
+    Tweet: <tweet>
+    Sentiment:
 engine: OpenAI Davinci
 response-length: 64
 temperature: 0.7
