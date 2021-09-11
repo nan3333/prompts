@@ -14,7 +14,7 @@ temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
-- "###"
+- "<delim>"
 cache: on
 vars:
 - "former"
