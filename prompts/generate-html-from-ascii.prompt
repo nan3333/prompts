@@ -64,12 +64,12 @@ prompt: |-
     EOD
 
     # Render the html:
-    lynx --dump -nolist site2.html | head -n 30 <<EOD
+    lynx --dump -nolist <q:url> | head -n 30 <<EOD
     <ascii>
     EOD
 
     # Show the html:
-    cat site2.html <<EOD
+    curl -s <q:url> <<EOD
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -80,6 +80,7 @@ stop-sequences:
 - "EOD"
 cache: on
 vars:
+- url
 - ascii
 examples:
 - |-
