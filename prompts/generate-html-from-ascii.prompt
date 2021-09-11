@@ -6,24 +6,24 @@ prompt: |-
     # Render the html:
     lynx --dump -nolist site1.html | head -n 30 <<EOD
     My Website
-    
+
        A responsive website created by me.
-    
+
        Home Link Link Link
-    
+
     TITLE HEADING
-    
+
     Title description, Dec 7, 2017
-    
+
        Image
-    
+
        Some text..
-    
+
        Sunt in culpa qui officia deserunt mollit anim id est laborum.
-    
+
     Footer
     EOD
-    
+
     # Show the html:
     cat site1.html | head -n 30 <<EOD
     <!DOCTYPE html>
@@ -32,19 +32,19 @@ prompt: |-
     <title>Page Title</title>
     </head>
     <body>
-    
+
     <div class="header">
       <h1>My Website</h1>
       <p>A <b>responsive</b> website created by me.</p>
     </div>
-    
+
     <div class="navbar">
       <a href="#" class="active">Home</a>
       <a href="#">Link</a>
       <a href="#">Link</a>
       <a href="#" class="right">Link</a>
     </div>
-    
+
     <div class="row">
       <div class="main">
         <h2>TITLE HEADING</h2>
@@ -54,26 +54,28 @@ prompt: |-
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-    
+
     <div class="footer">
       <h2>Footer</h2>
     </div>
-    
+
     </body>
     </html>
     EOD
-    
+
     # Render the html:
     lynx --dump -nolist site2.html | head -n 30 <<EOD
     <ascii>
     EOD
-    
+
     # Show the html:
     cat site2.html <<EOD
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
+n-collate: 1
+n-completions: 1
 stop-sequences:
 - "EOD"
 cache: on
@@ -81,7 +83,7 @@ vars:
 - ascii
 examples:
 - |-
-                                       Apple
+     Apple
 
      We look forward to welcoming you to our stores. Whether you shop in a
      store or shop online, our Specialists can help you buy the products
