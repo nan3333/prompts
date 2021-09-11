@@ -1,3 +1,4 @@
+in-development: true
 task: "onelinerize Haskell"
 doc: "Given a chunk of Haskell code, onelinerize it"
 idea: |-
