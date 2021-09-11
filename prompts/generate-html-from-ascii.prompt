@@ -1,7 +1,7 @@
 task: "generate html from ascii browser"
 doc: "Given an ascii browser dump, generate some html"
 prompt-version: 2
-prompt: |+
+prompt: |-
     # Lynx, an ascii web browser.
     # Render the html:
     lynx --dump -nolist site1.html | head -n 30 <<EOD
@@ -65,7 +65,7 @@ prompt: |+
     
     # Render the html:
     lynx --dump -nolist site2.html | head -n 30 <<EOD
-    <code>
+    <ascii>
     EOD
     
     # Show the html:
@@ -78,7 +78,7 @@ stop-sequences:
 - "EOD"
 cache: on
 vars:
-- "ascii"
+- ascii
 examples:
 - |-
                                        Apple
