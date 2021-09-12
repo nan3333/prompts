@@ -28,7 +28,7 @@ completion: true
 # This is just to make it a bit easier when you select multiple lines to define
 preprocessors:
 - pen-str onelineify
-postprocessor: sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
+postprocessor: pen-str capveryfirst | sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
 fz-pretty: on
 prettifier: pen-pretty-paragraph
 var-defaults:
