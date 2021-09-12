@@ -66,6 +66,8 @@ max-generated-tokens: "50"
 top-p: 1.0
 stop-sequences:
 - EOD
+# more than 1 line
+validator: wc -l | grep -q "^1\$"
 cache: on
 vars:
 - "url"
