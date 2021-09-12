@@ -6,18 +6,20 @@ topic: Dictionary
 translator: "(wrlp input (pf-translate-from-world-language-x-to-y/3 from-language to-language))"
 prompt: |
   Glossary of terms.
-
+  <delim>
   ossified
   Definition: Turn into bone or bony tissue.
-
+  <delim>
   <word>
   Definition: 
 engine: OpenAI Davinci
+force-engine: OpenAI Davinci
 temperature: 0.5
-max-generated-tokens: 200
+max-generated-tokens: 80
+n-completions: 8
 top-p: 1
 stop-sequences:
-- "\n\n"
+- "<delim>"
 vars:
 - word
 examples:
