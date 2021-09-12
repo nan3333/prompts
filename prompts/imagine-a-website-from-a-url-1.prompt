@@ -1,6 +1,6 @@
 task: "Imagine a website from a URL"
 doc: "Given a URL, imagine the HTML for that page"
-prompt-version: 2
+prompt-version: 3
 prompt: |+
   Lynx, an ascii web browser.
   <delim>
