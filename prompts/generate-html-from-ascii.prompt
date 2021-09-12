@@ -1,6 +1,6 @@
 task: "generate html from ascii browser"
 doc: "Given an ascii browser dump, generate some html"
-prompt-version: 2
+prompt-version: 3
 prompt: |-
     # Render the website:
     lynx --dump -nolist site1.html | head -n 30 <<EOD
@@ -74,10 +74,10 @@ prompt: |-
     <title>
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "(* 2 prompt-length)"
+max-generated-tokens: "100"
 top-p: 1.0
 n-collate: 1
-n-completions: 1
+n-completions: 5
 stop-sequences:
 - "EOD"
 cache: on
