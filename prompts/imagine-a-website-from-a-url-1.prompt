@@ -62,7 +62,7 @@ engine: "OpenAI Codex"
 n-collate: 1
 n-completions: 5
 temperature: 0.5
-max-generated-tokens: "100"
+max-generated-tokens: "50"
 top-p: 1.0
 stop-sequences:
 - EOD
