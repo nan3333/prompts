@@ -60,9 +60,9 @@ prompt: |+
 
 engine: "OpenAI Codex"
 n-collate: 1
-n-completions: 2
+n-completions: 5
 temperature: 0.5
-max-generated-tokens: "(/ prompt-length 2)"
+max-generated-tokens: "100"
 top-p: 1.0
 stop-sequences:
 - EOD
