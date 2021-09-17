@@ -1,6 +1,6 @@
 task: "correct the results of OCR"
 doc: "Given OCR results, correct them"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
     These are the results of performing optical character recognition on the historical documents.
     <delim>
@@ -32,7 +32,10 @@ examples:
 - |+
   they continu~e chofep ha~its ~fill in t-he mink .&fen th~at th~e generality of
   Mlankiind conts ing~r them~relv~es with a ju~per~fcial knowvledye th-ingfSif.
-postprocessor: pf-correct-grammar/1
+# TODO Add to .prompt optional multiplex preprocessor for inputs
+# If a postprocessor sees pf- then check the function to see if it has
+# multiplex capability
+postprocessor: pf-correct-english-spelling-and-grammar/1
 filter: on
 completion: off
 insertion: off
