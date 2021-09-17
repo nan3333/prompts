@@ -2,7 +2,7 @@ task: "correct the results of OCR"
 doc: "Given OCR results, correct them"
 prompt-version: 1
 prompt: |+
-    This is an example of spelling correction on optical character recognition results of historical documents:
+    These are the results of performing optical character recognition on the historical documents.
     <delim>
     OCR Result:
     <delim>
@@ -32,8 +32,7 @@ examples:
 - |+
   they continu~e chofep ha~its ~fill in t-he mink .&fen th~at th~e generality of
   Mlankiind conts ing~r them~relv~es with a ju~per~fcial knowvledye th-ingfSif.
-preprocessors:
-- "cat"
+postprocessor: pf-correct-grammar/1
 filter: on
 completion: off
 insertion: off
