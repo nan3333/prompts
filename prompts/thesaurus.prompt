@@ -21,7 +21,7 @@ stop-sequences:
 cache: on
 vars:
 - "phrase"
-postprocessor: sed "s/^-\\s*//"
+postprocessor: sed "s/^-*\\s*//"
 split-patterns:
 - "\n"
 examples:
