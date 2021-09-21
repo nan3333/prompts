@@ -1,17 +1,22 @@
 title: Generic tutor for any topic
 issues:
 - It's not as accurate as asktutor/3 or that may have been because I was forcing Codex
-prompt-version: 2
+prompt-version: 3
+subprompts:
+- metaprompt: |
+    This is a conversation between a human and a brilliant AI.
+    The topic is "<topic>".
+- pretext: |
+    Human: Hello, are you my <topic> tutor?
+    <delim>
+    AI: Hi there.
+    Yes I am.
+    How can I help you?
+    <delim>
 prompt: |
-  This is a conversation between a human and a brilliant AI.
-  The topic is "<topic>".
+  <metaprompt>
 
-  Human: Hello, are you my <topic> tutor?
-  <delim>
-  AI: Hi there.
-  Yes I am.
-  How can I help you?
-  <delim>
+  <pretext>
   Human: Thanks. I have a question. <question>
   <delim>
   AI: I would be happy to answer your question.

@@ -1,34 +1,38 @@
-title: "Explain error"
-doc: "Select some code and ask for an explanation"
-info: on
-prompt-version: 2
-prompt: |+
-    `(pen-guess-major-mode-set)`<code>
-    Summary of the above code:`(comment-line 1)`
-xlr-n-generate: 5
-engine: "OpenAI Codex"
+title: Explain error
+include: Generic tutor for any topic/2
+doc: "Select an error message and ask for an explanation"
+prompt-version: 3
+subprompts:
+- metaprompt: |
+    This is a conversation between a human and a brilliant AI.
+    The topic is "<topic>".
+- pretext: |
+    Human: Hello, are you my <topic> tutor?
+    <delim>
+    AI: Hi there.
+    Yes I am.
+    How can I help you?
+    <delim>
+prompt: |
+  <metaprompt>
+
+  <pretext>
+  Human: Thanks. I have a question. What does the following error message mean? <q:error>
+  <delim>
+  AI: I would be happy to answer your question.
+engine: OpenAI Codex
 temperature: 0.3
-max-generated-tokens: "prompt-length"
-top-p: 1.0
-best-of: 1
-no-trim-start: off
-no-trim-end: off
+max-generated-tokens: 300
+top-p: 1
+best-of: 3
 stop-sequences:
-- "##"
-yas: on
+- "<delim>"
 vars:
-- code
+- topic
+- error
 examples:
-- |
-    var myDraw = Draw(200, 200, true);
-    var x1 = randomInteger(200);
-    var y1 = randomInteger(200);
-    var x2 = randomInteger(200);
-    var y2 = randomInteger(200);
-    myDraw.line(x1, y1, x2, y2);
-n-test-runs: 5
-n-collate: 1
-n-completions: 5
-filter: no
-completion: off
-insertion: off
+- haskell
+- "• Couldn't match expected type ‘IO ()’"
+var-defaults:
+- "(pen-detect-language-ask)"
+- "(pen-selected-text)"
