@@ -20,7 +20,7 @@ stop-sequences:
 cache: on
 vars:
 - "phrase"
-postprocessor: sed "s/^-*\\s*//"
+postprocessor: sed "s/^-*\\s*//" | sed "s/^\"\\(.*\\)\"$/\\1/"
 split-patterns:
 - "\n"
 examples:
