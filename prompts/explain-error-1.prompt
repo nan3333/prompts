@@ -17,7 +17,9 @@ prompt: |
   <metaprompt>
 
   <pretext>
-  Human: Thanks. I have a question. What does the following error message mean? <q:error>
+  Human: Thanks. I have a question.
+  What does the following error message mean? <error>
+  Here is the problematic line of code: <code>
   <delim>
   AI: I would be happy to answer your question.
 engine: OpenAI Codex
@@ -30,9 +32,12 @@ stop-sequences:
 vars:
 - topic
 - error
+- code
 examples:
 - haskell
 - "• Couldn't match expected type ‘IO ()’"
+- "runStringThroughSed \"hello world\""
 var-defaults:
 - "(pen-detect-language-ask)"
 - "(pen-selected-text)"
+- "(current-line-string)"
