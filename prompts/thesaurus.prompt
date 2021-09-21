@@ -2,22 +2,21 @@ task: "thesaurus"
 doc: "Given a word or phrase, find alternates"
 prompt-version: 1
 prompt: |+
-  <delim>
+  Thesaurus:
+
   3 other ways of saying "get stuck":
-  <delim>
   - paint into a corner
   - become frozen in place
   - become fastened
-  <delim>
+
   10 other ways of saying <q:phrase>:
-  <delim>
   -
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
-- "<delim>"
+- "\n\n"
 cache: on
 vars:
 - "phrase"
