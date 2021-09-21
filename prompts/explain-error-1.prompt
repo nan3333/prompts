@@ -39,5 +39,5 @@ examples:
 - "runStringThroughSed \"hello world\""
 var-defaults:
 - "(pen-detect-language-ask)"
-- "(pen-selected-text)"
+- "(pen-ask (lsp-ui-pen-diagnostics))"
 - "(current-line-string)"
