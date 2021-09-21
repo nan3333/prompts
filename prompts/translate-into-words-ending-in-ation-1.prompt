@@ -1,6 +1,8 @@
 task: "Translate into words ending in ation"
 doc: "Translate using words that end in 'ation'"
 prompt-version: 1
+issues:
+- Doesn't work too well
 prompt: |+
   Use words that end in the letters 'ation':
   <delim>
