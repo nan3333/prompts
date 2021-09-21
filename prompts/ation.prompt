@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
   Use words that end in 'ation':
   <delim>
-  Input: The 
+  Input: The misunderstanding of having outbursts of frustration to counter stagnation with abberation.
   Output: The misinterpretation of having outbursts of frustration to counter stagnation with abberation.
 
 engine: "OpenAI Codex"
