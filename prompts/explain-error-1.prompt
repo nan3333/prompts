@@ -18,9 +18,19 @@ prompt: |
 
   <pretext>
   Human: Thanks. I have a question.
-  What does the following error message mean? <error>
-  Here is the problematic line of code: <code>
+  Here is my code:
   <delim>
+  <context>
+  <delim>
+  This is the problematic line of code:
+  <delim>
+  <code>
+  <delim>
+  I am getting this error:
+  <delim>
+  <error>
+  <delim>
+  What does the error mean?
   AI: I would be happy to answer your question.
 engine: OpenAI Codex
 temperature: 0.3
@@ -32,12 +42,18 @@ stop-sequences:
 vars:
 - topic
 - error
+- context
 - code
 examples:
 - haskell
 - "• Couldn't match expected type ‘IO ()’"
+- |+
+    main :: IO ()
+    main = do
+      runStringThroughSed "hello world"
 - "runStringThroughSed \"hello world\""
 var-defaults:
 - "(pen-detect-language-ask)"
 - "(pen-ask (lsp-ui-pen-diagnostics))"
+- "(pen-surrounding-context)"
 - "(current-line-string)"
