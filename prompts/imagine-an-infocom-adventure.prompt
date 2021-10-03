@@ -3,7 +3,7 @@ doc: "Given ... task"
 in-development: on
 prompt-version: 1
 notes:
-- This needs advanced prompt design, for filling in cloze words, etc.
+- This needs advanced prompt templating, for filling in cloze words, etc.
 prompt: |+4
      Bedroom                                         Score: 0        Moves: 0
     
