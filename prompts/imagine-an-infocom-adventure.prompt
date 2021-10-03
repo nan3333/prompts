@@ -1,5 +1,6 @@
 task: "title"
 doc: "Given ... task"
+in-development: on
 prompt-version: 1
 prompt: |+4
      Bedroom                                         Score: 0        Moves: 0
