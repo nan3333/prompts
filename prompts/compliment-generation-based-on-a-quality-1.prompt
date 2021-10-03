@@ -1,6 +1,6 @@
 title: Compliment generation based on a quality
 doc: Generate a nice compliment based on a quality
-prompt-version: 6
+prompt-version: 7
 prompt: |
   The following are nice compliments:
   <delim>
@@ -48,7 +48,7 @@ max-generated-tokens: 60
 top-p: 1
 best-of: 2
 stop-sequences:
-- "##"
+- "<delim>"
 - "\n"
 cache: true
 vars:
