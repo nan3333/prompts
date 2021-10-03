@@ -15,7 +15,7 @@ max-generated-tokens: 60
 top-p: 1
 best-of: 2
 stop-sequences:
-- "##"
+- "<delim>"
 - "\n"
 cache: true
 vars:
