@@ -28,4 +28,4 @@ insertion: off
 preprocessors:
 - pen-str onelineify
 postprocessor: pen-str unonelineify | pen-pretty-paragraph
-external-related: # https://wordincontext.com/en
+external-related: "https://wordincontext.com/en"
