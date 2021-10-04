@@ -64,7 +64,7 @@ This is a minimal =.prompt= file that should work.
   max-generated-tokens: 60
 #+END_SRC
 
-** Prompt template format
+** Prompt template format basics
 The =prompt= field within a =.prompt= file employs a templating system.
 
 - =<1>= means to substitute the first variable into this position of the prompt.
