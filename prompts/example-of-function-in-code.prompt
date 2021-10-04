@@ -8,7 +8,7 @@ prompt: |+
   Function: map
   Usage: map (*2) [1..10]
   <delim>
-  Language: Haskell
+  Language: <language>
   Function: <function>
   Usage: 
 engine: OpenAI Codex
@@ -21,6 +21,7 @@ stop-sequences:
 - "<delim>"
 vars:
 - function
+- language
 examples:
 - map
 completion: true
@@ -31,3 +32,4 @@ postprocessor: pen-str unonelineify
 fz-pretty: on
 var-defaults:
 - "(pen-thing-at-point-ask \"symbol\" t)"
+- "(pen-detect-language-ask)"
