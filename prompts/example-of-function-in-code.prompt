@@ -29,7 +29,7 @@ completion: true
 preprocessors:
 - pen-str onelineify
 postprocessor: pen-str unonelineify
-fz-pretty: on
+# fz-pretty: on
 var-defaults:
 - "(pen-thing-at-point-ask \"symbol\" t)"
 - "(pen-detect-language-ask)"
