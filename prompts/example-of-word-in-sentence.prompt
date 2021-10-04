@@ -30,4 +30,5 @@ fz-pretty: on
 prettifier: pen-pretty-paragraph
 var-defaults:
 - "(pen-thing-at-point-ask \"word\" t)"
-external-related: "https://wordincontext.com/en"
+external-related:
+- "https://wordincontext.com/en"
