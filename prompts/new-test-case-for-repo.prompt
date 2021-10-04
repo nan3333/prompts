@@ -7,6 +7,7 @@ prompt: |+
   git clone "<url>"
   cd OSlash
   cd tests
+  # Functions for testing <function name>
   cat test_<function name>.py <<EOD
   from 
 engine: "OpenAI Codex"
@@ -15,7 +16,11 @@ temperature: 0.3
 # This works, but the approximation of the max bound sometimes isn't good enough
 # max-generated-tokens: "final-engine-max-generated-tokens"
 
-max-generated-tokens: "(- final-engine-max-generated-tokens 200)"
+# max-generated-tokens: "(- final-engine-max-generated-tokens 200)"
+
+# Only start it off
+max-generated-tokens: 200
+
 top-p: 1.0
 # It's a long completion, so do them one at a time
 n-completions: 1
