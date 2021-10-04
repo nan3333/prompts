@@ -26,6 +26,7 @@ n-completions: 5
 stop-sequences:
 - "EOD"
 cache: on
+yas: on
 vars:
 - "url"
 - "function name"
