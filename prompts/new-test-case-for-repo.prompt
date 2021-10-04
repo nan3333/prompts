@@ -8,6 +8,7 @@ prompt: |+
   cd OSlash
   cd tests
   cat test_<function name>.py <<EOD
+  from 
 engine: "OpenAI Codex"
 temperature: 0.3
 
@@ -16,6 +17,7 @@ temperature: 0.3
 
 max-generated-tokens: "(- final-engine-max-generated-tokens 200)"
 top-p: 1.0
+n-completions: 1
 stop-sequences:
 - "EOD"
 cache: on
