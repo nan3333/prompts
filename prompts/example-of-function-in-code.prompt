@@ -1,8 +1,8 @@
-task: "Get an example sentence for a word"
-doc: "Given a word, provide an example of its usage"
+task: "Get an example of the usage of a function"
+doc: "Given a function name, provide an example of its usage"
 prompt-version: 1
 prompt: |+
-  Glossary of terms with usage.
+  How to use a function:
   <delim>
   impiety
   Usage: He blamed the fall of the city on the impiety of the people.
