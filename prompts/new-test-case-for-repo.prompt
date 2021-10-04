@@ -19,11 +19,11 @@ temperature: 0.3
 # max-generated-tokens: "(- final-engine-max-generated-tokens 200)"
 
 # Only start it off
-max-generated-tokens: 200
+max-generated-tokens: 150
 
 top-p: 1.0
 # It's a long completion, so do them one at a time
-n-completions: 1
+n-completions: 5
 stop-sequences:
 - "EOD"
 cache: on
