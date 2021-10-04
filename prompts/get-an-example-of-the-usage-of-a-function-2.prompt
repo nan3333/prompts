@@ -28,8 +28,10 @@ completion: true
 # This is just to make it a bit easier when you select multiple lines to define
 preprocessors:
 - pen-str onelineify
-postprocessor: pen-str unonelineify
+# Also trim off excess, when unonelineify doesn't quite do it
+postprocessor: pen-str unonelineify | sed -z "s/Language:.*//"
 # fz-pretty: on
 var-defaults:
 - "(pen-thing-at-point-ask \"symbol\" t)"
 - "(pen-detect-language-ask)"
+validator: "grep -q <function>"
