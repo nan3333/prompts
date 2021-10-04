@@ -64,6 +64,14 @@ This is a minimal =.prompt= file that should work.
   max-generated-tokens: 60
 #+END_SRC
 
+** Prompt template format
+The =prompt= field within a =.prompt= file employs a templating system.
+
+- =<1>= means to substitute the first variable into this position of the prompt.
+- =<2>= means to substitute the second variable into this position of the prompt.
+- =<word>= means to substitute the variable named _word_ into this position of the prompt.
+- =<delim>= means to substitute the delimiter, usually =###= for GPT-3 and ="""= for Codex, into this position of the prompt.
+
 ** Building prompt functions
 + The only required fields are:
   - =title=
