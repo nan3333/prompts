@@ -4,13 +4,17 @@ todo:
 - Make this work for more languages
 prompt-version: 1
 prompt: |+
-  git clone "https://github.com/dbrattli/OSlash"
+  git clone "<url>"
   cd OSlash
   cd tests
   cat test_<function name>.py <<EOD
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "final-engine-max-generated-tokens"
+
+# This works, but the approximation of the max bound sometimes isn't good enough
+# max-generated-tokens: "final-engine-max-generated-tokens"
+
+max-generated-tokens: "(- final-engine-max-generated-tokens 200)"
 top-p: 1.0
 stop-sequences:
 - "EOD"
