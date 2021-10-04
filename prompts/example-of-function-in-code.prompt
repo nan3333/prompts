@@ -2,13 +2,16 @@ task: "Get an example of the usage of a function"
 doc: "Given a function name, provide an example of its usage"
 prompt-version: 1
 prompt: |+
-  How to use a function:
+  Examples of function usage:
   <delim>
-  impiety
-  Usage: He blamed the fall of the city on the impiety of the people.
+  Language: Haskell
+  Function: map
+  Usage: map (*2) [1..10]
   <delim>
-  <word>
-  Usage:
+  
+  Language: Haskell
+  Function: <function>
+  Usage: 
 engine: OpenAI Davinci
 force-engine: OpenAI Davinci
 temperature: 0.5
@@ -18,9 +21,9 @@ top-p: 1
 stop-sequences:
 - "<delim>"
 vars:
-- word
+- function
 examples:
-- boysenberry
+- map
 completion: true
 # This is just to make it a bit easier when you select multiple lines to define
 preprocessors:
