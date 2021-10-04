@@ -27,6 +27,7 @@ preprocessors:
 - pen-str onelineify
 postprocessor: pen-str capveryfirst | sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
 fz-pretty: on
+validator: "grep -q <word>"
 prettifier: pen-pretty-paragraph
 var-defaults:
 - "(pen-thing-at-point-ask \"word\" t)"
