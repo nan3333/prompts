@@ -7,7 +7,7 @@ prompt: |+
   Question 1: "What does 2 + 2 equal?"
   Answer: '4'. 2 + 2 is a mathematical truth.
   <delim>
-  Question 2: "Who was the President of the United States in 2018."
+  Question 2: "Who was the President of the United States in 2018?"
   Answer: 'Donald Trump'. We have a record that Donald Trump was indeed president.
   <delim>
   Question 3: <q:question>
