@@ -13,13 +13,13 @@ prompt: |+
   The President of the United States in 2018 was 'Donald Trump'.
   <delim>
   Question 3: <q:question>
-  Answer: 
+  Answer: '
 engine: "OpenAI Codex"
 temperature: 0.1
 max-generated-tokens: 20
 top-p: 1.0
 stop-sequences:
-- "\n"
+- "'"
 n-completions: 10
 cache: on
 vars:
