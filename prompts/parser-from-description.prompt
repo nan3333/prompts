@@ -7,7 +7,7 @@ prompt: |+
   cd `(insert (slugify "<description>"))`
   # g4 grammar for parsing `(insert (slugify "<description>"))`
   cat `(insert (slugify "<description>"))`.g4 <<EOD
-  grammar `(insert (slugify "<description>"))`;
+  <:pp>grammar `(insert (slugify "<description>"))`;
 
   prog 
 engine: "OpenAI Codex"
