@@ -1,0 +1,23 @@
+task: "Prompt until the language model believes it has hit the end"
+prompt-version: 1
+todo:
+- Consider including the EOD in the output as a sentinel, so the user knows
+prompt: |+
+  cat file <<EOD
+  <contents>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- "contents"
+var-defaults:
+- "(or (sor (pen-selected-text)) (pen-preceding-text))"
+examples:
+- "Knock knock. Who's there? "
+filter: on
+completion: off
+insertion: off
