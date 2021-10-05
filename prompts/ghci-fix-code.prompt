@@ -2,29 +2,56 @@ task: "Given the current ghci error and the code snippet, fix the code snippet"
 title: "ghci autofix code"
 prompt-version: 1
 prompt: |+
+  cat ghci_output <<EOD
+  ilambda.hs:14:12: error:
+      • Couldn't match type ‘IO String’ with ‘[Char]’
+        Expected type: String
+          Actual type: IO String
+      • In the first argument of ‘putStrLn’, namely ‘getDate’
+        In a stmt of a 'do' block: putStrLn getDate
+        In the expression:
+          do putStrLn "hello world"
+             putStrLn getDate
+     |
+  14 |   putStrLn getDate
+     |            ^^^^^^^
+  EOD
 
+  # Broken code:
+  cat ilambda.hs <<EOD
+  main :: IO ()
+  main = do
+    putStrLn "hello world"
+    putStrLn getDate
+  EOD
+
+  cat ghci_output <<EOD
+  EOD
+
+  cat ghci_output <<EOD
+  [1 of 1] Compiling UnixFuncs        ( ilambda.hs, interpreted )
+  Ok, one module loaded.
+  EOD
+
+  # Fixed code:
+  cat ilambda.hs <<EOD
+  main :: IO ()
+  main = do
+    putStrLn "hello world"
+    d <- getDate
+    putStrLn d
+  
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
-- "<delim>"
+- "EOD"
 cache: on
 vars:
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
-examples:
-- "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
-filter: on
+- "ghci output"
+- "code segment"
+filter: off
+info: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
