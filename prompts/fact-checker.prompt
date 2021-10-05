@@ -5,13 +5,16 @@ prompt: |+
   For each claim, answer true or false:
   <delim>
   Claim: 2 + 2 = 4
-  True or False: True
+  This is 'True', because it is a mathematical truth.
+  <delim>
+  Claim: "In 2018, Donald Trump was the President of the United States."
+  This is 'True', because we have record of it.
   <delim>
   Claim: "The following statement is untrue: In 2018, Donald Trump was the President of the United States."
-  True or False: False
+  This is 'False', because the true statement was negated.
   <delim>
   Claim: <q:claim>
-  True or False: 
+  This is '
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 20
