@@ -9,10 +9,17 @@ prompt: |+
   cat `(insert (slugify "<description>"))`.g4 <<EOD
   <:pp>grammar `(insert (slugify "<description>"))`;
 
-  prog 
+  prog : program EOF
+  
+  # lexer rule
+  options {
+      language = `(insert (slugify "<description>"))`;
+  }
+
+
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "(* 2 prompt-length)"
+max-generated-tokens: 150
 top-p: 1.0
 yas: on
 stop-sequences:
