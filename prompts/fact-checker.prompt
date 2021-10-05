@@ -4,6 +4,9 @@ prompt-version: 1
 prompt: |+
   For each claim, answer true or false:
   <delim>
+  Claim: 2 + 2 = 4
+  True or False: True
+  <delim>
   Claim: "The following statement is untrue: In 2018, Donald Trump was the President of the United States."
   True or False: False
   <delim>
