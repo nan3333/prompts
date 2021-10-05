@@ -4,7 +4,17 @@ notes:
 - generate latex math mode from ascii representation
 prompt-version: 1
 prompt: |+
+  How to write latex math equations:
   P(W) = P(w_1, w_2,...,w_N)
+  <delim>
+  Equation: sqrt(x^2 + 1)
+  Latex: \sqrt{x^2+1}
+  <delim>
+  Equation: quadratic formula
+  Latex: x = \frac{-b \pm \sqrt{b^2-4 ac}}{2 a}
+  <delim>
+  Equation: <equation>
+  Latex: 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -13,20 +23,9 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "equation"
 examples:
-- "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
+- "quadratic formula"
 filter: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
