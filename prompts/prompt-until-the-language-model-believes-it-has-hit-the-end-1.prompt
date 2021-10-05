@@ -15,7 +15,7 @@ cache: on
 vars:
 - "contents"
 var-defaults:
-- "(or (sor (pen-selected-text)) (pen-preceding-text))"
+- "(or (sor (pen-selected-text t)) (pen-preceding-text))"
 examples:
 - "Knock knock. Who's there? "
 filter: on
