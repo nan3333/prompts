@@ -15,7 +15,8 @@ prompt: |
 issues: 
 engine: OpenAI Codex
 temperature: 0.3
-max-generated-tokens: 200
+max-generated-tokens: 150
+# max-generated-tokens: "prompt-length"
 top-p: 1
 stop-sequences:
 - "<delim>"
