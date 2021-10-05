@@ -4,7 +4,7 @@ todo:
 - Consider including the EOD in the output as a sentinel, so the user knows
 prompt: |+
   cat file <<EOD
-  <contents>
+  <:pp><contents>
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 150
