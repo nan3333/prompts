@@ -1,5 +1,7 @@
 task: "Convert ascii to latex equation"
 doc: "Given some ascii text, convert to a latex equation"
+notes:
+- generate latex math mode
 prompt-version: 1
 prompt: |+
   P(W) = P(w_1, w_2,...,w_N)
