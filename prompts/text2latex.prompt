@@ -3,7 +3,6 @@ doc: "Given some ascii text, convert to a latex equation"
 prompt-version: 1
 prompt: |+
   P(W) = P(w_1, w_2,...,w_N)
-
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
