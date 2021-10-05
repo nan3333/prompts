@@ -1,0 +1,28 @@
+task: "Given a claim, determine if it is true or false"
+title: "Fact checker"
+prompt-version: 1
+prompt: |+
+  For each claim, answer true or false:
+  <delim>
+  Claim: "The following statement is untrue: In 2018, Donald Trump was the President of the United States."
+  Answer: False
+  <delim>
+  Claim: <q:claim>
+  Answer: 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "claim"
+examples:
+- "The year is 2021"
+info: on
+filter: off
+completion: off
+insertion: off
+preprocessors:
+- pen-str join ' '
