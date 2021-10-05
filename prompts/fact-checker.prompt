@@ -22,6 +22,7 @@ examples:
 - "The year is 2021"
 info: on
 filter: off
+no-uniq-results: on
 completion: off
 insertion: off
 preprocessors:
