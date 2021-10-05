@@ -32,6 +32,7 @@ info: on
 filter: off
 no-uniq-results: on
 completion: off
+results-analyser: pen-analyse-true-or-false
 insertion: off
 preprocessors:
 - pen-str join ' '
