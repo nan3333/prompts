@@ -14,7 +14,7 @@ prompt: |+
   This is objectively 'False', because the true statement was negated.
   <delim>
   Claim: <q:claim>
-  This is objectively '
+  This is objectively <:pp>'
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 20
