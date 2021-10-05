@@ -2,7 +2,7 @@ task: "Get a factual result, given a question"
 doc: "Get a truthful answer to a question"
 prompt-version: 1
 prompt: |+
-  These answers have all been fact-checked:
+  These answers have all been verified as true:
   <delim>
   Question 1: "What does 2 + 2 equal?"
   Answer: 2 + 2 equals '4'.
