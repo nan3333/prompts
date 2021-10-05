@@ -15,6 +15,7 @@ max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
 - "\n"
+n-completions: 10
 cache: on
 vars:
 - "claim"
