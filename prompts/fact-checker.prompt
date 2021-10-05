@@ -5,10 +5,10 @@ prompt: |+
   For each claim, answer true or false:
   <delim>
   Claim: "The following statement is untrue: In 2018, Donald Trump was the President of the United States."
-  Answer: False
+  True or False: False
   <delim>
   Claim: <q:claim>
-  Answer: 
+  True or False: 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
