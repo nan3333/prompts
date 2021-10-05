@@ -5,10 +5,12 @@ prompt: |+
   These answers have all been verified as true:
   <delim>
   Question 1: "What does 2 + 2 equal?"
-  Answer: 2 + 2 equals '4'.
+  Answer: '4'.
+  2 + 2 equals '4'.
   <delim>
   Question 2: "Who was the President of the United States in 2018?"
-  Answer: The President of the United States in 2018 was 'Donald Trump'.
+  Answer: 'Donald Trump'.
+  The President of the United States in 2018 was 'Donald Trump'.
   <delim>
   Question 3: <q:question>
   Answer: 
