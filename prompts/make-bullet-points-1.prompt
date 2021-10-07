@@ -5,15 +5,15 @@ doc: Take some prose and generate some bullet points
 # Then complete that one.
 # I need conditional completions.
 prompt: |
-  <delim>
   Make bullet points about the following:
   <delim>
   <notes>
   <delim>
-  The key points (one per line) are:
+  Key points:
   <:pp>1. 
 # model: davinci-instruct-beta
 # temperature: 0.7
+delimiter: "\n\n"
 model: curie
 temperature: 0.5
 max-generated-tokens: prompt-length
