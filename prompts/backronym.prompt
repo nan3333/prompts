@@ -1,0 +1,49 @@
+task: "Generate a backronym"
+doc: "Given a word, generate a backronym"
+prompt-version: 1
+prompt: |+
+    The AI is super helpful and funny, and will invent acronyms which match each letter.
+    It is important to avoid generating alternate meanings which are sexual, drug-related, profane, abusive, or sad in nature. 
+    It is important that the first letter of each output word matches the individual letters in the input acronym.
+    It is important that the output sentence is intelligible and the words are real words.
+    It is very important that the output sentence considers the context provided.
+    ----
+    Input: [P][O][O][P]
+    Context: A system or application that just barely works, and is a pain to maintain and extend.
+    Output: [P]ainfully [O]utlandish [O]verpriced [P]roject
+    ----
+    Input: [T][A][R][D][I][S]
+    Context: A system for compressing text documents, where tokens are turned into images before compression.
+    Output: [T]ext [A]ctually [R]andomly [D]istorted [I]mage [S]equences
+    ----
+    Input: [Y][A][D][A][D][A]
+    Context: Language learning app used for basics or mixed practice by artificial intelligent systems.
+    Output: [Y]ou [A]dvanced [D]ifficulty [A]udio [D]ownload [A]udio 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "former"
+- "latter"
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+examples:
+- "boysenberries"
+- "strawberries"
+preprocessors:
+- "sed 's/^/- /'"
+- "cat"
+filter: on
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
+external-related:
+- "https://docs.google.com/spreadsheets/d/1EuciDyKqFg2CIoQS89tF238oGtJq8a4mRx8kV9eA1Lc/edit#gid=2011839893"
