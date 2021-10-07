@@ -16,7 +16,7 @@ prompt: |
 # model: davinci-instruct-beta
 # temperature: 0.7
 model: curie
-temperature: 0.7
+temperature: 0.5
 max-generated-tokens: prompt-length
 top-p: 1
 stop-sequences:
