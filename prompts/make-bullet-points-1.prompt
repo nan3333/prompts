@@ -1,4 +1,3 @@
----
 title: make bullet points
 doc: Take some prose and generate some bullet points
 # It would be good if I could partially generate a prompt, and then continue with the desired one.
