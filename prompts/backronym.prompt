@@ -1,5 +1,5 @@
 task: "Generate a backronym"
-doc: "Given a word, generate a backronym"
+doc: "Given a word, generate an backronym for it"
 prompt-version: 1
 prompt: |+
     The AI is super helpful and funny, and will invent acronyms which match each letter.
@@ -28,14 +28,9 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "word"
 examples:
 - "boysenberries"
-- "strawberries"
 preprocessors:
 - "sed 's/^/- /'"
 - "cat"
