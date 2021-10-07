@@ -2,17 +2,21 @@
 title: make bullet points
 doc: Take some prose and generate some bullet points
 prompt: |
-  Make bullet points from the following passage:
-
+  <delim>
+  Make bullet points about the following:
+  <delim>
   <1>
-
-  Bullet points:
-model: davinci-instruct-beta
-temperature: 0.7
-max-generated-tokens: 1000
+  <delim>
+  The key points (one per line) are:
+  <:pp>1. 
+# model: davinci-instruct-beta
+# temperature: 0.7
+model: curie
+temperature: 0.5
+max-generated-tokens: prompt-length
 top-p: 1
 stop-sequences:
-- "\n\n"
+- "<delim>"
 vars:
 - notes
 examples:
