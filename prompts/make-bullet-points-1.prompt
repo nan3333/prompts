@@ -23,6 +23,8 @@ stop-sequences:
 - "<delim>"
 vars:
 - notes
+preprocessors:
+- pen-str join ' '
 examples:
 - |-
   This anonymous gold coinage appears to have been initiated shortly before
