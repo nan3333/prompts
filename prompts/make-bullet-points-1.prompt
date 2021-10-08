@@ -9,8 +9,8 @@ prompt: |
   <delim>
   <notes>
   <delim>
-  Key points:
-  <:pp>1. 
+  - Key points:
+  <:pp>- 1. 
 # model: davinci-instruct-beta
 # temperature: 0.7
 delimiter: "\n\n"
@@ -24,6 +24,7 @@ vars:
 - notes
 preprocessors:
 - pen-str join ' '
+postprocessor: sed 's/^- //'
 examples:
 - |-
   This anonymous gold coinage appears to have been initiated shortly before
