@@ -5,12 +5,12 @@ prompt: |+
   Haskell type explanations:
   <delim>
   Signature: String -> Maybe [String]
-  Description: This is a function that takes a string and might return a list of strings
+  Description: This is a function that takes a string and Maybe will return a list of strings
   <delim>
   Signature: <signature>
   Description: 
 engine: "OpenAI Codex"
-temperature: 0.3
+temperature: 0.2
 max-generated-tokens: 100
 top-p: 1.0
 stop-sequences:
