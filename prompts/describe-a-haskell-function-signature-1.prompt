@@ -4,6 +4,9 @@ prompt-version: 1
 prompt: |+
   Haskell type explanations:
   <delim>
+  Signature: _ :: Int
+  Description: This is an Int.
+  <delim>
   Signature: String -> Maybe [String]
   Description: This function takes a String and Maybe will return a list of Strings.
   <delim>

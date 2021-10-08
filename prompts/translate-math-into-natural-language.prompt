@@ -1,0 +1,40 @@
+task: "Get the signatures for a list of functions"
+doc: "Given a list of functions, get their signatures"
+prompt-version: 1
+prompt: |+
+  Math equations below:
+  <delim>
+  Math: ∀x ∈ D, P(x)
+  Description: For all x in the domain, P(x) is true
+  Topic: Predicate calculus
+  <delim>
+  Math: ∃𝑥 ∈ D, P(x)
+  Description: There exists x in the domain, such that P(x) is true
+  Topic: Predicate calculus
+  <delim>
+  Math: <equation>
+  Description: 
+engine: "OpenAI Codex"
+temperature: 0.3
+top-p: 1.0
+cache: on
+n-collate: 1
+n-completions: 5
+stop-sequences:
+- "<delim>"
+vars:
+- "equation"
+preprocessors:
+- pen-onelineify
+examples:
+- "haskell"
+- "fromIntegral\nfromRational\nfromReal\nfromRealFrac"
+# delete the last
+postprocessor: sed "s/ | /\\n/g" | sed "s/^\s*//"
+# The 'end' split patterns are used because
+# we want it to run 'after' the postprocessor
+end-split-patterns:
+- "\n"
+filter: no
+completion: on
+insertion: on
