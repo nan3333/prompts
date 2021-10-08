@@ -1,5 +1,6 @@
 title: make bullet points
 doc: Take some prose and generate some bullet points
+prompt-version: 2
 # It would be good if I could partially generate a prompt, and then continue with the desired one.
 # For example, retry completing until you get a one-liner list item.
 # Then complete that one.
