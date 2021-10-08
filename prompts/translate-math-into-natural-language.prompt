@@ -26,6 +26,7 @@ vars:
 - "equation"
 preprocessors:
 - pen-str onelineify
+postprocessor: "sed -z 's/\\nDescription: \\(.*\\)/ (\\1)/"
 examples:
   - |-
     P: "Roofus is a mammal"
