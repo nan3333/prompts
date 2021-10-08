@@ -7,8 +7,11 @@ prompt: |+
   Signature: String -> Maybe [String]
   Description: This function takes a String and Maybe will return a list of Strings.
   <delim>
-  Signature: <signature>
+  Signature: String -> IO String
   Description: This function takes a String and performs some I/O before returning a String.
+  <delim>
+  Signature: <signature>
+  Description: 
 engine: "OpenAI Codex"
 temperature: 0.2
 max-generated-tokens: 100
