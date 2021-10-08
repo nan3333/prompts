@@ -1,5 +1,5 @@
-task: "Get the signatures for a list of functions"
-doc: "Given a list of functions, get their signatures"
+task: "Translate math into natural language"
+doc: "Translate math into natural language"
 prompt-version: 1
 prompt: |+
   Math equations below:
