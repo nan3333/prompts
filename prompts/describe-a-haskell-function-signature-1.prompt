@@ -7,8 +7,8 @@ prompt: |+
   Signature: _ :: Int
   Description: This is an Int.
   <delim>
-  Signature: String -> Maybe [String]
-  Description: This function takes a String and Maybe will return a list of Strings.
+  Signature: decodeResultsList :: String -> Maybe [String]
+  Description: The decodeResultsList function takes a String and Maybe will return a list of Strings.
   <delim>
   Signature: String -> IO String
   Description: This function takes a String and performs some I/O before returning a String.
