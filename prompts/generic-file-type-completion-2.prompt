@@ -2,9 +2,11 @@ title: Generic file type completion
 prompt-version: 2
 doc: This is a generic file-type completer for emacs.
 prompt: |
-  File type: <1>
-  File contents:
-  <2>
+    # <file type> files
+
+    cat draft.<sl:file type> <<EOD
+    <code>
+    EOD
 engine: OpenAI Codex
 force-engine: OpenAI Codex
 temperature: 0.3
@@ -12,7 +14,7 @@ max-generated-tokens: 200
 top-p: 1
 # Complete one line only by default
 stop-sequences:
-- "\n"
+- "EOD"
 vars:
 - file type
 - preceding text
