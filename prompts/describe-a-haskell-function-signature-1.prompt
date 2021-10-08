@@ -5,7 +5,7 @@ prompt: |+
   Haskell type explanations:
   <delim>
   Signature: String -> Maybe [String]
-  Description: This is a function that takes a string and Maybe will return a list of strings
+  Description: This is a function that takes a string and Maybe will return a list of strings.
   <delim>
   Signature: <signature>
   Description: 
