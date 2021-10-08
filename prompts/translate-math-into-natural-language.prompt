@@ -27,14 +27,11 @@ vars:
 preprocessors:
 - pen-onelineify
 examples:
-- "haskell"
-- "fromIntegral\nfromRational\nfromReal\nfromRealFrac"
-# delete the last
-postprocessor: sed "s/ | /\\n/g" | sed "s/^\s*//"
-# The 'end' split patterns are used because
-# we want it to run 'after' the postprocessor
-end-split-patterns:
-- "\n"
+  - |-
+    P: "Roofus is a mammal"
+    P(x): "x is amammal"
+    Q: Vx € D, P(x): "every dog is a mammal"
+info: on
 filter: no
 completion: on
 insertion: on
