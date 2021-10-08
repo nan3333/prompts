@@ -1,12 +1,13 @@
 title: Generic file type completion
 prompt-version: 2
 doc: This is a generic file-type completer for emacs.
+# This prompt is for LMs that have not been trained on code
+code: no
 prompt: |
   File type: <1>
   File contents:
   <2>
-engine: OpenAI Codex
-force-engine: OpenAI Codex
+engine: OpenAI Davinci
 temperature: 0.3
 max-generated-tokens: 200
 top-p: 1
