@@ -25,7 +25,7 @@ stop-sequences:
 vars:
 - "equation"
 preprocessors:
-- pen-onelineify
+- pen-str onelineify
 examples:
   - |-
     P: "Roofus is a mammal"
