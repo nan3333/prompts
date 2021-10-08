@@ -26,7 +26,7 @@ vars:
 - "equation"
 preprocessors:
 - pen-str onelineify
-postprocessor: "sed -z 's/\\nTopic: \\(.*\\)/ (\\1)/'"
+postprocessor: "sed -z 's/\\nTopic: \\(.*\\)\\n.*/ (\\1/' | sed 's/$/)/'"
 examples:
   - |-
     P: "Roofus is a mammal"
