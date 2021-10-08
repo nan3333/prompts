@@ -14,8 +14,9 @@ prompt: |
   <:pp>- 1. 
 # model: davinci-instruct-beta
 # temperature: 0.7
+engine: OpenAI Curie
+force-engine: OpenAI Curie
 delimiter: "\n\n"
-model: curie
 temperature: 0.5
 max-generated-tokens: prompt-length
 top-p: 1
