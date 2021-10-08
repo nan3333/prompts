@@ -8,6 +8,10 @@ prompt: |+
   Description: For all x in the domain, P(x) is true
   Topic: Predicate calculus
   <delim>
+  Math: sqrt(x^2 + 1)
+  Description: Take the square-root of (x to the power of 2 plus 1).
+  Topic: Algebra
+  <delim>
   Math: ∃𝑥 ∈ D, P(x)
   Description: There exists x in the domain, such that P(x) is true
   Topic: Predicate calculus
