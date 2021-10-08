@@ -22,7 +22,7 @@ cache: on
 vars:
 - "signature"
 examples:
-- "String -> IO String"
+- "FilePath -> [String] -> String -> IO String"
 info: on
 filter: off
 completion: off
