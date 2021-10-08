@@ -5,8 +5,7 @@ prompt: |
     # <file type> files
 
     cat draft.<sl:file type> <<EOD
-    <code>
-    EOD
+    <preceding text>
 engine: OpenAI Codex
 force-engine: OpenAI Codex
 temperature: 0.3
