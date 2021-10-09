@@ -2,8 +2,23 @@ task: "name a function, given a description or code"
 doc: "Given a function or a description of a function, come up with a good name for it"
 prompt-version: 1
 prompt: |+
-  
-
+  List of algorithms:
+  <delim>
+  Function or algorithm:
+  <markdown-delim>
+  (defun fib (n)
+    (if (= n 0) 0
+      (if (= n 1) 1
+        (+ (fib (- n 1)) (fib (- n 2))))))
+  <markdown-delim>
+  Algorithm name: Generate the fibonacci sequence
+  Function name: fib
+  <delim>
+  Function or algorithm:
+  <markdown-delim>
+  <algorithm or description>
+  <markdown-delim>
+  Algorithm name: 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -11,21 +26,20 @@ top-p: 1.0
 stop-sequences:
 - "<delim>"
 cache: on
+# TODO Make it so vals are also substituted
+defs:
+- markdown-delim: "```"
 vars:
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "algorithm or description"
 examples:
-- "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
-filter: on
+- |
+  quicksort1 :: (Ord a) => [a] -> [a]
+  quicksort1 [] = []
+  quicksort1 (x:xs) =
+    let smallerSorted = quicksort1 [a | a <- xs, a <= x]
+        biggerSorted = quicksort1 [a | a <- xs, a > x]
+    in  smallerSorted ++ [x] ++ biggerSorted
+info: on
+filter: off
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
