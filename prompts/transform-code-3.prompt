@@ -46,3 +46,4 @@ n-test-runs: 5
 n-collate: 3
 n-completions: 2
 new-document: yes
+filter: on
