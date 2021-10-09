@@ -2,7 +2,7 @@ title: Generic file type completion
 prompt-version: 2
 doc: This is a generic file-type completer for emacs.
 # This prompt is for LMs that have not been trained on code
-code: no
+utilises-code: no
 prompt: |
   File type: <1>
   File contents:
