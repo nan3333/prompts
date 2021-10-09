@@ -1,5 +1,5 @@
 task: "Given the current ghci error and the code snippet, fix the code snippet"
-title: "ghci autofix code"
+title: "autofix code"
 prompt-version: 1
 prompt: |+
   Questions (<language>)
@@ -38,3 +38,4 @@ filter: off
 info: on
 completion: off
 insertion: off
+external-related: https://stackoverflow.com/
