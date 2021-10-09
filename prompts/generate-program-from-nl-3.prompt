@@ -13,7 +13,7 @@ prompt: |+
     <metadata>
 xlr-n-generate: 5
 engine: "OpenAI Codex"
-temperature: 0.3
+temperature: 0.2
 # TODO Use pen-preview-token-length
 max-generated-tokens: 50
 top-p: 1.0
@@ -41,7 +41,7 @@ examples:
     myDraw.line(x1, y1, x2, y2);
 n-test-runs: 5
 n-collate: 1
-n-completions: 5
+n-completions: 10
 filter: no
 completion: off
 insertion: off
