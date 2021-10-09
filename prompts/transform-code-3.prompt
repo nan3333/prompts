@@ -1,6 +1,6 @@
 task: "Transform code"
 doc: "Transform some code given the language and a transformation description"
-prompt-version: 4
+prompt-version: 5
 engine: OpenAI Codex
 subprompts:
 - original-program: |+
