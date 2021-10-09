@@ -41,15 +41,15 @@ examples:
 - "with empathy"
 n-test-runs: 5
 # n-collate is the min collations (requests)
-n-collate: 2
 # while attempting to reach the target, go up to this point
 n-max-collate: 4
 # Try to generate this many results
 n-target: 10
-n-completions: 3
 # The validator should be able to access the number of tokens in the prompt
 # TODO Test this. I only want results that match a particular length
 validator: "(< gen-length (* 2 prompt-length))"
+n-collate: 1
+n-completions: 5
 new-document: yes
 # pipelines, expressions are non-essential
 pipelines:
