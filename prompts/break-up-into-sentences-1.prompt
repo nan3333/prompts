@@ -7,7 +7,7 @@ prompt: |+
     Text: <text>
     <delim>
     List of sentences:
-    <:pp>- 
+    <:pp>1. 
 prompt-filter: "sed -z 's/\\s\\+$//'"
 engine: "OpenAI Davinci"
 force-engine: "OpenAI Davinci"
