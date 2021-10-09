@@ -16,7 +16,7 @@ xlr-n-generate: 5
 engine: "OpenAI Codex"
 temperature: 0.3
 # TODO Use pen-preview-token-length
-max-generated-tokens: 100
+max-generated-tokens: 50
 top-p: 1.0
 best-of: 1
 no-trim-start: off
