@@ -46,3 +46,8 @@ info: on
 filter: off
 completion: off
 insertion: off
+
+# TODO Make the ability for a prompt function to return a struct.
+# By slicing up the results.
+
+postprocessor: "sed 1d | sed 's/Function name: //'"
