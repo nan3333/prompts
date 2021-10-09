@@ -1,7 +1,5 @@
 title: "Generate program from NL"
 doc: "Generate a NL description and a language, generate a program"
-# This prompt is for LMs that have not been trained on code
-code: no
 info: on
 prompt-version: 2
 subprompts:
