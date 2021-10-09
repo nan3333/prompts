@@ -1,7 +1,7 @@
 title: "break up into sentences"
 prompt-version: 2
 prompt: |+
-    Break apart the text into separate sentences, then say "finished":
+    Break apart the text into separate sentences:
     Text: <text>
     List of sentences:
     <:pp>- 
