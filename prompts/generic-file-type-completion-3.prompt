@@ -1,10 +1,10 @@
 title: Generic file type completion
-prompt-version: 2
+prompt-version: 3
 doc: This is a generic file-type completer for emacs.
 prompt: |
     # <file type> files
 
-    cat context.<sl:file type> <<EOD
+    cat later-context.<sl:file type> <<EOD
     <surrounding and proceeding text>
     EOD
 
@@ -47,4 +47,5 @@ examples:
 var-defaults:
 - "(pen-detect-language)"
 - "(pen-preceding-text)"
-- "(pen-surrounding-proceeding-text)"
+#- "(pen-surrounding-proceeding-text)"
+- "(pen-snc \"sed 1d\" (pen-proceeding-text))"
