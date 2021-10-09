@@ -6,7 +6,7 @@ info: on
 prompt-version: 3
 subprompts:
 - metadata: |+
-    # Program description: <q:nl>
+    # Program task description: <q:nl>
     cat <sl:language>_program <<EOD
     <context code>
 prompt: |+
