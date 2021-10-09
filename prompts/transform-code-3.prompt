@@ -12,7 +12,7 @@ subprompts:
 prompt: |+
     <original-program>
 
-    # The exact same program as above but "<transformation>"
+    # The exact same program as above but <q:transformation>
 
     cat edited_program <<EOD
 xlr-n-generate: 5
