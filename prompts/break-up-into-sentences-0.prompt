@@ -4,6 +4,7 @@ prompt: |+
     Break apart the text into separate sentences:
     Text: <text>
     List of sentences:
+    <:pp>-
 prompt-filter: "sed -z 's/\\s\\+$//'"
 engine: "OpenAI Davinci"
 temperature: 0.8
