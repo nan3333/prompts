@@ -20,7 +20,7 @@ best-of: 1
 no-trim-start: off
 no-trim-end: off
 stop-sequences:
-- "##"
+- "<delim>"
 yas: on
 vars:
 - context code
