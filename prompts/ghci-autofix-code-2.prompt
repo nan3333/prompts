@@ -2,7 +2,7 @@ task: "Given the current ghci error and the code snippet, fix the code snippet"
 title: "ghci autofix code"
 prompt-version: 1
 prompt: |+
-  Questions (Haskell)
+  Questions (<language>)
 
   Help, my code is not compiling.
 
@@ -32,6 +32,8 @@ cache: on
 vars:
 - "ghci output"
 - "code segment"
+defs:
+- language: "(pen-detect-language)"
 filter: off
 info: on
 completion: off
