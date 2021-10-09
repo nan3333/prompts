@@ -1,5 +1,6 @@
-task: "name a function, given a description or code"
+task: "name a function, given the description or code"
 doc: "Given a function or a description of a function, come up with a good name for it"
+title: guess function name
 prompt-version: 1
 prompt: |+
   List of algorithms:
