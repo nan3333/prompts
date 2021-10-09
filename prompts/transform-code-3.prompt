@@ -36,8 +36,6 @@ preprocessors:
 var-defaults:
 - "(pen-selected-text)"
 - "(pen-detect-language-ask)"
-postprocessors:
-- sed '$d'
 examples:
 - "print(\"Hello world with empathy\")"
 - "Python"
