@@ -31,7 +31,6 @@ examples:
 preprocessors:
 - pen-str onelineify
 postprocessor: sed -e 's/^- //' -e 's/^-//'
-  's/^/\n/'
 n-test-runs: 5
 n-collate: 1
 n-completions: 2
