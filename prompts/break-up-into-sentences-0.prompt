@@ -10,7 +10,7 @@ prompt: |+
     <:pp>- 
 prompt-filter: "sed -z 's/\\s\\+$//'"
 engine: "OpenAI Davinci"
-temperature: 0.8
+temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 max-generated-tokens: 1000
 top-p: 1.0
