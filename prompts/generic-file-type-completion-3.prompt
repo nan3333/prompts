@@ -1,11 +1,11 @@
 title: Generic file type completion
-prompt-version: 3
+prompt-version: 4
 doc: This is a generic file-type completer for emacs.
 prompt: |
     # <file type> files
 
     cat later-context.<sl:file type> <<EOD
-    <surrounding and proceeding text>
+    <proceeding text>
     EOD
 
     cat draft.<sl:file type> <<EOD
@@ -21,7 +21,7 @@ stop-sequences:
 vars:
 - file type
 - preceding text
-- surrounding and proceeding text
+- proceeding text
 # Do not remove whitespace from the beginning of the response string
 # This is default for completions prompts
 no-trim-start: on
