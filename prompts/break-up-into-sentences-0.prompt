@@ -1,8 +1,7 @@
 title: "break up into sentences"
-in-development: true
-prompt-version: 1
+prompt-version: 2
 prompt: |+
-    Break the text into sentences:
+    Break apart the text into separate sentences:
     Text: <text>
     List of sentences:
 prompt-filter: "sed -z 's/\\s\\+$//'"
