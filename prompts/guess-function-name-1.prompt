@@ -47,7 +47,7 @@ filter: off
 completion: off
 insertion: off
 
-# TODO Make the ability for a prompt function to return a struct.
-# By slicing up the results.
-
+# Make the ability for a prompt function to
+# return a list of results by slicing up the
+# results with a stream editor, rather than merely split-patterns
 postprocessor: "sed 1d | sed 's/Function name: //'"
