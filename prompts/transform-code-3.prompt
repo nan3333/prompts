@@ -43,7 +43,7 @@ examples:
 - "Python"
 - "using numpy"
 n-test-runs: 5
-n-collate: 3
-n-completions: 2
+n-collate: 1
+n-completions: 5
 new-document: yes
 filter: on
