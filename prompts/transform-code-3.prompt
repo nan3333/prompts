@@ -13,7 +13,6 @@ prompt: |+
     <original-program>
 
     # The exact same program as above but "<transformation>"
-    # <transformation>:
 
     cat edited_program <<EOD
 xlr-n-generate: 5
