@@ -6,10 +6,10 @@ prompt: |+
   <delim>
   Function or algorithm:
   <markdown-delim>
-  (defun fib (n)
+  (defun f (n)
     (if (= n 0) 0
       (if (= n 1) 1
-        (+ (fib (- n 1)) (fib (- n 2))))))
+        (+ (f (- n 1)) (f (- n 2))))))
   <markdown-delim>
   Algorithm name: Generate the fibonacci sequence
   Function name: fib
@@ -23,6 +23,7 @@ engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
+n-completions: 10
 stop-sequences:
 - "<delim>"
 cache: on
@@ -32,13 +33,14 @@ defs:
 vars:
 - "algorithm or description"
 examples:
+# quicksort
 - |
-  quicksort1 :: (Ord a) => [a] -> [a]
-  quicksort1 [] = []
-  quicksort1 (x:xs) =
-    let smallerSorted = quicksort1 [a | a <- xs, a <= x]
-        biggerSorted = quicksort1 [a | a <- xs, a > x]
-    in  smallerSorted ++ [x] ++ biggerSorted
+  f :: (Ord a) => [a] -> [a]
+  f [] = []
+  f (x:xs) =
+    let smaller = f [a | a <- xs, a <= x]
+        bigger = f [a | a <- xs, a > x]
+    in  smaller ++ [x] ++ bigger
 info: on
 filter: off
 completion: off
