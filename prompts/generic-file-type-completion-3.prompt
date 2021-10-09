@@ -4,6 +4,10 @@ doc: This is a generic file-type completer for emacs.
 prompt: |
     # <file type> files
 
+    cat context.<sl:file type> <<EOD
+    <surrounding and proceeding text>
+    EOD
+
     cat draft.<sl:file type> <<EOD
     <preceding text>
 engine: OpenAI Codex
@@ -17,6 +21,7 @@ stop-sequences:
 vars:
 - file type
 - preceding text
+- surrounding and proceeding text
 # Do not remove whitespace from the beginning of the response string
 # This is default for completions prompts
 no-trim-start: on
@@ -42,3 +47,4 @@ examples:
 var-defaults:
 - "(pen-detect-language)"
 - "(pen-preceding-text)"
+- "(pen-surrounding-proceeding-text)"
