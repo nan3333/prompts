@@ -6,11 +6,11 @@ info: on
 prompt-version: 2
 subprompts:
 - metadata: |+
-    File type: <language>
-    File contents:
+    # <nl>
+    cat <sl:language>_program <<EOD
+    <context code>
 prompt: |+
     <metadata>
-    `(pen-guess-major-mode-set "<language>")`<nl>:`(comment-line 1)`
 xlr-n-generate: 5
 engine: "OpenAI Codex"
 temperature: 0.3
