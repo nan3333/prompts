@@ -6,7 +6,7 @@ prompt: |+
 
   Help, my code is not compiling.
 
-  This is the error I get from ghci:
+  This is the error I get:
   <delim>
   <ghci output>
   <delim>
