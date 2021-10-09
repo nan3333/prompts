@@ -8,7 +8,7 @@ prompt: |+
 
   This is the error I get:
   <delim>
-  <ghci output>
+  <compiler/linter output>
   <delim>
 
   # Code which is causing the error:
@@ -30,7 +30,7 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "ghci output"
+- "compiler/linter output"
 - "code segment"
 defs:
 - language: "(pen-detect-language)"
