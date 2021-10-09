@@ -34,6 +34,16 @@ vars:
 - "code segment"
 defs:
 - language: "(pen-detect-language)"
+examples:
+- |+
+    2: compile: Pattern match(es) are non-exhaustive
+    2: typecheck: • Couldn't match expected type ‘[a]’ with actual type ‘[a] -> [a]’
+    4: typecheck: • Occurs check: cannot construct the infinite type: a ~ [a]
+- |+
+    mergesort :: Ord a => [a] -> [a]
+    mergesort [] ys = ys
+    mergesort xs [] = xs
+    mergesort (x:xs) (y:ys) | x <= y  = x : mergesort x
 filter: off
 info: on
 completion: off
