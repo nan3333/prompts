@@ -1,8 +1,11 @@
 title: "break up into sentences"
 prompt-version: 2
 prompt: |+
+    <delim>
     Break apart the text into separate sentences:
+    <delim>
     Text: <text>
+    <delim>
     List of sentences:
     <:pp>- 
 prompt-filter: "sed -z 's/\\s\\+$//'"
