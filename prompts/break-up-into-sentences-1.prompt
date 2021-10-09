@@ -30,12 +30,12 @@ examples:
     Sinhala court had been obliged to move as a result of Rajaraja's conquests.
 preprocessors:
 - pen-str join ' '
-postprocessor: sed -e 's/^- //' -e 's/^-//'
+postprocessor: sed -e 's/^[0-9]*\. //' -e 's/^[0-9]*\.//'
 n-test-runs: 5
 n-collate: 1
 n-completions: 2
 issues:
-- The prompt doesn't really work. Prefer external.
+- Doesn't know when to stop. Probably need Codex to force and EOD.
 prefer-external: true
 external: pen-pretty-paragraph
 filter: on
