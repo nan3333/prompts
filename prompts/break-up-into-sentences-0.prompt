@@ -3,7 +3,7 @@ in-development: true
 prompt-version: 1
 prompt: |+
     Break the text into sentences:
-    Text: <1>
+    Text: <text>
     List of sentences:
 prompt-filter: "sed -z 's/\\s\\+$//'"
 engine: "OpenAI Davinci"
@@ -13,6 +13,8 @@ top-p: 1.0
 best-of: 1
 no-trim-start: off
 no-trim-end: off
+vars:
+- text
 stop-sequences:
 - "<delim>"
 examples:
