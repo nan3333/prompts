@@ -1,6 +1,6 @@
 task: "Given the current error and the code snippet, fix the code snippet"
 title: "autofix code"
-prompt-version: 2
+prompt-version: 3
 prompt: |+
   Questions (<language>)
 
@@ -35,8 +35,8 @@ vars:
 defs:
 - language: "(pen-detect-language)"
 var-defaults:
-- "(sor (s-chompall (pen-list2str (pen-lsp-error-list)) \"No errors.\")"
-- "(pen-buffer-string-or-selection))"
+- "(sor (s-chompall (pen-list2str (pen-lsp-error-list)) \"No errors.\"))"
+- "(pen-buffer-string-or-selection)"
 examples:
 - |+
     2: compile: Pattern match(es) are non-exhaustive
