@@ -33,7 +33,7 @@ vars:
 # validator: url-exists
 postprocessor: sed '$d' | xurls
 var-defaults:
--|
+- |-
     (pen-ask
      (s-chompall
       (or (sor (pen-selected-text t))
