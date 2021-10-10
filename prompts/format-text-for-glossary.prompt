@@ -19,14 +19,16 @@ prompt: |+
        Methodist movement that continues to this
        day.
   <delim>
+  The title is removed from the start of the passage.
+  <delim>
   Passage 2:
   <delim>
   <passage>
   <delim>
 
 engine: "OpenAI Codex"
-temperature: 0.3
-max-generated-tokens: "(* 2 prompt-length)"
+temperature: 0.4
+max-generated-tokens: "prompt-length"
 top-p: 1.0
 stop-sequences:
 - "<delim>"
