@@ -9,7 +9,7 @@ prompt: |+
 
   # Expected output:
   expected_output.txt <<EOD
-  <output>
+  <expected output>
   EOD
 
   # Test the program
@@ -30,7 +30,7 @@ cache: on
 # - language: "\"Python\""
 vars:
 - "input"
-- "output"
+- "expected output"
 - scripting language
 - instructions
 preprocessors:
