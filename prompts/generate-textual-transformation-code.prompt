@@ -17,8 +17,6 @@ prompt: |+
 
   # Program instructions:
   <instructions>
-  # Add a title and indent for each passage.
-  # The title is removed from the start of the passage.
 
   cat <sl:scripting language>_program <<EOD
 engine: "OpenAI Codex"
