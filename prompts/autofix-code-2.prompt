@@ -38,7 +38,7 @@ var-defaults:
 # Leaving the string empty is actually more reliable
 # - "(sor (s-chompall (pen-list2str (pen-lsp-error-list))) \"No errors.\")"
 - "(pen-list2str (pen-lsp-error-list))"
-- "(pen-buffer-string-or-selection)"
+- "(pen-buffer-string-or-selection t)"
 examples:
 - |+
     2: compile: Pattern match(es) are non-exhaustive
