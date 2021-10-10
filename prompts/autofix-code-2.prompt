@@ -49,8 +49,8 @@ examples:
     mergesort [] ys = ys
     mergesort xs [] = xs
     mergesort (x:xs) (y:ys) | x <= y  = x : mergesort x
-filter: off
-info: on
+filter: on
+info: off
 completion: off
 insertion: off
 external-related:
