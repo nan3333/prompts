@@ -36,8 +36,9 @@ var-defaults:
 - |-
     (pen-ask
      (s-chompall
-      (or (sor (pen-selected-text t))
-          (pen-surrounding-context))))
+      (snc "sed -z 's/\\s*/ /g'"
+           (or (sor (pen-selected-text t))
+               (pen-surrounding-context)))))
 examples:
 - |-
     import Data.Foldable (for_)
