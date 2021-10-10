@@ -35,7 +35,7 @@ vars:
 defs:
 - language: "(pen-detect-language)"
 var-defaults:
-- "(sor (s-chompall (pen-list2str (pen-lsp-error-list)) \"No errors.\"))"
+- "(sor (s-chompall (pen-list2str (pen-lsp-error-list))) \"No errors.\")"
 - "(pen-buffer-string-or-selection)"
 examples:
 - |+
