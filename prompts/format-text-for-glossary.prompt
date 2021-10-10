@@ -1,0 +1,40 @@
+task: "Format a text passage for the glossary"
+doc: "Format a text passage for the glossary"
+prompt-version: 1
+prompt: |+
+  Add a title and indent for each passage.
+
+  Passage:
+  <delim>
+  John Wesley was an English clergyman, theologian, and evangelist, who was a leader of a revival movement within the Church of England known as Methodism. The societies he founded became the dominant form of the independent Methodist movement that continues to this day.
+  <delim>
+  John Wesley
+       An English clergyman, theologian, and
+       evangelist, who was a leader of a revival
+       movement within the Church of England
+       known as Methodism.
+       
+       The societies he founded became the
+       dominant form of the independent
+       Methodist movement that continues to this
+       day.
+  <delim>
+  Passage:
+  <delim>
+  <passage>
+  <delim>
+
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "passage"
+examples:
+- "An epithet is a byname, or a descriptive term, accompanying or occurring in place of a name and having entered common usage. It has various shades of meaning when applied to seemingly real or fictitious people, divinities, objects, and binomial nomenclature."
+filter: on
+completion: off
+insertion: off
