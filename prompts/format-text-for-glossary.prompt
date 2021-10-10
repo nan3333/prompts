@@ -6,7 +6,9 @@ prompt: |+
 
   Passage 1:
   <delim>
-  John Wesley was an English clergyman, theologian, and evangelist, who was a leader of a revival movement within the Church of England known as Methodism. The societies he founded became the dominant form of the independent Methodist movement that continues to this day.
+  "John Wesley was an English clergyman, theologian, and evangelist, who was a leader of a revival movement within the Church of England known as Methodism. The societies he founded became the dominant form of the independent Methodist movement that continues to this day."
+  <delim>
+  Passage 1 for glossary:
   <delim>
   John Wesley
        An English clergyman, theologian, and
@@ -23,7 +25,9 @@ prompt: |+
   <delim>
   Passage 2:
   <delim>
-  <passage>
+  <q:passage>
+  <delim>
+  Passage 2 for glossary:
   <delim>
 
 engine: "OpenAI Codex"
