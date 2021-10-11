@@ -28,11 +28,8 @@ stop-sequences:
 - "\""
 cache: on
 vars:
-- "function"
-- "language"
-var-defaults:
-- ~
-- "(pen-detect-language-ask)"
+- "function": ~
+- "language": "(pen-detect-language-ask)"
 examples:
 - "Python"
 - "yaml.load"
