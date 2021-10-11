@@ -124,6 +124,33 @@ More about =var-defaults=:
   - "(read-string-hist (concat title \" \" varname \": \") example)"
 #+END_SRC
 
+=vars= may also be structured as follows.
+This combines the separate keys =vars=,
+=examples=, =var-defaults= and
+=preprocessors= under =vars=, which may be better organised.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  vars:
+  - code:
+    - default: "(pen-buffer-string-or-selection)"
+    - example: "print(\"Hello world, I have no empathy\")"
+  - language:
+    - default: "(pen-detect-language-ask)"
+    - preprocessor: slugify
+    - example: "Python"
+  - "appending transformation":
+    - example: "Print again but with empathy"
+#+END_SRC
+
+=vars= may also be structured like this, which
+combines the separate keys =vars= and =var-defaults=.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  vars:
+  - "compiler/linter output": "(pen-list2str (pen-lsp-error-list))"
+  - "code segment": "(pen-buffer-string-or-selection t)"
+#+END_SRC
+
 *** Using parameters in the prompt
 A prompt's variables (parameters) are usually
 copied into the prompt template in their
