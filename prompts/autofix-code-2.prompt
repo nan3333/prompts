@@ -30,15 +30,12 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "compiler/linter output"
-- "code segment"
-defs:
-- language: "(pen-detect-language)"
-var-defaults:
 # Leaving the string empty is actually more reliable
 # - "(sor (s-chompall (pen-list2str (pen-lsp-error-list))) \"No errors.\")"
-- "(pen-list2str (pen-lsp-error-list))"
-- "(pen-buffer-string-or-selection t)"
+- "compiler/linter output": "(pen-list2str (pen-lsp-error-list))"
+- "code segment": "(pen-buffer-string-or-selection t)"
+defs:
+- language: "(pen-detect-language)"
 examples:
 - |+
     2: compile: Pattern match(es) are non-exhaustive
