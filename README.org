@@ -151,6 +151,18 @@ combines the separate keys =vars= and =var-defaults=.
   - "code segment": "(pen-buffer-string-or-selection t)"
 #+END_SRC
 
+For reference, here are the keys placed into
+their own fields.
+
+#+BEGIN_SRC yaml -n :async :results verbatim code
+  vars:
+  - "compiler/linter output"
+  - "code segment"
+  var-defaults:
+  - "(pen-list2str (pen-lsp-error-list))"
+  - "(pen-buffer-string-or-selection t)"
+#+END_SRC
+
 *** Using parameters in the prompt
 A prompt's variables (parameters) are usually
 copied into the prompt template in their
