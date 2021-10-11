@@ -57,5 +57,5 @@ pipelines:
 # these expressions are evaluated and the results are accessible
 # via the templating system
 expressions:
-# - tidy-prose-input: (snc <q:tidy-prose-input> in)
+# - tidy-prose-input: (pen-snc <q:tidy-prose-input> in)
 # - twice-prompt-length: "(* 2 prompt-length)"
