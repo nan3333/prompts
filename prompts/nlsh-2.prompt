@@ -1,14 +1,14 @@
 title: nlsh
 task: Generate a bash one liner for OS from NL
-prompt-version: 2
+prompt-version: 3
 doc: Get a bash one liner on OS from natural language
 notes:
 - "rlprompt is used here outside of pen.el"
-rlprompt: nlsh <1>
+rlprompt: nlsh <Operating System>
 prompt: |
-  List of one-liner shell commands for <1>.
+  List of one-liner shell commands for <Operating System>.
   Language: Shell
-  Operating System: <1>
+  Operating System: <Operating System>
 
   Input: Print the current directory
   Output: pwd
