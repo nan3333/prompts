@@ -25,16 +25,15 @@ stop-sequences:
 - "EOD"
 vars:
 # TODO Make a context-window widening mechanism
-- code: "(pen-buffer-string-or-selection)"
-- "language": "(pen-detect-language-ask)"
-- appending transformation: ~
-preprocessors:
-- cat
-- slugify
-examples:
-- "print(\"Hello world, I have no empathy\")"
-- "Python"
-- "Print again but with empathy"
+- code:
+  - default: "(pen-buffer-string-or-selection)"
+  - example: "print(\"Hello world, I have no empathy\")"
+- "language":
+  - default: "(pen-detect-language-ask)"
+  - preprocessor: slugify
+  - example: "Python"
+- "appending transformation":
+  - example: "Print again but with empathy"
 n-test-runs: 5
 n-collate: 1
 n-completions: 5
