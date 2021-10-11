@@ -5,19 +5,13 @@ prompt-version: 2
 prompt: |
   Here are some lists of things:
 
-  A list of 8 countries in no particular order:
+  A list of 8 countries in random order:
   Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador
-  <delim>
-  A list of 9 car manufacturers in no particular order:
-  Fiat,Corvette,Holden,Daewoo,Hyundai,BMW,Ford,Mazda,Toyota
-  <delim>
-  A list of 6 islands starting with N:
-  New Britain,Naart,Nukumanu,Nærøya,Nikumaroro,Nagy-Pandúr-sziget,Neuwerk
   <delim>
   A list of 4 fruit starting with E:
   Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
   <delim>
-  A list of <1> <2> in no random order:
+  A list of <1> <2> no random order:
 engine: OpenAI Davinci
 temperature: 0.7
 max-generated-tokens: 60

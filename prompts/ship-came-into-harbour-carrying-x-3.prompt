@@ -1,5 +1,5 @@
 title: Ship came into harbour carrying X
-version: 2
+version: 3
 doc: ''
 prompt: |
   8 countries starting with A
@@ -17,7 +17,7 @@ prompt: |
   6 clothing brands starting with CC & M
   Croft,Caliwoods,Contare,Calvin Klein,Charles Viancin,Costume National
   <delim>
-  <1> <2> starting with <3>
+  <n> <type> starting with <letter>
 engine: OpenAI Davinci
 temperature: 0.7
 max-generated-tokens: 60
