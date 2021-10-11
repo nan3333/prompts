@@ -1,16 +1,18 @@
 task: "Get an example of the usage of a function"
 doc: "Given a function name, provide an example of its usage"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
   Examples of function usage:
   <delim>
-  Language: Haskell
-  Function: map
-  Usage: map (*2) [1..10]
+  Language: "Haskell"
+  Function: "map"
+  Usage:<delim>
+  map (*2) [1..10]
   <delim>
-  Language: <language>
-  Function: <function>
-  Usage: 
+  Language: <q:language>
+  Function: <q:function>
+  Usage:<delim>
+  
 engine: OpenAI Codex
 force-engine: OpenAI Codex
 temperature: 0.5
@@ -34,4 +36,4 @@ postprocessor: pen-str unonelineify | sed -z "s/Language:.*//"
 var-defaults:
 - "(pen-thing-at-point-ask \"symbol\" t)"
 - "(pen-detect-language-ask)"
-validator: "grep -q <function>"
+# validator: "grep -q <function>"
