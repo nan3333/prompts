@@ -36,7 +36,7 @@ var-defaults:
 - |-
     (pen-ask
      (s-chompall
-      (snc "sed -z 's/\\s\\+/ /g'"
+      (pen-snc "sed -z 's/\\s\\+/ /g'"
            (or (sor (pen-selected-text t))
                (pen-surrounding-context)))))
 examples:
