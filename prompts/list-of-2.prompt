@@ -8,10 +8,7 @@ prompt: |
   A list of 8 countries in random order:
   "Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador"
   <delim>
-  A list of 4 fruit starting with E:
-  "Evergreen Huckleberry,Entawak,Elderberry,Eggfruit"
-  <delim>
-  A list of <n> <type> in random order:
+  A unordered, random selection of <n> <type>:
   "
 engine: OpenAI Davinci
 temperature: 0.7
