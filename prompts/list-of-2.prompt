@@ -1,22 +1,24 @@
 title: List of
-prompt-version: 2
+prompt-version: 3
 doc: List a bunch of a type of thing
 prompt-version: 2
 prompt: |
   Here are some lists of things:
   <delim>
   A list of 8 countries in random order:
-  Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador
+  "Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador"
   <delim>
   A list of 4 fruit starting with E:
-  Evergreen Huckleberry,Entawak,Elderberry,Eggfruit
+  "Evergreen Huckleberry,Entawak,Elderberry,Eggfruit"
   <delim>
-  A list of <1> <2> no random order:
+  A list of <n> <type> in random order:
+  "
 engine: OpenAI Davinci
 temperature: 0.7
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
+- "\""
 - "<delim>"
 - "A list of"
 - "\n\n"
@@ -29,4 +31,4 @@ examples:
 - '5'
 - island countries
 postprocessor: sed 's/,/\n/g'
-continuation-function: list-of <1> <g>
+continuation-function: list-of <n> <g>
