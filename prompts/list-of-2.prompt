@@ -4,7 +4,7 @@ doc: List a bunch of a type of thing
 prompt-version: 2
 prompt: |
   Here are some lists of things:
-
+  <delim>
   A list of 8 countries in random order:
   Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador
   <delim>
