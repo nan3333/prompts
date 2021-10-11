@@ -28,7 +28,7 @@ vars:
 - code:
   - default: "(pen-buffer-string-or-selection)"
   - example: "print(\"Hello world, I have no empathy\")"
-- "language":
+- language:
   - default: "(pen-detect-language-ask)"
   - preprocessor: slugify
   - example: "Python"
