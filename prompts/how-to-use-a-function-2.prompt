@@ -15,10 +15,8 @@ prompt: |
   Usage:
   Print("hello world")
   <delim>
-  Language: <1>
-  Function:
-  Function
-  <1> are like <2> in that
+  Language: <language>
+  Function: <function name>
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 60
