@@ -27,15 +27,12 @@ cache: on
 stop-sequences:
 - "EOD"
 vars:
-- code
-- "language"
-- transformation
+- code: "(pen-selected-text)"
+- "language": "(pen-detect-language-ask)"
+- transformation: ~
 preprocessors:
 - cat
 - slugify
-var-defaults:
-- "(pen-selected-text)"
-- "(pen-detect-language-ask)"
 examples:
 - "print(\"Hello world with empathy\")"
 - "Python"
