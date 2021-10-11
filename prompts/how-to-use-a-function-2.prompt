@@ -27,9 +27,9 @@ stop-sequences:
 - "<delim>"
 cache: true
 vars:
+- "function name"
 - language
-- function name
 examples:
-- boysenberries
-- strawberries
+- fromMaybe
+- Haskell
 prefer-external: true
