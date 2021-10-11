@@ -1,6 +1,6 @@
----
 title: How to use a function
 doc: Given a function name and a language, explain how to use the function
+prompt-version: 2
 prompt: |
   Given a function name and a language, explain how to use the function.
 
