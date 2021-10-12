@@ -2,17 +2,17 @@ task: "synonym"
 aliases:
 - thesaurus
 doc: "Given a word or phrase, find alternates"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
   Thesaurus:
-
+  <delim>
   3 ways to say "get stuck":
   - paint into a corner
   - become frozen in place
   - become fastened
-
+  <delim>
   5 ways to say <q:phrase>:
-  -
+  - 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
