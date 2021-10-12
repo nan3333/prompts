@@ -27,7 +27,7 @@ temperature: 0.3
 max-generated-tokens: 200
 top-p: 1
 stop-sequences:
-- "##"
+- "<delim>"
 cache: true
 defs:
 - delim2: ~~~
