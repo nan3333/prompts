@@ -38,3 +38,4 @@ examples:
 info: on
 completion: off
 insertion: off
+conversation: true
