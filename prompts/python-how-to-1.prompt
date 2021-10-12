@@ -1,5 +1,6 @@
 title: Python how to
 prompt-version: 2
+utilises-code: no
 prompt: |
   How to do something in python.
   <delim>
