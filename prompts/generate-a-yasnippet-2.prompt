@@ -1,4 +1,6 @@
 task: "Generate a YASnippet"
+aliases:
+- yasnippet
 doc: "Given a language and a feature, generate a snippet"
 prompt-version: 1
 prompt: |+
