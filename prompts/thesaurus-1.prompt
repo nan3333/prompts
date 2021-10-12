@@ -19,7 +19,7 @@ max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 n-completions: 5
 stop-sequences:
-- "\n\n"
+- "<delim>"
 cache: on
 vars:
 - "phrase"
