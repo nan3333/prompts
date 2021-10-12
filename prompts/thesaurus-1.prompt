@@ -27,7 +27,7 @@ cache: on
 vars:
 - "phrase"
 postprocessor: sed "s/^-*\\s*//" | sed -e "s/^\"\\(.*\\)\"$/\\1/" -e "s/^\"$//" | uq -l
-validator: grep -v '"' | grep -qP "[a-z ]*"
+validator: grep -v '"' | grep -qiP "^[a-z ]*$"
 split-patterns:
 - "\n"
 examples:
