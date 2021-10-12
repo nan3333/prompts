@@ -8,7 +8,7 @@ prompt: |-
     an action; rash.
     "it would be imprudent to leave her winter
     coat behind"
-    <delim2>
+    <delim>
     vain (vain)
     <delim>
     Having or showing an excessively high
@@ -18,21 +18,20 @@ prompt: |-
 
     Producing no result; useless.
     "a vain attempt to tidy up the room"
-    <delim2>
+    <delim>
     <word> (<word>)
     <delim>
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "(* 2 prompt-length)"
+max-generated-tokens: "prompt-length"
 top-p: 1.0
 stop-sequences:
-- "<delim2>"
+- "<delim>"
 cache: on
 defs:
 # Annoyingly, PEN_STOP_SEQUENCE as --- can cause problems
 # Because it may be recognised as a CLI argument.
 # - delim2: "\"---\""
-- delim2: "\"~~~\""
 vars:
 - "word"
 examples:
