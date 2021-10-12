@@ -27,7 +27,7 @@ force-temperature: 0.3
 max-generated-tokens: 200
 top-p: 1
 stop-sequences:
-- "<delim>"
+- "<delim-1>"
 cache: true
 vars:
 - first segment
