@@ -2,15 +2,15 @@ task: "Generate a YASnippet"
 doc: "Given a language and a feature, generate a snippet"
 prompt-version: 1
 prompt: |+
-  cd yasnippet/snippets/<sl:mode>
-  cat <sl:name> <<EOD
+  # This is a snippet template example of a <q:name> in <mode>:
+  cd ~/.emacs.d/yasnippet/snippets/<sl:mode>
+  cat <sl:mode>_<sl:name> <<EOD
   # -*- mode: snippet -*-
   # name: <sl:name>
-  # key: <sl:name>
   # --
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "(* 4 prompt-length)"
+max-generated-tokens: 200
 top-p: 1.0
 stop-sequences:
 - EOD
