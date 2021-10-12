@@ -5,11 +5,11 @@ issues:
 prompt: |
   Correct grammar
   <delim>
-  Original: Anna and Mike is going skiing.
-  Standard American English: Anna and Mike are going skiing.
+  Original: "Anna and Mike is going skiing."
+  Standard American English: "Anna and Mike are going skiing."
   <delim>
-  Original: <1>
-  Standard American English:
+  Original: <q:sentence>
+  Standard American English: <:pp>"
 engine: OpenAI Davinci
 temperature: 0
 max-generated-tokens: 200
@@ -29,4 +29,4 @@ examples:
 - She no went to the market.
 preprocessors:
 - pen-str onelineify
-postprocessor: pen-str unonelineify
+postprocessor: "pen-str remove-leading-and-trailing-newlines | uq | pen-str unonelineify"
