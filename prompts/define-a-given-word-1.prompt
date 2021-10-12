@@ -33,3 +33,4 @@ examples:
 info: on
 completion: off
 insertion: off
+postprocessor: pen-str remove-starting-whitespace
