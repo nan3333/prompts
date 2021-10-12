@@ -1,5 +1,5 @@
-task: "title"
-doc: "Given ... task"
+task: "Play HHGTTG"
+doc: "Play HHGTTG, the infocom game"
 in-development: on
 prompt-version: 1
 notes:
@@ -32,7 +32,7 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "former"
+- "command"
 - "latter"
 var-defaults:
 - "(detect-language)"
