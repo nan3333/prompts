@@ -1,6 +1,6 @@
 title: Conjugate prose syntactically
 doc: Given two text snippets, join them together intelligently and syntactically
-prompt-version: 1
+prompt-version: 2
 prompt: |
   <delim>
   Please provide me with a short brief
@@ -37,7 +37,9 @@ examples:
 - may have incorrect spelling or grammar, correct it.
 test-output: Given a sentence which may have incorrect spelling or grammar, correct
   it.
+postprocessor: pen-str join ' '
 prefer-external: true
 quality-script: my-quality-checker-for-this-prompt.sh
 validation-script: my-validator-for-this-prompt.sh
 n-test-runs: 5
+prettifier: pen-pretty-paragraph
