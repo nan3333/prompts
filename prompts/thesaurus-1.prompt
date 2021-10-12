@@ -4,7 +4,7 @@ aliases:
 - thesaurus
 - word for
 doc: "Given a word or phrase, find alternates"
-prompt-version: 2
+prompt-version: 3
 prompt: |+
   Thesaurus:
   <delim>
@@ -13,10 +13,11 @@ prompt: |+
   - "become frozen in place"
   - "become fastened"
   <delim>
-  5 ways to say <q:phrase>:
+  5 other words for and ways of saying <q:phrase>:
   <:pp>- "
-engine: "OpenAI Codex"
-temperature: 0.4
+engine: "OpenAI Davinci"
+force-engine: "OpenAI Davinci"
+temperature: 0.7
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 n-completions: 5
