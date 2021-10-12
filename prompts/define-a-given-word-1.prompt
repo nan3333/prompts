@@ -2,27 +2,24 @@ task: "Define a given word"
 doc: "Given a word, even a fake one, come up with a definition"
 prompt-version: 2
 prompt: |-
-    imprudent ([i][m][p][r][u][d][e][n][t])
+    imprudent (imprudent)
     <delim>
     Not showing care for the consequences of
     an action; rash.
     "it would be imprudent to leave her winter
     coat behind"
     <delim>
-    vain ([v][a][i][n])
+    vain (vain)
     <delim>
     Having or showing an excessively high
     opinion of one's appearance, abilities, or
     worth.
     "their flattery made him vain"
-
-    Producing no result; useless.
-    "a vain attempt to tidy up the room"
     <delim>
-    <word> (<bx:word>)
+    <word> (<word>)
     <delim>
-engine: "OpenAI Codex"
-temperature: 0.8
+force-engine: "OpenAI Davinci"
+force-temperature: 0.8
 max-generated-tokens: "prompt-length"
 top-p: 1.0
 stop-sequences:
@@ -34,6 +31,7 @@ defs:
 # - delim2: "\"---\""
 vars:
 - "word"
+validator: grep -q "<word>"
 examples:
 - "surrealeptitious"
 info: on
