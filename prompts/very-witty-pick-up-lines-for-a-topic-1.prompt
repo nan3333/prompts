@@ -1,5 +1,7 @@
 title: Very witty pick up lines for a topic
 doc: Given a topic, generate pick up lines, one at a time
+aliases:
+- pick-up line
 past-versions:
 - deprecated/pick-up-line.prompt
 prompt-version: 7
