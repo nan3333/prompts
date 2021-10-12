@@ -1,0 +1,35 @@
+task: "Define a given word"
+doc: "Given a word, even a fake one, come up with a definition"
+prompt-version: 1
+prompt: |+
+    imprudent
+        Not showing care for the consequences of
+        an action; rash.
+        "it would be imprudent to leave her winter
+        coat behind"
+    
+    vain
+        Having or showing an excessively high
+        opinion of one's appearance, abilities, or
+        worth.
+        "their flattery made him vain"
+    
+        Producing no result; useless.
+        "a vain attempt to tidy up the room"
+
+    <word>
+        
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "\n\n"
+cache: on
+vars:
+- "word"
+examples:
+- "surrealeptitious"
+info: on
+completion: off
+insertion: off
