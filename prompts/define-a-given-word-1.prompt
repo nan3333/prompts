@@ -1,14 +1,14 @@
 task: "Define a given word"
 doc: "Given a word, even a fake one, come up with a definition"
 prompt-version: 1
-prompt: |+
+prompt: |-
     imprudent
     <delim>
     Not showing care for the consequences of
     an action; rash.
     "it would be imprudent to leave her winter
     coat behind"
-    
+    <delim2>
     vain
     <delim>
     Having or showing an excessively high
@@ -18,7 +18,7 @@ prompt: |+
 
     Producing no result; useless.
     "a vain attempt to tidy up the room"
-
+    <delim2>
     <word>
     <delim>
 engine: "OpenAI Codex"
@@ -26,8 +26,13 @@ temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
-- "\n\n"
+- "<delim2>"
 cache: on
+defs:
+# Annoyingly, PEN_STOP_SEQUENCE as --- can cause problems
+# Because it may be recognised as a CLI argument.
+# - delim2: "\"---\""
+- delim2: "\"~~~\""
 vars:
 - "word"
 examples:
