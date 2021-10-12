@@ -14,7 +14,7 @@ prompt: |+
   5 ways to say <q:phrase>:
   - 
 engine: "OpenAI Codex"
-temperature: 0.3
+temperature: 0.4
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 n-completions: 5
