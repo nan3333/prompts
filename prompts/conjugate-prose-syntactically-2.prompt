@@ -22,8 +22,9 @@ prompt: |
   <first segment>
   <second segment>
   <delim>
+  <:pp><first segment>
 force-engine: OpenAI Davinci
-force-temperature: 0.3
+force-temperature: 0.1
 max-generated-tokens: 200
 top-p: 1
 stop-sequences:
