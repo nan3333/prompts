@@ -2,13 +2,14 @@ title: explain some code
 issues: 
 design-patterns: 
 doc: Explain some code
-prompt-version: 2
+prompt-version: 3
 prompt: |
     <language> excerpt and explanation.
     <delim>
     Excerpt:
     <delim>
     <code>
+    <delim>
     Explanation:
     <delim>
     <:pp>The above code 
