@@ -1,5 +1,5 @@
 title: correct grammar 2
-prompt-version: 3
+prompt-version: 4
 issues:
 - 'n-shot' alone isn't the most effective way to align GPT-3/Davinci to the goal. Codex handles it a little better.
 prompt: |
