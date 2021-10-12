@@ -1,26 +1,25 @@
----
 title: correct grammar 2
-prompt-version: 2
+prompt-version: 3
 prompt: |
-  Input: Anna and Mike is going skiing.
-  Output: Anna and Mike are going skiing.
-  Input: Anna and Pat are married; he has been together for 20 years.
-  Output: Anna and Pat are married; they have been together for 20 years.
-  Input: I walk to the store and I bought milk.
-  Output: I walked to the store and I bought milk.
-  Input: <1>
-  Output:
+  Input: "Anna and Mike is going skiing."
+  Output: "Anna and Mike are going skiing."
+  Input: "Anna and Pat are married; he has been together for 20 years."
+  Output: "Anna and Pat are married; they have been together for 20 years."
+  Input: "I walk to the store and I bought milk."
+  Output: "I walked to the store and I bought milk."
+  Input: <q:sentence>
+  Output: <:pp>"
 engine: OpenAI Davinci
 temperature: 0
-max-generated-tokens: 60
+max-generated-tokens: "prompt-length"
 top-p: 1
-filter: true
 stop-sequences:
 - "\n"
 vars:
 - sentence
 examples:
 - She no went to the market.
+filter: on
 preprocessors:
 - pen-str onelineify
-postprocessor: pen-str unonelineify
+postprocessor: pen-str remove-leading-and-trailing-newlines | uq | sed -z 's/^"//' | pen-pretty-paragraph
