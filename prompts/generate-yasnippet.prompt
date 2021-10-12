@@ -5,7 +5,7 @@ prompt: |+
   # This is a snippet template example of a <q:name> in <mode>:
   cd ~/.emacs.d/yasnippet/snippets/<sl:mode>
   cat <sl:mode>_<sl:name> <<EOD
-  # -*- mode: snippet -*-
+  <:pp># -*- mode: snippet -*-
   # name: <sl:name>
   # --
 engine: "OpenAI Codex"
