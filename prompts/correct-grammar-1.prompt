@@ -1,5 +1,7 @@
 title: correct grammar
-prompt-version: 4
+prompt-version: 5
+aliases:
+- grammar
 issues:
 - Does not like long inputs
 prompt: |
