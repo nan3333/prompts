@@ -22,13 +22,14 @@ prompt: |+
     Person: What is your favorite drink?
     Chef: I am a huge fan of Thai tea. 
     
-    Person:
+    Person: <utterance>
+    Chef: 
 engine: "OpenAI Davinci"
 temperature: 0.7
 max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
-- "\n\n"
+- "\n"
 cache: on
 vars:
 - "utterance"
