@@ -28,5 +28,5 @@ vars:
 examples:
 - '5'
 - island countries
-postprocessor: sed 's/,/\n/g'
+postprocessor: sed 's/,/\n/g' | sed 's/^ *//'
 continuation-function: list-of <n> <g>
