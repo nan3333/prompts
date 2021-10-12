@@ -1,15 +1,15 @@
 task: "Define a given word"
 doc: "Given a word, even a fake one, come up with a definition"
-prompt-version: 1
+prompt-version: 2
 prompt: |-
-    imprudent
+    imprudent (imprudent)
     <delim>
     Not showing care for the consequences of
     an action; rash.
     "it would be imprudent to leave her winter
     coat behind"
     <delim2>
-    vain
+    vain (vain)
     <delim>
     Having or showing an excessively high
     opinion of one's appearance, abilities, or
@@ -19,7 +19,7 @@ prompt: |-
     Producing no result; useless.
     "a vain attempt to tidy up the room"
     <delim2>
-    <word>
+    <word> (<word>)
     <delim>
 engine: "OpenAI Codex"
 temperature: 0.3
