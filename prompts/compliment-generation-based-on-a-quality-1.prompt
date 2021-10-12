@@ -1,4 +1,6 @@
 title: Compliment generation based on a quality
+aliases:
+- compliment
 doc: Generate a nice compliment based on a quality
 prompt-version: 7
 prompt: |

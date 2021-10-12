@@ -1,4 +1,6 @@
 task: "Get a factual result, given a question"
+aliases:
+- ask fact
 doc: "Get a truthful answer to a question"
 prompt-version: 1
 prompt: |+
@@ -33,3 +35,5 @@ completion: off
 insertion: off
 preprocessors:
 - pen-str join ' '
+external-related:
+- "https://www.wolframalpha.com/"

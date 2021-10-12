@@ -1,4 +1,6 @@
 title: "Predict the outcome of an action"
+aliases:
+- guess outcome
 doc: "Given some prose expression some action of an individual, return the common-sense outcome"
 prompt-version: 2
 prompt: |+

@@ -1,4 +1,6 @@
 title: translate
+aliases:
+- translate
 prompt-version: 5
 doc: This prompt translates English text to any world language
 todo:

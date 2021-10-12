@@ -1,4 +1,6 @@
 task: "transpile"
+aliases:
+- transpile
 doc: "Given some code and a target language, transpile into that language"
 prompt-version: 4
 engine: OpenAI Codex
