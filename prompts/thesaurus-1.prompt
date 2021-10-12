@@ -7,12 +7,12 @@ prompt: |+
   Thesaurus:
   <delim>
   3 ways to say "get stuck":
-  - paint into a corner
-  - become frozen in place
-  - become fastened
+  - "paint into a corner"
+  - "become frozen in place"
+  - "become fastened"
   <delim>
   5 ways to say <q:phrase>:
-  - 
+  <:pp>- "
 engine: "OpenAI Codex"
 temperature: 0.4
 max-generated-tokens: "(* 2 prompt-length)"
@@ -23,7 +23,7 @@ stop-sequences:
 cache: on
 vars:
 - "phrase"
-postprocessor: sed "s/^-*\\s*//" | sed -e "s/^\"\\(.*\\)\"$/\\1/" -e "s/^\"$//"
+postprocessor: sed "s/^-*\\s*//" | sed -e "s/^\"\\(.*\\)\"$/\\1/" -e "s/^\"$//" | uq -l
 split-patterns:
 - "\n"
 examples:
