@@ -1,0 +1,26 @@
+task: "Generate a YASnippet"
+doc: "Given a language and a feature, generate a snippet"
+prompt-version: 1
+prompt: |+
+  cd yasnippet/snippets/<sl:mode>
+  cat <sl:name> <<EOD
+  # -*- mode: snippet -*-
+  # name: <sl:name>
+  # key: <sl:name>
+  # --
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 4 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- EOD
+cache: on
+vars:
+- mode
+- name
+examples:
+- "haskell"
+- "catamorphism"
+filter: off
+completion: off
+insertion: on
