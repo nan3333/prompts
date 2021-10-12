@@ -3,6 +3,8 @@ prompt-version: 5
 doc: Get a short definition of a term for the glossary system.
 language: English
 topic: Dictionary
+aliases:
+- dictionary
 translator: "(wrlp input (pf-translate-from-world-language-x-to-y/3 from-language to-language))"
 prompt: |
   Glossary of terms.
