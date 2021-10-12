@@ -1,4 +1,6 @@
-task: "thesaurus"
+task: "synonym"
+aliases:
+- thesaurus
 doc: "Given a word or phrase, find alternates"
 prompt-version: 1
 prompt: |+
