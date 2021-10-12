@@ -1,5 +1,7 @@
 title: paraphrase
 task: Reword a phrase
+aliases:
+- paraphrase
 doc: In other words (reword)
 aims:
 - More abstractive rewording.

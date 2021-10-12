@@ -1,4 +1,6 @@
 task: "Generate a backronym"
+aliases:
+- backronym
 in-development: on
 doc: "Given a word, generate an backronym for it"
 prompt-version: 1
