@@ -29,5 +29,6 @@ examples:
 - ".gitignore"
 - ".\nLICENSE.md"
 filter: off
+info: off
 completion: on
 insertion: on
