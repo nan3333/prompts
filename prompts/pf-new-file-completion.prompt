@@ -23,6 +23,7 @@ var-defaults:
 - "(pen-mnm (get-path))"
 - "(pen-snc \"ls | head -n 10\")"
 examples:
+- ""
 - "/var/smulliga/source/git/mullikine/almanac/.gitignore"
 - ".\nLICENSE.md"
 filter: off
