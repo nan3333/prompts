@@ -38,7 +38,9 @@ vars:
 # - "ls parent dir output"
 var-defaults:
 - "(pen-snc \"pwd\")"
-- "(read-string-hist \"imaginary dir name: \")"
+# - "(read-string-hist \"imaginary dir name: \")"
+- "(fz (snc \"find . -maxdepth 1 -mindepth 1 -type d | sed 's/^\\\\.\\\\///'\") nil nil \"imagine dir contents: \")"
+- "(fz (snc \"find . -type d -maxdepth 1"
 - "(pen-snc \"ls -ldt * | head -n 5\")"
 - "(pen-snc \"ls -d */ | head -n 5\")"
 # - "(pen-snc \"ls .. | head -n 5\")"
