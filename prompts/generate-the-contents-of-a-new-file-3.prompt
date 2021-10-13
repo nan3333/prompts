@@ -1,12 +1,19 @@
 task: "Generate the contents of a new file"
 doc: "Prompt for the probable contents of a file with this path and sibling files"
 prompt-version: 1
+subprompts:
+  - dirs: |-
+        $ ls -d */ # list directories here
+        <ls dirs here output>
+        
 prompt: |+
     $ pwd
     <working directory>
 
     $ ls -a
     <ls output>
+
+    <dirs>
 
     $ cat <q:filename> <<EOD
     <preceding text>
@@ -24,16 +31,24 @@ vars:
 - "filename"
 - "working directory"
 - "ls output"
+- "ls dirs here output"
 var-defaults:
 - "(pen-preceding-text)"
 - "(f-basename (get-path))"
 - "(pen-snc \"pwd\")"
 - "(pen-snc \"ls -a\")"
+- "(pen-snc \"ls -d */ | head -n 5\")"
 examples:
 - ""
 - ".gitignore"
 - "/home/mullikine/codex-scaffolding-demo"
 - ".\nLICENSE.md"
+- |-
+    contracts/
+    migrations/
+    node_modules/
+    src/
+    test/
 filter: off
 info: off
 completion: on

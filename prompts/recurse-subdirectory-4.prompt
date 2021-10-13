@@ -14,13 +14,15 @@ subprompts:
   - dirs: |-
         $ ls -d */ # list directories here
         <ls dirs here output>
+
+        $ find . -type d -maxdepth 1 # list directories here
+        <find dirs here output>
         
 prompt: |+
   $ pwd
   <working directory>
 
-  $ ls -ldt *
-  <ls here output>
+  <dirs>
 
   $ # look inside directory <directory name>
   $ find <q:directory name>/ -maxdepth 5
@@ -36,32 +38,33 @@ n-completions: 10
 vars:
 - "working directory"
 - "directory name"
-- "ls here output"
 - "ls dirs here output"
+- "find dirs here output"
 # - "ls parent dir output"
 var-defaults:
 - "(pen-snc \"pwd\")"
 # - "(read-string-hist \"imaginary dir name: \")"
 - "(fz (snc \"find . -maxdepth 1 -mindepth 1 -type d | sed 's/^\\\\.\\\\///'\") nil nil \"imagine dir contents: \")"
 # - "(fz (snc \"find . -type d -maxdepth 1"
-- "(pen-snc \"ls -ldt * | head -n 5\")"
 - "(pen-snc \"ls -d */ | head -n 5\")"
+- "(pen-snc \"find . -type d -maxdepth 1\")"
 # - "(pen-snc \"ls .. | head -n 5\")"
 examples:
 - "/home/shane/source/git/mobile-shell/mosh"
 - "secret documents"
-- |-
-    drwxrwxr-x   2 shane shane     4096 Oct 13 19:34 contracts
-    -rw-rw-r--   1 shane shane      816 Oct 13 02:59 README.org
-    -rw-rw-r--   1 shane shane 10166273 Oct 13 02:59 tags
-    drwxrwxr-x 271 shane shane    12288 Oct 13 01:08 node_modules
-    -rw-r--r--   1 shane shane   262758 Oct 13 01:08 package-lock.json
 - |-
     contracts/
     migrations/
     node_modules/
     src/
     test/
+- |-
+    .
+    ./contracts/
+    ./migrations/
+    ./node_modules/
+    ./src/
+    ./test/
 # - |-
 #     AIDungeon
 #     alacritty
