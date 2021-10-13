@@ -1,0 +1,60 @@
+title: "recurse directory"
+doc: "imaginarily recurse a directory"
+prompt-version: 1
+todo:
+- Make a more general version of this
+prompt: |+
+  $ ls .. | head -n 5
+  <ls parent dir output>
+
+  $ ls -ldt * | head -n 5
+  <ls here output>
+
+  $ ls -d */ | head -n 5 # list directories here
+  <ls dirs here output>
+
+  $ find <q:directory name>/ -maxdepth 1 -type f
+  <:pp><directory name>/
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "\n\n"
+cache: on
+vars:
+- "directory name"
+- "ls here output"
+- "ls dirs here output"
+- "ls parent dir output"
+var-defaults:
+- "(read-string-hist \"imaginary dir name: \")"
+- "(pen-snc \"ls -ldt * | head -n 5\")"
+- "(pen-snc \"ls -d */ | head -n 5\")"
+- "(pen-snc \"ls .. | head -n 5\")"
+examples:
+- "secret documents"
+- |-
+    drwxrwxr-x   2 shane shane     4096 Oct 13 19:34 contracts
+    -rw-rw-r--   1 shane shane      816 Oct 13 02:59 README.org
+    -rw-rw-r--   1 shane shane 10166273 Oct 13 02:59 tags
+    drwxrwxr-x 271 shane shane    12288 Oct 13 01:08 node_modules
+    -rw-r--r--   1 shane shane   262758 Oct 13 01:08 package-lock.json
+- |-
+    contracts/
+    migrations/
+    node_modules/
+    src/
+    test/
+- |-
+    AIDungeon
+    alacritty
+    ALEX
+    almanac
+    aokts
+info: on
+completion: off
+insertion: off
+validator: grep -qP '(<q:directory name>|<directory name>)'
+# must come after validator
+postpostprocessor: sed -e 's/^<q:directory name>\///' -e 's/^<directory name>\///'
