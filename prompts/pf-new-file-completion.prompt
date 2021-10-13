@@ -1,0 +1,33 @@
+task: "Generate the contents of a new file"
+doc: "Prompt for the probable contents of a file with this path and sibling files"
+prompt-version: 1
+todo:
+- Use imaginary programming to generate a fake file listing. We don't want to divulge the contents of our filesystem to the language model owner
+prompt: |+
+    $ ls | head -n 10
+    <ls output>
+
+    $ cat <q:path> <<EOD
+    <preceding text>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- EOD
+cache: on
+vars:
+- "preceding text"
+- "path"
+- "ls output"
+var-defaults:
+- "(pen-preceding-text)"
+- "(pen-mnm (get-path))"
+- "(pen-snc \"ls | head -n 10\")"
+examples:
+- ""
+- "/var/smulliga/source/git/mullikine/almanac/.gitignore"
+- ".\nLICENSE.md"
+filter: off
+completion: on
+insertion: off
