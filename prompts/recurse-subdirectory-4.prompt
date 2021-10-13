@@ -1,5 +1,5 @@
-title: "recurse directory"
-doc: "imaginarily recurse a directory"
+title: "recurse subdirectory"
+doc: "imaginarily recurse a subdirectory"
 prompt-version: 3
 todo:
 - Make a more general version of this
