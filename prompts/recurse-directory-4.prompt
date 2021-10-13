@@ -10,17 +10,19 @@ subprompts:
   - parent: |-
         $ ls .. | head -n 5
         <ls parent dir output>
+        
+  - dirs: |-
+        $ ls -d */ # list directories here
+        <ls dirs here output>
+        
 prompt: |+
   $ pwd
   <working directory>
 
-  $ ls -ldt * | head -n 5
+  $ ls -ldt *
   <ls here output>
 
-  $ ls -d */ | head -n 5 # list directories here
-  <ls dirs here output>
-
-  $ find <q:directory name>/ -maxdepth 5
+  $ find ./<q:directory name>/ -maxdepth 5
   <:pp><directory name>/
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -40,7 +42,7 @@ var-defaults:
 - "(pen-snc \"pwd\")"
 # - "(read-string-hist \"imaginary dir name: \")"
 - "(fz (snc \"find . -maxdepth 1 -mindepth 1 -type d | sed 's/^\\\\.\\\\///'\") nil nil \"imagine dir contents: \")"
-- "(fz (snc \"find . -type d -maxdepth 1"
+# - "(fz (snc \"find . -type d -maxdepth 1"
 - "(pen-snc \"ls -ldt * | head -n 5\")"
 - "(pen-snc \"ls -d */ | head -n 5\")"
 # - "(pen-snc \"ls .. | head -n 5\")"
@@ -73,4 +75,6 @@ validator: grep -qP '(<q:directory name>|<directory name>)'
 postpostprocessor: sed 's/^<directory name>\///' | sed '/^$/d'
 split-patterns:
 - "\n"
+# These are defined after the prompt has executed
+return-postprocessor: sed 's/^/<directory name>\//'
 action: pen-find-file

@@ -30,4 +30,4 @@ examples:
 - ".\nLICENSE.md"
 filter: off
 completion: on
-insertion: off
+insertion: on
