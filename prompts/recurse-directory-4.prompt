@@ -13,15 +13,16 @@ prompt: |+
   $ ls -d */ | head -n 5 # list directories here
   <ls dirs here output>
 
-  $ find <q:directory name>/ -maxdepth 1 -type f
+  $ find <q:directory name>/ -maxdepth 5
   <:pp><directory name>/
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: 150
+max-generated-tokens: 200
 top-p: 1.0
 stop-sequences:
 - "\n\n"
 cache: on
+n-completions: 10
 vars:
 - "directory name"
 - "ls here output"
