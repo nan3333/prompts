@@ -2,7 +2,7 @@ task: "Generate the contents of a new file"
 doc: "Prompt for the probable contents of a file with this path and sibling files"
 prompt-version: 1
 prompt: |+
-    $ ls | head -n 10
+    $ ls -a | head -n 10
     <ls output>
 
     $ cat <q:path> <<EOD
@@ -23,7 +23,7 @@ vars:
 var-defaults:
 - "(pen-preceding-text)"
 - "(f-basename (get-path))"
-- "(pen-snc \"ls | head -n 10\")"
+- "(pen-snc \"ls -a | head -n 10\")"
 examples:
 - ""
 - ".gitignore"
