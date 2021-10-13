@@ -2,10 +2,13 @@ task: "Generate the contents of a new file"
 doc: "Prompt for the probable contents of a file with this path and sibling files"
 prompt-version: 1
 prompt: |+
-    $ ls -a | head -n 10
+    $ pwd
+    <working directory>
+
+    $ ls -a
     <ls output>
 
-    $ cat <q:path> <<EOD
+    $ cat <q:filename> <<EOD
     <preceding text>
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -18,15 +21,18 @@ stop-sequences:
 cache: on
 vars:
 - "preceding text"
-- "path"
+- "filename"
+- "working directory"
 - "ls output"
 var-defaults:
 - "(pen-preceding-text)"
 - "(f-basename (get-path))"
-- "(pen-snc \"ls -a | head -n 10\")"
+- "(pen-snc \"pwd\")"
+- "(pen-snc \"ls -a\")"
 examples:
 - ""
 - ".gitignore"
+- "/home/mullikine/codex-scaffolding-demo"
 - ".\nLICENSE.md"
 filter: off
 info: off
