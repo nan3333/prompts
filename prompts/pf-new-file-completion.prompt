@@ -15,9 +15,11 @@ stop-sequences:
 - EOD
 cache: on
 vars:
+- "preceding text"
 - "path"
 - "ls output"
 var-defaults:
+- "(pen-preceding-text)"
 - "(pen-mnm (get-path))"
 - "(pen-snc \"ls | head -n 10\")"
 examples:
