@@ -58,3 +58,5 @@ insertion: off
 validator: grep -qP '(<q:directory name>|<directory name>)'
 # must come after validator
 postpostprocessor: sed 's/^<directory name>\///' | sed '/^$/d'
+split-patterns:
+- "\n"
