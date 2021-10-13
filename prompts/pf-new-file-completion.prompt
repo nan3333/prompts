@@ -2,7 +2,7 @@ task: "Generate the contents of a new file"
 doc: "Prompt for the probable contents of a file with this path and sibling files"
 prompt-version: 1
 todo:
-- Use imaginary programming to generate a fake file listing. We don't want to divulge the contents of our filesystem to the language model owner
+- Use imaginary programming to generate a fake file listing. We don't really want to divulge the contents of our filesystem to the language model owner
 prompt: |+
     $ ls | head -n 10
     <ls output>
