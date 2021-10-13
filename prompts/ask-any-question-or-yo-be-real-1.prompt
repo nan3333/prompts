@@ -27,7 +27,7 @@ prompt: |
   Q: Which colorless green ideas speak furiously
   A: yo be real
 
-  Q: <1>
+  Q: <question>
   A:
 engine: OpenAI Davinci
 temperature: 0.3
