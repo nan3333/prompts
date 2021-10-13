@@ -11,6 +11,8 @@ engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 150
 top-p: 1.0
+# This means that even a long-completion can't change the stop-sequence
+force-stop-sequence: EOD
 stop-sequences:
 - EOD
 cache: on
@@ -20,11 +22,11 @@ vars:
 - "ls output"
 var-defaults:
 - "(pen-preceding-text)"
-- "(pen-mnm (get-path))"
+- "(f-basename (get-path))"
 - "(pen-snc \"ls | head -n 10\")"
 examples:
 - ""
-- "/var/smulliga/source/git/mullikine/almanac/.gitignore"
+- ".gitignore"
 - ".\nLICENSE.md"
 filter: off
 completion: on
