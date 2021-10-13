@@ -22,7 +22,8 @@ prompt: |+
   $ ls -ldt *
   <ls here output>
 
-  $ find ./<q:directory name>/ -maxdepth 5
+  $ # look inside directory <directory name>
+  $ find <q:directory name>/ -maxdepth 5
   <:pp><directory name>/
 engine: "OpenAI Codex"
 temperature: 0.3
