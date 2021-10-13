@@ -73,4 +73,4 @@ validator: grep -qP '(<q:directory name>|<directory name>)'
 postpostprocessor: sed 's/^<directory name>\///' | sed '/^$/d'
 split-patterns:
 - "\n"
-action: find-file
+action: pen-find-file
