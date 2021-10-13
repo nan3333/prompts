@@ -1,6 +1,6 @@
 title: "recurse directory"
 doc: "imaginarily recurse a directory"
-prompt-version: 2
+prompt-version: 3
 todo:
 - Make a more general version of this
 notes:
