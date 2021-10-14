@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
     Solidity explanations.
 
-    <delim>
+    <delim>Code example 1
     pragma solidity 0.4.2;
     
     contract Election {
@@ -18,14 +18,19 @@ prompt: |+
     }
     <delim>
 
-    Let me explain this code. We start by declaring the solidity version with the pragma solidity statement. Next, we declare the smart contract with the "contract" keyword, followed by the contract name. Next, we declare a state variable that will store the value of the candidate name. State variables allow us to write data to the blockchain. We have declared that this variable will be a string, and we have set its visibility to public.  Because it is public, solidity will give us a getter function for free that will allow us to access this value outside of our contract. We'll see that in action later in the console!
+    <delim>Explanation of 1
+    Let me explain the above code. We start by declaring the solidity version with the pragma solidity statement. Next, we declare the smart contract with the "contract" keyword, followed by the contract name. Next, we declare a state variable that will store the value of the candidate name. State variables allow us to write data to the blockchain. We have declared that this variable will be a string, and we have set its visibility to public.  Because it is public, solidity will give us a getter function for free that will allow us to access this value outside of our contract. We'll see that in action later in the console!
     
     Then, we create a constructor function that will get called whenever we deploy the smart contract to the blockchain. This is where we'll set the value of the candidate state variable that will get stored to the blockchain upon migration. Notice that the constructor function has the same name as the smart contract. This is how Solidity knows that the function is a constructor.
-
     <delim>
+
+    Here is some new code:
+
+    <delim>Code example 2
     <solidity code>
     <delim>
 
+    <delim>Explanation of 2
     Let me also explain this code.
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -57,3 +62,4 @@ examples:
     }
 info: on
 postprocessor: chomp | pen-str remove-starting-and-trailing-whitespace | pen-pretty-paragraph
+external-related: "https://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial/"
