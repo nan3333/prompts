@@ -63,3 +63,6 @@ examples:
 info: on
 postprocessor: chomp | pen-str remove-starting-and-trailing-whitespace | pen-pretty-paragraph
 external-related: "https://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial/"
+suggest-p:
+- "(major-mode-p 'solidity-mode)"
+- "(pen-selected-p)"
