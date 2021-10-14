@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
     $ # Start a brand new <type> project. Use a template.
     $ git checkout "https://github.com/templates/<sl:type>-project-template"    
-    $ find ./"<sl:type>-project-template"/ -type f # Show template files <<EOD
+    $ find ./<sl:type>-project-template/ -type f # Show template files <<EOD
     .
     <:pp>./
 engine: "OpenAI Codex"
@@ -22,4 +22,4 @@ examples:
 info: on
 completion: off
 insertion: off
-postpostprocessor: sed 's/^\.\/<sl:type>-project-template>\///'
+postprocessor: sed 's/^\.\/<sl:type>-project-template\///' | sed -e '/^$/d' -e '/^\.$/d'
