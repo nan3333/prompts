@@ -22,5 +22,5 @@ examples:
 info: on
 completion: off
 insertion: off
-postprocessor: sed 's/^\.\/<sl:type>-project-template\///' | sed -e '/^$/d' -e '/^\.$/d'
-action: pen-find-file
+postprocessor: sed '/~$/d' | sed 's/^\.\/<sl:type>-project-template\///' | sed -e '/^$/d' -e '/^\.$/d'
+action: pen-touch-all-files
