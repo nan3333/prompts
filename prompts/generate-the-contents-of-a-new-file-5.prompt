@@ -15,6 +15,9 @@ prompt: |+
 
     <dirs>
 
+    $ ls **/*
+    <ls star output>
+
     $ cat <q:filename> <<EOD
     <preceding text>
 engine: "OpenAI Codex"
@@ -31,18 +34,26 @@ vars:
 - "filename"
 - "working directory"
 - "ls output"
+- "ls star output"
 - "ls dirs here output"
 var-defaults:
 - "(pen-preceding-text)"
 - "(f-basename (get-path))"
 - "(pen-snc \"pwd\")"
 - "(pen-snc \"ls -a\")"
+- "(pen-snc \"ls **/*\")"
 - "(pen-snc \"ls -d */ | head -n 5\")"
 examples:
 - ""
 - ".gitignore"
 - "/home/mullikine/codex-scaffolding-demo"
 - ".\nLICENSE.md"
+- |-
+    contracts/Migrate.sol
+    migrations/doit.js
+    node_modules/
+    src/main.js
+    test/test-main.js
 - |-
     contracts/
     migrations/
