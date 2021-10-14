@@ -11,6 +11,7 @@ force-engine: OpenAI Codex
 temperature: 0.3
 max-generated-tokens: 200
 top-p: 1
+force-stop-sequence: EOD
 # Complete one line only by default
 stop-sequences:
 - "EOD"
