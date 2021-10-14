@@ -1,5 +1,7 @@
 task: "test imaginary equivalence"
-doc: "Given two strings of arbitrary content, test their semantic equivalence"
+doc: "Given two strings of arbitrary content, test their imaginary equivalence. This is an imaginary neural hash collision test"
+aliases:
+- imaginary hash collision test
 prompt-version: 1
 prompt: |+
   ```1
@@ -9,14 +11,32 @@ prompt: |+
   ```
   ∞
   ```
+  TRUE because 1 divided by 0 diverges to infinity.
 
   ```2
-  (map (fn [x] (+ x 1)) (range 1 5))
+  "Language is everywhere.
+  
+  It permeates our thoughts mediates our
+  relations with others, and even creeps into
+  our dreams." -Ronald Wayne Langacker
+  ```
+  is the same as
+  ```
+  FTC Puts Hundreds of Businesses on Notice about Fake Reviews (ftc.gov)
+  202 points by walterbell 3 hours ago | flag | hide | 92 comments
+  ```
+  FALSE because they are very unrelated.
+
+  ```3
+  (map
+   (fn [x] (+ x 1))
+   (range 1 5))
   ```
   is the same as
   ```
   (map (fn [x] (inc x)) (range 1 5))
   ```
+  TRUE because `+ x` is equivalent to `inc`.
 
   ```3
   e^{i\pi} + 1 = 0
@@ -25,6 +45,7 @@ prompt: |+
   ```
   euler's identity
   ```
+  TRUE because euler's identity is the name of the equation e^{i\pi} + 1 = 0.
 
   ```4
   <a>
@@ -45,14 +66,8 @@ vars:
 - "A"
 - "B"
 examples:
-- "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
+- "Semerkhet, the Egyptian king who ruled during the First Dynasty"
+- "Moses also known as Moshe Rabbenu"
 filter: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph

@@ -81,4 +81,6 @@ split-patterns:
 - "\n"
 # These are defined after the prompt has executed
 return-postprocessor: sed 's/^/<directory name>\//'
+# This should still evaluate to a string, but it should be elisp code
+evaluator: "(string-equal \"TRUE\" result)"
 action: pen-find-file
