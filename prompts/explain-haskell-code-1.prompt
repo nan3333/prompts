@@ -13,6 +13,8 @@ prompt: |+
 
     <delim>Explanation of 1
     We have created a new type called Area. Next, we are using this type to calculate the area of a circle. "surface" is a function that takes Area as an input and produces Float as the output.
+
+    Keep in mind that "data" is a keyword here and all user-defined types in Haskell always start with a capital letter.
     <delim>
 
     Here is some new code:
