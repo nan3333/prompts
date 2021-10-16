@@ -24,7 +24,6 @@ prompt: |+
     <delim>
 
     <delim>Explanation of 2
-    Let me also explain this code.
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: prompt-length
