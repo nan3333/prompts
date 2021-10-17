@@ -27,7 +27,8 @@ vars:
 examples:
 - "Fetch the three max employees from the Employee table"
 n-collate: 1
-n-completions: 10
+# The results don't vary much. 3 completions is enough. But 1 would probably be enough too.
+n-completions: 3
 info: on
 completion: off
 insertion: off
