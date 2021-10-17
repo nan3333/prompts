@@ -37,7 +37,7 @@ vars:
 - "output lang"
 - "tool"
 examples:
-- |-
+- |
     [
       "\n\nWhat went wrong?\n\nPossible Issue:\n\nThe sass executable has not been copied into the project. To get sass to work, run the following code:\n\nsudo gem install sass\n\n\n\nThen,",
       "\n\nThe output should be:\n\n{ \"status\": \"success\", \"data\": { \"id\": \"1\", \"name\": \"Test Name 1\", \"content\": \"Hello World\", \"updated_at\": \"2014-08",
@@ -46,7 +46,7 @@ examples:
       "\n\nWhat do you want to happen?\n\nCreate a feature branch with a failing test-case.\n\nPush the branch.\n\nOpen a pull request.\n\nA CI system will run the failing test-case and report that"
     ]
 - "json"
-- |-
+- |
     {
       "jsonrpc": "2.0",
       "id": 10,
