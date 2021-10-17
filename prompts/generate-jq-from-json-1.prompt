@@ -10,16 +10,16 @@ prompt: |+
     EOD
 
     # This is how generated-1.json was generated:
-    {
-    echo "John Doe"
-    echo 62
-    } | jq -n '{jsonrpc: "John Doe", age: 42}' > generated-1.json
+    export NAME="John Doe"
+    export AGE=62
+    jq -n '{jsonrpc: env.NAME, age: env.AGE}' > generated-1.json
 
     cat generated-2.json <<EOD
     <json>
     EOD
 
     # This is how generated-2.json was generated:
+    export
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
