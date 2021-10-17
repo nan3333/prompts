@@ -1,0 +1,56 @@
+task: "Generate jq from json"
+doc: "Given some json, generate the jq which generates it"
+prompt-version: 1
+prompt: |+
+    cat generated-1.json <<EOD
+    {
+      "jsonrpc": "John Doe",
+      "age": 42
+    }
+    EOD
+
+    # This is how generated-1.json was generated:
+    jq -n '{jsonrpc: "John Doe", age: 42}' > generated.json
+
+    cat generated-2.json <<EOD
+    <json>
+    EOD
+
+    # This is how generated-2.json was generated:
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- " > gen"
+cache: on
+vars:
+- "json"
+examples:
+- |-
+    {
+      "jsonrpc": "2.0",
+      "id": 2896,
+      "result": [
+        {
+          "name": "port->",
+          "kind": 13,
+          "location": {
+            "uri": "file:///home/shane/scripts/glob-grep.rkt",
+            "range": {
+              "end": {
+                "character": 8,
+                "line": 3
+              },
+              "start": {
+                "character": 2,
+                "line": 3
+              }
+            }
+          }
+        },
+      ]
+    }
+info: on
+completion: off
+insertion: off
