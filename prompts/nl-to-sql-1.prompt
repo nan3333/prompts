@@ -1,6 +1,8 @@
 task: "NL to SQL"
 doc: "Given a NL query, write some SQL"
 prompt-version: 1
+notes:
+- I doubt that being specific about where to place the result is important, but it might help
 prompt: |+
     Take the human query in the [Query] section, convert it to a SQL query, and put the result in the [SQL] section.
     
