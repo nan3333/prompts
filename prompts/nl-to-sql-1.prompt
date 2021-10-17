@@ -26,6 +26,8 @@ vars:
 - "nl query"
 examples:
 - "Fetch the three max employees from the Employee table"
+n-collate: 1
+n-completions: 10
 info: on
 completion: off
 insertion: off
