@@ -15,10 +15,10 @@ prompt: |+
     Example 2:
     
     #+BEGIN_SRC <sl:output lang>
-    <output>
+    <output code>
     #+END_SRC
     
-    * This is the <tool> to turn example-1.<sl:input lang> into example-2.<sl:output lang>
+    * This is the <tool> to change example-1.<sl:input lang> into the style of example-2.<sl:output lang>
     
     #+BEGIN_SRC
     cat example-1.<sl:input lang> | <:pp><tool>
@@ -33,7 +33,7 @@ n-completions: 10
 vars:
 - "input"
 - "input lang"
-- "output"
+- "output code"
 - "output lang"
 - "tool"
 examples:
