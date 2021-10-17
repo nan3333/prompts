@@ -10,7 +10,10 @@ prompt: |+
     EOD
 
     # This is how generated-1.json was generated:
-    jq -n '{jsonrpc: "John Doe", age: 42}' > generated-1.json
+    {
+    echo "John Doe"
+    echo 62
+    } | jq -n '{jsonrpc: "John Doe", age: 42}' > generated-1.json
 
     cat generated-2.json <<EOD
     <json>
