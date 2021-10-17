@@ -21,7 +21,7 @@ prompt: |+
     * This is the <tool> to turn example-1.<sl:input lang> into example-2.<sl:output lang>
     
     #+BEGIN_SRC
-    cat example-1.<sl:input lang> | <tool>
+    cat example-1.<sl:input lang> | <:pp><tool>
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: prompt-length
@@ -29,6 +29,7 @@ top-p: 1.0
 stop-sequences:
 - "#+END_SRC"
 cache: on
+n-completions: 10
 vars:
 - "input"
 - "input lang"
