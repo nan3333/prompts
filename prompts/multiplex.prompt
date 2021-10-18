@@ -11,18 +11,14 @@ prompt-version: 1
 prompt: |+
     Inputs:
 
-    <outerdelim>Prompt <vi>
-    <va>
-    <outerdelim>
-
-    <outerdelim>Prompt 2
-    <vn>
-    <outerdelim>
+    <vas>
     
     Outputs:
 
     <outerdelim>Prompt 1
-repeater:
+
+# Use repeater:?
+variadic-template:
     <outerdelim>Prompt <vi>
     <va>
     <outerdelim>
