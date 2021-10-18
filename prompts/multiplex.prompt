@@ -6,20 +6,27 @@ notes:
 prompt-version: 1
 # Use the variadic-transformer to transform multiple inputs into prompts.
 # I should probably use transducers.
+
+# <va> is the variadic nth, <vi> is the counter
 prompt: |+
     Inputs:
 
-    <delim>Prompt 1
-    <prompt 1>
+    <delim>Prompt <vi>
+    <va>
     <delim>
 
     <delim>Prompt 2
-    <prompt 2>
+    <vn>
     <delim>
     
     Outputs:
 
     <delim>Prompt 1
+repeater:
+    <delim>Prompt <vi>
+    <va>
+    <delim>
+
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
