@@ -40,9 +40,9 @@ var-defaults:
 - "(pen-preceding-text)"
 - "(pen-f-basename (get-path))"
 - "(pen-snc \"pwd\")"
-- "(pen-snc \"ls -a\")"
-- "(pen-snc \"ls **/*\")"
-- "(pen-snc \"ls -d */ | head -n 5\")"
+- "(pen-snc \"ls -a | head -n 20\")"
+- "(pen-snc \"ls **/* | head -n 20\")"
+- "(pen-snc \"ls -d */ | head -n 10\")"
 examples:
 - ""
 - ".gitignore"
