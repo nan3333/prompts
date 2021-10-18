@@ -6,6 +6,7 @@ notes:
 - 'With "into the style of", the prompt generalises a bit more.'
 - inductive programming
 - reverse programming
+- imaginary programming
 prompt: |+
     * Here is some <sl:input lang>
     
