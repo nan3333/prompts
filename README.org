@@ -393,6 +393,9 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   # With the following pipeline you may use the following template. The variable 'program' will be uppercased
   # <uc:program>
   # See: http://github.com/semiosis/pen.el/blob/master/scripts/pen-str
+  # Or like this (a simple variable substitution):
+  # <shell-comment>
+  # See: http://github.com/semiosis/prompts/blob/master/prompts/generate-textual-transformation-script-4.prompt
   pipelines:
   - uc: pen-str uc
 
