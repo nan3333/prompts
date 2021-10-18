@@ -1,5 +1,6 @@
 task: "multiplex"
 doc: "Run multiple prompts under one prompt"
+in-development: on
 notes:
 - designed for Codex
 prompt-version: 1
