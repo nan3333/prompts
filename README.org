@@ -388,6 +388,14 @@ This =YASnippet= snippet contains an explanation of the =.prompt= file format.
   aliases:
   - "asktutor"
 
+  # Pipelines
+  # Example: http://github.com/semiosis/prompts/blob/master/prompts/imagine-a-man-page-1.prompt
+  # With the following pipeline you may use the following template. The variable 'program' will be uppercased
+  # <uc:program>
+  # See: http://github.com/semiosis/pen.el/blob/master/scripts/pen-str
+  pipelines:
+  - uc: pen-str uc
+
   # This is run on the completion results.
   # It may be used to format the results
   # before usage/insertion by emacs.
