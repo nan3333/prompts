@@ -13,6 +13,7 @@ top-p: 1.0
 stop-sequences:
 - "<delim>"
 cache: on
+# variadic-transformers:
 vars:
 - "former"
 - "latter"

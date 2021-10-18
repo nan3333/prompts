@@ -1,6 +1,6 @@
 task: "explain a file"
 doc: "Explain a file"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
   $ ls | head -n 10
   <ls here output>
@@ -29,7 +29,7 @@ vars:
 - "ls parent dir output"
 var-defaults:
 - "(buffer-string)"
-- "(f-basename (get-path))"
+- "(pen-f-basename (get-path))"
 - "(pen-snc \"ls | head -n 10\")"
 - "(pen-snc \"ls .. | head -n 10\")"
 examples:

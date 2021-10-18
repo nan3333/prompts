@@ -38,7 +38,7 @@ vars:
 - "ls dirs here output"
 var-defaults:
 - "(pen-preceding-text)"
-- "(f-basename (get-path))"
+- "(pen-f-basename (get-path))"
 - "(pen-snc \"pwd\")"
 - "(pen-snc \"ls -a\")"
 - "(pen-snc \"ls **/*\")"
