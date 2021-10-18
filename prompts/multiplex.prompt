@@ -4,8 +4,22 @@ in-development: on
 notes:
 - designed for Codex
 prompt-version: 1
+# Use the variadic-transformer to transform multiple inputs into prompts.
+# I should probably use transducers.
 prompt: |+
+    Inputs:
 
+    <delim>Prompt 1
+    <prompt 1>
+    <delim>
+
+    <delim>Prompt 2
+    <prompt 2>
+    <delim>
+    
+    Outputs:
+
+    <delim>Prompt 1
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
