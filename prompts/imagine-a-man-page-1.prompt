@@ -2,7 +2,7 @@ task: "Imagine a man page"
 doc: "Given a program name, imagine a man page"
 prompt-version: 1
 prompt: |+
-    <sl:program>(1)                     User Commands                    <sl:program>(1)
+    <:pp><uc:program>(1)                     User Commands                    <uc:program>(1)
     
     NAME
 engine: "OpenAI Codex"
