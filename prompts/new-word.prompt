@@ -7,14 +7,14 @@ prompt: |
   Invent a new word from the definition.
 
   <delim>
-  A list of 3 invented words for "Beyond the ultimate".
+  A list of 3 invented words for "Beyond the ultimate":
   - transultimate
   - transulti
   - postultimate
   <delim>
 
   <delim>
-  A list of <n> invented words for <q:definition>.
+  A list of <n> invented words for <q:definition>:
   - 
 force-engine: OpenAI Davinci
 force-temperature: 0.8
