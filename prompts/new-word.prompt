@@ -7,13 +7,14 @@ prompt: |
   Invent a new word from the definition.
 
   <delim>
-  For example:
-  Definition: Beyond the ultimate.
-  Word: transultimate
+  A list of 3 possible words that could mean "Beyond the ultimate".
+  - transultimate
+  - transulti
+  - postultimate
   <delim>
 
   <delim>
-  A list of possible words that could mean <q:definition>.
+  A list of <n> possible words that could mean <q:definition>.
   - 
 engine: OpenAI Davinci
 temperature: 0.8
@@ -22,6 +23,8 @@ top-p: 1
 stop-sequences:
 - "<delim-1>"
 cache: true
+defs:
+- n: 5
 vars:
 - definition
 examples:
@@ -34,4 +37,4 @@ n-test-runs: 5
 continuation-function: list-of <1> <g>
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
   uniqnosort
-prettifier: pen-pretty-paragraph
+# prettifier: pen-pretty-paragraph
