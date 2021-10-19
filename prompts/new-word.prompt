@@ -1,31 +1,31 @@
-title: what is the word for which sounds like
+title: invent a new word
+task: invent a new word from a definition
 design-patterns: 
 doc: Given a description of a word that you are looking for, list some possible candidates
 prompt-version: 2
 prompt: |
-  Given a description of a word that you are looking for, list some possible candidates.
+  Invent a new word from the definition.
 
   <delim>
-  A list of words that mean "luxurious" and sound like "brush":
-  - plush
-  - push
-  - lush
+  For example:
+  Definition: Beyond the ultimate.
+  Word: transultimate
   <delim>
-  A list of words that mean "<1>" and sound like "<2>":
-  -
+
+  <delim>
+  A list of possible words that could mean <q:definition>.
+  - 
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "<delim-1>"
+- "<delim>"
 cache: true
 vars:
 - description
-- sounds like
 examples:
 - to do in excess
-- flout
 test-output: flaunt
 # preprocessors:
 # - pf-correct-grammar/1
