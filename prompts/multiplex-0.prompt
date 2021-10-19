@@ -33,7 +33,10 @@ top-p: 1.0
 stop-sequences:
 - "<delim>"
 cache: on
-# variadic-transformers:
+
+# penf pf-invent-a-new-word/1 "variadic transformer"
+# variadic transformers
+variadicator:
 filter: on
 completion: off
 insertion: off
