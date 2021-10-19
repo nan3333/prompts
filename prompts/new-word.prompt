@@ -8,14 +8,14 @@ prompt: |
 
   <delim>
   A list of 3 invented words for "Beyond the ultimate":
+  <delim>
   - transultimate
   - transulti
   - postultimate
   <delim>
-
-  <delim>
   A list of <n> invented words for <q:definition>:
-  - 
+  <delim>
+  -
 force-engine: OpenAI Davinci
 force-temperature: 0.8
 max-generated-tokens: 60
