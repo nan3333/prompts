@@ -1,46 +1,48 @@
 task: "correct the results of OCR"
 doc: "Given OCR results, correct them"
 prompt-version: 2
-issues:
-- This is not very effective
-done:
+todo:
 - Redesign to make this work line-by-line
 prompt: |+
-    Restore this text to its original.
-    <delim>
-    Input 1:
-    <delim>
+    # Restore this text to its original.
+
+    cat damaged_1 <<EOD
     1	"r'2Pto flare i~t in the face; for this"
     2	"riea/on they ef~d all tho~-e Books which"
     3	"gave the least ac- of the Heathen Theology"
     4	"to the flames ;"
-    <delim>
-    Output 2:
-    <delim>
+    EOD
+
+    cat restored_1 <<EOD
     1	"For a to flare it in the face; for this"
     2	"reason they sacrificed all those books which"
     3	"gave the least account of the Heathen Theology"
     4	"to the flames;"
-    <delim>
-    Input 2:
-    <delim>
+    EOD
+
+    # This passage was damaged.
+    # Restore each line to its original.
+
+    cat damaged_2 <<EOD
     <OCR text>
-    <delim>
-    Output 2:
-    <delim>
+    EOD
+
+    # This is the fixed passage, in perfect English
+
+    cat restored_2 <<EOD
     <:pp>1	"
-engine: "OpenAI Codex"
-temperature: 0.3
+# engine: "OpenAI Codex"
+# temperature: 0.3
 # force-engine: "OpenAI Davinci"
 # force-temperature: 0.8
-# force-engine: "OpenAI Codex"
-# force-temperature: 0.3
+force-engine: "OpenAI Codex"
+force-temperature: 0.3
 max-generated-tokens: "(* 2 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
 # max-generated-tokens: "(* 1 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
 # max-generated-tokens: 300
 top-p: 1.0
 stop-sequences:
-- "<delim>"
+- "EOD"
 cache: on
 vars:
 - "OCR text"
