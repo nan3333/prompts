@@ -7,6 +7,10 @@ prompt: |
   These words are not real:
 
   <delim>
+  1 word that means "serene, but noisy":
+  <delim>
+  - serenoisy
+  <delim>
   2 words that means "beyond the ultimate":
   <delim>
   - transultimate
@@ -31,7 +35,7 @@ defs:
 vars:
 - definition
 examples:
-- to do in excess
+- rich but poor
 test-output: flaunt
 # preprocessors:
 # - pf-correct-grammar/1
