@@ -4,16 +4,19 @@ design-patterns:
 doc: Given a description of a word that you are looking for, list some possible candidates
 prompt-version: 2
 prompt: |
-  Invent a new word from the definition.
+  These words are not real:
 
   <delim>
-  3 portmanteaus that mean "Beyond the ultimate":
+  2 words that means "beyond the ultimate":
   <delim>
   - transultimate
-  - transulti
-  - postultimate
+  - postfinal
   <delim>
-  <n> invented words that mean <q:definition>:
+  1 word that means "surreal and surreptitious":
+  <delim>
+  - surreptitious
+  <delim>
+  <n> words that mean <q:definition>:
   <delim>
   -
 force-engine: OpenAI Davinci
