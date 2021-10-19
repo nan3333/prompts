@@ -36,6 +36,7 @@ cache: on
 
 # penf pf-invent-a-new-word/1 "variadic transformer"
 # variadic transformers
+# This would be used instead of the variadic-template, which is a simplification
 variadicator:
 filter: on
 completion: off
