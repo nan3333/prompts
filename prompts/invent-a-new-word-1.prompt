@@ -16,7 +16,7 @@ prompt: |
   <delim>
   - surreptitious
   <delim>
-  <n> words that mean <q:definition>:
+  <n> different words that mean <q:definition>:
   <delim>
   -
 force-engine: OpenAI Davinci
