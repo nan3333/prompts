@@ -1,27 +1,42 @@
 task: "correct the results of OCR"
 doc: "Given OCR results, correct them"
 prompt-version: 2
+todo:
+- Redesign to make this work line-by-line
 prompt: |+
-    These are the results of performing optical character recognition on the historical documents.
+    These are the results of performing
+    optical character recognition on the
+    historical documents.
     <delim>
-    OCR Result:
+    OCR Result 1:
     <delim>
-    r'2Pto flare i~t in the face; for this riea/on they ef~d all tho~-e Books which gave the least ac- of the Heathen Theology to the flames ;
+    r'2Pto flare i~t in the face; for this
+    riea/on they ef~d all tho~-e Books which
+    gave the least ac- of the Heathen Theology
+    to the flames ;
     <delim>
-    Correction:
+    Correction 1:
     <delim>
-    For a to flare it in the face; for this reason they sacrificed all those books which gave the least account of the Heathen Theology to the flames;
+    For a to flare it in the face; for this
+    reason they sacrificed all those books
+    which gave the least account of the
+    Heathen Theology to the flames;
     <delim>
-    OCR Result:
+    OCR Result 2:
     <delim>
     <OCR text>
     <delim>
-    Correction: 
+    Correction 2: 
     <delim>
-
-engine: "OpenAI Codex"
-temperature: 0.3
-max-generated-tokens: "(* 2 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
+# engine: "OpenAI Codex"
+# temperature: 0.3
+force-engine: "OpenAI Davinci"
+force-temperature: 0.8
+# force-engine: "OpenAI Codex"
+# force-temperature: 0.3
+# max-generated-tokens: "(* 2 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
+max-generated-tokens: "(* 1 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
+# max-generated-tokens: 300
 top-p: 1.0
 stop-sequences:
 - "<delim>"
@@ -35,6 +50,11 @@ examples:
 # TODO Add to .prompt optional multiplex preprocessor for inputs
 # If a postprocessor sees pf- then check the function to see if it has
 # multiplex capability
+preprocessors:
+- sed -z 's/\n\n/\n/g' | sed 's/\s\+/ /g'
+# preprocessors:
+# - pen-c strip-unicode | pen-str join ' '
+# - pen-str onelineify
 postprocessor: pf-correct-english-spelling-and-grammar/1
 filter: on
 completion: off
