@@ -37,6 +37,7 @@ test-output: flaunt
 # - pf-correct-grammar/1
 prefer-external: true
 n-collate: 2
+n-completions: 3
 n-test-runs: 5
 continuation-function: list-of <1> <g>
 split-patterns:
