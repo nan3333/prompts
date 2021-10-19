@@ -2,7 +2,8 @@ task: "correct the results of OCR"
 doc: "Given OCR results, correct them"
 prompt-version: 2
 issues:
-- This is not very effective
+- This is not very effective.
+- It doesn't seem to have coherence across lines.
 done:
 - Redesign to make this work line-by-line
 prompt: |+
@@ -29,10 +30,10 @@ prompt: |+
     Output 2:
     <delim>
     <:pp>1	"
-engine: "OpenAI Codex"
-temperature: 0.3
-# force-engine: "OpenAI Davinci"
-# force-temperature: 0.8
+# engine: "OpenAI Codex"
+# temperature: 0.3
+force-engine: "OpenAI Davinci"
+force-temperature: 0.8
 # force-engine: "OpenAI Codex"
 # force-temperature: 0.3
 max-generated-tokens: "(* 2 (pen-approximate-token-length ocr-text final-approximate-token-char-length))"
