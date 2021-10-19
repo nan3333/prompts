@@ -10,21 +10,21 @@ prompt: |+
     <delim>
     Input 1:
     <delim>
-    r'2Pto flare i~t in the face; for this
-    riea/on they ef~d all tho~-e Books which
-    gave the least ac- of the Heathen Theology
-    to the flames ;
+    1: r'2Pto flare i~t in the face; for this
+    2: riea/on they ef~d all tho~-e Books which
+    3: gave the least ac- of the Heathen Theology
+    4: to the flames ;
     <delim>
     Correction 1:
     <delim>
-    In: r'2Pto flare i~t in the face; for this
-    Out: For a to flare it in the face; for this
-    In: riea/on they ef~d all tho~-e Books which
-    Out: reason they sacrificed all those books which
-    In: gave the least ac- of the Heathen Theology
-    Out: gave the least account of the Heathen Theology
-    In: to the flames ;
-    Out: to the flames;
+    In 1: r'2Pto flare i~t in the face; for this
+    Out 1: For a to flare it in the face; for this
+    In 2: riea/on they ef~d all tho~-e Books which
+    Out 2: reason they sacrificed all those books which
+    In 3: gave the least ac- of the Heathen Theology
+    Out 3: gave the least account of the Heathen Theology
+    In 4: to the flames ;
+    Out 4: to the flames;
     <delim>
     Input 2:
     <delim>
@@ -32,7 +32,7 @@ prompt: |+
     <delim>
     Correction 2: 
     <delim>
-    In:
+    <:pp>In 1:
 # engine: "OpenAI Codex"
 # temperature: 0.3
 force-engine: "OpenAI Davinci"
@@ -61,7 +61,7 @@ preprocessors:
 # - pen-c strip-unicode | pen-str join ' '
 # - pen-str onelineify
 # postprocessor: "sed '/^In: /d' | sed 's/Out: //' | penf -u pf-correct-english-spelling-and-grammar/1"
-postprocessor: "sed '/^In: /d' | sed 's/Out: //'"
+postprocessor: "sed '/^In [0-9]*: /d' | sed 's/Out [0-9]*: //'"
 filter: on
 completion: off
 insertion: off
