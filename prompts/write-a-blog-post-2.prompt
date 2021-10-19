@@ -5,8 +5,8 @@ prompt: |+
     Write a <n words> words blog post about the <topic>.
 
 lm-command: "openai-complete.sh"
-model: "davinci-instruct-beta"
-temperature: 0.8
+force-engine: "OpenAI Davinci Instruct"
+force-temperature: 0.8
 max-generated-tokens: <m:(pen-n-words->n-tokens/m <n words>)>
 top-p: 1.0
 best-of: 1
