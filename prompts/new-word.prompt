@@ -20,7 +20,7 @@ temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "<delim>"
+- "<delim-1>"
 cache: true
 vars:
 - description
