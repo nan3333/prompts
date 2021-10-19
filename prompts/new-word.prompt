@@ -7,13 +7,13 @@ prompt: |
   Invent a new word from the definition.
 
   <delim>
-  A list of 3 invented words for "Beyond the ultimate":
+  3 portmanteaus that mean "Beyond the ultimate":
   <delim>
   - transultimate
   - transulti
   - postultimate
   <delim>
-  A list of <n> invented words for <q:definition>:
+  <n> invented words that mean <q:definition>:
   <delim>
   -
 force-engine: OpenAI Davinci
