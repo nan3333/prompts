@@ -21,7 +21,7 @@ prompt: |
   -
 force-engine: OpenAI Davinci
 force-temperature: 0.3
-max-generated-tokens: 60
+max-generated-tokens: 100
 top-p: 1
 stop-sequences:
 - "<delim-1>"
