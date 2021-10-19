@@ -8,7 +8,7 @@ prompt: |+
     optical character recognition on the
     historical documents.
     <delim>
-    OCR Result 1:
+    Input 1:
     <delim>
     r'2Pto flare i~t in the face; for this
     riea/on they ef~d all tho~-e Books which
@@ -17,17 +17,22 @@ prompt: |+
     <delim>
     Correction 1:
     <delim>
-    For a to flare it in the face; for this
-    reason they sacrificed all those books
-    which gave the least account of the
-    Heathen Theology to the flames;
+    In: r'2Pto flare i~t in the face; for this
+    Out: For a to flare it in the face; for this
+    In: riea/on they ef~d all tho~-e Books which
+    Out: reason they sacrificed all those books which
+    In: gave the least ac- of the Heathen Theology
+    Out: gave the least account of the Heathen Theology
+    In: to the flames ;
+    Out: to the flames;
     <delim>
-    OCR Result 2:
+    Input 2:
     <delim>
     <OCR text>
     <delim>
     Correction 2: 
     <delim>
+    In:
 # engine: "OpenAI Codex"
 # temperature: 0.3
 force-engine: "OpenAI Davinci"
@@ -55,7 +60,8 @@ preprocessors:
 # preprocessors:
 # - pen-c strip-unicode | pen-str join ' '
 # - pen-str onelineify
-postprocessor: pf-correct-english-spelling-and-grammar/1
+# postprocessor: "sed '/^In: /d' | sed 's/Out: //' | penf -u pf-correct-english-spelling-and-grammar/1"
+postprocessor: "sed '/^In: /d' | sed 's/Out: //'"
 filter: on
 completion: off
 insertion: off
