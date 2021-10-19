@@ -36,7 +36,7 @@ test-output: flaunt
 # preprocessors:
 # - pf-correct-grammar/1
 prefer-external: true
-n-collate: 2
+n-collate: 1
 n-completions: 10
 n-test-runs: 5
 continuation-function: list-of <1> <g>
