@@ -11,14 +11,14 @@ prompt: |
   - push
   - lush
   <delim>
-  A list of words that mean "<1>" and sound like "<2>":
+  A list of words that mean <q:description> and sound like <q:sounds like>:
   -
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
-- "<delim-1>"
+- <delim-1>
 cache: true
 vars:
 - description
@@ -32,6 +32,6 @@ test-output: flaunt
 prefer-external: true
 n-test-runs: 5
 continuation-function: list-of <1> <g>
-postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
+postprocessor: sed '/^- /s/- //p | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
   uniqnosort
 prettifier: pen-pretty-paragraph

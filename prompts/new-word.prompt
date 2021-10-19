@@ -23,7 +23,7 @@ stop-sequences:
 - "<delim-1>"
 cache: true
 vars:
-- description
+- definition
 examples:
 - to do in excess
 test-output: flaunt
