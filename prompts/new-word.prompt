@@ -7,17 +7,17 @@ prompt: |
   Invent a new word from the definition.
 
   <delim>
-  A list of 3 invented words that could mean "Beyond the ultimate".
+  A list of 3 invented words for "Beyond the ultimate".
   - transultimate
   - transulti
   - postultimate
   <delim>
 
   <delim>
-  A list of <n> portmanteaus that could mean <q:definition>.
+  A list of <n> invented words for <q:definition>.
   - 
-engine: OpenAI Davinci
-temperature: 0.8
+force-engine: OpenAI Davinci
+force-temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
 stop-sequences:
@@ -35,6 +35,8 @@ test-output: flaunt
 prefer-external: true
 n-test-runs: 5
 continuation-function: list-of <1> <g>
+split-patterns:
+- "\n"
 postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
   uniqnosort
 # prettifier: pen-pretty-paragraph
