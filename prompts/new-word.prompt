@@ -7,14 +7,14 @@ prompt: |
   Invent a new word from the definition.
 
   <delim>
-  A list of 3 possible words that could mean "Beyond the ultimate".
+  A list of 3 invented words that could mean "Beyond the ultimate".
   - transultimate
   - transulti
   - postultimate
   <delim>
 
   <delim>
-  A list of <n> possible words that could mean <q:definition>.
+  A list of <n> portmanteaus that could mean <q:definition>.
   - 
 engine: OpenAI Davinci
 temperature: 0.8
