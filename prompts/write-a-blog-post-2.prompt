@@ -22,7 +22,7 @@ vars:
 - n words
 examples:
 - "iPhone 12"
-- "500"
+- "200"
 n-test-runs: 5
 prettifier: pen-pretty-paragraph
 n-collate: 1
