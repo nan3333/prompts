@@ -26,7 +26,7 @@ variadic-template:
 engine: "OpenAI Codex"
 defs:
   # Find a good one
-  outerdelim: "~`~`~`"
+- outerdelim: "~`~`~`"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0

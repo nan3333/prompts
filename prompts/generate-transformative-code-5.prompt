@@ -21,7 +21,7 @@ prompt: |+
     Example 2:
     
     #+BEGIN_SRC <sl:output lang>
-    <output code>
+    <output>
     #+END_SRC
     
     * This is the <tool> to change example-1.<sl:input lang> into the style of example-2.<sl:output lang>
@@ -39,7 +39,7 @@ n-completions: 10
 vars:
 - "input"
 - "input lang"
-- "output code"
+- "output"
 - "output lang"
 - "tool"
 examples:
