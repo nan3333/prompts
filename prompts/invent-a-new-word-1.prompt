@@ -27,7 +27,7 @@ stop-sequences:
 - "<delim-1>"
 cache: true
 defs:
-- n: 10
+- n: 3
 vars:
 - definition
 examples:
