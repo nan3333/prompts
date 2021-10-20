@@ -1,4 +1,4 @@
-fstask: "explain haskell code"
+task: "explain haskell code"
 doc: "Given some haskell code, explain it"
 prompt-version: 1
 prompt: |+
