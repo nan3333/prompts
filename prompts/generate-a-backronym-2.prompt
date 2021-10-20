@@ -2,6 +2,8 @@ task: "Generate a backronym"
 aliases:
 - backronym
 doc: "Given a word, generate an backronym for it"
+notes:
+- This prompt is a bit big for my liking. Too many tuning shots.
 prompt-version: 1
 prompt: |+
     The AI is super helpful and funny, and will invent acronyms which match each letter.
