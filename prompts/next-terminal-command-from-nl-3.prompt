@@ -33,7 +33,7 @@ stop-sequences:
 vars:
 # TODO Make a context-window widening mechanism
 - "terminal context":
-  - default: "(pen-snc \"awk 1 | sed '$d'\" (pen-selected-or-preceding-context))"
+  - default: "(pen-snc \"awk 1 | sed '$d'\" (pen-selected-or-preceding-context 400))"
   - example: "print(\"Hello world, I have no empathy\")"
   - |-
     In [1]: from datasets import load_dataset
@@ -41,7 +41,7 @@ vars:
     datasetsUsing custom data configuration default
     Reusing dataset ag_news (/home/shane/.cache/huggingface/datasets/ag_news/default/0.0.0/bc2bcb40336ace1a0374767fc29bb0296cdaf8a6da7298436239c54d79180548)
 - "current line/prompt":
-  - default: "(pen-snc \"awk 1 | sed -n '$p'\" (pen-selected-or-preceding-context))"
+  - default: "(pen-snc \"awk 1 | sed -n '$p'\" (pen-selected-or-preceding-context 400))"
   - example: "In [3]: "
 - "nl command":
   - example: "show contents of datasets module"
