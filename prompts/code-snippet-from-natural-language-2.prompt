@@ -41,7 +41,7 @@ stop-sequences:
 vars:
 - language
 - task
-defaults:
+var-defaults:
 - "(pen-detect-language-ask)"
 examples:
 - bash
