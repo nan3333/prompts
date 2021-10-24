@@ -21,7 +21,7 @@ max-generated-tokens: 80
 n-completions: 8
 top-p: 1
 stop-sequences:
-- "<delim>"
+- "<delim-1>"
 vars:
 - word
 examples:
