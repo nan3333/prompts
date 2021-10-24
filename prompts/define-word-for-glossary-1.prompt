@@ -26,6 +26,7 @@ vars:
 - word
 examples:
 - boysenberry
+info: true
 completion: true
 # This is just to make it a bit easier when you select multiple lines to define
 preprocessors:

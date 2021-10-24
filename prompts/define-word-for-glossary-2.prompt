@@ -32,6 +32,7 @@ vars:
 - topic:
   - example: food
   - preprocessor: pen-str onelineify
+info: true
 completion: true
 # This is just to make it a bit easier when you select multiple lines to define
 postprocessor: pen-str remove-leading-and-trailing-newlines | uq | pen-str capveryfirst | sed 's/\s\+/ /g' | pen-str join ' ' | sed 's/^ *//'
