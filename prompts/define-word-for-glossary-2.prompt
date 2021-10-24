@@ -9,12 +9,12 @@ translator: "(wrlp input (pf-translate-from-world-language-x-to-y/3 from-languag
 prompt: |
   Glossary of terms.
   <delim>
-  Word: "ossified"
-  Topic: "medicine"
+  Word: "ossified". Topic: "medicine"
+  <delim>
   Definition: "Turn into bone or bony tissue."
   <delim>
-  Word: <q:word>
-  Topic: <q:topic>
+  Word: <q:word>. Topic: <q:topic>
+  <delim>
   Definition: <:pp>"
 engine: OpenAI Davinci
 force-engine: OpenAI Davinci
