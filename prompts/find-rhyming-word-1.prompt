@@ -20,7 +20,10 @@ vars:
 - "word"
 examples:
 - "train"
+n-completions: 10
 info: on
 completion: off
 insertion: off
 external-related: "https://gist.github.com/brockmanmatt/7a346d641e2d2159eb3319f888193212"
+split-patterns:
+- "\n"
