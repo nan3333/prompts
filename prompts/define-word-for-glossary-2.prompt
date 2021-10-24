@@ -24,6 +24,7 @@ n-completions: 8
 top-p: 1
 stop-sequences:
 - "<delim-1>"
+inject-gen-start: "<q:word> refers to"
 vars:
 - word:
   - example: boysenberry
