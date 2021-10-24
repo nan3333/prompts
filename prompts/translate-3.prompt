@@ -44,6 +44,6 @@ examples:
 - French
 var-defaults:
 - "(pen-selected-text)"
-- "(pen-detect-language-ask)"
+- "(pen-detect-language-ask nil t)"
 - "(read-string-hist \"Pen to world language: \")"
 filter: on
