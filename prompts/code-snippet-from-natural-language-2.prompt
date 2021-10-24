@@ -41,6 +41,8 @@ stop-sequences:
 vars:
 - language
 - task
+defaults:
+- "(pen-detect-language-ask)"
 examples:
 - bash
 - suspend laptop
