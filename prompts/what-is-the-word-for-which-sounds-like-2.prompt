@@ -11,7 +11,7 @@ prompt: |
   - push
   - lush
   <delim>
-  A list of words that mean <q:description> and sound like <q:sounds like>?
+  A list of words that mean <q:description> and sound like <q:sounds like>:
   -
 engine: OpenAI Davinci
 temperature: 0.8
