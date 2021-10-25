@@ -3,6 +3,8 @@ doc: "Given OCR results, correct them"
 prompt-version: 2
 todo:
 - Redesign to make this work line-by-line
+notes:
+- Corrupted Text Reconstruction (CTR)
 prompt: |+
     # Restore this text to its original.
 
