@@ -4,8 +4,7 @@ prompt-version: 6
 engine: OpenAI Davinci
 issues:
 - |+
-  This is ok and I'm not sure if there is a
-  known better way, but the LM could be better.
+  I haven't found a useful prompt yet.
 not working:
 - prompt: |+
       A voice actor was asked to say this passage in the style of Yoda (object-subject-verb).
