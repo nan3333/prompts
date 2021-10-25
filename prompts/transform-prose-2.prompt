@@ -1,6 +1,6 @@
 task: "Transform prose"
 doc: "Transform some prose given a transformation description"
-prompt-version: 6
+prompt-version: 7
 engine: OpenAI Davinci
 issues:
 - |+
@@ -9,6 +9,15 @@ issues:
 not-working:
 - prompt: |+
     I rephrased the passage <q:document> <transformation>, but without losing any meaning:
+    "
+working:
+- prompt: |+
+    Here is a passage:
+    <delim>
+    <q:document>.
+    <delim>
+    Here is the same passage but <transformation>:
+    <delim>
     "
 prompt: |+
     Here is a passage:
