@@ -2,6 +2,7 @@ title: rephrase a phrase
 prompt: |
   Rewrite each of the following phrases:
 
+  <delim>
   Here are some different ways of saying "criticize unfairly":
   - denigrate
   - disparage
