@@ -26,4 +26,6 @@ stop-sequences:
 vars:
 - tweet
 examples:
-- I give up.
+- tweet:
+  - I love this movie.
+  - Overall, it was disappointing.
