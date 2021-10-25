@@ -5,7 +5,7 @@ prompt: |
   - denigrate
   - disparage
   <delim>
-  Here are some different ways of saying "<phrase>", <style>:
+  Here are some different ways of saying <q:phrase>, <style>:
   -
 engine: OpenAI Davinci
 temperature: 0.8
