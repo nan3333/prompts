@@ -73,3 +73,5 @@ pipelines:
 expressions:
 # - tidy-prose-input: (pen-snc <q:tidy-prose-input> in)
 # - twice-prompt-length: "(* 2 prompt-length)"
+external-related:
+- "https://medium.com/@bri_valleskey/yes-yodas-grammar-is-technically-correct-daaf51eda31e"
