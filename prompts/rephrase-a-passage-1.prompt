@@ -20,7 +20,5 @@ vars:
 - phrase
 examples:
 - house rules
-preprocessors:
-- pf-correct-grammar
 postprocessor: sed 's/- //' | uniqnosort
 filter: true
