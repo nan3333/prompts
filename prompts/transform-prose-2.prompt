@@ -36,7 +36,8 @@ var-defaults:
 postprocessor: pen-pretty-paragraph
 examples:
 - "I want to ride my bicycle"
-- "with empathy"
+# - "with empathy"
+- "in the 3rd person"
 n-test-runs: 5
 # n-collate is the min collations (requests)
 # while attempting to reach the target, go up to this point
