@@ -1,5 +1,6 @@
 title: rephrase a phrase like
 prompt: |
+  <delim>
   Here are some different ways of saying "criticize unfairly" in one word:
   - denigrate
   - disparage
