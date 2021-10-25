@@ -19,5 +19,4 @@ examples:
 - house rules
 - in a nice way
 postprocessor: sed 's/- //' | uniqnosort
-external: summarize-passage
 filter: true
