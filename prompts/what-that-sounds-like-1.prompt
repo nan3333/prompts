@@ -1,17 +1,15 @@
-title: what is the word for which sounds like
+title: what is the word that sounds like
 design-patterns: 
-doc: Given a description of a word that you are looking for, list some possible candidates
+doc: Given how I think it sounds, list some possible candidates
 prompt-version: 2
 prompt: |
-  Given a description of a word that you are looking for, list some possible candidates.
-
   <delim>
-  A list of words that mean "luxurious" and sound like "brush":
+  What is the word that sounds like "brush"?
   - plush
   - push
   - lush
   <delim>
-  A list of words that mean <q:description> and sound like <q:sounds like>?
+  What is the word that sounds like <q:sounds like>:
   -
 engine: OpenAI Davinci
 temperature: 0.8
@@ -21,11 +19,9 @@ stop-sequences:
 - <delim-1>
 cache: true
 vars:
-- description
 - sounds like
 examples:
-- to do in excess
-- flout
+- communikay
 test-output: flaunt
 # preprocessors:
 # - pf-correct-grammar/1
