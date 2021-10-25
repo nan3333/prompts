@@ -4,8 +4,10 @@ doc: Given how I think it sounds, list some possible candidates
 prompt-version: 2
 prompt: |
   <delim>
-  What is the word that sounds like "brush"?
+  What is the word that sounds like "trush"?
   - plush
+  - blush
+  - brush
   - push
   - lush
   <delim>
@@ -28,8 +30,7 @@ test-output: flaunt
 prefer-external: true
 n-test-runs: 5
 continuation-function: list-of <1> <g>
-postprocessor: sed '/^- /s/- //p | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
-  uniqnosort
+postprocessor: sed 's/^- //p' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
 split-patterns:
 - "\n"
 # prettifier: pen-pretty-paragraph
