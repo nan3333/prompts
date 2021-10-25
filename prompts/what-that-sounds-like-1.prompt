@@ -4,14 +4,14 @@ doc: Given how I think it sounds, list some possible candidates
 prompt-version: 2
 prompt: |
   <delim>
-  What is the word that sounds like "trush"?
+  What is the word that sounds like "trush"? Here are some:
   - plush
   - blush
   - brush
   - push
   - lush
   <delim>
-  What is the word that sounds like <q:sounds like>?
+  What is the word that sounds like <q:sounds like>? Here are some:
   <:pp>-
 engine: OpenAI Davinci
 temperature: 0.8
