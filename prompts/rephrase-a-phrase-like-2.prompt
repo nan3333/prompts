@@ -20,4 +20,6 @@ examples:
 - house rules
 - in a nice way
 postprocessor: sed 's/- //' | uniqnosort
+split-patterns:
+- "\n"
 filter: true
