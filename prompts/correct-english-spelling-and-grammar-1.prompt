@@ -21,8 +21,8 @@ prompt: |+
   <delim>
   Poor English: <1>
   Corrected English:
-engine: OpenAI Davinci
-temperature: 0.3
+force-engine: OpenAI Davinci
+force-temperature: 0.3
 max-generated-tokens: 1000
 top-p: 1
 stop-sequences:
