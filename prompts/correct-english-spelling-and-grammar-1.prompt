@@ -1,4 +1,3 @@
----
 title: Correct English spelling and grammar
 prompt-version: 5
 doc: Given a sentence which may have incorrect spelling or grammar, correct it.
