@@ -36,6 +36,6 @@ examples:
 preprocessors:
 - pen-str onelineify
 postprocessor: pen-str unonelineify | pen-pretty-paragraph | sed -e "s/^\\s*//" -e "s/^Corrected English:\\s*//"
-external: 
+external: ~
 filter: true
 n-test-runs: 2
