@@ -10,7 +10,7 @@ prompt: |+
     Here, in quotes, is a passage:
     "<document>".
 
-    I rewrote the passage <q:transformation>:
+    I rephrased the passage <q:transformation>, but without losing any meaning:
     "
 xlr-n-generate: 5
 temperature: 0.7
