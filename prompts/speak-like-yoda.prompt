@@ -1,5 +1,6 @@
 task: "Speak like Yoda"
 doc: "Transform some prose and make it sound like Yoda"
+in-development: true
 prompt-version: 6
 engine: OpenAI Davinci
 issues:
