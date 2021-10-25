@@ -12,7 +12,7 @@ prompt: |
     <preceding text>
 engine: OpenAI Codex
 force-engine: OpenAI Codex
-temperature: 0.3
+force-temperature: 0.3
 max-generated-tokens: 200
 top-p: 1
 force-stop-sequence: EOD
