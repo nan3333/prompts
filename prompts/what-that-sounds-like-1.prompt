@@ -9,7 +9,7 @@ prompt: |
   - push
   - lush
   <delim>
-  What is the word that sounds like <q:sounds like>:
+  What is the word that sounds like <q:sounds like>?
   -
 engine: OpenAI Davinci
 temperature: 0.8
