@@ -18,8 +18,6 @@ vars:
 examples:
 - house rules
 - in a nice way
-preprocessors:
-- pf-correct-grammar
 postprocessor: sed 's/- //' | uniqnosort
 external: summarize-passage
 filter: true
