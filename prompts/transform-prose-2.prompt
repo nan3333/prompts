@@ -7,13 +7,10 @@ issues:
   This is ok and I'm not sure if there is a
   known better way, but the LM could be better.
 prompt: |+
-    The following exam has correct answers.
-
-    In the following quotes is a passage:
+    Here, in quotes, is a passage:
     "<document>".
 
-    Take the above passage and "<transformation>" whilst retaining the original meaning.
-    Answer:
+    I rewrote the passage <q:transformation>:
     "
 xlr-n-generate: 5
 temperature: 0.7
