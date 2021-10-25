@@ -21,4 +21,6 @@ vars:
 examples:
 - house rules
 postprocessor: sed 's/- //' | uniqnosort
+split-patterns:
+- "\n"
 filter: true
