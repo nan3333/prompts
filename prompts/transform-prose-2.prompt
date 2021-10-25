@@ -1,6 +1,6 @@
 task: "Transform prose"
 doc: "Transform some prose given a transformation description"
-prompt-version: 5
+prompt-version: 6
 engine: OpenAI Davinci
 issues:
 - |+
