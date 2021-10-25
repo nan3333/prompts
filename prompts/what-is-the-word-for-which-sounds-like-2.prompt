@@ -32,7 +32,7 @@ test-output: flaunt
 prefer-external: true
 n-test-runs: 5
 continuation-function: list-of <1> <g>
-postprocessor: sed '/^- /s/- //p | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
+postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' |
   uniqnosort
 split-patterns:
 - "\n"
