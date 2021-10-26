@@ -1,5 +1,5 @@
 task: "Prompt until the language model believes it has hit the end"
-prompt-version: 1
+prompt-version: 2
 todo:
 - Consider including the EOD in the output as a sentinel, so the user knows
 prompt: |+
