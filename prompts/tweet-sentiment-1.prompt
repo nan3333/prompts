@@ -15,7 +15,7 @@ prompt: |-
     Tweet: "This is the link to the article"
     Sentiment: Neutral
     <delim>
-    Tweet: <tweet>
+    Tweet: <q:tweet>
     Sentiment:
 engine: OpenAI Davinci
 max-generated-tokens: 64
@@ -25,7 +25,8 @@ n-collate: 3
 n-completions: 10
 no-uniq-results: on
 # results-analyser: pen-analyse-x-or-y Positive Negative
-results-analyser: pen-analyse-classes
+# results-analyser: pen-analyse-classes Positive Neutral Negative
+results-analyser: pen-analyse
 stop-sequences:
 - "<delim>"
 vars:
