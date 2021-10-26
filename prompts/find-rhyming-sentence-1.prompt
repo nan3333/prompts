@@ -16,10 +16,11 @@ prompt: |+
     I wish I was small
     ends with: "small"
     "small" rhymes with "tall"
-    Rhyme: Instead I'm so tall ='(
+    Rhyme: Instead I'm so tall
     <delim>
     <sentence>
-    ends with: "
+    ends with: "<last word>"
+    "<last word>" rhymes with "
 engine: "OpenAI Davinci"
 temperature: 0.8
 max-generated-tokens: 50
@@ -29,6 +30,8 @@ stop-sequences:
 cache: on
 vars:
 - "sentence"
+defs:
+- "last word": "(snc \"pen-str last-word\" sentence)"
 examples:
 - "That's a cool train"
 n-completions: 10
