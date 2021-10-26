@@ -1,5 +1,6 @@
 title: tweet sentiment
 doc: Outputs Positive or Negative sentiment for a given sentence
+prompt-version: 2
 prompt: |-
     This is a tweet sentiment classifier
     
