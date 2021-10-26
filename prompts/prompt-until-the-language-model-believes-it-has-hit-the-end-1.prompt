@@ -3,7 +3,7 @@ prompt-version: 1
 todo:
 - Consider including the EOD in the output as a sentinel, so the user knows
 prompt: |+
-  # append one item at a time to the file. append no more than one function
+  # append one item at a time to the file
 
   # Item 1
   tee -a file <<EOD
