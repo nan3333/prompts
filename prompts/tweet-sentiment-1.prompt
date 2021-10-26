@@ -24,7 +24,8 @@ top-p: 1
 n-collate: 3
 n-completions: 10
 no-uniq-results: on
-results-analyser: pen-analyse-x-or-y Positive Negative
+# results-analyser: pen-analyse-x-or-y Positive Negative
+results-analyser: pen-analyse-classes
 stop-sequences:
 - "<delim>"
 vars:
