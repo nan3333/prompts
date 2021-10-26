@@ -25,7 +25,10 @@ stop-sequences:
 - "<delim>"
 vars:
 - tweet
+# TODO Improve upon examples format
+# examples:
+# - tweet:
+#   - I love this movie.
+#   - Overall, it was disappointing.
 examples:
-- tweet:
-  - I love this movie.
-  - Overall, it was disappointing.
+- Overall, it was disappointing.  
