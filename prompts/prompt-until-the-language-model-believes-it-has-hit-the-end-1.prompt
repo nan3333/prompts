@@ -9,7 +9,7 @@ prompt: |+
   tee -a file <<EOD
   The square root of 4 is 2.
   EOD
-  # Item 1 type: Sentence
+  # Item 1 type: sentence
 
   # Item 2
   tee -a file <<EOD
