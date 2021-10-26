@@ -31,7 +31,7 @@ cache: on
 vars:
 - "sentence"
 defs:
-- "last word": "(snc \"pen-str last-word\" sentence)"
+- "last word": "(pen-snc \"pen-str last-word\" sentence)"
 examples:
 - "That's a cool train"
 n-completions: 10
