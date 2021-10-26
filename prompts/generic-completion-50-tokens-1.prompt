@@ -17,4 +17,4 @@ examples:
 - Recycling is good for the world, no, you could not be more wrong
 completion: true
 var-defaults:
-- "(pen-preceding-text 1000)"
+- "(pen-preceding-text)"
