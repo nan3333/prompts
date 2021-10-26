@@ -21,6 +21,10 @@ engine: OpenAI Davinci
 max-generated-tokens: 64
 temperature: 0.7
 top-p: 1
+n-collate: 3
+n-completions: 10
+no-uniq-results: on
+results-analyser: pen-analyse-true-or-false
 stop-sequences:
 - "<delim>"
 vars:
