@@ -22,7 +22,7 @@ prompt: |+
     ends with: "<last word>"
     "<last word>" rhymes with "
 engine: "OpenAI Davinci"
-temperature: 0.8
+temperature: 0.1
 max-generated-tokens: 50
 top-p: 1.0
 stop-sequences:
