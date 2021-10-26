@@ -3,7 +3,23 @@ prompt-version: 1
 todo:
 - Consider including the EOD in the output as a sentinel, so the user knows
 prompt: |+
-  cat file <<EOD
+  # append one item at a time to the file. append no more than one function
+
+  # Item 1
+  tee -a file <<EOD
+  The square root of 4 is 2.
+  EOD
+  # Item 1 type: Sentence
+
+  # Item 2
+  tee -a file <<EOD
+  def hello():
+      print "hello world"
+  EOD
+  # Item 2 type: function
+
+  # Item 3
+  tee -a file <<EOD
   <:pp><contents>
 engine: "OpenAI Codex"
 temperature: 0.3
