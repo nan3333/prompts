@@ -36,6 +36,6 @@ info: on
 completion: off
 insertion: off
 external-related: "https://gist.github.com/brockmanmatt/7a346d641e2d2159eb3319f888193212"
-postprocessor: "sed -n '/^Rhyme:/p'"
+postprocessor: "sed -n '/^Rhyme:/p' | sed 's/^Rhyme: //'"
 end-split-patterns:
 - "\n"
