@@ -4,7 +4,7 @@ prompt-version: 2
 prompt: |
   The following are nice compliments:
   <delim>
-  TOPIC: Johnny Depp
+  TOPIC: Jason Momoa
   - He has fame, but he doesn't want it. He has advantage but he doesn't take it. And he definitely has all our hearts!!!!!
   <delim>
   TOPIC: <1>

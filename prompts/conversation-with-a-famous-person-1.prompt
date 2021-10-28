@@ -21,7 +21,7 @@ stop-sequences:
 vars:
 - person-name
 examples:
-- "Johnny Depp"
+- "Jason Momoa"
 conversation: true
 conversation-pretext-generator: human-conversation
 postprocessor: pen-pretty-paragraph
