@@ -1,0 +1,24 @@
+task: "Given some surreal art and a description, elaborate"
+doc: "Given some surreal art and a description, elaborate"
+prompt-version: 1
+payloads:
+# This could be a raw string to a file or URL, or an elisp function
+# - image: "(read-file-name \"image 2 of 2: \")"
+- image: "(read-file-name \"image: \")"
+prompt: |+
+  <description> Furthermore,
+engine: "AlephAlpha EUTranMM"
+temperature: 0.1
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+vars:
+- "description"
+examples:
+- "This is a painting."
+info: on
+# filter: on
+completion: off
+insertion: off
