@@ -18,6 +18,7 @@ vars:
 - "question"
 examples:
 - "What is in this image?"
-filter: on
+info: on
+# filter: on
 completion: off
 insertion: off
