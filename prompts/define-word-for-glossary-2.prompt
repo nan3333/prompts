@@ -28,10 +28,10 @@ inject-gen-start: "<q:word> refers to"
 vars:
 - word:
   - example: boysenberry
-  - preprocessor: pen-str onelineify
+  - preprocessor: "pen-str remove-starting-and-trailing-whitespace | pen-str onelineify"
 - topic:
   - example: food
-  - preprocessor: pen-str onelineify
+  - preprocessor: "pen-str remove-starting-and-trailing-whitespace | pen-str onelineify"
 info: true
 completion: true
 # This is just to make it a bit easier when you select multiple lines to define
