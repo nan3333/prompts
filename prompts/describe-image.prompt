@@ -1,0 +1,30 @@
+task: "Given an image, describe it"
+doc: "Given an image, describe it"
+prompt-version: 1
+prompt: |+
+
+engine: "AlephAlpha EUTranMM"
+temperature: 0.1
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "former"
+- "latter"
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+examples:
+- "boysenberries"
+- "strawberries"
+preprocessors:
+- "sed 's/^/- /'"
+- "cat"
+filter: on
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
