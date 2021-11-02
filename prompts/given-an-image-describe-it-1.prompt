@@ -8,7 +8,7 @@ payloads:
 prompt: |+
   Q: <question> A:
 force-engine: "AlephAlpha EUTranMM"
-temperature: 0.1
+force-temperature: 0.1
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
