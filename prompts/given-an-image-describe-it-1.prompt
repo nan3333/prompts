@@ -7,7 +7,7 @@ payloads:
 - image: "(read-file-name \"image: \")"
 prompt: |+
   Q: <question> A:
-engine: "AlephAlpha EUTranMM"
+force-engine: "AlephAlpha EUTranMM"
 temperature: 0.1
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
