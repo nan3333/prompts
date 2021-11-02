@@ -3,8 +3,8 @@ doc: "Given an image, describe it"
 prompt-version: 1
 payloads:
 # This could be a raw string to a file or URL, or an elisp function
-- image: "(read-file-name \"image: \")"
-- image: "(read-file-name \"image: \")"
+- image: "(read-file-name \"image 1/2: \")"
+- image: "(read-file-name \"image 2/2: \")"
 prompt: |+
   hi
 engine: "AlephAlpha EUTranMM"
