@@ -1,23 +1,19 @@
 task: "Given an image, describe it"
-doc: "Given an image, describe it"
+doc: "Given an image, describe it. For alttext"
 prompt-version: 1
 payloads:
 # This could be a raw string to a file or URL, or an elisp function
 # - image: "(read-file-name \"image 2 of 2: \")"
 - image: "(read-file-name \"image: \")"
 prompt: |+
-  Q: <question> A:
+  Q: What is in this image? A:"
 force-engine: "AlephAlpha EUTranMM"
-force-temperature: 0.1
-max-generated-tokens: "(* 2 prompt-length)"
+temperature: 0.0
+max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
 - "\n"
 cache: on
-vars:
-- "question"
-examples:
-- "What is in this image?"
 info: on
 # filter: on
 completion: off

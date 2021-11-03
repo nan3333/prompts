@@ -22,6 +22,6 @@ examples:
   is really easy if you can develop software from different languages on top of the
   same IDE that you like.
 preprocessors:
-- pf-correct-grammar
+- pf-correct-grammar/1
 external: summarize-passage
 filter: true
