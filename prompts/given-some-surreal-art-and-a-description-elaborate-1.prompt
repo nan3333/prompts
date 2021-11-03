@@ -16,6 +16,8 @@ stop-sequences:
 cache: on
 vars:
 - "description"
+preprocessors:
+- s join ' '
 examples:
 - "This is a painting."
 info: on
