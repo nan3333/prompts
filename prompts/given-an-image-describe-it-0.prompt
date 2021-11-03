@@ -19,4 +19,7 @@ info: on
 completion: off
 insertion: off
 postprocessor: pen-str clean-alephalpha
-prettifier: pen-pretty-paragraph
+# prettifier: pen-pretty-paragraph
+
+# Don't prettify without correcting grammar.
+# postprocessor: "pf-correct-english-spelling-and-grammar/1"

@@ -24,4 +24,4 @@ info: on
 completion: off
 insertion: off
 postprocessor: pen-str clean-alephalpha
-prettifier: pen-pretty-paragraph
+# prettifier: pen-pretty-paragraph
