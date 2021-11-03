@@ -9,10 +9,10 @@ prompt: |+
   <:pp><text prompt>
 force-engine: "AlephAlpha EUTranMM"
 temperature: 0.1
-max-generated-tokens: "(* 2 prompt-length)"
+max-generated-tokens: 100
 top-p: 1.0
 stop-sequences:
-- "\n"
+- "\n\n"
 cache: on
 vars:
 - "text prompt"
