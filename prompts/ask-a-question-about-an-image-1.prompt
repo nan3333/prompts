@@ -13,7 +13,7 @@ delimiter: "\n\n"
 max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
-- "<delim>"
+- "Q:"
 cache: on
 vars:
 - "question"

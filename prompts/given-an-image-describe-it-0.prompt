@@ -12,7 +12,7 @@ temperature: 0.0
 max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
-- "\n"
+- "Q:"
 cache: on
 info: on
 # filter: on
