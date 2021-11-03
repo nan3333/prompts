@@ -25,4 +25,5 @@ info: on
 # filter: on
 completion: off
 insertion: off
+postprocessor: pen-str clean-alephalpha
 prettifier: pen-pretty-paragraph
