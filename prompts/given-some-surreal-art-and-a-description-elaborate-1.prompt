@@ -25,3 +25,4 @@ info: on
 # filter: on
 completion: off
 insertion: off
+prettifier: pen-pretty-paragraph
