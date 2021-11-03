@@ -17,7 +17,7 @@ cache: on
 vars:
 - "description"
 preprocessors:
-- s join ' '
+- pen-str unwhitespacify
 examples:
 - "This is a painting."
 info: on
