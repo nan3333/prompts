@@ -6,7 +6,7 @@ payloads:
 # - image: "(read-file-name \"image 2 of 2: \")"
 - image: "(read-file-name \"image: \")"
 prompt: |+
-  Q: <question> A:"
+  Q: <question> A:
 force-engine: "AlephAlpha EUTranMM"
 temperature: 0.1
 delimiter: "\n"
