@@ -9,7 +9,7 @@ prompt: |+
   Q: <question> A:
 force-engine: "AlephAlpha EUTranMM"
 temperature: 0.1
-delimiter: "\n"
+delimiter: "\n\n"
 max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
