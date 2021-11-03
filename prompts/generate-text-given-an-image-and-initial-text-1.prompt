@@ -12,7 +12,7 @@ temperature: 0.3
 max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
-- "\n\n"
+- "<delim>"
 cache: on
 vars:
 - "text prompt"
