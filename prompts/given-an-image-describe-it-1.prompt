@@ -1,0 +1,25 @@
+task: "Given an image, describe it"
+doc: "Given an image, describe it. For alttext"
+prompt-version: 1
+payloads:
+- image: "<file path or url>"
+prompt: |+
+  Q: What is in this image? A:
+force-engine: "AlephAlpha EUTranMM"
+temperature: 0.0
+max-generated-tokens: 150
+top-p: 1.0
+stop-sequences:
+- "Q:"
+cache: on
+info: on
+vars:
+- "file path or url"
+# filter: on
+completion: off
+insertion: off
+postprocessor: pen-str clean-alephalpha
+# prettifier: pen-pretty-paragraph
+
+# Don't prettify without correcting grammar.
+# postprocessor: "pf-correct-english-spelling-and-grammar/1"
