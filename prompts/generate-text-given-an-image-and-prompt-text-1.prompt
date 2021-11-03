@@ -29,3 +29,4 @@ insertion: off
 # postprocessor: "pf-correct-grammar/1"
 # postprocessor: "pf-correct-english-spelling-and-grammar/1"
 prettifier: pen-pretty-paragraph
+postprocessor: pen-str clean-alephalpha
