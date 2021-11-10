@@ -1,5 +1,6 @@
 task: "explain a file"
 doc: "Explain a file"
+demo: "https://mullikine.github.io/posts/demo-of-explain-a-file-4-prompt-explain-any-file/"
 prompt-version: 2
 prompt: |+
   $ ls | head -n 10
