@@ -15,7 +15,7 @@ cache: on
 info: on
 vars:
 - "file path or url"
-preprocessors
+preprocessors:
 - "pen-convert-for-alephalpha"
 # filter: on
 completion: off
