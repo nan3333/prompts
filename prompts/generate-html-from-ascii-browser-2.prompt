@@ -15,7 +15,7 @@ prompt: |-
     <head>
     <title>
 engine: "OpenAI Codex"
-temperature: 0.3
+temperature: 0.2
 # max-generated-tokens: "100"
 max-generated-tokens: "(* 3 prompt-length)"
 top-p: 1.0
