@@ -27,7 +27,10 @@ n-completions: 5
 # TODO The closer must be able to call the same prompt as a continuation, if it wants to
 # Generate until this prompt indicates it has finished.
 # i.e. run this until it stops producing output.
-closer: pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1
+# closer: pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1
+# pf-continue-last is a special prompt function that represents the last, but continuing it from hist
+# pen-continue-from-hist
+closer: pf-continue-last
 autoclose: on
 
 stop-sequences:
