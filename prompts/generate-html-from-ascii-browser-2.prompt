@@ -10,7 +10,8 @@ prompt: |-
     # The following is the html for the above web page
     curl -s <q:url> <<EOD
     <:pp><!DOCTYPE html>
-    <!-- This page uses simple html with no style tags -->
+    <!-- This page uses very simple html -->
+    <!-- allowed tags: p ul li a -->
     <html>
     <head>
     <title>
