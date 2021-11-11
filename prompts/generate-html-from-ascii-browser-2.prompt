@@ -29,7 +29,7 @@ cache: on
 vars:
 - url
 - ascii
-postprocessor: "sed -z 's=\\(</html>\\).*=\\1='"
+postprocessor: "sed -z -e 's=\\(</html>\\).*=\\1=' -e 's= >=>=g'"
 examples:
 - |-
      Apple
