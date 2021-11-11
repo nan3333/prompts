@@ -9,11 +9,9 @@ prompt: |-
     <ascii>
     EOD
 
-    curl -s <q:url> > page.html
-
-    # remove javascript
-
-    cat page.html <<EOD
+    # Simplify page and return basic html
+    
+    curl -s <q:url> | only-basic-html <<EOD
     <:pp><!DOCTYPE html>
     <html>
     <head>
