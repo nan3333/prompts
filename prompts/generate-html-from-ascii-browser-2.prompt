@@ -9,7 +9,7 @@ prompt: |-
     <ascii>
     EOD
 
-    # Show the html:
+    # Show the simplified html:
     curl -s <q:url> <<EOD
     <:pp><!DOCTYPE html>
     <html>
