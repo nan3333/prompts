@@ -9,17 +9,16 @@ prompt: |-
     <ascii>
     EOD
 
-    # curl and return only basic html
-    
-    curl -s <q:url> | basic-html <<EOD
+    curl -s <q:url> <<EOD
     <:pp><!DOCTYPE html>
+    <!-- This page uses very simple html -->
     <html>
     <head>
     <title>
 engine: "OpenAI Codex"
 temperature: 0.3
 # max-generated-tokens: "100"
-max-generated-tokens: "(* 2 prompt-length)"
+max-generated-tokens: "(* 3 prompt-length)"
 top-p: 1.0
 n-collate: 1
 n-completions: 5
