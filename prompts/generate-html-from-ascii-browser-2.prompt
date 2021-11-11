@@ -23,7 +23,8 @@ frequency-penalty: 0.5
 top-p: 1.0
 n-collate: 1
 n-completions: 5
-continuation-prompt: pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1
+# Generate until the end of this
+closer: pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1
 stop-sequences:
 - "EOD"
 cache: on
