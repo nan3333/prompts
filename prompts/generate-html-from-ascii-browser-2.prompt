@@ -2,13 +2,12 @@ task: "generate html from ascii browser"
 doc: "Given an ascii browser dump, generate some html"
 prompt-version: 3
 prompt: |-
-    # Render the website and then curl the html
-
     # Render the website:
-    lynx --dump -nolist <q:url> | head -n 30 <<EOD
+    lynx --dump -nolist <q:url> <<EOD
     <ascii>
     EOD
 
+    # The following is the html for the above web page
     curl -s <q:url> <<EOD
     <:pp><!DOCTYPE html>
     <!-- This page uses very simple html -->
