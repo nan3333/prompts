@@ -10,6 +10,7 @@ prompt: |-
     EOD
 
     # Simplify page and return basic html
+    # without <link> tags and without javascript <script>
     
     curl -s <q:url> | only-basic-html <<EOD
     <:pp><!DOCTYPE html>
