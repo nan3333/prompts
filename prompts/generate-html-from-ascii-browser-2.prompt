@@ -23,10 +23,13 @@ frequency-penalty: 0.5
 top-p: 1.0
 n-collate: 1
 n-completions: 5
-# The closer must be able to call the same prompt as a continuation, if it wants to
-# Generate until the end of this
+
+# TODO The closer must be able to call the same prompt as a continuation, if it wants to
+# Generate until this prompt indicates it has finished.
+# i.e. produces no more output on 2nd run.
 closer: pf-prompt-until-the-language-model-believes-it-has-hit-the-end/1
 autoclose: on
+
 stop-sequences:
 - "EOD"
 cache: on
