@@ -11,7 +11,7 @@ prompt: |-
     curl -s <q:url> <<EOD
     <:pp><!DOCTYPE html>
     <!-- This page uses very simple html -->
-    <!-- allowed tags: p ul li a -->
+    <!-- Allowed tags: h1 p ul li a -->
     <html>
     <head>
     <title>
