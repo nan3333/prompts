@@ -68,7 +68,7 @@ prompt: |-
 
     # Show the html:
     curl -s <q:url> <<EOD
-    <!DOCTYPE html>
+    <:pp><!DOCTYPE html>
     <html>
     <head>
     <title>
