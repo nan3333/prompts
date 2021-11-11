@@ -17,7 +17,8 @@ prompt: |-
     <title>
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "100"
+# max-generated-tokens: "100"
+max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 n-collate: 1
 n-completions: 5
