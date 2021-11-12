@@ -1,4 +1,4 @@
-title: HF summarize
+title: HF Text to Image
 prompt-version: 1
 engine: ruDALL-E Malevich (XL)
 mode: text-to-image
