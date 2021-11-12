@@ -6,10 +6,9 @@ temperature: 0.6
 max-generated-tokens: 500
 top-p: 1
 prompt: "<1>"
-stop-sequences:
-- "<delim>long complete<delim>"
 vars:
 - description
 examples:
 - Avocado painting in the style of Malevich
 filter: off
+info: on
