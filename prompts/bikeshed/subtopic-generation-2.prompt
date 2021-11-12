@@ -6,6 +6,25 @@ prompt: |-
     given a topic:
     
     <delim>
+    7 subtopics of natural language processing / NLP:
+    - language modelling
+    - named entity recognition  
+    - sequence classification
+    - summarization
+    - text generation
+    - topic modelling
+    - translation
+    <delim>
+    8 fields of microbiology:
+    - Bacteriology
+    - Mycology
+    - Protozoology
+    - Phycology/algology
+    - Parasitology
+    - Immunology
+    - Virology
+    - Nematology
+    <delim>
     6 subtopics of music theory:
     - composition
     - performance
