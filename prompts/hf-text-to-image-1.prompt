@@ -12,3 +12,5 @@ examples:
 - Avocado painting in the style of Malevich
 filter: off
 info: on
+engine-issue:
+- The HF inference API does not yet support text->image.
