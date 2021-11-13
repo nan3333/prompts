@@ -20,9 +20,6 @@ cache: on
 vars:
 - "text"
 - "thing"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
 examples:
 - "This bottle of water is $8.21 and that is absurd!"
 - "the price"
