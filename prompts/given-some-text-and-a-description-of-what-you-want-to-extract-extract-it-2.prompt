@@ -23,6 +23,8 @@ vars:
 examples:
 - "This bottle of water is $8.21 and that is absurd!"
 - "the price"
+external-related:
+- "https://asciinema.org/a/DIXOJocUPseBEVUjdXvUra8Tq"
 filter: on
 completion: off
 insertion: off
