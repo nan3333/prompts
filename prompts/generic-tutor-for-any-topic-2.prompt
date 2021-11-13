@@ -31,4 +31,4 @@ examples:
 - What is BPE?
 conversation: true
 conversation-pretext-generator: human-conversation
-postprocessor: "sed \"s/^AI: //\" | pen-pretty-paragraph"
+postprocessor: "sed \"s/^Student: //\" | pen-pretty-paragraph"
