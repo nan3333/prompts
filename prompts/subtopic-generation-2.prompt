@@ -6,20 +6,12 @@ prompt: |-
     given a topic:
     
     <delim>
-    6 subtopics of music theory:
-    - composition
-    - performance
-    - orchestration
-    - ornamentation
-    - improvisation
-    - electronic sound production
-    <delim>
     3 subtopics of language modelling in NLP:
     - casual language modelling
     - masked language modelling
     - text generation
     <delim>
-    20 subtopics or fields within <topic>, in no particular order:
+    30 subtopics or fields within <topic>, in no particular order:
     <:pp><existing subtopics>-
 engine: OpenAI Davinci
 temperature: 0.8
