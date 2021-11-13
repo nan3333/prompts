@@ -25,7 +25,7 @@ var-defaults:
 - "(pen-preceding-text)"
 examples:
 - "This bottle of water is $8.21 and that is absurd!"
-- "price"
+- "the price"
 filter: on
 completion: off
 insertion: off
