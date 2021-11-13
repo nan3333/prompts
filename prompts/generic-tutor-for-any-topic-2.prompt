@@ -23,6 +23,7 @@ best-of: 3
 stop-sequences:
 - "<delim>"
 - "Student:"
+- "Professor:"
 vars:
 - topic
 - question
