@@ -14,9 +14,12 @@ subprompts:
 prompt: |
   <metaprompt>
   <pretext>
+  The student asks a question and the professor explains.
+  <delim>
   Student: <q:question>
   <delim>
-  Professor: "I'd be happy to explain.
+  The explanation.
+  Professor: <:pp>"
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 150
