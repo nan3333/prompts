@@ -12,7 +12,7 @@ prompt: |-
     - text generation
     <delim>
     30 subtopics or fields within <topic>, in no particular order:
-    <:pp><existing subtopics>-
+    <:pp><::existing subtopics>-
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 200
