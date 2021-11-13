@@ -6,7 +6,7 @@ prompt: |+
     
     text = <q:text>
     
-    # regular expression to find and print the <thing>
+    # regular expression to find and print <thing>
     print(thing_regex.findall(text))
     
     # the result is: 
