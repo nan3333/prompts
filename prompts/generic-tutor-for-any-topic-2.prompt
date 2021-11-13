@@ -37,6 +37,6 @@ examples:
 - What is BPE?
 conversation: true
 conversation-pretext-generator: human-conversation
-postprocessor: "sed \"s/^\\\\(Student\\\\|Professor\\\\): //\" | uq -l | pen-pretty-paragraph"
+postprocessor: "sed \"s/^\\\\(Student\\\\|Professor\\\\): //\" | uq | pen-pretty-paragraph"
 external-related:
 - "https://www.youtube.com/watch?v=buJPwD5nW1g"
