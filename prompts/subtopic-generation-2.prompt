@@ -38,6 +38,6 @@ examples:
 preprocessors:
 - 
 - awk 1
-postprocessor: head -n 30 | sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9
+postprocessor: sed '$d' | head -n 30 | sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9
   _-]\+$/p' | uniqnosort
 n-collate: 1
