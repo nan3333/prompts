@@ -4,17 +4,18 @@ issues:
 prompt-version: 3
 subprompts:
 - metaprompt: |
-    This is a conversation between a student and the professor of <topic>.
+    This is a conversation between a student and their professor.
+    <delim>
 - pretext: |
-    Student: Hello, are you my <topic> professor?
-    Professor: Yes I am. How can I help?
+    Student: I have a question about the section titled <q:topic>.
+    Professor: What are you having trouble understanding?
     <delim>
 prompt: |
   <metaprompt>
   <pretext>
-  Student: I have a question. <question>
+  Student: <question>
   <delim>
-  Professor: Here's my explanation.
+  Professor: I am so glad you asked, and what an intriguing area of study it is! Allow me to give you a fascinating introduction. <:pp>Firstly,
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 150
