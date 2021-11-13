@@ -2,7 +2,7 @@ title: subtopic generation
 prompt-version: 2
 doc: Given a topic, generate a list of subtopics
 prompt: |-
-   <delim>
+    <delim>
     6 subtopics of "music theory":
     - composition
     - performance
