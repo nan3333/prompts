@@ -16,7 +16,7 @@ prompt: |-
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 200
-frequency-penalty: 0.2
+frequency-penalty: 0.3
 top-p: 1
 stop-sequences:
 - "<delim>"
