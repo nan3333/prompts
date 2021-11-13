@@ -1,4 +1,4 @@
-task: "Given some text and a description of what you want to extract, extract it"
+task: "extract thing from text"
 doc: "Given some text and a description of what you want to extract, extract it"
 prompt-version: 1
 prompt: |+
