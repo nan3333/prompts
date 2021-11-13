@@ -8,16 +8,15 @@ subprompts:
     The topic is <q:topic>.
     <delim>
 - pretext: |
-    Student: "Can I ask you a question?"
-    Professor: "Of course. What are you having trouble understanding?"
+    Student: "I was in the library the other night in the restricted section and I found a book about <topic>?"
+    Professor: "Of course. What do you need to know?"
     <delim>
 prompt: |
   <metaprompt>
   <pretext>
   Student: <q:question>
   <delim>
-  Professor: "Here's my explanation."
-  Professor: <:pp>"
+  Professor: "I'd be happy to explain.
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 150
@@ -36,3 +35,5 @@ examples:
 conversation: true
 conversation-pretext-generator: human-conversation
 postprocessor: "sed \"s/^\\\\(Student\\\\|Professor\\\\): //\" | pen-pretty-paragraph | uq -l"
+external-related:
+- "https://www.youtube.com/watch?v=buJPwD5nW1g"
