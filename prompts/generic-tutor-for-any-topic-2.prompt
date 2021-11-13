@@ -18,7 +18,7 @@ prompt: |
   <delim>
   Student: <q:question>
   <delim>
-  The explanation.
+  The complete explanation.
   Professor: <:pp>"
 engine: OpenAI Davinci
 temperature: 0.8
