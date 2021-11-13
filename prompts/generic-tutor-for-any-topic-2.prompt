@@ -5,26 +5,28 @@ prompt-version: 3
 subprompts:
 - metaprompt: |
     This is a conversation between a student and their professor.
+    The topic is <q:topic>.
     <delim>
 - pretext: |
-    Student: I have a question about the section titled <q:topic>.
-    Professor: What are you having trouble understanding?
+    Student: "Can I ask you a question?"
+    Professor: "Of course. What are you having trouble understanding?"
     <delim>
 prompt: |
   <metaprompt>
   <pretext>
-  Student: <question>
+  Student: <q:question>
   <delim>
-  Professor: I am so glad you asked, and what an intriguing area of study it is! Allow me to give you a fascinating introduction. <:pp>Firstly,
+  Professor: "Here's my explanation."
+  Professor: <:pp>"
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 150
+frequency-penalty: 0.3
 top-p: 1
 best-of: 3
 stop-sequences:
 - "<delim>"
 - "Student:"
-- "Professor:"
 vars:
 - topic
 - question
@@ -33,4 +35,4 @@ examples:
 - What is BPE?
 conversation: true
 conversation-pretext-generator: human-conversation
-postprocessor: "sed \"s/^Student: //\" | pen-pretty-paragraph"
+postprocessor: "sed \"s/^\\\\(Student\\\\|Professor\\\\): //\" | pen-pretty-paragraph | uq -l"
