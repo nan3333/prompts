@@ -17,7 +17,7 @@ prompt: |
   Professor: Here's my explanation.
 engine: OpenAI Davinci
 temperature: 0.8
-max-generated-tokens: 300
+max-generated-tokens: 150
 top-p: 1
 best-of: 3
 stop-sequences:
