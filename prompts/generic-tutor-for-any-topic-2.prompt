@@ -4,22 +4,17 @@ issues:
 prompt-version: 3
 subprompts:
 - metaprompt: |
-    This is a conversation between a human and a brilliant AI.
-    The topic is "<topic>".
+    This is a conversation between a student and the professor of <topic>.
 - pretext: |
-    Human: Hello, are you my <topic> tutor?
-    <delim>
-    AI: Hi there.
-    Yes I am.
-    How can I help you?
+    Student: Hello, are you my <topic> professor?
+    Professor: Yes I am. How can I help?
     <delim>
 prompt: |
   <metaprompt>
-
   <pretext>
-  Human: Thanks. I have a question. <question>
+  Student: I have a question. <question>
   <delim>
-  AI: I would be happy to answer your question.
+  Professor: Here's my explanation.
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 300
@@ -27,7 +22,7 @@ top-p: 1
 best-of: 3
 stop-sequences:
 - "<delim>"
-- "Human:"
+- "Student:"
 vars:
 - topic
 - question

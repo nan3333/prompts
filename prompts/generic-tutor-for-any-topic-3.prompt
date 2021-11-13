@@ -4,18 +4,13 @@ issues:
 - It's not as accurate as asktutor/3 or that may have been because I was forcing Codex
 prompt-version: 2
 prompt: |
-  This is a conversation between a human and a brilliant AI.
-  The topic is "<topic>".
-
-  Human: Hello, are you my <topic> tutor?
+  Student: Hello, are you my <topic> professor?
   <delim>
-  AI: Hi there.
-  Yes I am.
-  How can I help you?
+  Professor: Yes I am. How can I help?
   <delim>
-  Human: Thanks. I have a question. <question>
+  Student: I have a question. <question>
   <delim>
-  AI: I would be happy to answer your question.
+  Professor: Here's my explanation.
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 300
@@ -31,7 +26,7 @@ examples:
 - What is BPE?
 conversation: true
 conversation-pretext-generator: human-conversation
-postprocessor: "sed \"s/^AI: //\" | pen-pretty-paragraph"
+postprocessor: "sed \"s/^Professor: //\" | pen-pretty-paragraph"
 title: Generic tutor for any topic
 issues:
 - It's not as accurate as asktutor/3 or that may have been because I was forcing Codex
@@ -40,15 +35,15 @@ prompt: |
   This is a conversation between a human and a brilliant AI.
   The topic is "<topic>".
 
-  Human: Hello, are you my <topic> tutor?
+  Student: Hello, are you my <topic> tutor?
   <delim>
-  AI: Hi there.
+  Professor: Hi there.
   Yes I am.
   How can I help you?
   <delim>
-  Human: Thanks. I have a question. <question>
+  Student: Thanks. I have a question. <question>
   <delim>
-  AI: I would be happy to answer your question.
+  Professor: I would be happy to answer your question.
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 300
@@ -64,7 +59,7 @@ examples:
 - What is BPE?
 conversation: true
 conversation-pretext-generator: human-conversation
-postprocessor: "sed \"s/^AI: //\" | pen-pretty-paragraph"
+postprocessor: "sed \"s/^Professor: //\" | pen-pretty-paragraph"
 include: asktutor-3
 prompt-version: 1
 prompt: |
@@ -72,7 +67,7 @@ prompt: |
 
   <pretext>. What does the following error mean? <q:question>
   <delim>
-  AI: I would be happy to answer your question.
+  Professor: I would be happy to answer your question.
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 500
@@ -80,7 +75,7 @@ top-p: 1
 best-of: 3
 stop-sequences:
 - "<delim>"
-- "Human:"
+- "Student:"
 vars:
 - topic
 - in the context of
