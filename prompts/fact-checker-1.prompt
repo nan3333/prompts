@@ -2,6 +2,7 @@ task: "Given a claim, determine if it is true or false"
 title: "Fact checker"
 aliases:
 - fact check
+- alethiometer
 prompt-version: 1
 prompt: |+
   These claims have been fact-checked and determined to be True or False:
