@@ -4,6 +4,8 @@ aliases:
 - fact check
 - alethiometer
 prompt-version: 1
+todo:
+- Consider making another alethiometer prompt which uses counterfactual parsing
 prompt: |+
   These claims have been fact-checked and determined to be True or False:
   <delim>
