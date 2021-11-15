@@ -26,8 +26,6 @@ vars:
 - Person B
 var-defaults:
 - kickstarter
--
-
 
 examples:
 - "Person B: "
