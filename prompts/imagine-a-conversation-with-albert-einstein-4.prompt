@@ -30,7 +30,7 @@ var-defaults:
 
 examples:
 - "Hank Scorpio: "
-- "Hi, my name is Hank Scorpio. What would you like to talk about?"
+- "Hi there!"
 - "Hank Scorpio"
 - "Homer Simpson"
 
