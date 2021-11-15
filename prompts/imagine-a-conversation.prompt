@@ -1,0 +1,34 @@
+include: Generic Interpreter/3
+task: Imagine a conversation between two people
+language: python
+subprompts:
+- kickstarter: |+
+    This is a conversation between <Person A> and <Person B>.
+    
+    - <Person A>:
+prompt: |+
+    <history><expression>
+    <:pp>-
+user-prompt: "^-[^:]*:"
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
+stop-sequences:
+- "\n-"
+# Create a user prompt with the number incremented.
+# This is like postprocessor but happens even later.
+# It is used in special circumstances when the prompt history is also required.
+# postpostprocessor: pen-str python-gen-next-user-prompt
+vars:
+- history
+- expression
+- Person A
+- Person B
+var-defaults:
+- kickstarter
+- ""
+- "Person A"
+- "Person B"
+examples:
+- "<Person B>: "
+- "Hi, I'm <Person B>. What would you like to talk about?"
