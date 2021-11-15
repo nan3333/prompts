@@ -30,8 +30,8 @@ var-defaults:
 examples:
 - "Person B: "
 - "Hi, my name is Hank Scorpio. What would you like to talk about?"
-- "Person A"
-- "Person B"
+- "Hank Scorpio"
+- "Homer Simpson"
 
 # Examples are currently not preprocessed
 # examples:
