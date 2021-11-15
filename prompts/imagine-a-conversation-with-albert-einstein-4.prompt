@@ -1,19 +1,6 @@
 include: Imagine a conversation between two people/4
 task: Imagine a conversation with Albert Einstein
-language: python
-prompt: |+
-    <history><expression>
-    <:pp>-
-# Unfortunately, we can't generate the next In
-# prompt because we need to match on it with stop-sequences.
-# So the user prompt must be reconstructed manually.
-stop-sequences:
-- "\n-"
-# Create a user prompt with the number incremented.
-# This is like postprocessor but happens even later.
-# It is used in special circumstances when the prompt history is also required.
-# postpostprocessor: pen-str python-gen-next-user-prompt
-postpostprocessor: cat
+language: English
 defs:
 - Person A: "yourself"
 vars:
@@ -24,8 +11,3 @@ examples:
 - "Hi there!"
 - "Hank Scorpio"
 - "Homer Simpson"
-
-# Examples are currently not preprocessed
-# examples:
-# - "<Person B>: "
-# - "Hi, I'm <Person B>. What would you like to talk about?"

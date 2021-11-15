@@ -1,6 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a conversation between two people
-language: python
+language: English
 subprompts:
 - kickstarter: |+
     This is a conversation between <q:Person A> and <q:Person B>.
