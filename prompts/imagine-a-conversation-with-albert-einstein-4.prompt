@@ -1,11 +1,6 @@
-include: Imagine a conversation between two people/3
+include: Imagine a conversation between two people/4
 task: Imagine a conversation with Albert Einstein
 language: python
-subprompts:
-- kickstarter: |+
-    This is a conversation between yourself and <q:Person B>.
-    
-    - <Person B>: 
 prompt: |+
     <history><expression>
     <:pp>-
@@ -20,16 +15,13 @@ stop-sequences:
 # It is used in special circumstances when the prompt history is also required.
 # postpostprocessor: pen-str python-gen-next-user-prompt
 postpostprocessor: cat
+defs:
+- Person A: "yourself"
 vars:
 - history
 - expression
-- Person A
 - Person B
-var-defaults:
-- kickstarter
-
 examples:
-- "Albert Einstein: "
 - "Hi there!"
 - "Hank Scorpio"
 - "Homer Simpson"
