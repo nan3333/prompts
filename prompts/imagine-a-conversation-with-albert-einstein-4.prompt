@@ -3,7 +3,7 @@ task: Imagine a conversation with Albert Einstein
 language: python
 subprompts:
 - kickstarter: |+
-    This is a conversation between you and <q:Person B>.
+    This is a conversation between yourself and <q:Person B>.
     
     - <Person B>: 
 prompt: |+
