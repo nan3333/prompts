@@ -19,6 +19,7 @@ stop-sequences:
 # This is like postprocessor but happens even later.
 # It is used in special circumstances when the prompt history is also required.
 # postpostprocessor: pen-str python-gen-next-user-prompt
+postpostprocessor: cat
 vars:
 - history
 - expression
