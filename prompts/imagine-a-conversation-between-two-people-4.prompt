@@ -26,9 +26,15 @@ vars:
 - Person B
 var-defaults:
 - kickstarter
-- ""
-- "Person A"
-- "Person B"
+-
+- "\"Person A\""
+- "\"Person B\""
+
 examples:
-- "<Person B>: "
-- "Hi, I'm <Person B>. What would you like to talk about?"
+- "Person B: "
+- "Hi, my name is Hank Scorpio. What would you like to talk about?"
+
+# Examples are currently not preprocessed
+# examples:
+# - "<Person B>: "
+# - "Hi, I'm <Person B>. What would you like to talk about?"
