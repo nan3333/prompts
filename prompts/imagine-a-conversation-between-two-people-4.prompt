@@ -27,12 +27,13 @@ vars:
 var-defaults:
 - kickstarter
 -
-- "\"Person A\""
-- "\"Person B\""
+
 
 examples:
 - "Person B: "
 - "Hi, my name is Hank Scorpio. What would you like to talk about?"
+- "Person A"
+- "Person B"
 
 # Examples are currently not preprocessed
 # examples:
