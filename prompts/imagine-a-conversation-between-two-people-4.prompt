@@ -3,9 +3,9 @@ task: Imagine a conversation between two people
 language: python
 subprompts:
 - kickstarter: |+
-    This is a conversation between <Person A> and <Person B>.
+    This is a conversation between <q:Person A> and <q:Person B>.
     
-    - <Person A>:
+    - <Person A>: 
 prompt: |+
     <history><expression>
     <:pp>-
