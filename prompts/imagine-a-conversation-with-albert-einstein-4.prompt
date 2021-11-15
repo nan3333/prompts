@@ -1,0 +1,40 @@
+include: Imagine a conversation between two people/3
+task: Imagine a conversation with Albert Einstein
+language: python
+subprompts:
+- kickstarter: |+
+    This is a conversation between you and <q:Person B>.
+    
+    - <Person B>: 
+prompt: |+
+    <history><expression>
+    <:pp>-
+user-prompt: "^-[^:]*:"
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
+stop-sequences:
+- "\n-"
+# Create a user prompt with the number incremented.
+# This is like postprocessor but happens even later.
+# It is used in special circumstances when the prompt history is also required.
+# postpostprocessor: pen-str python-gen-next-user-prompt
+postpostprocessor: cat
+vars:
+- history
+- expression
+- Person A
+- Person B
+var-defaults:
+- kickstarter
+
+examples:
+- "Hank Scorpio: "
+- "Hi, my name is Hank Scorpio. What would you like to talk about?"
+- "Hank Scorpio"
+- "Homer Simpson"
+
+# Examples are currently not preprocessed
+# examples:
+# - "<Person B>: "
+# - "Hi, I'm <Person B>. What would you like to talk about?"
