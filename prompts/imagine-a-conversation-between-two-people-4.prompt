@@ -3,9 +3,7 @@ task: Imagine a conversation between two people
 language: English
 subprompts:
 - kickstarter: |+
-    <info>
-
-    This is a conversation between <Person A> and <Person B>.
+    <info>This is a conversation between <Person A> and <Person B>.
     
     - <Person A>: 
 prompt: |+
@@ -46,6 +44,13 @@ examples:
     Hermetic philosophy. As an antiquarian, he had
     one of the largest libraries in England at the
     time.
+
+preprocessors:
+- ~
+- ~
+- ~
+- ~
+- trailing-empty-line-if-not-empty
 
 # Examples are currently not preprocessed
 # examples:
