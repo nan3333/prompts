@@ -21,3 +21,4 @@ examples:
 - "It is better to give than to receive."
 filter: yes
 postprocessor: sed -z -e "s/\\.*$//"
+frequency-penalty: 0.3
