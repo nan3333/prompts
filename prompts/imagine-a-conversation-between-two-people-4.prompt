@@ -29,8 +29,8 @@ var-defaults:
 - kickstarter
 
 examples:
-- "Hank Scorpio: "
-- "Hi, my name is Hank Scorpio. What would you like to talk about?"
+- "<kickstarter>"
+- "Hi! May I talk to you?"
 - "Hank Scorpio"
 - "Homer Simpson"
 

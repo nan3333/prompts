@@ -2,12 +2,12 @@ include: Imagine a conversation between two people/4
 task: Imagine a conversation with someone
 language: English
 defs:
-- Person A: "yourself"
+- Person A: "\"you\""
 vars:
 - history
 - expression
 - Person B
 examples:
+- "<kickstarter>"
 - "Hi there!"
-- "Hank Scorpio"
 - "Homer Simpson"
