@@ -1,5 +1,5 @@
 include: Imagine a conversation between two people/4
-task: Imagine a conversation with Albert Einstein
+task: Imagine a conversation with someone
 language: English
 defs:
 - Person A: "yourself"
