@@ -7,7 +7,7 @@ prompt: |+
   That is important, but I think the more important thing is, in one sentence:
   "
 engine: "OpenAI Davinci"
-temperature: 0.4
+temperature: 0.8
 max-generated-tokens: 200
 top-p: 1.0
 cache: on
