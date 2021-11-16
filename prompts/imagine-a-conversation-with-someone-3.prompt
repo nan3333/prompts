@@ -11,4 +11,4 @@ examples:
 - "<kickstarter>"
 - "Hi there!"
 - "Homer Simpson"
-user-prompt: "^-[^:]*:"
+user-prompt: "^-[^:]*: "
