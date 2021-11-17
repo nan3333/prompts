@@ -8,13 +8,16 @@ todo:
     wise)? The document should be 'multi-modal
     prompt format', whatever that is.
 prompt: |+
-  cat wiki-article.txt <<EOD
+  Document:
+  ###
   <document>
-  EOD | list-names;
-
-  List of 10 names of historically relevant
-  people, and researchers to the above:
-  <:pp>- 1.
+  ###
+  Information about document:
+  - Document is a text snippet
+  - Characterset: ASCII
+  ###
+  List of 5 notable scholars and persons (one per line):
+  <:pp>- 1. 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 150
