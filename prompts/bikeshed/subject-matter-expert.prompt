@@ -9,8 +9,20 @@ todo:
     prompt format', whatever that is.
 prompt: |+
   # Topics 1
-  Here is a list of scientists from history who we
-  could ask about Agricultural Science. Some are still alive today:
+
+  curl "https://en.wikipedia.org/wiki/Agricultural_science" > topics1.txt
+
+  cat topics1.txt <<EOD
+  If ripe vegetables are not easily removed
+  from the plant, cut them off with a knife.
+  Tramping through wet foliage helps to spread
+  plant diseases. Harvest vegetables when they
+  are dry. Check the garden frequently for
+  ripe produce during harvest time.
+  EOD
+
+  Here is a list of Prominent agricultural scientists from history who we
+  could ask. Some are still alive today:
   - 1. Robert Bakewell
   - 2. Norman Borlaug
   - 3. Luther Burbank
@@ -18,7 +30,8 @@ prompt: |+
   - 5. Carl Henry Clerk
   - 6. George C. Clerk
 
-  ------
+  # Get a random wiki page.
+  curl "https://en.wikipedia.org/wiki/Special:Random" > topics2.txt
 
   # Topics 2
 
@@ -26,7 +39,7 @@ prompt: |+
   <document>
   EOD
 
-  The next document "topics2.txt" was taken from Wikipedia. Who can we ask?
+  The above document "topics2.txt" was taken from Wikipedia. Who can we ask?
 
   Here is a list of relevant academics, scientists and artists who are subject matter experts. Some are still alive today:
   <:pp>- 1.
