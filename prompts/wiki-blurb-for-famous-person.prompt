@@ -18,7 +18,7 @@ vars:
 - "person"
 examples:
 - "John Dee"
-postprocessor: sed -z 's/[^a-zA-Z0-9]*//' | sed -z 's/$/./'
+postprocessor: sed -z 's/[^a-zA-Z0-9]*//' | sed -z 's/\n$//' | sed -z 's/$/./'
 info: on
 filter: off
 completion: off
