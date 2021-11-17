@@ -41,6 +41,7 @@ delimiter: "###"
 frequency-penalty: 0.3
 stop-sequences:
 - "<delim>"
+- Document
 cache: on
 vars:
 - document
