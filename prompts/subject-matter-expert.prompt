@@ -41,7 +41,7 @@ prompt: |+
 
   The above document "topics2.txt" was taken from Wikipedia. Who can we ask?
 
-  Here is a list of academics, scientists and artists who are subject matter experts. Some are still alive today:
+  Here is a list of relevant academics, scientists and artists who are subject matter experts. Some are still alive today:
   <:pp>- 1.
 engine: "OpenAI Codex"
 temperature: 0.3
