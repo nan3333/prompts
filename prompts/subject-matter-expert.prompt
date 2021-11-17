@@ -2,7 +2,7 @@ task: "Who is the subject matter expert for?"
 doc: "Given a prompt, be told of a subject-matter-expert."
 prompt-version: 1
 todo:
-- |+
+- |-
     Instead of having a document, have an
     entire multi-modal prompts array (time-
     wise)? The document should be 'multi-modal
