@@ -12,11 +12,10 @@ prompt: |+
   <document>
   EOD
 
-  information.txt was taken from wikipedia.
-  The topics above have been studied.
+  The above document "information.txt" was taken from Wikipedia.
 
   Here is a list of the most knowledgeable
-  philosophers and artists from history who we
+  academics, scientists and artists from history who we
   could ask. Some are still alive today:
   - <:pp>1.
 engine: "OpenAI Codex"
