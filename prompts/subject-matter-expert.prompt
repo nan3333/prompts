@@ -21,13 +21,12 @@ prompt: |+
 
   Here is a list of Prominent agricultural scientists from history who we
   could ask. Some are still alive today:
-  - <:pp>1.
-  - Robert Bakewell
-  - Norman Borlaug
-  - Luther Burbank
-  - George Washington Carver
-  - Carl Henry Clerk
-  - George C. Clerk
+  - 1. Robert Bakewell
+  - 2. Norman Borlaug
+  - 3. Luther Burbank
+  - 4. George Washington Carver
+  - 5. Carl Henry Clerk
+  - 6. George C. Clerk
 
   # Get a random wiki page.
   curl "https://en.wikipedia.org/wiki/Special:Random" > topics2.txt
@@ -72,7 +71,7 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
-validator: "grep -qP '^- 2: '"
+# validator: "grep -qP '^- 2: '"
 postprocessor: "sed 's/^- [0-9]*: //'"
 info: on
 filter: off
