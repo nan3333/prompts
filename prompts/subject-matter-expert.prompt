@@ -29,10 +29,10 @@ var-defaults:
 - "(pen-screen-or-selection)"
 examples:
 - "boysenberries"
+
+# no EOD? needed or default?
 preprocessors:
-- "sed 's/^/- /'"
-- "cat"
-filter: on
+filter: of
 completion: off
 insertion: off
 preprocessors:
