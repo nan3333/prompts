@@ -14,7 +14,7 @@ prompt: |+
 
   The topics above have been studied for centuries.
 
-  Here is a list of the most knowledgeable people in history who we could ask. Some are still alive:
+  Here is a list of the most knowledgeable philosophers and artists from history who we could ask. Some are still alive today:
   - 
 engine: "OpenAI Codex"
 temperature: 0.3
