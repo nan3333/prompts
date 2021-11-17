@@ -12,8 +12,8 @@ prompt: |+
   <document>
   EOD
 
-  The most knowledgeable people in history:
-
+  The above document most knowledgeable people in history:
+  - 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
