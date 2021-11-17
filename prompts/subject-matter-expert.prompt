@@ -14,10 +14,10 @@ prompt: |+
   ###
   2 objectives:
   ###
-  1. List historical figures
-  2. List current researchers
+  1. List the historical figures
+  2. List any notable researchers
   ###
-  10 historical figures:
+  10 historical figures pertaining to the above:
   ###
   <:pp>1.
 force-engine: "OpenAI Davinci"
