@@ -28,8 +28,7 @@ prompt: |+
 
   The next document "topics2.txt" was taken from Wikipedia. Who can we ask?
 
-  Here is a list of academics, scientists and artists who are subject matter experts in the topics.
-  Some are still alive today:
+  Here is a list of researchers, and historical scientists who would make great subject matter experts:
   <:pp>- 1.
 force-engine: "OpenAI Davinci"
 force-temperature: 0.8
