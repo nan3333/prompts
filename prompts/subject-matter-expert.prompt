@@ -22,14 +22,11 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "former"
-- "latter"
+- document
 var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "(pen-screen-or-selection)"
 examples:
 - "boysenberries"
-- "strawberries"
 preprocessors:
 - "sed 's/^/- /'"
 - "cat"
