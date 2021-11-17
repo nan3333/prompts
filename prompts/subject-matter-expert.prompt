@@ -48,7 +48,7 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
-validator: "grep -qP '-2: '"
+validator: "grep -qP '^- 2: '"
 postprocessor: "sed 's/^- [0-9]*: //'"
 info: on
 filter: off
