@@ -8,7 +8,6 @@ subprompts:
     - <Person A>: 
 prompt: |+
     <history><expression>
-    <:pp>-
 user-prompt: "^-[^:]*: "
 # Unfortunately, we can't generate the next In
 # prompt because we need to match on it with stop-sequences.
@@ -48,7 +47,7 @@ examples:
 preprocessors:
 - ~
 - ~
-- ~
+- "awk 1 | sed -z \"s/$/<:pp>- <Person B>: /\""
 - ~
 - trailing-empty-line-if-not-empty
 
