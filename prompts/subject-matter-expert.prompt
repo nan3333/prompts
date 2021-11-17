@@ -27,6 +27,7 @@ vars:
 - document
 var-defaults:
 - "(pen-screen-or-selection)"
+# no EOD? needed or default?
 preprocessors:
 - pen-str garbify | sed 's/^/  /'
 examples:
@@ -45,8 +46,6 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
-# no EOD? needed or default?
-preprocessors:
 info: on
 filter: off
 completion: off
