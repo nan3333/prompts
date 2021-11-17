@@ -27,6 +27,8 @@ vars:
 - document
 var-defaults:
 - "(pen-screen-or-selection)"
+preprocessors:
+- pen-c ascify
 examples:
 - |-
     In Abrahamic religions, the Garden of Eden
