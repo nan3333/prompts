@@ -12,12 +12,14 @@ temperature: 0.3
 max-generated-tokens: 200
 top-p: 1.0
 stop-sequences:
-- "\n\n"
+- "."
 cache: on
 vars:
 - "person"
 examples:
 - "John Dee"
-filter: on
+postprocessor: sed -z 's/[^a-zA-Z0-9]*//' | sed -z 's/$/./'
+info: on
+filter: off
 completion: off
 insertion: off
