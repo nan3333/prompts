@@ -8,11 +8,11 @@ todo:
     wise)? The document should be 'multi-modal
     prompt format', whatever that is.
 prompt: |+
-  cat information.txt <<EOD
+  cat topics.txt <<EOD
   <document>
   EOD
 
-  The above document "information.txt" was taken from Wikipedia.
+  The above document "topics.txt" was taken from Wikipedia.
 
   Here is a list of the most knowledgeable
   academics, scientists and artists from history who we
