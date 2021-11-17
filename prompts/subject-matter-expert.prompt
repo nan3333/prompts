@@ -67,7 +67,7 @@ examples:
     Euphrates rivers run into the sea;[4] and in
     Armenia.
 validator: "grep -qP '^- 2\\. '"
-postprocessor: "sed 's/^[0-9]*: //' | sed 's/^\\s\\+/ /g' | tr -d ' '"
+postprocessor: "sed 's/^- [0-9]*: //' | sed 's/^\\s\\+/ /g' | tr -d ' '"
 info: on
 filter: off
 completion: off
