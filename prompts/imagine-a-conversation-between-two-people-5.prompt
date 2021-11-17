@@ -49,7 +49,7 @@ preprocessors:
 - ~
 - "awk 1 | sed -z \"s/$/<:pp>- <Person B>: /\""
 - ~
-- trailing-empty-line-if-not-empty
+- pen-str trailing-empty-line-if-not-empty
 
 # Examples are currently not preprocessed
 # examples:
