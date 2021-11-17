@@ -28,7 +28,7 @@ vars:
 var-defaults:
 - "(pen-screen-or-selection)"
 preprocessors:
-- pen-c garbify | sed 's/^/  /'
+- "pen-str garbify | sed 's/^/  /'"
 examples:
 - |-
     In Abrahamic religions, the Garden of Eden
