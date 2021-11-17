@@ -15,13 +15,14 @@ prompt: |+
   ###
   Here is a list of relevent knowledgeable
   people (historical and current):
+  ###
   <:pp>- 1.
 force-engine: "OpenAI Davinci"
 force-temperature: 0.8
 max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
-- "\n\n"
+- "<delim>"
 cache: on
 vars:
 - document
