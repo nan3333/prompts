@@ -13,8 +13,13 @@ prompt: |+
   ###
   <document>
   ###
-  Here is a list of relevent knowledgeable
-  people (historical and current):
+  Here is the list of objectives:
+  ###
+  - 1. Search Wikipedia for historical figures who have 
+  - 2. Look at current research
+  - 3. Make a complete list of people
+  ###
+  Here is a list of relevent knowledgeable people (historical and current):
   ###
   <:pp>- 1.
 force-engine: "OpenAI Davinci"
