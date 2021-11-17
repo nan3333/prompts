@@ -8,27 +8,13 @@ todo:
     wise)? The document should be 'multi-modal
     prompt format', whatever that is.
 prompt: |+
-  # Topics 1
-  Here is a list of scientists from history who we
-  could ask about Agricultural Science. Some are still alive today:
-  - 1. Robert Bakewell
-  - 2. Norman Borlaug
-  - 3. Luther Burbank
-  - 4. George Washington Carver
-  - 5. Carl Henry Clerk
-  - 6. George C. Clerk
-
-  ------
-
-  # Topics 2
-
-  cat topics2.txt <<EOD
+  ###
+  You must research the following document:
+  ###
   <document>
-  EOD
-
-  The next document "topics2.txt" was taken from Wikipedia. Who can we ask?
-
-  Here is a list of researchers, and historical scientists who would make great subject matter experts:
+  ###
+  Here is a list of relevent knowledgeable
+  people (historical and current):
   <:pp>- 1.
 force-engine: "OpenAI Davinci"
 force-temperature: 0.8
