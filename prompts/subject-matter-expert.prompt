@@ -40,7 +40,7 @@ prompt: |+
   Here is a list of the most knowledgeable
   academics, scientists and artists from history who we
   could ask. Some are still alive today:
-  - <:pp>1.
+  <:pp>- 1.
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 150
