@@ -28,6 +28,7 @@ vars:
 var-defaults:
 - "(pen-screen-or-selection)"
 examples:
+- |-
     In Abrahamic religions, the Garden of Eden
     (Hebrew: גַּן־עֵדֶן‎ – gan-ʿḖḏen) or Garden of
     God (גַּן־יְהֹוָה‎ – gan-Yhwh), also called
