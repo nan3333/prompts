@@ -12,11 +12,13 @@ prompt: |+
   <document>
   EOD
 
-  The above document most knowledgeable people in history:
+  The topics above have been studied for centuries.
+
+  Here is a list of the most knowledgeable people in history who we could ask:
   - 
 engine: "OpenAI Codex"
 temperature: 0.3
-max-generated-tokens: "(* 2 prompt-length)"
+max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
 - "<delim>"
