@@ -72,3 +72,5 @@ info: on
 filter: off
 completion: off
 insertion: off
+split-patterns:
+- "\n"
