@@ -53,6 +53,8 @@ preprocessors:
 
 postprocessor: "pen-str remove-starting-and-trailing-whitespace"
 
+frequency-penalty: 0.3
+
 # Examples are currently not preprocessed
 # examples:
 # - "<Person B>: "
