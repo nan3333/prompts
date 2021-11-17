@@ -9,18 +9,16 @@ todo:
     prompt format', whatever that is.
 prompt: |+
   ###
-  Here is a document that you must research:
-  ###
   <document>
   ###
-  You must:
+  2 objectives:
   ###
-  - 1. List historical figures who have made an impact
-  - 2. List current researchers
+  1. List historical figures
+  2. List current researchers
   ###
-  List of people (historical and current):
+  10 historical figures:
   ###
-  <:pp>- 1.
+  <:pp>1.
 force-engine: "OpenAI Davinci"
 force-temperature: 0.8
 max-generated-tokens: 150
@@ -53,8 +51,8 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
-validator: "grep -qP '^- 2\\. '"
-postprocessor: "sed 's/^- [0-9]*: //'"
+validator: "grep -qP '^2\\. '"
+postprocessor: "sed 's/^[0-9]*: //'"
 info: on
 filter: off
 completion: off
