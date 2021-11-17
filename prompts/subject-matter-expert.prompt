@@ -8,6 +8,8 @@ todo:
     wise)? The document should be 'multi-modal
     prompt format', whatever that is.
 prompt: |+
+  # Topics 1
+
   curl "https://en.wikipedia.org/wiki/Agricultural_science" > topics1.txt
 
   cat topics1.txt <<EOD
@@ -30,6 +32,8 @@ prompt: |+
 
   # Get a random wiki page.
   curl "https://en.wikipedia.org/wiki/Special:Random" > topics2.txt
+
+  # Topics 2
 
   cat topics2.txt <<EOD
   <document>
