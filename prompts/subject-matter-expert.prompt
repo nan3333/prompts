@@ -7,16 +7,31 @@ todo:
     entire multi-modal prompts array (time-
     wise)? The document should be 'multi-modal
     prompt format', whatever that is.
+
+# TODO Make a list of scholars and qualifications relating to a document
+
 prompt: |+
-  Document:
+  Document 1:
+  ###
+  Truth is the property of being in accord
+  with fact or reality.[1] In everyday
+  language, truth is typically ascribed to
+  things that aim to represent reality or
+  otherwise correspond to it, such as beliefs,
+  propositions, and declarative sentences.[2]
+  ###
+  Document 1 scholars:
+  - 1.  Kant (1724–1804)
+  - 2.  Hegel (1770–1831)
+  - 3.  Schopenhauer (1788–1860)
+  - 4.  Kierkegaard (1813–1855)
+  - 5.  Nietzsche (1844–1900)
+  ###
+  Document 2:
   ###
   <document>
   ###
-  Information about document:
-  - Document is a text snippet
-  - Characterset: ASCII
-  ###
-  List of 5 notable scholars and persons (one per line):
+  Document 2 scholars:
   <:pp>- 1. 
 engine: "OpenAI Codex"
 temperature: 0.3
