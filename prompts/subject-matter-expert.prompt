@@ -32,9 +32,7 @@ examples:
 
 # no EOD? needed or default?
 preprocessors:
-filter: of
+info: on
+filter: off
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
