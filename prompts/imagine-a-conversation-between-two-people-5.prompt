@@ -51,6 +51,8 @@ preprocessors:
 - ~
 - pen-str trailing-empty-line-if-not-empty
 
+postprocessor: pen-str remove-starting-and-trailing-whitespace
+
 # Examples are currently not preprocessed
 # examples:
 # - "<Person B>: "
