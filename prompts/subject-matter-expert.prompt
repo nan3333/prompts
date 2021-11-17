@@ -12,7 +12,7 @@ prompt: |+
   <document>
   EOD
 
-  Someone
+  The most knowledgeable people in history:
 
 engine: "OpenAI Codex"
 temperature: 0.3
