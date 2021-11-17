@@ -8,23 +8,18 @@ todo:
     wise)? The document should be 'multi-modal
     prompt format', whatever that is.
 prompt: |+
-  Research this document:
+  # Research this document:
   ###
   <document>
   ###
-  2 objectives:
+  # List 10 historical figures:
   ###
-  1. List the names of historical figures
-  2. List any notable researchers
-  ###
-  10 historical figures pertaining to the above:
-  ###
-  <:pp>1.
+  <:pp>- 
 force-engine: "OpenAI Davinci"
 force-temperature: 0.8
 max-generated-tokens: 150
 top-p: 1.0
-delimiter: "##"
+delimiter: "###"
 frequency-penalty: 0.3
 stop-sequences:
 - "<delim>"
@@ -52,8 +47,8 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
-validator: "grep -qP '^2\\. '"
-postprocessor: "sed 's/^[0-9]*: //' | sed 's/^\\s\\+/ /g'"
+# validator: "grep -qP '^2\\. '"
+# postprocessor: "sed 's/^[0-9]*: //' | sed 's/^\\s\\+/ /g'"
 info: on
 filter: off
 completion: off
