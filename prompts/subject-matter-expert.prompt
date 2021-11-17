@@ -48,6 +48,8 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
+validator: grep -P "^2-"
+postprocessor: "
 info: on
 filter: off
 completion: off
