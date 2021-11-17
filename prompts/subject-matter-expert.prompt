@@ -21,6 +21,7 @@ force-engine: "OpenAI Davinci"
 force-temperature: 0.8
 max-generated-tokens: 150
 top-p: 1.0
+delimiter: "##"
 stop-sequences:
 - "<delim>"
 cache: on
