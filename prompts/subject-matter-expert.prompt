@@ -49,7 +49,7 @@ examples:
     Euphrates rivers run into the sea;[4] and in
     Armenia.
 validator: grep -P "^- 2: "
-postprocessor: "
+postprocessor: "sed 's/^- [0-9]*: //'"
 info: on
 filter: off
 completion: off
