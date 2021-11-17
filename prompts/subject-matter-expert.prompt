@@ -1,7 +1,18 @@
 task: "Who is the subject matter expert for?"
 doc: "Given a prompt, be told of a subject-matter-expert."
 prompt-version: 1
+todo:
+-+
+    Instead of having a document, have an
+    entire multi-modal prompts array (time-
+    wise)? The document should be 'multi-modal
+    prompt format', whatever that is.
 prompt: |+
+  cat document <<EOD
+  <document>
+  EOD
+
+  Someone
 
 engine: "OpenAI Codex"
 temperature: 0.3
