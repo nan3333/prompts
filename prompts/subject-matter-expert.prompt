@@ -19,7 +19,7 @@ prompt: |+
   could ask. Some are still alive today:
   - <:pp>1.
 engine: "OpenAI Codex"
-temperature: 0.3
+temperature: 0.6
 max-generated-tokens: 150
 top-p: 1.0
 stop-sequences:
