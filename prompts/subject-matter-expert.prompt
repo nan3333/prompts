@@ -8,15 +8,15 @@ todo:
     wise)? The document should be 'multi-modal
     prompt format', whatever that is.
 prompt: |+
-  # Research this document:
-  ###
+  cat wiki-article.txt <<EOD
   <document>
-  ###
-  # List 10 historical figures:
-  ###
-  <:pp>- 
-force-engine: "OpenAI Davinci"
-force-temperature: 0.8
+  EOD | list-names;
+
+  List of 10 names of historically relevant
+  people, and researchers to the above:
+  <:pp>- 1.
+engine: "OpenAI Codex"
+temperature: 0.3
 max-generated-tokens: 150
 top-p: 1.0
 delimiter: "###"
