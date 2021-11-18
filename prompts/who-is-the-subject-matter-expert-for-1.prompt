@@ -29,9 +29,18 @@ prompt: |+
   ###
   Document 2:
   ###
+  Rock and Roll.
+  ###
+  Document 2 artists:
+  - 1. Chuck Berry (1953–2017)
+  - 2. Evlis Presley (1935-1977)
+  - 3. Kurt Cobain (1982-1994)
+  ###
+  Document 3:
+  ###
   <document>
   ###
-  Document 2 scholars:
+  Document 3 scholars:
   <:pp>- 1. 
 engine: "OpenAI Codex"
 temperature: 0.3
