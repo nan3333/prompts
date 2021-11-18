@@ -42,8 +42,8 @@ prompt: |+
   ###
   Document 3 scholars:
   <:pp>- 1. 
-engine: "OpenAI Codex"
-temperature: 0.3
+force-engine: "OpenAI Codex"
+force-temperature: 0.8
 max-generated-tokens: 150
 top-p: 1.0
 delimiter: "###"
