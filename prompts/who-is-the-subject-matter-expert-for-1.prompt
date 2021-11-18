@@ -81,5 +81,5 @@ info: on
 filter: off
 completion: off
 insertion: off
-end-split-patterns:
+split-patterns:
 - "\n"
