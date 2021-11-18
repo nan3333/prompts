@@ -40,7 +40,7 @@ prompt: |+
   ###
   <document>
   ###
-  Document 3 scholars:
+  Document 3 <caste>:
   <:pp>- 1. 
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -54,6 +54,7 @@ stop-sequences:
 cache: on
 vars:
 - document
+- caste
 var-defaults:
 - "(pen-screen-or-selection)"
 # no EOD? needed or default?
@@ -75,6 +76,7 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
+- scholar
 validator: "grep -qP '^[^0-9_(]+\\([0-9]+-[0-9]*\\)$'"
 postprocessor: "sed 's/^- [0-9]*. //' | sed 's/^\\s\\+/ /g' | sed 's/ *)/)/' | tr -d ' ' | uniqnosort | chomp"
 info: on
