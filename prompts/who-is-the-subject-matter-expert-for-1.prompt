@@ -40,7 +40,7 @@ prompt: |+
   ###
   <document>
   ###
-  Document 3 <caste>:
+  Document 3 <caste>s:
   <:pp>- 1. 
 engine: "OpenAI Codex"
 temperature: 0.3
