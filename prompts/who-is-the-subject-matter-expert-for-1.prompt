@@ -75,8 +75,8 @@ examples:
     Mesopotamia (now Iraq) where the Tigris and
     Euphrates rivers run into the sea;[4] and in
     Armenia.
-validator: "grep -qP '^- [0-9]*\\. [^(]+\\(.*\\)$'"
-postpostprocessor: "sed 's/^- [0-9]*. //' | sed 's/^\\s\\+/ /g' | tr -d ' ' | uniqnosort | chomp"
+validator: "grep -qP '^[^0-9_(]+\\([0-9]+-[0-9]*\\)$'"
+postprocessor: "sed 's/^- [0-9]*. //' | sed 's/^\\s\\+/ /g' | sed 's/ *)/)/' | tr -d ' ' | uniqnosort | chomp"
 info: on
 filter: off
 completion: off
