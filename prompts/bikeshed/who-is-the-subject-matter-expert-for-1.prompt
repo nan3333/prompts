@@ -20,8 +20,6 @@ prompt: |+
   otherwise correspond to it, such as beliefs,
   propositions, and declarative sentences.[2]
   ###
-  Topics: Truth, Epistemology, Reality
-  ###
   Document 1 scholars:
   - 1. Kant (1724-1804)
   - 2. Hegel (1770-1831)
@@ -33,8 +31,6 @@ prompt: |+
   ###
   Rock and Roll.
   ###
-  Topics: Music, Rock and Roll
-  ###
   Document 2 artists:
   - 1. Chuck Berry (1953–2017)
   - 2. Evlis Presley (1935-1977)
@@ -43,8 +39,6 @@ prompt: |+
   Document 3:
   ###
   <document>
-  ###
-  Topics: <:fz-eol>
   ###
   Document 3 scholars:
   <:pp>- 1. 
