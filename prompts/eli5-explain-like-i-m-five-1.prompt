@@ -12,7 +12,7 @@ temperature: 0.6
 # I should watch out with large values of max-tokens.
 # The second stop-sequence isn't currently getting recognised by the API, so it costs money
 max-generated-tokens: 500
-top-p: 2
+top-p: 1
 stop-sequences:
 - "<delim>"
 - "\n\n"
