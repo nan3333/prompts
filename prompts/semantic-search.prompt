@@ -1,0 +1,36 @@
+task: "textual semantic search"
+doc: "Given a document, measure how related it is to a query"
+# TODO 
+external-related: "https://github.com/openai/openai-python/blob/main/examples/semanticsearch/semanticsearch.py"
+engine: OpenAI Codex
+force-engine: OpenAI Codex
+prompt-version: 1
+prompt: |+
+    <|endoftext|><document>
+    
+    ---
+    
+    The above passage is related to: <query>
+engine: "OpenAI Codex"
+temperature: 0.3
+top-p: 1.0
+stop-sequences:
+- "\n"
+cache: on
+mode: search
+### Search means to return logprob and force max-generated-tokens to 0
+# force-logprobs: 0
+# force-max-generated-tokens: 0
+# # I also need to bypass any checks
+# force-api: on
+# Also, change the return function from prompts to logprob
+vars:
+- "document"
+- "query"
+examples:
+- "TODO Buy flour"
+- "is a todo item"
+info: on
+filter: off
+completion: off
+insertion: off
