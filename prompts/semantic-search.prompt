@@ -10,7 +10,13 @@ prompt: |+
     
     ---
     
-    The above passage is related to: <query>
+    The above passage is related to: <:pp><query>
+# In search mode, pp is used to collect token logprompts following.
+# in semantic search the trailing tokens have their logprobs added up and averaged.
+# TODO: Send multiple prompts in same request.
+# But how are they interactively wrapped up as input?
+packable: on
+package-delimiter: "\n"
 engine: "OpenAI Codex"
 temperature: 0.3
 top-p: 1.0
@@ -18,6 +24,7 @@ stop-sequences:
 - "\n"
 cache: on
 mode: search
+search-threshold: 50
 ### Search means to return logprob and force max-generated-tokens to 0
 # force-logprobs: 0
 # force-max-generated-tokens: 0
@@ -25,10 +32,8 @@ mode: search
 # force-api: on
 # Also, change the return function from prompts to logprob
 vars:
-- "document"
 - "query"
 examples:
-- "TODO Buy flour"
 - "is a todo item"
 info: on
 filter: off
