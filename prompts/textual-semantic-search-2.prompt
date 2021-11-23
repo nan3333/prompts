@@ -17,7 +17,6 @@ prompt: |+
 # But how are they interactively wrapped up as input?
 packable: on
 package-delimiter: "\n"
-engine: "OpenAI Codex"
 temperature: 0.3
 top-p: 1.0
 stop-sequences:
