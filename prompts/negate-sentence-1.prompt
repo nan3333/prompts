@@ -6,7 +6,7 @@ prompt: |+
     Negate the following sentence.
 
     Input: interactive lambda with no arguments
-    Output: interactivee lambda with arguments
+    Output: interactive lambda with arguments
     Input: I want to go home.
     Output: I don't want to go home.
     Input: it's better to be feared than loved
