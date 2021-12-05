@@ -1,4 +1,4 @@
-in-development: yes
+# in-development: yes
 title: "Negate Sentence"
 prompt-version: 2
 
@@ -7,9 +7,13 @@ prompt: |+
     
     Input: I want to go home.
     Output: I don't want to go home.
+    Input: it's better to be feared than loved
+    Output: it's better to be loved than feared
     Input: One plus one equals two.
     Output: One plus one does not equal two.
-    Input: <1>
+    Input: You are wrong.
+    Output: You are right.
+    Input: <statement>
     Output:
 
 # The command passed to lm-complete. This will use GPT-3.
@@ -27,6 +31,7 @@ examples:
 - "Mars is very far away."
 n-collate: 1
 n-completions: 1
+filter: on
 
 # --------
 # Doc keys
