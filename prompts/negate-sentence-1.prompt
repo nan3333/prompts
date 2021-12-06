@@ -3,7 +3,7 @@ title: "Negate Sentence"
 prompt-version: 2
 # for right-click menu
 paths:
-- prose
+- prose:
   - transform
 prompt: |+
     Negate the following sentence.
