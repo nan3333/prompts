@@ -5,6 +5,7 @@ prompt-version: 2
 paths:
 - prose:
   - transform
+    - 
 prompt: |+
     Negate the following sentence.
 

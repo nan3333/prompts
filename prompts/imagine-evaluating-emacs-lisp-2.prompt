@@ -10,6 +10,10 @@ temperature: 0.2
 max-generated-tokens: 200
 top-p: 1.0
 cache: on
+# This prepends the previously selected prompt+generation
+# to obtain consistency in output.
+# This is useful for mocking APIs.
+prepend-previous: on
 stop-sequences:
 - "\n"
 vars:
