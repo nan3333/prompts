@@ -1,12 +1,12 @@
 task: "Generate wiki blurb for a famous person"
 doc: "Create a wiki blurb for a famous person"
-prompt-version: 1
+prompt-version: 2
 prompt: |+
     <person> - Wikipedia
     
     en.wikipedia.org › wiki › <person>
     
-    <:pp><person> was a
+    <:pp><person> is the name of
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 200
