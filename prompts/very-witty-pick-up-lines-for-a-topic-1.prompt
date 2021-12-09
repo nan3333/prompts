@@ -94,8 +94,11 @@ inject-examples:
 - I'd really like
 - Have you heard
 - My horoscope
-# When default is available, add it to the examples list as the first option
-inject-default: "(pen-preceding-sentences)"
+# When continue-default is available and the function is run interactively,
+# evaluate and inject the result just before the preprocessor.
+# and disable interactive inject.
+# This doesn't work too well with the pick-up-line prompt. But perhaps it might work with a rhyme prompt?
+# continue-default: "(pen-sn \"pen-str join \\\" \\\"\" (pen-preceding-sentences))"
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
