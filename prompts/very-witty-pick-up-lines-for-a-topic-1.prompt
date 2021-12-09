@@ -88,7 +88,12 @@ examples:
 - tectonic plates
 # interactive-inject could be called, prompt-human-for-initial-text
 interactive-inject: on
-inject-example: Have you heard
+inject-example: Will you come
+inject-examples:
+- Will you come
+- I'd really like
+- Have you heard
+- My horoscope
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
