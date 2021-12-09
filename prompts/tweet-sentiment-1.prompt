@@ -29,6 +29,7 @@ no-uniq-results: on
 # results-analyser: pen-analyse-classes Positive Neutral Negative
 results-analyser: pen-analyse
 stop-sequences:
+- "\n"
 - "<delim>"
 vars:
 - tweet
