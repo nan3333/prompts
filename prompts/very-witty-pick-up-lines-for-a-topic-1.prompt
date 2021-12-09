@@ -71,8 +71,8 @@ prompt: |
   TOPIC: COFFEE
   - Do you like coffee? Cuz I like you a latte.
   <delim>
-  TOPIC: <1>
-  -
+  TOPIC: <topic>
+  - <:pp>
 engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 60
@@ -86,6 +86,9 @@ vars:
 - topic
 examples:
 - tectonic plates
+# interactive-inject could be called, prompt-human-for-initial-text
+interactive-inject: on
+inject-example: Have you heard
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
