@@ -5,8 +5,9 @@ prompt: |+
     <person> - Wikipedia
     
     en.wikipedia.org › wiki › <person>
-    
-    <:pp><person> is the name of
+
+    Short bio:
+    <:pp><person> 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 200
