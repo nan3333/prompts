@@ -94,6 +94,7 @@ inject-examples:
 - I'd really like
 - Have you heard
 - My horoscope
+inject-default: "(pen-preceding-sentences)"
 preprocessors:
 - tr '[:lower:]' '[:upper:]'
 prefer-external: true
