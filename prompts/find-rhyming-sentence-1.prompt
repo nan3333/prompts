@@ -36,6 +36,7 @@ defs:
 examples:
 - "That's a cool train"
 # This doesn't work too well with the pick-up-line prompt. But perhaps it might work with a rhyme prompt?
+continue-default: "(pen-sn \"pen-str join \\\" \\\"\" (pen-preceding-sentences 1 t))"
 # continue-default: "(pen-sn \"pen-str join \\\" \\\"\" (pen-preceding-sentences))"
 n-completions: 10
 info: on
