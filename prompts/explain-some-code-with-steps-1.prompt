@@ -5,7 +5,7 @@ doc: Explain some code with steps
 prompt-version: 3
 prompt: |
     Code excerpts and explanations.
-
+    <delim>
     Excerpt 1:
     <delim>
     function saveImageToDisk(url, localPath) {
