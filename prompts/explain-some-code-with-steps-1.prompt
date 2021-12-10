@@ -2,7 +2,7 @@ title: explain some code with steps
 issues: 
 design-patterns: 
 doc: Explain some code with steps
-prompt-version: 2
+prompt-version: 3
 prompt: |
     Code excerpts and explanations.
 
