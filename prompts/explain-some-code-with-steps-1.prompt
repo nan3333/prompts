@@ -37,6 +37,7 @@ max-generated-tokens: 100
 top-p: 1
 stop-sequences:
 - "<delim>"
+- "\n\n"
 cache: true
 vars:
 - code
