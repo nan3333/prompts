@@ -1,6 +1,10 @@
 task: "Imagine a website from a URL"
 doc: "Given a URL, imagine the HTML for that page"
 prompt-version: 3
+# Do not run unless these are ALL true
+goahead-predicates:
+# If any of these are true, do not run
+abort-predicates:
 prompt: |+
   Lynx, an ascii web browser.
   <delim>
