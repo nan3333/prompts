@@ -38,7 +38,7 @@ vars:
 - "ls dirs here output"
 var-defaults:
 - "(pen-preceding-text)"
-- "(sor (pen-f-basename (get-path nil t)) \"untitled\")"
+- "(pen-current-filename-maybe)"
 - "(pen-snc \"pwd\")"
 - "(pen-snc \"ls -a | head -n 20\")"
 - "(pen-snc \"ls **/* | head -n 20\")"
