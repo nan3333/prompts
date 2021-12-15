@@ -73,6 +73,7 @@ stop-sequences:
 # more than 1 line
 validator: "wc -l | grep -v -qP '^1\\$'"
 cache: on
+postprocessor: "pen-str max-double-spaced-no-trailing"
 vars:
 - "url"
 examples:
