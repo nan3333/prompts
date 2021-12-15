@@ -1,6 +1,6 @@
 task: "generate html from ascii browser"
 doc: "Given an ascii browser dump, generate some html"
-prompt-version: 3
+prompt-version: 4
 prompt: |-
     # Render the website:
     lynx --dump -nolist <q:url> <<EOD
@@ -39,7 +39,7 @@ cache: on
 vars:
 - url
 - ascii
-postprocessor: "sed -z -e 's=\\(</html>\\).*=\\1=' -e 's= >=>=g'"
+postprocessor: "sed -z -e 's=\\(</html>\\).*=\\1=' -e 's= >=>=g' | pen-str max-double-spaced-no-trailing"
 examples:
 - |-
      Apple
