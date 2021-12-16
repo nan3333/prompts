@@ -21,6 +21,8 @@ preprocessors:
 completion: off
 insertion: off
 postprocessor: pen-str clean-alephalpha
+# this works after the prompt is run
+# return-postprocessor: ""
 # prettifier: pen-pretty-paragraph
 
 # Don't prettify without correcting grammar.
