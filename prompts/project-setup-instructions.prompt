@@ -1,5 +1,5 @@
-task: "title"
-doc: "Given the name of the type of project you want, "
+task: "new project instructions"
+doc: "Generate instructions for setting up a new project"
 ideal-pipeline: |-
   Given the name of the type of project you want,
   search for a prompt.
