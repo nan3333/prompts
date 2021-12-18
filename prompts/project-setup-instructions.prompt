@@ -1,3 +1,4 @@
+in-development: true
 task: "new project instructions"
 doc: "Generate instructions for setting up a new project"
 ideal-pipeline: |-
