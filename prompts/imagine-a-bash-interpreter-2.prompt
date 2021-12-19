@@ -14,7 +14,7 @@ subprompts:
 prompt: |+
     <history><expression>
     <:pp>Out
-user-prompt: "^In \\[[0-9]*\\]: "
+user-prompt: "^[^ ]\\+@[^ ]\\+:[^$]\\+ "
 # Unfortunately, we can't generate the next In
 # prompt because we need to match on it with stop-sequences.
 # So the user prompt must be reconstructed manually.
