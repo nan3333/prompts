@@ -27,7 +27,7 @@ postpostprocessor: pen-str python-gen-next-user-prompt
 defs:
 - user: "(pen-snc \"whoami\")"
 - hostname: "(pen-snc \"hostname\")"
-- cwd: "(pen-snc \"pwd\")"
+- cwd: "(pen-pwd)"
 vars:
 - history
 - expression
