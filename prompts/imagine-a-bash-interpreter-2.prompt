@@ -13,11 +13,13 @@ subprompts:
     <user>@<hostname>:<cwd>$ 
 prompt: |+
     <history><expression>
-    <:pp>Out
-user-prompt: "^[^$ ]\\+@\\$ "
+    <:pp>
+user-prompt: "^[^$ ]\\+\\$ "
 # Unfortunately, we can't generate the next In
 # prompt because we need to match on it with stop-sequences.
 # So the user prompt must be reconstructed manually.
+
+# TODO Generate the stop sequence from the history
 stop-sequences:
 - "In ["
 # Create a user prompt with the number incremented.
