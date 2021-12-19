@@ -21,7 +21,7 @@ user-prompt: "^[^$ ]\\+\\$ "
 
 # TODO Generate the stop sequence from the history
 stop-sequences:
-- "In ["
+- "<bash-stop-sequence>"
 # Create a user prompt with the number incremented.
 # This is like postprocessor but happens even later.
 # It is used in special circumstances when the prompt history is also required.
@@ -38,3 +38,5 @@ var-defaults:
 examples:
 - "shane@mele:~$ "
 - "echo hi"
+expressions:
+- bash-stop-sequence: "(pen-snc \"awk 1 | tail -n 1\" (scrape \"^[^@ ]+@[^$ ]+:\" final-prompt))"
