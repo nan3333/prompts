@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: bash
+temperature: 0.5
 subprompts:
 - kickstarter: |+
     GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
