@@ -43,4 +43,4 @@ examples:
 - "echo hi"
 # Expressions are used by stop-sequence and potentially other parameters, late in the pipeline
 expressions:
-- bash-stop-sequence: "(pen-snc \"awk 1 | tail -n 1\" (scrape \"^[^@ ]+@[^$ ]+[:$]\" final-prompt))"
+- bash-stop-sequence: "(pen-snc \"pen-str unonelineify-safe | awk 1 | tail -n 1\" (scrape \"^[^@ ]+@[^$ ]+[:$]\" final-prompt))"
