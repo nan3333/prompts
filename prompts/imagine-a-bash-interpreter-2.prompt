@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: bash
+# This is needed to do things like change directory with cd ~
 temperature: 0.5
 subprompts:
 - kickstarter: |+
