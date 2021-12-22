@@ -35,11 +35,15 @@ cache: on
 # TODO I should also allow vars to access vars when evaluating
 vars:
 - "POS tags"
+- "first tag"
+var-defaults:
+- ~
+- "(identity pos-tags)"
 examples:
 - "NP V DT JJ N"
 # I need access to the full set of vars
-defs:
-- first tag: "(identity pos-tags)"
+# defs:
+# - first tag: "(identity pos-tags)"
 # validator: "grep -qP \"^\\(V\\)[^\\(]+\\(Det\\)[^\\(]+\\(N\\)[^\\(]+\\(NP\\)[^\\(]+$\""
 filter: on
 completion: off
