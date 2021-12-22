@@ -24,7 +24,7 @@ prompt: |+
   <delim>
   <POS tags>
   <delim>
-  <:pp>(V)
+  <:pp>(<first tag>)
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -36,6 +36,8 @@ vars:
 - "POS tags"
 examples:
 - "NP V DT JJ N"
+defs:
+- first tag: "\"NP\""
 # validator: "grep -qP \"^\\(V\\)[^\\(]+\\(Det\\)[^\\(]+\\(N\\)[^\\(]+\\(NP\\)[^\\(]+$\""
 filter: on
 completion: off
