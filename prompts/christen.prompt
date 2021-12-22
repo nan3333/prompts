@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |-
   Details:
   <details>
-  - Really catchy nickname: "
+  It was given a really catchy nickname by the previous owner: "
 engine: "OpenAI Davinci"
 temperature: 0.8
 max-generated-tokens: "(* 2 prompt-length)"
