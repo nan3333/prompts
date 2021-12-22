@@ -8,7 +8,7 @@ prompt: |+
   <delim>
   NP V Det N
   <delim>
-  John(NP) hit(V) the(Det) ball(N)
+  (NP)John (V)hit (Det)the (N)ball
   <delim>
   NP V Det N
   <delim>  
@@ -16,7 +16,7 @@ prompt: |+
   <delim>
   NP V Det N IN Det N
   <delim>
-  I(NP) drive(V) a(Det) car(N) to(IN) my(Det) college(N)
+  (NP)I (V)drive (Det)a (N)car (IN)to (Det)my (N)college
   <delim>
   NP V Det N IN Det N
   <delim>
@@ -24,6 +24,7 @@ prompt: |+
   <delim>
   <POS tags>
   <delim>
+  <:pp>(V)
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -35,6 +36,7 @@ vars:
 - "POS tags"
 examples:
 - "V Det N NP"
+validator: "grep -qP \"^\\(V\\)[^\\(]+\\(Det\\)[^\\(]+\\(N\\)[^\\(]+\\(NP\\)[^\\(]+$\""
 filter: on
 completion: off
 insertion: off
