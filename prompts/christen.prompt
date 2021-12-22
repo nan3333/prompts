@@ -2,7 +2,7 @@ task: "Christen something with a name"
 doc: "Given ... task"
 prompt-version: 1
 prompt: |-
-  Here are the details:
+  Details:
   <details>
   - Really catchy nickname: "
 engine: "OpenAI Davinci"
