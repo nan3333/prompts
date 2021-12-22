@@ -2,7 +2,20 @@ task: "NLP unparser: Generate text using POS tags"
 doc: "Generate text given a list of POS tags"
 prompt-version: 1
 prompt: |+
-
+  Parse tree and matching passage:
+  <delim>
+  Parts of speech tags:
+  <delim>  
+  <delim>
+  Passage:
+  <delim>  
+  John hit the ball
+  <delim>  
+  Parts of speech tags:
+  <delim>  
+  <delim>
+  Passage:
+  <delim>
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -15,9 +28,6 @@ vars:
 examples:
 - "NP V Det N"
 - "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
 filter: on
 completion: off
 insertion: off
