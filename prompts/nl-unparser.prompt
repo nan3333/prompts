@@ -4,17 +4,19 @@ prompt-version: 1
 prompt: |+
   Parse tree and matching passage:
   <delim>
-  Parts of speech tags:
-  <delim>  
+  1) Parts of speech tags:
   <delim>
-  Passage:
-  <delim>  
+  NP V Det N
+  <delim>
+  1) Passage:
+  <delim>
   John hit the ball
   <delim>  
-  Parts of speech tags:
-  <delim>  
+  2) Parts of speech tags:
   <delim>
-  Passage:
+  <POS tags>
+  <delim>
+  2) Passage:
   <delim>
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -26,11 +28,7 @@ cache: on
 vars:
 - "POS tags"
 examples:
-- "NP V Det N"
-- "strawberries"
+- "V Det N NP"
 filter: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
