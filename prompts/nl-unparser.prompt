@@ -14,9 +14,9 @@ prompt: |+
   <delim>  
   2) Parts of speech tagging:
   <delim>
-  NP V Det N IN Det N
+  NP V DT N IN T N
   <delim>
-  (NP)I (V)drive (Det)a (N)car (IN)to (Det)my (N)college
+  (NP)I (V)drive (DT)a (N)car (IN)to (DT)my (N)college
   <delim>
   NP V Det N IN Det N
   <delim>
@@ -35,8 +35,8 @@ cache: on
 vars:
 - "POS tags"
 examples:
-- "V Det N NP"
-validator: "grep -qP \"^\\(V\\)[^\\(]+\\(Det\\)[^\\(]+\\(N\\)[^\\(]+\\(NP\\)[^\\(]+$\""
+- "NP V DT JJ N"
+# validator: "grep -qP \"^\\(V\\)[^\\(]+\\(Det\\)[^\\(]+\\(N\\)[^\\(]+\\(NP\\)[^\\(]+$\""
 filter: on
 completion: off
 insertion: off
