@@ -1,5 +1,5 @@
 task: "Christen something with a name"
-doc: "Given ... task"
+doc: "Given the details of something, christen with a name"
 prompt-version: 1
 prompt: |-
   Details:
