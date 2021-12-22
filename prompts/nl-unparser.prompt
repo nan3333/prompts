@@ -32,12 +32,14 @@ top-p: 1.0
 stop-sequences:
 - "<delim>"
 cache: on
+# TODO I should also allow vars to access vars when evaluating
 vars:
 - "POS tags"
 examples:
 - "NP V DT JJ N"
+# I need access to the full set of vars
 defs:
-- first tag: "\"NP\""
+- first tag: "(identity pos-tags)"
 # validator: "grep -qP \"^\\(V\\)[^\\(]+\\(Det\\)[^\\(]+\\(N\\)[^\\(]+\\(NP\\)[^\\(]+$\""
 filter: on
 completion: off
