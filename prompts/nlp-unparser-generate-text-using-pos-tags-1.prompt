@@ -58,3 +58,4 @@ completion: off
 insertion: off
 external-related:
 - "https://www.ling.upenn.edu/hist-corpora/annotation/labels.htm"
+postpostprocessor: sed 's/([^)]\+)//g'
