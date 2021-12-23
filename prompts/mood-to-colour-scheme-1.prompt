@@ -1,5 +1,5 @@
 title: mood to colour scheme
-doc: ''
+doc: "Generate a 4 colour scheme from a mood"
 prompt: |
   /* Color scheme A: Shades of blue and green */
   .a-primary {
