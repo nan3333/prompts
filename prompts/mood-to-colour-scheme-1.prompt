@@ -1,0 +1,32 @@
+title: mood to colour scheme
+doc: ''
+prompt: |
+  /* Color scheme A: Shades of blue and green */
+  .a-primary {
+  background-color: #1FBFB8;
+  }
+  .a-secondary {
+  background-color: #05716C;
+  }
+  .a-ternary {
+  background-color: #1978A5;
+  }
+  .a-quaternary {
+  background-color: #031163;
+  }
+
+  <:pp>/* Color scheme B: <mood> */
+  .b-primary {
+  background-color:
+engine: OpenAI Davinci
+temperature: 0.5
+max-generated-tokens: 73
+top-p: 1
+stop-sequences:
+- "\n\n"
+vars:
+- mood
+examples:
+- a blue sky at dusk
+n-test-runs: 2
+postprocessor: scrape "#[a-zA-Z0-9]{6}"
