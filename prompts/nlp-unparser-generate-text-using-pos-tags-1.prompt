@@ -18,7 +18,7 @@ prompt: |+
   <delim>
   (NP)I (V)drive (DT)a (N)car (IN)to (PRO$)my (N)college
   <delim>
-  (NP)NounPhrase (V)Verb (DT)Determiner (N)Noun (IN)Preposition (PRO$)PossessivePronoun
+  (NP)NounPhrase (V)Verb (DT)Determiner (N)Noun (IN)Preposition (PRO$)PossessivePronoun (N)Noun
   <delim>
   4) Parts of speech tagging:
   <delim>
