@@ -34,4 +34,4 @@ vars:
 examples:
 - a blue sky at dusk
 n-test-runs: 2
-postprocessor: scrape "#[a-zA-Z0-9]{6}"
+postprocessor: pen-scrape "#[a-zA-Z0-9]{6}"
