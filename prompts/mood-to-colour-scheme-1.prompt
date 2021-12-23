@@ -1,4 +1,4 @@
-mfstitle: mood to colour scheme
+title: mood to colour scheme
 doc: "Generate a 4 colour scheme from a description"
 prompt: |
   /* Color scheme A: Shades of blue and green */
