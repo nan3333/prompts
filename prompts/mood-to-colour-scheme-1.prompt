@@ -15,12 +15,8 @@ prompt: |
   background-color: #031163;
   }
 
-  /* Filled with vibrant, natural colors, this
-  cool-toned combination still manages to
-  capture a feeling of movement and life due
-  to its high contrast. */
-
   <:pp>/* Color scheme B: <mood> */
+  /* This combination captures the colours of <mood> with its high contrast. */
   .b-primary {
   background-color:
 engine: OpenAI Codex
