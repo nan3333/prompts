@@ -1,5 +1,7 @@
 title: mood to colour scheme
 doc: "Generate a 4 colour scheme from a description"
+todo:
+- Improve the quality of outputs
 prompt: |
   /* Color scheme A: Shades of blue and green */
   .a-primary {
