@@ -20,7 +20,15 @@ prompt: |+
   <delim>
   NP V Det N IN Det N
   <delim>
-  3) Parts of speech tagging:
+  4) Parts of speech tagging:
+  <delim>
+  NAME V ART N
+  <delim>
+  (NAME)Shane (V)ate (ART)the (N)tiger
+  <delim>
+  NAME V ART N
+  <delim>
+  5) Parts of speech tagging:
   <delim>
   <POS tags>
   <delim>
