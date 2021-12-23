@@ -15,6 +15,11 @@ prompt: |
   background-color: #031163;
   }
 
+  Filled with vibrant, natural colors, this
+  cool-toned combination still manages to
+  capture a feeling of movement and life due
+  to its high contrast.
+
   <:pp>/* Color scheme B: <mood> */
   .b-primary {
   background-color:
