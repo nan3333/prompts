@@ -10,15 +10,15 @@ prompt: |+
   <delim>
   (NP)John (VB)hit (Det)the (N)ball
   <delim>
-  NP V Det N
+  (NP)Noun (V)Verb (Det)Determiner (N)Noun
   <delim>  
   2) Parts of speech tagging:
   <delim>
-  NP V DT N IN T N
+  NP V DT N IN PRO$ N
   <delim>
   (NP)I (V)drive (DT)a (N)car (IN)to (PRO$)my (N)college
   <delim>
-  NP V Det N IN Det N
+  (NP)NounPhrase (V)Verb (DT)Determiner (N)Noun (IN)Preposition (PRO$)PossessivePronoun
   <delim>
   4) Parts of speech tagging:
   <delim>
@@ -26,7 +26,7 @@ prompt: |+
   <delim>
   (NAME)Shane (V)ate (ART)the (N)tiger
   <delim>
-  NAME V ART N
+  (NAME)PersonalPronoun (V)Verb (ART)Article (N)Noun
   <delim>
   5) Parts of speech tagging:
   <delim>
@@ -48,7 +48,7 @@ vars:
 # - ~
 # - "(car (s-split \" \" pos-tags))"
 examples:
-- "NP V DT JJ N"
+- "JJ NP DT JJ N"
 defs:
 - first tag: "(car (s-split \" \" pos-tags))"
 - validator-regex: "(mapcar (lambda (s) (concat \"\\\\(\" s \"\\\\)\" \"[^\\\\(]+\")) (s-split \" \" pos-tags))"
