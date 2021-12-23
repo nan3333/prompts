@@ -18,8 +18,8 @@ prompt: |
   <:pp>/* Color scheme B: <mood> */
   .b-primary {
   background-color:
-engine: OpenAI Davinci
-temperature: 0.5
+engine: OpenAI Codex
+temperature: 0.3
 max-generated-tokens: 73
 top-p: 1
 stop-sequences:
