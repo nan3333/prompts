@@ -16,7 +16,7 @@ prompt: |+
   <delim>
   NP V DT N IN T N
   <delim>
-  (NP)I (V)drive (DT)a (N)car (IN)to (DT)my (N)college
+  (NP)I (V)drive (DT)a (N)car (IN)to (PRO$)my (N)college
   <delim>
   NP V Det N IN Det N
   <delim>
@@ -56,3 +56,5 @@ validator: "grep -qP \"^<validator-regex>$\""
 filter: on
 completion: off
 insertion: off
+external-related:
+- "https://www.ling.upenn.edu/hist-corpora/annotation/labels.htm"
