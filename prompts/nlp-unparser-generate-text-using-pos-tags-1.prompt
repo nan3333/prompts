@@ -8,7 +8,7 @@ prompt: |+
   <delim>
   NP V Det N
   <delim>
-  (NP)John (V)hit (Det)the (N)ball
+  (NP)John (VB)hit (Det)the (N)ball
   <delim>
   NP V Det N
   <delim>  
