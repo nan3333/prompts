@@ -1,0 +1,42 @@
+include: Generic Interpreter/3
+task: Imagine a <language> interpreter
+language: infocom
+temperature: 0.5
+subprompts:
+- kickstarter: |+
+    THE HITCHHIKER'S GUIDE TO THE GALAXY
+    Infocom interactive fiction - a science fiction story
+    Copyright (c) 1984 by Infocom, Inc. All rights reserved.
+    Release 60 / Serial number 861002
+    
+    You wake up. The room is spinning very gently round your head. Or at least it
+    would be if you could see it which you can't.
+    
+    It is pitch black.
+    
+    > 
+prompt: |+
+    <history><expression>
+    <:pp>
+user-prompt: "^> "
+# Unfortunately, we can't generate the next In
+# prompt because we need to match on it with stop-sequences.
+# So the user prompt must be reconstructed manually.
+
+stop-sequences:
+- "> "
+# Create a user prompt with the number incremented.
+# This is like postprocessor but happens even later.
+# It is used in special circumstances when the prompt history is also required.
+
+# TODO Send to the postpostprocessor some environment variables such as final-prompt
+# Use this from the shell script
+postpostprocessor: "{ awk 1; echo -n \"> \"; }"
+vars:
+- history
+- expression
+var-defaults:
+- kickstarter
+examples:
+- "> "
+- "look around"
