@@ -1,7 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: infocom-game
-temperature: 0.3
+temperature: 0.5
 subprompts:
 - kickstarter: |+
     THE HITCHHIKER'S GUIDE TO THE GALAXY
@@ -27,7 +27,9 @@ stop-sequences:
 - "> "
 
 # Generate the next prompt
-postpostprocessor: "awk 1; echo -n \"> \""
+# postpostprocessor: "{ awk 1; echo -n \"> \"; }"
+# Need to override if not using it
+postpostprocessor: cat
 vars:
 - history
 - expression
