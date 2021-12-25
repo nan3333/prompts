@@ -51,6 +51,7 @@ user-prompt: "^> "
 stop-sequences:
 - "> "
 
+# TODO Use a second emacs to edit temporary variables
 postprocessor: "pen-tvipe"
 
 # Generate the next prompt
