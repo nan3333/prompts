@@ -35,5 +35,3 @@ interpreter: on
 conversation: on
 external-related:
 - "https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/"
-pipelines:
-- repl-pp: "sed 's/^\\(root@[a-zA-Z0-9_-]\\+:[^#$]*\\)#/\\1$/'"
