@@ -1,7 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: infocom-game
-temperature: 0.7
+temperature: 0.8
 subprompts:
 - banner: |+
     THE HITCHHIKER'S GUIDE TO THE GALAXY
