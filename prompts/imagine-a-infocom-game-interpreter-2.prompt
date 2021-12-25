@@ -61,7 +61,7 @@ vars:
 - expression
 var-defaults:
 - kickstarter
-validator: grep -q "Location:"
+# validator: grep -q "Location:"
 examples:
 - "> "
 - "look around"
