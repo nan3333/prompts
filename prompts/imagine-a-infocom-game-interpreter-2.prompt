@@ -2,6 +2,7 @@ include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: infocom-game
 temperature: 0.8
+max-generated-tokens: 150
 subprompts:
 - banner: |+
     THE HITCHHIKER'S GUIDE TO THE GALAXY
