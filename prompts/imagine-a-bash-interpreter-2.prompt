@@ -4,8 +4,9 @@ language: bash
 # 0.5 is needed, rather than 0.2 to do things like change directory with cd ~
 temperature: 0.5
 subprompts:
-- kickstarter: |+
+- banner: |+
     GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+- kickstarter: |+
     Copyright (C) 2019 Free Software Foundation, Inc.
     License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
     
@@ -14,6 +15,7 @@ subprompts:
 
     <user>@<hostname>:<cwd>$ 
 prompt: |+
+    <banner>
     <history><expression>
     <:pp>
 user-prompt: "^[^@ ]+@[^$: ]+\\(:\\$[A-Z]+[^$]+\\$\\|:[^$]+\\$\\|\\$\\) "
