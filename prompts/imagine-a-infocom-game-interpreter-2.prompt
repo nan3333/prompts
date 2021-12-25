@@ -13,24 +13,24 @@ subprompts:
 - kickstarter: |+
     You wake up.
 
-    Location: Bedroom, in the bed
-    Description:
+    Current location: Bedroom, in the bed
+    What you can see and hear:
     The room is spinning very gently round your head. Or at least it
     would be if you could see it which you can't.
 
     >get out of bed
     Very difficult, but you manage it. 
 
-    Location: Bedroom
-    Description:
-    The room is still spinning. It dips and sways a little.
+    Current location: Bedroom
+    What you can see and hear:
+    The room is still spinning. It dips and sways a little. The light is off and you can't see.
 
     > turn on light
     Good start to the day. Pity it's going to be the worst one of your life. The
     light is now on.
 
-    Location: Bedroom
-    Description:
+    Current location: Bedroom
+    What you can see and hear:
     The bedroom is a mess.
     It is a small bedroom with a faded carpet and old wallpaper. There is a
     washbasin, a chair with a tatty dressing gown slung over it, and a window with
@@ -59,6 +59,7 @@ vars:
 - expression
 var-defaults:
 - kickstarter
+validator: grep -q "What you can see and hear:"
 examples:
 - "> "
 - "look around"
