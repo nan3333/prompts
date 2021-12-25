@@ -1,4 +1,3 @@
----
 title: bash one liner generator from natural language
 doc: Get a bash one liner from natural language
 prompt: |
@@ -13,7 +12,7 @@ prompt: |
   # Recursively remove all "node_modules" folders
   $ find . -name "node_modules" -exec rm -rf '{}' +
   <delim>
-  # <1>
+  # <task description>
   $
 engine: OpenAI Davinci
 temperature: 0.8
