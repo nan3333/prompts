@@ -51,9 +51,11 @@ user-prompt: "^> "
 stop-sequences:
 - "> "
 
+postprocessor: "pen-tvipe"
+
 # Generate the next prompt
 # Need to override if not using it
-postpostprocessor: "pen-tvipe | awk 1; echo -n \"\\n> \""
+postpostprocessor: "awk 1; echo -n \"\\n> \""
 vars:
 - history
 - expression
