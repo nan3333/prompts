@@ -53,7 +53,7 @@ stop-sequences:
 
 # Generate the next prompt
 # Need to override if not using it
-postpostprocessor: "awk 1; echo -n \"\\n> \""
+postpostprocessor: "pen-tvipe | awk 1; echo -n \"\\n> \""
 vars:
 - history
 - expression
