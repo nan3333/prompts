@@ -11,16 +11,26 @@ subprompts:
     Release 60 / Serial number 861002
     
 - kickstarter: |+
-    You wake up. The room is spinning very gently round your head. Or at least it
+    You wake up.
+
+    Location: Bedroom, in the bed
+    Description:
+    The room is spinning very gently round your head. Or at least it
     would be if you could see it which you can't.
 
-    It is pitch black.
+    >get out of bed
+    Very difficult, but you manage it. 
+
+    Location: Bedroom
+    Description:
+    The room is still spinning. It dips and sways a little.
 
     > turn on light
     Good start to the day. Pity it's going to be the worst one of your life. The
     light is now on.
-    
-    Bedroom, in the bed
+
+    Location: Bedroom
+    Description:
     The bedroom is a mess.
     It is a small bedroom with a faded carpet and old wallpaper. There is a
     washbasin, a chair with a tatty dressing gown slung over it, and a window with
