@@ -46,5 +46,6 @@ examples:
 # Expressions are used by stop-sequence and potentially other parameters, late in the pipeline
 expressions:
   - bash-stop-sequence: "(pen-snc \"awk 1 | tail -n 1\" (scrape \"@[^$: ]+\" (scrape \"^[^@ ]+@[^$ ]+[:$]\" (pen-unonelineify-safe final-prompt))))"
+postprocessor: <repl-pp>
 pipelines:
 - repl-pp: "sed 's/^\\(root@[a-zA-Z0-9_-]\\+:[^#$]*\\)#/\\1$/'"
