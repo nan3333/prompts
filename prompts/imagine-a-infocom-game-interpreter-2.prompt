@@ -1,21 +1,35 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: infocom-game
-temperature: 0.5
+temperature: 0.7
 subprompts:
-- kickstarter: |+
+- banner: |+
     THE HITCHHIKER'S GUIDE TO THE GALAXY
     Infocom interactive fiction - a science fiction story
     Copyright (c) 1984 by Infocom, Inc. All rights reserved.
     Release 60 / Serial number 861002
     
+- kickstarter: |+
     You wake up. The room is spinning very gently round your head. Or at least it
     would be if you could see it which you can't.
-    
+
     It is pitch black.
+
+    > turn on light
+    Good start to the day. Pity it's going to be the worst one of your life. The
+    light is now on.
     
+    Bedroom, in the bed
+    The bedroom is a mess.
+    It is a small bedroom with a faded carpet and old wallpaper. There is a
+    washbasin, a chair with a tatty dressing gown slung over it, and a window with
+    the curtains drawn. Near the exit leading south is a phone.
+    There is a flathead screwdriver here. (outside the bed)
+    There is a toothbrush here. (outside the bed)
+
     > 
 prompt: |+
+    <banner>
     <history><expression>
     <:pp>
 user-prompt: "^> "
@@ -27,9 +41,8 @@ stop-sequences:
 - "> "
 
 # Generate the next prompt
-# postpostprocessor: "{ awk 1; echo -n \"> \"; }"
 # Need to override if not using it
-postpostprocessor: cat
+postpostprocessor: "awk 1; echo -n \"\\n> \""
 vars:
 - history
 - expression
