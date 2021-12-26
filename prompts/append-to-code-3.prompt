@@ -26,7 +26,9 @@ stop-sequences:
 vars:
 # TODO Make a context-window widening mechanism
 - code:
-  - default: "(pen-buffer-string-or-selection)"
+  # - default: "(pen-buffer-string-or-selection)"
+  # - default: "(buffer-string-visible)"
+  - default: "(pen-buffer-visible-or-selection)"
   - example: "print(\"Hello world, I have no empathy\")"
 - language:
   - default: "(pen-detect-language-ask)"
