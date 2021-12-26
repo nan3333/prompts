@@ -48,5 +48,5 @@ vars:
 n-test-runs: 5
 n-collate: 1
 n-completions: 5
-insert: on
+insertion: on
 filter: off

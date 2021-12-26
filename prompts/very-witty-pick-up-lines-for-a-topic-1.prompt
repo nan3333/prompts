@@ -110,6 +110,6 @@ n-test-runs: 10
 # This will generate 30 pick up lines
 n-collate: 2
 n-completions: 15
-insert: on
+insertion: on
 postprocessor: sed 's/^ *//' | awk 1 | sed '/^[^a-zA-Z]/d'
 collation-separator: ''
