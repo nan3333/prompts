@@ -30,6 +30,10 @@ n-collate: 1
 n-completions: 20
 completion: true
 cache: false
+preprocessors:
+- cat
+# max one empty line
+- sed "s/^\\s\\+$//" | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
 examples:
 - python
 - |-
