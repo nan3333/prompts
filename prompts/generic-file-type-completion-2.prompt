@@ -22,6 +22,10 @@ vars:
 # This is default for completions prompts
 no-trim-start: on
 n-collate: 1
+preprocessors:
+- cat
+# max one empty line
+- sed "s/^\\s\\+$//" | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
 n-completions: 20
 completion: true
 cache: false
