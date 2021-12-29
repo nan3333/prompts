@@ -73,7 +73,7 @@ prompt: |
   <delim>
   TOPIC: <topic>
   - <:pp>
-engine: OpenAI Davinci
+force-engine: OpenAI Davinci
 temperature: 0.8
 max-generated-tokens: 60
 top-p: 1
