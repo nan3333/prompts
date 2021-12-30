@@ -30,7 +30,7 @@ stop-sequences:
 cache: on
 # TODO Make it so vals are also substituted
 defs:
-- markdown-delim: "```"
+- markdown-delim: "\"```\""
 vars:
 - "algorithm or description"
 examples:
