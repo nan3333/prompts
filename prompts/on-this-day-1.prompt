@@ -15,7 +15,7 @@ cache: on
 vars:
 - "date"
 var-defaults:
-- "(pen-ask (pen-ask (pen-snc \"date\") \"date: \"))"
+- "(pen-ask (pen-snc \"date\"))"
 examples:
 - "Fri 31 Dec 2021"
 info: on
