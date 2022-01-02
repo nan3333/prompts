@@ -1,7 +1,7 @@
 task: "Generate sourcegraph query from natural language"
 doc: "Generate sourcegraph query from natural language"
 prompt-version: 1
-prompt: |+
+prompt: |-
     https://docs.sourcegraph.com/code_search/tutorials/examples
     <delim>
     Input: Recent quality related changes on all branches (customize for your linters)
