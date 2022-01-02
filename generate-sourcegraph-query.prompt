@@ -47,7 +47,7 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "natural lanugage"
+- "natural language"
 examples:
 - "Recent changes to readme files"
 filter: on
