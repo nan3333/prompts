@@ -1,0 +1,60 @@
+task: "Generate sourcegraph query from natural language"
+doc: "Generate sourcegraph query from natural language"
+prompt-version: 1
+prompt: |+
+    https://docs.sourcegraph.com/code_search/tutorials/examples
+    <delim>
+    Input: Recent quality related changes on all branches (customize for your linters)
+    Output Query: repo:@*refs/heads/:^master type:diff after:"1 week ago" (eslint-disable)
+    <delim>
+    Input: Recent dependency changes
+    Output Query: file:package.json type:diff after:"1 week ago"
+    <delim>
+    Input: Files that are Apache licensed
+    Output Query: licensed to the apache software foundation select:file
+    <delim>
+    Input: Only repositories with recent dependency changes
+    Output Query: file:package.json type:diff after:"1 week ago" select:repo
+    <delim>
+    Input: Search changes in a files that contain a keyword
+    Output Query: repo:^github\.com/sourcegraph/sourcegraph$ type:diff file:contains.content("golang\.org/x/sync/errgroup
+    <delim>
+    Input: Find private keys and GitHub access tokens checked in to code
+    Output Query: (-----BEGIN [A-Z ]*PRIVATE KEY------)|(("gh|'gh)[pousr]_[A-Za-z0-9_]{16,}) patternType:regexp case:yes
+    <delim>
+    Input: Recent security-related changes on all branches
+    Output Query: type:diff repo:@*refs/heads/ after:"5 days ago" \b(auth[^o][^r]|security\b|cve|password|secure|unsafe|perms|permissions)
+    Explanation: The query looks for security-related keywords such as 'security, cve, password, secure' on all branches
+    <delim>
+    Input: Admitted hacks and TODOs in app code
+    Output Query: -file:\.(json|md|txt)$ hack|todo|kludge|fixme
+    Explanation: -file: is a search for files with the extensions json, md, txt and looking for admitted hacks and TODOs, by looking for hack, todo, fixme
+    <delim>
+    Input: Removal of TODOs in the repository commit log
+    Output Query: repo:^github\.com/sourcegraph/sourcegraph$ type:diff select:commit.diff.removed TODO
+    Explanation: This query looks at select:commit.diff.removed for the TODO string. That's how it finds removed TODO in the repository commit log
+    <delim>
+    Input: New usages of a function
+    Output Query: type:diff after:"1 week ago" \.subscribe\( lang:typescript
+    Explanation: This is looking for usages of the subscribe function in the last week
+    <delim>
+    Input: Find multiple terms in the same file, like testing of HTTP components
+    Output Query: repo:github\.com/sourcegraph/sourcegraph$ (test AND http AND NewRequest) lang:go
+    Explanation: "test AND http" finds multiple terms. lang:go matches only go files
+    <delim>
+    Input: <natural language>
+    Output Query: 
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "natural lanugage"
+examples:
+- "Recent changes to readme files"
+filter: on
+completion: off
+insertion: off
