@@ -53,3 +53,5 @@ examples:
 filter: on
 completion: off
 insertion: off
+external-related:
+- "https://docs.sourcegraph.com/code_search/tutorials/examples"
