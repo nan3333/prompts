@@ -24,11 +24,7 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "discourse segments"
 examples:
 - "boysenberries"
 - "strawberries"
