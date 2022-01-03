@@ -6,7 +6,7 @@ prompt: |+
     Coherence in Natural Language: Data Structures and Applications
     (c) 2006 Massachusetts Institute of Technology
     Authors: Florian Wolf and Edward Gibson
-
+    <delim>
     Table 2.1
     Contentful conjunctions that illustrate coherence relations
     
@@ -21,18 +21,28 @@ prompt: |+
     Example               : For example, for instance                                                                                                                    
     Elaboration           : also, furthermore, in addition, notice (furthermore) that, (for, in, on, against, with,...) which, who, (for, in, on, against, with,...) whom
     Generalization        : in general
-    
-    (26) Condition
+    <delim>
+    Discourse 1:
+    <delim>
+    If the new software works, everyone should be happy.
+    The new software worked great, but nobody was happy.
+    <delim>
+    Analysis of 1:
+    <delim>
+    Condition
     a. If the new software works,    
     b. everyone should be happy.
-    
-    In the violated expectation relation (also used by Hobbs), a causal relation that would
-    normally exist between two discourse segments is absent. For example, (27a) would nor-
-    mally be a cause for everyone to be happy, but this expectation is violated by the content of (27b).
 
-    (27) Violated Expectation
+    Violated Expectation
     a. The new software worked great,
     b. but nobody was happy.
+    <delim>
+    Discourse 2:
+    <delim>
+    <discourse segments>
+    <delim>
+    Analysis of 2:
+    <delim>
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -43,12 +53,9 @@ cache: on
 vars:
 - "discourse segments"
 examples:
-- "boysenberries"
+- "First, John went grocery shopping. Then he disappeared in a liquor store."
 filter: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
 external-related:
 - "https://mitpress.mit.edu/books/coherence-natural-language"
