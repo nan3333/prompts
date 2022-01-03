@@ -2,6 +2,10 @@ task: "analyse discourse"
 doc: "Annotate the given discourse segments"
 prompt-version: 1
 prompt: |+
+    Coherence in Natural Language: Data Structures and Applications
+    (c) 2006 Massachusetts Institute of Technology
+    Authors: Florian Wolf and Edward Gibson
+
     Table 2.1
     Contentful conjunctions that illustrate coherence relations
     
@@ -15,7 +19,23 @@ prompt: |+
     Attribution           : according to... ,... said, claim that... , maintain that... , stated that...                                                                 
     Example               : For example, for instance                                                                                                                    
     Elaboration           : also, furthermore, in addition, notice (furthermore) that, (for, in, on, against, with,...) which, who, (for, in, on, against, with,...) whom
-    Generalization        : in general                                                                                                                                   
+    Generalization        : in general
+    
+    (26) Condition
+    a. Ifthe new software works,
+    
+    b. everyone should be happy.
+    
+    In the violated expectation relation (also used by Hobbs), a causal relation that would
+    normally exist between two discourse segments is absent. For example, (27a) would nor-
+    mally be a cause for everyone to be happy, but this expectation is violated by the content
+    
+    of (27b).
+    (27) Violated Expectation
+    
+    a. The new software worked great,
+    
+    b. but nobody was happy.
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
