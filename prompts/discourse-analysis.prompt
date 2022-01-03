@@ -1,0 +1,45 @@
+task: "analyse discourse"
+doc: "Annotate the given discourse segments"
+prompt-version: 1
+prompt: |+
+    Table 2.1
+    Contentful conjunctions that illustrate coherence relations
+    
+    Relation              : Conjunction
+    Cause-effect          : because, and so                                                                                                                              
+    Violated expectation  : although, but, while                                                                                                                         
+    Condition             : if... (then), as long as, while                                                                                                              
+    Similarity            : and, (and) similarly                                                                                                                         
+    Contrast              : by contrast, but                                                                                                                             
+    Temporal sequence     : (and) then; first, second,... ; before; after; while                                                                                         
+    Attribution           : according to... ,... said, claim that... , maintain that... , stated that...                                                                 
+    Example               : For example, for instance                                                                                                                    
+    Elaboration           : also, furthermore, in addition, notice (furthermore) that, (for, in, on, against, with,...) which, who, (for, in, on, against, with,...) whom
+    Generalization        : in general                                                                                                                                   
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "former"
+- "latter"
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+examples:
+- "boysenberries"
+- "strawberries"
+preprocessors:
+- "sed 's/^/- /'"
+- "cat"
+filter: on
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
+external-related:
+- "https://mitpress.mit.edu/books/coherence-natural-language"
