@@ -1,6 +1,7 @@
 task: "analyse discourse"
 doc: "Annotate the given discourse segments"
 prompt-version: 1
+copyright: "(c) 2006 Massachusetts Institute of Technology"
 prompt: |+
     Coherence in Natural Language: Data Structures and Applications
     (c) 2006 Massachusetts Institute of Technology
