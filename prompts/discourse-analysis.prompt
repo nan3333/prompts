@@ -27,10 +27,6 @@ vars:
 - "discourse segments"
 examples:
 - "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
 filter: on
 completion: off
 insertion: off
