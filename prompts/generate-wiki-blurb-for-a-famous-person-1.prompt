@@ -1,5 +1,7 @@
-task: "Generate wiki blurb for a famous person"
-doc: "Create a wiki blurb for a famous person"
+task: "Generate wiki blurb"
+doc: "Create a wiki blurb"
+aliases:
+- generate-wiki-blurb-for-a-famous-person
 prompt-version: 2
 prompt: |+
     <person> - Wikipedia
@@ -7,7 +9,7 @@ prompt: |+
     en.wikipedia.org › wiki › <person>
 
     Short bio:
-    <:pp><person> 
+    <:pp><topic> 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 200
@@ -16,7 +18,7 @@ stop-sequences:
 - "."
 cache: on
 vars:
-- "person"
+- "topic"
 examples:
 - "John Dee"
 postprocessor: pen-str join ' ' | sed -z 's/\s*\n$//' | sed -z 's/[^a-zA-Z0-9]*$//' | sed -z 's/$/./'
