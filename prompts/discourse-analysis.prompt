@@ -1,4 +1,4 @@
-task: "analyse discourse"
+btask: "analyse discourse"
 doc: "Annotate the given discourse segments"
 prompt-version: 1
 prompt: |+
@@ -27,9 +27,8 @@ prompt: |+
     
     In the violated expectation relation (also used by Hobbs), a causal relation that would
     normally exist between two discourse segments is absent. For example, (27a) would nor-
-    mally be a cause for everyone to be happy, but this expectation is violated by the content
-    
-    of (27b).
+    mally be a cause for everyone to be happy, but this expectation is violated by the content of (27b).
+
     (27) Violated Expectation
     a. The new software worked great,
     b. but nobody was happy.
