@@ -1,4 +1,4 @@
-btask: "analyse discourse"
+task: "analyse discourse"
 doc: "Annotate the given discourse segments"
 prompt-version: 1
 prompt: |+
