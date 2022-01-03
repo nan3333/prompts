@@ -22,8 +22,7 @@ prompt: |+
     Generalization        : in general
     
     (26) Condition
-    a. If the new software works,
-    
+    a. If the new software works,    
     b. everyone should be happy.
     
     In the violated expectation relation (also used by Hobbs), a causal relation that would
@@ -32,9 +31,7 @@ prompt: |+
     
     of (27b).
     (27) Violated Expectation
-    
     a. The new software worked great,
-    
     b. but nobody was happy.
 engine: "OpenAI Codex"
 temperature: 0.3
