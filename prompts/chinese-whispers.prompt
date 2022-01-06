@@ -15,8 +15,8 @@ prompt: |+
   <passage>
   <delim>
   Attempt:
-engine: "OpenAI Davinci"
-temperature: 1.0
+force-engine: "OpenAI Davinci"
+temperature: 0.9
 # Can go over 1.0 but then bad results
 # temperature: 1.1
 max-generated-tokens: "(* 2 prompt-length)"
