@@ -1,4 +1,4 @@
-btask: "Chinese whispers (Repeat the passage)"
+task: "Chinese whispers (Repeat the passage)"
 doc: "Repeat the passage, but imprecisely (using temperature)"
 prompt-version: 1
 prompt: |+
