@@ -4,16 +4,17 @@ issues:
 - Not very effective.
 prompt-version: 1
 prompt: |+
-  Repeat the following passage:
+  Try to repeat the following passage:
   <delim>
   This is a game of chinese whispers and I'm telling you something important.
   <delim>
-  This is a game of chinese whispers and what I'm telling you is important.
+  Attempt: This is a game of chinese whispers and what I'm telling you is important.
   <delim>
-  Repeat the following passage:
+  Try to repeat the following passage:
   <delim>
   <passage>
   <delim>
+  Attempt:
 engine: "OpenAI Davinci"
 temperature: 1.0
 # Can go over 1.0 but then bad results
