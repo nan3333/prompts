@@ -1,0 +1,34 @@
+task: "Chinese whispers (Repeat the passage)"
+doc: "Repeat the passage, but imprecisely (using temperature)"
+prompt-version: 1
+prompt: |+
+  Repeat the following passage:
+  <delim>
+  This is a game of chinese whispers.
+  <delim>
+  This is a game of chinese whispers.
+  <delim>
+  Repeat the following passage:
+  <delim>
+  <passage>
+  <delim>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "passage"
+examples:
+- |-
+    There was a table set out under a tree in
+    front of the house, and the March Hare and the
+    Hatter were having tea at it : a Dormouse was
+    sitting between them, fast asleep, and the
+    other two were using it as a cushion, resting
+    their elbows on it, and talking over its head.
+filter: on
+completion: off
+insertion: off
