@@ -1,4 +1,4 @@
-task: "Chinese whispers (Repeat the passage)"
+btask: "Chinese whispers (Repeat the passage)"
 doc: "Repeat the passage, but imprecisely (using temperature)"
 prompt-version: 1
 prompt: |+
@@ -13,7 +13,7 @@ prompt: |+
   <passage>
   <delim>
 engine: "OpenAI Codex"
-temperature: 0.3
+temperature: 0.8
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
