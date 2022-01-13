@@ -4,9 +4,9 @@ aliases:
 - generate-wiki-blurb-for-a-famous-person
 prompt-version: 2
 prompt: |+
-    <person> - Wikipedia
+    <topic> - Wikipedia
     
-    en.wikipedia.org › wiki › <person>
+    en.wikipedia.org › wiki › <topic>
 
     Short bio:
     <:pp><topic> 
