@@ -21,7 +21,7 @@ vars:
 - "Who I was"
 - "My wants"
 examples:
-- "When I was 23 I was switched my university major to Chemistry."
+- "When I was 23 I switched my university major to Chemistry."
 - "to get married, see the world and cycle across Asia"
 n-test-runs: 5
 prettifier: pen-pretty-paragraph
