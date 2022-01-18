@@ -46,7 +46,7 @@ var-defaults:
 # - "(pen-detect-language-ask)"
 # - "(pen-batch (pen-topic t))"
 - "(pen-topic-ask)"
-- "(read-string-hist \"Pen subtopic: \")"
+- "(read-string-hist \"Pen subtopic: \" \"syntax\")"
 - "(pen-selected-text)"
 conversation: true
 conversation-pretext-generator: human-conversation
