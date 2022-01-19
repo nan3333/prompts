@@ -16,7 +16,7 @@ prompt: |+
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
-delimiter: "```"
+# delimiter: "```"
 top-p: 1.0
 stop-sequences:
 - "<delim>"
@@ -25,13 +25,6 @@ vars:
 - "code segment": "(pen-buffer-string-or-selection t)"
 defs:
 - language: "(pen-detect-language-lm)"
-examples:
-- |-
-    (defn cmd
-      ""
-      [& args]
-      ;; map a vector with a shell command
-      (map #((sh "q" :in %)) args))
 filter: on
 info: off
 completion: off
