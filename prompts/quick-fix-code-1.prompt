@@ -24,9 +24,9 @@ cache: on
 vars:
 - "code segment": "(pen-buffer-string-or-selection t)"
 defs:
-- language: "(pen-detect-language)"
+- language: "(pen-detect-language-lm)"
 examples:
-- |+
+- |-
     (defn cmd
       ""
       [& args]
