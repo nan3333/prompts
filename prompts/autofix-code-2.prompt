@@ -1,6 +1,4 @@
 task: "Given the current error and the code snippet, fix the code snippet"
-aliases:
-- fix
 title: "autofix code"
 prompt-version: 3
 prompt: |+
