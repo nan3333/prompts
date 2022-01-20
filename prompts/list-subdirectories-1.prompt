@@ -9,6 +9,7 @@ prompt: |+
   $ pwd
   <working directory>
 
+  # There are 10 files in the <working directory> directory. Here they are:
   $ find . -type d -maxdepth 1 # list directories here, including new ones that were just added
   <:pp>./
 engine: "OpenAI Codex"
