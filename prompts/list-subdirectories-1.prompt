@@ -36,7 +36,7 @@ completion: off
 insertion: off
 validator: grep -qP "^\\./"
 # must come after validator
-postpostprocessor: sed 's/^\.\///' | sed -e '/^$/d' -e '/^\.$/d' | sed 's/\..*$//'
+postpostprocessor: sed 's/^\.\///' | sed -e '/^$/d' -e '/^\.$/d' | sed 's/\..*$//' | sed -z '/^$/d'
 split-patterns:
 - "\n"
 # These are defined after the prompt has executed
