@@ -15,7 +15,7 @@ prompt: |+
   500
 
   # Top 10 files:
-  $ find . -type d -maxdepth 1 | head -n 10
+  $ ls | head -n 10
   <:pp>./
 engine: "OpenAI Codex"
 temperature: 0.3
