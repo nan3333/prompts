@@ -8,9 +8,6 @@ notes:
 # Don't include this necessarily
 subprompts:
   - dirs: |-
-        $ ls -d */ # list directories here
-        <ls dirs here output>
-
         $ find . -type d -maxdepth 1 # list directories here
         <find dirs here output>
         
@@ -20,8 +17,9 @@ prompt: |+
   $ pwd
   <working directory>
 
-  # recursively search for files in this directory
-  $ find . -maxdepth 5
+  $ cp -a /other-directories/* ./
+
+  $ find . -type d -maxdepth 1 # list directories here, including new ones that were just added
   <:pp>./
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -33,21 +31,12 @@ cache: on
 n-completions: 10
 vars:
 - "working directory"
-- "ls dirs here output"
 - "find dirs here output"
 var-defaults:
 - "(pen-snc \"pwd\")"
-- "(pen-snc \"ls -d */ | head -n 5\")"
 - "(pen-snc \"find . -type d -maxdepth 1\")"
 examples:
 - "/home/shane/source/git/mobile-shell/mosh"
-- "secret documents"
-- |-
-    drwxrwxr-x   2 shane shane     4096 Oct 13 19:34 contracts
-    -rw-rw-r--   1 shane shane      816 Oct 13 02:59 README.org
-    -rw-rw-r--   1 shane shane 10166273 Oct 13 02:59 tags
-    drwxrwxr-x 271 shane shane    12288 Oct 13 01:08 node_modules
-    -rw-r--r--   1 shane shane   262758 Oct 13 01:08 package-lock.json
 - |-
     .
     ./.git/
