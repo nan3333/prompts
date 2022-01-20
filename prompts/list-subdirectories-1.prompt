@@ -5,15 +5,7 @@ todo:
 - Make a more general version of this
 notes:
 - parent was removed because for short listings, it was interfering
-# Don't include this necessarily
-subprompts:
-  - dirs: |-
-        $ find . -type d -maxdepth 1 # list directories here
-        <find dirs here output>
-        
 prompt: |+
-  <dirs>
-  
   $ pwd
   <working directory>
 
@@ -29,18 +21,10 @@ cache: on
 n-completions: 10
 vars:
 - "working directory"
-- "find dirs here output"
 var-defaults:
 - "(pen-snc \"pwd\")"
-- "(pen-snc \"find . -type d -maxdepth 1\")"
 examples:
 - "/home/shane/source/git/mobile-shell/mosh"
-- |-
-    .
-    ./.git/
-    ./.github
-    ./src/
-    ./test/
 info: on
 completion: off
 insertion: off
