@@ -11,42 +11,61 @@ todo:
 # TODO Make a list of scholars and qualifications relating to a document
 
 prompt: |+
-  Document 1:
+  Document 1 (truth):
   ###
   Truth is the property of being in accord
-  with fact or reality.[1] In everyday
-  language, truth is typically ascribed to
+  with fact or reality. Truth is typically ascribed to
   things that aim to represent reality or
   otherwise correspond to it, such as beliefs,
-  propositions, and declarative sentences.[2]
+  propositions, and declarative sentences.
   ###
   Topics: Truth, Epistemology, Reality
   ###
-  Document 1 scholars:
+  Document 1 (truth):
   - 1. Kant (1724-1804)
   - 2. Hegel (1770-1831)
   - 3. Schopenhauer (1788-1860)
   - 4. Kierkegaard (1813-1855)
   - 5. Nietzsche (1844-1900)
   ###
-  Document 2:
+  Document 2 (music):
   ###
-  Rock and Roll.
+  Rock and roll (often written as rock & roll,
+  rock 'n' roll, or rock 'n roll) is a genre
+  of popular music that evolved in the United
+  States during the late 1940s and early
+  1950s.
   ###
   Topics: Music, Rock and Roll
   ###
-  Document 2 artists:
+  Document 2 (music):
   - 1. Chuck Berry (1953–2017)
   - 2. Evlis Presley (1935-1977)
   - 3. Kurt Cobain (1982-1994)
+  - 4. Tom Petty (1950 – 2017)
   ###
-  Document 3:
+  Document 3 (medicine):
+  ###
+  Medicine encompasses a variety of health
+  care practices evolved to maintain and
+  restore health by the prevention and
+  treatment of illness.
+  ###
+  Topics: Medicine, Doctors, Health
+  ###
+  Document 3 (medicine):
+  - 1. Charles R. Drew (1904-1950)
+  - 2. William Osler Abbott (1902–1943)
+  - 3. Virginia Apgar (1909–1974)
+  - 4. Christiaan Barnard (1922–2001)
+  ###
+  Document 4:
   ###
   <document>
   ###
   Topics: <:fz-eol>
   ###
-  Document 3 scholars:
+  Document 4:
   <:pp>- 1. 
 force-engine: "OpenAI Codex"
 force-temperature: 0.8
