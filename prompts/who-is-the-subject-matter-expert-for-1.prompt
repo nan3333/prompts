@@ -21,7 +21,7 @@ prompt: |+
   ###
   Topics: Truth, Epistemology, Reality
   ###
-  Document 1 (truth):
+  Experts:
   - 1. Kant (1724-1804)
   - 2. Hegel (1770-1831)
   - 3. Schopenhauer (1788-1860)
@@ -38,7 +38,7 @@ prompt: |+
   ###
   Topics: Music, Rock and Roll
   ###
-  Document 2 (music):
+  Experts:
   - 1. Chuck Berry (1953–2017)
   - 2. Evlis Presley (1935-1977)
   - 3. Kurt Cobain (1982-1994)
@@ -53,7 +53,7 @@ prompt: |+
   ###
   Topics: Medicine, Doctors, Health
   ###
-  Document 3 (medicine):
+  Experts:
   - 1. Charles R. Drew (1904-1950)
   - 2. William Osler Abbott (1902–1943)
   - 3. Virginia Apgar (1909–1974)
@@ -65,7 +65,7 @@ prompt: |+
   ###
   Topics: <:fz-eol>
   ###
-  Document 4:
+  Experts:
   <:pp>- 1. 
 force-engine: "OpenAI Codex"
 force-temperature: 0.8
