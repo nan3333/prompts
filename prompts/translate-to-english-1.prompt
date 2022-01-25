@@ -38,3 +38,5 @@ vars:
 - text
 examples:
 - Pero, que es el contexto?
+parsers:
+- json: "pen-str translate-to-english-1-parse"
