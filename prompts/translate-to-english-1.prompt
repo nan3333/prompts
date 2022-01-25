@@ -41,4 +41,4 @@ examples:
 # Give access to parsers to the `action`
 parsers:
 - json: "pen-str translate-to-english-1-json"
-action: "pen-show-translation <json>"
+action: "pen-show-translation <q:json>"
