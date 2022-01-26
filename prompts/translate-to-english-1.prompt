@@ -1,4 +1,3 @@
----
 title: Translate to English
 prompt-version: 1
 doc: This prompt translates text in any world langauge to English
@@ -41,5 +40,6 @@ examples:
 # Give access to parsers to the `action`
 parsers:
 - json: "pen-str translate-to-english-1-json"
-action: "(pen-show-translation (parser-json))"
+actions:
+- show-translation: "(pen-show-translation (pen-parser-json))"
 # action: "(pen-show-translation <q:json>)"
