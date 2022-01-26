@@ -41,5 +41,5 @@ examples:
 parsers:
 - json: "pen-str translate-to-english-1-json"
 actions:
-- show-translation: "(pen-show-translation (pen-parser-json))"
+- show-translation: "(pen-show-translation (pen-parser-json result))"
 # action: "(pen-show-translation <q:json>)"
