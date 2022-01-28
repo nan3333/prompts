@@ -1,0 +1,30 @@
+task: "Instruct an AI to do something"
+doc: "Provide a natural language task such as 'Explain the moon landing to a 6 year old in a few sentences.'"
+prompt-version: 1
+prompt: |+
+
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "former"
+- "latter"
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+examples:
+- "boysenberries"
+- "strawberries"
+preprocessors:
+- "sed 's/^/- /'"
+- "cat"
+filter: on
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
