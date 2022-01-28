@@ -21,7 +21,7 @@ vars:
 - screen
 - syntax
 var-defaults:
-- "(buffer-string-visible)"
+- "(pen-trim-max-chars (buffer-string-visible) 300)"
 - "(pen-thing-at-point)"
 examples:
 - |-
