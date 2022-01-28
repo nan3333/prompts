@@ -9,9 +9,9 @@ prompt: |
     <delim>
     The above is a code snippet.
     <delim>
-    Documentation for the <syntax>:
+    Documentation and example for <syntax>:
     <delim>
-    <:pp><q:syntax>
+    <:pp><q:syntax> is a
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 100
