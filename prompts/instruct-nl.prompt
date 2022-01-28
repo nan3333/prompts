@@ -1,4 +1,4 @@
-task: "Instruct an AI to do something"
+task: "Instruct an AI to do write something"
 doc: "Provide a natural language task such as 'Explain the moon landing to a 6 year old in a few sentences.'"
 prompt-version: 1
 prompt: |+
