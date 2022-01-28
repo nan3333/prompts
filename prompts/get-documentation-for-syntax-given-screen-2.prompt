@@ -9,7 +9,7 @@ prompt: |
     <delim>
     The above is a code snippet.
     <delim>
-    Documentation and example for <syntax>:
+    Documentation and code example for using <syntax>:
     <delim>
     <:pp><q:syntax> is a
 engine: "OpenAI Codex"
