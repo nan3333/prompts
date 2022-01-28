@@ -3,8 +3,8 @@ doc: "Provide a natural language task such as 'Explain the moon landing to a 6 y
 prompt-version: 1
 prompt: |+
   <instruction>
-engine: "OpenAI Davinci Instruct"
-force-engine: "OpenAI Davinci Instruct"
+engine: "OpenAI Davinci Instruct v3"
+force-engine: "OpenAI Davinci Instruct v3"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
