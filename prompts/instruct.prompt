@@ -4,6 +4,7 @@ prompt-version: 1
 prompt: |+
   <instruction>
 engine: "OpenAI Davinci Instruct"
+force-engine: "OpenAI Davinci Instruct"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
