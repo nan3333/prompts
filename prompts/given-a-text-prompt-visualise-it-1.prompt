@@ -1,5 +1,5 @@
-task: "Given an image, describe it"
-doc: "Given an image, describe it. For alttext"
+task: "Given an a textual description, visualise it with an image"
+doc: "Given an a textual description, visualise it with an image"
 prompt-version: 1
 prompt: |+
   A surreal painting of a surreptitious strawberry.
