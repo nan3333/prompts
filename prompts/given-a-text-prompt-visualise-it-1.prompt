@@ -1,0 +1,28 @@
+task: "Given an image, describe it"
+doc: "Given an image, describe it. For alttext"
+prompt-version: 1
+prompt: |+
+  A surreal painting of a surreptitious strawberry.
+force-engine: "GLIDE"
+temperature: 0.0
+max-generated-tokens: 150
+top-p: 1.0
+# Most of these parameters won't mean anything
+stop-sequences:
+- "<long>"
+cache: on
+info: on
+vars:
+- "text prompt"
+# preprocessors:
+# - "pen-convert-for-alephalpha"
+# filter: on
+completion: off
+insertion: off
+# postprocessor: pen-str clean-alephalpha
+# this works after the prompt is run
+# return-postprocessor: ""
+# prettifier: pen-pretty-paragraph
+
+# Don't prettify without correcting grammar.
+# postprocessor: "pf-correct-english-spelling-and-grammar/1"
