@@ -2,7 +2,7 @@ task: "Given an a textual description, visualise it with an image"
 doc: "Given an a textual description, visualise it with an image"
 prompt-version: 1
 prompt: |+
-  A surreal painting of a surreptitious strawberry.
+  <text description>
 force-engine: "GLIDE"
 temperature: 0.0
 max-generated-tokens: 150
@@ -13,10 +13,12 @@ stop-sequences:
 cache: on
 info: on
 vars:
-- "text prompt"
+- "text description"
 # preprocessors:
 # - "pen-convert-for-alephalpha"
 # filter: on
+examples:
+  - "A phantasmagoria of semiotic art depicting a surreal and surreptitious strawberry."
 completion: off
 insertion: off
 # postprocessor: pen-str clean-alephalpha
