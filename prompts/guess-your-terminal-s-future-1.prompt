@@ -2,12 +2,21 @@ task: "Guess your terminal's future"
 doc: "Given a view of the screen, show what the terminal may look like in the future"
 prompt-version: 1
 prompt: |
+    These are the steps I took:
     <delim>
-    Previous terminal state:
+    Firstly, I did this:
     <delim>
-    <screen>
+    <older-screen>
     <delim>
-    Current terminal state:
+    Secondy, I did this:
+    <delim>
+    <old-screen>
+    <delim>
+    Next, I did this
+    <delim>
+    <current-screen>
+    <delim>
+    Lastly, I did this:
     <delim>
 engine: "OpenAI Codex"
 temperature: 0.3
@@ -17,7 +26,9 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- screen
+- older-screen
+- old-screen
+- current-screen
 var-defaults:
 - "(pen-trim-max-chars (buffer-string-visible) 300)"
 examples:
