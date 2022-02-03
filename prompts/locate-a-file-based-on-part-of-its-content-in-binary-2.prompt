@@ -55,6 +55,6 @@ completion: off
 insertion: off
 split-patterns:
 - "\n"
-postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed 's/^- [0-9]*\. //' | uniqnosort
+postprocessor: sed '/^- /s/- [0-9]*\. //p' | sed '/^-/d' | uniqnosort
 external-related:
 - "https://www.trendmicro.com/en_us/research/22/a/codex-exposed-how-low-is-too-low-when-we-generate-code.html"
