@@ -7,7 +7,7 @@ prompt: |+
   <delim>
   To which <operating system>binary does this code belong to?
 
-  <:pp>1.
+  <:pp>- 1. 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -19,8 +19,8 @@ vars:
 - "hex"
 - "operating system"
 var-defaults:
-- "(read-string-hist \"Hex code: \")"
-- "(fz (pen-list-os) nil nil \"Select OS: \")"
+- ~
+- "(pen-str-add-trailing-space-if-not-empty (fz (pen-list-os) nil nil \"Select OS: \")"
 examples:
 - |-
     03 00 00 00  02 00 00 00  00 00 00 00  00 00 00 00
@@ -55,4 +55,4 @@ completion: off
 insertion: off
 split-patterns:
 - "\n"
-postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
+postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed 's/^- [0-9]*\. //' | uniqnosort
