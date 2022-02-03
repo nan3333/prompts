@@ -1,8 +1,13 @@
-task: "title"
-doc: "Given ... task"
+task: "Locate a file based on part of its content, in binary"
+doc: "Given part of a binary file in hex format, find the system binary it belongs to"
 prompt-version: 1
 prompt: |+
+  <delim>
+  <hex>
+  <delim>
+  To which <operating system>binary does this code belong to?
 
+  <:pp>1.
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -11,11 +16,11 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "former"
-- "latter"
+- "hex"
+- "operating system"
 var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "(read-string-hist \"Hex code: \")"
+- "(fz (pen-list-os) nil nil \"Select OS: \")"
 examples:
 - |-
     03 00 00 00  02 00 00 00  00 00 00 00  00 00 00 00
