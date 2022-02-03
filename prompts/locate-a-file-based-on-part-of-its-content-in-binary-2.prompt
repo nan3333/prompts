@@ -20,7 +20,7 @@ vars:
 - "operating system"
 var-defaults:
 - ~
-- "(pen-str-add-trailing-space-if-not-empty (fz (pen-list-os) nil nil \"Select OS: \"))"
+- "(pen-str-add-trailing-space-if-not-empty (fz (pen-list-generic-os-types) nil nil \"Select OS: \"))"
 examples:
 - |-
     03 00 00 00  02 00 00 00  00 00 00 00  00 00 00 00
