@@ -40,6 +40,7 @@ examples:
 - "operating system"
 
 ## Consider converting to hex here
+## I'd have to do it with images and other media later anyway?
 # preprocessors:
 # - "sed 's/^/- /'"
 # - "cat"
