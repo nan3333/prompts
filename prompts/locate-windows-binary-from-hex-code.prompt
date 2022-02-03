@@ -49,9 +49,10 @@ examples:
 # preprocessors:
 # - "sed 's/^/- /'"
 # - "cat"
-filter: on
+info: on
+filter: off
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
+split-patterns:
+- "\n"
+postprocessor: sed '/^- /s/- //p' | sed '/^-/d' | sed -n '/^[a-zA-Z0-9 _-]\+$/p' | uniqnosort
