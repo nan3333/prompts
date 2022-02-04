@@ -5,7 +5,7 @@ prompt: |+
     Chat room: <room>
     <delim>
     <conversation>
-    <<name>> <:pp>
+    <name>: <:pp>
 # engine: "OpenAI Codex"
 engine: "OpenAI Davinci"
 force-engine: "OpenAI Davinci"
