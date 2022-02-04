@@ -2,20 +2,14 @@ task: "Say something on IRC"
 doc: "Given an IRC screen, say something"
 prompt-version: 1
 prompt: |+
-    Chat room:
-    <delim>
-    <room>
-    <delim>
-    Conversation:
+    Chat room: <room>
     <delim>
     <conversation>
-    <delim>
-    You decide to say something.
-    <name>: <:pp>
+    <<name>> <:pp>
 # engine: "OpenAI Codex"
 engine: "OpenAI Davinci"
 force-engine: "OpenAI Davinci"
-temperature: 0.5
+temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
