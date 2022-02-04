@@ -2,10 +2,12 @@ task: "Say something on IRC"
 doc: "Given an IRC screen, say something"
 prompt-version: 1
 prompt: |+
-    Possible greetings:
-    [#metameetup] Hello, my name is...
-
+    Chat room:
+    ###
     <current-screen>
+    ###
+    You decide to say something.
+    <name>: <:pp>
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -15,12 +17,15 @@ stop-sequences:
 cache: on
 vars:
 - "current screen"
+- "name"
 var-defaults:
 - "(pen-selected-or-preceding-context)"
+- "\"you\""
 examples:
 - "08:34 -!- albus-dumbledore [root@127.0.0.1] has joined #metameetup\n08:34 [Users #metameetup]\n08:34 [@albus-dumbledore]\n08:34 -!- Irssi: #metameetup: Total of 1 nicks [1 ops, 0 halfops, 0 voices, 0\n          normal]\n08:34 -!- Channel #metameetup created Thu Feb  3 08:34:53 2022\n08:34 -!- Irssi: Join to #metameetup was synced in 0 secs\n\n\n [08:38] [@albus-dumbledore(+i)] [2:rc/#metameetup(+nt)]\n[#metameetup] Hello"
 # preprocessors:
 # - "sed 's/^/- /'"
+- "Shane"
 filter: of
 completion: off
 insertion: on
