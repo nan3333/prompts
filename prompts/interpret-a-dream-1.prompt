@@ -2,15 +2,16 @@ task: "Interpret a dream"
 doc: "Given a dream, provide an interpretation"
 prompt-version: 1
 prompt: |+
-  I had a dream last night. Here is a description of my dream:
+  I had a dream last night. In the dream:
   <delim>
   <dream>
   <delim>
-  My dream could be interpreted the following way:
+  This is my interpretation:
   <delim>
+  <:pp>The
 engine: "OpenAI Davinci"
 force-engine: "OpenAI Davinci"
-temperature: 0.8
+temperature: 0.4
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
@@ -33,4 +34,4 @@ insertion: off
 # preprocessors:
 # - pen-str onelineify
 # postprocessor: pen-str unonelineify | pen-pretty-paragraph
-# postprocessor: pen-pretty-paragraph
+postprocessor: pen-pretty-paragraph
