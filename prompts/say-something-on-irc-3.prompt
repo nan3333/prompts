@@ -4,7 +4,7 @@ prompt-version: 1
 prompt: |+
     Chat room:
     <delim>
-    <current-screen>
+    <room>
     <delim>
     Conversation:
     <delim>
@@ -23,13 +23,13 @@ stop-sequences:
 - "\n"
 cache: on
 vars:
-- "current screen"
+- "room"
 - "conversation"
 - "name"
 var-defaults:
-- "(pen-selected-or-preceding-context)"
+- "(channel-get-room)"
 - "(channel-get-conversation)"
-- "\"you\""
+- "(channel-get-your-name)"
 examples:
 - "08:34 -!- albus-dumbledore [root@127.0.0.1] has joined #metameetup\n08:34 [Users #metameetup]\n08:34 [@albus-dumbledore]\n08:34 -!- Irssi: #metameetup: Total of 1 nicks [1 ops, 0 halfops, 0 voices, 0\n          normal]\n08:34 -!- Channel #metameetup created Thu Feb  3 08:34:53 2022\n08:34 -!- Irssi: Join to #metameetup was synced in 0 secs\n\n\n [08:38] [@albus-dumbledore(+i)] [2:rc/#metameetup(+nt)]\n[#metameetup] Hello"
 # preprocessors:
