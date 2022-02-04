@@ -26,7 +26,7 @@ examples:
 # preprocessors:
 # - "sed 's/^/- /'"
 - "Shane"
-filter: of
+filter: off
 completion: off
 insertion: on
 # preprocessors:
