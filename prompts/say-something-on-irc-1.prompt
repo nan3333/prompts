@@ -14,7 +14,7 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "screen"
+- "current screen"
 var-defaults:
 - "(pen-selected-or-preceding-context)"
 examples:
