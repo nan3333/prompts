@@ -35,4 +35,4 @@ completion: off
 insertion: on
 # preprocessors:
 # - pen-str onelineify
-postprocessor: "sed 's/\..*/./'"
+postprocessor: "sed 's/\\..*/./'"
