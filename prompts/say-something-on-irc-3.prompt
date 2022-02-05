@@ -2,7 +2,7 @@ task: "Say something on IRC"
 doc: "Given an IRC screen, say something"
 prompt-version: 1
 prompt: |+
-    This is their conversation between <users>:
+    This is a conversation between <users>:
     <delim>
     <conversation>
     <name>: <:pp>
