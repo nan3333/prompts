@@ -35,4 +35,4 @@ completion: off
 insertion: on
 # preprocessors:
 # - pen-str onelineify
-# postprocessor: pen-str unonelineify | pen-pretty-paragraph
+postprocessor: "sed 's/\..*/./'"
