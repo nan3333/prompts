@@ -2,7 +2,7 @@ task: "Say something on IRC"
 doc: "Given an IRC screen, say something"
 prompt-version: 1
 prompt: |+
-    This is their conversation:
+    This is their conversation between <users>:
     <delim>
     <conversation>
     <name>: <:pp>
@@ -18,14 +18,17 @@ stop-sequences:
 cache: on
 vars:
 - "room"
+- "users"
 - "conversation"
 - "name"
 var-defaults:
 - "(channel-get-room)"
+- "(channel-get-users)"
 - "(channel-get-conversation)"
 - "(channel-get-your-name)"
 examples:
 - "08:34 -!- albus-dumbledore [root@127.0.0.1] has joined #metameetup\n08:34 [Users #metameetup]\n08:34 [@albus-dumbledore]\n08:34 -!- Irssi: #metameetup: Total of 1 nicks [1 ops, 0 halfops, 0 voices, 0\n          normal]\n08:34 -!- Channel #metameetup created Thu Feb  3 08:34:53 2022\n08:34 -!- Irssi: Join to #metameetup was synced in 0 secs\n\n\n [08:38] [@albus-dumbledore(+i)] [2:rc/#metameetup(+nt)]\n[#metameetup] Hello"
+- "harry-potter, dumbledore"
 # preprocessors:
 # - "sed 's/^/- /'"
 - "< shane> Hello!"
