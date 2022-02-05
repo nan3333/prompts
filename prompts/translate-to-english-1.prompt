@@ -2,21 +2,12 @@ title: Translate to English
 prompt-version: 1
 doc: This prompt translates text in any world langauge to English
 prompt: |
-  The following passages are translated into English.
-  <delim>
-  La clase Monad esta disenada para
-  describir tipos/estructuras de datos en
-  los que sea necesario manejar un contexto
-  de forma transparente al usuario.
-  Original language: Spanish.
-  English translation:
-  The Monad class is designed to describe
-  data types / structures in which it is
-  necessary to handle a context in a
-  transparent way to the user.
+  This is a pronunciation guide:
   <delim>
   Puis-je avoir une baguette s'il vous plaît?
   Original language: French
+  Pronunciation:
+  Pwee zshair
   English translation:
   Could I have a baguette please?
   <delim>
