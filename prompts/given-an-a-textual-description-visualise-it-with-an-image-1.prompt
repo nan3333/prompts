@@ -1,5 +1,5 @@
-task: "Given an a textual description, visualise it with an image"
-doc: "Given an a textual description, visualise it with an image"
+task: "Given a textual description, visualise it with an image"
+doc: "Given a textual description, visualise it with an image"
 prompt-version: 1
 prompt: |+
   <text description>
