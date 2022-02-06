@@ -3,7 +3,8 @@ doc: "Given a textual description, visualise it with an image"
 prompt-version: 1
 prompt: |+
   <text description>
-force-engine: "GLIDE"
+# force-engine: "GLIDE"
+force-engine: "HF GLIDE"
 temperature: 0.0
 max-generated-tokens: 150
 top-p: 1.0
