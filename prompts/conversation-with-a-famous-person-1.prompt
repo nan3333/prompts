@@ -21,6 +21,9 @@ vars:
 - blurb
 var-defaults:
 - ~
+# Not sure why, but force-interactive is not working currently in the case of embedding
+# prompt functions into var-defaults
+# - "(apostrophe-generate-blurb person)"
 - "(fz (apostrophe-generate-blurb person) nil \"Select blurb: \")"
 examples:
 - "Jason Momoa"
