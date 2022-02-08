@@ -13,7 +13,7 @@ engine: OpenAI Davinci
 force-engine: OpenAI Davinci
 # This was failing with 5 completions on Davinci, but worked for Codex
 # I must fix the splitting of results instead of set to 1 here
-n-completions: 5
+n-completions: 3
 temperature: 0.6
 # max-generated-tokens: 500
 max-generated-tokens: "(* 2 prompt-length)"
