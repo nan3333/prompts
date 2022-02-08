@@ -10,6 +10,8 @@ prompt: |+
   <delim>
   <:pp>The
 engine: OpenAI Davinci
+# This was failing with 5 completions on Davinci
+n-completions: 2
 # force-engine: OpenAI Davinci
 temperature: 0.6
 # max-generated-tokens: 500
