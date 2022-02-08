@@ -1,5 +1,6 @@
 title: bash one liner generator from natural language
 doc: Get a bash one liner from natural language
+tags: code hci
 prompt: |
   The following is a list of one-liners for the linux command-line:
 

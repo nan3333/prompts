@@ -1,5 +1,6 @@
 task: "CLI Help"
 doc: "Given a program name, provide CLI help"
+tags: computing hci
 prompt-version: 1
 prompt: |+
     

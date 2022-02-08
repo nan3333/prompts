@@ -1,5 +1,6 @@
 title: "break up into sentences"
 prompt-version: 3
+tags: prose grammar english
 prompt: |+
     <delim>
     Break apart the text into separate sentences:

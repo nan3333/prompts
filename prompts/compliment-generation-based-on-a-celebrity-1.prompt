@@ -1,5 +1,6 @@
 title: Compliment generation based on a celebrity
 doc: Generate a nice compliment based on a celebrity
+tags: fun prose social-media
 prompt-version: 2
 prompt: |
   The following are nice compliments:

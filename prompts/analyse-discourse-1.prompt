@@ -1,5 +1,6 @@
 task: "analyse discourse"
 doc: "Annotate the given discourse segments"
+tags: language grammar
 prompt-version: 1
 copyright: "(c) 2006 Massachusetts Institute of Technology"
 prompt: |+

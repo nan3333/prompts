@@ -1,6 +1,7 @@
 ---
 title: Article summary from title
 doc: Given the title of an article, generate a summary
+tags: comprehension prose blogging
 prompt: |
   Title: Build a WhatsApp Chatbot With Python, Flask and Twilio
   Summary: A chatbot is a software application that is able to conduct a conversation with a human

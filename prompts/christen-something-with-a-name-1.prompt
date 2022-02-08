@@ -1,5 +1,6 @@
 task: "Christen something with a name"
 doc: "Given the details of something, christen with a name"
+tags: life
 prompt-version: 1
 prompt: |-
   Details:

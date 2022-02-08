@@ -1,6 +1,7 @@
 task: Append to Code
 doc: "Given code context, generate some new code"
 prompt-version: 1
+tags: code
 engine: OpenAI Codex
 prompt: |+
     # <language> program

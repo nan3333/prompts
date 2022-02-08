@@ -1,5 +1,5 @@
----
 title: Ask any question or Yo Be Real
+tags: fun epistemology alethiology
 prompt-version: 1
 doc: The user asks a question. If a question is "normal" the AI answers it. If the
   question is "nonsense" the AI says "yo be real"

@@ -1,6 +1,7 @@
 task: "Given the current error and the code snippet, fix the code snippet"
 title: "autofix code"
 prompt-version: 3
+tags: code refactoring
 prompt: |+
   https://stackoverflow.com/q/4579226
 

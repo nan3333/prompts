@@ -1,5 +1,6 @@
 task: "clean prose"
 doc: "Given some prose, clean it to remove things like references, and annotations"
+tags: prose grammar preprocessing nlp-task
 prompt-version: 2
 issues:
 - "Appears to keep the numerical annotations. Not with 1-shot"

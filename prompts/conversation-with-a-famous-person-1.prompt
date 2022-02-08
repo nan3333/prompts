@@ -1,12 +1,10 @@
 title: Conversation with a famous person
-in-development: true
-doc: |+
-
 prompt-version: 1
 prompt: |+
     The following is a transcript of a conversation between Mark, a
-    computer science student, and <1>. ${paste first
-    paragraph of famous person's wikipedia page}.
+    computer science student, and <person>.
+
+    <blurb>
 
     Mark: Hi there, <1>. Honored to meet you.
     <1>: 
@@ -19,7 +17,11 @@ stop-sequences:
 # This wouldn't appear, so it would keep going, which is what we want
 - "<delim>"
 vars:
-- person-name
+- person
+- blurb
+var-defaults:
+- ~
+- "(apostrophe-generate-blurb \"<person>\")"
 examples:
 - "Jason Momoa"
 conversation: true

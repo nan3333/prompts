@@ -1,5 +1,6 @@
 task: "Steps for task"
 doc: "Given a task in natural language, produce a series of n steps"
+tags: life
 prompt-version: 1
 prompt: |+
   List the steps to complete the task. When finished, write Done!

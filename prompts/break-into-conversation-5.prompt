@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Break into conversation
 in-development: true
+tags: chatbot
 language: English
 subprompts:
 - kickstarter: |+

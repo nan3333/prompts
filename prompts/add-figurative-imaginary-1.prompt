@@ -1,5 +1,6 @@
 task: "add figurative imaginary"
 doc: "Given some prose, add descriptive imagery to it"
+tags: language grammar literature prose
 prompt-version: 1
 prompt: |+
     Add figurative imagery to the following prose:

@@ -1,5 +1,6 @@
 task: "Chinese whispers (Repeat the passage)"
 doc: "Repeat the passage, but imprecisely (using temperature)"
+tags: fun prose grammar
 issues:
 - Not very effective.
 prompt-version: 1

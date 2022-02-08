@@ -3,6 +3,7 @@ issues:
 - It appears to not have a large effective window
 design-patterns:
 - multi-language-block
+tags: code
 doc: Given code with comments lacking, add comments to it
 prompt-version: 5
 prompt: |+

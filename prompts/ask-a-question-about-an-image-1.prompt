@@ -1,6 +1,7 @@
 task: "Ask a question about an image"
 doc: "Ask a question about an image"
 prompt-version: 1
+tags: vision art
 payloads:
 # This could be a raw string to a file or URL, or an elisp function
 # - image: "(read-file-name \"image 2 of 2: \")"

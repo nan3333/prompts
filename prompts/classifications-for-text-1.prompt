@@ -1,6 +1,7 @@
 ---
 title: classifications for text
 doc: Given some text, provide some labels
+tags: nlp-task comprehension
 prompt-version: 1
 prompt: |+
   Text and labels:

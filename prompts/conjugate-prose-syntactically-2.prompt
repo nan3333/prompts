@@ -1,5 +1,6 @@
 title: Conjugate prose syntactically
 doc: Given two text snippets, join them together intelligently and syntactically
+tags: prose nlp-task english
 prompt-version: 2
 prompt: |
   <delim>

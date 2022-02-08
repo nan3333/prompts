@@ -1,6 +1,7 @@
 title: code generator from description
 doc: Language agnostic
 prompt-version: 1
+tags: code
 engine: OpenAI Davinci
 # model: GPT-J-6B
 temperature: 0.3

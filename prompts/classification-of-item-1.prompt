@@ -1,6 +1,7 @@
 title: classification of item
 prompt-version: 3
 description: Classify items into categories via example
+tags: nlp-task comprehension
 prompt: |
   The following is a list of companies and the categories they fall into
 
