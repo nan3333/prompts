@@ -22,6 +22,8 @@ examples:
   - "A phantasmagoria of semiotic art depicting a surreal and surreptitious strawberry."
 completion: off
 insertion: off
+actions:
+- show-image: "(pen-show-image result)"
 # postprocessor: pen-str clean-alephalpha
 # this works after the prompt is run
 # return-postprocessor: ""
