@@ -21,7 +21,7 @@ vars:
 - blurb
 var-defaults:
 - ~
-- "(apostrophe-generate-blurb \"<person>\")"
+- "(apostrophe-generate-blurb person)"
 examples:
 - "Jason Momoa"
 conversation: true
