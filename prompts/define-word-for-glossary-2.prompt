@@ -1,4 +1,5 @@
 title: define word for glossary
+tags: prose english
 prompt-version: 5
 doc: Get a short definition of a term for the glossary system.
 language: English

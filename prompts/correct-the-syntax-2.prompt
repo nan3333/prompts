@@ -1,5 +1,6 @@
 task: "Correct the syntax"
 doc: "Given some selected code, correct the syntax"
+tags: code syntax
 todo:
 - remove and restore leading whitespace
 prompt-version: 2

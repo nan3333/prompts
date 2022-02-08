@@ -1,5 +1,6 @@
 title: Conversation with a famous person
 prompt-version: 1
+tags: chatbot social-media
 prompt: |+
     The following is a transcript of a conversation between Mark, a
     computer science student, and <person>.

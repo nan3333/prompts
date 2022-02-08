@@ -1,5 +1,6 @@
 task: "Convert ascii to latex equation"
 doc: "Given some ascii text, convert to a latex equation"
+tags: math
 notes:
 - generate latex math mode from ascii representation
 prompt-version: 1

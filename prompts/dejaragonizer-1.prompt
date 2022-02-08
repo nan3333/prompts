@@ -1,5 +1,6 @@
 title: "Dejaragonizer"
 doc: "Clarifies jargon. Select some text and run the dejargonizer"
+tags: prose language social-media
 prompt-version: 2
 prompt: |+
     The following sentences contain business jargon. Rewrite them using simple words.

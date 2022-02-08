@@ -1,5 +1,6 @@
 task: "correct the results of OCR"
 doc: "Given OCR results, correct them"
+tags: ocr
 prompt-version: 2
 issues:
 - This is not very effective.

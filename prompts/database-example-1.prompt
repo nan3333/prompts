@@ -1,6 +1,6 @@
----
 title: database example
 prompt-version: 2
+tags: database knowledge
 doc: GPT-3 as a NL interface for semantically querying logic in prose
 prompt: |
   The database begins knowing nothing.

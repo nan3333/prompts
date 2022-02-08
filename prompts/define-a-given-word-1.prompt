@@ -1,4 +1,5 @@
 task: "Define a given word"
+tags: prose english
 doc: "Given a word, even a fake one, come up with a definition"
 prompt-version: 2
 prompt: |-

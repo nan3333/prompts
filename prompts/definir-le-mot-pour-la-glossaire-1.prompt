@@ -1,5 +1,6 @@
 completion: true
 doc: Obtenez une définition courte d'un terme pour le système de glossaire.
+tags: prose french
 engine: OpenAI Davinci
 examples:
 - framboise

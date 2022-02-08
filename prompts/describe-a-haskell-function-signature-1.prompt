@@ -1,5 +1,6 @@
 task: "Describe a Haskell function signature"
 doc: "Given a Haskell function signature, describe it"
+task: code haskell
 prompt-version: 1
 prompt: |+
   Haskell type explanations:

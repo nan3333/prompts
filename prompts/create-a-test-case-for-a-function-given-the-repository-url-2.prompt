@@ -1,5 +1,6 @@
 task: "create a test case for a function, given the repository url"
 doc: "Given a function name and a repository URL, generate a test case"
+tags: code
 todo:
 - Make this work for more languages
 prompt-version: 1

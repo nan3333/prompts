@@ -1,4 +1,5 @@
 title: crontab to nl
+tags: crontab linux
 prompt-version: 5
 engine: OpenAI Codex
 prompt: |

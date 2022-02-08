@@ -1,5 +1,6 @@
 title: "convert hex to decimal in code"
 prompt-version: 1
+tags: code math
 prompt: |+
     Convert hex to decimal in the following code.
 
