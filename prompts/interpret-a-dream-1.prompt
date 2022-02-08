@@ -4,21 +4,23 @@ prompt-version: 1
 prompt: |+
   I had a dream last night. In the dream:
   <delim>
-  <dream>
+  <1>
   <delim>
   This is my interpretation:
   <delim>
   <:pp>The
-engine: "OpenAI Davinci"
-force-engine: "OpenAI Davinci"
+engine: OpenAI Davinci
+# force-engine: "OpenAI Davinci"
 temperature: 0.6
-max-generated-tokens: "(* 2 prompt-length)"
-top-p: 1.0
+max-generated-tokens: 500
+# max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1
 stop-sequences:
 - "<delim>"
+- "\n\n"
 cache: on
 vars:
-- "dream"
+- dream
 # var-defaults:
 # - "(detect-language)"
 # - "(pen-preceding-text)"
@@ -31,7 +33,6 @@ info: on
 filter: off
 completion: off
 insertion: off
-# preprocessors:
-# - pen-str onelineify
-# postprocessor: pen-str unonelineify | pen-pretty-paragraph
-postprocessor: pen-pretty-paragraph
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
