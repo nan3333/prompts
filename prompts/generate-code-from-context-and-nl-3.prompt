@@ -1,4 +1,5 @@
 title: "Generate code from context and NL"
+tags: hci code filesystem
 doc: "Given some code and a context, generate"
 info: on
 prompt-version: 2
