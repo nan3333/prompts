@@ -1,4 +1,5 @@
 task: "Generate a grammar from a description of the language"
+tags: parsers
 doc: "Given a description of a language, generate a grammar"
 prompt-version: 1
 prompt: |+

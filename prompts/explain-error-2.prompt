@@ -1,5 +1,6 @@
 title: Explain error
 include: Generic tutor for any topic/2
+tags: code explain
 doc: "Select an error message and ask for an explanation"
 prompt-version: 3
 subprompts:

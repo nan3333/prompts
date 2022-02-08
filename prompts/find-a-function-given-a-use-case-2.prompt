@@ -1,4 +1,5 @@
 task: "Find a function given a use-case"
+tags: code
 doc: "Given a language and a use-case, find a function for that use-case"
 prompt-version: 1
 # Because we are using codex, we can take advantage of leaving

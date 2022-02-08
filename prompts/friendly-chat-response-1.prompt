@@ -1,5 +1,5 @@
----
 title: friendly chat response
+tags: chatbot prose
 doc: This is is how to respond in in a friendly way to some small talk
 prompt: |
   You: What have you been up to?

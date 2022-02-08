@@ -1,5 +1,6 @@
 title: "Explain code with bulleted docstring"
 doc: "Select some code and ask for explanation, and generate a bulleted docstring"
+tags: code explain
 info: on
 prompt-version: 2
 prompt: |+

@@ -1,5 +1,6 @@
 task: "explain solidity code"
 doc: "Given some solidity code, explain it"
+tags: code explain ethereum
 prompt-version: 1
 prompt: |+
     Solidity explanations.

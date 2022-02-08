@@ -1,4 +1,5 @@
 task: "extract thing from text"
+tags: prose code nlp-task
 doc: "Given some text and a description of what you want to extract, extract it"
 prompt-version: 1
 prompt: |+

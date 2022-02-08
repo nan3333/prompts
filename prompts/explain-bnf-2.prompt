@@ -1,5 +1,6 @@
 task: "Explain BNF"
 doc: "Explain Backus-Naur form"
+tags: language parsers
 prompt-version: 1
 prompt: |+    
     We specify the <language name> syntax using Backus–Naur form.

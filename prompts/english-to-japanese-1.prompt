@@ -1,5 +1,5 @@
----
 title: English to Japanese
+tags: translation language grammar english japanese
 prompt-version: 2
 prompt: |
   Translate to Japanese.

@@ -1,6 +1,6 @@
----
 title: English to French
 prompt-version: 2
+tags: translation language grammar english french
 prompt: |+
   Translate to French.
 

@@ -1,4 +1,5 @@
 task: "Explain why this code is needed"
+tags: code explain
 doc: "Given some selected code, explain why it is needed. What is it used for?"
 prompt-version: 3
 # subprompts:

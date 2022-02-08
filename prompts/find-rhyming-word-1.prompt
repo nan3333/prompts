@@ -1,4 +1,5 @@
 task: "find rhyming word"
+tags: prose grammar language fun
 doc: "Find rhyming word"
 prompt-version: 1
 prompt: |+

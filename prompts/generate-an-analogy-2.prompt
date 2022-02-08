@@ -1,4 +1,5 @@
 task: "Generate an analogy"
+tags: prose fun nlp-task chatbot
 doc: "Generate an analogy"
 prompt-version: 1
 prompt: |+

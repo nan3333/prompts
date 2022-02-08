@@ -1,4 +1,5 @@
 task: "Generate a YASnippet"
+tags: code emacs
 aliases:
 - yasnippet
 doc: "Given a language and a feature, generate a snippet"

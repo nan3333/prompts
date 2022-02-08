@@ -1,4 +1,5 @@
 task: "Generate a backronym"
+tags: prose nlp-task fun
 aliases:
 - backronym
 doc: "Given a word, generate an backronym for it"

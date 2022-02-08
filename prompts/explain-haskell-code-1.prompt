@@ -1,5 +1,6 @@
 task: "explain haskell code"
 doc: "Given some haskell code, explain it"
+tags: code explain
 prompt-version: 1
 prompt: |+
     Haskell explanations.

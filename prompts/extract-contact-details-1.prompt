@@ -1,4 +1,5 @@
 title: Extract contact details
+tags: nlp-task social-media web
 doc: ''
 prompt: |
   Extract the mailing address from this email:

@@ -1,4 +1,5 @@
 task: "Given a claim, determine if it is true or false"
+tags: epistemology alethiology
 title: "Fact checker"
 aliases:
 - fact check

@@ -1,4 +1,5 @@
 task: "Format a text passage for the glossary"
+tags: prose nlp-task glossary
 doc: "Format a text passage for the glossary"
 prompt-version: 1
 prompt: |+
