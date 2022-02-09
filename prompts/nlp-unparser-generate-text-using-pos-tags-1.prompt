@@ -1,5 +1,6 @@
 task: "NLP unparser: Generate text using POS tags"
 doc: "Generate text given a list of POS tags"
+tags: nlp-task prose
 prompt-version: 1
 prompt: |+
   Parse tree and matching passage:

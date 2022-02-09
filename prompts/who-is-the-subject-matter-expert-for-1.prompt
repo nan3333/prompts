@@ -1,4 +1,5 @@
 task: "Who is the subject matter expert for?"
+tags: chatbot paracosm
 doc: "Given a prompt, be told of a subject-matter-expert."
 prompt-version: 2
 todo:

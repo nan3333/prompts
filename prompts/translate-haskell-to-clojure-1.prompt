@@ -1,7 +1,8 @@
 # The task may be used as a metaprompt and as part of the name of a prompt function.
 # An engine is required to understand what the task does.
 # This is encoded into the text properties in the Ink.el format
-task: '#("Translate Haskell to Clojure" 0 27 (engine "OpenAI Davinci" language "English" topic "programming"))'
+task: '#("Transpile Haskell to Clojure" 0 27 (engine "OpenAI Davinci" language "English" topic "programming"))'
+tags: code haskell clojure
 prompt: |+
     Haskell:
     zip (map show [1,5,9]) ["a","b","c"]

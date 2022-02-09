@@ -1,5 +1,6 @@
 include: Imagine a conversation between two people/5
 task: Imagine a conversation with someone
+tags: chatbot
 language: English
 defs:
 - Person A: "\"you\""

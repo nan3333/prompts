@@ -1,4 +1,5 @@
 task: "Transform prose"
+tags: prose writing
 doc: "Transform some prose given a transformation description"
 prompt-version: 7
 engine: OpenAI Davinci

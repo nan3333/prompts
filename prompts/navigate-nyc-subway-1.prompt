@@ -1,6 +1,6 @@
----
 title: Navigate NYC subway
 doc: ''
+tags: life
 prompt: "Welcome to Underground Assistant.\n\nintput: how to get from Franklin St
   to South Ferry\noutput: Line 1 from Franklin St to South Ferry\n<delim>\nintput: how
   to get from Bleeker St to Chambers St\noutput: Line 6 from Bleeker St to Chambers

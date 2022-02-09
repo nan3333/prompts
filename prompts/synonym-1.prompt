@@ -1,4 +1,5 @@
 task: "synonym"
+tags: prose nlp-task
 aliases:
 - synonym
 - thesaurus

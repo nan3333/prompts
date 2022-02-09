@@ -1,4 +1,5 @@
 task: "Get a factual result, given a question"
+tags: epistemology alethiology
 aliases:
 - ask fact
 doc: "Get a truthful answer to a question"

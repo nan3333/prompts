@@ -1,5 +1,6 @@
 task: "Instruct an AI to do something"
 doc: "Provide a natural language task such as 'Explain the moon landing to a 6 year old in a few sentences.'"
+tags: task chatbot
 prompt-version: 1
 prompt: |+
   <instruction>

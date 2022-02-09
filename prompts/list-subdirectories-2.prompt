@@ -1,4 +1,5 @@
 title: "list subdirectories"
+tags: filesystem
 doc: "imaginarily list subdirectories"
 prompt-version: 3
 todo:

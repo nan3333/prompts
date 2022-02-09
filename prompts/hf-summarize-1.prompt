@@ -1,6 +1,7 @@
 title: HF summarize
 prompt-version: 1
 engine: FB Bart Large CNN
+tags: prose summarise
 mode: summarize
 temperature: 0.6
 max-generated-tokens: 500

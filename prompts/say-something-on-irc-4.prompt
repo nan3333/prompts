@@ -1,4 +1,5 @@
 task: "Say something on IRC"
+tags: chatbot mtp
 doc: "Given an IRC screen, say something"
 prompt-version: 1
 prompt: |+

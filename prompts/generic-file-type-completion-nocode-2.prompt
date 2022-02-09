@@ -1,5 +1,6 @@
 title: Generic file type completion nocode
 prompt-version: 2
+tags: project filesystem
 doc: |-
   This is a generic file-type completer for emacs. It's also good for long-complete.
   The issue with the other file completion is that it ends with EOD.

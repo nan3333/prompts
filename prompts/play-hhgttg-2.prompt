@@ -1,5 +1,6 @@
 task: "Play HHGTTG"
 doc: "Play HHGTTG, the infocom game"
+tags: games fun interpreter
 in-development: on
 prompt-version: 1
 notes:

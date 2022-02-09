@@ -1,5 +1,6 @@
 title: Generic completion 50 tokens
 prompt-version: 3
+tags: fundamental
 doc: This is a generic completer.
 prompt: "<1>"
 engine: OpenAI Davinci

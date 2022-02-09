@@ -1,5 +1,6 @@
 task: "name a function, given the description or code"
 doc: "Given a function or a description of a function, come up with a good name for it"
+tags: code help documentation
 title: guess function name
 prompt-version: 1
 prompt: |+

@@ -1,5 +1,6 @@
 task: "Given an image, describe it"
 doc: "Given an image, describe it. For alttext"
+tags: vision prose web lookingglass
 prompt-version: 1
 payloads:
 - image: "<file path or url>"

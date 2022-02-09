@@ -1,5 +1,5 @@
----
 title: Translate to (unicode working)
+tags: nlp-task
 in-development: yes
 prompt-version: 2
 doc: This prompt translates English text to any world langauge

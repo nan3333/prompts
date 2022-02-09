@@ -1,4 +1,5 @@
 task: "Generate wiki blurb"
+tags: web chatbot
 doc: "Create a wiki blurb"
 aliases:
 - generate-wiki-blurb-for-a-famous-person

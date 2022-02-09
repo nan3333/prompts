@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language>-db interpreter
 language: prolog
+tags: prolog interpreter
 subprompts:
 - kickstarter: |+
     $ cat > db.pl <<HEREDOC

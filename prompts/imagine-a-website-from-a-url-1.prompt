@@ -1,5 +1,6 @@
 task: "Imagine a website from a URL"
 doc: "Given a URL, imagine the HTML for that page"
+tags: web lookingglass
 prompt-version: 3
 # Do not run unless these are ALL true
 goahead-predicates:

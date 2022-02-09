@@ -1,5 +1,6 @@
 title: nlsh
 task: Generate a bash one liner for OS from NL
+tags: hci
 prompt-version: 3
 doc: Get a bash one liner on OS from natural language
 notes:

@@ -1,4 +1,5 @@
 task: "Locate a file based on part of its content, in binary"
+tags: search linux
 doc: "Given part of a binary file in hex format, find the system binary it belongs to"
 prompt-version: 1
 prompt: |+

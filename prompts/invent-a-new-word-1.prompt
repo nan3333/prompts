@@ -1,5 +1,6 @@
 title: invent a new word
 task: invent a new word from a definition
+task: prose fun language
 design-patterns: 
 doc: Given a description of a word that you are looking for, list some possible candidates
 prompt-version: 2

@@ -1,4 +1,5 @@
 task: "transpile"
+tags: transpilation code
 aliases:
 - transpile
 doc: "Given some code and a target language, transpile into that language"

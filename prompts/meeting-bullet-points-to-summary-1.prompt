@@ -1,5 +1,5 @@
----
 title: meeting bullet points to summary
+tags: prose summarisation
 doc: Summarize a meeting from a list of bullet points
 prompt: |
   Convert my short hand into a first-hand account of the meeting:

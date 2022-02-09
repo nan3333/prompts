@@ -1,4 +1,5 @@
 task: "Generate jq from json"
+tags: code cli
 doc: "Given some json, generate the jq which generates it"
 prompt-version: 1
 prompt: |+

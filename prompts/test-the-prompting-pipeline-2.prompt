@@ -1,4 +1,5 @@
 task: "test the prompting pipeline"
+tags: meta
 doc: "this prompt will test the prompting pipeline, even when offline"
 prompt-version: 1
 prompt: |+

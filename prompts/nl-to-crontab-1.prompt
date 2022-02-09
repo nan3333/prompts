@@ -1,5 +1,6 @@
 title: nl to crontab
 prompt-version: 5
+task: linux hci
 engine: OpenAI Codex
 prompt: |
   cat /etc/crontab

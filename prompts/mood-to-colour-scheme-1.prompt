@@ -1,5 +1,6 @@
 title: mood to colour scheme
 doc: "Generate a 4 colour scheme from a description"
+tags: ilambda
 todo:
 - Improve the quality of outputs
 prompt: |

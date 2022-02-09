@@ -1,5 +1,6 @@
 task: "NL to SQL"
 doc: "Given a NL query, write some SQL"
+tags: code sql
 prompt-version: 1
 notes:
 - I doubt that being specific about where to place the result is important, but it might help

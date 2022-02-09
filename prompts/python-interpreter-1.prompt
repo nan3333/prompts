@@ -1,5 +1,6 @@
 task: "Python Interpreter"
 doc: "Imagine a Python interpreter"
+tags: interpreter python
 prompt-version: 1
 prompt: |+
     Python 3.8.5 (default, Jan 27 2021, 15:41:15)

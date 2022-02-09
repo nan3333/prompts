@@ -1,4 +1,5 @@
 task: "Get an example of the usage of a function"
+tags: code help documentation
 doc: "Given a function name, provide an example of its usage"
 prompt-version: 2
 prompt: |+

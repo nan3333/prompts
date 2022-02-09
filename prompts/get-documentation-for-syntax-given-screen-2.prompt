@@ -1,4 +1,5 @@
 task: "Get documentation for syntax given screen"
+tags: hci code help documentation
 doc: "Given a view of the screen, get the documentation for the syntax form"
 prompt-version: 1
 prompt: |

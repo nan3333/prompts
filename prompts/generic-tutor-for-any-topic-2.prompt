@@ -1,4 +1,5 @@
 title: Generic tutor for any topic
+tags: chatbot
 issues:
 - It's not as accurate as asktutor/3 or that may have been because I was forcing Codex
 prompt-version: 3

@@ -1,5 +1,6 @@
 task: "Guess your terminal's future"
 doc: "Given a view of the screen, show what the terminal may look like in the future"
+tags: general continuum
 prompt-version: 1
 prompt: |
     Terminal screen recorder.

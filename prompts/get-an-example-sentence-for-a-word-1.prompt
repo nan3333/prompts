@@ -1,4 +1,5 @@
 task: "Get an example sentence for a word"
+tags: prose help documentation english language
 doc: "Given a word, provide an example of its usage"
 prompt-version: 1
 prompt: |+

@@ -1,5 +1,6 @@
 title: Generic file type completion
 prompt-version: 4
+tags: project code filesystem
 doc: This is a generic file-type completer for emacs.
 prompt: |
     # <file type> files

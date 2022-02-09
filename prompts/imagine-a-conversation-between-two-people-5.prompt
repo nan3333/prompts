@@ -1,5 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a conversation between two people
+tags: chatbot
 language: English
 subprompts:
 - kickstarter: |+

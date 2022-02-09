@@ -1,5 +1,6 @@
 title: "Richard Feynman explains"
 doc: "Richard Feynman explains anything"
+tags: chatbot fun
 prompt-version: 3
 prompt: |+
   This is an except from Richard Feynman's lecture.

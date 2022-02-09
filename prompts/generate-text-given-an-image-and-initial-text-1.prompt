@@ -1,5 +1,6 @@
 task: "generate text given an image and initial text"
 doc: "generate text given an image and initial text"
+tags: vision art
 prompt-version: 1
 payloads:
 # This could be a raw string to a file or URL, or an elisp function

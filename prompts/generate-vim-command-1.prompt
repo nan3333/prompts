@@ -1,4 +1,5 @@
 title: Generate vim command
+tags: code
 prompt-version: 4
 prompt: |
   Vim

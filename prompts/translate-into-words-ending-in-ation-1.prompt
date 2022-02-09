@@ -1,4 +1,5 @@
 task: "Translate into words ending in ation"
+tags: nlp-task fun
 doc: "Translate using words that end in 'ation'"
 prompt-version: 1
 issues:

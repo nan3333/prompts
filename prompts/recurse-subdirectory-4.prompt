@@ -1,5 +1,6 @@
 title: "recurse subdirectory"
 doc: "imaginarily recurse a subdirectory"
+tags: filesystem project
 prompt-version: 3
 todo:
 - Make a more general version of this

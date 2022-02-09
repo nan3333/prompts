@@ -1,5 +1,5 @@
----
-title: Translate Python to Ruby
+title: Transpile Python to Ruby
+tags: python transpilation
 prompt: |+
     Python:
     list[::-1] 

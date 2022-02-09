@@ -1,4 +1,5 @@
 task: "Generic Interpreter"
+tags: interpreter
 prompt-version: 1
 subprompts:
 - banner: |+

@@ -1,5 +1,5 @@
----
 title: Shell/bash terminal command completion
+tags: hci cterm
 prompt-version: 1
 doc: |-
   This is a bash terminal command completer for emacs.

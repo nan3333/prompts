@@ -1,4 +1,5 @@
 task: "Speak like Yoda"
+tags: fun chatbot
 doc: "Transform some prose and make it sound like Yoda"
 in-development: true
 prompt-version: 6

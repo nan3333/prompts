@@ -1,5 +1,6 @@
 title: gpt-j generate regex
 include: Generic completion 50 tokens/1
+tags: code
 prompt-version: 3
 engine: AIx GPT-J-6B
 # this flag instructs pen-aix to add a newline before the response

@@ -1,4 +1,5 @@
 task: "meld two passages"
+tags: nlp-task prose
 doc: "Given two consecutive passages, meld them"
 notes: |-
   Don't ask me how Codex works better than Davinci, it just does.

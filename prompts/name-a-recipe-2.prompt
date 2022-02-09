@@ -1,6 +1,6 @@
----
 title: Name a recipe
 doc: Given a list of ingredients and instructions, come up with a name
+tags: cooking life
 inspiration:
 - https://www.twilio.com/blog/generating-cooking-recipes-openai-gpt3-ruby
 - https://github.com/drewbaumann/gpt3-recipe-builder

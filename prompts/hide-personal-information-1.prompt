@@ -1,5 +1,6 @@
 task: "Hide personal information"
 doc: "Given a document with personal information, replace with random info instead"
+tags: security web prose
 prompt-version: 1
 prompt: |+
     # A file with sensitive information

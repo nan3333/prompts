@@ -1,5 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a <language>-db-swipl interpreter
+tags: interpreter prolog
 language: prolog
 subprompts:
 - kickstarter: |+

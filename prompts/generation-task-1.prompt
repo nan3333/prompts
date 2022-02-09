@@ -1,5 +1,5 @@
-in-development: no
 title: "generation task"
+tags: task fundamental
 prompt-version: 1
 prompt: |+
     <1>

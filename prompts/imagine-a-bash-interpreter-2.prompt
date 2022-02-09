@@ -1,5 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
+tags: interpreter
 language: bash
 # 0.5 is needed, rather than 0.2 to do things like change directory with cd ~
 temperature: 0.5

@@ -1,4 +1,5 @@
 title: rephrase a phrase
+tags: nlp-task prose
 prompt: |
   Rewrite each of the following phrases:
 

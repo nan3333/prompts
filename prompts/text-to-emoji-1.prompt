@@ -1,4 +1,5 @@
 title: text to emoji
+tags: fun
 prompt-version: 2
 prompt: |+
     Convert text into emojis.

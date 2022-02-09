@@ -1,4 +1,5 @@
 title: "Write a blog post"
+tags: writing web
 doc: "Given a topic and the number of words, generate a blog post."
 prompt-version: 3
 prompt: |+

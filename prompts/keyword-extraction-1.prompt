@@ -1,6 +1,6 @@
----
 title: keyword extraction
 prompt-version: 7
+tags: epistemology alethiology
 prompt: |+
   Text and keywords:
   Text: Ethereum is a blockchain

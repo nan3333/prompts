@@ -1,4 +1,5 @@
 task: "generate html from ascii browser"
+tags: web lookingglass
 doc: "Given an ascii browser dump, generate some html"
 prompt-version: 4
 prompt: |-

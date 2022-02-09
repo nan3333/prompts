@@ -1,5 +1,6 @@
 # in-development: yes
 title: "Negate Sentence"
+tags: prose nlp-task
 prompt-version: 2
 # for right-click menu
 paths:

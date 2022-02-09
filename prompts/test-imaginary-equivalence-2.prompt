@@ -1,4 +1,5 @@
 task: "test imaginary equivalence"
+tags: epistemology alethiology
 doc: "Given two strings of arbitrary content, test their imaginary equivalence. This is an imaginary neural hash collision test"
 aliases:
 - imaginary hash collision test

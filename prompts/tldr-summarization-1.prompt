@@ -1,4 +1,5 @@
 title: tldr summarization
+tags: nlp-task summarisation
 prompt-version: 2
 doc: "tldr"
 prompt: |+

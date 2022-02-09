@@ -1,5 +1,6 @@
 task: "generate text given an image and prompt text"
 doc: "generate text given an image and prompt text"
+tags: vision art
 notes:
 - "I'm using this to test AlephAlpha's MM model"
 prompt-version: 1

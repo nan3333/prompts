@@ -1,4 +1,5 @@
 title: Generate perl command
+tags: code hci
 prompt-version: 2
 prompt: |
   perl

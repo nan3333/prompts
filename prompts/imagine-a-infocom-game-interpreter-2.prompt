@@ -1,5 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
+tags: fun games interpreter
 language: infocom-game
 temperature: 0.6
 max-generated-tokens: 150

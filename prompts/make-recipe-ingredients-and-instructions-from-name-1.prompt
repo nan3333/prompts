@@ -1,5 +1,5 @@
----
 title: Make recipe ingredients and instructions from name
+tags: fun cooking
 doc: Given a recipe name, come up with the ingredients and instructions
 inspiration:
 - https://www.twilio.com/blog/generating-cooking-recipes-openai-gpt3-ruby

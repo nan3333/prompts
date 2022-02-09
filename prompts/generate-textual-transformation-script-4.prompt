@@ -1,5 +1,6 @@
 task: "Generate textual transformation script"
 doc: "Given some text input and output, generate a script to mimic the transformation"
+tags: code
 prompt-version: 1
 prompt: |+
   # Input text:

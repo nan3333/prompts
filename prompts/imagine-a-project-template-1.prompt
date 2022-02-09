@@ -1,5 +1,6 @@
 task: "imagine a project template"
 doc: "Given the type of project I want to make, generate the file structure"
+tags: project code filesystem
 prompt-version: 1
 prompt: |+
     $ # Start a brand new <type> project. Use a template.

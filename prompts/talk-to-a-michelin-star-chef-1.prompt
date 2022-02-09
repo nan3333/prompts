@@ -1,4 +1,5 @@
 task: "Talk to a Michelin star chef"
+tags: cooking life
 doc: "Talk to a Michelin star chef"
 prompt-version: 1
 prompt: |+

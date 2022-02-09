@@ -1,5 +1,6 @@
 title: infer intra sentence
 todo: 
+tags: nlp-task prose
 design-patterns: 
 doc: Given the start and end of a sentence, predict the middle
 prompt-version: 2

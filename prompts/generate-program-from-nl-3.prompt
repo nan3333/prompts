@@ -1,5 +1,6 @@
 title: "Generate program from NL"
 doc: "Generate a NL description and a language, generate a program"
+tags: code
 # This prompt is for LMs that have not been trained on code
 utilises-code: no
 info: on

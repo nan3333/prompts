@@ -1,5 +1,5 @@
----
 title: Translate from English to
+tags: translation prose nlp-task
 prompt-version: 2
 doc: This prompt translates English text to any world langauge
 issues:

@@ -1,4 +1,5 @@
 task: "Transform code"
+tags: code
 doc: "Transform some code given the language and a transformation description"
 prompt-version: 5
 engine: OpenAI Codex

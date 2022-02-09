@@ -1,5 +1,6 @@
 title: Genji Python 6B
 include: Generic completion 50 tokens/1
+tags: fundamental
 prompt-version: 1
 engine: HF NovelAI Genji Python 6B
 issues:

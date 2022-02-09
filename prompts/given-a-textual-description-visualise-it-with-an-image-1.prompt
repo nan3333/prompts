@@ -1,5 +1,6 @@
 task: "Given a textual description, visualise it with an image"
 doc: "Given a textual description, visualise it with an image"
+tags: vision prose
 prompt-version: 1
 prompt: |+
   <text description>

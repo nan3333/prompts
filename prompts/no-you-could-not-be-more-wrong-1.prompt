@@ -1,5 +1,5 @@
----
 title: no, you could not be more wrong
+tags: discourse nlp-task prose
 prompt-version: 1
 doc: This is a completer that refutes what you just said.
 prompt: |

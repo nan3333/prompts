@@ -1,5 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
+tags: interpreter
 language: scheme
 prompt: |+
     Chez Scheme Version 9.5.3

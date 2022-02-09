@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: powershell
+tags: interpreter
 prompt: |+
     PowerShell 7.1.3
     Copyright (c) Microsoft Corporation.

@@ -1,5 +1,6 @@
 title: "recurse current directory"
 doc: "imaginarily recurse the current directory"
+tags: filesystem project
 prompt-version: 3
 todo:
 - Make a more general version of this

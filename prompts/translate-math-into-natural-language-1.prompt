@@ -1,4 +1,5 @@
 task: "Translate math into natural language"
+tags: math
 doc: "Translate math into natural language"
 prompt-version: 1
 prompt: |+

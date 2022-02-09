@@ -1,5 +1,6 @@
 title: ms-codegpt-small-py
 include: Generic completion 50 tokens/1
+tags: fundamental
 prompt-version: 1
 lm-command: "hf-complete.sh"
 model: "microsoft/CodeGPT-small-py"

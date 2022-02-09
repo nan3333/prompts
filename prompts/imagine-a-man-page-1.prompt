@@ -1,6 +1,7 @@
 task: "Imagine a man page"
 doc: "Given a program name, imagine a man page"
 prompt-version: 1
+tags: interpreter
 prompt: |+
     <:pp><uc:program>(1)                     User Commands                    <uc:program>(1)
     

@@ -1,5 +1,6 @@
 task: "Imagine an awk linter"
 doc: "Given a line of awk code, check it for errors"
+tags: interpreter
 issues:
 - This doesn't work very well at all.
 prompt-version: 1

@@ -1,5 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
+tags: interpreter
 language: fish shell
 todo:
 - support user-prompt as a dynamic variable

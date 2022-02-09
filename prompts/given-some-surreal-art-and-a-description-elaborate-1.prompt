@@ -1,5 +1,6 @@
 task: "Given some surreal art and a description, elaborate"
 doc: "Given some surreal art and a description, elaborate"
+tags: vision prose web lookingglass art
 prompt-version: 1
 payloads:
 # This could be a raw string to a file or URL, or an elisp function

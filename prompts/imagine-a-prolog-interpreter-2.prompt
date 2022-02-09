@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: prolog
+tags: interpreter prolog
 subprompts:
 - kickstarter: |+
     Welcome to SWI-Prolog (threaded, 64 bits, version 8.2.4)

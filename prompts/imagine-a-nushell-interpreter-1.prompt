@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: nushell
+tags: interpreter
 prompt: |+
     Welcome to Nushell 0.28.0 (type 'help' for more info)
     /home/shane/notes(master)> <expression>

@@ -1,5 +1,6 @@
 task: "Get the signatures for a list of functions"
 doc: "Given a list of functions, get their signatures"
+tags: code help documentation
 prompt-version: 1
 prompt: |+
   This is a table of standard functions and their full signatures (including argument types) in <language>:

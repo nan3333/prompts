@@ -1,5 +1,6 @@
 include: Generic Interpreter/3
 task: Imagine a <language>-pseudocode interpreter
+tags: prolog interpreter pseudocode
 language: prolog
 subprompts:
 - kickstarter: |+

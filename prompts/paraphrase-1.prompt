@@ -1,5 +1,6 @@
 title: paraphrase
 task: Reword a phrase
+tags: prose nlp-task
 aliases:
 - paraphrase
 doc: In other words (reword)

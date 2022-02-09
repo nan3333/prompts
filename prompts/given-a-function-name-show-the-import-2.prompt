@@ -1,5 +1,6 @@
 task: "Given a function name, show the import"
 doc: "Given a function name, show the import"
+tags: code help documentation
 prompt-version: 1
 prompt: |+
     Functions and imports.

@@ -1,6 +1,7 @@
 include: Generic Interpreter/3
 task: Imagine a <language> interpreter
 language: perl
+tags: interpreter
 prompt: |+
     Loading DB routines from perl5db.pl version 1.55
     Editor support available.

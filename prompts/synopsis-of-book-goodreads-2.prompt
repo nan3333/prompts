@@ -1,4 +1,5 @@
 task: "Synopsis of book goodreads"
+tags: fun writing
 doc: "Given a book title, give a synopsis"
 prompt-version: 1
 prompt: |+

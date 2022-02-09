@@ -1,4 +1,5 @@
 title: "Predict the outcome of an action"
+tags: world
 aliases:
 - guess outcome
 doc: "Given some prose expression some action of an individual, return the common-sense outcome"

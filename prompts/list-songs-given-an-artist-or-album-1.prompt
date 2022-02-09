@@ -1,5 +1,5 @@
----
 title: List songs given an artist or album
+tags: fun search
 doc: Given the title of a band or an album, list some popular songs.
 prompt: |
   Given the title of a band or an album, list some popular songs.

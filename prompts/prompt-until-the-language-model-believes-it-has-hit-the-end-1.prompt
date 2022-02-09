@@ -1,4 +1,5 @@
 task: "Prompt until the language model believes it has hit the end"
+tags: meta
 prompt-version: 2
 todo:
 - Consider including the EOD in the output as a sentinel, so the user knows

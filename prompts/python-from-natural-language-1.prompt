@@ -1,4 +1,5 @@
 title: Python from natural language
+tags: code hci
 prompt: |
   Generate a python one-liner from a description.
   <delim>

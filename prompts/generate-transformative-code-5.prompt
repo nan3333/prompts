@@ -1,5 +1,6 @@
 task: "Generate transformative code"
 doc: "Given input, output and a tool, generate transformative code"
+tags: code
 prompt-version: 1
 notes:
 - '"into the style of" is important here, because otherwise the output needs to be the exact output I already need.'

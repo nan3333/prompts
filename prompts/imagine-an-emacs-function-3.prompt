@@ -1,5 +1,6 @@
 title: imagine an emacs function
 task: "imagine an emacs lisp function given name, arguments and docstring"
+tags: ilambda code
 doc: "Given a function name, arguments and docstring, return the imagined body of the function"
 prompt-version: 1
 prompt: |+

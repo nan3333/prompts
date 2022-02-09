@@ -1,4 +1,5 @@
 task: "textual semantic search"
+tags: search nlp-task
 doc: "Given a document, measure how related it is to a query"
 # TODO 
 external-related: "https://github.com/openai/openai-python/blob/main/examples/semanticsearch/semanticsearch.py"

@@ -1,4 +1,5 @@
 task: "textual semantic search filter"
+tags: search nlp-task
 doc: "Given a document and a query, measure how semantically true the is-a relationship is"
 # TODO 
 external-related: "https://github.com/openai/openai-python/blob/main/examples/semanticsearch/semanticsearch.py"

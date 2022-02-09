@@ -1,5 +1,6 @@
 task: "imagine evaluating emacs lisp"
 doc: "Given some elisp return the imagined result"
+tags: ilambda code
 prompt-version: 1
 prompt: |+
   <code-or-comment>

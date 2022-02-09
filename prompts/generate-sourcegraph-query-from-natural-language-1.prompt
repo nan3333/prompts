@@ -1,5 +1,6 @@
 task: "Generate sourcegraph query from natural language"
 doc: "Generate sourcegraph query from natural language"
+tags: code search
 prompt-version: 1
 prompt: |-
     https://docs.sourcegraph.com/code_search/tutorials/examples

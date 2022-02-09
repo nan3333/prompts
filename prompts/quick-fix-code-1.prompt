@@ -1,4 +1,5 @@
 task: "Fix the code snippet"
+tags: code
 aliases:
 - fix
 title: "quick fix code"
