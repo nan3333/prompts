@@ -14,7 +14,7 @@ prompt: |+
   - "become frozen in place"
   - "become fastened"
   <memory><delim>
-  5 other words for and ways of saying <q:phrase>:
+  <:mem>5 other words for and ways of saying <q:phrase>:
   <:pp>- "
 engine: "OpenAI Davinci"
 force-engine: "OpenAI Davinci"
