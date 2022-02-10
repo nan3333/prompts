@@ -13,7 +13,7 @@ prompt: |+
   - "paint into a corner"
   - "become frozen in place"
   - "become fastened"
-  <delim>
+  <memory><delim>
   5 other words for and ways of saying <q:phrase>:
   <:pp>- "
 engine: "OpenAI Davinci"
