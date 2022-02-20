@@ -1,7 +1,7 @@
-task: "title"
+task: "ghostwriter"
 doc: |-
     Given the name of an author or some other
-    famous person or character, write as them.
+    famous person or character, complete some text in their style.
 
     A ghostwriter is hired to write literary or
     journalistic works, speeches, or other texts
