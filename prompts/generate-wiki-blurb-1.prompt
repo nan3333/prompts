@@ -13,9 +13,9 @@ engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: 200
 top-p: 1.0
-stop-sequences:
 # End of the first sentence. Sadly, if there is J.R.R. Tolkien, etc. this will break
-- ". "
+stop-sequences:
+- "."
 cache: on
 vars:
 - "topic"
