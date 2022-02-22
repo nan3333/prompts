@@ -1,13 +1,14 @@
-task: "Instruct an AI to do write something"
-doc: "Provide a natural language task such as 'Explain the moon landing to a 6 year old in a few sentences.'"
+task: "Instruct an AI to write something"
+include: "Instruct an AI to do something/1"
+doc: "Provide a natural language task such as 'Explain the moon landing to a 6 year old in a few sentences.', and format it as prose"
 tags: task nlp-task
 prompt-version: 1
 prompt: |+
-  <instruction>
+  <instruction>:
 engine: "OpenAI Davinci Instruct v3"
 force-engine: "OpenAI Davinci Instruct v3"
-temperature: 0.3
-max-generated-tokens: "(* 2 prompt-length)"
+temperature: 0.7
+max-generated-tokens: 300
 top-p: 1.0
 stop-sequences:
 - "<delim>"
@@ -15,8 +16,5 @@ cache: on
 vars:
 - instruction
 examples:
-- "Explain the moon landing to a 6 year old in a few sentences."
-filter: on
-completion: off
-insertion: off
+- "Explain the moon landing to a 6 year old in a few sentences"
 prettifier: pen-pretty-paragraph

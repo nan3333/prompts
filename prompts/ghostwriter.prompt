@@ -9,9 +9,13 @@ doc: |-
     as the author.
 prompt-version: 1
 prompt: |+
-  Author: <author>
-  
-  cat writings.txt <<EOD
+  # Author:
+  cat biography.txt <<EOD
+  <biography>
+  EOD
+
+  # The writings of <author>  
+  cat <sl:author>/writings.txt <<EOD
 engine: "OpenAI Codex"
 # force-engine: "OpenAI Davinci"
 temperature: 0.3
