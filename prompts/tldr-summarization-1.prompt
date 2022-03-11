@@ -3,7 +3,7 @@ tags: nlp-task summarisation
 prompt-version: 2
 doc: "tldr"
 prompt: |+
-  <1>
+  <passage>
 
   tl;dr:
 completion: true
@@ -20,5 +20,5 @@ filter: true
 examples:
 - The long white cloud
 preprocessors:
-- pen-str join ' '
+- sed 's/^\s*//' | pen-str join ' '
 prettifier: pen-pretty-paragraph
