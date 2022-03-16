@@ -211,6 +211,10 @@ The final part of your prompt might be
 - =<:s>= denotes the place where completion happens. Therefore =<:pp>= must always proceed =<:pp>=
 - =<:memory>= denotes where previous examples of prompt+output are placed. that must always proceed =<:pp>=
 
+There are also preprocessors for variables.
+
+- =<q:1>=, for example would double quote the first variable
+
 ** =YASnippet= template
 
 [[./snippets/prompt-description-mode/prompt]]
