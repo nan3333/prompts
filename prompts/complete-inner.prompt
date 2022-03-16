@@ -21,7 +21,7 @@ vars:
 examples:
 - Hello my friend, could you please
 - if at all possible? Thank you.
-postprocessor: sed -n "/^<1>.*<2>$/p"
+# postprocessor: sed -n "/^<1>.*<2>$/p"
 # preprocessors:
 # - pf-correct-grammar
 prefer-external: true
