@@ -205,6 +205,12 @@ This is useful if you're generating a list.
 The final part of your prompt might be
 =<:pp>-=.
 
+*** List of special placeholders
+=<1>= and =<2>= etc. are just the first and second variable substituions
+=<:pp>= denotes a point in the prompt where what follows is included as the start of the returned completion
+=<:s>= denotes the place where completion happens. Therefore =<:pp>= must always proceed =<:pp>=
+=<:memory>= denotes where previous examples of prompt+output are placed. that must always proceed =<:pp>=
+
 ** =YASnippet= template
 
 [[./snippets/prompt-description-mode/prompt]]
