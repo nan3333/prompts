@@ -13,3 +13,6 @@
      <img src="cats4.png" />
   '''
 #+END_SRC
+
+* example prompt:
+Soviet Gehenna lord, Bone Amputee, roses design, artstation

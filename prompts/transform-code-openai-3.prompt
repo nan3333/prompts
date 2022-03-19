@@ -1,24 +1,12 @@
-task: "Transform code"
+task: "Transform code OpenAI"
 tags: code
 doc: "Transform some code given the language and a transformation description"
 prompt-version: 5
-engine: OpenAI Codex
-# If the predicate is true, defer to the specified model
-defer-prompt:
-  - Transform code OpenAI: "(engine-available-p \"OpenAI Davinci Code Edit\")"
-subprompts:
-- original-program: |+
-    # The original <language> program
-
-    cat original_program <<EOD
-    <code>
-    EOD
-prompt: |+
-    <original-program>
-
-    # The exact same program as above but <q:transformation>
-
-    cat edited_program <<EOD
+engine: OpenAI Davinci Code Edit
+# mode already specified in the engine
+# mode: edit
+prompt: "<original-program>"
+instruction: "<transformation>"
 xlr-n-generate: 5
 temperature: 0.0
 # On each collated generation, rotate the temperature upwards by 0.1
