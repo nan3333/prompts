@@ -56,4 +56,4 @@ var-defaults:
 - "(pen-detect-language)"
 - "(pen-preceding-text)"
 #- "(pen-surrounding-proceeding-text)"
-- "(pen-snc \"sed 1d\" (pen-proceeding-lines))"
+- "(pen-snc \"sed 1d\" (pen-proceeding-lines 3))"
