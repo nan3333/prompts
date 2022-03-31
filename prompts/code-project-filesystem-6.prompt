@@ -1,6 +1,6 @@
 task: "Generate the contents of a new file"
 doc: "Prompt for the probable contents of a file with this path and sibling files"
-task: code project filesystem
+tags: code project filesystem
 prompt-version: 3
 subprompts:
   - dirs: |-
