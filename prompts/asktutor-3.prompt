@@ -52,3 +52,5 @@ var-defaults:
 conversation: true
 conversation-pretext-generator: human-conversation
 postprocessor: "sed \"s/^AI: //\" | pen-pretty-paragraph"
+actions:
+- show-explanation: "(nbfs-sps result)"
