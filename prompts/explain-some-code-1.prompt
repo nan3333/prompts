@@ -44,3 +44,5 @@ related-prompts:
 preprocessors:
 - pen-str onelineify
 postprocessor: pen-str unonelineify
+actions:
+- show-explanation: "(nbfs-sps result)"
