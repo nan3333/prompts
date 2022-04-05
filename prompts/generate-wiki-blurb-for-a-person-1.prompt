@@ -16,5 +16,7 @@ temperature: 0.3
 max-generated-tokens: 200
 top-p: 1.0
 # End of the first sentence. Sadly, if there is J.R.R. Tolkien, etc. this will break
+# It also breaks for apostrophe blurbs with Wikipedia en.
+# What it really needs is a prompt to rewrite a potentially incomplete sentence.
 stop-sequences:
 - "."
