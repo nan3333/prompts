@@ -1,0 +1,26 @@
+task: "Imaginary code sandbox"
+doc: "Given some code, run it and display output. This is a generic sandbox, not meant to imitate a proper interpreter"
+prompt-version: 1
+prompt: |+
+  Here's my code:
+  cat code <<EOD
+  <code>
+  EOD
+
+  I then ran it and it returned this:
+  cat output <<EOD
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "EOD"
+cache: on
+vars:
+- "code"
+examples:
+- "generateFibonacci 20"
+info: on
+filter: off
+completion: off
+insertion: off
