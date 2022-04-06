@@ -53,7 +53,7 @@ cache: on
 vars:
 - document
 var-defaults:
-- "(pen-screen-or-selection)"
+- "(pen-screen-words-or-selection)"
 # no EOD? needed or default?
 preprocessors:
 - pen-str garbify | sed 's/^/  /'
