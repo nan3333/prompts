@@ -1,5 +1,5 @@
 task: "Evaluate entire terminal to get a new terminal"
-doc: "Given ... task"
+doc: "Update the contents of the terminal with the logical future"
 prompt-version: 1
 prompt: |+
   # Pause terminal
