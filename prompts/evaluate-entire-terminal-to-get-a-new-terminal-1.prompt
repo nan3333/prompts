@@ -1,0 +1,32 @@
+task: "Evaluate entire terminal to get a new terminal"
+doc: "Given ... task"
+prompt-version: 1
+prompt: |+
+  # Pause terminal
+  cat terminal_step-1 <<EOD
+  <screen>
+  EOD
+
+  # Resume
+  cat terminal_step-2 <<EOD
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "EOD"
+cache: on
+setup: |
+  (mark-whole-buffer)
+terminate: |
+  (deselect)
+vars:
+- "screen"
+save-mark-and-excursion: on
+var-defaults:
+- "(continuum-get-current)"
+examples:
+- "shane@mele:$NOTES$ echo hi"
+filter: on
+completion: off
+insertion: off
