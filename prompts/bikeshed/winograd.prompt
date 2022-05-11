@@ -1,0 +1,32 @@
+task: "Test winograd"
+doc: "Given a winograd test, evaluate the language model's performance"
+prompt-version: 1
+prompt: |+
+<sentence>
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "sentence"
+# examples:
+test-cases:
+- sentence:
+  - trophy:
+    - input: "The trophy would not fit in the brown suitcase because it was too big. What was too big?"
+    - output: trophy
+  - demonstrators:
+    - input: "The town councilors refused to give the demonstrators a permit because they feared violence. Who feared violence?"
+    - output: the town councilors
+preprocessors:
+- "sed 's/^/- /'"
+- "cat"
+filter: on
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
