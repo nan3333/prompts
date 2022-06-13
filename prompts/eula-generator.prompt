@@ -1,0 +1,37 @@
+task: "Generate EULA"
+doc: "Given some specifications, generate an EULA license"
+prompt-version: 1
+prompt: |+
+    License specifications:
+    Where will your EULA be used? Desktop App.
+    What is your app name? Semiosis Prompts
+    What is the name of the business? Semiotic LLC
+    What is the address of the business? 16 Lynwood Ave, Dunedin, New Zealand
+    Users are permitted to: Sell prompts, 
+    Users can contact the license owner through this email: mullikine@gmail.com
+
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "former"
+- "latter"
+var-defaults:
+- "(detect-language)"
+- "(pen-preceding-text)"
+examples:
+- "boysenberries"
+- "strawberries"
+preprocessors:
+- "sed 's/^/- /'"
+- "cat"
+filter: on
+completion: off
+insertion: off
+preprocessors:
+- pen-str onelineify
+postprocessor: pen-str unonelineify | pen-pretty-paragraph
