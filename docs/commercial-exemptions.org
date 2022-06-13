@@ -1,0 +1,6 @@
+* Exclusive proprietary licences
+** https://promptbase.com/
+
+Allowed to:
+- Exempt from the limitations of GPL-3 up to git commit ab5c1dcfb080dda4073b412e496103d00fbd2e2f
+- Sell any prompts up to git commit ab5c1dcfb080dda4073b412e496103d00fbd2e2f including updated versions beyond ab5c1dcfb080dda4073b412e496103d00fbd2e2f

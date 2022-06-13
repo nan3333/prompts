@@ -3,35 +3,47 @@ doc: "Given some specifications, generate an EULA license"
 prompt-version: 1
 prompt: |+
     License specifications:
-    Where will your EULA be used? Desktop App.
-    What is your app name? Semiosis Prompts
-    What is the name of the business? Semiotic LLC
-    What is the address of the business? 16 Lynwood Ave, Dunedin, New Zealand
-    Users are permitted to: Sell prompts, 
-    Users can contact the license owner through this email: mullikine@gmail.com
+    Where will your EULA be used? <app type>.
+    What is your app name? <app name>
+    What is the name of the business? <business name>
+    What is the address of the business? <business address>
+    Users are permitted to: <permissions> 
+    Users can contact the license owner through this email: <contact email>
 
+    cat LICENSE <<EOD
+    End User License Agreement
+    --------------------------
+
+    <business name> Software License Agreement.
+
+    Description
+    -----------
+
+    This
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
 top-p: 1.0
 stop-sequences:
-- "<delim>"
+- "EOD"
 cache: on
 vars:
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "app type"
+- "app name"
+- "business name"
+- "business address"
+- "permissions"
+- "contact email"
 examples:
-- "boysenberries"
-- "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
+- "Desktop App"
+- "Semiosis Prompts"
+- "Semiotic LLC"
+- "Dunedin, New Zealand"
+- "Sell prompts, Sell updated prompts"
+- "mullikine@gmail.com"
+# preprocessors:
+# - "sed 's/^/- /'"
+# - "cat"
 filter: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
