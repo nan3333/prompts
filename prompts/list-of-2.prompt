@@ -8,7 +8,7 @@ prompt: |
   A list of 8 countries in random order:
   "Myanmar,Finland,American Samoa,Belgium,Vanuatu,Sudan,Israel,Ecuador"
   <delim>
-  A unordered, random selection of <n> <type>:
+  A unordered list of <n> <type>:
   "
 engine: OpenAI Davinci
 # It's best with Davinci, rather than Codex
