@@ -28,8 +28,9 @@ var-defaults:
 - "(detect-language)"
 - "(pen-preceding-text)"
 examples:
-- "boysenberries"
-- "strawberries"
+- "gender"
+- "origin"
+- "meaning"
 preprocessors:
 - "sed 's/^/- /'"
 - "cat"
