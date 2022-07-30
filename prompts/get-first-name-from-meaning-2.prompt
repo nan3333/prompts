@@ -27,7 +27,7 @@ vars:
 - "meaning"
 examples:
 - "female"
-- "meaning"
+- "industriousness"
 preprocessors:
 - "tr '[:lower:]' '[:upper:]' | pen-str onelineify"
 - "tr '[:lower:]' '[:upper:]' | pen-str onelineify"
