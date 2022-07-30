@@ -2,7 +2,27 @@ task: "Adjective-Noun Pair from Word"
 doc: "Given a Word, describe it with an Adjective-Noun Pair"
 prompt-version: 1
 prompt: |+
-
+    Given a Word, describe it with an Adjective-Noun Pair    
+    <delim>
+    Word: space
+    Starting with the letter A.
+    Adjective: abstract
+    Noun: astronomy
+    Adjective-Noun Pair: abstract astronomy
+    Example: abstract astronomy means space.
+    abstract starts with the letter A. astronomy starts wit the letter A.
+    <delim>
+    Word: islands
+    Starting with the letter A.
+    Adjective: aquatic
+    Noun: archipelagos
+    Adjective-Noun Pair: aquatic archipelagos
+    Example: aquatic archipelagos means islands
+    aquatic starts with the letter A. archipelagos starts wit the letter A.
+    <delim>
+    <:pp>Word: <word>
+    Starting with the letter <letter>.
+    Adjective: 
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
@@ -11,22 +31,13 @@ stop-sequences:
 - "<delim>"
 cache: on
 vars:
-- "former"
-- "latter"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
+- "word"
+- "letter"
 examples:
-- "boysenberries"
 - "strawberries"
-preprocessors:
-- "sed 's/^/- /'"
-- "cat"
+- "b"
 filter: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
 external-related:
 - "http://creativityforyou.com/combomaker.html"
