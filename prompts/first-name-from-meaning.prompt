@@ -2,7 +2,18 @@ task: "Get first name from meaning"
 doc: "Given the meaning of a person's first name, return the name"
 prompt-version: 1
 prompt: |+
-
+  The following are first names and their meanings:
+  <delim>
+  TOPIC: FEMALE FRENCH FREE
+  - The name Charlotte is primarily a female name of French origin that means Free.
+  <delim>
+  TOPIC: MALE IRISH FULL OF GOODNESS
+  - The name Declan is primarily a male name of Irish origin that means Full Of Goodness.
+  <delim>
+  TOPIC: FEMALE ENGLISH PURPLE BLUE FLOWER
+  - The name Violet is primarily a female name of English origin that means Purple/blue Flower.
+  TOPIC: <gender> <origin> <meaning>
+  - The name
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
