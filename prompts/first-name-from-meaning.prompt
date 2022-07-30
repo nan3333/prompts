@@ -24,18 +24,12 @@ cache: on
 vars:
 - "gender"
 - "meaning"
-var-defaults:
-- "(detect-language)"
-- "(pen-preceding-text)"
 examples:
 - "female"
 - "meaning"
 preprocessors:
-- "sed 's/^/- /'"
-- "cat"
+- "tr '[:lower:]' '[:upper:]' | pen-str onelineify"
+- "tr '[:lower:]' '[:upper:]' | pen-str onelineify"
 filter: on
 completion: off
 insertion: off
-preprocessors:
-- pen-str onelineify
-postprocessor: pen-str unonelineify | pen-pretty-paragraph
