@@ -12,8 +12,9 @@ prompt: |+
   <delim>
   TOPIC: FEMALE ENGLISH PURPLE BLUE FLOWER
   - The name Violet is primarily a female name of English origin that means Purple/blue Flower.
+  <delim>
   TOPIC: <gender> <meaning>
-  - The name
+  - <:pp>The name
 engine: "OpenAI Codex"
 temperature: 0.3
 max-generated-tokens: "(* 2 prompt-length)"
