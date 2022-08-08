@@ -1,0 +1,19 @@
+* Alice in wonderland ascii art
+** Cheshire Cat
+#+BEGIN_SRC text -n :async :results verbatim code
+             .'\   /`.
+           .'.-.`-'.-.`.
+      ..._:   .-. .-.   :_...
+    .'    '-.(o ) (o ).-'    `.
+   :  _    _ _`~(_)~`_ _    _  :
+  :  /:   ' .-=_   _=-. `   ;\  :
+  :   :|-.._  '     `  _..-|:   :
+   :   `:| |`:-:-.-:-:'| |:'   :
+    `.   `.| | | | | | |.'   .'
+      `.   `-:_| | |_:-'   .'
+        `-._   ````    _.-'
+            ``-------''
+#+END_SRC
+
+** Mad Hatter
+#+BEGIN_SRC text -n :async :results verbatim code
