@@ -14,9 +14,10 @@ force-engine: OpenAI Codex
 temperature: 0.3
 max-generated-tokens: 200
 top-p: 1
+info: on
 vars:
 - description
 examples:
-- "populating a Library with content from a sync source."
+- "populate a Library with content from a sync source"
 var-defaults:
-- "(pen-preceding-text)"
+- "(pen-selected-text)"
