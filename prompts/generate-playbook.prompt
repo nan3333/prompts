@@ -1,0 +1,22 @@
+title: Generate an ansible playbook
+include: Generic file type completion/2
+prompt-version: 1
+doc: Generate an ansible playbook
+prompt: |
+    # ansible playbook yaml file
+
+    cat playbook.yaml <<EOD
+    <:pp># Playbook for <description>
+    ---
+    - name:
+engine: OpenAI Codex
+force-engine: OpenAI Codex
+temperature: 0.3
+max-generated-tokens: 200
+top-p: 1
+vars:
+- description
+examples:
+- "populating a Library with content from a sync source."
+var-defaults:
+- "(pen-preceding-text)"
