@@ -1,3 +1,8 @@
+# Oil painting in the style of Thomas Cole.
+# Realistic oil painting
+# Quilt in the style of Michael C. Thorpe.
+# ointilistic drawing in the style of Seurat. 
+
 task: "Generate a list of different art styles"
 doc: "Generate a list of different art styles"
 prompt-version: 1

@@ -10,7 +10,7 @@ payloads:
 - image: "(read-file-name \"image: \")"
 prompt: |+
   <text prompt>
-force-engine: "AlephAlpha EUTranMM"
+force-engine: "AlephAlpha Luminous"
 temperature: 0.3
 max-generated-tokens: 150
 top-p: 1.0

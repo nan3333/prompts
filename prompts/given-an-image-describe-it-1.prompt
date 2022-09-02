@@ -6,7 +6,7 @@ payloads:
 - image: "<file path or url>"
 prompt: |+
   Q: What is in this image? A:
-force-engine: "AlephAlpha EUTranMM"
+force-engine: "AlephAlpha Luminous"
 temperature: 0.0
 max-generated-tokens: 150
 top-p: 1.0
