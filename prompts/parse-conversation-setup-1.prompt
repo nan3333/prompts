@@ -1,0 +1,32 @@
+task: "Parse conversation setup"
+doc: "Given a description of a two person conversation, parse information about it"
+prompt-version: 1
+prompt: |+
+    <delim>
+    A conversation:
+    Will Smith on a movie set talking to Tom Cruise about a movie scene
+    <delim>  
+    Names person 1 and person 2 and a description of the situation:
+    Person 1: Will Smith
+    Person 2: Tom Cruise
+    Situation: On a movie set, talking about a movie scene
+    <delim>
+    A conversation:
+    <description>
+    <delim>
+    Names person 1 and person 2 and a description of the situation:
+    Person 1:
+engine: "OpenAI Codex"
+temperature: 0.3
+max-generated-tokens: "(* 2 prompt-length)"
+top-p: 1.0
+stop-sequences:
+- "<delim>"
+cache: on
+vars:
+- "description"
+examples:
+- "Two random strangers in a bus stop."
+filter: on
+completion: off
+insertion: off

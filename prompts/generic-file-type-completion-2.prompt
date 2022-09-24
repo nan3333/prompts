@@ -8,8 +8,8 @@ prompt: |
     cat draft.<sl:file type> <<EOD
     <preceding text>
 engine: OpenAI Codex
-force-engine: OpenAI Codex
-temperature: 0.3
+# force-engine: OpenAI Codex
+temperature: 0.8
 max-generated-tokens: 200
 top-p: 1
 force-stop-sequence: EOD
