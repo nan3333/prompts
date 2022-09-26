@@ -51,4 +51,4 @@ insertion: off
 # Make the ability for a prompt function to
 # return a list of results by slicing up the
 # results with a stream editor, rather than merely split-patterns
-postprocessor: "sed 1d | sed 's/Function name: //'"
+postprocessor: "sed -n '/Function name:/{s/Function name: //;p}'"
