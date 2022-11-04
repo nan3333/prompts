@@ -14,13 +14,16 @@ user-prompt: "^-[^:]*: "
 # prompt because we need to match on it with stop-sequences.
 # So the user prompt must be reconstructed manually.
 stop-sequences:
-# - "\n-"
-- "\n"
+# - "\n"
+# This is needed to ensure that if the response needs more lines, it gets the entire responnse
+- "\n-"
+# - "<long>"
+max-generated-tokens: 60
 # Create a user prompt with the number incremented.
 # This is like postprocessor but happens even later.
 # It is used in special circumstances when the prompt history is also required.
 # postpostprocessor: pen-str python-gen-next-user-prompt
-postpostprocessor: cat
+postpostprocessor: pen-str join ' '
 temperature: 0.7
 vars:
 - history
